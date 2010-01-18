@@ -1,0 +1,35 @@
+'''Site Summary Report'''       
+
+The Site Summary report shows totals and average statistics for the currently selected Date Range .      Totals are calculated for the selected Date Range and averages are computed by dividing the totals by the number of non-zero days in the selected Date Range.   
+
+'''Note''': Site Summary report depends on the selected dashboard. It shows only the statistics, most relevant for the selected Dashboard role, i.e. the report for the Marketer section shows information like Goal Conversions and Bounce Rate, while the Webmaster section shows the numbers of valid/error hits and number of bytes transferred.  
+
+'''Calculation Methodology '''  
+
+'''Visitors section:''' 
+
+* '''Total Visitors:''' Shows how many visitors your site received over time during the date range
+* '''Total Visits:''' Shows the total number of visits during the current date range. The green or red arrows and % numbers indicate the percentage increase or decrease in number of visits, respectively, when enabling option "Compare to Past".
+* '''Total Pageviews:''' Total requests to the web server by a visitor's browser for any web page; this excludes images, javascript, and other generally embedded file types.
+* '''First Time Visitors:''' Visitors that have not been on your site at any time prior to the current Date Range.
+* '''Prior Visitors''': Visitors that have been on your site at least once prior to the Date Range.
+* '''Bounce Rate: '''The percentage of entrances on the page that resulted in exits without viewing any other page on the site. It is calculated as Total Bounces divided by Total Entrances.
+* '''Average Visit Length:''' The average length of all visits on your site that visitors spent during a single session. It is displayed as hours:minutes:seconds.
+  '''Marketing section:''' 
+* '''Total Impressions:''' The known number of times the referral links were displayed.
+* '''Total Clicks:''' The total number of clicks on referral links.
+* '''CTR''': '''Click Through Rate''' is the percentage of known impressions that result in clicks. It is calculated as Clicks divided by Impressions.
+* '''Total Cost:''' The total cost of referrals, and in most cases refers to the costs incurred on a cost-per-click search engine such as Google.
+* '''CPC''': '''Cost-per-click.''' The total amount you pay each time someone clicks your ad. Total CPC is determined by totaling the cost of all clicks
+* '''Total Revenue:''' The total revenue realized from e-commerce activity.
+* '''ROI''': '''Return on Investment''' is the percentage return calculated as (revenue - cost)/cost.
+  '''Goal Conversion section: '''This report section shows total number of each goal conversions over time.  '''E-Commerce section:''' This report section shows total and average Revenue and Transactions over the currently selected Date Range.
+     '''Traffic section:''' 
+* '''Total Hits:''' The total number of any request to your site.
+* '''Valid Hits:''' The Valid Hits describe the total number of successful connections to your site. All successful hits and errors are determined by the http status codes within your logs
+* '''Error Hits:''' The Error Hits Graph will show the number of unsuccessful attempts to connect to your site.
+* '''Total Bytes: '''The quantity of network bandwidth used by the files requested during the selected Date Range.
+ '''Note:'''  
+1. All successful hits and errors are determined by the http status codes within your logs.
+1. Because Bytes numbers can be very large, abbreviations are used as appropriate, such as MB for megabytes (~millions of bytes).
+       
