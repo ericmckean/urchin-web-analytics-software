@@ -1,0 +1,28 @@
+== Urchin 7 Parallel Profile Processing ==
+ 
+=== Overview ===
+
+Previous versions of Urchin used to process profiles in serial manner. For example, assuming that it takes 1 minute to process 1 profile, it would ultimately take approximately 100 minutes to process 100 profiles. 
+
+In order to address this issue Urchin 7.0 introduces parallel profile processing, now several profiles processing jobs can be run simultaneously.
+ 
+This functionality targets middle and high volume enterprise clients:
+ 
+* hosting providers
+* clients with huge number of profiles
+ 
+=== Configuration of parallel profile processing ===
+
+   By default the newly installed or upgraded instance of Urchin 7.0 allows only one profile processing at a time. In order to enable the parallel profile processing:
+    1. Uncomment the option MaxConcurrentProfileTasks in &lt;urchin_home&gt;/etc/urchin.conf and set it to necessary value.
+        For example: MaxConcurrentProfileTasks: 2 
+    2. Restart Urchin services: urchinctl restart  '''Note:''' Urchin profile is exclusively processed by one instance of processing engine. 
+=== Restrictions ===
+ The profile processing job is extremely RAM- and IO-hungry. Blind increasing of the parameter MaxConcurrentProfileTasks will most probably lead to significant degradation of processing speed due to exhausting of system resources.   It is highly recommended to increase MaxConcurrentProfileTasks only: 
+* if you have enough RAM to fit several jobs in memory
+* when profiles and log sources are physically located on different hard disk drives or you have a high-speed hard disk drive
+  Approximate resource consumption:                      
+||Number of parallel jobs||RAM, MB||IO read, MB/s||IO write, MB/s||
+||1||1000||10||5||
+||2||2000||20||10||
+   
