@@ -1,0 +1,64 @@
+== Urchin Data API v2 Services ==
+ 
+=== Overview ===
+ 
+=== The Urchin Data API v1 provides entry level data mining capabilities - aggregates, custom tables, totals, visitor and transaction details. Along with sorting and pagination it introduces basic regular expression and numeric filters. ===
+     The Urchin Data API v2 significantly extends the analysis machinery with introduction of the visit, path and transaction segmentations. It now becomes possible to specify up to 50 filters of each type per single query and squeeze the most valuable data out of the reporting database. 
+=== Introduction to the Urchin Data API v2 Web Services ===
+ 
+=== Urchin 7.0 is bundled with v1 and v2 instances of the Data API. By default the v2 is engaged, though the API can be easily switched back to v1 by setting DataApiVersion to 1 in &lt;urchin_home&gt;/etc/urchin.conf. ===
+ WSDL location: AdminService:  http://your_host:your_port/services/v2/adminservice?wsdl
+ReportService: http://your_host:your_port/services/v2/reportservice?wsdl   REST methods URIs: AdminService: http://your_host:your_port/services/v2/adminservice
+ReportService:http://your_host:your_port/services/v2/reportservice 
+REST services explorer is also available at http://your_host:your_port/uapi.html 
+The Report Service allows to extract the following information: 
+* Aggregate dimensions and metrics - tables from #1 to #43
+* Custom tables - user defined tables from &lt;urchin_home&gt;/lib/custom folder
+* Visit related dimensions and metrics - table #256
+* Transaction related dimensions and metrics - table #257
+* Page related dimensions and metrics - table #259
+* Totals and metrics over time - table #258
+ 
+=== Data API v2 Reference ===
+ 
+==== Admin service (v2) ====
+
+The Admin service provides operations for retrieving account and profile information.   
+WSDL location: http://your_host:your_port/services/v2/adminservice?wsdl 
+
+   
+This service provides the following methods:
+
+ 
+*  '''getAccountList - '''Method was not changed and works as described in the v1 version. To see more information please refer to the article [[Data API]].
+*  '''getProfileList''' '''- '''Method was not changed and works as described in the v1 version. To see more information please refer to the article [[Data API]].
+ 
+==== Report service (v2) ====
+
+The Report Service lets you extract data and generate reports from Urchin.   
+WSDL location: http://your_host:your_port/services/v2/reportservice?wsdl
+
+ 
+This service provides the following methods: 
+* '''getTableList '''- Method was extended with new fields "nregexfilters" and "nnumericfilters".
+
+    Sample response: &lt;tns:getTableListResponse xmlns:tns="https://urchin.com/api/urchin/v2/"&gt; &lt;table&gt; &lt;tableId&gt;257&lt;/tableId&gt; &lt;dimensions&gt;   &lt;dimension&gt;u:transaction_id&lt;/dimension&gt;
+  ... &lt;/dimensions&gt; &lt;metrics&gt;   &lt;metric&gt;u:transactions&lt;/metric&gt;   ... &lt;/metrics&gt; '''&lt;nregexfilters&gt;50&lt;/nregexfilters&gt; ''''''&lt;nnumericfilters&gt;50&lt;/nnumericfilters&gt;''' &lt;/table&gt;
+        This response shows that Urchin table #257 can be filtered by 50 numeric and 50 regular expression filters. To see more information please refer to the help article [[Data API]].  
+* '''getData - '''Starting from the v2 the method fully supports regular expression and numeric filters.  To see more information please refer to the help article [[Data API]].
+ 
+===== Filtering gears =====
+ 
+* '''tables ##1-43''' - tables contain aggregated dimensions and metrics, support filtering by
+* '''table #256''' - the table contains all visit details, supports filtering by
+ 
+* '''table #257''' - the table contains all transaction and visit details, supports filtering by
+ 
+* '''table #258''' - the table contains total data and metrics over time, supports filtering by
+ 
+* '''table #259''' - the table contains all page and visit details, supports filtering by
+  '''Note''': In order to see all available dimensions and metrics of these tables please retrieve information via the method getTableList of the Report Service or refer to services explorer at http://your_host:your_port/uapi.html.   For example: Extract visitor details using REST request.     Sample REST request: http://&lt;urchin host&gt;:&lt;port&gt;/services/v2/reportservice/data?login=admin&amp;password=urchin&amp;ids=7&amp;start-date=2008-01-01&amp;end-date=2010-01-01&amp;dimensions=u:session_id,u:visitor_id,u:session_ip,u:session_start_time,u:session_end_time&amp;metrics=u:pages,u:visits&amp;table=256 
+    Sample REST response:  &lt;tns:getDataResponse xmlns:tns="https://urchin.com/api/urchin/v2/"&gt; &lt;record&gt;   &lt;recordId&gt;1&lt;/recordId&gt;  &lt;dimensions&gt;   &lt;dimension name="u:session_id"&gt;1262784738&lt;/dimension&gt;    &lt;dimension name="u:'''visitor_id'''"&gt;'''HWH2-C43FX-GSPE'''&lt;/dimension&gt;    &lt;dimension name="u:'''session_ip'''"'''&gt;10.6.28.81'''&lt;/dimension&gt;    &lt;dimension name="u:'''session_start_time'''"&gt;'''2010-01-06T07:32:37-08:00'''&lt;/dimension&gt;    &lt;dimension name="u:'''session_end_time'''"&gt;'''2010-01-06T07:32:49-08:0'''0&lt;/dimension&gt;    &lt;/dimensions&gt; &lt;metrics&gt;   &lt;u:pages xmlns:u="https://urchin.com/api/urchin/v2/"&gt;1&lt;/u:pages&gt;    &lt;u:visits xmlns:u="https://urchin.com/api/urchin/v2/"&gt;1&lt;/u:visits&gt;    &lt;/metrics&gt;   &lt;/record&gt; &lt;/tns:getDataResponse&gt;    
+=== How to enable older version of the Urchin Data API in Urchin 7.0? ===
+
+    By default, newly installed or upgraded instance of Urchin 7.0 engages the latest version of the Data API. To switch to another version please refer to section "How do I switch to another version of the Urchin Data API?" of the article [[Urchin Data API FAQ]].         
