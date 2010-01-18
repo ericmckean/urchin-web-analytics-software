@@ -1,0 +1,12 @@
+= U7 HC: Permalinks =
+  '''Overview'''   A permanent link ("permalink") is a link to an Urchin report that preserves the exact settings of the report, like filtering, paging, etc. A permalink can be embedded into e-mail or Web pages.   A "Permalink" link is provided on the Urchin report control panel. Clicking this link opens a popup from which you can copy the permalink.       '''Permalink features:''' 
+* Permanent links are accessible from the report page only;
+* Permanent links include the current settings of profile, selected report, date ranges, filtering, drill-down level and paging;
+* Permalink does not preserve the currently open popup reports like "Data Over Time" or "To-date Lifetime Value". It does not also preserve the currently open cross-segment ;
+* Permanent links depend on the execution context, i.e. the link acquired from under the session controller is processed via the session controller interface; the link acquired via the direct report linking is processed via the direct report linking interface.
+  
+=== Limitations: ===
+ 
+* A permanent link to the admin interface is not allowed to avoid XSRF and accidental data modification;
+* A permanent link doesn't restore the state of  the "Performance Comparison" report .
+      
