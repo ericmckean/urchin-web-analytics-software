@@ -17,8 +17,10 @@ To change GeoDB settings per Urchin instance, go to Configuration &gt; Settings 
 
 '''Note:''' Only SuperAdmin users can change Global GeoDB settings.  
 '''Profile GeoDB settings'''   To change GeoDB settings for a profile, go to Configuration -&gt; Urchin Profiles -&gt;  Profile Settings -&gt; Reporting tab -&gt; Geo Detail section.  
+
         
-http://code.google.com/p/urchin-web-analytics-software/source/browse/trunk/geo_profile_settings.PNG
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/geo_profile_settings.PNG]
+
 
 '''Custom DNS Entries'''
 
