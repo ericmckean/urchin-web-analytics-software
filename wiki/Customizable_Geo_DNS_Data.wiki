@@ -1,15 +1,18 @@
 = Customizable Geo/DNS Data (Urchin 7.0+) =
  
-Beginning with Urchin 7.0, Geo Data has been divided into the following databases: 
-- Domains database (Domains report);
-- Organizations database (Network Location);
-- Several Metro databases (Geo Location/Geo Map Overlay/Connection Speed). 
-Urchin ships with several Metro databases, each providing different levels of metro information: 
-- World (contains detailed Country/Region/City information for the World)
-- World Lightweight (contains only Country-level information for the World)
-- US (contains detailed information for the US  and country level information for other countries)
-- Europe (contains detailed information for major EU markets (DE,GB,FR,ES,IT,NL) and country level information for other countries) 
-- Japan (contains detailed information for Japan and country level information for other countries)  
+Beginning with Urchin 7.0, Geo Data has been divided into the following databases:
+
+  * Domains database (Domains report);
+  * Organizations database (Network Location);
+  * Several Metro databases (Geo Location/Geo Map Overlay/Connection Speed).
+
+Urchin ships with several Metro databases, each providing different levels of metro information:
+ 
+  * World (contains detailed Country/Region/City information for the World)
+  * World Lightweight (contains only Country-level information for the World)
+  * US (contains detailed information for the US  and country level information for other countries)
+  * Europe (contains detailed information for major EU markets (DE,GB,FR,ES,IT,NL) and country level information for other countries) 
+  * Japan (contains detailed information for Japan and country level information for other countries)  
  GeoDB settings can be defined globally or at the profile level.   '''Global GeoDB settings'''  
 To change GeoDB settings per Urchin instance, go to Configuration &gt; Settings &gt; Global Settings &gt; DB Settings tab -&gt;Geo Detail section. Network LocationsDomains and Geo Locations/Connection Speed are enabled by default; World geo database is selected by default.      
 
