@@ -14,14 +14,23 @@ How to use the filter:
 2. Select "Lookup Table" as the filter type. 
 3. Select the field you want to update from the Filter Field drop down menu.
 4. Select an internal preconfigured table (see [[How To Use Master Tracking Codes]]) from the Table Name drop down menu or add an external preconfigured table (Urchin 7.0+). External Lookup tables can be added like external Log sources via the "Browse" dialog.
-  '''Internal Lookup Table'''   To add an Internal lookup table:
+  
+'''Internal Lookup Table'''   
+
+To add an Internal lookup table:
     1. Open the Filter Manager (or Profile Settings -> Filters tab)
     2. Click ''the Add'' button
     3. Select Filter Type ''Lookup Table ''(''Internal'' table radio button(Urchin 7.0+) is selected by default) 
     4. Select table from the drop down list.    
-    5. Click the ''Finish'' button to complete the Internal Lookup table creation.   Note:  A corresponding lookup table file must be created first, and installed in the lib/custom/lookuptables directory of the Urchin distribution. Existing Lookup Tables can be selected in Table Name field.  '''External''' '''Lookup Table'''   To add an External lookup table:
+    5. Click the ''Finish'' button to complete the Internal Lookup table creation.   Note:  A corresponding lookup table file must be created first, and installed in the lib/custom/lookuptables directory of the Urchin distribution. Existing Lookup Tables can be selected in Table Name field.  
+
+'''External''' '''Lookup Table'''   
+
+To add an External lookup table:
     1. Open the Filter Manager (or Profile Settings -> Filters tab)
     2. Click ''the Add'' button 
     3. Select Filter Type ''Lookup Table, ''
     4. Select'' External'' Table type(Urchin 7.0+) 
-    5. Enter the path to the external lookup file, or click ''Browse'' button to open an external lookup file selection dialog.    Provide Username and Password for UNC authentication.      '''''Note''''': Local file system, NFS and UNC (Windows) shares are supported. No support for FTP/HTTP sources is provided in Urchin 7.000.            
+    5. Enter the path to the external lookup file, or click ''Browse'' button to open an external lookup file selection dialog.    Provide Username and Password for UNC authentication.      
+
+'''''Note''''': Local file system, NFS and UNC (Windows) shares are supported. No support for FTP/HTTP sources is provided in Urchin 7.000.            
