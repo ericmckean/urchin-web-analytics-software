@@ -5,7 +5,7 @@ Totals are calculated for the selected Date Range and averages are computed by d
 
 *Note:* Site Summary report depends on the selected dashboard. It shows only the statistics, most relevant for the selected Dashboard role, i.e. the report for the Marketer section shows information like Goal Conversions and Bounce Rate, while the Webmaster section shows the numbers of valid/error hits and number of bytes transferred.  
 
-* Calculation Methodology *
+==Calculation Methodology==
 
 *Visitors section:*
   * *Total Visitors:* Shows how many visitors your site received over time during the date range
