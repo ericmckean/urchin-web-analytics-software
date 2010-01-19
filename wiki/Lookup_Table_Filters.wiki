@@ -1,10 +1,11 @@
 = Lookup Table Filters =
  
-(original article [https://secure.urchin.com/helpwiki/en/Lookup_Table_Filters Look Table Filters])   
+(original article [https://secure.urchin.com/helpwiki/en/Lookup_Table_Filters Look Table Filters])
+
 The Lookup Table filter can be used to: 
-    
-* implement master tracking codes for campaign tracking. Read *How To Use Master Tracking Codes*.
-* implement an external data table to lookup and replace character field values when a match occurs. Lookup tables can match against a single field and update multiple fields.
+
+  * implement master tracking codes for campaign tracking. Read *How To Use Master Tracking Codes*.
+  * implement an external data table to lookup and replace character field values when a match occurs. Lookup tables can match against a single field and update multiple fields.
     
 How to use the filter: 
     
