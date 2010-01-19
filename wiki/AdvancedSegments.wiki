@@ -1,11 +1,8 @@
-    
-= Advanced Segments =
- 
-==== Advanced Segment ====
+= Advanced Segment =
 
 Each advanced segment is a combination of filters joined by "AND" condition. Metrics support numeric comparison operators "equals to", "less than", "less than or equal to", "greater than" and "greater than or equal to". Dimensions support regular expressions with operations "matches" and "does not match".  Example: "refferal" matches "yahoo" '''AND''' "pageviews" greater than "1"  Advanced segments editor is available on My Customizations -> Advanced Segments page.
  
-==== Advanced Segmentation ====
+== Advanced Segmentation ==
 
 Advanced Segmentation provides functionality to manage the advanced segments and apply them to reporting data.
 There are altogether four different types of advanced segmentation: 
@@ -16,23 +13,23 @@ There are altogether four different types of advanced segmentation:
 
 The Manage Urchin Advanced Segments page can be found via the My Customizations -> Advanced Segments link. This page displays a list of segments that have been configured and contains controls for creating, editing and removing the Advanced Segments.      
 
-Known limitations '''Creating New Segments'''   
+===Creating New Segments===   
 
 To create and configure a new segment, click the ''Create new custom segment ''button on the Manage Urchin Visit Segments page.      
 Provide a Segment Name, select Dimension or Metric, select Condition and provide required Value.        
 
 Click ''Add "and" statement'' to add a Dimension or Metric to the segment.   Click Save to complete the New Segment creation.     Once the segment is created, it can be edited, deleted or applied to other profiles (according to User access permissions).      
 
-'''Editing Segments'''      
+===Editing Segments===      
 
 To edit a segment, click the ''edit'' link in the Actions area for the corresponding segment.     
 While editing, the user may change the segment's Name, Dimension or Metric, Condition and Value and to add additional Dimension or Metric query strings to the segment.   Unwanted Dimension or Metric query strings may be removed from a segment definition by clicking the ''delete''  button.           
 
-'''Deleting Segments'''     
+===Deleting Segments===     
 
 To delete an existing segment, click the '' delete'' link in the Actions area for the corresponding segment.     
 
-'''Applying Segments to the Profiles'''   
+===Applying Segments to the Profiles===   
 
 This option is available when creating/editing the segment.  Once the segment has been applied to the profiles, the option is available only to user who created it. Segments cannot be shared between different users.  To apply segment to the profiles, click ''apply to all profiles'' link at the Actions section near the corresponding segment.    
 To remove link between all profiles (excepting currently opened) and particular segment,  simply open the definition of this segment and save it. The re-saved segment will be granted to the current profile only.      
