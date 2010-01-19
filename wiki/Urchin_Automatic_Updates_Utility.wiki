@@ -1,4 +1,4 @@
-=U7 HC: autoupdate: Urchin Automatic Updates Utility=
+= Autoupdate: Urchin Automatic Updates Utility=
 
     
 === Overview ===
