@@ -17,6 +17,8 @@
   
 <p align="justify"> Some of reports were renamed and regrouped by content to simplify navigation between reports and analysis of business data. Some reports were organised in tabs. For example, such reports as "Browser Versions", "Platform Versions" and "Browser & Platform Combos" from "IT Reports" section/"Browsers & Robots" subsection were merged into a single "Browsers & Platforms" tabbed report. 
 
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Browsers_Platforms.png] 
+
 <p>The following reports were renamed/regrouped: 
   
   # "Marketing Optimization" section/"Marketing Campaign Results" subsection:<br> "Campaign Conversion", "Source Conversion", "Medium Conversion" reports merged into a single "Conversion Overview" report with detail level.
