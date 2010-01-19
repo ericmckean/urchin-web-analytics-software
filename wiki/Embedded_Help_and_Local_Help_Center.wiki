@@ -1,24 +1,15 @@
- 
-'''Embedded Help and Local Help Center''' 
+=Embedded Help and Local Help Center= 
 
-      
-     Beginning with Urchin 7.0, Embedded help (EH) and Urchin Help Center articles (HC) are delivered in the Urchin package.
+<p align="justify"> Beginning with Urchin 7.0, Embedded help (EH) and Urchin Help Center articles (HC) are delivered in the Urchin package.
 
- 
- EH is extracted out of the product and bundled with it by default in "%URCHIN_HOME%/htdocs/eh/VVVV/LANG_CODE" folder (where V – EH version, LANG_CODE - language code). Local HC articles are located in  "URCHIN_HOME/htdocs/hc/VVVV/ll-LL" folder (V - version, l - lower-case language code, and L - upper-case region code). 
+<p align="justify"> EH is extracted out of the product and bundled with it by default in "%URCHIN_HOME%/htdocs/eh/VVVV/LANG_CODE" folder (where V – EH version, LANG_CODE - language code). Local HC articles are located in  "URCHIN_HOME/htdocs/hc/VVVV/ll-LL" folder (V - version, l - lower-case language code, and L - upper-case region code). 
 
- 
-    The same instance of EH and local HC articles can be used by some Urchin instances. In this case base URL to the shared EH and HC articles can be defined in urchin.conf file:
+<p align="justify"> The same instance of EH and local HC articles can be used by some Urchin instances. In this case base URL to the shared EH and HC articles can be defined in urchin.conf file:
+<br> helpBaseUrl: /help/ 
+Urchin 7.0+ supports automated updates EH and HC via UI or "autoupdate" utility. Finding new versions and checking for updates requires a connection to the Internet. You can find and install new versions of Embedded Help and Urchin Help Center articles by choosing options on Settings\Global Settings\Autoupdate tab. A new version will be downloaded according to "Schedule Update" options and a "schedule download now" link will appear at the left of information about the new version.  Use the "Update Settings" options to update EH and HC in silent mode, which permits installation without user intervention.
 
-  
-helpBaseUrl: /help/ 
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Autoupdate_Help_Articles.png] 
 
-        
-    Urchin 7.0+ supports automated updates EH and HC via UI or "autoupdate" utility. Finding new versions and checking for updates requires a connection to the Internet. You can find and install new versions of Embedded Help and Urchin Help Center articles by choosing options on Settings\Global Settings\Autoupdate tab. A new version will be downloaded according to “Schedule Update” options and a “schedule download now” link will appear at the left of information about the new version.  Use the “Update Settings” options to update EH or HC in silent mode, which permits installation without user intervention.
-
-         
-    The Urchin automated updates utility,  invoked from the command line, automatically upgrades Embedded Help and the Help Center articles to the latest version:
-
- 
-* "autoupdate -e"
+<p align="justify"> The Urchin automated updates utility,  invoked from the command line, automatically upgrades Embedded Help and the Help Center articles to the latest version:
+<br>* "autoupdate -e"
   
