@@ -1,15 +1,15 @@
-== Event Tracking ==
+= Event Tracking =
 With Event Tracking it is possible to record user interaction with website elements, such as a Flash website, Flash Movie player, Embedded AJAX page elements, Page gadgets, File downloads, etc.  This is accomplished by attaching the method call (available in urchin.js tracking code) to the particular UI element you want to track.   '''Note:''' All tracked elements should be determined in advance.  ''Event Tracking'' reporting section is available at the Content Optimization, containing the following reports:   
   * Hosts and Pages (Host|Page vs Events, Unique Events, Value, Avg.value)
   * Categories (Category|Action|Label vs Events, Unique Events ("visits with category"), Value, Avg.value)
   * Actions (Action|Label|Category vs Events, Unique Events ("visits with category/action"), Value, Avg.value)
   * Labels (Label|Action|Category vs Events, Unique Events ("visits with category/action/label"), Value, Avg.value)
   * Trending (Total Events, Visits with Events)
-'''Event Tracking design'''     
+==Event Tracking design==
 
 The design model for Event Tracking is highly flexible, and its use can be extended well beyond the common model of user-triggered events.    In the process of implementing Event Tracking, every name you supply for categories, actions, and labels appears in the reporting interface. In addition, a category/action pair is treated as a unique element in the report statistics, so consider first how you want your metrics to be calculated for all objects belonging to a similar category.
 
-'''Setting Up Event Tracking'''   
+==Setting Up Event Tracking==
 
 Ensure website is configured for tracking with urchin.js tracking code. Refer to [[Install Guide]] ('''Using Urchin with UTM Tracking''' section) for details. 
 Call the __utmTrackEvent() method in the source code for every element(object) of the website to be tracked with Event Tracking.    __utmTrackEvent() method specification:   __utmTrackEvent(cat, action, label, value, page), where     
