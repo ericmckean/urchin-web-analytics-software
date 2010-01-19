@@ -70,12 +70,11 @@ This service provides the following methods:
   * *getData* - Starting from the v2 the method fully supports regular expression and numeric filters.  To see more information please refer to the help article [https://secure.urchin.com/helpwiki/en/Data_API Data API].
  
 ===== Filtering gears =====
-  * *tables ##1-43* - tables contain aggregated dimensions and metrics, support filtering by
-  * * *dimensions* from the queried table only
-  * *table #256* - the table contains all visit details, supports filtering by
-  * *table #257* - the table contains all transaction and visit details, supports filtering by
-  * *table #258* - the table contains total data and metrics over time, supports filtering by
-  * *table #259* - the table contains all page and visit details, supports filtering by
+  * *tables ##1-43* - tables contain aggregated dimensions and metrics, support filtering by dimensions and metrics from the queried table only
+  * *table #256* - the table contains all visit details, supports filtering by visit, transaction and path dimensions from tables #256, #257, #258; visit metrics from table #256
+  * *table #257* - the table contains all transaction and visit details, supports filtering by visit, transaction and path dimensions from #256, #257, #258; transaction metrics from table #257
+  * *table #258* - the table contains total data and metrics over time, supports filtering by metrics from table #258 only
+  * *table #259* - the table contains all page and visit details, supports filtering by visit, transaction and path dimensions from #256, #257, #258; page metrics from table #259
 
 
 *Note*: In order to see all available dimensions and metrics of these tables please retrieve information via the method "getTableList" of the Report Service or refer to services explorer at <font color="blue">http://your_host:your_port/uapi.html</font>. 
@@ -98,12 +97,12 @@ http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=
   <dimension name="u:session_ip">10.6.28.81</dimension> 
   <dimension name="u:session_start_time">2010-01-06T07:32:37-08:00</dimension> 
   <dimension name="u:session_end_time">2010-01-06T07:32:49-08:00</dimension> 
-  </dimensions>
+</dimensions>
 <metrics>
   <u:pages xmlns:u="https://urchin.com/api/urchin/v2/">1</u:pages> 
   <u:visits xmlns:u="https://urchin.com/api/urchin/v2/">1</u:visits> 
-  </metrics>
-  </record>
+</metrics>
+</record>
 </tns:getDataResponse>
 }}}
  
