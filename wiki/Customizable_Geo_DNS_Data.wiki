@@ -36,7 +36,6 @@ Beginning with Urchin 7.0, it's possible to define custom DNS entries.
 
 When using either the domain.local file in the data/geodata directory or some other custom file, the format of the entries should be one entry per line, beginning with the IP or network address, followed by a space or tab, and then the domain for that address. Spaces are not allowed in the domain name. Allowed forms include the following:
 
- 
   * 192.168.10.100 somehost.somedomain.net (Explicit hostname IP)
   * 192.168.10.16/24 somedomain.net (IP address with network prefix)
   * 192.168.10.0/24 somedomain.net (subnet with network prefix)
