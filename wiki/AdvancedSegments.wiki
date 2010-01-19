@@ -54,4 +54,4 @@ This option is available when creating/editing the segment.  Once the segment ha
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Adv_seg_apply_to_prof.PNG]
 
-To remove link between all profiles (excepting currently opened) and particular segment,  simply open the definition of this segment and save it. The re-saved segment will be granted to the current profile only.
+To remove a link between all profiles (excepting currently opened) and particular segment,  simply open the definition of this segment and save it. The re-saved segment will be granted to the current profile only.
