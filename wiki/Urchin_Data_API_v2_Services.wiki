@@ -38,8 +38,8 @@ The Admin service provides operations for retrieving account and profile informa
 WSDL location: <font color="blue">http://your_host:your_port/services/v2/adminservice?wsdl</font>
 <br><br>
 This service provides the following methods:
-  * *getAccountList* - Method was not changed and works as described in the v1 version. To see more information please refer to the article [https://secure.urchin.com/helpwiki/en/Data_API Data API].
-  * *getProfileList* - Method was not changed and works as described in the v1 version. To see more information please refer to the article [https://secure.urchin.com/helpwiki/en/Data_API Data API].
+  * *getAccountList* - Method was not changed and works as described in the v1 version. To see more information please refer to the article [[https://secure.urchin.com/helpwiki/en/Data_API | Data API]].
+  * *getProfileList* - Method was not changed and works as described in the v1 version. To see more information please refer to the article [[https://secure.urchin.com/helpwiki/en/Data_API | Data API]].
  
 ==== Report service (v2) ====
 
