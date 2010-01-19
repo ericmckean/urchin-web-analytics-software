@@ -18,8 +18,8 @@ Call the __utmTrackEvent() method in the source code for every element(object) o
   * label (optional) - additional info about the event (e.g.: video's title, result of the action(change view -> satelite), etc)   
   * value (optional) - numeric value of the action   page (optional) - web page on which event is occured.     
 
-_Example:_   
+_Example:_
 
-Part of the script for tracking QuickTime "Play" event: 
+Part of the script for tracking `QuickTime` "Play" event:
 
 {{{<a href="javascript:document.movie1.Play();" onClick="__utmTrackEvent('Video','Play','My Video Title');">Play</a>}}}
