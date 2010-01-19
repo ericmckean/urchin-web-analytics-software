@@ -13,7 +13,7 @@ Urchin ships with several Metro databases, each providing different levels of me
  GeoDB settings can be defined globally or at the profile level.   '''Global GeoDB settings'''  
 To change GeoDB settings per Urchin instance, go to Configuration &gt; Settings &gt; Global Settings &gt; DB Settings tab -&gt;Geo Detail section. Network LocationsDomains and Geo Locations/Connection Speed are enabled by default; World geo database is selected by default.      
 
-http://code.google.com/p/urchin-web-analytics-software/source/browse/trunk/geo_global_settings.PNG
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/geo_global_settings.PNG]
 
 '''Note:''' Only SuperAdmin users can change Global GeoDB settings.  
 '''Profile GeoDB settings'''   To change GeoDB settings for a profile, go to Configuration -&gt; Urchin Profiles -&gt;  Profile Settings -&gt; Reporting tab -&gt; Geo Detail section.  
