@@ -72,6 +72,7 @@ This service provides the following methods:
 ===== Filtering gears =====
   * *tables ##1-43* - tables contain aggregated dimensions and metrics, support filtering by
   * *table #256* - the table contains all visit details, supports filtering by
+  * * *dimensions from the queried table only
   * *table #257* - the table contains all transaction and visit details, supports filtering by
   * *table #258* - the table contains total data and metrics over time, supports filtering by
   * *table #259* - the table contains all page and visit details, supports filtering by
