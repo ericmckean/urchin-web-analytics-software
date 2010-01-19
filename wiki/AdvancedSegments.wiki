@@ -11,12 +11,19 @@ There are altogether four different types of advanced segmentation:
   * transaction segmentation - advanced filters can be applied to dimensions and metrics that are linked with transaction - supported only through the Data API v2.0
   * transaction item segmentation - not supported
 
-The Manage Urchin Advanced Segments page can be found via the My Customizations -> Advanced Segments link. This page displays a list of segments that have been configured and contains controls for creating, editing and removing the Advanced Segments.      
+The Manage Urchin Advanced Segments page can be found via the My Customizations -> Advanced Segments link. This page displays a list of segments that have been configured and contains controls for creating, editing and removing the Advanced Segments. 
+
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Adv_seg_link.PNG]     
 
 ===Creating New Segments===   
 
-To create and configure a new segment, click the ''Create new custom segment ''button on the Manage Urchin Visit Segments page.      
-Provide a Segment Name, select Dimension or Metric, select Condition and provide required Value.        
+To create and configure a new segment, click the ''Create new custom segment ''button on the Manage Urchin Visit Segments page. 
+
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Adv_seg_create_new_seg_btn.PNG]
+
+Provide a Segment Name, select Dimension or Metric, select Condition and provide required Value.
+
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Adv_seg_create_new_seg_settings.PNG]
 
 Click ''Add "and" statement'' to add a Dimension or Metric to the segment.   Click Save to complete the New Segment creation.     Once the segment is created, it can be edited, deleted or applied to other profiles (according to User access permissions).      
 
