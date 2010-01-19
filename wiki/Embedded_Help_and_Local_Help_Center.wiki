@@ -6,7 +6,8 @@
 
 <p align="justify"> The same instance of EH and local HC articles can be used by some Urchin instances. In this case base URL to the shared EH and HC articles can be defined in urchin.conf file:
 <br> helpBaseUrl: /help/ 
-Urchin 7.0+ supports automated updates EH and HC via UI or "autoupdate" utility. Finding new versions and checking for updates requires a connection to the Internet. You can find and install new versions of Embedded Help and Urchin Help Center articles by choosing options on Settings\Global Settings\Autoupdate tab. A new version will be downloaded according to "Schedule Update" options and a "schedule download now" link will appear at the left of information about the new version.  Use the "Update Settings" options to update EH and HC in silent mode, which permits installation without user intervention.
+
+<p align="justify"> Urchin 7.0+ supports automated updates EH and HC via UI or "autoupdate" utility. Finding new versions and checking for updates requires a connection to the Internet. You can find and install new versions of Embedded Help and Urchin Help Center articles by choosing options on Settings\Global Settings\Autoupdate tab. A new version will be downloaded according to "Schedule Update" options and a "schedule download now" link will appear at the left of information about the new version.  Use the "Update Settings" options to update EH and HC in silent mode, which permits installation without user intervention.
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Autoupdate_Help_Articles.png] 
 
