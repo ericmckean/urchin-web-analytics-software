@@ -1,8 +1,8 @@
 = Permalinks =
 === Overview ===   
 A permanent link ("permalink") is a link to an Urchin report that preserves the exact settings of the report, like filtering, paging, etc. It can be embedded into e-mail or Web pages.<br><br>
-A "Permalink" link is provided on the Urchin report control panel. Clicking this link opens a popup from which you can copy the permalink.      
-[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Printview_Permalink.png]
+A "Permalink" link is provided on the Urchin report control panel. Clicking this link opens a popup from which you can copy the permalink. 
+<br><br>[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Printview_Permalink.png]<br><br>
 
 === Permalink features: ===
   * Permanent links are accessible from the report page only;
