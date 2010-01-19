@@ -14,7 +14,7 @@
     [[Image:ddjk3d43_22jbc3f9g5_b.jpg]]
   To provide Urchin users the permanent links to Urchin reports, preserving the exact settings of report, filtering, paging etc, which can be embedded into e-mail or Web pages, some new feature "Permalink" appeared.   The Print View and Permalink options were added to the Home page. 
    
-    [[Image:ddjk3d43_24hp29jpfh_b.jpg]]    
+    https://urchin-web-analytics-software.googlecode.com/svn/trunk/Printview_Permalink.png    
    
  
      New capability to allow displaying different metric sets at different drill-down levels and switching the detail level in Urchin reports appeared in Urchin 7.  
