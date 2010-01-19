@@ -1,96 +1,33 @@
-         
-   
- 
- '''New Reporting User Interface''' 
+=New Reporting User Interface=
 
+  
+<p align="justify"> Urchin 7 Reporting UI was significantly changed. First of all now it has new GA like look (including style of report tables and charts). </p> 
  
-   
+<p align="justify"> The Advanced Segments feature introduced in Urchin 7 allows creation new segments and applying default and created segments to reports.  
+  
+<p>[[Image:ddjk3d43_22jbc3f9g5_b.jpg]]
  
-     Urchin 7 Reporting UI was significantly changed. First of all now it has new GA like look (including style of report tables and charts).  
-
+<p align="justify"> To provide Urchin users the permanent links to Urchin reports, preserving the exact settings of report, filtering, paging etc, which can be embedded into e-mail or Web pages, some new feature "Permalink" appeared.   Print View and Permalink options were added to the Home page. 
+<p>[[Image:Printview_Permalink.png]]
  
- The Advanced Segments feature introduced in Urchin 7 allows creation new segments and applying default and created segments to reports.  
-
-    [[Image:ddjk3d43_22jbc3f9g5_b.jpg]]
-  To provide Urchin users the permanent links to Urchin reports, preserving the exact settings of report, filtering, paging etc, which can be embedded into e-mail or Web pages, some new feature "Permalink" appeared.   The Print View and Permalink options were added to the Home page. 
-   
-    [[Image:Printview_Permalink.png]]
-   
- 
-     New capability to allow displaying different metric sets at different drill-down levels and switching the detail level in Urchin reports appeared in Urchin 7.  
-
-      [[Image:ddjk3d43_20fn6d7fcw_b.jpg]] 
- 
-       
- Some of reports were renamed and regrouped by content to simplify navigation between reports and analysis of business data. Some reports were organised in tabs. For example, such reports as the Browser Versions, the Platform Versions and the Browser &amp; Platform Combos from the "IT Reports" section/"Browsers &amp; Robots" subsection were merged into a single Browsers &amp; Platforms tabbed report. 
-
- 
-   
- 
- The following reports were renamed/regrouped: 
-
- 
-   
- 
- 1)    Marketing Optimization section/Marketing Campaign Results subsection: 
-
- 
- "Campaign Conversion", "Source Conversion", "Medium Conversion" reports merged into a single вЂњConversion OverviewвЂќ report with detail level. 
-
- 
- 2)    вЂњMarketing OptimizationвЂќ section/вЂќMarketing Campaign ResultsвЂќ subsection: 
-
- 
- "Campaign ROI", "Source ROI", "Medium ROI" repots merged into a single "ROI Overview" report with detail level. 
-
- 
- 3)    The вЂњUnique Visitor TrackingвЂќ section renamed to the вЂњVisitor TrackingвЂќ. 
-
- 
- 4)    The "Engagement Metrics" report moved from the вЂњContent OptimizationвЂќ section/ вЂњContent PerformanceвЂќ subsection to the вЂњMarketing OptimizationвЂќ section/ вЂњVisitor TrackingвЂќ subsection. 
-
- 
- 5)    The вЂњContent By TitlesвЂќ report merged from the вЂњContent OptimizationвЂќ section/ вЂњContent PerformanceвЂќ subsection into the вЂњTop ContentвЂќ report of the same subsection with detail level. 
-
- 
- 6)    The вЂњContent OptimizationвЂќ section/ вЂњWeb Design ParametersвЂќ subsection: 
-
- 
- "Screen Resolution", "Screen Colors", "Flash Enabled", "Java Enabled" reports merged into a single "Browser Capabilities" report with multiple tabs. 
-
- 
- 7)    The вЂњConnection SpeedвЂќ report merged as a tab of the вЂњContent OptimizationвЂќ section/ вЂњWeb Design ParametersвЂќ subsection into the вЂњNetwork LocationвЂќ report of the вЂњMarketing OptimizationвЂќ section/ вЂњVisitor Segment PerformanceвЂќ subsection. 
-
- 
- 8)    вЂњContent OptimizationвЂќ section/вЂќWeb Design ParametersвЂќ subsection: 
-
- 
- "Browser Versions", "Platform Versions", "Browser &amp; Platform Combos" reports merged into a single "Browsers &amp; Platforms" tabbed report.  
-
- 
- 9)     вЂњE-CommerceвЂќ section/вЂќProduct MerchandisingвЂќ subsection:  
-
- 
- "Product Performance", "Product Categories" reports have got detail level at drill downs.  
-
- 
- 10)  вЂњE-CommerceвЂќ section/вЂќProduct MerchandisingвЂќ subsection:  
-
- 
- "Product Country Correlation", "Product City Correlation" reports merged into a single "Product-Location Correlation" report with detail level. 
-
- 
- 11)  The вЂњIT ReportsвЂќ section\вЂќBrowsers &amp; RobotsвЂќ subsection: 
-
- 
- "Browser Versions", "Platform Versions", "Browser &amp; Platform Combos" reports merged into a single "Browsers &amp; Platforms" tabbed report. 
-
-     
-
-   Context links to HC articles were added into the Urchin 7 Reporting UI. 
-
- 
-   
-    [[Image:ddjk3d43_23jmxvrngq_b.jpg]]      
-   
+<p align="justify"> New capability to allow displaying different metric sets at different drill-down levels and switching the detail level in Urchin reports appeared in Urchin 7.  
+<p>[[Image:ddjk3d43_20fn6d7fcw_b.jpg]] 
+  
+<p align="justify"> Some of reports were renamed and regrouped by content to simplify navigation between reports and analysis of business data. Some reports were organised in tabs. For example, such reports as "Browser Versions", "Platform Versions" and "Browser & Platform Combos" from "IT Reports" section/"Browsers & Robots" subsection were merged into a single "Browsers & Platforms" tabbed report. 
+<p>
+<p>The following reports were renamed/regrouped: 
+  
+  # "Marketing Optimization" section/"Marketing Campaign Results" subsection:<br> "Campaign Conversion", "Source Conversion", "Medium Conversion" reports merged into a single "Conversion Overview" report with detail level.
+  # "Marketing Optimization" section/"Marketing Campaign Results" subsection:<br> "Campaign ROI", "Source ROI", "Medium ROI" repots merged into a single "ROI Overview" report with detail level. 
+  # "Unique Visitor Tracking" section renamed to "Visitor Tracking". 
+  # "Engagement Metrics" report moved from "Content Optimization" section/ "Content Performance" subsection to "Marketing Optimization" section/"Visitor Tracking" subsection. 
+  # "Content By Titles" report merged from "Content Optimization" section/ "Content Performance" subsection into "Top Content" report of the same subsection with detail level. 
+  # "Content Optimization" section/"Web Design Parameters" subsection:<br> "Screen Resolution", "Screen Colors", "Flash Enabled", "Java Enabled" reports merged into a single "Browser Capabilities" report with multiple tabs. 
+  # "Connection Speed" report merged as a tab of "Content Optimization" section/ "Web Design Parameters" subsection into "Network Location" report of "Marketing Optimization" section/ "Visitor Segment Performance" subsection. 
+  # "Content Optimization" section/"Web Design Parameters" subsection:<br> "Browser Versions", "Platform Versions", "Browser & Platform Combos" reports merged into a single "Browsers & Platforms" tabbed report.  
+  # "E-Commerce" section/"Product Merchandising" subsection:<br> "Product Performance", "Product Categories" reports have got detail level at drill downs.  
+  # "E-Commerce" section/"Product Merchandising" subsection:<br> "Product Country Correlation", "Product City Correlation" reports merged into a single "Product-Location Correlation" report with detail level. 
+  # "IT Reports" section\"Browsers & Robots" subsection:<br> "Browser Versions", "Platform Versions", "Browser & Platform Combos" reports merged into a single "Browsers & Platforms" tabbed report. 
+<p align="justify"> Context links to HC articles were added into the Urchin 7 Reporting UI. 
+<p> [[Image:ddjk3d43_23jmxvrngq_b.jpg]]      
    
