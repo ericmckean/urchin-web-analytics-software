@@ -10,11 +10,12 @@ The Lookup Table filter can be used to:
 How to use the filter: 
 
     
-1.  In the Filter Wizard:Settings screen, enter your desired filter name (Filter Name field).
-2. Select "Lookup Table" as the filter type. 
+1. In the Filter Wizard:Settings screen, enter your desired filter name (Filter Name field).
+2. Select "Lookup Table" as the filter type.
 3. Select the field you want to update from the Filter Field drop down menu.
-4. Select an internal preconfigured table (see [[How To Use Master Tracking Codes]]) from the Table Name drop down menu or add an external preconfigured table (Urchin 7.0+). External Lookup tables can be added like external Log sources via the "Browse" dialog.
-  
+4. Select an internal preconfigured table (see [[How To Use Master Tracking Codes]]) from the Table Name drop down menu or add an external preconfigured table (Urchin 7.0+). External Lookup tables can be added like external Log sources via the "Browse" dialog. 
+
+
 '''Internal Lookup Table'''   
 
 To add an Internal lookup table:
