@@ -25,10 +25,13 @@ urchinctl restart
 
 === Restrictions ===
 
-The profile processing job is extremely RAM- and IO-hungry. Blind increasing of the parameter MaxConcurrentProfileTasks will most probably lead to significant degradation of processing speed due to exhausting of system resources.   It is highly recommended to increase MaxConcurrentProfileTasks only: 
-* if you have enough RAM to fit several jobs in memory
-* when profiles and log sources are physically located on different hard disk drives or you have a high-speed hard disk drive
-  Approximate resource consumption:                      
+The profile processing job is extremely RAM- and IO-hungry. Blind increasing of the parameter MaxConcurrentProfileTasks will most probably lead to significant degradation of processing speed due to exhausting of system resources. 
+
+It is highly recommended to increase MaxConcurrentProfileTasks only: 
+  * if you have enough RAM to fit several jobs in memory
+  * when profiles and log sources are physically located on different hard disk drives or you have a high-speed hard disk drive
+
+Approximate resource consumption:
 ||Number of parallel jobs||RAM, MB||IO read, MB/s||IO write, MB/s||
 ||1||1000||10||5||
 ||2||2000||20||10||
