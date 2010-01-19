@@ -1,21 +1,8 @@
-<p><b><font class="Apple-style-span" size="6">Custom Order of Filters</font></b></p>
-<p style="margin:0in 0in 0.0001pt">&nbsp;</p>
-<p style="margin:0in 0in 0.0001pt"><font class="Apple-style-span" size="3">Beginning with&nbsp; Urchin 7.0, the user can control the order in which log and profile filters are applied during Profile processing.</font></p>
-<p style="margin:0in 0in 0.0001pt"><font class="Apple-style-span" size="3"><br>
-</font></p>
-<p style="margin:0in 0in 0.0001pt"><font class="Apple-style-span" size="3">New "Up" and "Down" arrows on the Profile Settings\Filters and </font><font class="Apple-style-span" size="3">Log Source Settings</font><font class="Apple-style-span" size="3">\Log Filters tabs allow the user to change the order of filters applied to profile or log source.</font></p>
-<p style="margin:0in 0in 0.0001pt"><br>
-</p>
-<p style="margin:0in 0in 0.0001pt"></p>
-<div id="lij-" style="text-align:left">
-<p><img src="File?id=ddjk3d43_13fkxq4kf8_b" style="height:387px;width:699px"></p>
-</div>
-<br>
-<p style="margin:0in 0in 0.0001pt"><font class="Apple-style-span" size="3">If filters are defined for profile and log source simultaneously, log-level filters are applied first. It is also important to note that lookup table, search&amp;replace and advanced filters can create new field values and modify the existing ones. Users should take it into consideration when specifying the filter processing order.&nbsp;</font></p>
-<p style="margin:0in 0in 0.0001pt"><br>
-</p>
-<p style="margin:0in 0in 0.0001pt"><font class="Apple-style-span" size="3"><font class="Apple-style-span" size="3">The ability to change filter order is reserved for Super Admin and Account Admin users. </font><br>
-</font></p>
-<p style="margin:0in 0in 0.0001pt"><font class="Apple-style-span" size="3">&nbsp;&nbsp;&nbsp; <br>
-</font></p>
-<br>
+=Custom Order of Filters= 
+
+<p> Beginning with Urchin 7.0, the user can control the order in which log and profile filters are applied during Profile processing.</p>
+<p> New "Up" and "Down" arrows on the Profile Settings\Filters and Log Source Settings\Log Filters tabs allow the user to change the order of filters applied to profile or log source.</p>
+<p> If filters are defined for profile and log source simultaneously, log-level filters are applied first. It is also important to note that lookup table, search&replace and advanced filters can create new field values and modify the existing ones. Users should take it into consideration when specifying the filter processing order.</p>
+<p> The ability to change filter order is reserved for Super Admin and Account Admin users.</p>
+
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Order_of_filters_buttons.png] 
