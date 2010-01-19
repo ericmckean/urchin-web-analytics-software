@@ -1,34 +1,51 @@
-'''U7 HC: autoupdate: Urchin Automatic Updates Utility'''
+=U7 HC: autoupdate: Urchin Automatic Updates Utility=
 
     
 === Overview ===
  
- The autoupdate utility is used to check for, download, and install available Urchin component updates.  
+The autoupdate utility is used to check for, download, and install available Urchin component updates.  
 
-    
- Operations that autoupdate can perform are: 
-
- 
-*  automatic upgrades of Urchin components such as the Urchin product, Embedded Help, Help Center documentation and Geo database.
-*  rollback of an upgrade process if there are errors.
+Operations that autoupdate can perform are: 
+  * automatic upgrades of Urchin components such as the Urchin product, Embedded Help, Help Center documentation and Geo database.
+  * rollback of an upgrade process if there are errors.
  
 === Usage ===
- 
-    The autoupdate utility can be invoked by the Urchin scheduler (urchind) on a scheduled basis or manually via the command line. This task is set to check for new updates and can be configured to occur at a specific time by the administrator via admin interface.
+The autoupdate utility can be invoked by the Urchin scheduler (urchind) on a scheduled basis or manually via the command line. This task is set to check for new updates and can be configured to occur at a specific time by the administrator via admin interface.
 
-       The default behavior is to check for updates, download and install the new urchin components.  Usage is as follows: autoupdate [-h] [-v] [-V] [-u] [-r] [-e] [-g] [-H] [-D] [-T] [-f]  
- Where: 
+The default behavior is to check for updates, download and install the new urchin components.  Usage is as follows:<br> 
+{{{
+autoupdate [-h] [-v] [-V] [-u] [-r] [-e] [-g] [-H] [-D] [-T] [-f]
+}}}
 
-  -h            Prints help information and exits -v            Prints version information and exits -V            Prints components version numbers and exits -u            Updates entire product to newer version -r            Rolls back entire product to previously installed version -e            Updates help articles -g            Updates GeoDB -H            Specifies to log run output to history file -D            Enabled debug mode -T &lt;task id&gt;  Specifies the task history record to update               Specifying -T forces use of -H               Specifying -T prohibits use of -u -l -g -f &lt;path&gt;     Specifies locally served update package               Specifying -f also requires explicit -u -l -g  
-'''Examples''' 
+Where: 
+{{{
+  -h            Prints help information and exits
+  -v            Prints version information and exits
+  -V            Prints components version numbers and exits
+  -u            Updates entire product to newer version
+  -r            Rolls back entire product to previously installed version
+  -e            Updates help articles
+  -g            Updates GeoDB
+  -H            Specifies to log run output to history file 
+  -D            Enabled debug mode 
+  -T <task id>  Specifies the task history record to update               
+                Specifying -T forces use of -H               
+                Specifying -T prohibits use of -u -l -g 
+  -f <path>     Specifies locally served update package
+                Specifying -f also requires explicit -u -l -g  
+}}}
 
-    
- To upgrade all Urchin components to the latest version: 
-
-  autoupdate -u  
- If no updates are available for Urchin components, the message "Urchin is up to date: ''LAST_UPDATE_TIME''" is displayed. 
-
+=== Examples ===
    
-To upgrade Urchin Help Articles to the latest version:
+To upgrade all Urchin components to the latest version: 
+{{{
+  autoupdate -u  
+}}}
 
-  autoupdate -e   '''Note:''' The autoupdate utility needs an internet connection to be able to check for and download new updates. The utility uses port 80 to communicate with the Web server providing the updates. It is possible that you will have problems when going through firewalls and proxy servers when performing updates. Please consult your network administrator if this is the case.   
+If no updates are available for Urchin components, the message "Urchin is up to date: _"LAST_UPDATE_TIME"_ is displayed. 
+
+To upgrade Urchin Help Articles to the latest version:
+{{{
+  autoupdate -e 
+}}}
+*Note:* The autoupdate utility needs an internet connection to be able to check for and download new updates. The utility uses port 80 to communicate with the Web server providing the updates. It is possible that you will have problems when going through firewalls and proxy servers when performing updates. Please consult your network administrator if this is the case.   
