@@ -13,7 +13,7 @@ This functionality targets middle and high volume enterprise clients:
 === Configuration of parallel profile processing ===
 
 By default the newly installed or upgraded instance of Urchin 7.0 allows only one profile processing at a time. In order to enable the parallel profile processing:
-  # Uncomment the option "MaxConcurrentProfileTasks" in `<`urchin_home`>`/etc/urchin.conf and set it to necessary value.<br>For example:
+  # Uncomment the option `MaxConcurrentProfileTasks` in `<`urchin_home`>`/etc/urchin.conf and set it to necessary value.<br>For example:
 {{{
 MaxConcurrentProfileTasks: 2 
 }}}
@@ -25,9 +25,9 @@ urchinctl restart
 
 === Restrictions ===
 
-The profile processing job is extremely RAM- and IO-hungry. Blind increasing of the parameter "MaxConcurrentProfileTasks" will most probably lead to significant degradation of processing speed due to exhausting of system resources. 
+The profile processing job is extremely RAM- and IO-hungry. Blind increasing of the parameter `MaxConcurrentProfileTasks` will most probably lead to significant degradation of processing speed due to exhausting of system resources. 
 
-It is highly recommended to increase "MaxConcurrentProfileTasks" only: 
+It is highly recommended to increase `MaxConcurrentProfileTasks` only: 
   * if you have enough RAM to fit several jobs in memory
   * when profiles and log sources are physically located on different hard disk drives or you have a high-speed hard disk drive
 
