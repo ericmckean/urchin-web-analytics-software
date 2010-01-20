@@ -2,7 +2,7 @@
 
 <p align="justify"> Beginning with Urchin 7.0, Embedded help (EH) and Urchin Help Center articles (HC) are delivered in the Urchin package.
 
-<p align="justify"> EH is extracted out of the product and bundled with it by default in "%URCHIN_HOME%/htdocs/eh/VVVV/LANG_CODE" folder (where V – EH version, LANG_CODE - language code). Local HC articles are located in  "URCHIN_HOME/htdocs/hc/VVVV/ll-LL" folder (V - version, l - lower-case language code, and L - upper-case region code). 
+<p align="justify"> EH is extracted out of the product and bundled with it by default in "%URCHIN_HOME%/htdocs/help/eh/VVVV/LANG_CODE" folder (where V – EH version, LANG_CODE - language code). Local HC articles are located in  "URCHIN_HOME/htdocs/help/hc/VVVV/ll-LL" folder (V - version, l - lower-case language code, and L - upper-case region code). 
 
 <p align="justify"> The same instance of EH and local HC articles can be used by some Urchin instances. In this case base URL to the shared EH and HC articles can be defined in urchin.conf file:
 <br> helpBaseUrl: /help/ 
