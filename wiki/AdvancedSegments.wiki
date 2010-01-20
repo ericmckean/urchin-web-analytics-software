@@ -55,3 +55,5 @@ Default set of advanced segments is visible to all users and all their profiles.
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Adv_seg_apply_to_prof.PNG]
 
 In order to limit visibility of the segment to current profile only, simply 'Edit' and 'Save' it - the re-saved segment will be visible for the current profile of the current user.
+
+*Known limitations:* Current implementation of Advanced Segments does not support segmentation of paths, transactions and transaction items. Only metrics are segmented. Applying the segmentation to the reports in corresponding sections will result in "(no data)" for dimensions.
