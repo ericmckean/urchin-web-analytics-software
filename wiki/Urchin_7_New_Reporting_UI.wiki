@@ -26,7 +26,7 @@
   # "Unique Visitor Tracking" subsection renamed to "Visitor Tracking". 
   # "Engagement Metrics" report moved from "Content Optimization" section/ "Content Performance" subsection to "Marketing Optimization" section/"Visitor Tracking" subsection. 
   # "Content By Titles" report merged from "Content Optimization" section/ "Content Performance" subsection into "Top Content" report of the same subsection with detail level. 
-  # "Content Optimization" section/"Web Design Parameters" subsection:<br> "Screen Resolution", "Screen Colors", "Flash Enabled", "Java Enabled" reports merged into a single "Browser Capabilities" report with multiple tabs. 
+  # "Content Optimization" section/"Web Design Parameters" subsection:<br> "Screen Resolutions", "Screen Colors", "Flash Version", "Java Enabled" reports merged into a single "Browser Capabilities" report with multiple tabs. 
   # "Connection Speed" report merged as a tab of "Content Optimization" section/ "Web Design Parameters" subsection into "Network Location" report of "Marketing Optimization" section/ "Visitor Segment Performance" subsection. 
   # "Content Optimization" section/"Web Design Parameters" subsection:<br> "Browser Versions", "Platform Versions", "Browser & Platform Combos" reports merged into a single "Browsers & Platforms" tabbed report.  
   # "E-Commerce" section/"Product Merchandising" subsection:<br> "Product Performance", "Product Categories" reports have got detail level at drill downs.  
