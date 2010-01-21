@@ -23,7 +23,7 @@
   
   # "Marketing Optimization" section/"Marketing Campaign Results" subsection:<br> "Campaign Conversion", "Source Conversion", "Medium Conversion" reports merged into a single "Conversion Overview" report with detail level.
   # "Marketing Optimization" section/"Marketing Campaign Results" subsection:<br> "Campaign ROI", "Source ROI", "Medium ROI" repots merged into a single "ROI Overview" report with detail level. 
-  # "Unique Visitor Tracking" section renamed to "Visitor Tracking". 
+  # "Unique Visitor Tracking" subsection renamed to "Visitor Tracking". 
   # "Engagement Metrics" report moved from "Content Optimization" section/ "Content Performance" subsection to "Marketing Optimization" section/"Visitor Tracking" subsection. 
   # "Content By Titles" report merged from "Content Optimization" section/ "Content Performance" subsection into "Top Content" report of the same subsection with detail level. 
   # "Content Optimization" section/"Web Design Parameters" subsection:<br> "Screen Resolution", "Screen Colors", "Flash Enabled", "Java Enabled" reports merged into a single "Browser Capabilities" report with multiple tabs. 
