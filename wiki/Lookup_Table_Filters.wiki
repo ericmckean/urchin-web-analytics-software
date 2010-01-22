@@ -37,4 +37,4 @@ To add an External lookup table:
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Lookup_ext_create.PNG]
 
-*Note*: Local file system, NFS and UNC (Windows) shares are supported. No support for FTP/HTTP sources is provided in Urchin 7.000.            
+*Note*: Local file system, NFS and UNC (Windows) shares are supported. FTP/HTTP sources are not supported in Urchin 7.000.            
