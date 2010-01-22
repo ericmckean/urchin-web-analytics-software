@@ -105,6 +105,13 @@ http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=
 </record>
 </tns:getDataResponse>
 }}}
+
+===Query Examples===
+====Extract visits from Yahoo! campaigns where more than one pages has been visited====
+{{{
+http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
+&dimensions=u:visitor_id,u:session_ip,u:utm_campaign&metrics=u:pages,u:visits,u:transactions&sort=u:visitor_id&filters=u:utm_source%3D~yahoo,u:pages%3E1&table=256
+}}}
  
 === How to enable older version of the Urchin Data API in Urchin 7.0? ===
 
