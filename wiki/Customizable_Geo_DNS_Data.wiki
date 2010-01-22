@@ -34,13 +34,13 @@ To change GeoDB settings for a profile, go to Configuration -> Urchin Profiles -
 
 Beginning with Urchin 7.0, it's possible to define custom DNS entries.
 
-When using either the domain.local file in the data/geodata directory or some other custom file, the format of the entries should be one entry per line, beginning with the IP or network address, followed by a space or tab, and then the domain for that address. Spaces are not allowed in the domain name. Allowed forms include the following:
+The custom DNS entries ca be defined in the domain.local file, located in the data/geodata directory or some other custom file. Entries from the domain.local will be imported automatically on the next scheduled geo-update, the entries from custom file have to be manually imported via geo-update utility. The format of the entries should be one entry per line, beginning with the IP or network address, followed by a space or tab, and then the domain for that address. Spaces are not allowed in the domain name. Allowed forms include the following:
 
   * 192.168.10.100 somehost.somedomain.net (Explicit hostname IP)
   * 192.168.10.16/24 somedomain.net (IP address with network prefix)
   * 192.168.10.0/24 somedomain.net (subnet with network prefix)
 
-When processing Urchin will check for specific IPs first and then look for encompassing network ranges.
+While processing log files, Urchin will check for specific IPs first and then look for encompassing network ranges. Custom DNS entries are processes before the DNS entries from geo-database.
 
 ==geo-update: DNS Database Update Utility==
 
