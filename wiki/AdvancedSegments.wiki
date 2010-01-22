@@ -31,7 +31,7 @@ The Manage Urchin Advanced Segments page can be found under the My Customization
 
 To create and configure a new segment, click the ''Create new custom segment'' button on the Manage Urchin Visit Segments page. 
 
-[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Adv_seg_create_new_seg_btn.PNG]
+[http://urchin-web-analytics-software.googlecode.com/svn/trunk/advanced_segments_create.PNG]
 
 Provide a Segment Name, select Dimension or Metric, select Condition and provide required Value.
 
