@@ -3,7 +3,7 @@
 ----
   * Marketing Optimization/Marketing Campaign Results
 
-  * "Campaign Conversion", "Source Conversion", "Medium Conversion" merged into a single "Conversion" report with DL
+  * "Campaign Conversion", "Source Conversion", "Medium Conversion" merged into a single "Conversion" report with Display Level (DL)
 
   * "Campaign ROI", "Source ROI", "Medium ROI" merged into a single "ROI" report with DL
 
