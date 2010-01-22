@@ -12,6 +12,7 @@ The design model for Event Tracking is highly flexible, and its use can be exten
 ==Setting Up Event Tracking==
 
 Ensure website is configured for tracking with *an updated urchin.js tracking code* [http://code.google.com/p/urchin-web-analytics-software/source/browse/trunk/urchin.js]. Refer to Install Guide ('''Using Urchin with UTM Tracking''' section) for details. 
+
 Call the __utmTrackEvent() method in the source code for every element(object) of the website to be tracked with Event Tracking.    __utmTrackEvent() method specification:   __utmTrackEvent(cat, action, label, value, page), where     
   * cat(category, required) - name for the group of objects to be tracked (e.g.: Video, Audio, etc.)   
   * action (required) - action is attached to an object and represent the action performed on the object (e.g.: Play, Stop, etc.)   
