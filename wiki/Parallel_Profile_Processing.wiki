@@ -30,7 +30,7 @@ The profile processing job is extremely RAM- and IO-hungry. Blind increasing of 
 It is highly recommended to increase `MaxConcurrentProfileTasks` only: 
   * if you have enough RAM to fit several jobs in memory
   * when profiles and log sources are physically located *on different physical hard disk drives* or you have a high-speed hard disk drive
-  * Urchin is used in Data Center mode
+  * if Urchin is used in Data Center mode
 
 Approximate resource consumption:
 ||Number of parallel jobs||RAM, MB||IO read, MB/s||IO write, MB/s||
