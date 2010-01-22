@@ -1,12 +1,12 @@
 =Customizable Geo/DNS Data (Urchin 7.0+)=
 
-Beginning with Urchin 7.0, Geo Data has been divided into the following databases:
+Beginning with Urchin 7.0, geo information has been divided into the following databases:
 
   * Domains database (Domains report);
-  * Organizations database (Network Location);
-  * Several Metro databases (Geo Location/Geo Map Overlay/Connection Speed).
+  * Organizations database (Network Location report);
+  * Several geo databases (Geo Location/Geo Map Overlay/Connection Speed).
 
-Urchin ships with several Metro databases, each providing different levels of metro information:
+Urchin ships with several geo databases, each providing different levels of geo information:
 
   * World (contains detailed Country/Region/City information for the World)
   * World Lightweight (contains only Country-level information for the World)
