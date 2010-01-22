@@ -1,5 +1,5 @@
 = Advanced Segmentation =
-== Advanced Segment ==
+== Advanced Segments ==
 
 Advanced Segments is a new feature, allows to filter reporting data similar to GA Advanced Segmentation. Feature is accessible on Urchin Reporting UI from toolbar (see screenshot below)
 
