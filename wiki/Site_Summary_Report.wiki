@@ -1,9 +1,9 @@
 =Site Summary Report=
 
 The Site Summary report shows totals and average statistics for the currently selected Date Range. <br>      
-Totals are calculated for the selected Date Range and averages are computed by dividing the totals by the number of non-zero days in the selected Date Range.   
+Totals are calculated for the selected Date Range and averages are computed by dividing the totals by the number of the days in the selected Date Range.   
 
-*Note:* Site Summary report depends on the selected dashboard. It shows only the statistics, most relevant for the selected Dashboard role, i.e. the report for the Marketer section shows information like Goal Conversions and Bounce Rate, while the Webmaster section shows the numbers of valid/error hits and number of bytes transferred.  
+*Note:* Site Summary report content depends on currently selected dashboard. It shows the statistics, most relevant for the selected Dashboard role, i.e. the report for the Marketer section shows information like Goal Conversions and Bounce Rate, while the Webmaster section shows the numbers of valid/error hits and number of bytes transferred.  
 
 ==Calculation Methodology==
 
@@ -21,15 +21,16 @@ Totals are calculated for the selected Date Range and averages are computed by d
   * *CTR:* *Click Through Rate* is the percentage of known impressions that result in clicks. It is calculated as Clicks divided by Impressions.
   * *Total Cost:* The total cost of referrals, and in most cases refers to the costs incurred on a cost-per-click search engine such as Google.
   * *CPC:* *Cost-per-click.* The total amount you pay each time someone clicks your ad. Total CPC is determined by totaling the cost of all clicks
-  * *Total Revenue:* The total revenue realized from e-commerce activity.
+  * *Total Revenue:* The total revenue received from e-commerce activity.
   * *ROI:* *Return on Investment* is the percentage return calculated as (revenue - cost)/cost.<br>
 <br>*Goal Conversion section:* This report section shows total number of each goal conversions over time. <br> 
 <br>*E-Commerce section:* This report section shows total and average Revenue and Transactions over the currently selected Date Range. <br>
 <br>*Traffic section:*
-  * *Total Hits:* The total number of any request to your site.
-  * *Valid Hits:* The Valid Hits describe the total number of successful connections to your site. All successful hits and errors are determined by the http status codes within your logs
-  * *Error Hits:* The Error Hits Graph will show the number of unsuccessful attempts to connect to your site.
-  * *Total Bytes:* The quantity of network bandwidth used by the files requested during the selected Date Range.
-*Note:*  
+  * *Total Hits:* The total number of requests to your site.
+  * *Valid Hits:* the total number of successful connections to your site.
+  * *Error Hits:* the number of unsuccessful attempts to connect to your site.
+  * *Total Bytes:* the quantity of network bandwidth used by the files requested during the selected Date Range.
+*Notes:*  
   # All successful hits and errors are determined by the http status codes within your logs.
   # Because Bytes numbers can be very large, abbreviations are used as appropriate, such as MB for megabytes (~millions of bytes).
+  # Events affect the bounce rate.
