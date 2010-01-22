@@ -1,7 +1,7 @@
 = Advanced Segmentation =
 == Advanced Segments ==
 
-Advanced Segments is a new feature, allows to filter reporting data similar to GA Advanced Segmentation. Feature is accessible on Urchin Reporting UI from toolbar (see screenshot below)
+Advanced Segments is a new feature, allows to filter reporting data similar to GA Advanced Segmentation. Feature is accessible on Urchin Reporting UI from toolbar 
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/advanced_segments_opened.PNG] 
 
@@ -10,7 +10,7 @@ Each advanced segment is a combination of filters joined by "AND" condition. Met
 {{{
 Example: "refferal" matches "yahoo" AND "pageviews" greater than "1"
 }}}
-Advanced segments editor is available on My Customizations -> Advanced Segments page (see screenshot below)
+Advanced segments editor is available on My Customizations -> Advanced Segments page 
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/advanced_segments_navigation.PNG] 
 
