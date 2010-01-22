@@ -25,8 +25,7 @@ There are altogether four different types of advanced segmentation:
   * transaction item segmentation - not supported
 
 The Manage Urchin Advanced Segments page can be found under the My Customizations -> Advanced Segments link. This page displays a list of segments that have been configured and contains controls for creating, editing and removing the Advanced Segments. 
-
-[http://urchin-web-analytics-software.googlecode.com/svn/trunk/Adv_seg_link.PNG]     
+  
 
 ===Creating New Segments===   
 
