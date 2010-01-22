@@ -30,7 +30,7 @@ Provide a Segment Name, select Dimension or Metric, select Condition and provide
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Adv_seg_create_new_seg_settings.PNG]
 
-Click ''Add "and" statement'' to add a Dimension or Metric to the segment.   Click Save to complete the New Segment creation.     Once the segment is created, it can be edited, deleted or applied to other profiles (according to User access permissions).      
+Click ''Add 'and' statement'' to add a new Dimension or Metric to the segment.   Click Save to complete the New Segment creation.     Once the segment is created, it can be edited, deleted or applied to other profiles (according to User access permissions).      
 
 ===Editing Segments===      
 
@@ -46,7 +46,7 @@ Unwanted Dimension or Metric query strings may be removed from a segment definit
 
 ===Deleting Segments===     
 
-To delete an existing segment, click the '' delete'' link in the Actions area for the corresponding segment.     
+To delete an existing segment, click the ''delete'' link in the Actions area for the corresponding segment.     
 
 ===Applying Segments to the Profiles===   
 
@@ -56,4 +56,6 @@ Default set of advanced segments is visible to all users and all their profiles.
 
 In order to limit visibility of the segment to current profile only, simply 'Edit' and 'Save' it - the re-saved segment will be visible for the current profile of the current user.
 
-*Known limitations:* Current implementation of Advanced Segments does not support segmentation of paths, transactions and transaction items. Only metrics are segmented. Applying the segmentation to the reports in corresponding sections will result in "(no data)" for dimensions.
+*Known limitations:* 
+  * Current implementation of the Advanced Segmentation does not support segmentation of paths, transactions and transaction items. Only metrics are segmented. Applying the segmentation to the reports in corresponding sections will result in "(no data)" for dimensions.
+  * Data Over Time, To-date Lifetime Value, Visitor History Drilldown and Cross segmentation do not take into account the Advanced Segments
