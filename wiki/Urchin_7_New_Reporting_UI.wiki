@@ -17,7 +17,7 @@
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Printview_Permalink.png] 
  
-<p align="justify"> Reports has been renamed and regrouped to simplify navigation and unclutter the navigation panel. Tabs have been introduced to keep closely-related reports together. Please see [http://code.google.com/p/urchin-web-analytics-software/wiki/ReportRegrouping|Urchin 7 Report Regrouping] for more details.
+<p align="justify"> Reports have been renamed and regrouped to simplify navigation and unclutter the navigation panel. Tabs have been introduced to keep closely-related reports together. Please see [http://code.google.com/p/urchin-web-analytics-software/wiki/ReportRegrouping|Urchin 7 Report Regrouping] for more details.
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Browsers_Platforms.png] 
 
