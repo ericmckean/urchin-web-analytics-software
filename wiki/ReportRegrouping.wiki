@@ -3,9 +3,9 @@
 ----
   * Marketing Optimization/Marketing Campaign Results
 
-  * "Campaign Conversion", "Source Conversion", "Medium Conversion" merged into a single "Conversion" report with Display Level (DL)
+  * "Campaign Conversion", "Source Conversion", "Medium Conversion" merged into a single "Conversion" report with Dimension Selector (DS)
 
-  * "Campaign ROI", "Source ROI", "Medium ROI" merged into a single "ROI" report with DL
+  * "Campaign ROI", "Source ROI", "Medium ROI" merged into a single "ROI" report with DS
 
 ----
 
@@ -13,7 +13,7 @@
 
   * "Engagement Metrics" moved to "Visitor Tracking" subsection 
 
-  * "Content By Titles" merged into "Top Content"  with DL 
+  * "Content By Titles" merged into "Top Content"  with DS
 
   * "Screen Resolution", "Screen Colors", "Flash Enabled", "Java Enabled" merged into a single "Browser Capabilities" report with tabs  
 
@@ -23,21 +23,20 @@
 
   * Content Optimization/Web Design Parameters  
 
-  * "Browser Versions", "Platform Versions", "Browser &amp; Platform Combos" merged into a single "Browsers &amp; Platforms" tabbed report
+  * "Browser Versions", "Platform Versions", "Browser & Platform Combos" merged into a single "Browsers &amp; Platforms" tabbed report
 
 ----
 
   * E-Commerce/Product Merchandising 
 
-  * "Product Performance", "Product Categories" got a DL at drill downs
+  * "Product Performance", "Product Categories" got a DS at drill downs
 
-  * "Product Country Correlation", "Product City Correlation" merged into a single "Product Geo Correlation" report with DL
+  * "Product Country Correlation", "Product City Correlation" merged into a single "Product Geo Correlation" report with DS
 
 ----
 
   * IT Reports\Browsers &amp; Robots
 
-  * "Browser Versions", "Platform Versions", "Browser &amp; Platform Combos" merged into a single "Browsers &amp; Platforms" tabbed report
+  * "Browser Versions", "Platform Versions", "Browser & Platform Combos" merged into a single "Browsers & Platforms" tabbed report
 
-
-*A new dataset has been added to _"Visitor Tracking"_ section that shows comparison of First Time Visitors vs Returning Visitors over time.* 
+  * A new dataset has been added to _"Visitor Tracking"_ section that shows comparison of First Time Visitors vs Returning Visitors over time.* 
