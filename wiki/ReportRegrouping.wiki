@@ -1,0 +1,43 @@
+== Urchin 7 Report Regrouping ==
+
+----
+  * Marketing Optimization/Marketing Campaign Results
+
+  * "Campaign Conversion", "Source Conversion", "Medium Conversion" merged into a single "Conversion" report with DL
+
+  * "Campaign ROI", "Source ROI", "Medium ROI" merged into a single "ROI" report with DL
+
+----
+
+  * "Unique Visitor Tracking" renamed to "Visitor Tracking"  
+
+  * "Engagement Metrics" moved to "Visitor Tracking" subsection 
+
+  * "Content By Titles" merged into "Top Content"  with DL 
+
+  * "Screen Resolution", "Screen Colors", "Flash Enabled", "Java Enabled" merged into a single "Browser Capabilities" report with tabs  
+
+  * "Connection Speed" merged as a tab into the "Network Locations".   
+
+----
+
+  * Content Optimization/Web Design Parameters  
+
+  * "Browser Versions", "Platform Versions", "Browser &amp; Platform Combos" merged into a single "Browsers &amp; Platforms" tabbed report
+
+----
+
+  * E-Commerce/Product Merchandising 
+
+  * "Product Performance", "Product Categories" got a DL at drill downs
+
+  * "Product Country Correlation", "Product City Correlation" merged into a single "Product Geo Correlation" report with DL
+
+----
+
+  * IT Reports\Browsers &amp; Robots
+
+  * "Browser Versions", "Platform Versions", "Browser &amp; Platform Combos" merged into a single "Browsers &amp; Platforms" tabbed report
+
+
+*A new dataset has been added to _"Visitor Tracking"_ section that shows comparison of First Time Visitors vs Returning Visitors over time.* 
