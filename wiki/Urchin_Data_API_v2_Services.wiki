@@ -80,7 +80,7 @@ This service provides the following methods:
 *Note*: In order to see all available dimensions and metrics of these tables please retrieve information via the method "getTableList" of the Report Service or refer to services explorer at <font color="blue">http://your_host:your_port/uapi.html</font>. 
 
 
-For example: Extract visitor details using REST request.
+For example: extract a visit details using REST request.
  Sample REST request: 
 {{{
 http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
