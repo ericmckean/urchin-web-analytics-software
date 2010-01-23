@@ -65,6 +65,7 @@ This service provides the following methods:
 <nregexfilters>50</nregexfilters>
 <nnumericfilters>50</nnumericfilters>
 </table>
+</tns:getTableListResponse>
 }}}
   This response shows that Urchin table #257 can be filtered by 50 numeric and 50 regular expression filters. To see more information please refer to the help article [https://secure.urchin.com/helpwiki/en/Data_API Data API].  
   * *getData* - Starting from the v2 the method fully supports regular expression and numeric filters.  To see more information please refer to the help article [https://secure.urchin.com/helpwiki/en/Data_API Data API].
