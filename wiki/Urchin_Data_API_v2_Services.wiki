@@ -117,12 +117,18 @@ Get visitors from google.com and number of bookings they conducted:
 http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
 &dimensions=u:visitor_id&metrics=u:pages,u:visits,u:transactions&filters=u:utm_source%3D~google,u:request_stem%3D~cart.html&table=256
 }}}
+Get all transactions resulted from bing.com search by a given term:
+{{{
+http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
+&dimensions=u:transaction_id&metrics=u:transactions,u:revenue,u:tax,u:shipping,u:items&filters=u:utm_source%3D~msn,u:utm_term%3D~schwag&table=257
+}}}
 Get all pages visited by a given visitor during a period of time:
 {{{
 http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
 &dimensions=u:request_stem&metrics=u:pages&filters=u:visitor_id%3D~N8T3-DU4N9-7RPL&table=259
 }}}
  
+
 === How to enable older version of the Urchin Data API in Urchin 7.0? ===
 
 By default, newly installed or upgraded instance of Urchin 7.0 engages the latest version of the Data API. To switch to another version please refer to section "How do I switch to another version of the Urchin Data API?" of the article [https://secure.urchin.com/helpwiki/en/Urchin_Data_API_FAQ Urchin Data API FAQ].         
