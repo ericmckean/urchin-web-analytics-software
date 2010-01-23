@@ -51,7 +51,7 @@ This service provides the following methods:
 
     Sample response:
 {{{
- <tns:getTableListResponse xmlns:tns="https://urchin.com/api/urchin/v2/">
+<tns:getTableListResponse xmlns:tns="https://urchin.com/api/urchin/v2/">
 <table>
 <tableId>257</tableId>
 <dimensions>
