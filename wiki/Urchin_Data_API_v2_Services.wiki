@@ -122,6 +122,11 @@ Get all transactions resulted from bing.com search by a given term:
 http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
 &dimensions=u:transaction_id&metrics=u:transactions,u:revenue,u:tax,u:shipping,u:items&filters=u:utm_source%3D~msn,u:utm_term%3D~schwag&table=257
 }}}
+Get daily metrics for a given period:
+{{{
+http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
+&dimensions=u:day&metrics=u:pages,u:visits&table=258
+}}}
 Get all pages visited by a given visitor during a period of time:
 {{{
 http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
