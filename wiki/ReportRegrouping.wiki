@@ -25,7 +25,7 @@
 
   * Content Optimization/Web Design Parameters  
 
-  * "Browser Versions", "Platform Versions", "Browser & Platform Combos" merged into a single "Browsers &amp; Platforms" tabbed report
+  * "Browser Versions", "Platform Versions", "Browser & Platform Combos" merged into a single "Browsers & Platforms" tabbed report
 
 ----
 
@@ -37,7 +37,7 @@
 
 ----
 
-  * IT Reports\Browsers &amp; Robots
+  * IT Reports\Browsers & Robots
 
   * "Browser Versions", "Platform Versions", "Browser & Platform Combos" merged into a single "Browsers & Platforms" tabbed report
 
