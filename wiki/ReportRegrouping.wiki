@@ -17,7 +17,9 @@
 
   * "Screen Resolution", "Screen Colors", "Flash Enabled", "Java Enabled" merged into a single "Browser Capabilities" report with tabs  
 
-  * "Connection Speed" merged as a tab into the "Network Locations".   
+  * "Connection Speed" merged as a tab into the "Network Locations".  
+  
+  * "Visitor Recency" merged into the "Visitor Loyalty" as a data section.  
 
 ----
 
