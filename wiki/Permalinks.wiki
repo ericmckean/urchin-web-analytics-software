@@ -12,6 +12,7 @@ Cicking on "Permalink" button opens a popup from which you can copy the permalin
   * Permanent links include the current settings of profile, selected report, date ranges, filtering, drill-down level, paging and selected advanced segment;
   * Permalink does not preserve the currently open popup reports like "Data Over Time" or "To-date Lifetime Value". It does not also preserve the currently open cross-segment;
   * Permanent links depend on the execution context, i.e. the link acquired from under the session controller is processed via the session controller interface; the link acquired via the direct report linking is processed via the direct report linking interface. In other words, user who can access report only via direct report linking will not be able to  open the permalink, created in the logged-in session.
+  * Permanent links require user to authenticate when accessing reports. Authentication can be bypassed if Urchin is being setup in Authentication Bypass or Direct Report Linking modes.  
   
 === Limitations: ===
   * A permanent link to the admin interface is not allowed to avoid XSRF and accidental data modification;
