@@ -30,9 +30,9 @@ Where:
   -D            Enabled debug mode 
   -T <task id>  Specifies the task history record to update               
                 Specifying -T forces use of -H               
-                Specifying -T prohibits use of -u -l -g 
+                Specifying -T prohibits use of -u -g 
   -f <path>     Specifies locally served update package
-                Specifying -f also requires explicit -u -l -g  
+                Specifying -f also requires explicit -u -g  
 }}}
 
 === Examples ===
