@@ -6,11 +6,11 @@
 The autoupdate utility is used to check, download, and upgrade Urchin components.  
 
 Supported operations: 
-  * automatic upgrades of Urchin components such as the Urchin product, Embedded Help, Help Center documentation and Geo database.
+  * automatic upgrades of Urchin components such as the Urchin Product, Embedded Help, Help Center documentation and Geo Databases.
   * rollback of an upgrade process if there are errors.
  
 === Usage ===
-The autoupdate utility can be invoked by the Urchin scheduler (urchind) on a scheduled basis or manually via the command line. Autoupdate scheduler settings are available in Admin interface Settings -> Global Settings -> Autoupdate.
+The autoupdate utility can be invoked by the Urchin scheduler (urchind) on a scheduled basis or manually via the command line. Autoupdate scheduler settings are available on  Settings -> Global Settings -> Autoupdate of Urchin Admin Interface.
 
 The default behavior is to check for updates, download and install the new urchin components.  Usage is as follows:<br> 
 {{{
