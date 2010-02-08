@@ -31,8 +31,8 @@ Here is the sample for Event Tracking "Categories" hierarchy. It allows the foll
 The rs2 records that define this hierarchy are described as
 
 ||*ID *||*TITLE     *||*CTITLES               *||*TABLE*||*DXFORMAT*||*DLEVELS*||*DTITLES*||
-||S1333||949|950|951 || 949|950|951,938,942,904,943 ||43|42|41 ||$A|$B|$C,38,39,40,40/38 ||0|1333,1334|0 || 0|940,941|0 ||
-||P1334||949|951|950 || 949|951|950,938,942,904,943 ||43|41|42 ||$A|$C|$B,38,39,40,40/38 ||0|1333,1334|0 || 0|950,951|0 ||
+||S1333||949|950|951 || 949|950|951,948,952,904,953 ||42|41|40 ||$A|$B|$C,38,11,40,40/38 ||0|1333,1334|0 || 0|940,941|0 ||
+||P1334||949|951|950 || 949|951|950,948,952,904,953 ||42|40|40 ||$A|$C|$B,38,11,40,40/38 ||0|1333,1334|0 || 0|950,951|0 ||
 
 
 Two different reports describe the two different drill paths a user can go. The DLEVELS field can be read as follows: at 1st level, only Categories are displayed, on 2nd level user can switch between Actions and Labels and no variation at 3rd field because it depends upon previously selected drill path.
