@@ -1,0 +1,4 @@
+=Reports with Multiple Tabs and Cross Report Drilling=
+
+In Urchin7 support of Reports with Multiple tabs was added. In rs2-file each report with some tabs has NDATA field equal to number of tabs and each tab has prefix T in unique report ID in the tab definition list after the main report.
+On the picture below you can see how  two reports Top Files and Downloads from IT Report/Pages&Files section can be merge in one report with two tabs
