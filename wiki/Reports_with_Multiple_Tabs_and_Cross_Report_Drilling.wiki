@@ -38,4 +38,6 @@ P1334 939|941|940 939|941|940,938,942,904,943  43|41|41   $A|$C|$B,38,39,40,40/3
 
 Two different reports describe the two different drill paths a user can go. The DLEVELS field can be read as follows: at 1st level, only Categories are displayed, on 2nd level user can switch between Actions and Labels and no variation at 3rd field because it depends upon previously selected drill path.
 
-_Basic information on Custom Report creation can be found in article [https://secure.urchin.com/helpwiki/en/How_To_Create_Custom_Reports How To Create Custom Reports]_
+
+
+_Basic information on rs2-files and Custom Report creation can be found in article [https://secure.urchin.com/helpwiki/en/How_To_Create_Custom_Reports How To Create Custom Reports]_
