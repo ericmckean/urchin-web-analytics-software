@@ -1,10 +1,10 @@
 =Reports with Multiple Tabs and Cross Report Drilling=
 
-In Urchin7 supported report structures were extended with the following new features:
+In Urchin7 supported report structures have been extended with the following new features:
 
   * reports with multiple tabs
-  * possibility to display different metric sets at different drill-down levels
-  * possibility to switch the detail level in reports
+  * ability to display different metric sets at different drill-down levels
+  * ability to switch the detail level in reports
 
 ==Reports with Multiple Tabs==
 
