@@ -1,10 +1,9 @@
 =Content Optimization section=
 
-Reports from Content Optimization section highlight all strong areas of your website  and areas that need to be immediately addressed.  This section analyzes navigation and content performance. Weak design might confuse your customers and they might even close the site without looking at your offerings. Analyzing e.g. which pages are the most popular, from which pages do visitors commonly exit your website, do visitors continue their visit after viewing their first page or do they immediately leave your website, you can optimize website content to attract new and return old visitors. You can take occasion to goal to analyze definite content, how many visitors don’t reach the goal and make a decision is this content an affective.
-Likewise, you can optimize your website and content according to information about Web Design Parameters of your website visitors.
-Also, Content Optimization reports  demonstrate which versions of your ads (within the bounds of ads, sources and paid keywords) drive the highest quality visitors to your site. Therefore, it’s very important if similarly good and relevant content of ad shows people what they are looking for and offers a better ROI.
+Reports from the Content Optimization section can help highlight content issues with your website that need to be addressed.  This section analyzes navigation and content performance. Weak design can confuse your customers and they may leave the site without looking at your offerings. Analyzing for example which pages are most popular, from which pages visitors commonly exit your website, and whether visitors continue their visit after viewing their first page, you can optimize website content to attract new and returning visitors. Analyze content effectiveness and optimize your website and content according to information about Web Design Parameters of your website visitors.
+Also, Content Optimization reports can be used to demonstrate which versions of your ads (within the bounds of ads, sources and paid keywords) drive the highest quality visitors to your site. 
 
-Content Optimization section contains the following reports:
+The Content Optimization section contains the following reports:
 
 ==Ad Version Testing==
 
@@ -48,7 +47,7 @@ Content Optimization section contains the following reports:
           * *Java Enabled:* The Java Enabled report shows what percentage of your visitors Java enabled have on their browsers.
           * *Flash Version:* The Flash Version report displays for which versions of Flash you should optimize your Flash content.
   * *Languages:* The Languages report displays which languages are preferred by your visitors.
-  * *Connection Speed:* The Connetion Speed report shows for which connection speeds you should optimize your site and content.
+  * *Connection Speed:* The Connection Speed report shows for which connection speeds you should optimize your site and content.
   * *Hostnames:* The Hostnames report displays which domains visitors visit if you have multiple domains with the same website content. This report shows the total number of pageviews that each domain received. If a domain appears on this report that is not one of your domains, the domain in question points to a website that has your UTM (and possibly other content owned by you).
 
 ==Event Tracking==
