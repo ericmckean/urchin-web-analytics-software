@@ -1,3 +1,4 @@
+<font color='brown';>
 =Marketing Optimization section=
 
 Data in reports of Marketing Optimization section reflects all the activities that occur on your website. By analyzing that data, you can learn more about your visitors.
@@ -52,3 +53,4 @@ The Marketing Optimization section contains the following reports:
   * *CPC vs Organic Conversion:* How does paid search compare with organic search in driving high quality traffic to your site? This report compares paid and organic referrals with respect to number of visits, pageviews per visit, conversion rates, and average visit value.
   * *Keyword Considerations:* How well do other keywords perform? This report shows the top performing unused organic keywords. Each keyword's performance is shown in terms of number of visits, pageviews per visit, conversion rates, transactions per visit, and average visit value.
   * *Day Parts Breakdown:* At which hours of the day is each keyword most effective? This report compares the number of responses, and the goals or transactions per response for each keyword.
+</font>
