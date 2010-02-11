@@ -28,34 +28,41 @@ Beginning with version 6.5, Urchin may support extended value for these settings
 DB Table Limit : <= 2,000,000 records
 Memory Usage Target : <= 2GB
 
-
-Urchin 32-bit: Experimental Settings Guidelines
+=== Urchin 32-bit: Experimental Settings Guidelines ===
 
 As these extended setting are experimental and may lead to out of memory errors on some system, so following information and guidelines should be considered before using them.
-In general, each 32-bit application has 4 gigabyte (GB) of virtual address space, which is divided between user address space and kernel address space. User process can only allocate memory in the user address space.
-Windows platform: 2 GB is available to the user application and the other 2 GB is available to the kernel. Although windows OS allows to extend user space up to 3GB via 4-gigabyte tuning, yet Urchin processes don't assumes this highly unlikely scenario and are always compiled/linked for 2GB limits. Therefore, on windows OS, user should not set DB Table Limit more than 500,000 records and Memory Usage Target more than1GB.
-For maximum performance, set:
-Memory Usage Target : 1024 MB
-DB Table Limits : 500,000 db table rows
-For maximum precision, set:
-Memory Usage Target : 256 MB
-DB Table Limits : 1,000,000 db table rows
-Unix platforms: 3 GB is available to the user application and the remaining 1 GB to the kernel. Therefore, on UNIX platform, user should not set DB Table Limit more than 500,000 records and Memory Usage Target more than 2GB.
-For maximum performance, set:
-Memory Usage Target : 2048 MB
-DB Table Limits : 500,000 db table rows
-For maximum precision, set:
-Memory Usage Target : 1024 MB
-DB Table Limits : 2, 000,000 db table rows
-Urchin 32-bit: Configuring extended 'DB Table Limit'
+ * In general, each 32-bit application has 4 gigabyte (GB) of virtual address space, which is divided between user address space and kernel address space. User process can only allocate memory in the user address space.
+ * *Windows platform:* 2 GB is available to the user application and the other 2 GB is available to the kernel. Although windows OS allows to extend user space up to 3GB via [http://msdn.microsoft.com/en-us/library/bb613473(VS.85).aspx 4-gigabyte tuning], yet Urchin processes don't assumes this highly unlikely scenario and are always compiled/linked for 2GB limits. Therefore, on windows OS, user should not set DB Table Limit more than *500,000* records and Memory Usage Target more than *1GB*.
+   ** For maximum _performance_, set:
+      ** Memory Usage Target : *1024* MB
+      ** DB Table Limits : *500,000* db table rows
+   ** For maximum _precision_, set:
+      ** Memory Usage Target : *256* MB
+      ** DB Table Limits : *1,000,000* db table rows
+ * *Unix platforms:* 3 GB is available to the user application and the remaining 1 GB to the kernel. Therefore, on UNIX platform, user should not set DB Table Limit more than *500,000* records and Memory Usage Target more than *2GB*.
+   ** For maximum performance, set:
+      ** Memory Usage Target : *2048* MB
+      ** DB Table Limits : *500,000* db table rows
+   ** For maximum precision, set:
+      ** Memory Usage Target : *1024* MB
+      ** DB Table Limits : *2, 000,000* db table rows
+
+=== Urchin 32-bit: Configuring extended 'DB Table Limit' ===
 
 Like regular 'DB Table Limit' value, these extended values can be configured for individual profiles as well as globally. The following query will set the DB Table Limit to 1,000,000 records for a profile with profile id '1'.
- UPDATE uprofiles SET uipr_db_table_limit=1000000 WHERE uspr_id=1;
+{{{
+UPDATE uprofiles SET uipr_db_table_limit=1000000 WHERE uspr_id=1;
+}}}
 The following query will set the global DB Table Limit to 1,000,000 records. It will get applied to all profiles whose value for uipr_db_table_limit field is 0.
+{{{
 UPDATE uglobals SET uigl_db_table_limit=1000000 WHERE ucgl_name='Global Settings';
-Urchin 32-bit:Configuring extended 'Memory Usage Target'
+}}}
+
+=== Urchin 32-bit:Configuring extended 'Memory Usage Target' ===
 
 Memory Usage Target can only be set globally.
 It automatically is applied to profiles when the DB Memory Usage is set to 'Limit to Cache System' (or db field 'ubpr_limit_db_cache_size' set to 1).
 The following query will set the global Memory Usage Target to 2 GB. Note that db field consider the number in 'megabytes' (512 will actually be 512 MB).
+{{{
 UPDATE uglobals SET uigl_db_cache_size=2048 WHERE ucgl_name='Global Settings';
+}}}
