@@ -52,9 +52,11 @@ On UNIX-type machines Urchin runs a scheduler daemon (urchind) and an Apache web
 
 The Urchin License Operation Utility, ugetlicense, allows you to perform operations on a serial number. These operations will be necessary if a current Urchin installation becomes unavailable and needs to be reinstalled or migrated to a different server, etc.
 
+<font color="Brown">
 === autoupdate (Urchin 7+) ===
 The autoupdate utility is used to check for, download, and install available Urchin component updates.
 
 Operations that autoupdate can perform are:
  * automatic upgrades of Urchin components such as the Urchin product, Embedded Help, Help Center documentation and Geo database.
  * rollback of an upgrade process if there are errors.
+</font>
