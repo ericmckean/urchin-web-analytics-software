@@ -1,0 +1,34 @@
+=Marketing Optimization section=
+
+Data in reports of Marketing Optimization section reflects all the activities that occur on your website. By analyzing that data, you can learn more about your visitors.
+
+The amount of useful data gathered on visitor interaction with your website is vast. You can receive information about new and returning website visitors, how visitors reach your website, how visitors interact with it, what pages were viewed, measure visitor traffic, the length of time spent on the website, calculate cost, revenue, conversion rate, cost per click and other metrics for organic and paid search, displays many other useful facts. That is all helps to increase profitability of your website.
+
+The Marketing Optimization section contains the following reports:
+
+==Visitor Tracking==
+  * *Daily Visitors:* The Visitors Graph shows how many visitors your site received over time during the date range. The Percent New Visitors graph shows the percentage of visitors who were new visitors.
+  * *Visits & Pageviews:* The Visits, Pageviews, and Average Pageviews per Visit graphs show the number of visits, the number of pageviews, and the average pageviews per visit (P/Visit) over time during the date range.
+  * *Goal Conversion Tracking:* The Goal Conversion Tracking report displays how conversion rates vary over time for each of your goals. This report charts conversion rates over time for each goal you have defined.
+  * *Absolute Unique Visitors:* This report shows how effectively your marketing drives new and returning visitors to your site. First Time Absolute Unique Visitors is the number of visitors (counting each visitor only once) who visited your site for the first time during the active date range. Prior Absolute Unique Visitors is the number of visitors (counting each visitor only once) who first visited your site prior to the active date range and who returned for one or more visits during the active date range.
+  * *Visitor Loyalty:*
+          * *Visitor Loyalty:* Each visitor who visits your site during the active date range is categorized according to the total number of times (i.e. without regard to date range) that he or she has visited your site. The number of visitors with only one visit (no loyalty) are indicated on the left of the histogram. The number of visitors with over 200 visits (very loyal) are indicated on the far right. 
+          * *Visitor Recency:* Each visitor who visits your site during the active date range is categorized according to the number of days that have elapsed since their most recent prior visit. New visitors and those who are returning from a previous visit today are shown on the left of the histogram. Visitors who last visited the site one year ago are shown on the far right.
+  * *Engagement Metrics:*
+          * *Length of Visit:* How much time do visitors spend on your website? Visits of less than ten seconds appear to the left of the graph; visits of more than 1801 seconds appear on the right side of the graph.
+          * *Time on Site:* Time on site is one way of measuring visit quality. If visitors spend a long time visiting your site, they may be interacting extensively with it. However, Time on site can be misleading because visitors often leave browser windows open when they are not actually viewing or using your site.
+  * *Visitor List:* The Visitor List report lists all visitors that came to the site during the specified time period. The number of visits, pages per visit, the conversion rates for each goal, and the average per visit value are shown for each visitor.
+
+==Visitor Segment Performance==
+
+  * *New vs Returning Visitors:* How do new visitors compare with returning visitors with respect to conversions and average per visit value? This report shows number of visits, conversion rates for each goal, and the average per visit value for new and returning visitors.
+  * *Referring Source:* How do visitors referred by different sources (such as search engine, newsletter, or referral site) compare with respect to number of visits, conversion rate, and the average value of each visit?
+  * *Geo Location:* The Geo Location report shows how visitors from different regions compare with respect to conversions and average visit value. This report compares each geographic region's number of visits, pageviews per visit, conversion rates, and the average value of each visit.
+  * *Geo Map Overlay:* The Geo Map Overlay is a graphical representation of the volume of visitors coming from locations around the world. The largest points indicate locations driving the most visitors to your website.
+  * *Network Location:*
+          * *Network Location:* How do visitors from different organizations compare with respect to conversions and average visit value? This report shows the number of visits, pageviews per visit, conversion rates, and average visit value for each ISP and corporate network.
+          * *Connection Speed:* The Connection Speed report displays for which connection speeds you should optimize your site and content.
+  * *Language:* The Language report shows how visitors with different language preferences compare with respect to conversions and average visit value. This report compares number of visits, pageviews per visit, conversion rates, and average visit value for visitors according to the language preference they have set on their computer.
+  * *User-defined:* This report allows you to track visitor behavior based upon an arbitrary segment variable that you define. For example, the value selected in a pull-down menu of a registration form can be tagged to the visitor and used to determine conversion and behavior metrics. This report compares how visitors who identified with each of the different groups you defined compare with respect to number of visits, pageviews per visit, conversion rates, and average visit value.
+  * *Usernames:* If your site requires user login, the Usernames report will display all visitors to your site by username, the amount of successful hits, and the amount of bytes transferred.
+  * *Domains:* The Domains report displays visitors by their ISP provider's top level domain name determined by user IP address.
