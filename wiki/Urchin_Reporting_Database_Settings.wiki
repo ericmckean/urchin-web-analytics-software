@@ -12,7 +12,7 @@ If an Urchin report shows a high percentage of entries labeled Other, you should
 
 In order to limit the amount of memory that can be allocated during log processing, Urchin provides this option to specify the upper limit on the size of reporting db in memory. For larger sites, a larger memory footprint can increase performance as it will be doing less page swapping. Although the default setting is conservative, you should set a larger value if the system has sufficient physical memory available.
 
-<font color="Red">
+<font color="Brown">
 === Memory Settings ===
 
 Currently, Urchin supports following max values for reporting DB settings:
@@ -23,13 +23,13 @@ Currently, Urchin supports following max values for reporting DB settings:
     ** DB Table Limit : <= 10,000,000 records
     ** Memory Usage Target : <= 8192 MB
 </font>
-===<font color="Red"> Urchin 32-bit: </font> Experimental Settings ===
+===<font color="Brown"> Urchin 32-bit: </font> Experimental Settings ===
 
 Beginning with version 6.5, Urchin may support extended value for these settings, which should only be used by Experienced Urchin Users. These extended values will not be visible on the administration interface and will have to be configured via the configuration database. For Urchin 6.5, following are the max values for extended reporting DB settings.
  DB Table Limit : <= 2,000,000 records<br>
  Memory Usage Target : <= 2GB
 
-=== <font color="Red"> Urchin 32-bit: </font> Experimental Settings Guidelines ===
+=== <font color="Brown"> Urchin 32-bit: </font> Experimental Settings Guidelines ===
 
 As these extended setting are experimental and may lead to out of memory errors on some system, so following information and guidelines should be considered before using them.
  * In general, each 32-bit application has 4 gigabyte (GB) of virtual address space, which is divided between user address space and kernel address space. User process can only allocate memory in the user address space.
@@ -48,7 +48,7 @@ As these extended setting are experimental and may lead to out of memory errors 
       ** Memory Usage Target : *1024* MB
       ** DB Table Limits : *2, 000,000* db table rows
 
-=== <font color="Red"> Urchin 32-bit: </font> Configuring extended 'DB Table Limit' ===
+=== <font color="Brown"> Urchin 32-bit: </font> Configuring extended 'DB Table Limit' ===
 
 Like regular 'DB Table Limit' value, these extended values can be configured for individual profiles as well as globally. The following query will set the DB Table Limit to 1,000,000 records for a profile with profile id '1'.
 {{{
@@ -59,7 +59,7 @@ The following query will set the global DB Table Limit to 1,000,000 records. It 
 UPDATE uglobals SET uigl_db_table_limit=1000000 WHERE ucgl_name='Global Settings';
 }}}
 
-=== <font color="Red"> Urchin 32-bit: </font> Configuring extended 'Memory Usage Target' ===
+=== <font color="Brown"> Urchin 32-bit: </font> Configuring extended 'Memory Usage Target' ===
 
 Memory Usage Target can only be set globally.
 It automatically is applied to profiles when the DB Memory Usage is set to 'Limit to Cache System' (or db field 'ubpr_limit_db_cache_size' set to 1).
