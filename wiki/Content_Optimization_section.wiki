@@ -1,8 +1,6 @@
 =Content Optimization section=
 
-Reports from the Content Optimization section can help highlight content issues with your website that need to be addressed.  This section analyzes navigation and content performance. Weak design can confuse your customers and they may leave the site without looking at your offerings. Analyzing for example which pages are most popular, from which pages visitors commonly exit your website, and whether visitors continue their visit after viewing their first page, you can optimize website content to attract new and returning visitors. Analyze content effectiveness and optimize your website and content according to information about Web Design Parameters of your website visitors.
-Also, Content Optimization reports can be used to demonstrate which versions of your ads (within the bounds of ads, sources and paid keywords) drive the highest quality visitors to your site. 
-
+Reports from the Content Optimization section can help highlight content issues with your website that need to be addressed.  This section analyzes navigation and content performance. Weak design can confuse your customers and they may leave the site without looking at your offerings. Analyzing, for example, which pages are most popular, the from which pages visitors commonly exit your website, and whether visitors continue their visit after viewing their first page, you can optimize website content. 
 The Content Optimization section contains the following reports:
 
 ==Ad Version Testing==
