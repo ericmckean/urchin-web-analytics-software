@@ -16,10 +16,10 @@ On the picture below, you can see how  two reports "Top Files" and "Downloads" f
 
 ==Cross Report Drilling and Detail Level Selectors==
 
-Each report that requires variance at drill levels(different set of metrics or drilling sequence) is described by a combination of a main report that is visible in navigation menu and a set of hidden pages that describe the variance.
+Each report that requires variance at drill levels(different set of metrics or drilling sequence) is described by a combination of a main report that is visible in the navigation menu and a set of hidden pages that describe the variance.
 
-TITLE,CTITLES and TABLE columns are changed to allow specifying different values depending on currently selected drill level. The values are separated with a usual Urchin level separation sign (|). A short notation is allowed if the field values at all drill levels are the same, i.e. instead of writing 43|43|43 as a TABLE field value, one can simply write 43.
-New DLEVELS and DTITLES columns specify the reports to load when users switches between detail levels and UI titles respectively, i.e. 0|1333,1334|0 means no variation at the 1st level, switching between reports 1333 and 1334 allowed on the 2nd level and no variation at the 3rd level.
+TITLE,CTITLES and TABLE columns have been changed to allow you to specify different values depending on currently selected drill level. The values are separated with the usual Urchin level separation sign (|). A shortened notation is allowed if the field values at all drill levels are the same, i.e. instead of writing 43|43|43 as a TABLE field value, one can simply write 43.
+New DLEVELS and DTITLES columns specify the reports to load when the user switches between detail levels and UI titles respectively, i.e. 0|1333,1334|0 means no variation at the 1st level, switching between reports 1333 and 1334 allowed on the 2nd level and no variation at the 3rd level.
 Metric set and column types for all drill levels are not allowed to vary.
 
 Here is the sample for Event Tracking "Categories" hierarchy. It allows the following drill paths:
@@ -35,7 +35,7 @@ The rs2 records that define this hierarchy are described as
 ||P1334||949|951|950 || 949|951|950,948,952,904,953 ||42|40|40 ||$A|$C|$B,38,11,40,40/38 ||0|1333,1334|0 || 0|950,951|0 ||
 
 
-Two different reports describe the two different drill paths a user can go. The DLEVELS field can be read as follows: at 1st level, only Categories are displayed, on 2nd level user can switch between Actions and Labels and no variation at 3rd field because it depends upon previously selected drill path.
+Two different reports describe the two different drill paths a user can take. The DLEVELS field can be read as follows: at 1st level, only Categories are displayed, on 2nd level user can switch between Actions and Labels, and no variation at 3rd field because it depends upon previously selected drill path.
 
 
 _Basic information on rs2-files and Custom Report creation can be found in article [https://secure.urchin.com/helpwiki/en/How_To_Create_Custom_Reports How To Create Custom Reports]_
