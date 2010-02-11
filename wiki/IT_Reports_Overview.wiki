@@ -32,7 +32,6 @@ The IT section contains the following reports:
 ==Browsers & Robots==
 
   * *Browsers & Platforms:*
-
           * *Browser Versions:* How should you optimize your site for browser? The Browsers & Robots report shows all users by browser name as determined by the User Agent field in web server logs.
           * *Platform Versions:* How should you optimize your site for operating system? The Platform Versions report shows all users by browser name as determined by the User Agent field in web server logs.
           * *Browser & Platform Combos:* How should you optimize your site for browser and operating system? The Browsers & Robots report shows all users by browser name and operating system as determined by the User Agent field in web server logs.
