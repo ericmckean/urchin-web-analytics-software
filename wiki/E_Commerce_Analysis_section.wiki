@@ -1,4 +1,4 @@
-=E-Commerce Analysis section=
+=E-Commerce Overview=
 
 _This article authored by [https://secure.urchin.com/helpwiki/en/ivantageLimited ivantage Limited], an Urchin Software Authorized Consultant_
 
