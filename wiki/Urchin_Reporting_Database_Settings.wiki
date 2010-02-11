@@ -10,7 +10,7 @@ If an Urchin report shows a high percentage of entries labeled Other, you should
 
 === Memory Usage Target ===
 
-In order to limit the amount of memory that can be allocated during log processing, Urchin provides this option to specify the upper limit on the size of reporting db in memory. For larger sites, a larger memory footprint can increase performance as it will be doing less page swapping. Although the default setting is conservative, you should set a larger value if the system has sufficient physical memory available.
+To limit the amount of memory that can be allocated during log processing, Urchin provides this option to specify the upper limit on the size of reporting db in memory. For larger sites, a larger memory footprint can increase performance as it will be doing less page swapping. Although the default setting is conservative, you should set a larger value if the system has sufficient physical memory available.
 
 <font color="Brown">
 === Memory Settings ===
