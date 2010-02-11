@@ -1,7 +1,7 @@
 <font color='brown';>
 =Advertisement Optimization section=
 
-Reports of Advertisement Optimization section not only help you in testing your site relevance for the keywords, campaigns, sources, types of marketing activities or search engine-keyword combinations but also help in analyzing which of them result in the highest quality traffic and provide the greatest return for the least cost.
+Reports in the Advertisement Optimization section can help you understand which campaigns, sources, keywords, search engines and more drive the highest quality traffic and provide the greatest return for the least cost.
 
 Integration the reports of Advertisement Optimization section to [https://secure.urchin.com/helpwiki/en/Urchin_Integration_with_AdWords?highlight=%28AdWords%29 AdWords related features] such as the [https://secure.urchin.com/helpwiki/en/Keyword_Tool?highlight=%28Keyword%29|%28Tool%29 Keyword Tool], [https://secure.urchin.com/helpwiki/en/How_To_Tag_Your_Online_Links?highlight=%28Tag%29 Tag Manager] and Campaign Daily Budget recommendations allow you to improve your on-line campaigns( e.g. to generate new successful keywords, add them in AdWords, tag ads and keywords by using of Urchin tools, and etc.)
 
