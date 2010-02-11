@@ -1,7 +1,7 @@
 <font color='brown';>
 =IT Reports Overview=
 
-Urchin has assembled a comprehensive list of IT special reports useful for server/site administrators.  Different IT/network metrics like Hits, Bytes, Load Balancing, Downloads and many others help  to make IT networking decisions and improve site performance.
+Urchin has assembled a comprehensive list of IT special reports useful for server/site administrators.  Different IT/network metrics like Hits, Bytes, Load Balancing, Downloads and many others help when making IT networking decisions and improving site performance.
 
 The IT section contains the following reports:
 
