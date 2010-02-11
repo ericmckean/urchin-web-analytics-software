@@ -1,4 +1,4 @@
-<font color='RED';>
+<font color='brown';>
 =Advertisement Optimization Overview=
 
 Reports of Advertisement Optimization section not only help you in testing your site relevance for the keywords, campaigns, sources, types of marketing activities or search engine-keyword combinations but also help in analyzing which of them result in the highest quality traffic and provide the greatest return for the least cost.
