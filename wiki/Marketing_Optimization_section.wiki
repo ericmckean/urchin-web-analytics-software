@@ -1,11 +1,7 @@
 <font color='brown';>
 =Marketing Optimization section=
 
-Data in reports of Marketing Optimization section reflects all the activities that occur on your website. By analyzing that data, you can learn more about your visitors.
-
-The amount of useful data gathered on visitor interaction with your website is vast. You can receive information about new and returning website visitors, how visitors reach your website, how visitors interact with it, what pages were viewed, measure visitor traffic, the length of time spent on the website, calculate cost, revenue, conversion rate, cost per click and other metrics for organic and paid search, displays many other useful facts. That is all helps to increase profitability of your website.
-
-The Marketing Optimization section contains the following reports:
+The Marketing Optimization reports focus on how effectively you drive traffic to your site. The Marketing Optimization section contains the following reports:
 
 ==Visitor Tracking==
   * *Daily Visitors:* The Visitors Graph shows how many visitors your site received over time during the date range. The Percent New Visitors graph shows the percentage of visitors who were new visitors.
