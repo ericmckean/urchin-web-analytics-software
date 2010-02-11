@@ -25,13 +25,13 @@ Currently, Urchin supports following max values for reporting DB settings:
 </font>
 ===<font color="Brown"> Urchin 32-bit: </font> Experimental Settings ===
 
-Beginning with version 6.5, Urchin may support extended value for these settings, which should only be used by Experienced Urchin Users. These extended values will not be visible on the administration interface and will have to be configured via the configuration database. For Urchin 6.5, following are the max values for extended reporting DB settings.
+Beginning with version 6.5, Urchin may support extended value for these settings, which should only be used by experienced Urchin users. These extended values will not be visible on the administration interface and will have to be configured via the configuration database. For Urchin 6.5, following are the max values for extended reporting DB settings.
  DB Table Limit : <= 2,000,000 records<br>
  Memory Usage Target : <= 2GB
 
 === <font color="Brown"> Urchin 32-bit: </font> Experimental Settings Guidelines ===
 
-As these extended setting are experimental and may lead to out of memory errors on some system, so following information and guidelines should be considered before using them.
+Since these extended setting are experimental and may lead to out of memory errors on some system, the following information and guidelines should be considered before using them.
  * In general, each 32-bit application has 4 gigabyte (GB) of virtual address space, which is divided between user address space and kernel address space. User process can only allocate memory in the user address space.
  * *Windows platform:* 2 GB is available to the user application and the other 2 GB is available to the kernel. Although windows OS allows to extend user space up to 3GB via [http://msdn.microsoft.com/en-us/library/bb613473(VS.85).aspx 4-gigabyte tuning], yet Urchin processes don't assumes this highly unlikely scenario and are always compiled/linked for 2GB limits. Therefore, on windows OS, user should not set DB Table Limit more than *500,000* records and Memory Usage Target more than *1GB*.
    ** For maximum _performance_, set:
