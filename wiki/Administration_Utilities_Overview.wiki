@@ -8,7 +8,7 @@ All utilities support "-h" and "-v" command line arguments. Invoking a utility w
 
 === geo-update ===
 
-This utility is used to check the updates to Urchin's internal DNS database and to download the updates if they are available. It allows to download the updates from Google download servers as well as from some local directory (new in urchin 6).
+This utility is used to check the updates to Urchin's internal DNS database and to download the updates if they are available. It allows you to download the updates from Google download servers as well as from some local directory (new in urchin 6).
 
 === inspector ===
 
@@ -18,7 +18,7 @@ This utility performs basic checks on your installed Urchin distribution, ensuri
 
 The Urchin Configuration Manager Utility (uconf-manager) allows you to add, edit and delete db records.
 
- * Urchin 6.402: This utility was first introduced in Urchin 6.402 and was only operating on 'uusers' table in the configuration database. It can be used to reset the Urchin admin password, automate user creation, and move a user to a different account.
+ * Urchin 6.402: This utility was first introduced in Urchin 6.402 and only operated on the 'uusers' table in the configuration database. It can be used to reset the Urchin admin password, automate user creation, and move a user to a different account.
  * Urchin 6.500+: In urchin 6.5 and later versions, this utility support db operations on more tables (uaccounts, ucosts, ufilters, ugoals, ugroups, ugroups_uusers, ulogs, ulogs_ufilters, uprofiles, uprofiles_ucosts, uprofiles_ufilters, uprofiles_ugroups, uprofiles_ulogs, uprofiles_uusers, and uusers). This utility can be used to perform actions that can't be accomplished via the Urchin Administration Interface.
 uconf2sql
 
@@ -26,7 +26,7 @@ Urchin 5 and older versions store configuration information in propriety files, 
 
 === convert-u5data ===
 
-Like configuration database, the structure of reporting database (that stores reporting information) has also been changed in Urchin 6. This utility, convert-u5data, provides an option for importing the reporting database directly from Urchin 5 installation into the urchin 6 installation.
+Like the configuration database, the structure of the reporting database (that stores reporting information) has also been changed in Urchin 6. This utility, convert-u5data, provides an option for importing the reporting database directly from Urchin 5 installation into the urchin 6 installation.
 
 === udb-sanitizer ===
 
