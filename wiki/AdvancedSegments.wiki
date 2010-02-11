@@ -40,6 +40,8 @@ Provide a Segment Name, select Dimension or Metric, select Condition and provide
 
 Click ''Add 'and' statement'' to add a new Dimension or Metric to the segment.   Click Save to complete the New Segment creation.     Once the segment is created, it can be edited, deleted or applied to other profiles (according to User access permissions).      
 
+*Note:* For detailed information please refer to [http://code.google.com/p/urchin-web-analytics-software/wiki/Advanced_Segments_mapping?ts=1265894822&updated=Advanced_Segments_mapping Advanced Segments mapping] document.
+
 ===Editing Segments===      
 
 To edit a segment, click the ''edit'' link in the Actions area for the corresponding segment.
