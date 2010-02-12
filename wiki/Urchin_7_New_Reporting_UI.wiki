@@ -1,19 +1,19 @@
 =New Reporting User Interface=
 
  
-<p align="justify"> Urchin 7 features new, significantly improved Reporting UI. New styling, easy-to-read graphic charts and navigation features allow more flexibility and power in data analysis.</p>
+<p align="justify"> Urchin 7 features a new, significantly improved Reporting UI. New styling, easy-to-read graphic charts and navigation features allow more flexibility and power in data analysis.</p>
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/New_UI.png] 
 
-<p align="justify"> The Advanced Segments feature introduced in Urchin 7 allows to create custom visit segments and apply them to the reports.  
+<p align="justify"> The Advanced Segments feature introduced in Urchin 7 allows you to create custom visit segments and apply them to the reports.  
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Advanced_Segments.png] 
 
-<p align="justify"> A new Display Dimension selector enables to switch the displayed dimensions for drill-down reports to allow more flexible drilling.
+<p align="justify"> A new Display Dimension selector enables you to switch the displayed dimensions for drill-down reports to allow more flexible detail reports.
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Cross-report_drilling.png] 
 
-<p align="justify"> Permanent links have been added to Urchin 7 reports. Permalinks preserve the selected display settings of the report like filtering, paging, date range etc. and can be embedded into e-mail, Web pages or IM'ed. 
+<p align="justify"> Permanent links have been added to Urchin 7 reports. Permalinks preserve the selected display settings of the report such as filtering, paging, date range, etc. The links can then be IM'ed and embedded into e-mails and web pages. 
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Printview_Permalink.png] 
  
@@ -21,7 +21,7 @@
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Browsers_Platforms.png] 
 
-<p align="justify"> Context links to HC articles have been added to the Urchin 7 Reporting UI. 
+<p align="justify"> Context links to Help Center articles have been added to the Urchin 7 Reporting UI. 
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Urchin_Help_Center.png] 
    
