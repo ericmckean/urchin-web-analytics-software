@@ -1,20 +1,20 @@
 = Permalinks =
 === Overview ===   
-A permanent link ("permalink") is a link to an Urchin report that preserves the exact settings of the report, like filtering, paging, etc. It can be embedded into e-mail or Web pages.<br><br>
+A permanent link ("permalink") is a link to an Urchin report that preserves the exact settings of the report, such as the filtering, paging, etc. It can be embedded into e-mail or Web pages.<br><br>
 "Permalink" can be accessed from the Urchin tool bar (see screenshot below). 
 <br><br>[http://urchin-web-analytics-software.googlecode.com/svn/trunk/permalink_closed.PNG]<br><br>
 
-Cicking on "Permalink" button opens a popup from which you can copy the permalink. 
+Cicking on the "Permalink" button opens a popup from which you can copy the permalink. 
 <br><br>[http://urchin-web-analytics-software.googlecode.com/svn/trunk/permalink_opened.PNG]<br><br>
 
 === Permalink features: ===
-  * Permanent links are accessible from the report page and Urchin Home page only. Permalinks are not supported for Configuration UI;
+  * Permanent links are accessible from the report page and Urchin Home page only. Permalinks are not supported for the Configuration UI;
   * Permanent links include the current settings of profile, selected report, date ranges, filtering, drill-down level, paging and selected advanced segment;
-  * Permalink does not preserve the currently open popup reports like "Data Over Time" or "To-date Lifetime Value". It does not also preserve the currently open cross-segment;
-  * Permanent links depend on the execution context, i.e. the link acquired from under the session controller is processed via the session controller interface; the link acquired via the direct report linking is processed via the direct report linking interface. In other words, user who can access report only via direct report linking will not be able to  open the permalink, created in the logged-in session.
+  * Permalink does not preserve any currently open popup reports like "Data Over Time" or "To-date Lifetime Value". It does not also preserve the currently open cross-segment;
+  * Permanent links depend on the execution context, i.e. the link acquired from under the session controller is processed via the session controller interface; the link acquired via the direct report linking is processed via the direct report linking interface. In other words, a user who can access report only via direct report linking will not be able to  open the permalink, created in the logged-in session.
    
   
 === Limitations: ===
-  * A permanent link to the admin interface is not allowed to avoid XSRF and accidental data modification;
+  * A permanent link to the admin interface is not allowed (to avoid XSRF and accidental data modification);
   * A permanent link doesn't restore the state of  the "Performance Comparison" report.
-  * Permanent links require user to authenticate when accessing reports. Authentication can be bypassed if Urchin is being setup in Authentication Bypass or Direct Report Linking modes. 
+  * Permanent links require the user to authenticate when accessing reports. Authentication can be bypassed if Urchin is being setup in Authentication Bypass or Direct Report Linking modes. 
