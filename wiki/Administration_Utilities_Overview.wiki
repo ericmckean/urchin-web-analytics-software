@@ -20,7 +20,8 @@ The Urchin Configuration Manager Utility (uconf-manager) allows you to add, edit
 
  * Urchin 6.402: This utility was first introduced in Urchin 6.402 and only operated on the 'uusers' table in the configuration database. It can be used to reset the Urchin admin password, automate user creation, and move a user to a different account.
  * Urchin 6.500+: In urchin 6.5 and later versions, this utility support db operations on more tables (uaccounts, ucosts, ufilters, ugoals, ugroups, ugroups_uusers, ulogs, ulogs_ufilters, uprofiles, uprofiles_ucosts, uprofiles_ufilters, uprofiles_ugroups, uprofiles_ulogs, uprofiles_uusers, and uusers). This utility can be used to perform actions that can't be accomplished via the Urchin Administration Interface.
-uconf2sql
+
+=== uconf2sql ===
 
 Urchin 5 and older versions store configuration information in propriety files, however, Urchin 6 stores this information in a relational database (MySql or PostgreSql). To allow smooth transition of configuration information, both Urchin 5 and Urchin 6 provide utilities for exporting and importing configuration information. Urchin 5 has a utility, named uconf-export, to export the configuration database into a file (in XML format) and Urchin 6 has a utility, named uconf2sql, to import the configuration data from this XML file in to Urchin 6 database.
 
