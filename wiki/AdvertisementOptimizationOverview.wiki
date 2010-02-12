@@ -1,5 +1,5 @@
 <font color='brown';>
-=Advertisement Optimization section=
+=Advertisement Optimization Overview=
 
 Reports in the Advertisement Optimization section can help you understand which campaigns, sources, keywords, search engines and more drive the highest quality traffic and provide the greatest return for the least cost.
 
