@@ -5,43 +5,43 @@
 
 
 <font color='black';>
-|| *Dimension* || *UTM variable* ||
-|| Affilation (174)
-|| Bill City (178)
-|| Bill Country (180)
-|| Bill Region (179)
-|| Browser Type (108)
-|| Browser Version (109)
-|| City (162)
-|| Connection Speed (167)
-|| Content (141)
-|| Country (160)
-|| Flash Version (168)
-|| Java Enabled (131)
-|| Javascript Version (134)
-|| Keyword (140)
-|| Languages (130)
-|| Latitude (163)
-|| Longitude (164)
-|| Medium (138)
-|| New or Returning (170)
-|| Online Campaign (137)
-|| Operation System (110)
-|| Operation System Version (111)
-|| Page Title (169)
-|| Primary Domain (112)
-|| Product Code (181)
-|| Product Name (182)
-|| Provider Domain (113)
-|| Provider Name (166)
-|| Region (161)
-|| Request Stem (98)
-|| Screen Colors (129)
-|| Screen Resolution (126)
-|| Traffic Source (139)
-|| User Defined (172)
-|| Username (159)
-|| Variation (183)
+|| *Dimension* || *Urchin Variable* ||
+|| Affilation (174) ||
+|| Bill City (178) ||
+|| Bill Country (180) ||
+|| Bill Region (179) ||
+|| Browser Type (108) ||
+|| Browser Version (109) ||
+|| City (162) ||
+|| Connection Speed (167) ||
+|| Content (141) ||
+|| Country (160) ||
+|| Flash Version (168) ||
+|| Java Enabled (131) ||
+|| Javascript Version (134) ||
+|| Keyword (140) ||
+|| Languages (130) ||
+|| Latitude (163) ||
+|| Longitude (164) ||
+|| Medium (138) ||
+|| New or Returning (170) ||
+|| Online Campaign (137) ||
+|| Operation System (110) ||
+|| Operation System Version (111) ||
+|| Page Title (169) ||
+|| Primary Domain (112) ||
+|| Product Code (181) ||
+|| Product Name (182) ||
+|| Provider Domain (113) ||
+|| Provider Name (166) ||
+|| Region (161) ||
+|| Request Stem (98) ||
+|| Screen Colors (129) ||
+|| Screen Resolution (126) ||
+|| Traffic Source (139) ||
+|| User Defined (172) ||
+|| Username (159) ||
+|| Variation (183) ||
 
-
-|| *Metric* || *UTM variable* ||
+<br>
+|| *Metric* || *Urchin  Variable* ||
