@@ -2,9 +2,9 @@
  
 === Overview ===
 
-Previous versions of Urchin used to process profiles in serial manner. For example, assuming that it takes 1 minute to process 1 profile, it would ultimately take approximately 100 minutes to process 100 profiles. 
+Previous versions of Urchin processed profiles in serial manner. For example, if it took 1 minute to process 1 profile, it would ultimately require approximately 100 minutes to process 100 profiles. 
 
-In order to address this issue Urchin 7.0 introduces parallel profile processing, now several profiles processing jobs can be run simultaneously.
+To address this issue, Urchin 7.0 introduces parallel profile processing. Now, several profile processing jobs can be run simultaneously.
  
 This functionality targets middle and high volume enterprise clients:
   * hosting providers
@@ -12,7 +12,7 @@ This functionality targets middle and high volume enterprise clients:
  
 === Configuration of parallel profile processing ===
 
-By default the newly installed or upgraded instance of Urchin 7.0 allows only one profile processing at a time. In order to enable the parallel profile processing:
+By default, a newly installed or upgraded instance of Urchin 7.0 allows only a single profile to be processed at a time. To enable parallel profile processing:
   # Uncomment the option `MaxConcurrentProfileTasks` in `<`urchin_home`>`/etc/urchin.conf and set it to necessary value.<br>For example:
 {{{
 MaxConcurrentProfileTasks: 2 
@@ -21,13 +21,13 @@ MaxConcurrentProfileTasks: 2
 {{{
 urchinctl restart
 }}}
-*Note:* Urchin profile is exclusively processed by one instance of processing engine. 
+*Note:* Urchin profile is processed exclusively by one instance of the processing engine. 
 
 === Restrictions ===
 
-The profile processing job is extremely RAM- and IO-hungry. Blind increasing of the parameter `MaxConcurrentProfileTasks` will most probably lead to significant degradation of processing speed due to exhausting of system resources. 
+The profile processing job is extremely RAM- and IO-hungry. Blindly increasing the parameter `MaxConcurrentProfileTasks` will most likely exhaust system resources and significantly degrade processing speed. 
 
-It is highly recommended to increase `MaxConcurrentProfileTasks` only: 
+You should increase `MaxConcurrentProfileTasks` only: 
   * if you have enough RAM to fit several jobs in memory
   * when profiles and log sources are physically located *on different physical hard disk drives* or you have a high-speed hard disk drive
   * if Urchin is used in Data Center mode
