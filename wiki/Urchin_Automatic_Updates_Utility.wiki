@@ -10,7 +10,7 @@ Supported operations:
   * rollback of an upgrade process if there are errors.
  
 === Usage ===
-The autoupdate utility can be invoked by the Urchin scheduler (urchind) on a scheduled basis or manually via the command line. Autoupdate scheduler settings are available on  Settings -> Global Settings -> Autoupdate of Urchin Admin Interface.
+The autoupdate utility can be invoked by the Urchin scheduler (urchind) on a scheduled basis or manually via the command line. Autoupdate scheduler settings are available via  Settings -> Global Settings -> Autoupdate in the Urchin Admin Interface.
 
 The default behavior is to check for updates, download and install the new urchin components.  Usage is as follows:<br> 
 {{{
