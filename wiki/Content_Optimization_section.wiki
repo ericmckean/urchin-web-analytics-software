@@ -1,4 +1,3 @@
-<font color='brown';>
 =Content Optimization Overview=
 
 The Content Optimization reports can help you understand how to improve your site content and navigation.  You can find out which pages are most popular, optimize your site for different browsers and platforms, track the effectiveness of your checkout process/conversion funnels, track event driven behavior, and more. 
@@ -60,4 +59,3 @@ The Content Optimization section contains the following reports:
           * *Total Events:* This report shows how many events occurred on your site (by day or by hour of day).
           * *Visits with Events:* How frequently do events occur on your site? This report shows how many visits to your site included at least one event (by day or by hour of day).
           * *Events per Visit:* On average, how many events occur during a visit? This report shows the average number of events per visit (by day or by hour of day).
-</font>
