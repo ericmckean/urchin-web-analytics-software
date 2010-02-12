@@ -1,6 +1,6 @@
 = Event Tracking =
-With Event Tracking it is possible to record user interaction with website elements, such as a Flash website, Flash Movie player, Embedded AJAX page elements, Page gadgets, File downloads, etc.  This is accomplished by attaching the method call (available in urchin.js tracking code) to the particular UI element you want to track.
-Event Tracking reports are grouped under 'Content Optimization\Event Tracking' reporting section:   
+With Event Tracking, it is possible to record user interactions with website elements, for example elements in a Flash website, an embedded video player, embedded AJAX page elements, Page gadgets, File downloads, etc.  You track interactions by attaching the method call (available in urchin.js tracking code) to the particular UI element you want to track.
+Event Tracking reports are grouped under the 'Content Optimization\Event Tracking' reporting section:   
   * Hosts and Pages (Host|Page vs Events, Unique Events, Value, Avg.value)
   * Categories (Category|Action|Label vs Events, Unique Events ("visits with category"), Value, Avg.value)
   * Actions (Action|Label|Category vs Events, Unique Events ("visits with category/action"), Value, Avg.value)
@@ -10,7 +10,7 @@ Event Tracking reports are grouped under 'Content Optimization\Event Tracking' r
 ==Event Tracking design==
 
 === "Unique Events" metric ===
-The 'Unique Events' metric which should be read as "Visits with ..." shows the number of visits in which each unique combination of _category/action/label_ occurs. It is calculated per-session, for each level in the event hierarchy. For example the following sessions with events will generate the following stats:
+The 'Unique Events' metric, which should be read as "Visits with ...", shows the number of visits in which each unique combination of _category/action/label_ occurs. It is calculated per-session, for each level in the event hierarchy. For example the following sessions with events will generate the following stats:
 
 {{{
 Visit 1
@@ -48,9 +48,9 @@ Labels
 
 ==Setting Up Event Tracking==
 
-Ensure website is configured for tracking with *an updated urchin.js tracking code* [http://code.google.com/p/urchin-web-analytics-software/source/browse/trunk/urchin.js]. (Still in Beta)
+Ensure your website is configured for tracking with *an updated urchin.js tracking code* [http://code.google.com/p/urchin-web-analytics-software/source/browse/trunk/urchin.js]. (Still in Beta)
 
-Refer to Install Guide ('''Using Urchin with UTM Tracking''' section) for details. 
+Refer to the Install Guide ('''Using Urchin with UTM Tracking''' section) for details. 
 
 Call the {{{__utmTrackEvent()}}} method in the source code for every element(object) of the website to be tracked with Event Tracking.    {{{__utmTrackEvent()}}} method specification:   __utmTrackEvent(cat, action, label, value, page), where     
   * cat(category, required) - name for the group of objects to be tracked (e.g.: Video, Audio, etc.)   
