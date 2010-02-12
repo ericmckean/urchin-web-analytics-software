@@ -15,7 +15,7 @@ By default, automated update is switched off. All auto updates settings can be c
 <br><br>
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Autoupdate_Help_Articles.png]
 <br><br>
-<To automatically upgrade the product from the web UI, set the updating interval. The Urchin scheduler checks for updates according to this interval. If updates are available, the user receives alerts in the Admin UI and is able to schedule a download of updates. Once the updates have been downloaded, the UI message is changed to "install now". 
+To automatically upgrade the product from the web UI, set the updating interval. The Urchin scheduler checks for updates according to this interval. If updates are available, the user receives alerts in the Admin UI and is able to schedule a download of updates. Once the updates have been downloaded, the UI message is changed to "install now". 
 
 Clicking "install now" causes Urchin to automatically back itself up and upgrade to the latest version. If no updates are available,  the message <font color="blue"> "Urchin is up to date: _LAST_UPDATE_TIME_"</font> is displayed. If any components require update, the message is changed to <font color="blue">"Updates available, <u>view now</u>"</font>. "View now" is a link to the Autoupdates Scheduler Configuration tab.<br>
 
