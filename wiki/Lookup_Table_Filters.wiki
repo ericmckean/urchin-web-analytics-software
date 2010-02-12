@@ -1,7 +1,5 @@
 = Lookup Table Filters =
  
-(original article [https://secure.urchin.com/helpwiki/en/Lookup_Table_Filters Look Table Filters])
-
 The Lookup Table filter can be used to: 
 
   * implement master tracking codes for campaign tracking. Read [https://secure.urchin.com/helpwiki/en/How_To_Use_Master_Tracking_Codes How To Use Master Tracking Codes].
