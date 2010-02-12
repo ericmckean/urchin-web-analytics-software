@@ -2,7 +2,7 @@
  
 === Overview ===
 
-Previous versions of Urchin processed profiles in serial manner. For example, if it took 1 minute to process 1 profile, it would ultimately require approximately 100 minutes to process 100 profiles. 
+Previous versions of Urchin processed profiles in serial manner. For example, if it took 1 minute to process 1 profile, processing 100 profiles would require approximately 100 minutes. 
 
 To address this issue, Urchin 7.0 introduces parallel profile processing. Now, several profile processing jobs can be run simultaneously.
  
