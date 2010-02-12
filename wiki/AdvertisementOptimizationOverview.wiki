@@ -1,4 +1,3 @@
-<font color='brown';>
 =Advertisement Optimization Overview=
 
 Reports in the Advertisement Optimization section can help you understand which campaigns, sources, keywords, search engines and more drive the highest quality traffic and provide the greatest return for the least cost.
@@ -29,4 +28,3 @@ The Advertisement Optimization section contains the following reports:
 
   * *Campaign View:* The Campaign View report combines Urchin UTM data with AdWords CPC data to provide performance metrics on AdWords campaigns and keywords.
   * *Keyword View:* The Keyword View report combines Urchin UTM data with AdWords CPC data to provide keyword performance metrics.
-</font>
