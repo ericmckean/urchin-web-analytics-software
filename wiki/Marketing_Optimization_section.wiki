@@ -1,5 +1,5 @@
 <font color='brown';>
-=Marketing Optimization section=
+=Marketing Optimization Overview=
 
 The Marketing Optimization reports focus on how effectively you drive traffic to your site. The Marketing Optimization section contains the following reports:
 
