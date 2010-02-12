@@ -2,13 +2,13 @@
  
 === Overview ===
  
-The Urchin Data API v1 provides entry level data mining capabilities - aggregates, custom tables, totals, visitor and transaction details. Along with sorting and pagination it introduces basic regular expression and numeric filters.
+The Urchin Data API v1 provides entry level data mining capabilities - aggregates, custom tables, totals, visitor and transaction details. Along with sorting and pagination, it introduces basic regular expression and numeric filters.
 
-The Urchin Data API v2 significantly extends the analysis machinery with introduction of the visit, path and transaction segmentations. It now becomes possible to specify up to 50 filters of each type per single query and squeeze the most valuable data out of the reporting database. 
+The Urchin Data API v2 significantly extends the analysis machinery introducing visit, path and transaction segmentations. It now becomes possible to specify up to 50 filters of each type per single query and squeeze the most valuable data out of the reporting database. 
 
 === Introduction to the Urchin Data API v2 Web Services ===
  
-Urchin 7.0 is bundled with v1 and v2 instances of the Data API. By default the v2 is engaged, though the API can be easily switched back to v1 by setting DataApiVersion to 1 in `<`urchin_home`>`/etc/urchin.conf.
+Urchin 7.0 is bundled with v1 and v2 instances of the Data API. V2 is the default, though the API can be easily switched back to v1 by setting DataApiVersion to 1 in `<`urchin_home`>`/etc/urchin.conf.
 
 WSDL location: 
 {{{
@@ -67,8 +67,8 @@ This service provides the following methods:
 </table>
 </tns:getTableListResponse>
 }}}
-  This response shows that Urchin table #257 can be filtered by 50 numeric and 50 regular expression filters. To see more information please refer to the help article [https://secure.urchin.com/helpwiki/en/Data_API Data API].  
-  * *getData* - Starting from the v2 the method fully supports regular expression and numeric filters.  To see more information please refer to the help article [https://secure.urchin.com/helpwiki/en/Data_API Data API].
+  This response shows that Urchin table #257 can be filtered by 50 numeric and 50 regular expression filters. For more information, please refer to the help article [https://secure.urchin.com/helpwiki/en/Data_API Data API].  
+  * *getData* - Beginning with v2, the method fully supports regular expression and numeric filters.  For more information, please refer to the help article [https://secure.urchin.com/helpwiki/en/Data_API Data API].
  
 ===== Filtering gears =====
   * *tables ##1-43* - tables contain aggregated dimensions and metrics, support filtering by dimensions and metrics from the queried table only
@@ -78,10 +78,10 @@ This service provides the following methods:
   * *table #259* - the table contains all page and visit details, supports filtering by visit, transaction and path dimensions from #256, #257, #258; page metrics from table #259
 
 
-*Note*: In order to see all available dimensions and metrics of these tables please retrieve information via the method "getTableList" of the Report Service or refer to services explorer at <font color="blue">http://your_host:your_port/uapi.html</font>. 
+*Note*: In order to see all available dimensions and metrics of these tables, please retrieve information via the method "getTableList" of the Report Service or refer to services explorer at <font color="blue">http://your_host:your_port/uapi.html</font>. 
 
 
-For example: extract a visit details using REST request.
+For example: extract visit details using REST request.
  Sample REST request: 
 {{{
 http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
@@ -118,7 +118,7 @@ Get visitors from google.com and number of bookings they conducted:
 http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
 &dimensions=u:visitor_id&metrics=u:pages,u:visits,u:transactions&filters=u:utm_source%3D~google,u:request_stem%3D~cart.html&table=256
 }}}
-Get all transactions resulted from bing.com search for a given term:
+Get all transactions resulting from bing.com searches for a given term:
 {{{
 http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=urchin&ids=7&start-date=2008-01-01&end-date=2010-01-01
 &dimensions=u:transaction_id&metrics=u:transactions,u:revenue,u:tax,u:shipping,u:items&filters=u:utm_source%3D~msn,u:utm_term%3D~schwag&table=257
@@ -135,6 +135,6 @@ http://<urchin host>:<port>/services/v2/reportservice/data?login=admin&password=
 }}}
  
 
-=== How to enable older version of the Urchin Data API in Urchin 7.0? ===
+=== How to enable the older version of the Urchin Data API in Urchin 7.0 ===
 
-By default, newly installed or upgraded instance of Urchin 7.0 engages the latest version of the Data API. To switch to another version please refer to section "How do I switch to another version of the Urchin Data API?" of the article [https://secure.urchin.com/helpwiki/en/Urchin_Data_API_FAQ Urchin Data API FAQ].         
+By default, newly installed or upgraded instances of Urchin 7.0 use the latest version of the Data API. To switch to another version, please refer to section "How do I switch to another version of the Urchin Data API?" of the article [https://secure.urchin.com/helpwiki/en/Urchin_Data_API_FAQ Urchin Data API FAQ].         
