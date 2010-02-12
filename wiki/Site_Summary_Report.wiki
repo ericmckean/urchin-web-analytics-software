@@ -27,9 +27,9 @@ Totals are calculated for the selected Date Range. Averages are computed by divi
 <br>*E-Commerce section:* This report section shows total and average Revenue and Transactions over the currently selected Date Range. <br>
 <br>*Traffic section:*
   * *Total Hits:* The total number of requests to your site.
-  * *Valid Hits:* the total number of successful connections to your site.
-  * *Error Hits:* the number of unsuccessful attempts to connect to your site.
-  * *Total Bytes:* the quantity of network bandwidth used by the files requested during the selected Date Range.
+  * *Valid Hits:* The total number of successful connections to your site.
+  * *Error Hits:* The number of unsuccessful attempts to connect to your site.
+  * *Total Bytes:* The quantity of network bandwidth used by the files requested during the selected Date Range.
 *Notes:*  
   # All successful hits and errors are determined by the http status codes within your logs.
   # Because Bytes numbers can be very large, abbreviations are used as appropriate, such as MB for megabytes (~millions of bytes).
