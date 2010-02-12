@@ -1,5 +1,5 @@
 *_Alden, here are my comments according to changes in this article: 
- # Names of all remorts were marked bold (e.g. "Revenue & Transactions:", "Conversion Rate Graph:"). This change should be localized.
+ # Names of all reports were marked bold (e.g. "Revenue & Transactions:", "Conversion Rate Graph:"). This change should be localized.
  # Reports from "Product Merchandising" subsection were regrouped
  # All other changes are marked brown (10 changes)_*
 
