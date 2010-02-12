@@ -5,8 +5,7 @@
 
 
 <font color='black';>
-|| *Dimension* || *Urchin Variable* ||
-
+|| *Dimension*          || *Urchin Variable*                    ||
 ||	IIS Date (1)	||	iis_date                	||
 ||	IIS Time (2)	||	iis_time                	||
 ||	Apache Time (3)	||	apache_time             	||
