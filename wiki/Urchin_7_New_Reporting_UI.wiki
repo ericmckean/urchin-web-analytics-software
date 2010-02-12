@@ -9,7 +9,7 @@
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Advanced_Segments.png] 
 
-<p align="justify"> A new Display Dimension selector enables you to switch the displayed dimensions for drill-down reports to allow more flexible detail reports.
+<p align="justify"> A new Display Dimension selector enables you to switch the displayed dimensions for drill-down reports.
 
 [http://urchin-web-analytics-software.googlecode.com/svn/trunk/Cross-report_drilling.png] 
 
