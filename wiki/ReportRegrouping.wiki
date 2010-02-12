@@ -31,7 +31,7 @@
 
   * E-Commerce/Product Merchandising 
 
-  * "Product Performance", "Product Categories" got a DS at drill downs
+  * "Product Performance", "Product Categories" has a DS in drill downs
 
   * "Product Country Correlation", "Product City Correlation" merged into a single "Product Geo Correlation" report with DS
 
