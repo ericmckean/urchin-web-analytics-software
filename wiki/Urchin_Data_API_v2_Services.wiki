@@ -8,7 +8,7 @@ The Urchin Data API v2 significantly extends the analysis machinery introducing 
 
 === Introduction to the Urchin Data API v2 Web Services ===
  
-Urchin 7.0 is bundled with v1 and v2 instances of the Data API. V2 is the default, though the API can be easily switched back to v1 by setting DataApiVersion to 1 in `<`urchin_home`>`/etc/urchin.conf.
+Urchin 7.0 is bundled with v1 and v2 instances of the Data API. V2 is the default, although the API can be easily switched back to v1 by setting DataApiVersion to 1 in `<`urchin_home`>`/etc/urchin.conf.
 
 WSDL location: 
 {{{
