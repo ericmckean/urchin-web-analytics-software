@@ -1,0 +1,20 @@
+=Cobranding Urchin=
+	
+
+==Overview==
+
+Urchin accomodates cobranding in the administration interface, the reporting interface, and the login screen. There are three files to edit in order to include HTML at the top of the interface. If a complete portal integration is being done, then the Urchin reporting can be delivered within a frameset or table by your application server. 
+
+
+==Cobranding Instructions==
+
+To cobrand your interface, you will need to edit the following files located in the Urchin installation:
+{{{
+     [urchin install dir]/lib/custom/cobrands/cobrand_admin.tpl.sample
+     [urchin install dir]/lib/custom/cobrands/cobrand_report.tpl.sample
+     [urchin install dir]/lib/custom/cobrands/cobrand_session.tpl.sample
+}}}
+    * Rename files by removing '.sample' (file name must be e.g. cobrand_admin.tpl)
+    * Add HTML content to these files as necessary to include your branding
+
+The first file controls the cobranding on the admin interface and the second controls the cobranding on the reporting interface. The third file controls the cobranding on the login screen. The HTML provided in these files will be placed on top of the Urchin interface.
