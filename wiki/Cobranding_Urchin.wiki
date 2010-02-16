@@ -27,5 +27,5 @@ http://urchin-web-analytics-software.googlecode.com/svn/trunk/cobrandin_login_pa
 *Note:* If additional changes are required in default Urchin Login page below cobranded area, you need to edit default Urchin session template(`<URCHIN_HOME>/lib/session/templates/template.tpl`)<br>
 For example, to change Urchin logotype image:
    # Put a new image in folder `<URCHIN_HOME>/htdocs/uicons/common/`
-   # Modify the following string in the session template: `<td class="logo"><img src="uicons/common/_*new_logo.jpg*_"></td>`
+   # Modify the following string in the session template: `<td class="logo"><img src="uicons/common/urchin_logo.jpg"></td>`
    
