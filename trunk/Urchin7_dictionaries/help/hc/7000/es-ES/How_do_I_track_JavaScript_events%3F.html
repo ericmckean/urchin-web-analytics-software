@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>¿Qué debo hacer para realizar el seguimiento de los eventos de JavaScript?</strong> <p class="line862">Si desea realizar el seguimiento de un evento, use la función urchinTracker de JavaScript para especificar un nombre para el evento. Si, por ejemplo, invoca <p class="line867"><pre>    javascript:urchinTracker('/homepage/link1');
+</pre><p class="line874">cada vez que aparezca ese evento, se registrará como si se hubiera producido una visita de página a la URL /homepage/link1. El argumento debe comenzar con una barra inclinada. Puede organizar los nombres de evento en la estructura de directorios que desee. <p class="line862">Por ejemplo, si desea organizar los eventos por página &gt; tipo de evento, le recomendamos que lo haga en una jerarquía similar a esta: <p class="line867"><pre>    * '/homepage/links/link1'
+    * '/homepage/radiobuttons/button1'
+    * '/contactform/rollovers/image1'
+</pre><p class="line867"><strong>Ejemplos de código HTML</strong> <p class="line874">A continuación se ofrece un ejemplo de cómo registrar un evento de clic: <p class="line867"><pre>    &lt;a href="javascript:void(0);" onClick="javascript:urchinTracker('/folder/file');"&gt;
+</pre><p class="line874">Y un ejemplo de cómo registrar un evento de conversión: <p class="line867"><pre>    &lt;a href="javascript:void(0);" onMouseOver="javascript:urchinTracker ('/folder/file');"&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

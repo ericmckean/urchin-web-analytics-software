@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Hoe houd ik e-commercetransacties bij?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dit artikel is geschreven door </em> <a href="ivantageLimited.html">ivantage Limited</a><em>, een geautoriseerde softwareconsultant voor Urchin </em> </li></ul><p class="line874">Urchin ondersteunt een techniek voor gegevensverzameling bij de client waarmee e-commercetransacties kunnen worden vastgelegd. Met een aantal eenvoudige toevoegingen aan uw ontvangstpagina, kan Urchin automatisch transactie- en productgegevens detecteren en vastleggen. De benodigde informatie wordt in een verborgen formulier geplaatst, dat wordt geparseerd voor het verkrijgen van transactie- en productgegevens. De meeste e-commercesystemen die met sjablonen werken, kunnen worden aangepast om de gegevens op te nemen die zijn verborgen op de ontvangstpagina. <p class="line867"><strong>E-Commerce bijhouden inschakelen</strong> <p class="line874">De eerste stap in het bijhouden van e-commercetransacties is het inschakelen van e-commercerapportage voor uw geselecteerde profiel. Ga als volgt te werk om e-commercerapportage in te schakelen: <ol type="1"><li>Meld u aan bij Urchin. </li><li>Klik op 'Bewerken' naast het profiel dat u wilt inschakelen. </li><li>Klik op de pagina 'Profielinstellingen' op 'Bewerken' naast 'Profielinformatie hoofdwebsite'. </li><li>Wijzig de instelling van het keuzerondje 'E-Commercewebsite' van 'Nee' in 'Ja'. </li></ol><p class="line867"><strong>Indeling van de ontvangstpagina</strong> <p class="line874">Vervolgens moet u controleren of de conversiecode op de gebruikelijk manier is opgenomen in de ontvangstpagina. U kunt dit doen met een SSI (Server Side Include) of een ander sjabloonstructuurprogramma, maar u kunt uw HTML-code ook handmatig bewerken: <pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+</pre><p class="line874">Vervolgens moeten in de kwitantie onder de conversiecode de volgende regels worden geschreven door de zoekmachine. Alles tussen haakjes moet worden vervangen door werkelijke waarden, zoals hieronder wordt beschreven in de parameterverwijzing. <pre>   &lt;form style="display:none;" name="utmform"&gt;
+   &lt;textarea id="utmtrans"&gt;UTM:T|[order-id]|[affiliation]|
+   [total]|[tax]| [shipping]|[city]|[state]|[country] UTM:I|[order-id]|[sku/code]|[productname]|[category]|[price]|
+   [quantity] &lt;/textarea&gt;
+   &lt;/form&gt;
+</pre><p class="line862">Tenslotte moet de functie utmSetTrans worden aangeroepen nadat het formulier is verzonden. De transactie kan dan worden geregistreerd. U kunt dit eenvoudig doen door een body onLoad-gebeurtenis te maken in de &lt;body&gt;-openingscode: <pre>   &lt;body onLoad="javascript:__utmSetTrans()"&gt;
+</pre><p class="line874">Als u de bodytag niet kunt bewerken, kunt u de functie utmSetTrans aanroepen met een aparte scripttag zolang u ervoor zorgt dat de functie na het formulier wordt aangeroepen: <pre>   &lt;script type="text/javascript"&gt;
+   __utmSetTrans();
+   &lt;/script&gt;
+</pre><p class="line874">OPMERKING: geef de vierkante haakjes niet op tijdens het instellen van de waarden voor het formulier. Gebruik ook geen scheidingsteken voor duizendtallen in de velden totaal, belasting en verzendkosten; alle cijfers na de komma worden weggelaten. <p class="line867"><strong>Voorbeeld</strong> <pre>UTM:T|34535|Main Store|111108.06|8467.06|10.00|San Diego|CA|USA
+UTM:I|34535|XF-1024|Urchin T-Shirt|Shirts|11399.00|9
+UTM:I|34535|CU-3424|Urchin Drink Holder|Accessories|20.00|2
+</pre><p class="line874">Het verborgen formulier bestaat uit twee soorten regels: de transactieregel en de itemregels. Voor elke transactie moet er slechts één transactieregel zijn, aangeduid door de "T" direct na de "UTM:". Op deze regel wordt het totaal van de transactie weergegeven, inclusief belastingen of verzendkosten en andere gegevens. Voor elk item op de kwitantie wordt een aparte itemregel gemaakt. Deze wordt aangeduid met de "I". De itemregels kunnen productnamen, codes, prijzen per eenheid en hoeveelheden bevatten. U kunt een onbeperkt aantal itemregels per transactie bijhouden. <p class="line867"><strong>Parameterverwijzing</strong> <p class="line867"><strong>Variabelen voor transactieregels</strong> <pre>[order-id]      Uw interne, unieke ordernummer
+[affiliation]   Optionele partner of samenwerking met winkels
+[total]         Totaalbedrag van de transactie
+[tax]   Belasting van de transactie
+[shipping]      De verzendkosten van de transactie
+[city]  Plaatsnaam waaraan de transactie moet worden gekoppeld
+[state/region]  Staat of provincie
+[country]       Land
+</pre><p class="line867"><strong>Variabelen voor itemregels</strong> <pre>[order-id]      Uw interne, unieke ordernummer (dit moet gelijk zijn aan de transactieregel)
+[sku/code]      SKU-code van het product
+[product name]  Productnaam of beschrijving
+[category]      Categorie van het product of variant
+[price]         Eenheidsprijs van het product
+[quantity]      Bestelde hoeveelheid
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

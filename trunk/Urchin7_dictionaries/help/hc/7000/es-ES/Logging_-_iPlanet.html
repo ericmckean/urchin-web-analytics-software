@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Registro: iPlanet</strong> <p class="line867"><strong>Visión general</strong> <p class="line874">En este artículo se ofrece una vista general acerca de cómo configurar el registro para un servidor web iPlanet para facilitar el procesamiento y la creación de informes para Urchin. <p class="line874">Utilice el tipo "Netscape" para la configuración de la fuente del registro. <p class="line874">Existe un conjunto de campos obligatorios mínimos necesarios para que Urchin produzca informes. Estos son: <ul><li>fecha </li><li>hora </li><li>nombre de host o dirección IP del sistema que lo solicita </li><li>solicitud (por ejemplo, los documentos que solicitó el sistema de su servidor web) </li><li>código de estado generado por solicitud (numérico) </li><li>bytes (bytes transferidos del servidor al cliente)  </li></ul><p class="line874">Además, para realizar informes más completos necesita los campos siguientes: <ul><li>referencia </li><li>user-agent </li><li>cookies (si el Supervisor de tráfico de Urchin está instalado en su sitio)  </li></ul><p class="line867"><strong>Configuración</strong> <pre>Init fn=flex-init access="$accesslog"
+format.access="%Ses-&gt;client.ip% - %Req-&gt;vars.auth-user%
+[%SYSDATE%] \"%Req-&gt;reqpb.clf-request%\"
+%Req-&gt;srvhdrs.clf-status% %Req-&gt;srvhdrs.content-length%
+\"%Req-&gt;headers.user-agent%\"
+\"%Req-&gt;headers.referer%\"
+\"%Req-&gt;headers.cookie%\""
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

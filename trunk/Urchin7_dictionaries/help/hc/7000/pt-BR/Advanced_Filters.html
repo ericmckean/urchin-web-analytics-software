@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Filtros avançados</strong> <p class="line867"><strong>Introdução</strong> <p class="line874">A opção "Filtro avançado" permite construir campos para gerar relatórios de um ou dois campos existentes.As expressões regulares POSIX e as variáveis correspondentes podem ser utilizadas para capturar tudo ou partes dos campos e combinar o resultado na ordem que você desejar. <p class="line867"><strong>Como usar filtros avançados</strong> <p class="line867"><img alt="Advanced_Filters" src="../images/Advanced_Filters.jpg" title="Advanced_Filters" /> <p class="line874">Como mostra a figura acima, o Filtro avançado utiliza dois campos,Campo A e Campo B, e constrói o Campo de saída.A construção ocorre da seguinte maneira.A expressão Trecho A é aplicada ao Campo A e a expressão Trecho B é aplicada ao Campo B. Essas expressões podem usar correspondências de texto integrais ou parciais e incluir caracteres curinga.Veja a seguir uma lista dos caracteres curinga mais comuns e seus significados.As expressões estão de acordo com as Expressões regulares POSIX. <p class="line867"><pre>.   corresponder um caractere qualquer
+*   corresponder zero ou mais dos itens anteriores
++   corresponder um ou mais dos itens anteriores
+?   corresponder zero ou um item anterior
+()  lembrar o conteúdo dos parênteses como um item
+[]  corresponder um item nesta lista
+-   criar um intervalo em uma listat
+|   ou
+^   corresponder ao início do campo
+$   corresponder ao final do campo
+\   fazer escape de todos os curingas acima
+
+</pre><p class="line874">Utilize os parênteses () para capturar partes dos campos.Eles podem ser usados como referência no Construtor usando a notação $A1, $A2, $B1, $B2.A|B refere-se ao Campo, e o número refere-se a quais parênteses devem ser capturados.No exemplo acima, todo o Campo A e todo o Campo B são capturados e criados como um novo campo.O campo "Destino dos dados de saída" pode ser um campo separado ou o mesmo campo que o Campo A ou o Campo B. <p class="line867"><strong>Controles</strong> <p class="line874">O controle 'Substituir campo de saída' permite decidir o que fazer se o Campo de saída já existir.A opção 'Campo obrigatório' permite decidir o que fazer se uma das expressões não corresponder. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

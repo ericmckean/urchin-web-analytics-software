@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>¿Qué debo hacer para que Urchin identifique motores de búsqueda adicionales en los informes de referencias?</strong> <p class="line874">De manera predeterminada, Urchin realiza el seguimiento de las referencias de 20 motores de búsqueda que se indican en su archivo UTM. Asimismo, puede configurar Urchin para que identifique las referencias de motores de búsqueda adicionales. Para ello, edite el archivo UTM de la siguiente manera: <ol type="1"><li>Abra el archivo urchin.js en un editor de textos. </li><li>Desplácese hacia abajo hasta encontrar las entradas siguientes: </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>Puede ver entradas para los motores de búsqueda numeradas del 0 al 19. Estos son los motores de búsqueda en los que Urchin realiza un seguimiento predeterminado. Para añadir otro motor de búsqueda a la lista, simplemente añada una nueva entrada con el mismo formato que las otras. Por ejemplo, así es cómo añadiría una entrada para un motor de búsqueda "nuevo": </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">El valor de _uOsr debe ser el nombre del motor de búsqueda, y el de _uOkw debe ser la variable de la consulta que almacena la palabra clave. Por ejemplo, si alguien busca "moto" y la URL del resultado de la búsqueda es: </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">el valor para _uOkw sería "q" el valor para _uOsr sería "google" </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

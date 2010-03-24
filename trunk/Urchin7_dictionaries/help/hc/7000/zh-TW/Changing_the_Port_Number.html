@@ -1,0 +1,10 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>變更通訊埠號</strong> <p class="line874">Urchin 網頁伺服器預設接收的通訊埠號為 9999。您可以採用兩個基本步驟來變更此號碼： <ul><li>在「伺服器設定」畫面中變更通訊埠號 </li><li>停止並重新啟動 Urchin 服務，此程序在 Windows 系統與 Unix 類型系統上可能有些不同。 </li></ul><p class="line874">詳細程序如下： <ul><li>登入 Urchin 管理介面。 </li><li><p class="line862">瀏覽至 [組態] &gt; [全域設定] &gt; [存取設定]。 </li><li>在 [伺服器通訊埠號] 方塊中設定新的通訊埠號。 </li><li>按一下 [更新] 按鈕。 </li></ul><p class="line874">您現在必須重新啟動 Urchin 服務： <ul><li>在 Unix 類型系統上，移至 Urchin 分佈的 bin 目錄，然後執行： </li></ul><p class="line867"><pre>          ./urchinctl restart
+</pre><ul><li><p class="line862">在 Windows 系統上，從控制台上移至 [開始] -&gt; [程式集] -&gt; [Urchin 6]，選擇 [停用 Urchin 6 服務]，然後選擇 [啟用 Urchin 6 服務]。 </li></ul><p class="line874">現在，網頁伺服器應該會透過新的通訊埠號接收連線要求。這表示用來檢視報告和設定 Urchin 軟體的網址已變更，您應該通知使用者關於新網址的事宜。 <p class="line867"><strong>附註</strong> 在大部分系統上，您可能需要根權限才能使用小於 1024 的通訊埠號。此外，如果指定的通訊埠已由其他服務佔用，Urchin 將無法啟動。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

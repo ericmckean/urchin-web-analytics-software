@@ -1,0 +1,33 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin： Urchin 記錄處理</strong> <p class="line867"><strong>總覽</strong> <p class="line874">Urchin Log Processing Engine又名「urchin」，是 Urchin 的核心記錄處理元件。 一般來說，記錄處理引擎會在執行工作時，從 Urchin Scheduler (urchind) 叫用。 然而，您可直接從指令殼層執行 Urchin 來執行特定設定檔。 這在從外部來源 (如 Windows 工作排程器或 UNIX 系統的 cron ) 執行 Urchin 工作的高度指令碼環境中特別有用。 這在特別情況中執行設定檔的情形下也很有用，例如僅處理特定日子的點擊，或是進行某種偵錯。 <p class="line874">Urchin 不真的算是公用程式；在這裡這麼記錄的原因是 Urchin 提供一些在某些環境下有用的有限指令行功能。 <p class="line867"><strong>使用方式</strong> <p class="line874">Urchin 位於 Urchin 分佈的 bin 目錄中。 用法如下： <p class="line867"><pre>
+urchin [options...] (-p &lt;profile name&gt; | -P &lt;profile id&gt;)
+
+</pre><p class="line874">選項： <p class="line867"><pre>
+-a &lt;account name&gt;       指定設定檔帳戶名稱。 預設帳戶名稱為 '(NONE)'
+
+-D                      啟用偵錯模式
+
+-d &lt;YYYYMMDD&gt;           指定重新處理日期
+
+-H                      指定將執行的輸出結果記錄到記錄檔中。 如果指定 -H 且未指定 -T，則會建立新的工作記錄
+
+-h                      列印說明資訊然後離開
+
+-P &lt;profile id&gt;         指定要處理的設定檔 ID
+
+-p &lt;profile name&gt;       指定要處理的設定檔名稱
+
+-T &lt;task id&gt;            指定要更新的工作記錄。 指定 -T 就會強制使用 -H
+
+-t                      列印組態資料然後離開
+
+-v                      列印版本編號然後離開
+
+</pre><p class="line867"><strong>考量</strong> <ul><li>在 UNIX 系統中，您應以安裝 Urchin 的使用者 / UID 身份來執行 Urchin，以確保設定檔的資料庫是由該 UID 所擁有，因為如果這些資料庫不存在，Urchin 就會另行建立資料庫。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

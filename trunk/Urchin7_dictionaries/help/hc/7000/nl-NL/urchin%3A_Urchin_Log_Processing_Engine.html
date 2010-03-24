@@ -1,0 +1,33 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>urchin: logboekverwerking van Urchin</strong> <p class="line867"><strong>Overzicht</strong> <p class="line874">De Urchin Log Processing Engine, urchin, is het belangrijkste onderdeel voor de verwerking van logboekgegevens van Urchin. Normaal gesproken wordt de engine voor het verwerken van de logboekgegevens aangeroepen via de Urchin Scheduler (urchind) wanneer er een taak wordt uitgevoerd. U kunt Urchin echter ook rechtstreeks vanuit een opdrachtshell aanroepen om een bepaald profiel uit te voeren. Dit is met name handig in omgevingen waarin in hoge mate gebruik wordt gemaakt van scripts, waarbij de Urchin-taken worden uitgevoerd vanaf een externe bron, zoals Windows Task Scheduler of cron op UNIX-systemen. Daarnaast is dit handig wanneer er onder speciale omstandigheden profielen moeten worden uitgevoerd, bijvoorbeeld wanneer er alleen treffers voor een bepaalde dag moeten worden verwerkt of wanneer er bepaalde fouten moeten worden opgespoord. <p class="line874">Urchin is geen hulpprogramma in de exacte zin van het woord - het wordt hier genoemd omdat het enkele beperkte opdrachtregels bevat die in bepaalde omgevingen handig kunnen zijn. <p class="line867"><strong>Gebruik</strong> <p class="line874">urchin bevindt zich in de map bin van de Urchin-distributie. U kunt Urchin als volgt gebruiken: <p class="line867"><pre>
+urchin [options...] (-p &lt;profile name&gt; | -P &lt;profile id&gt;)
+
+</pre><p class="line874">Opties: <p class="line867"><pre>
+-a &lt;account name&gt;       Geeft de accountnaam van het profiel aan. De standaardaccountnaam is '(NONE)'.
+
+-D                      Schakelt de foutopsporingsmodus in.
+
+-d &lt;YYYYMMDD&gt;           Geeft de datum voor opnieuw verwerken aan.
+
+-H                      Geeft aan dat de uitvoer in de taakgeschiedenis wordt opgeslagen. Er wordt een nieuwe record voor de taakgeschiedenis gemaakt als -H wel en -T niet wordt opgegeven.
+
+-h                      Drukt de Help-informatie af en sluit af.
+
+-P &lt;profile id&gt;         Geeft de profiel-id aan die moet worden verwerkt.
+
+-p &lt;profile name&gt;       Geeft de profielnaam aan die moet worden verwerkt.
+
+-T &lt;task id&gt;            Geeft de record in de taakgeschiedenis aan die moet worden bijgewerkt. Als u -T opgeeft, wordt het gebruik van -H geforceerd.
+
+-t                      Drukt de configuratiegegevens af en sluit af.
+
+-v                      Drukt het versienummer af en sluit af.
+
+</pre><p class="line867"><strong>Aandachtspunten</strong> <ul><li>Op UNIX-systemen moet urchin worden uitgevoerd als de gebruiker/gebruikers-id waarvoor Urchin is geïnstalleerd om ervoor te zorgen dat de databases voor het profiel het eigendom zijn van de betreffende gebruikers-id, aangezien urchin deze maakt als ze nog niet bestaan. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

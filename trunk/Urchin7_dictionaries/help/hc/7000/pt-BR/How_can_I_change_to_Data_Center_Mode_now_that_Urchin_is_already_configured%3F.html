@@ -1,0 +1,13 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como posso alterar para o modo Datacenter agora que o Urchin já está configurado?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Este artigo foi escrito por </em> <a href="ROIRevolution.html">ROI Revolution</a><em> consultor autorizado do software Urchin </em> </li></ul><p class="line874">O modo Datacenter permite que você adicione níveis de direitos administrativos a um ou a vários perfis de um grupo. Se você já tiver concluído o processo de configuração inicial e quiser ativar o modo Datacenter, poderá fazê-lo facilmente em MySQL ou em PostgreSQL. <p class="line867"><strong>Para MySQL:</strong> <pre>mysql&gt; USE urchin;
+mysql&gt; UPDATE uglobals SET ubgl_enable_accounts = 1;
+</pre><p class="line867"><strong>Para PostgreSQL:</strong> <pre>postgres=# \connect urchin; 
+postgres=# UPDATE uglobals SET ubgl_enable_accounts = 1;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

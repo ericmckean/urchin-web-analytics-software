@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Wie kann ich alle Sub-Domains für meine Website in separaten Profilen erfassen?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dieser Artikel wurde von</em> <a href="ivantageLimited.html">ivantage Limited</a><em> erstellt, einem autorisierten Berater für Urchin-Software. </em> </li></ul><p class="line874">Das Erfassen von Sub-Domains in separaten Profilen mit Urchin hängt von der Konfiguration Ihres Webservers ab. Sie können Ihren Webserver so konfigurieren, dass jede einzelne Sub-Domain in gesonderten Protokolldateien erfasst wird. Urchin kann dann jede Protokolldatei der Sub-Domains einzeln verarbeiten. Stattdessen kann auch nur eine Protokolldatei erstellt und das Zugriffsprotokoll so festgelegt werden, dass der Hostname einschließlich der Sub-Domain aufgezeichnet wird. Dann kann für jedes Profil einer Sub-Domain ein Einschließen-Filter erstellt werden.  Der Filter für ein Profil schließt dabei nur Zugriffe für z. B "hilfe.beispiel.de" ein und der andere Filter schließt nur Zugriffe auf "www.beispiel.de" ein. <p class="line874">Zum Erfassen Ihrer Sub-Domains in separaten Profilen wenden Sie folglich einen Einschließen-Filter auf jedes Profil an, um nur einen bestimmten Hostnamen einzuschließen. Erstellen Sie zunächst ein Profil für jede Sub-Domain. Nachdem Sie das getan haben, können Sie die unten aufgeführten Filter erstellen. <p class="line874">Wenn Sie beispielsweise "sub.beispiel.de" und "www.beispiel.de" in zwei separaten Profilen erfassen möchten, wenden Sie die folgenden Filter an: <ul><li style="list-style-type:none">Für Ihr Profil von sub.beispiel.de </li></ul><p class="line867"><pre>    Filterart: ONLY-Muster einschließen
+    Filterfeld: utm_request_hostname (AUTO)
+    Filtermuster: ^sub\.beispiel\.de
+</pre><ul><li style="list-style-type:none">Für Ihr Profil von www.beispiel.de </li></ul><p class="line867"><pre>    Filterart: ONLY-Muster einschließen
+    Filterfeld: utm_request_hostname (AUTO)
+    Filtermuster: ^www\.beispiel\.de
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

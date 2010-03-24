@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>アドバンス フィルタ</strong> <p class="line867"><strong>はじめに</strong> <p class="line874">アドバンス フィルタ オプションでは、既存の 1 つまたは 2 つのフィールドから、レポートに取り込むフィールドを作成できます。 POSIX 正規表現と対応する変数を使用して、フィールドのすべてまたは一部を取得し、結果を任意の順序で組み合わせることができます。 <p class="line867"><strong>アドバンス フィルタの使用</strong> <p class="line867"><img alt="Advanced_Filters" src="../images/Advanced_Filters.jpg" title="Advanced_Filters" /> <p class="line874">上の図に示すように、アドバンス フィルタでは最大 2 つのフィールド ([フィールド A] と[フィールド B]) を使用し、[出力フィールド] を作成します。 作成プロセスにおいては、 [引用 A] の正規表現が [フィールド A] に適用され、[引用 B] の正規表現が [フィールド B] に適用されます。これらの正規表現では、完全一致や部分一致のテキスト検索を使用でき、ワイルドカードを含めることができます。 よく使用されるワイルドカードとその意味の一覧を次に示します。 これらの表現は POSIX 正規表現の基準に従うものです。 <p class="line867"><pre>.   任意の 1 文字を表します
+*   直前のアイテムの 0 回以上の繰り返しを表します
++   直前のアイテムの 1 回以上の繰り返しを表します
+?   直前のアイテムの 0 回または 1 回の繰り返しを表します
+()  かっこの内容を 1 つのアイテムとして扱います
+[]  かっこ内のアイテムの任意の 1 つを表します
+-   範囲を指定します
+|   複数のアイテムのいずれかを表します
+^   フィールドの先頭のみを対象とします
+$   フィールドの最後のみを対象とします
+\   ワイルドカード文字をエスケープ処理します
+
+</pre><p class="line874">フィールドの一部を取得するには、かっこ () を使用します。 これらのフィールドは、[構成] で $A1、$A2、$B1、$B2 の表記を使用して参照することができます。 A や B は参照するフィールドを表し、数字は取得するアイテムを表します。 上の例では、フィールド A と フィールド B 全体を取得して、新しいフィールドを作成します。 [出力先] フィールドには、[フィールド A] または [フィールド B] と別のフィールドまたは同じフィールドを指定できます。 <p class="line867"><strong>処理</strong> <p class="line874">[出力フィールドを上書き] オプションでは、[出力先] フィールドが既に存在する場合の処理を指定できます。 [フィールド X は必須] オプションでは、いずれかの表現に一致するフィールドがない場合の処理を指定します。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

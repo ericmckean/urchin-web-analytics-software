@@ -1,0 +1,589 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+    
+    .writely-callout-data {
+      display: none;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>Urchin 7 - New Reporting User Interface</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<p>
+  &nbsp;
+</p>
+<p>
+  <font size=2><b>New Reporting User Interface</b></font>
+</p>
+<p>
+  &nbsp;
+</p>
+<p>
+  <font size=2>&nbsp;&nbsp; &nbsp;Urchin 7 Reporting UI was significantly changed. First of all now it has new GA like look (including style of report tables and charts). </font>
+</p>
+<p>
+  <font size=2>The Advanced Segments feature introduced in Urchin 7 allows <font size=2>creation new segments</font> and applying default and created segmants to reports.<br>
+  </font>
+</p>
+<p>
+</p>
+<div id=x1jn style=TEXT-ALIGN:left>
+  <img src="images/ddjk3d43_22jbc3f9g5_b.jpg" style=HEIGHT:385px;WIDTH:1017px><br>
+  To provide Urchin users the permanent links to Urchin reports, preserving the exact settings of report, filtering, paging etc, which can be embedded into e-mail or Web pages, some new feature "Permalink" appeared.<br>
+  <br>
+</div>
+<font size=2>The Print View and Permalink options were added to the Home page.</font>
+<p>
+  &nbsp;
+</p>
+<p style=COLOR:#ff0000>
+</p>
+<div id=x-6. style=TEXT-ALIGN:left>
+  <img src="images/ddjk3d43_24hp29jpfh_b.jpg" style=HEIGHT:174px;WIDTH:1278px>
+</div>
+<p>
+</p>
+<p>
+  &nbsp;
+</p>
+<p>
+  <font color=#000000 size=2>&nbsp;&nbsp; &nbsp;New capability </font><font color=#000000 size=2>to allow displaying different metric sets at different drill-down levels and switching the detail level in Urchin reports appeared in Urchin 7.<br>
+  </font>
+</p>
+<p>
+  <font size=2><br>
+  </font>
+</p>
+<div id=bmbt style=TEXT-ALIGN:left>
+  <img src="images/ddjk3d43_20fn6d7fcw_b.jpg" style=HEIGHT:393px;WIDTH:1262px>
+</div>
+&nbsp;
+<p>
+  <font size=2>&nbsp;&nbsp;&nbsp;<br>
+  </font>
+</p>
+<p>
+  <font size=2>Some of reports were renamed and regrouped </font><font color=#000000 size=2>by content </font><font size=2>to simplify navigation between reports and analysis of business data. Some reports were organised in tabs. For example, such reports as the </font><font color=#000000 size=2>Browser Versions, the Platform Versions and the Browser &amp; Platform Combos from <span style=FONT-STYLE:normal><font color=#000000><font face=verdana,arial,helvetica>the "IT Reports</font></font></span>" section/<span style=FONT-STYLE:normal><font color=#000000><font face=verdana,arial,helvetica>"Browsers &amp; Robots"</font></font></span> subsection were merged into a single Browsers &amp; Platforms tabbed report.</font>
+</p>
+<p>
+  &nbsp;
+</p>
+<p>
+  <font color=#000000 size=2>The following reports were renamed/regrouped</font><font size=2>:</font>
+</p>
+<p>
+  &nbsp;
+</p>
+<p class=MsoListParagraph>
+  <font color=#000000 size=2>1)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>Marketing Optimization section/Marketing Campaign Results subsection:</font>
+</p>
+<p>
+  <font color=#000000 size=2>"Campaign Conversion", "Source Conversion", "Medium Conversion" reports merged into a single “Conversion Overview” report with detail level.</font>
+</p>
+<p class=MsoListParagraphCxSpFirst>
+  <font color=#000000 size=2>2)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>“Marketing Optimization” section/”Marketing Campaign Results” subsection:</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>"Campaign ROI", "Source ROI", "Medium ROI" repots merged into a single "ROI Overview" report with detail level.</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>3)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>The “Unique Visitor Tracking” section renamed to the “Visitor Tracking”.</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>4)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>The "Engagement Metrics" report moved from the “</font><font color=#000000 size=2>Content Optimization</font><font size=2>”</font><font color=#000000 size=2> section/</font><font color=#000000 size=2> “Content Performance”</font><font color=#000000 size=2> subsection to the “</font><font color=#000000 size=2><font color=#000000><font size=2>Marketing</font></font> Optimization</font><font size=2>”</font><font color=#000000 size=2> section/</font><font color=#000000 size=2> “</font><font color=#000000 size=2>Visitor Tracking” subsection.</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>5)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>The “Content By Titles” report merged from the “</font><font color=#000000 size=2>Content Optimization</font><font size=2>”</font><font color=#000000 size=2> section/</font><font color=#000000 size=2> “Content Performance”</font><font color=#000000 size=2> subsection into the “Top Content” report of the same subsection with detail level.</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>6)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>The “</font><font color=#000000 size=2>Content Optimization</font><font size=2>”</font><font color=#000000 size=2> section/</font><font color=#000000 size=2> “Web Design Parameters”</font><font color=#000000 size=2> subsection:</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>"Screen Resolution", "Screen Colors", "Flash Enabled", "Java Enabled" reports merged into a single "Browser Capabilities" report </font><font size=2>with </font><font size=2>multiple tabs</font><font size=2>.</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>7)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>The “Connection Speed” report merged as a tab of the “</font><font color=#000000 size=2>Content Optimization</font><font size=2>”</font><font color=#000000 size=2> section/</font><font color=#000000 size=2> “Web Design Parameters”</font><font color=#000000 size=2> subsection into the “Network Location” report of the “</font><font color=#000000 size=2>Marketing Optimization</font><font size=2>”</font><font color=#000000 size=2> section/</font><font color=#000000 size=2> “Visitor Segment Performance”</font><font color=#000000 size=2> subsection.</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>8)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>“Content Optimization” section/”Web Design Parameters” subsection:</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>"Browser Versions", "Platform Versions", "Browser &amp; Platform Combos" reports merged into a single "Browsers &amp; Platforms" tabbed report. </font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>9)<span style=FONT-STYLE:normal>&nbsp;&nbsp;&nbsp; </span></font><font color=#000000 size=2>&nbsp;“E-Commerce” section/”Product Merchandising” subsection: </font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>"Product Performance", "Product Categories" reports have got detail level at drill downs. </font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>10) </font><font color=#000000 size=2>&nbsp;“E-Commerce” section/”Product Merchandising” subsection: </font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>"Product Country Correlation", "Product City Correlation" reports merged into a single "Product-Location Correlation" report with detail level.</font>
+</p>
+<p class=MsoListParagraphCxSpMiddle>
+  <font color=#000000 size=2>11) </font><font color=#000000 size=2>&nbsp;The “IT Reports” section\”Browsers &amp; Robots” subsection:</font>
+</p>
+<p class=MsoListParagraphCxSpLast>
+  <font color=#000000 size=2>"Browser Versions", "Platform Versions", "Browser &amp; Platform Combos" reports merged into a single "Browsers &amp; Platforms" tabbed report.</font>
+</p>
+<p>
+  <font size=2><br>
+  </font>
+</p>
+<p>
+  &nbsp;<font size=2>Context links to HC articles were added into the Urchin 7 Reporting UI.</font>
+</p>
+<p>
+  &nbsp;
+</p>
+<p style=COLOR:#ff0000>
+</p>
+<div id=m4lq style=TEXT-ALIGN:left>
+  <img src="images/ddjk3d43_23jmxvrngq_b.jpg" style=HEIGHT:478px;WIDTH:254px>
+</div>
+<font size=2><br>
+</font>
+<p>
+</p>
+<p>
+  &nbsp;
+</p>
+<font size=2><br>
+</font><br></body>
+</html></body></html>

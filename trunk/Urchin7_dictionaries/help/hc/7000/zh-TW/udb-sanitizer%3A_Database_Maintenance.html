@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer： 資料庫維護公用程式</strong> <p class="line867"><strong>總覽</strong> <p class="line874">Urchin 資料庫維護公用程式 (udb-sanitizer) 能夠檢查 Urchin 6 設定檔資料庫，並對這些資料庫執行各種維護作業。  <p class="line874">udb-sanitizer 可執行的作業類型包括：  <ul><li>讓資料庫返回先前儲存的備份狀態 </li><li class="gap">刪除一天、多天或整個月的設定檔資料  </li></ul><p class="line867"><strong>用法</strong> <p class="line874">udb-sanitizer 位於 Urchin 6 分佈的 util 目錄中。  <p class="line874">此公用程式的用法如下：  <pre>  udb-sanitizer [-h] (列印用法訊息，然後離開)
+
+  udb-sanitizer [-v] (列印版本，然後離開)
+
+  udb-sanitizer -p profile [-d YYYYMM[DD]] -bfhprq] [-z [-e DD]] 
+</pre><p class="line874">其中：  <pre>   -b  直接執行復原選項
+
+   -d  指定執行作業的月份-年份 (日期為選填)
+
+   -e  搭配 z 和 d 選項，將同一月份中的多天 (範圍 d-&gt;e) 資料歸零
+
+   -f  強制執行動作，不需經過確認
+
+   -h  列印此說明資訊
+
+   -p  指定設定檔名稱 (必要)
+
+   -a  指定帳戶名稱
+
+   -r  直接執行移除選項
+
+   -q  無訊息模式，不顯示輸出結果 (除了重要的使用者確認訊息以外)
+
+   -z  直接執行日期資料歸零選項 
+
+</pre><p class="line867"><span class="u">注意</span>： 當叫用 udb-sanitizer 時所用的選項並未完整描述該進行何種動作，公用程式就會顯示用法文字 (相當於 <tt>-h</tt> 選項)。  您可以讓一個動作在不需任何使用者互動的情況下執行，方法是搭配 <tt>–f</tt> 和 <tt>-q</tt> 選項並善用 <tt>-d</tt>、<tt>-b</tt>、<tt>-r</tt> 或 <tt>-z</tt> 選項。  <p class="line867"><strong>作業</strong> <p class="line874">在一般作業中，udb-sanitizer 是從指令殼層叫用的，然後根據所需的作業類型來提供合適的選項。    <p class="line874">上述可用選項的相關動作包括：  <p class="line874">1. 資料復原 (–r) <ul><li style="list-style-type:none">這個選項可讓使用者還原成設定檔的已封存資料。 將有一份 ZIP 封存備份清單可供使用者選擇，所選的封存檔案內容就會取代現有的報告資料庫。 ZIP 封存的命名慣例為「YYYYMM-backupv6-YYYYMMDDHHMMSS.zip」，第一個 YYYYMM 是指資料備份作業的月份 (例如，200803 是指 2008 年 3 月)，而 YYYYMMDDHHMMSS 的部分是指 ZIP 封存建立時的時間戳記。 時間戳記可協助判斷您將回復成哪一個 ZIP 封存。 </li></ul><p class="line874">2. 刪除每月資料 (-d) <ul><li style="list-style-type:none">特定設定檔在所指定月份中的任何資料都將遭到移除。 如果資料發生錯誤，這個選項就可用來清除整個月的統計資料，比如說當套用了錯誤的篩選器或是處理了錯誤的記錄時，或者當某些的設定進階選項遭到變更 (例如點擊路徑深度或推薦連結等級)，而您需要更新該月份的 Urchin 報告資料來反映變更時。 使用 -f、-r 和 -q 引數叫用 udb-sanitizer 就可以在不需任何使用者互動的情況下執行此動作。  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. 歸零一天或多天的資料 <ul><li style="list-style-type:none">這個選項可讓某個月份裡，選定的天數範圍內的資料都歸零，因此能讓 Urchin 的記錄處理作業只針對那幾天重新執行 (例如 urchin -p profile -d YYYYMMDD)。 使用 –f、–q、-z 和 -d 引數叫用 udb-sanitizer 就可以在不需任何使用者互動的情況下歸零某一天的資料，例如：  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">如果同時使用 -e 引數，就可以指定結束日期，例如：  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">這會將 9 月 7 日至 10 日的資料歸零。 請注意，–e 引數只能指定結束日期。 比起同時叫用多個 udb-sanitizer 例項來一次歸零一天的資料，這有效率多了，因為資料庫的索引和標頭都只會經過一次檢查。 對於擁有大量資料的設定檔，索引 / 標頭的檢查作業可能就需要大量的時間。  </li></ul><p class="line874">4. 如果設定檔是帳戶的一部分，就必須使用 -a 引數來指定帳戶名稱。   <p class="line867"><span class="u">重要事項</span>： 用來刪除每日或每月資料的動作都無法復原！ 唯一的辦法就是重新處理該時間範圍的網頁伺服器記錄，藉以重新匯入設定檔資料庫。 請您謹慎使用這些選項。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

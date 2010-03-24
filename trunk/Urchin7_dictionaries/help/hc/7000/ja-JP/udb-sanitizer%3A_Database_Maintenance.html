@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer: データベース メンテナンス ユーティリティ</strong> <p class="line867"><strong>概要</strong> <p class="line874">Urchin データベース メンテナンス ユーティリティの udb-sanitizer では、Urchin 6 プロファイル データベースをチェックして、これらのデータベースに対し各種のメンテナンス処理を行います。  <p class="line874">udb-sanitizer では次の処理を行います。  <ul><li>データベースを前回のバックアップ時の状態に戻します。 </li><li class="gap">特定の日、期間、または 1 か月分のプロファイル データを削除します。  </li></ul><p class="line867"><strong>使用法</strong>  <p class="line874">udb-sanitizer は Urchin 6 の util ディレクトリにあります。  <p class="line874">このユーティリティの使用方法は次のようになります。  <pre>  udb-sanitizer [-h] (使用方法を出力して終了します)
+
+  udb-sanitizer [-v] (バージョンを出力して終了します)
+
+  udb-sanitizer -p profile [-d YYYYMM[DD]] -bfhprq] [-z [-e DD]] 
+</pre><p class="line874">各オプションの説明は以下のとおりです。  <pre>   -b  ロールバック オプションに進みます
+
+   -d  実行する年月日 (日は省略可) を指定します
+
+   -e  z オプション、d オプションと共に使用し、同じ月の複数日 (d ～ e の期間) のデータをゼロに設定します
+
+   -f  確認メッセージを表示せずに強制的に処理を実行します
+
+   -h  このヘルプ情報を出力します
+
+   -p  プロファイル名を指定します (必須)
+
+   -a  アカウント名を指定します
+
+   -r  削除オプションに進みます
+
+   -q  重要なユーザー確認以外は出力を行わない静的モードに切り替えます
+
+   -z  日単位のデータ削除オプションに進みます 
+
+</pre><p class="line867"><span class="u">注</span>:  実行する処理を明確に特定できないオプションを付けて udb-sanitizer を呼び出すと、<tt>-h</tt> オプションを指定した場合と同じような使用方法に関するテキストが表示されます。  <tt>-d</tt>、<tt>-b</tt>、<tt>-r</tt>、または <tt>-z</tt> の各オプションを適用する際、一緒に <tt>–f</tt> と <tt>-q</tt> のオプションを組み合わせて使用すると、ユーザーの操作なしに実行可能な処理を設定できます。  <p class="line867"><strong>操作</strong>  <p class="line874">通常の操作では、udb-sanitizer は予定される処理に応じたオプションを付けてコマンド シェルから呼び出されます。    <p class="line874">上記の利用可能なオプションに関連付けられている処理には次のものがあります。  <p class="line874">1. データのロールバック (–r) <ul><li style="list-style-type:none">このオプションでは、ユーザーがプロファイルを既存のアーカイブ データに戻すことができます。 表示される ZIP 形式のアーカイブ バックアップの一覧からファイルを選択し、そのコンテンツで既存のレポート作成データベースを置き換えます。 ZIP アーカイブには「YYYYMM-backupv6-YYYYMMDDHHMMSS.zip」の形式で名前が付けられます。最初の「YYYYMM」はデータがバックアップされた年月 (「200803」の場合は 2008年3月) を表し、「YYYYMMDDHHMMSS」は ZIP アーカイブが作成された時点のタイムスタンプを示します。 このタイムスタンプを参考にして元に戻す ZIP アーカイブを特定します。 </li></ul><p class="line874">2. 月次データの削除 (-d) <ul><li style="list-style-type:none">特定のプロファイルの指定した月の全データを削除します。 このオプションは、間違ったフィルタが適用されたりログが誤って処理されたためにデータが正しくない場合や、クリック パスの階層や参照レベルなどの高度なプロファイル パラメータが変更された月の Urchin レポート データを更新して変更を反映する場合に、1 か月間の統計情報をゼロに設定する際に便利です。 この処理は、-f、-r、-q の引数を付けて udb-sanitizer を呼び出すことにより、ユーザー操作なしに実行することができます。  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. 1 日以上のデータをゼロに設定する <ul><li style="list-style-type:none">このオプションを使用すると、同じ月の指定した期間のデータをゼロに設定できるため、Urchin のログ処理をこの期間だけ再実行 (例: urchin -p profile -d YYYYMMDD) することもできます。 この処理は、-f、–q、-z、-d の引数を付けて udb-sanitizer を呼び出すことにより、ユーザー操作なしに実行することができます。1 日分のデータをゼロに設定する場合は、次のように指定します。  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">複数日のデータをゼロに設定する場合は、次のように -e 引数と終了日を指定します。  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">この例では、9月7日から 10日までのデータがゼロに設定されます。 –e 引数は終了日のみ指定できますのでご注意ください。 データベースのインデックスとヘッダーの確認が 1 回で済むため、1 日のデータをゼロに設定する udb-sanitizer インスタンスを複数呼び出すより効率的です。 インデックスとヘッダーの確認処理には、プロファイルに多くのデータが含まれている場合は長時間かかることがあります。  </li></ul><p class="line874">4. プロファイルがアカウントに含まれている場合は、-a 引数を使用してアカウント名を指定する必要があります。   <p class="line867"><span class="u">重要</span>:  このユーティリティで削除した日または月単位のデータを元に戻すことはできません。 この場合、同じ期間のウェブサーバーのログを再処理して、プロファイル データベースを再作成するしか対処方法はありません。 オプションを使用する際は注意が必要です。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>ユーザーのカスタム セグメントの定義</strong> <p class="line874">Urchin 6 では、地域や言語設定など既定のセグメントだけでなく、独自のセグメントを設定して各セグメントのユーザーの行動を分析することができます。 たとえば、フォームに職種 (技術/エンジニア、マーケティング/PRなど) を選択する欄を設定すると、 ユーザーの職種別に閲覧や購入などの動向を分析できます。 <p class="line862">各カスタム セグメントのコンバージョンは、[マーケティングの最適化] &gt; [ユーザー セグメントのパフォーマンス] &gt; [ユーザー定義] レポートで確認できます。 他にも多くのレポートで、ユーザーのデータをセグメント別に比較分析できます。 比較分析を行うには、レポートのエントリの左端にある [解析オプション] ボタンをクリックし、 [ユーザー定義] をクリックして、カスタム セグメントを表示します。 <p class="line862">ユーザー セグメントを設定するには、Javascript の <tt class="backtick">__</tt>utmSetVar 関数を呼び出します。 たとえば、ウェブページの UTM の下で次のように呼び出します。 <pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line874">例:  このページにアクセスしたユーザーを「マーケティング/PR」セグメントに割り当てる <p class="line874">この例では、ページを閲覧したユーザーを「マーケティング/PR」セグメントに割り当てます。 <pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line874">例:  ユーザーが選択したセグメントにユーザーを割り当てる <p class="line874">次の例では、ユーザーがフォームで選択した項目に基づいてユーザーをセグメントに割り当てます。 <pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;技術/エンジニアリング&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;マーケティング/PR&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;製造&lt;/option&gt;
+    &lt;option value="General Management"&gt;経営管理&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

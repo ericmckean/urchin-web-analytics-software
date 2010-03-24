@@ -1,0 +1,23 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Flash を使用していて、サイトの URL が 1 つしかない場合に 目標到達プロセスを設定する</strong> <p class="line862">Urchin では、Flash イベントなどのブラウザで行われるウェブサイトのあらゆるイベントをトラッキングできます。 urchinTracker の JavaScript 関数を使用すると、任意の Flash アクションにページ ファイル名を割り当てて、目標や目標到達プロセスのステップとして、このファイル名を指定できます。 <p class="line862">イベントをトラッキングするには、イベント名を引数に指定して urchinTracker() の JavaScript 関数を呼び出します。 たとえば、次のように呼び出します。 <p class="line867"><pre>    javascript:urchinTracker('/purchase_funnel/page1.html');
+</pre><p class="line874">これにより、Flash イベントが発生するたびに、/purchase_funnel/page1.html という名前のページビューが 1 回記録されます。 引数はスラッシュ (/) で始める必要があります。 <p class="line874">イベント名は任意のディレクトリ構造で分類できます。 urchinTracker に渡す path/filename 引数に、実際のウェブサイトの URL を使用する必要はありません。 <p class="line867"><strong>Flash コードの例</strong> <p class="line867"><pre>    on (release) {
+    // Track with no action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+    on (release) {
+    //Track with action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    _root.gotoAndPlay(3);
+    myVar = "Flash Track Test"
+    }
+    onClipEvent (enterFrame) {
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

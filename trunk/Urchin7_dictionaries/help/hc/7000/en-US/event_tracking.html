@@ -1,0 +1,613 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+    
+    .writely-callout-data {
+      display: none;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>[Urchin7]: Event Tracking</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<h2>
+  &nbsp;Event Tracking
+</h2>
+<div>
+  &nbsp;
+</div>
+<div>
+  With Event Tracking it is possible to record user interaction with website elements, such as a Flash website, Flash Movie player, Embedded AJAX page elements, Page gadgets, File downloads, etc.&nbsp;
+</div>
+<div>
+  This is accomplished by attaching the method call (available in urchin.js tracking code) to the particular UI element you want to track.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <b>Note:</b> All tracked elements should be determined in advance.
+</div>
+<div>
+  <br>
+  <i>Event Tracking</i>&nbsp;reporting section is available at the&nbsp;<font face="verdana, arial, helvetica"><font size=2>Content Optimization, containing the following reports:</font></font>
+</div>
+<div>
+  &nbsp;
+</div>
+<ul>
+  <li>
+    <font face="verdana, arial, helvetica"><font size=2>Hosts and Pages (<font face="verdana, arial, helvetica"><font size=2>Host|Page vs<font face="verdana, arial, helvetica"><font size=2>&nbsp;Events, Unique Events, Value, Avg.value</font></font></font></font>)</font></font>
+  </li>
+  <li>
+    <font face="verdana, arial, helvetica"><font size=2>Categories (<font face="verdana, arial, helvetica"><font size=2>Category|Action|Label vs Events, Unique Events ("visits with category"), Value<font face="verdana, arial, helvetica"><font size=2>, Avg.value</font></font></font></font>)</font></font>
+  </li>
+  <li>
+    <font face="verdana, arial, helvetica"><font size=2>Actions (Action|Label|Category vs Events, Unique Events (<font face="verdana, arial, helvetica"><font size=2>"visits with category/action"</font></font>), Value<font face="verdana, arial, helvetica"><font size=2>, Avg.value</font></font>)</font></font>
+  </li>
+  <li>
+    <font face="verdana, arial, helvetica"><font size=2>Labels (Label|Action|Category vs Events, Unique Events&nbsp;<font face="verdana, arial, helvetica"><font size=2>(</font><font face="verdana, arial, helvetica"><font size=2>"visits with category/action/label"</font></font><font size=2>)</font></font>, Value<font face="verdana, arial, helvetica"><font size=2>, Avg.value</font></font>)</font></font>
+  </li>
+  <li>
+    Trending (Total Events, Visits with Events)
+  </li>
+</ul>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <b>Event Tracking design</b>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  The design model for Event Tracking is highly flexible, and its use can be extended well beyond the common model of user-triggered events.&nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  In the process of implementing Event Tracking, every name you supply for categories, actions, and labels appears in the reporting interface. In addition, a category/action pair is treated as a unique element in the report statistics, so consider first how you want your metrics to be calculated for all objects belonging to a similar category.<br>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <b>Setting Up Event Tracking</b>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  Ensure website is configured for tracking with urchin.js tracking code. Refer to <a href=https://secure.urchin.com/helpwiki/en/Urchin_Installation_Guide_%28FreeBSD_and_Linux%29 id=vosm title="Install Guide">Install Guide</a>&nbsp;(<b>Using Urchin with UTM Tracking</b> section) for details.
+</div>
+<div>
+  Call the <font face="Courier New">__utmTrackEvent()</font> method in the source code for every element(object) of the website to be tracked with Event Tracking.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;<u><font face="Courier New">__utmTrackEvent()</font> method specification:</u>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  __utmTrackEvent(cat, action, label, value, page), where
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  cat(category, required) - name for the group of objects to be tracked (e.g.: Video, Audio, etc.)
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  action (required) - action is attached to an object and represent the action performed on the object (e.g.: Play, Stop, etc.)
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  label (optional) - additional info about the event (e.g.: video's title, result of the action(change view -&gt; satelite), etc)
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  value (optional) - numeric value of the action
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  page (optional) - web page on which event is occured
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <u>Example:</u>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  Part of the script for tracking QuickTime "Play" event.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &lt;a href="javascript:document.movie1.Play();" onClick="__utmTrackEvent('Video','Play','My Video Title');"&gt;Play&lt;/a&gt;&nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<br></body>
+</html></body></html>

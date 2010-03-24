@@ -1,0 +1,66 @@
+#################################################################################################
+#  Urchin 7 session default dictionary file
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	Non utilizzato
+1	Esegui l'accesso per accedere al tuo account.
+2	Nome utente
+3	Password
+4	Effettuare nuovamente l'accesso.
+5	Grazie per aver scelto Urchin. Eseguire nuovamente l'accesso?
+6	Errore sessione. Impossibile leggere la configurazione. (1000)
+7	Violazione di protezione. Indirizzo remoto non impostato. (1001)
+8	Violazione di protezione. Modulo non approvato. (1002)
+9	Errore sessione. Formato ID errato. (1003)
+10	Errore sessione. Query non valida al controller sessione. (10004)
+11	Errore sessione. Impossibile richiamare la routine predefinita. (2001)
+12	Errore sessione. Impossibile richiamare la routine predefinita. (2002)
+13	Errore sessione. Impossibile richiamare la routine predefinita. (2003)
+14	Errore sessione. Impossibile creare la sessione. (2004)
+15	Errore sessione. Impossibile impostare ENV. (2005)
+16	Errore sessione. ID sessione mancante. (3000)
+17	Errore sessione. Impossibile ottenere il record dal database. (3001)
+18	Errore sessione. Indirizzo IP non valido per la sessione. (3002)
+19	Errore sessione. ID sessione non valido. (3003)
+20	Errore sessione. Impossibile aggiornare il record sessione. (3004)
+21	Timeout della sessione. Come misura di protezione, è stata effettuata la disconnessione automatica.
+22	Errore sessione. Impossibile richiamare l'applicazione. (4001)
+23	Errore sessione. Impossibile richiamare l'applicazione. (4002)
+24	Errore sessione. Impossibile richiamare l'applicazione. (4003)
+25	Errore sessione. ID sessione mancante. (4004)
+26	Errore sessione. Impossibile ottenere il record sessione dal database. (4005)
+27	Errore sessione. L'indirizzo IP in uso non corrisponde a quello utilizzato all'apertura della sessione.
+28	Errore sessione. ID sessione non valido. (4007)
+29	Errore sessione. Impossibile aggiornare il record sessione. (4008)
+30	Errore sessione. Impossibile creare ENV. (4009)
+31	Errore di autenticazione. Impossibile richiamare il modulo di autenticazione. (5001)
+32	Errore di autenticazione. Impossibile richiamare il modulo di autenticazione. (5002)
+33	Errore di autenticazione. Impossibile richiamare il modulo di autenticazione. (5003)
+34	Errore di autenticazione. Autenticazione non riuscita. (6001)
+35	Errore di autenticazione. Numero di parametri errato. (6002)
+36	Errore di autenticazione. Accesso remoto negato per l'utente. (6003)
+37	Errore di autenticazione. Accesso remoto negato per l'amministrazione. (6004)
+38	Errore di autenticazione. Indirizzo IP mancante. (6005)
+39	Errore di autenticazione. Impossibile ottenere la configurazione globale dal database. (6006)
+40	Autenticazione non riuscita.
+41	Accesso remoto negato per gli utenti. (6008)
+42	Accesso remoto negato per l'amministrazione. (6009)
+43	Login
+44	Benvenuto nel software Urchin di Google
+45	Home page di Google Analytics
+46	Domande frequenti (FAQ)
+47	Norme sulla privacy
+48	Urchin Help Center
+49	Google Analytics e il blog di Urchin
+50	Software Urchin di Google:
+51	Norme sulla privacy di Google
+52	Google Analytics e il blog di Urchin (in inglese)
+53	Norme sulla privacy di Google
+54	Home page
+55	Novità
+56	Consulenti autorizzati
+57	<p>Il software Urchin di Google consente di analizzare il traffico di uno o più siti web e di fornire rapporti di facile consultazione sui visitatori (provenienza, modalità di utilizzo del sito, elementi per la conversione in clienti, ecc.)</p><p>Se si dispone di contenuti protetti da un firewall di sicurezza o collocati su una rete intranet o interna per i quali non è possibile utilizzare il servizio Google Analytics, il software Urchin di Google è la soluzione ideale.</p><p>L'assistenza per il software Urchin di Google è disponibile esclusivamente tramite i consulenti autorizzati del software Urchin.</p>
+58	Ulteriori informazioni.
+59	Contratto di licenza con l'utente finale
+60	Forum degli utenti di Urchin

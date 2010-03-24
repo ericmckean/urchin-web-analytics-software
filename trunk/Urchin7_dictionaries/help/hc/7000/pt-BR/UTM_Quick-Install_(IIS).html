@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Instalação rápida do UTM (IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Este artigo foi escrito por</em> <a href="EpikOne.html">EpikOne</a><em>, consultor autorizado do software Urchin </em> </li></ul><p class="line874">As etapas a seguir têm como objetivo guiar você por uma instalação rápida do UTM para sites executados em um servidor Microsoft IIS em qualquer plataforma Windows. Para obter informações mais detalhadas sobre o UTM, consulte o artigo "UTM (Urchin Traffic Monitor, Monitor de tráfego do Urchin)" nesta seção. <p class="line867"><strong>Etapa 1:</strong> copie os arquivos do UTM na raiz de documentos do site. Os arquivos urchin.js e <tt class="backtick">__</tt>utm.gif estão localizados na pasta "utils\utm" da distribuição do Urchin. Copie esse dois arquivos na pasta principal do conteúdo do seu site. IMPORTANTE: o arquivo GIF começa com dois caracteres de sublinhado. <p class="line867"><strong>Etapa 2:</strong> faça referência ao UTM no HTML do seu site. Insira a linha a seguir em todas as suas páginas HTML. Embora a linha possa ficar em qualquer lugar nas páginas, é recomendado colocá-la diretamente antes da tag de encerramento&lt;/body&gt;. O código também pode ser inserido usando-se uma inclusão ou um modelo comum. <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line874">Se você estiver usando um pacote como "HTML Tidy", será conveniente incluir a linha Javascript na área HEAD da sua página, por exemplo: <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>Etapa 3:</strong> ative os cookies no registro do IIS. Abra o IIS Manager e a janela “Propriedades” do seu site. Verifique se o registro está ativado e selecione o formato “W3C estendido”. Clique no botão “Propriedades” ao lado do formato e, na guia “Propriedades estendidas”, marque a caixa ao lado de “Cookie”. <p class="line867"><strong>Etapa 4:</strong> configure o perfil do Urchin para usar o UTM. Na interface de administração do Urchin, edite o perfil em questão e clique na guia “Configurações”. Configure o método de rastreamento de visitantes como UTM. Configure o domínio do UTM como o endereço do seu site sem o www.  Em seguida, escolha o padrão de definição de relatórios e clique no botão “Atualizar”. <p class="line874">Pronto. Seu site começará a registrar os dados do UTM em seu arquivo normal de registro, que será identificado na próxima vez que você executar o Urchin. <p class="line874">Está funcionando? Para ver se as entradas do UTM estão sendo bem-sucedidas no arquivo de registro, examine o registro depois de instalar o UTM e clicar em algumas páginas do site. Você deverá ver uma entrada semelhante à seguinte no final do arquivo de registro: <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">Se você não visualizar as entradas utma, verifique se os cookies foram ativados no registro adequadamente. Se o código de status não for 200, verifique se os arquivos foram copiados adequadamente na raiz do seu documento.<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

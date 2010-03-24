@@ -1,0 +1,20 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin Services Control Utility (urchinctl)</strong> <p class="line867"><strong>Overview</strong> <p class="line874">The Urchin Services Control utility, urchinctl, verifies the status of the Urchin Scheduler and Urchin Webserver services and allows you to start and stop them. On UNIX-type systems, urchinctl is typically called from one of the system's boot-time scripts to automatically start up or shut down Urchin services. <p class="line874">The types of operations that urchinctl can perform are: <ul><li>Verify status of Urchin6 Master and Slave Scheduler </li><li>Start, stop, or restart the scheduler or webserver (or both) </li><li>Start the webserver on an alternate port </li><li>Start the webserver with SSL encryption </li></ul><p class="line867"><strong>Usage</strong> <p class="line874">urchinctl is located in the bin directory of the Urchin distribution. <p class="line874">Usage of the utility is as follows: <pre>  urchinctl -h (prints usage message and exits)
+  urchinctl -v (prints version and exits)
+  urchinctl [-e] [-p port] [[-s] | [-w]] action
+</pre><p class="line874">where: <pre>  -e  activates encryption (SSL) in the webserver
+  -p  specifies the port for the webserver to listen on
+  -s  performs the action on the Urchin scheduler ONLY
+  -w  performs the action on the Urchin webserver ONLY
+</pre><p class="line874">and action is one of: <pre>  start   (starts the service(s))
+  stop    (stops the service(s))
+  restart (stops and then starts the service(s))
+  status  (displays webserver/scheduler runtime status)
+</pre><p class="line874">By default, the action is performed on both the webserver and the scheduler unless the "-s" (scheduler) or "-w" (webserver) options are specified. Note that these options are mutually exclusive. <p class="line867"><strong>Considerations</strong> <p class="line874">On UNIX-type systems, urchinctl should be run as the user/UID that Urchin is installed as to ensure that the urchinwebd and urchind processes are started as that UID. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

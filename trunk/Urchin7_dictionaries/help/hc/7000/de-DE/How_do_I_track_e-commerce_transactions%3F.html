@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Wie kann ich E-Commerce-Transaktionen erfassen?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dieser Artikel wurde von</em> <a href="ivantageLimited.html">ivantage Limited</a><em> erstellt, einem autorisierten Berater für Urchin-Software. </em> </li></ul><p class="line874">Urchin unterstützt ein clientseitiges Datensammlungsverfahren zur Erfassung von E-Commerce-Transaktionen. Mit einigen einfachen Ergänzungen an Ihrer Belegseite kann Urchin die Transaktion und Produktinformationen automatisch erkennen und aufzeichnen. Die erforderlichen Informationen werden in einem verborgenen Formular abgelegt, das hinsichtlich Transaktions- und Produktinformationen analysiert wird. Die meisten vorlagengesteuerten E-Commerce-Systeme können so bearbeitet werden, dass die verborgenen Informationen im Beleg enthalten sind. <p class="line867"><strong>Aktivieren von E-Commerce-Tracking</strong> <p class="line874">Zum Erfassen von E-Commerce-Transaktionen müssen Sie zunächst E-Commerce-Berichte für das Profil Ihrer Website aktivieren. Führen Sie folgende Schritte aus, um die E-Commerce-Berichte zu aktivieren: <ol type="1"><li>Melden Sie sich in Urchin an. </li><li>Klicken Sie neben dem Profil, das Sie aktivieren möchten, auf "Bearbeiten". </li><li>Klicken Sie auf der Seite "Profileinstellungen" neben "Profil-Information für Hauptwebsite" auf "Bearbeiten". </li><li>Ändern Sie das Optionsfeld "E-Commerce-Website" von "Nein" in "Ja". </li></ol><p class="line867"><strong>Format der Belegseite</strong> <p class="line874">Im zweiten Schritt muss sichergestellt werden, dass der Tracking-Code standardmäßig auf der Belegseite enthalten ist. Dies kann über einen Server Side Include oder einen anderen Vorlagentreiber erfolgen. Er kann jedoch auch von Hand in Ihren HTML-Code eingegeben werden. <pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+</pre><p class="line874">Als Nächstes müssen im Beleg unterhalb des Tracking-Codes folgende Zeilen von der Maschine geschrieben werden. Alle Angaben in Klammern müssen durch tatsächliche Werte ersetzt werden, wie unten in der Parameterreferenz beschrieben. <pre>   &lt;form style="display:none;" name="utmform"&gt;
+   &lt;textarea id="utmtrans"&gt;UTM:T|[order-id]|[affiliation]|
+   [total]|[tax]| [shipping]|[city]|[state]|[country] UTM:I|[order-id]|[sku/code]|[productname]|[category]|[price]|
+   [quantity] &lt;/textarea&gt;
+   &lt;/form&gt;
+</pre><p class="line862">Schließlich muss die utmSetTrans-Funktion nach dem Senden des Formulars aufgerufen werden, um die Transaktion zu erfassen. Dies erfolgt ganz einfach, durch ein body onLoad-Ereignis im Anfangs-Tag &lt;body&gt;: <pre>   &lt;body onLoad="javascript:__utmSetTrans()"&gt;
+</pre><p class="line874">Falls Sie das body-Tag nicht bearbeiten können, rufen Sie die utmSetTrans-Funktion in einem separaten Skript-Tag auf. Stellen Sie dabei sicher, dass die Funktion nach dem Formular aufgerufen wird: <pre>   &lt;script type="text/javascript"&gt;
+   __utmSetTrans();
+   &lt;/script&gt;
+</pre><p class="line874">HINWEIS: Geben Sie beim Festlegen der Werte für das Formular die eckigen Klammern nicht mit an. Verwenden Sie in den Feldern für Gesamtwert, Steuer und Versand keine Kommas als Tausendertrennzeichen - alle Ziffern nach dem Komma werden ausgelassen. <p class="line867"><strong>Beispiel</strong> <pre>UTM:T|34535|Main Store|111108.06|8467.06|10.00|San Diego|CA|USA
+UTM:I|34535|XF-1024|Urchin T-Shirt|Shirts|11399.00|9
+UTM:I|34535|CU-3424|Urchin Drink Holder|Accessories|20.00|2
+</pre><p class="line874">Im verborgenen Formular gibt es zwei Arten von Zeilen: die Transaktionszeile und die Eintragszeilen. Bei jeder Transaktion sollte es nur eine einzige Transaktionszeile geben, die durch das "T" unmittelbar nach "UTM:" gekennzeichnet ist. In dieser Zeile wird unter anderem der Gesamtwert für die Transaktion angegeben, einschließlich Steuern und Versandkosten. Erstellen Sie für jeden Eintrag im Beleg eine Eintragszeile, die durch "I" gekennzeichnet wird. Die Eintragszeilen können Produktnamen, Codes, Preise für Einheiten sowie Mengenangaben enthalten. Die Anzahl der Eintragszeilen pro Transaktion ist unbegrenzt. <p class="line867"><strong>Parameterreferenz</strong> <p class="line867"><strong>Transaktionszeilenvariablen</strong> <pre>[order-id]      Ihre eindeutige interne Auftrags-ID-Nummer
+[affiliation]   Zweigunternehmen des Partners bzw. Geschäfts (optional)
+[total]         Gesamtbetrag der Transaktion
+[tax]   Steuerbetrag der Transaktion
+[shipping]      Die Versandkosten der Transaktion
+[city]  Stadt, mit der die Transaktion verbunden werden soll
+[state/region]  Bundesland
+[country]       Land
+</pre><p class="line867"><strong>Eintragszeilenvariablen</strong> <pre>[order-id]      Ihre eindeutige interne Auftrags-ID-Nummer (sollte mit der Transaktionszeile identisch sein)
+[sku/code]      SKU-Code des Produkts
+[product name]  Produktname oder Beschreibung
+[category]      Kategorie des Produkts bzw. der Variation
+[price]         Einheitspreis des Produkts
+[quantity]      Bestellmenge
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

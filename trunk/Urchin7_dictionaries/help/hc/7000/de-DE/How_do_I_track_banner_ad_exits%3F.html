@@ -1,0 +1,23 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Meine Website hat nur eine URL, da ich Flash verwende. Wie kann ich einen Zieltrichter einrichten?</strong> <p class="line862">Jedes browserbasierte Ereignis, einschließlich Flash-Ereignissen, kann auf Ihrer Website erfasst werden. Durch Verwendung der JavaScript-Funktion urchinTracker können Sie jeder Flash-Aktion einen Seitendateinamen zuweisen und diesen Dateinamen in den entsprechenden Ziel- oder Trichterschritt eingeben. <p class="line862">Rufen Sie zum Erfassen eines Ereignisses die JavaScript-Funktion urchinTracker() mit einem Argument auf, das einen Namen für das Ereignis angibt. Beispiel: Durch das Aufrufen von <p class="line867"><pre>    javascript:urchinTracker('/purchase_funnel/page1.html');
+</pre><p class="line874">wird jedes Auftreten des aufrufenden Flash-Ereignisses protokolliert, als ob es ein Seitenzugriff unter dem Namen /purchase_funnel/page1.html wäre. Das Argument muss mit einem Schrägstrich beginnen. <p class="line874">Die Ereignisnamen können in jeder gewünschten Art von Verzeichnisstruktur angeordnet werden. Das Pfad/Dateiname-Argument für urchinTracker muss nicht für eine tatsächliche URL auf Ihrer Website stehen. <p class="line867"><strong>Beispiele für Flash-Code</strong> <p class="line867"><pre>    on (release) {
+    // Track with no action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+    on (release) {
+    //Track with action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    _root.gotoAndPlay(3);
+    myVar = "Flash Track Test"
+    }
+    onClipEvent (enterFrame) {
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

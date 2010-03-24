@@ -1,0 +1,23 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>由于我使用 Flash，我的网站只有一个网址。如何设置目标渠道？</strong> <p class="line862">您可以跟踪自己网站上所有基于浏览器的事件，包括 Flash 事件。通过使用 urchinTracker JavaScript 函数，可向所有 Flash 操作分配页面文件名，还可在适当的目标或渠道步骤中输入该文件名。 <p class="line862">要跟踪事件，请使用指定该事件名称的参数来调用 urchinTracker() JavaScript 函数。例如，调用： <p class="line867"><pre>    javascript:urchinTracker('/purchase_funnel/page1.html');
+</pre><p class="line874">将会记录每次对 Flash 事件的调用，就像一个名为 /purchase_funnel/page1.html 的综合浏览量。参数应以正斜杠开头。 <p class="line874">事件名称可以整理成您想要的任何目录样式结构。urchinTracker 的路径/文件名参数不一定表示您网站的实际网址。 <p class="line867"><strong>Flash 代码示例</strong> <p class="line867"><pre>    on (release) {
+    // Track with no action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+    on (release) {
+    //Track with action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    _root.gotoAndPlay(3);
+    myVar = "Flash Track Test"
+    }
+    onClipEvent (enterFrame) {
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

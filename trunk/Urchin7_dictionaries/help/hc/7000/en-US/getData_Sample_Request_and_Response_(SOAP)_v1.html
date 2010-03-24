@@ -1,0 +1,54 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>getData Sample Request and Response (SOAP)</strong> <em>--Beta Release--</em> <ul><li><p class="line891"><a href="Data_API.html">API Table of Contents</a> </li><li><p class="line891"><a href="getData_(SOAP)_v1.1.html">getData (SOAP)</a> </li></ul><p class="line867"><strong>Sample SOAP Request for getData</strong> <pre>    &lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://urchin.com/api/urchin/v1/"&gt;
+       &lt;soap:Header&gt;
+          &lt;/soap:Header&gt;
+       &lt;soap:Body&gt;
+         &lt;v1:getData&gt;
+          &lt;login&gt;super_admin&lt;/login&gt;
+           &lt;password&gt;password&lt;/password&gt;
+           &lt;ids&gt;7&lt;/ids&gt;
+           &lt;start-index&gt;1&lt;/start-index&gt;
+           &lt;max-results&gt;2&lt;/max-results&gt;
+           &lt;start-date&gt;2008-01-01&lt;/start-date&gt;
+           &lt;end-date&gt;2009-01-01&lt;/end-date&gt;
+           &lt;dimensions&gt;u:month&lt;/dimensions&gt;
+           &lt;metrics&gt;u:hits,u:bytes&lt;/metrics&gt;
+           &lt;sort&gt;u:month&lt;/sort&gt;
+          &lt;/v1:getData&gt;
+       &lt;/soap:Body&gt;
+    &lt;/soap:Envelope&gt;
+</pre><p class="line867"><strong>Sample SOAP Response</strong> <pre>    &lt;soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"&gt;
+       &lt;soapenv:Header/&gt;
+       &lt;soapenv:Body&gt;
+          &lt;tns:getDataResponse xmlns:tns="https://urchin.com/api/urchin/v1/"&gt;
+             &lt;record&gt;
+                &lt;recordId&gt;1&lt;/recordId&gt;
+                &lt;dimensions&gt;
+                   &lt;dimension name="u:month"&gt;2008-02-00T00:00:00Z&lt;/dimension&gt;
+                &lt;/dimensions&gt;
+                &lt;metrics&gt;
+                   &lt;u:hits xmlns:u="https://urchin.com/api/urchin/v1/"&gt;836&lt;/u:hits&gt;
+                   &lt;u:bytes xmlns:u="https://urchin.com/api/urchin/v1/"&gt;1953960&lt;/u:bytes&gt;
+                &lt;/metrics&gt;
+             &lt;/record&gt;
+             &lt;record&gt;
+                &lt;recordId&gt;2&lt;/recordId&gt;
+                &lt;dimensions&gt;
+                   &lt;dimension name="u:month"&gt;2008-02-00T00:00:00Z&lt;/dimension&gt;
+                &lt;/dimensions&gt;
+                &lt;metrics&gt;
+                   &lt;u:hits xmlns:u="https://urchin.com/api/urchin/v1/"&gt;6322&lt;/u:hits&gt;
+                   &lt;u:bytes xmlns:u="https://urchin.com/api/urchin/v1/"&gt;2291085200&lt;/u:bytes&gt;
+                &lt;/metrics&gt;
+             &lt;/record&gt;
+          &lt;/tns:getDataResponse&gt;
+       &lt;/soapenv:Body&gt;
+    &lt;/soapenv:Envelope&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

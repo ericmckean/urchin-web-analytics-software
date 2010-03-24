@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>¿Cómo puedo configurar Urchin para que determinadas palabras clave o URL se consideren referencias directas en lugar de palabras clave?</strong> <p class="line874">Si desea que determinadas palabras clave o URL se consideren referencias directas en lugar de palabras clave, puede configurar el archivo urchin.js de manera que Urchin las registre como referencias directas en sus informes. <ol type="1"><li>Utilice cualquier editor de textos para abrir el archivo urchin.js. </li><li>Desplácese hacia abajo hasta encontrar la siguiente cabecera: </li></ol><p class="line867"><pre>          //-- Auto/Organic Keywords to Ignore
+</pre><ol type="3"><li>Añada la palabra clave orgánica que debe omitirse al final de la lista, en el formulario: </li></ol><p class="line867"><pre>          _uOno[#]="keyword";
+</pre><ul><li style="list-style-type:none">..como se indica en el siguiente ejemplo: </li></ul><p class="line867"><pre>        //-- Auto/Organic Keywords to Ignore
+        var _uOno=new Array();
+        _uOno[0]="urchin";
+        _uOno[1]="urchin.com";
+        _uOno[2]="www.urchin.com";
+</pre><p class="line867"><p class="line867"><p class="line867"><p class="line867"><p class="line867"><p class="line874">#format wiki #language en <p class="line867"><strong>¿Por qué el navegador caduca cuando veo mis informes?</strong> <p class="line874">La aplicación que consulta la base de datos de Urchin y genera los informes caducará si los datos no muestran antes de los 45 segundos. Si el tamaño de la base de datos es suficientemente grande, puede que 45 segundos no sean suficientes para obtener todos los datos solicitados. Cuando eso sucede, el navegador caduca y suele mostrar un mensaje de error. <p class="line874">El valor de espera se puede extender si tiene privilegios de acceso suficientes al servidor que ejecuta Urchin. <p class="line867"><strong>Ampliación del tiempo de espera</strong> <ul><li>Conéctese al servidor Urchin mediante un shell de comando. </li><li>Acceda al directorio .../[urchin-install-dir]/etc/. </li><li>Abra el archivo "sesión.conf" en un editor de textos. </li><li>Aumente el valor de 'APPLICATION_TIMEOUT:' (en segundos). </li><li>Guarde el archivo, y los cambios se aplicarán inmediatamente </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>"会话错误 - 无法调用应用程序。(4002)..."是什么意思？</strong> <p class="line874">查看 Urchin 报告时，浏览器会查询 Urchin 数据库文件中与所请求的日期范围和报告视图相匹配的数据。如果数据查询并未在默认的 45 秒内收到响应，就会发生超时，并显示下列错误："会话错误 - 无法调用应用程序。(4002) 请重新登录。"发生这一情况后，需要相应提高超时值。要提高此值，必须拥有对 Urchin 发行套装文件的命令行访问权。如果您没有这项访问权，请联系您的报告提供人并将这篇文章提供给他们参考。 <p class="line874">要提高应用程序超时值： <ul><li>打开 Urchin 服务器的命令 shell </li><li>打开文件：/path/to/urchin/etc/session.conf </li><li><p class="line862">找到下列名称的指令：APPLICATION_TIMEOUT:45 此值是以秒为单位表示 </li><li>相应地提高此值，并保存文件。这些更改会立即生效 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

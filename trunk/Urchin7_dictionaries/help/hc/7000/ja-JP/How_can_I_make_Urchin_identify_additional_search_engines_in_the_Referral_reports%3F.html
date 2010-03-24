@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin の参照元レポートで追加の検索エンジンが認識されるよう設定する</strong> <p class="line874">Urchin では、UTM ファイルにリストされた 20 種類の検索エンジンからの参照がデフォルトで記録されます。 追加の検索エンジンからの参照も Urchin で認識できるよう UTM ファイルを編集する方法は次のとおりです。 <ol type="1"><li>urchin.js ファイルをテキスト エディタで開きます。 </li><li>次の箇所までスクロールします。 </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>0 から 19 までの番号が付いた検索エンジンのエントリが表示されます。 これは Urchin で記録されるデフォルトの検索エンジンです。 このリストに検索エンジンを追加するには、他のエントリの形式に従って新しいエントリを追加します。 たとえば、「new」という検索エンジンを追加する方法は次のとおりです。 </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">_uOsr の値には検索エンジンの名前を指定し、_uOkw の値にはキーワードを格納するクエリ変数を指定します。 たとえば、ユーザーが「motorcycle」を検索し、検索結果が次の URL であったとします。 </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">このとき、_uOkw の値は「q」になり、 _uOsr の値は「google」になります。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

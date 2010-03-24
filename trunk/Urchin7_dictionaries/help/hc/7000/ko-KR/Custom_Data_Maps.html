@@ -1,0 +1,42 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>맞춤 데이터 지도</strong> <p class="line874">데이터 지도는 로그 파일에서 계산되는 데이터에 대한 저장 공간으로 사용되는 일련의 테이블입니다. 미리 정의된 테이블은 아래와 같습니다. <ul><li>T - 합계 </li><li>TR - 거래 </li><li>H - 히스토그램 </li><li>V - 방문자수 </li><li>1-n - 데이터 맵 파일에 설명되어 있는 미리 정의된 집계 테이블 </li></ul><p class="line862">기본 테이블 집합은 &lt;Urchin&gt;/lib/reporting/profiletypes/Default/datamap.dm2 파일에 저장됩니다. 테이블의 형식은 다음과 같습니다. <ul><li>각 테이블 항목은 행별로 입력되며 다음 입력란을 포함해야 합니다. TABLE AFIELD BFIELD CFIELD DFIELD EFIELD REQUIREMENTS SPECIAL IFIELDS PPFIELDS; </li><li>각 열에는 공백이 없어야 합니다. </li><li>열은 한 칸 이상의 공백으로 구분됩니다. </li><li>입력할 값이 없으면 대신 '-' 기호를 입력합니다. </li><li class="gap">TABLE - 테이블 ID로 최대값은 200입니다. </li><li><p class="line862">AFIELD-EFIELD - &lt;Urchin&gt;/lib/reporting/logformats/fieldlist.txt의 문자열 입력란입니다. </li><li>REQUIREMENTS - 조회에 어떤 입력란(A-E)이 있어야 조회가 테이블에 포함되는지를 설명하는 일종의 기본 키 제약조건입니다. </li></ul><p class="line874">예를 들어, 테이블 T1에 A가 필요한 경우 A가 "IP-주소"(cfield=4)를 참조하고 조회에 IP-주소가 포함되어 있지 않으면 조회 전체를 건너뛰고 조회가 T1에 포함되지 않습니다. 그러나 테이블 T2가 있어 "IP-주소"를 참조하는 경우 REQUIREMENT에 A가 포함되어 있지 않다면 조회가 T2에 포함됩니다. <ul><li>SPECIAL - 일종의 외래 키로서, 집계 테이블의 레코드를 내부 테이블(세션, 방문자수, 거래, 거래 항목, 경로)의 레코드에 연결하는 데 사용됩니다. 예를 들어, 기본 데이터 맵 파일의 테이블 #1은 소스, 매체 및 캠페인을 세션에 연결하고(기본 키는 "소스"), 테이블 #2는 소스, 매체, 용어 및 콘텐츠를 세션에 연결하고(기본 키는 "소스"), 테이블 #12는 요청 스템 및 페이지 제목을 경로에 연결합니다. 특수 플래그가 있는 테이블을 변경하거나 사용자설정 테이블에서 플래그를 사용하는 것은 바람직하지 않습니다. 외래 키가 손상될 수 있기 때문입니다. <ul><li>S1-S11 - 세션 링크 </li><li>P1 - 경로 링크 </li><li>PARAM - 특수 매개변수 </li><li>T1-T2 - 거래 링크 </li><li>I0 - I1 - 항목 링크 </li><li>IPATH - 초기 경로 </li><li>GTHRU - 목표 클릭률 </li><li>GPATH - 역방향 목표 경로 </li><li>CTHRU - 클릭률 </li></ul></li><li class="gap">IFIELDS - 측정항목. 데이터 추출 속도를 최적화하기 위해 테이블에 미리 처리된 일련의 측정항목을 저장합니다. 즉, 엔진이 로그를 처리할 때 각각의 고유한 특성 조합(또는 CFIELDS)에 대해 필요한 모든 계산을 수행하여 추출 과정에서 계산이 필요 없도록 합니다. 예를 들어, CFIELDS: IP-주소, IFIELDS: 방문자수일 경우에는 처리 도중에 새 테이블이 생성되어 각각의 IP-주소에 대해 미리 계산된 방문수를 저장합니다. 테이블을 바탕으로 작성되는 보고서는 추가 계산 없이 데이터를 거의 바로 추출합니다. IFIELDS 열의 유효 값이 아래에 설명되어 있습니다.  </li><li class="gap">PPFIELDS - IFIELDS에 대한 사후 처리 입력란으로 사후 처리 입력란의 데이터는 세션 레코드와 관련 경로, 거래 및 항목 레코드에서 결정됩니다. 맞춤 보고서에서는 PPFIELDS를 사용하지 않는 것이 좋습니다. </li></ul><p class="line874">맞춤 데이터 지도 항목을 작성하려면 위에 제시된 안내에 따라 새 행을 입력합니다. 새 테이블 항목마다 고유한 번호를 사용해야 데이터 맵이 올바르게 유지됩니다. <p class="line874">데이터 맵 파일 행의 예: <div><table><tbody><tr>  <td><p class="line891"><strong>TABLE</strong> </td>
+  <td><p class="line862"> <strong>AFIELD</strong> </td>
+  <td><p class="line862"> <strong>BFIELD</strong> </td>
+  <td><p class="line862"> <strong>CFIELD</strong> </td>
+  <td><p class="line862"> <strong>DFIELD</strong> </td>
+  <td><p class="line862"> <strong>EFIELD</strong> </td>
+  <td><p class="line862"> <strong>REQUIREMENTS</strong> </td>
+  <td><p class="line862"> <strong>SPECIAL</strong> </td>
+  <td><p class="line862"> <strong>IFIELDS</strong> </td>
+  <td><p class="line862"> <strong>PPFIELDS</strong></td>
+</tr>
+<tr>  <td><p class="line862">1 </td>
+  <td><p class="line862"> 139 </td>
+  <td><p class="line862"> 138 </td>
+  <td><p class="line862"> 137</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> A</td>
+  <td><p class="line862"> S1 </td>
+  <td><p class="line862">5,11,15,19,24,25,26,27,28,29,30,31 </td>
+  <td><p class="line862"> -</td>
+</tr>
+<tr>  <td><p class="line862"> 테이블 번호 </td>
+  <td><p class="line862"> 사용될 레코드의 A 입력란 </td>
+  <td><p class="line862"> 사용될 레코드의 B 입력란 </td>
+  <td><p class="line862">사용될 레코드의 C 입력란 </td>
+  <td><p class="line862"> D 입력란은 사용되지 않음 </td>
+  <td><p class="line862"> E 입력란은 사용되지 않음 </td>
+  <td><p class="line862"> A 입력란에만 데이터가 포함됨 </td>
+  <td><p class="line862"> 세션 링크1 </td>
+  <td><p class="line862"> 계산 입력란 </td>
+  <td><p class="line862"> 사후 처리 입력란 없음 </td>
+</tr>
+</tbody></table></div><p class="line874">IFIELDS 열에 사용될 계산 입력란: <ol type="1"><li>Hits </li><li>Validhits </li><li>Errorhits </li><li>Bytes </li><li>Pages </li><li>Nonpages </li><li>Entrancepages </li><li>Exitpages </li><li>Bouncepages </li><li>Pagetime </li><li>Visits </li><li>Visitors </li><li>Newvisitors </li><li>Priorvisitors </li><li>Transactions </li><li>Customers </li><li>Newcustomers </li><li>Priorcustomers </li><li>Revenue </li><li>Tax </li><li>Shipping </li><li>Items </li><li>Itemrevenue </li><li>Responses </li><li>Impressions </li><li>Clicks </li><li>Cost </li><li>Goals1 </li><li>Goals2 </li><li>Goals3 </li><li>Goals4 </li><li>Goalstarts1 </li><li>Goalstarts2 </li><li>Goalstarts3 </li><li>Goalstarts4 </li><li>Score  </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Formato de registro ELF2</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Este artigo foi escrito por</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, consultor autorizado do software Urchin</em> </li></ul><p class="line867"><strong>OBSERVAÇÃO</strong> <p class="line874">As versões anteriores do Urchin eram compatíveis com o formato ELF para monitoramento somente de IP.Como o Urchin 6 não oferece mais o monitoramento somente de IP, ele deixou de suportar o formato ELF. <p class="line867"><strong>Visão geral</strong> <p class="line874">O ELF2 (E-commerce log format 2 ou formato de registro de E-commerce 2)foi projetado para registrar informações sobre transações de clientes a partir de sites de compra on-line.Entretanto, o Urchin 6 não é mais compatível com esse mecanismo para o registro de transações de E-commerce.Em vez disso, o Urchin 6 oferece suporte a uma técnica de coleta de dados no lado do cliente para a captura de transações de e-commerce.Com algumas adições simples à sua página de recibo, o Urchin 6 pode detectar e registrar automaticamente informações sobre transações e produtos.As informações necessárias são colocadas em um formulário oculto, que é analisado quanto a transações e informações sobre produtos.Muitos sistemas de e-commerce com base em modelos podem ser modificados de forma a incluírem essas informações ocultas no recibo. <p class="line862">O Urchin pode monitorar dados de um carrinho de compras no seu próprio domínio ou em outros domínios, com a adição de algumas linhas de código.Para configurar suas páginas de forma a comunicar dados de transações ao Urchin, leia "Como posso monitorar transações de e-commerce?".Além disso, se o seu site de loja estiver em um subdomínio ou domínio diferente do usado para o seu site principal, leia <a href="Tracking_Secure_Store_Transactions.html">Como monitorar transações de loja seguras</a>. <p class="line874">Este documento descreve o formato do arquivo de registro ELF2 que é criado pelo software de carrinho de compras, além de explicar como configurar o Urchin para o processamento de registros de comércio eletrônico. <p class="line867"><strong>Como configurar o Urchin para arquivos de registro ELF2</strong> <p class="line874">Siga estes parâmetros de configuração ao configurar o tipo de registro ELF2. <ul><li>Faça login como administrador na UI de Administração. </li><li>Acesse a tela "Configuração". </li><li><p class="line862">Na tela de edição "Origem do registro -&gt;Configurações do registro", defina o Formato do registro como elf2 ou automático. </li><li><p class="line862">Na tela de edição "Perfil -&gt;Configurações", defina o campo "Site da web de E-Commerce" como "SIM". </li></ul><p class="line874">O seu registro de e-commerce será relacionado como uma segunda origem de registro, juntamente com o seu registro de site principal, no perfil que é criado para manipular os seus relatórios de e-commerce.Os registros são processados seqüencialmente pelo Urchin. <p class="line867"><strong>Descrição do formato de registro ELF2 </strong> <p class="line874">O ELF2 é um formato de registro de várias linhas separado por tabulação.A primeira linha começa com um caractere de exclamação '!' e contém informações gerais sobre a compra.As linhas subseqüentes contêm informações detalhadas sobre os itens adquiridos.A primeira linha é conhecida como a transação e as linhas subseqüentes são conhecidas como os itens.Campos em branco devem conter um caractere '-'.Como são utilizadas tabulações para separar os campos, o caractere de tabulação não pode ser usado dentro de um campo. <p class="line874">Um típico arquivo de registro ELF2 terá o seguinte formato geral: <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>Linha de transação ELF2</strong> <p class="line874">A linha de transação ELF2 começa com uma exclamação '!' e contém os seguintes campos separados por tabulação (campos vazios devem conter um caractere '-'): <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">em que: <pre>    * %{ORDERID} é o número do pedido
+    * %{REMOTE_HOST} é o nome do host/endereço ip da máquina remota
+    * %{DATE/TIME} é o horário no formato de registro comum [dd/mmm/aaaa:HH:MM:SS +/-ZZZZ]
+    * %{STORE} é o nome/id da fachada
+    * %{SESSIONID} é o identificador de sessão exclusivo do cliente
+    * %{TOTAL} é o total da transação, incluindo imposto e frete (somente decimais, sem caracteres '$')
+    * %{TAX}é o valor do imposto cobrado no subtotal
+    * %{SHIPPING} é o valor dos custos de frete
+    * %{BILL_CITY} é a cidade de faturamento do cliente
+    * %{BILL_STATE} é o estado de faturamento do cliente
+    * %{BILL_ZIP} é o CEP de faturamento do cliente
+    * %{BILL_COUNTRY} é o país de faturamento do cliente
+    * %{USER_AGENT} é o user agent do navegador dos clientes
+    * %{COOKIES} são os cookies de entrada contidos nos cabeçalhos do navegador dos clientes
+</pre><p class="line867"><strong>Linha de item ELF2</strong> <p class="line874">A linha de item ELF2 contém os seguintes campos separadores por tabulação (campos vazios devem conter um caractere '-'): <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">em que: <pre>    * %{ORDERID} é o número do pedido
+    * %{REMOTE_HOST} é o nome do host/endereço ip da máquina remota
+    * %{DATE/TIME} é o horário no formato de registro comum [dd/mm/aaaa:HH:MM:SS +/-ZZZZ]
+    * %{PRODUCT_CODE} é o identificador do produto
+    * %{PRODUCT_NAME} é o nome do produto
+    * %{VARIATION} é uma variação opcional do produto em termos de cores, tamanhos, etc
+    * %{PRICE} é o preço unitário do produto (somente decimais, sem sinais de "$")
+    * %{QUANTITY} é a quantidade solicitada deste produto
+    * %{UPSOLD} é um booleano (0|1), se o produto estava à venda
+    * %{USER_AGENT} é o user agent do navegador dos clientes
+    * %{COOKIES} são os cookies de entrada contidos nos cabeçalhos do navegador dos clientes
+</pre><p class="line867"><strong>Exemplo de arquivo de registro ELF2</strong> <p class="line874">As duas linhas a seguir demonstram uma transação e a entrada de item correspondente em um registro ELF2: <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

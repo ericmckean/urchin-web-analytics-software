@@ -1,0 +1,58 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Format de journal ELF2</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Cet article a été rédigé par</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, un consultant agréé du logiciel Urchin. </em> </li></ul><p class="line867"><strong>REMARQUE</strong> <p class="line874">Les anciennes versions d'Urchin prenaient en charge le format ELF pour le suivi basé uniquement sur l'IP. Toutefois, Urchin 6 ne permettant pas ce type de suivi, le format ELF n'est plus pris en charge. <p class="line867"><strong>Présentation</strong> <p class="line874">La nouvelle version des formats de journaux E-commerce (ELF2) a été conçue pour enregistrer des données relatives aux transactions réalisées par les clients des sites de vente en ligne. Toutefois, Urchin 6 ne prend plus en charge ce mécanisme d'enregistrement des transactions en ligne. Pour capturer les transactions en ligne, Urchin 6 utilise maintenant une technique de collecte des données côté client. Grâce à de simples ajouts sur votre page de confirmation, Urchin 6 peut détecter et enregistrer automatiquement les informations sur les produits et les transactions. Les informations nécessaires sont placées dans un formulaire masqué qui est analysé pour obtenir les données requises. Il est possible de modifier la plupart des systèmes d'e-commerce orientés modèles afin d'inclure ces informations masquées dans la confirmation. <p class="line862">Pour qu'Urchin puisse effectuer le suivi des données d'un panier sur votre domaine et même sur d'autres domaines, il vous suffit d'ajouter le code approprié. Si vous souhaitez configurer vos pages de manière à transmettre à Urchin des rapports relatifs aux transactions, lisez la rubrique "Comment puis-je effectuer le suivi des transactions en ligne ? Lisez également la rubrique <a href="Tracking_Secure_Store_Transactions.html">Suivi des transactions dans une boutique sécurisée</a> si votre boutique en ligne se trouve sur un domaine ou sous-domaine différent de votre site principal. <p class="line874">Le présent article décrit le format des fichiers journaux ELF2 créés par le logiciel de panier électronique et explique comment configurer le traitement des journaux de commerce électronique dans Urchin. <p class="line867"><strong>Configuration d'Urchin pour les fichiers journaux ELF2</strong> <p class="line874">Vous devez adopter les paramètres de configuration suivants pour prendre en charge les fichiers journaux ELF2. <ul><li>Connectez-vous à l'interface Admin en tant qu'administrateur. </li><li>Ouvrez l'écran de Configuration. </li><li><p class="line862">Dans l'écran Source du journal-&gt;Paramètres du journal, définissez le champ Format du journal sur elf2 ou automatique. </li><li><p class="line862">Dans l'écran Profil-&gt;Paramètres, définissez le champ Site Web de commerce électronique sur OUI. </li></ul><p class="line874">Le profil créé pour gérer la création des rapports d'e-commerce doit répertorier votre journal de commerce électronique comme seconde source, après le journal associé à votre site principal. Ces journaux sont analysés par Urchin l'un après l'autre. <p class="line867"><strong>Description du format de journal ELF2</strong> <p class="line874">ELF2 est un format de journal multiligne utilisant des tabulations comme séparateurs. La première ligne débute par un point d'exclamation '!' et contient des informations d'ordre général concernant l'achat. Les lignes qui suivent comprennent des informations détaillées relatives aux articles achetés. Ainsi, la première ligne est appelée "la transaction" et les lignes suivantes sont désignées comme "les articles". Les champs non renseignés doivent être signalés par un tiret '-'. Les tabulations ne sont pas autorisées à l'intérieur des champs, car elles servent uniquement à les séparer. <p class="line874">Voici la forme de fichier journal ELF2 la plus courante : <p class="line867"><pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>Ligne de transaction ELF2</strong> <p class="line874">La ligne de transaction ELF2 débute par un point d'exclamation '!' et contient les champs suivants séparés par des tabulations (les champs non renseignés sont signalés par un tiret '-') : <p class="line867"><pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">où : <p class="line867"><pre>    * %{ORDERID} représente le numéro de commande.
+    * %{REMOTE_HOST} représente le nom d'hôte/l'adresse IP de la machine distante.
+    * %{DATE/TIME} représente l'heure dans le format de journal courant [jj/mmm/aaaa:HH:MM:SS +/-ZZZZ].
+    * %{STORE} représente le nom/l'identifiant de l'enseigne.
+    * %{SESSIONID} représente l'identifiant de session unique du client.
+    * %{TOTAL} représente le montant total de la transaction, taxes et expédition comprises (nombre décimal uniquement, pas de '$').
+    * %{TAX} représente le montant des taxes à ajouter au sous-total.
+    * %{SHIPPING} représente le montant des frais d'expédition.
+    * %{BILL_CITY} représente la ville de facturation associée au client.
+    * %{BILL_STATE} représente le département de facturation associé au client.
+    * %{BILL_ZIP} représente le code postal de facturation associé au client.
+    * %{BILL_COUNTRY} représente le pays de facturation associé au client.
+    * %{USER_AGENT} représente le User-Agent du navigateur utilisé par le client.
+    * %{COOKIES} représente les cookies entrants contenus dans les en-têtes reçus du navigateur utilisé par les clients.
+</pre><p class="line867"><strong>Ligne d'article ELF2</strong> <p class="line874">La ligne d'article ELF2 contient les champs suivants séparés par des tabulations (les champs non renseignés sont signalés par un tiret '-') : <p class="line867"><pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">où : <p class="line867"><pre>    * %{ORDERID} représente le numéro de commande.
+    * %{REMOTE_HOST} représente le nom d'hôte/l'adresse IP de la machine distante.
+    * %{DATE/TIME} représente l'heure dans le format de journal courant [jj/mmm/aaaa:HH:MM:SS +/-ZZZZ].
+    * %{PRODUCT_CODE} représente la référence du produit.
+    * %{PRODUCT_NAME} représente le nom du produit.
+    * %{VARIATION} représente une variante facultative du produit : couleur, taille, etc.
+    * %{PRICE} représente le prix unitaire du produit (nombre décimal uniquement, pas de '$').
+    * %{QUANTITY} représente la quantité de produits commandée.
+    * %{UPSOLD} représente une valeur booléenne (0|1) indiquant si le produit était à tarif réduit.
+    * %{USER_AGENT} représente le User-Agent du navigateur utilisé par le client.
+    * %{COOKIES} représente les cookies entrants contenus dans les en-têtes reçus du navigateur utilisé par les clients.
+</pre><p class="line867"><strong>Exemple de fichier journal ELF2</strong> <p class="line874">Les deux lignes suivantes correspondent à un journal ELF2 décrivant une transaction accompagnée de l'article vendu : <p class="line867"><pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

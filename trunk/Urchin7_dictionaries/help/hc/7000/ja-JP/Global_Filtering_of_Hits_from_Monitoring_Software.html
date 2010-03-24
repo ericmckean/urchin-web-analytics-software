@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>監視ソフトウェアによるヒットのグローバル フィルタリング</strong> <p class="line867"><strong>概要</strong> <p class="line874">多くのホスティング環境では、顧客のウェブサーバーを監視することでサービス レベル 契約 (SLA) を維持しています。 しかし、このような監視によるヒットは、セッション数、ページビュー数、ヒット数、バイト数を人為的に増加させ、監視したウェブサイトの Urchin レポートが歪曲されてしまうという悪影響を伴います。 <p class="line867"><strong>アドバイス</strong> <p class="line874">このような監視を行うホスティング環境の場合は、標準/グローバル Urchin フィルタを各顧客の Urchin 設定プロファイルに適用して、監視ソフトウェアによって生成されるヒット数を除外することをおすすめします。 ホスティング会社が一元管理する Urchin インストールにより各顧客のウェブサイトのレポートが提供される場合、この操作は簡単に行うことができます。 顧客自身が独自のサーバーで Urchin のインスタンスを管理する専用環境やコロケーション環境の場合は、ホスティング会社が行っている監視に適したサンプル フィルタを提供してもらう必要があります。 <p class="line874">Urchin フィルタリングを導入するには、ホスティング会社と顧客が連携し、顧客のウェブサイト上に監視ソフトウェアのみが使用する専用ページを作成する必要があります。たとえば次のようになります。 <pre>     http://www.customerdomain.com/healthpage.html
+</pre><p class="line874">例 <p class="line874">例 1:  監視システムの IP アドレスの除外 <pre>      Filter Type: Exclude
+      Filter Field: IP
+      Filter Spec: 172\.16\.1\.1
+</pre><ul><li style="list-style-type:none">この場合、IP アドレス 172.16.1.1 によるヒットは、Urchin が処理しているものとしてウェブサーバー ログから除外されます。  </li></ul><p class="line874">例 2:  監視システムがヒットする特定のページの除外 <pre>      Filter Type: Exclude
+      Filter Field: REQUEST
+      Filter Spec: ^/healthpage.html
+</pre><ul><li style="list-style-type:none">この場合、/healthpage.html をリクエストするヒットは、Urchin が処理しているものとしてウェブサーバー ログから除外されます。  </li></ul><p class="line874">アドバイス <ol type="1"><li>ウェブサーバーの除外ヒットを含む実際のトラフィックの負荷を確認できるよう、フィルタを適用しないプロファイルを顧客用に作成することをおすすめします。 </li><li>ホスティング会社は、監視ソフトウェアによるヒットのみをフィルタリングするなど、監視ヒット専用のレポートを提供するプロファイルを用意することをおすすめします。 このプロファイルは、監視が適切に行われ、サービス レベル契約の条件を満たしていることを示すために使用できます。 </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Come si creano i rapporti personalizzati</strong> <p class="line874">Per creare un rapporto personalizzato: <ol type="1"><li><p class="line862">Scegli una tabella mappa di dati o definiscine una nuova (consulta <a href="Custom_Data_Maps.html">Mappe di dati personalizzate</a>); </li><li><p class="line862">Crea un nuovo file rapporto (".rs2") copiando &lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample. </li><li>Definisci il nuovo rapporto con l'aggiunta di nuova riga nel file del rapporto. </li></ol><p class="line874">Il formato del file del rapporto viene descritto di seguito: <ul><li>ID - ID rapporto univoco: <ul><li>C=Categoria </li><li>D=Dati </li><li>M=Menu </li><li>R=Rapporto </li><li>S=Sottorapporto </li><li>P=Rapporto pagina </li><li>B=Pannello di visualizzazione </li></ul></li><li>RS - Sezioni Pannello di visualizzazione/Rapporti: <ul><li>1=exec </li><li>2=operatore di marketing </li><li>4=webmaster </li></ul></li><li>RR - Requisiti rapporto: <ul><li>1=Software </li><li>2=Avanzato </li><li>4=E-commerce </li><li>8=UTM </li></ul></li><li>NTITLE - titolo navigazione (voce dizionario n.) </li><li>ONCOLOR - colore quando attivo </li><li>OFFCOLOR - colore quando non attivo </li><li>HELP - guida del rapporto (voce dizionario n.) </li><li>NDATA - numero di elementi dati (le voci devono essere inserite subito dopo) <ul><li>Questo campo può essere utilizzato per ulteriori sottorapporti con tipo D (dati) </li></ul></li><li>CTITLES - titoli di colonna (voce dizionario n.) </li><li>CTYPES - tipi di colonna utilizzati per la formattazione <ul><li>10=stringa </li><li>11=data/annomese </li><li>12=data </li><li>20=numero </li><li>21=entrate </li><li>22=byte </li><li>23=rapporto temporale </li><li>24=rapporto </li><li>25=pct </li><li>26=tempo </li><li>30=pct totale </li><li>40=entrate </li><li>41=entrate/num </li><li>42=num/entrate </li></ul></li><li>TABLE - numero tabella dati: <ul><li>T=totale </li><li>TR-transazione </li><li>H=istogramma </li><li>V=visitatore </li><li>1-n tabella </li></ul></li><li>DXFORMAT - formato estrazione dati </li><li>RF - campo obbligatorio </li><li>RT - tipo di rapporto: <ul><li>1=totali grafico </li><li>2=istogramma </li><li>3=stack </li><li>4=principali </li><li>5=albero </li><li>6=directory </li><li>7=limitato dal grafico </li><li>8=punto </li><li>9=click through </li><li>10=canalizzazione definita </li><li>11=overlay home page </li><li>12=copertura geografica </li><li>13=verifica obiettivo </li><li>14=percorso obiettivo </li><li>20=rapporto data kpi </li><li>21=dieci principali kpi </li><li>22=riepilogo tendenza </li><li>23=riepilogo conversioni </li><li>24=Map Mini </li></ul></li><li>GTYPES - tipi di grafici: <ul><li>1=barra </li><li>2=riga </li><li>3=torta </li><li>4=barra orizzontale </li><li>5=creativo </li><li>6=multiriga </li></ul></li><li>FSEP - separatore di campo </li><li>SP - opzioni speciali (aggiungi numeri bit map): <ul><li>1=totali </li><li>2=medie </li><li>4=confronto date </li><li>8=inminuscolo </li><li>16=dati nel tempo </li><li>32=Overlay </li><li>64=ricerca lingua </li><li>128=segmento </li><li>256=life time value </li><li>512=dettaglio transazione </li><li>1024=Dettaglio visitatore </li><li>2048=ricerca termine </li></ul></li><li>SR - flag rapporto speciale: <ul><li>1=suggerimenti di parole chiave </li><li>2=click through </li><li>3=analisi stratificata per fasce orarie </li><li>4=elenco visitatori </li><li>5=Copertura geografica </li><li>6=Dizionario personalizzato </li><li>7=confronto date </li></ul></li><li>FNT - tipo filtro numero filtro: <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF - campo numero filtro </li><li>FNV - valore filtro </li><li>FST - tipo stringa filtro: <ul><li>1=escludi </li><li>2=includi </li></ul></li><li>FSF - campo stringa filtro </li><li>FSX - stringa espressione regolare </li></ul><p class="line874">Di seguito è riportato un esempio di una riga di rapporto con le spiegazioni: <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> Sottorapporto con ID 1208 </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> Sezioni rapporti executive </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">Richiede UTM per essere attivato </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> Titolo menu navigazione </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      Colore menu al passaggio del mouse </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      Colore menu non al passaggio del mouse </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> Voce della guida </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862"> Nessun sottorapporto dati </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> Etichette di colonne per tabella dei rapporti </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> Tipi di colonne per tabella dei rapporti </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> ID mappa di dati </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">Formato estrazione dati </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Nessun campo obbligatorio </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> Il tipo di rapporto è "principali" </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  Due tipi di grafici: "torta" e "barra verticale" </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">Il separatore di campo non è utilizzato </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> Opzioni speciali utilizzate: 4 - Confronto date; 16 - Dati nel tempo; 128 - Segmento; 256 - Life time value; 1024 - Dettaglio visitatore </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Rapporto normale </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Il filtro opzionale non è utilizzato </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Il filtro opzionale non è utilizzato </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Il filtro opzionale non è utilizzato </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Il filtro opzionale non è utilizzato </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Il filtro opzionale non è utilizzato </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Il filtro opzionale non è utilizzato </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>日志文件大小有限制吗？</strong> <p class="line874">Urchin 的日志处理引擎可以处理大于 2GB 的网络服务器日志；因为 Urchin 是利用 zlib 库解压缩文件，无论是用 bzip (.bz2)、gzip (.gz) 还是 zip (.zip) 压缩的文件都可以处理。 <p class="line874">不过，Urchin 的日志处理引擎是使用 util 目录中的 zip/unzip 二进制程序来创建各配置文件报告数据的备份与存档。如果某月的报告数据大到文件压缩后仍超过 2GB，Urchin 就无法创建备份或存档；而且除非停用自动备份与存档功能，否则日志处理也会失败。这种情况下，需要利用其他外部实用程序手动备份文件。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

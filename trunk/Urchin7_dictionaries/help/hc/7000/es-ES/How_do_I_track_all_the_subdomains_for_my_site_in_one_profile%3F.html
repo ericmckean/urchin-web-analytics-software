@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>¿Cómo puedo realizar el seguimiento de todos los subdominios de mi sitio web en un perfil?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Autor:</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, asesor autorizado del software Urchin </em> </li></ul><p class="line874">Es posible realizar el seguimiento de subdominios dentro del mismo perfil que el dominio. Para ello, debe añadir una línea al código de seguimiento en cada una de las páginas del subdominio. En las instrucciones a continuación se presupone que este perfil se configuró con el dominio principal como el sitio web indicado (p. ej., ejemplo.co.uk) <ol type="1"><li>Añada la siguiente línea (en negrita) al código de seguimiento de todas las páginas tanto de su subdominio como de su dominio principal: </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">Esta línea debe hacer referencia al dominio principal (ejemplo.co.uk). </li></ul><p class="line874">Tenga en cuenta que si bien este cambio le permite realizar el seguimiento de subdominios dentro de un perfil, es posible que sus informes no establezcan la diferencia entre páginas de www.ejemplo.co.uk y de ayuda.ejemplo.co.uk. Por ejemplo, en el informe "Contenido principal" puede obtener resultados de www.ejemplo.co.uk/indice.html y de ayuda.ejemplo.co.uk/masinfo.html; sin embargo, el informe muestra lo siguiente: <pre>   /index.html
+   /more.html
+</pre><p class="line874">Si desea establecer diferencias entre los subdominios, puede crear un filtro "Avanzado" para su perfil con la siguiente configuración: <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">Con este filtro configurado, los ejemplos anteriores aparecen con el subdominio adjunto: <pre>   www.ejemplo.co.uk/indice.html
+   ayuda.ejemplo.co.uk/masinfo.html
+</pre><p class="line874">NOTA: este filtro depende del nombre de host de su sitio web, incluido el subdominio proporcionado a su archivo de registro de acceso web. Si su archivo de registro de acceso web no contiene el nombre de host, los informes de Urchin 6 no podrán registrar la diferencia, por ejemplo, entre indice.html en los dos dominios: <pre> www.ejemplo.co.uk/indice.html
+ ayuda.ejemplo.co.uk/masinfo.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

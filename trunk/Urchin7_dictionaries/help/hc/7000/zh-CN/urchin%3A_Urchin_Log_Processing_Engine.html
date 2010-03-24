@@ -1,0 +1,33 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin： Urchin 日志处理</strong> <p class="line867"><strong>概述</strong> <p class="line874">Urchin Log Processing Engine (urchin) 是 Urchin 的核心日志处理组件。 一般情况下，当任务运行时，日志处理引擎会通过 Urchin Scheduler (urchind) 来调用。 但是，也可直接从 command shell 执行 urchin 以运行特定配置文件。 这种做法在高度脚本化的环境中特别有用。这些环境中运行的 Urchin 任务来自“Windows 任务调度程序”或 UNIX 类型系统上的 cron 等外部来源。 另外，这种做法还特别适用于在一些特殊情况（例如，仅处理特定日期的点击量或进行某些类型的调试）下运行配置文件。 <p class="line874">Urchin 并不是真正的实用程序 – 之所以在此处被称作实用程序，是因为它提供了一些有限的命令行功能，这些功能在某些环境中非常有用。 <p class="line867"><strong>用法</strong> <p class="line874">urchin 位于 Urchin 发行套装的 bin 目录下。 其用法如下： <p class="line867"><pre>
+urchin [options...] (-p &lt;profile name&gt; | -P &lt;profile id&gt;)
+
+</pre><p class="line874">选项： <p class="line867"><pre>
+-a &lt;account name&gt;       指定配置文件的帐户名。 默认的帐户名是“(NONE)”
+
+-D                      启用调试模式
+
+-d &lt;YYYYMMDD&gt;           指定重新处理的日期
+
+-H                      指定将运行输出记录到历史记录文件。 如果指定了 -H，而没有指定 -T，则将创建新的任务历史记录
+
+-h                      显示帮助信息并退出
+
+-P &lt;profile id&gt;         指定要处理的配置文件 ID
+
+-p &lt;profile name&gt;       指定要处理的配置文件名称
+
+-T &lt;task id&gt;            指定要更新的任务历史记录。 指定 -T 强制使用 -H
+
+-t                      显示配置数据并退出
+
+-v                      显示版本号并退出
+
+</pre><p class="line867"><strong>注意事项</strong> <ul><li>对于 UNIX 类型的系统，urchin 应该作为已安装 Urchin 的用户/UID 运行，以确保此 UID 拥有配置文件的数据库。这是因为，如果数据库不存在，urchin 将会创建数据库。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

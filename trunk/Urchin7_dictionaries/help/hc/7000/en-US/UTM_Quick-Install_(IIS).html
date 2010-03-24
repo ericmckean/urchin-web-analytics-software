@@ -1,0 +1,22 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>UTM Quick-Install (IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>This article authored by</em> <a href="EpikOne.html">EpikOne</a><em>, an Urchin Software Authorized Consultant </em> </li></ul><p class="line874">The following is intended as a quick run-through on installing the UTM for websites running on a Microsoft IIS server on any Windows platform. For more detailed information on the UTM, please see the article entitled "Urchin Traffic Monitor (UTM)" found in this section. <p class="line867"><strong>Step 1:</strong> Copy UTM files to website document root. The files, urchin.js and <tt class="backtick">__</tt>utm.gif are located in the "utils\utm" folder in the Urchin distribution. Copy these two files to the main folder of your website content. IMPORTANT: the GIF file starts with two underscore characters. <p class="line867"><strong>Step 2:</strong> Reference UTM in your website HTML. Enter the following line in all of your HTML pages. While it can go anywhere in the pages, we recommend putting it directly before the closing &lt;/body&gt; tag. If you use a common include or template, you can enter it there. <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line874">If you are using a package like "HTML Tidy", you may want to include the Javascript line in the HEAD area of your page, for instance: <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;</pre><p class="line867"><strong>Step 3:</strong> Enable cookies in your IIS logging. Open the IIS Manager and bring up the Properties window for your website. Make sure the logging is enabled and set to the W3C Extended format. Click the Properties button next to the format and under the Extended Properties Tab, check the box next to Cookie. <p class="line867"><strong>Step 4:</strong> Set Urchin Profile to use Urchin Traffic Monitor (UTM). In the Urchin Administration interface, edit the profile in question and click on the Settings tab. Set the Visitor Tracking Method to Urchin Traffic Monitor (UTM). Set the UTM Domain to the address of your website without the www.  Then choose default for the Report Set and click the Update button. <p class="line874">That's it! Your website will now begin logging UTM data into your normal log file which will be identified the next time you run Urchin. <p class="line874">Is it working? To see if the UTM is successfully making entries to your log file, examine the log after you have installed the UTM and clicked on a few pages of the site. You should see an entry similar to the following at the end of the log file: <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line862">If you don't see the utma entries, be sure to check that cookies was enabled in the logging properly. If the status code is not 200 then check to make sure the files were properly copied to your document root.<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

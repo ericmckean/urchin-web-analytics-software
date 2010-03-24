@@ -1,0 +1,25 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>透過網域別名使用 Urchin 流量監視器</strong> <p class="line867"><strong>背景</strong> <p class="line874">由於 Cookie 是根據網域建立的物件，所以當網站有多個網域時須特別注意一些問題。在網域 "mysite.com" 下設定的 Cookie 將傳送到 www.mysite.com 下的所有子網域。不過，它不會傳送到 "mysite.net" 或任何其他不同的根網域。 <p class="line874">如果您的網站只有一個與 "mysite.com" 和 www.mysite.com 相應的網域，可以按標準的 Urchin 流量監視器安裝。不過，如果您的網站有一或多個別名，則建議您將別名的流量重新導向至主要網站。如此可以確保 Urchin 流量監視器的訪客追蹤是在主要網域下展開，而且會持續追蹤所有訪客。 <p class="line874">若不這樣做，那麼，當某位訪客透過兩個不同網域存取同一網站時，系統會將該訪客視為兩位訪客。下面示範如何將使用別名的網域重新導向到 Apache 和 IIS 伺服器上的主要網域。 <p class="line867"><strong>在 Apache 中重新導向別名</strong> <p class="line862">如果您目前使用 Apache 網站伺服器，只要稍微修改組態即可將某一別名下的流量重新導向至主要網站。要達到這個目的，其中一個方法是建立兩個 VirtualHost 項目。第一個 VirtualHost 是包含正常組態的主要網域，第二個 VirtualHost 用於所有別名並重新導向到主要網域。範例： <p class="line867"><pre>#---primary virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername www.mysite.com
+Serveralias mysite.com
+...
+&lt;/VirtualHost&gt;
+#---second virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername mysite.org
+Serveralias www.mysite.org mysite.net www.mysite.net
+RewriteEngine on
+RewriteRule ^(.*)       http://www.mysite.com$1     [R=301]
+&lt;/VirtualHost&gt;
+</pre><p class="line862">第二個 VirtualHost 使用重新寫入的規則和 301 (永久移動) 重新導向程式碼，將所有的流量轉移到原來的網站。該 301 點擊仍將記錄在記錄檔中，如此可以便於追蹤訪客由哪些網域進入，不過所有流量都會限制在同一個網域中。此時，對 Urchin 流量監視器而言，該網站是單一網域的網站，可以正常安裝 Urchin 流量監視器。 <p class="line874">請注意：建議您與系統管理員合作並參閱 apache.org 網站的組態參數。 <p class="line867"><strong>在 IIS 中重新導向別名</strong> <p class="line874">如果您目前使用 Microsoft IIS 網站伺服器，只要稍微修改組態即可將某一別名下的流量重新導向至主要網站。要達到這個目的，方法是在 IIS 組態中建立兩個網站。第一個網站是包含正常組態的主要網域 (www.mysite.com)，第二個網站用於所有別名 (mysite.net、mysite.org 等等) 並重新導向至主要網域。 <p class="line874">在 IIS 管理員中，在其中一個網站上按一下滑鼠右鍵，帶出內容的對話方塊。在 [網站] 標籤上，按一下 [進階...] 按鈕。如此將會帶出一個視窗，在此可使用 [主機標頭] 欄位將其他網域指派到網站。在主要網站中設定主要網域，並使用第二個網站來容納所有別名。 <p class="line874">設定並啟用保管所有別名的第二個網域後，請以下列重新導向程式碼建立空白的首頁： <p class="line867"><pre>&lt;head&gt;
+&lt;META HTTP-EQUIV=Refresh CONTENT="0; URL=http://www.mysite.com/"&gt;
+&lt;/head&gt;
+</pre><p class="line874">如此將會指示訪客的瀏覽器立即重新導向到主要網址。此時，主要網站將成為一個簡單的單一網域組態，且可以使用預設設定來處理一般 Urchin 流量監視器的安裝。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

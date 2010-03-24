@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line862">﻿<strong>UTM の簡単インストール (Apache)</strong> <p class="line867"><em>この記事は、Urchin ソフトウェア認定コンサルタントの</em> <a href="Panalysis.html">Panalysis</a> <em>によって作成されています。</em> <p class="line874">各種プラットフォームの Apache サーバー上で実行するウェブサイトへの UTM のインストールについて、概要を説明します。 <p class="line867"><strong>ステップ 1:  UTM ファイルをウェブサイトのドキュメントのルート ディレクトリにコピーします。</strong>UTM ファイル (urchin.js <tt class="backtick">__</tt>utm.gif) は Urchin の util/utm ディレクトリにあります。 この 2 つのファイルをウェブサイトのコンテンツのメイン ディレクトリにコピーします。 <p class="line867"><strong>ステップ 2:  HTML に UTM への参照を設定します。</strong>すべての HTML ページに次の行を挿入します。 ページ内のどの場所でも挿入できますが、&lt;head&gt; セクション内をおすすめします。 インクルードまたはテンプレートを共有している場合は、これらのファイルのいずれかに挿入してください。 <span class="u">重要</span>:  GIF ファイル名は 2 文字のアンダースコアで始まります。 <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line874">「HTML Tidy」などのパッケージを使用している場合は、ページの HEAD セクションに次のような Javascript 行を含めることができます。 <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>ステップ 3:  Apache ログで cookie を有効にします。</strong>まだ有効でない場合は、次の httpd.conf の例を使用して cookie のログを有効にできます。 <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\"\"%{User-Agent}i\"\"%{Cookie}i\"" special
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log special
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>ステップ 4:  UTM を使用するための Urchin プロファイルを設定します。</strong>Urchin 管理インターフェースで、対象のプロファイルを編集して [レポート] タブをクリックします。 [ユーザーのトラッキング方法] を「UTM」に設定します。 [UTM ドメイン] にウェブサイトの URL (「www.」を除く) を入力します。 最後に [更新] ボタンをクリックします。 その後、[プロファイル設定] タブの [デフォルトのレポート セット] で [UTM-すべて有効] を選択してもう一度 [更新] をクリックします。 これで、 ウェブサイトの通常のログ ファイルに UTM データが記録されるようになります。このログ ファイルは、Urchin の次回実行時に識別されます。 <p class="line867"><strong>動作の確認</strong>UTM でログ ファイルにエントリが正しく作成されているかどうかを確認するには、UTM をインストールし、サイトのページをいくつかクリックしてからログを確認します。 ログ ファイルの末尾に次のようなエントリが記述されます。 <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line867"><tt class="backtick">__</tt>utma エントリがない場合は、ログで cookie が有効になっていることを確認してください。 ステータス コードが「200」でない場合は、ファイルがドキュメントのルート ディレクトリに正しくコピーされていることを確認してください。 <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

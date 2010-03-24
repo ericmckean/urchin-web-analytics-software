@@ -1,0 +1,10 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Filters (SOAP) v1</strong> <ul><li><p class="line891"><a href="Data_API.html">API Table of Contents</a> </li><li><p class="line891"><a href="getData_(SOAP)_v1.1.html">getData (SOAP)</a> </li></ul><p class="line874">Urchin recognizes two types of filters: metric and dimension. <p class="line874">Metric filters allow the following operations: <ul><li><p class="line862">"&gt;" - greater than </li><li><p class="line862">"&gt;=" - greater then or equal to </li><li><p class="line862">"&lt;" - less then </li><li><p class="line862">"&lt;=" - less then or equal to </li><li>"=" - equal </li></ul><p class="line874">Dimension filters use POSIX Extended Regular Expression syntax and are case insensitive. <ul><li>"=~" - contains a substring matching the regular expression </li><li>"!~" - does not contain a substring matching the regular expression </li></ul><p class="line862">The equals sign will need to be escaped in query strings as %3D. The &gt; and &lt; signs need to be escaped as %3E and %3C respectively. <p class="line874">For the Urchin Data API v1, one regex and one numeric filter is supported per each call. e.g. for all records where browser is firefox and number of hits is more than ten: <p class="line867"><pre>filters=u:browser_base%3D~Firefox,u:hits%3E10
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

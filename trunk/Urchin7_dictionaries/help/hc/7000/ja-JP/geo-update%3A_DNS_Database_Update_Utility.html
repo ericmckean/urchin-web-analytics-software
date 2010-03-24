@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>geo-update: DNS データベース更新ユーティリティ</strong> <p class="line867"><strong>概要</strong> <p class="line874">地域データ更新ユーティリティは、Urchin の内部 DNS データベースの更新を確認し、更新がある場合はダウンロードします。  このユーティリティでは、Google ダウンロード サーバーやローカル ディレクトリ (Urchin 6 の場合) から更新情報をダウンロードできます。 <p class="line867"><strong>使用法</strong> <p class="line874">地域データ更新ユーティリティは、月 1 回 Urchin スケジューラ (urchind) から呼び出すか、コマンド ラインから手動で呼び出すことができます。 スケジューラから呼び出す場合は、Google ダウンロード サーバーの更新情報が使用されます。 コマンド ラインから呼び出す場合は、ローカル パスの DNS データベースの更新情報を使用することもできます。 このタスクは、月 1 回新しい更新情報を確認するよう設定されており、ユーザーが管理インターフェースで実行時間を指定することもできます。 <p class="line874">作成された地域データ更新のタスクは、タスク履歴の画面に「地域データ更新」の名前で表示されます。 <p class="line874">デフォルトの動作では、更新の有無を確認して新しいデータベースをダウンロードし、既存のデータベースを上書きした後。  デフォルトの動作を変更するには、コマンド ラインから適切なオプションを付けて geo-update を実行します。 使用方法は次のようになります。 <pre>geo-update [-Hhv] [-D | -F] [-i ファイル]
+</pre><p class="line874">各オプションの説明は以下のとおりです。 <pre>  -F            地域データベースを強制的にダウンロードします
+  -f            ローカル ファイルシステム上の geo.zip ファイルのパス名です [オプション]
+  -H            実行出力を履歴ファイルに記録するよう指定します
+  -h            ヘルプ情報を出力して終了します
+  -T &lt;task id&gt;  更新するタスク履歴レコードを指定します
+                -T を指定した場合は -H も実行されます
+  -V            地域データベースのバージョン番号を出力して終了します
+  -v            バージョン番号を出力して終了します
+</pre><p class="line874">-F オプションを使用すると、データベースが既に最新版であっても、強制的に新しいデータベースをダウンロードします。 このオプションは、カスタムのドメイン情報を誤ってインポートした、またはドメイン データベースが破損した際に、最新のデータでやり直す場合に便利です。 <p class="line862">-H オプションを使用して出力を履歴ファイルに書き込むと、Urchin 管理インターフェースの [構成] -&gt; [スケジューラ] にある [タスクの履歴] 画面で実行情報を確認できるようになります。 <p class="line862">-T オプションを使用すると、コマンド ライン インターフェースで &lt;Task_ID&gt; を指定して特定のタスクを強制的に更新することができます。 Task_ID の値は、Urchin 6 のデータベースで次のクエリを使用して確認できます。 <pre>mysql&gt; select * from ugeo_tasks\G
+</pre><p class="line867"><strong>例</strong> <p class="line874">最新のドメイン データベースを強制的にダウンロードする場合:  <pre>geo-update -F
+</pre><p class="line874">データベースから取得したタスク ID を使用して、タスクを CLI から手動で更新する場合:  <pre>geo-update -T &lt;Task_ID&gt; -H
+</pre><p class="line874">地域データ更新ユーティリティでは、更新情報を確認、ダウンロードするためインターネットへの接続が必要となります。 このユーティリティでは、ポート 80 を使用して更新情報を提供するウェブサーバーと通信します。 ファイアウォールやプロキシ サーバーを経由して更新する場合、問題が発生する可能性があります。 問題が発生した場合は、ネットワーク管理者にお問い合わせください。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

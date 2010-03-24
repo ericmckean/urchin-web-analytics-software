@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Come faccio a monitorare tutti i sottodomini del mio sito in profili separati?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Articolo di</em> <a href="ivantageLimited.html">ivantage Limited</a>,<em>consulente autorizzato del software Urchin </em> </li></ul><p class="line874">Con Urchin, il monitoraggio dei sottodomini in profili individuali dipende dalla configurazione del tuo server web. È possibile configurare il server web in modo da registrare file di log separati per ogni sottodominio. In questo modo, Urchin è in grado di elaborare il file di log di ciascun sottodominio separatamente. In alternativa, se viene generato un solo file di log e il log di accesso web è configurato per registrare il nome host che include il sottodominio, è possibile creare un filtro di inclusione per ogni profilo del sottodominio. Il filtro in un profilo <ul><li style="list-style-type:none">includerebbe solo il traffico verso, ad esempio, guida.esempio.it, mentre un altro filtro di inclusione potrebbe includere, ad esempio, solo il traffico verso www.esempio.it. </li></ul><p class="line874">Pertanto, per monitorare i tuoi sottodomini in profili separati, applichi un filtro di inclusione a ogni profilo per includere solo un determinato nome host. Il primo passaggio consiste nella creazione di un profilo per ogni sottodominio. Una volta effettuata questa operazione, puoi creare i filtri riportati di seguito. <p class="line874">Ad esempio, se desideri monitorare sotto.esempio.it e www.esempio.it in due profili distinti, applica i seguenti filtri: <ul><li style="list-style-type:none">Per il profilo sotto.esempio.it </li></ul><p class="line867"><pre>    Tipo filtro: Includi SOLO pattern
+    Campo filtro: utm_request_hostname (AUTO)
+    Pattern filtro: ^sotto\.esempio\.it
+</pre><ul><li style="list-style-type:none">Per il profilo www.esempio.it </li></ul><p class="line867"><pre>    Tipo filtro: Includi SOLO pattern
+    Campo filtro: utm_request_hostname (AUTO)
+    Pattern filtro: ^www\.esempio\.it
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>为什么"最热门文件"报告显示的点击数要多于"下载"报告？</strong> <p class="line874">对于同一文件，"最热门文件"报告所显示的点击次数多于"下载"报告是正常的。原因如下：以 PDF 文件为例，许多浏览器包含一次显示一页 PDF 文件的插件。初始页请求会在网络服务器中生成 200 状态代码。因为浏览器插件只下载您正在查看的页面，而不是整个文档，所以所有后续页面会生成 206（部分下载）状态代码。因此，如果您查看了同一 PDF 文档中的 5 页，网络服务器会记录一次显示 200 状态代码的点击和 4 次显示 206 状态代码的点击，所有记录都属于同一 PDF 文档。 <p class="line874">以下是 Urchin 报告显示此信息的方式： <p class="line874">下载：下载点击请求的是 200、302 或 304 状态代码，因此报告中将只显示下载一次此 PDF 文件，例如，显示 200 状态代码的一次点击。 <p class="line874">"最热门文件"报告显示状态代码为 2XX、302 或 304 且文件与被视为综合浏览的相应 MIME 类型相匹配的所有成功文件请求。默认情况下，除了有下列后缀的文件外，Urchin 将所有 MIME 类型都视为综合浏览：gif、jpg、jpeg、png、js、css、cur、ico、ida。 <p class="line874">因为每次点击都包含 200 或 206 状态代码，所以，"最热门文件"报告会将上例中的 5 次 PDF 请求都计为对此文档的点击。 <p class="line874">因为每次点击或多或少都对应到多页 PDF 文档内的单一页面，所以每次部分下载点击（206 状态）都计为独立的综合浏览。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

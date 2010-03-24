@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>“警告，任务调度程序已禁用”是什么意思？</strong> <p class="line874">Urchin 任务调度程序是一种服务，它负责运行可执行的 Urchin 处理任务。 如果禁用 Urchin 任务调度程序，Urchin 将无法处理任务。 出现 “警告，任务调度程序已禁用”这种错误的常见原因如下： <ul><li>urchind 服务未运行。 当服务器重新启动但 Urchin 没有包含在系统的启动脚本中时，可能会出现这种情况。 </li><li class="gap">（仅 Unix）urchind 服务正在运行，但为其他用户所有，而不是为 Urchin 发行套装的所有者拥有。 </li></ul><p class="line874">要确定 Urchin 任务调度程序是否在运行，请执行下列任务： <ul><li>打开 command shell，键入 CD，进入 /path/to/urchin/bin/ 目录 </li><li class="gap">键入： urchinctl status（对于 Unix 系统，则键入 ./urchinctl status） </li></ul><p class="line874">如果 Urchin 任务调度程序未运行，您可以执行下列任务以从命令行启动此程序： <ul><li>打开 command shell，键入 CD，进入 /path/to/urchin/bin/ 目录 </li><li class="gap">键入： urchinctl -s start（对于 Unix 系统，则键入 ./urchinctl -s start） </li><li class="gap">如果两种服务都没有运行，请键入： urchinctl start </li></ul><p class="line874">如果此服务正在运行，请检查服务器上的运行进程，以确定下列 Urchin 进程的所有者： ps -ef | grep urchind <p class="line874">请注意返回输出中进程拥有者的"用户名"： <p class="line867"><pre>
+用户名 33597 0.0 0.2 352 204 ?? Ss 27Feb08 17:42.18 /usr/local/urchin6/bin/urchind
+
+</pre><p class="line874">如果此用户不是 Urchin 发行套装的所有者，您需要停止此服务并使用合适的用户名重启系统。 您可以通过执行"切换用户"至目前拥有 urchind 进程的同一用户并停止 urchinctl 来完成此操作。 使用上述 "-s" 切换。 然后，切换回 Urchin 用户，并再次使用 "-s" 切换以启动 urchinctl。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

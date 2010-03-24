@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Utilitário de controle de serviços do Urchin (urchinctl)</strong> <p class="line867"><strong>Visão geral</strong> <p class="line874">O Urchin Services Control utility, urchinctl, verifica o status dos serviços Urchin Scheduler e Urchin Webserver e permite iniciá-los e encerrá-los. Em sistemas tipo UNIX, o urchinctl geralmente é chamado de um dos scripts da inicialização do sistema para iniciar ou encerrar os serviços do Urchin automaticamente. <p class="line874">Os tipos de operação que o urchinctl pode executar são: <ul><li>Verificar o status do agendador principal e secundário do Urchin 6 </li><li class="gap">Iniciar, parar ou reiniciar o agendador ou servidor da web (ou ambos) </li><li class="gap">Iniciar o servidor da web em uma porta alternativa </li><li class="gap">Iniciar o servidor da web com criptografia SSL </li></ul><p class="line867"><strong>Aplicação</strong> <p class="line874">O urchinctl está localizado no diretório bin da distribuição do Urchin. <p class="line874">O utilitário funciona da seguinte maneira: <p class="line867"><pre>
+  urchinctl -h (imprime mensagem de uso e é encerrado)
+
+  urchinctl -v (imprime a versão e é encerrado)
+
+  urchinctl [-e] [-p porta] [[-s] | [-w]] ação
+
+</pre><p class="line874">em que: <p class="line867"><pre>
+  -e  ativa a criptografia (SSL) no servidor da web
+
+  -p  especifica a porta na qual o servidor da web será conectado
+
+  -s  realiza a ação SOMENTE no agendador do Urchin
+
+  -w  realiza a ação SOMENTE no servidor da web do Urchin
+
+</pre><p class="line874">e a ação pode ser: <p class="line867"><pre>
+  start   (inicia os serviços)
+
+  stop   (interrompe os serviços)
+
+  restart   (interrompe e inicia os serviços)
+
+  status  (exibe o status do tempo de execução do servidor da web/agendador)
+
+</pre><p class="line874">Por padrão, a ação é executada no servidor da web e no agendador, a não ser que as opções "-s" (agendador) ou "-w" (servidor da web) sejam especificadas. Essas opções são mutuamente exclusivas. <p class="line867"><strong>Considerações</strong> <p class="line874">Em sistemas tipo UNIX, o urchinctl deve ser executado como o usuário/UID que instalou o Urchin para garantir que os processos urchinwebd e urchind sejam iniciados com esse UID. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

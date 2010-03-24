@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>UTM 추적 사이트에서 평균 시간이 매우 긴 이유는 무엇입니까?</strong> <p class="line867"><strong>개요</strong> <p class="line874">재방문자 수가 많은 인기 있는 웹사이트에서 UTM(Urchin Traffic Monitor)을 활용할 경우 Urchin 보고에 평균 시간 통계가 길게 나타날 수 있습니다.또한 보고서의 '콘텐츠 최적화:콘텐츠 실적' 섹션의 방문 시간 히스토그램에 기간이 30분 이상(1801초 이상)인 세션이 매우 많은 것으로 나타날 수 있습니다. <p class="line874">이러한 현상이 나타나는 기본 원인은 UTM이 세션 쿠키를 사용해 방문자 세션을 추적하고, 동일한 세션 쿠키에서 공유하는 조회가 같은 세션에 속한 것으로 간주되기 때문입니다.그러나 세션 쿠키는 방문자가 웹 브라우저를 종료하거나 쿠키를 명시적으로 폐기하기 전까지 남아 있습니다.따라서 방문자가 오랜 간격을 두고 클릭하는 경우 UTM 추적 세션의 길이가 길어질 수 있습니다. <p class="line867"><strong>자세한 설명 및 예</strong> <p class="line874">뉴스 포털 또는 주식 사이트처럼 재방문자 수가 많은 인기 있는 사이트에 UTM을 설치했다고 가정해 보겠습니다.이 사이트에서 방문자는 일반적으로 브라우저에서 사이트를 열고 10-15분 정도 관심있는 링크를 서핑한 다음 웹 브라우저를 종료하지 않은 채 다른 사이트로 이동합니다.다음 날, 동일한 방문자가 UTM 추적 사이트를 다시 방문한다면,마지막 방문 후 브라우저를 닫지 않았기 때문에 세션 쿠키는 전 날과 같은 것으로 남아 있으며 따라서 긴 유휴 기간이 있지만 Urchin의 관점에서는 여전히 같은 세션입니다.이러한 행위가 사이트 방문자의 여러 섹션에서 계속해서 발생할 경우 평균 시간 계산에 큰 영향을 줄 뿐만 아니라 방문 시간 보고서의 30분 이상(1801초 이상) 그래프도 크게 증가시킬 수 있습니다.또한 일정 기간에 대한 총 방문자수를 감소시키는 경향이 있습니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

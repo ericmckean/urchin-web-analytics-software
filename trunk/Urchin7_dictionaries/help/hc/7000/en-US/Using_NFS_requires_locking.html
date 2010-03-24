@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Using NFS requires locking</strong> <p class="line874">Urchin configuration, which uses data files located in the data/conf folder of the installation, will set read and write locks during setup and administration. If the data/conf folder is mounted over NFS, it is required that the NFS server is running the appropriate locking daemons to handle remote locking. <p class="line874">If the locking does not work properly, the Urchin installation may hang indefinitely. <p class="line867"><strong>Technical Notes</strong>  <p class="line874">Urchin uses the fcntl() function on UNIX to perform advisory and exclusive (read/write) locking. Some older systems may not support all of the rpc locking requests of different platforms. Be sure you are running recent versions of your OS with the latest patches. Make sure that the NFS server is running 'statd' and 'lockd' or equivalent. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

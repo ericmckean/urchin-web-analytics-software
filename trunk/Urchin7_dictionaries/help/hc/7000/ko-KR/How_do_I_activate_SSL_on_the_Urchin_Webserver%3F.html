@@ -1,0 +1,22 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 웹서버에서 SSL을 활성화하려면 어떻게 해야 합니까?</strong> <p class="line874">Urchin과 함께 제공되는 Urchin 웹서버는 SSL을 사용하여 통신을 암호화할 수 있습니다. SSL을 활성화하려면 인증 기관에서 서명한 유효한 인증서 또는 자체 서명 인증서를 가지고 있어야 합니다. <p class="line874">Urchin 웹서버에서 SSL을 활성화하려면 다음 단계를 따르십시오. <ol type="1"><li>SSL 인증서 파일을 Urchin var 디렉토리로 복사하고 server.crt로 이름을 지정합니다. </li><li>SSL 키 파일을 Urchin var 디렉토리로 복사하고 server.key로 이름을 지정합니다. </li><li>Urchin var 디렉토리에 있는 urchinwebd.conf.template 파일을 아래와 같이 수정합니다. <ol type="1"><li>(Urchin 6.6 이상 버전을 사용 중인 경우 이 단계를 건너뜁니다.) Port 행은 주석 처리하고 Listen 지시문은 주석을 해제합니다. <pre>          #XXXPortXXX
+          Listen 443
+          </pre></li><li class="gap"><p class="line891">ServerName 지시문을 localhost에서 사용 중인 웹서버의 이름으로 변경합니다. 예를 들면 다음과 같습니다. <pre>          ServerName: www.urchin.com
+          </pre></li><li style="list-style-type:none"><p class="line862">참고: urchinwebd.conf.template 파일에 있는 ServerName 값은 인증서 파일에 있는 서버 이름과 일치해야 합니다. </li></ol></li><li>urchinctl 명령에 -e 옵션을 사용하여 웹서버를 시작하거나 다시 시작합니다. Urchinctl은 Urchin의 bin 디렉토리에 있습니다. -e 옵션은 웹서버에서 SSL을 활성화할 것을 urchinctl에 지시합니다. 예를 들어 다음 명령은 443 포트에 SSL이 활성화되도록 하여 웹서버를 다시 시작합니다.  Urchin 6.6 이전 버전: <pre>   urchinctl -e -w restart
+   </pre>Urchin 6.6 이상 버전: <pre>   urchinctl -e -p 443 -w restart
+   </pre><p class="line891"><span class="u">참고</span>: SSL이 활성화되지 않도록 하여 서버를 시작하려면 명령에서 -e 옵션만 삭제하면 됩니다. </li></ol><p class="line862">이제 <a class="https" href="https://servername.domain.com:port/를">https://servername.domain.com:port/를</a> 사용하여 SSL이 활성화된 서버에 액세스할 수 있습니다. <p class="line867"><span class="u">참고</span>: urchinwebd.conf.template에서 SSL 설정을 변경할 경우 웹서버 시작에 문제가 생길 수 있습니다. <p class="line867"><strong>Windows 도움말</strong> <p class="line874">Urchin 웹서버에서 SSL을 활성화하려면 다음 단계를 따르십시오. <ol type="1"><li>SSL 인증서 파일을 Urchin var 디렉토리로 복사하고 server.crt로 이름을 지정합니다. </li><li>SSL 키 파일을 Urchin var 디렉토리로 복사하고 server.key로 이름을 지정합니다. </li><li>Urchin var 디렉토리에 있는 urchinwebd.conf.template 파일을 아래와 같이 수정합니다. <ol type="1"><li>(Urchin 6.6 이상 버전을 사용 중인 경우 이 단계를 건너뜁니다.) Port 행은 주석 처리하고 Listen 지시문은 주석을 해제합니다. <pre>          #XXXPortXXX
+          Listen 443
+          </pre></li><li class="gap">다음 행의 주석을 해제하면 웹서버를 시작할 때 mod_ssl.so가 로드됩니다. <pre>          LoadModule ssl_module etc/mod_ssl.so
+          </pre></li><li class="gap"><p class="line891">ServerName 지시문을 localhost에서 사용 중인 웹서버의 이름으로 변경합니다. 예를 들면 다음과 같습니다. <pre>          ServerName: www.urchin.com
+          </pre></li><li style="list-style-type:none"><p class="line862">참고: urchinwebd.conf.template 파일의 ServerName 값은 인증서 파일에 있는 서버 이름과 일치해야 합니다. </li></ol></li><li>urchinctl 명령에서 -e 옵션을 사용하여 웹서버 서비스를 제거 및 설치합니다. Urchinctl은 Urchin의 bin 디렉토리에 있습니다. -e 옵션은 웹서버에서 SSL을 활성화할 것을 urchinctl에 지시합니다. 예를 들어 다음 명령은 443 포트에 SSL이 활성화된 웹서버를 제거하고 설치합니다.  Urchin 6.6 이전 버전: <pre>   urchinctl.exe -w remove
+   urchinctl.exe -w -e install
+   </pre>Urchin 6.6 이상 버전: <pre>   urchinctl.exe -w remove
+   urchinctl.exe -e -p 443 -w install
+   </pre><p class="line891"><span class="u">참고</span>: SSL이 활성화되지 않도록 하여 서버를 시작하려면 명령에서 -e 옵션만 삭제하면 됩니다. </li></ol><p class="line862">이제 <a class="https" href="https://servername.domain.com:port/를">https://servername.domain.com:port/를</a> 사용하여 SSL이 활성화된 서버에 액세스할 수 있습니다. <p class="line867"><span class="u">참고</span>: urchinwebd.conf.template에서 SSL 설정을 변경할 경우 웹서버 시작에 문제가 생길 수 있습니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

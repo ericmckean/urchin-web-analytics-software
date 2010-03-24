@@ -1,0 +1,10 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>更改端口号</strong> <p class="line874">Urchin 网络服务器侦听的默认端口号为 9999。更改此端口号需要执行以下两个基本步骤： <ul><li>在"服务器设置"屏幕中更改端口号 </li><li>终止并重新启动 Urchin 服务。对于 Windows 和 Unix 这两种类型的系统，此过程可能稍有不同 </li></ul><p class="line874">具体的过程如下所示： <ul><li>登录到 Urchin 管理界面。 </li><li><p class="line862">导航至"配置-&gt;全局设置-&gt;访问设置"。 </li><li>在"服务器端口号"框中设置新的端口号。 </li><li>点击"更新"按钮。 </li></ul><p class="line874">现在，需要重新启动 Urchin 服务： <ul><li>对于 Unix 类型的系统，进入 Urchin 发行套装的 bin 目录并运行： </li></ul><p class="line867"><pre>          ./urchinctl restart
+</pre><ul><li><p class="line862">对于 Windows 系统，从控制台进入"开始-&gt;程序-&gt;Urchin 6"，先选择"停用 Urchin 6 服务"，然后选择"启用 Urchin 6 服务"。 </li></ul><p class="line874">现在，网络服务器应当已在侦听新端口号上的连接请求。这意味着，您已更改了查看报告和配置 Urchin 软件所需的网址，因此应向用户通知新的网址。 <p class="line867"><strong>备注</strong> 许多系统的根权限要求使用的端口号小于 1024。此外，如果其他服务正在用指定的端口运行，则 Urchin 将无法启动。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

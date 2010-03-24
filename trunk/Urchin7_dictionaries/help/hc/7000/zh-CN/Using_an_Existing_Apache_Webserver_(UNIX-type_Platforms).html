@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>使用现有的 Apache 网络服务器（UNIX 类型的平台）</strong> <p class="line874">默认情况下，会使用 Urchin 产品捆绑的独立 Apache 服务器完成 Urchin 管理和报告。在大多数 Urchin 安装情况下，这是传递"Urchin 管理和报告界面"的首选方法。不过，在少数情况下，可能需要利用现有的 Apache 安装来传递"Urchin 管理和报告界面"。这可能是为了满足网站的要求：整个组织必须使用本地化版本的 Apache，或必须通过单一 Apache 配置管理所有的网络服务。下列信息说明了可以满足这些要求的两种不同模式。 <p class="line867"><strong>免责声明：</strong> 请注意，我们 <strong>不支持</strong> 对 Urchin 安装进行这些修改。 <p class="line867"><strong>选项 1：</strong> 利用网站各自的 Apache httpd 二进制文件独立运行 Urchin 服务 <p class="line867"><strong>副作用</strong> <ul><li>Urchin 升级有时需要使用所捆绑的 Apache 中的附加功能和/或配置更改，如果现有的 Apache 二进制文件不支持这些更改/功能，则可能无法正确升级。 </li></ul><p class="line867"><strong>配置更改</strong> <ul><li>请确定您的 httpd 支持下列模块： <ul><li style="list-style-type:none">mod_access mod_cgi mod_dir mod_mime </li></ul></li><li>以正常的方式安装 Urchin，选择运行 Urchin 管理和报告界面所需的端口。 </li><li>Urchin 安装完成后，请运行下列脚本： </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin ./urchinctl stop
+                  mv urchinwebd urchinwebd.orig
+                  ln -s /path/to/your/httpd urchinwebd
+                  ./urchinctl start
+</pre><ul><li style="list-style-type:none">这会单独启动一个使用您的 Apache 二进制文件的 Apache 实例，但它是在标准网络服务外独立运行。 </li></ul><p class="line867"><strong>选项 2:</strong> 通过现有的 Apache 配置运行 Urchin 服务 <p class="line867"><strong>副作用</strong> <ul><li>整个 Urchin 发行套装必须归运行 httpd 的同一 UID 所有。 </li><li>不能使用管理 GUI 来更改运行 Urchin 的端口。 </li><li>不能使用 bin/wrapper 工具来启动 Urchin 服务，因为此工具会尝试运行 Urchin 所特有的 httpd。bin/urchindctl.sh 脚本只能用来启动/停止 Urchin 调度程序 (urchind)。 </li></ul><p class="line867"><strong>配置更改</strong> <ul><li>请将以下这些行添加到现有的 httpd.conf 文件中。需要提供服务器的 IP 地址、Urchin 使用的端口号以及 Urchin 的安装路径。 </li></ul><p class="line867"><pre>            ## Support for Urchin administration and reporting services
+            Listen [port#]
+            &lt;VirtualHost [server-ip]:[port#]&gt;
+            ErrorLog /path/to/urchin-distribution/var/error.log
+            DocumentRoot /path/to/urchin-distribution/htdocs/
+            &lt;Directory /path/to/urchin-distribution/htdocs/&gt;
+                  AddHandler cgi-script .cgi
+                  Options ExecCGI
+                  DirectoryIndex session.cgi
+                  AllowOverride None
+                  Order allow,deny
+                  Allow from all
+            &lt;/Directory&gt;
+            &lt;/VirtualHost&gt; 
+</pre><ul><li style="list-style-type:none">更改完这些配置后，请执行下列任务： </li><li class="gap">将 Urchin 发行套装的所有权更改为运行 Apache 网络服务器的 UID： </li></ul><p class="line867"><pre>                  chown -R apache-user /path/to/urchin/bin
+</pre><ul><li>确认已停止与 Urchin 捆绑的 Apache： </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin
+                  ./urchinctl -w stop
+</pre><ul><li>重新启动您的 Apache 服务器以启用 Urchin 报告和管理 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,39 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>REST .NET Example 3: Getting a list of tables for a profile and the supported dimensions/metrics</strong>  <p class="line862">(Return to main article: <a href="Samples_for_.NET_(REST)_v1.html">Samples for .NET (REST) v1</a>) <p class="line874">1. Specify Service URL: <pre>private const string serviceURL = "http://SERVER_NAME:URCHIN_PORT/services/v1/reportservice/tables/";
+</pre><p class="line874">2. Provide login and profile information: <pre>private const string login = "YOUR_LOGIN";
+private const string password = "YOUR_PASSWORD";
+private const int profileId = PROFILE_ID;
+</pre><p class="line874">3. Compose REST URL: <pre>string url = serviceURL + "?login=" + login + "&amp;password=" + password + "&amp;profileId=" + profileId;
+</pre><p class="line874">4. Retrieve account list: <pre>XPathDocument xPathDocument = new XPathDocument(url);
+</pre><p class="line874">5. Parsing response: <pre>XPathNavigator xPathNavigator = xPathDocument.CreateNavigator();
+XmlNameTable xmlNameTable = new NameTable();
+XmlNamespaceManager xmlNamespaceManager = new XmlNamespaceManager(xmlNameTable);
+xmlNamespaceManager.AddNamespace("tns", "https://urchin.com/api/urchin/v1/");
+XPathNodeIterator tableXPathNodeIterator = xPathNavigator.Select("/tns:getTableListResponse/table", xmlNamespaceManager);
+</pre><p class="line874">6. Display the information about retrieved profiles: <p class="line867"><pre>while (tableXPathNodeIterator.MoveNext())
+        DisplayTable(tableXPathNodeIterator.Current);    .....
+
+    // Function to display storage info.
+
+private static void DisplayTable(XPathNavigator tableXPathNavigator)
+{
+        Console.WriteLine("Table id is \"" + tableXPathNavigator.SelectSingleNode("tableId/text()") + "\", ");
+        // Display the table dimensions.
+        Console.WriteLine("dimensions are:");
+        XPathNodeIterator dimensionsXPathNodeIterator = tableXPathNavigator.Select("dimensions/dimension/text()");
+        while (dimensionsXPathNodeIterator.MoveNext())
+                Console.WriteLine("\t\"" + dimensionsXPathNodeIterator.Current.Value + "\", ");
+        // Display the table metrics.
+        Console.WriteLine("metrics are:");
+        XPathNodeIterator metricsXPathNodeIterator = tableXPathNavigator.Select("metrics/metric/text()");
+        while (metricsXPathNodeIterator.MoveNext())
+                Console.WriteLine("\t\"" + metricsXPathNodeIterator.Current.Value + "\", ");
+}  
+</pre><p class="line874">The full sample code for this example is available in ReportServiceGetStorageListREST.cs file.     </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

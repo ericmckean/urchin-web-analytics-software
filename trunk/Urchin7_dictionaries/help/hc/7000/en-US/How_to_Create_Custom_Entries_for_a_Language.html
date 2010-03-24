@@ -1,0 +1,20 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>How To Create Custom Entries for a Language</strong> <ol type="1"><li><p class="line862">Copy the language file xx-XX.txt from folder &lt;Urchin&gt;/lib/admin/languages/ to &lt;Urchin&gt;/lib/custom/languages/. </li><li>Append new entries to the end of the file and assign each entry a new number. </li><li><p class="line862">The separator between the number and value must be a &lt;Tab&gt; or Urchin will not parse it. </li><li>Ensure that the entry numbers are consecutive (incremented by one). </li><li>Reload Urchin. </li><li><p class="line862">After reload, Urchin should create a language DB file named xx-XX.db located in folder &lt;Urchin&gt;/lib/custom/languages/. </li></ol><p class="line874">Once defined, custom entries can be used in the reporting section as column labels, titles or help descriptions. <p class="line867"><strong>Example of a language file</strong> <p class="line874">Entries 738, 739, and 740 are added custom entries. <p class="line867"><pre>  ...
+  731     Executive
+  732     Marketer
+  733     Webmaster
+  734     Dashboards
+  735     All Reports
+  736     ja-jp-mac (Japanese)
+  737     ja-jp-osaka (Japanese)
+  738     Modules
+  739     Actions
+  740     Modules / Actions
+</pre><p class="line867"><strong>Important Note:</strong> Upgrading Urchin may replace the original language files and add default entries.  Please be sure to recreate your custom language files and update custom reports. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

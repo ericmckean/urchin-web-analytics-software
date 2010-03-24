@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>怎样更改 Urchin 在 UNIX 类型的平台上运行时所用的 UID（用户）？</strong> <p class="line874">更改 Urchin 运行所用的 UID（用户）和/或 GID（组）较为简单。很可能只有"根用户"才能执行以下操作，因此大多数情况下，必须由系统管理员执行以下操作。 <ol type="1"><li>如果新用户和组不在您的系统中，请在密码和组文件中创建相应的条目。 </li><li>使用"urchinctl stop"停用 urchin 服务。"urchinctl"二进制文件位于 Urchin 发行套装的"bin"目录下。 </li><li>在 Urchin 发行套装的根目录中执行"chown -R newuser:newgroup"。如果您为"urchin.conf"文件中的"var"或"data"目录指定了其他位置，则还需要在这些目录中执行此"chown"命令。 </li><li>编辑 Urchin 发行套装"var"目录中的"urchinwebd.conf.template"文件，更改以下行： <ul><li style="list-style-type:none">User newuser Group newgroup </li></ul></li><li>使用"urchinctl start"重新启动 Urchin 服务 </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

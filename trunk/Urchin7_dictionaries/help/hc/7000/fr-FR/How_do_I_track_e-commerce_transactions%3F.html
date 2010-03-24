@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Comment puis-je effectuer le suivi des transactions en ligne ?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Cet article a été rédigé par</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, un consultant agréé du logiciel Urchin. </em> </li></ul><p class="line874">Urchin utilise une technique de collecte des données côté client pour la capture des transactions en ligne. Grâce à de simples ajouts sur votre page de confirmation, Urchin peut détecter et enregistrer automatiquement les informations sur les produits et les transactions. Les informations nécessaires sont placées dans un formulaire masqué qui est analysé pour obtenir les données sur les produits et les transactions. Il est possible de modifier la plupart des systèmes d'e-commerce orientés modèles afin d'inclure ces informations masquées dans la confirmation. <p class="line867"><strong>Activation du suivi E-Commerce</strong> <p class="line874">La première étape du suivi des transactions en ligne consiste à activer les rapports e-commerce pour le profil sélectionné. Pour ce faire, procédez comme suit : <ol type="1"><li>Connectez-vous à Urchin. </li><li>Cliquez sur Modifier en regard du profil à activer. </li><li>Sur la page "Paramètres de profil", cliquez sur Modifier en regard de l'option "Informations relatives au profil du site Web principal". </li><li>Attribuez la valeur "Oui" à la case d'option "Site Web de commerce électronique". </li></ol><p class="line867"><strong>Format de la page de confirmation</strong> <p class="line874">La deuxième étape consiste à s'assurer que le mode d'insertion du code de suivi dans la page de confirmation est standard. Vous pouvez, pour cela, utiliser une inclusion SSI, une autre méthode de moteur ou encore l'insérer manuellement dans votre code HTML. <pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+</pre><p class="line874">Ensuite, le système doit écrire les lignes suivantes dans la page de confirmation, sous le code de suivi. Le contenu des crochets doit être remplacé par des valeurs réelles, comme décrit ci-dessous dans le paragraphe "Explication des paramètres". <pre>   &lt;form style="display:none;" name="utmform"&gt;
+   &lt;textarea id="utmtrans"&gt;UTM:T|[order-id]|[affiliation]|
+   [total]|[tax]| [shipping]|[city]|[state]|[country] UTM:I|[order-id]|[sku/code]|[productname]|[category]|[price]|
+   [quantity] &lt;/textarea&gt;
+   &lt;/form&gt;
+</pre><p class="line862">Pour finir, vous devez configurer la fonction utmSetTrans afin qu'elle soit appelée après l'envoi du formulaire et que la transaction soit enregistrée. Intégrez, pour cela, un événement body onLoad à la balise &lt;body&gt; d'ouverture : <pre>   &lt;body onLoad="javascript:__utmSetTrans()"&gt;
+</pre><p class="line874">Si vous n'avez pas la possibilité de modifier la balise body, vous pouvez appeler la fonction utmSetTrans depuis une balise de script séparée, à condition que cette fonction soit appelée à la fin du formulaire : <pre>   &lt;script type="text/javascript"&gt;
+   __utmSetTrans();
+   &lt;/script&gt;
+</pre><p class="line874">REMARQUE : N'incluez pas les crochets lorsque vous définissez les valeurs dans le formulaire. En outre, dans les champs "Total", "Taxe" et "Expédition", n'utilisez pas de virgules comme séparateurs de milliers, car tout chiffre se trouvant après la virgule sera ignoré. <p class="line867"><strong>Exemple :</strong> <pre>UTM:T|34535|Main Store|111108.06|8467.06|10.00|San Diego|CA|USA
+UTM:I|34535|XF-1024|Urchin T-Shirt|Shirts|11399.00|9
+UTM:I|34535|CU-3424|Urchin Drink Holder|Accessories|20.00|2
+</pre><p class="line874">Le formulaire masqué contient deux types de lignes : la ligne de transaction et les lignes d'article. Pour chaque transaction, il ne doit exister qu'une seule ligne de transaction, indiquée par un "T" juste après "UTM:". Cette ligne indique le total de la transaction, taxes et frais d'expédition compris, ainsi que d'autres informations. Pour chaque article de la confirmation, créez une ligne d'article, indiquée par un "I". Les lignes d'article peuvent contenir des noms de produit, des codes produits, des prix unitaires et des quantités. Vous pouvez créer autant de lignes d'article par transaction que vous le souhaitez. <p class="line867"><strong>Explication des paramètres</strong> <p class="line867"><strong>Variables de la ligne de transaction</strong> <pre>[order-id]      Votre identifiant de commande unique interne
+[affiliation]   Partenaire ou affiliation du magasin (facultatif)
+[total]         Montant total de la transaction en dollars
+[tax]   Montant des taxes de transaction
+[shipping]      Montant des frais d'expédition de la transaction
+[city]  Ville à associer à la transaction
+[state/region]  État, région ou département
+[country]       Pays
+</pre><p class="line867"><strong>Variables de la ligne d'article</strong> <pre>[order-id]      Votre identifiant de commande unique interne (doit être identique à celui de la ligne de transaction)
+[sku/code]      Code de référence du produit
+[product name]  Nom ou description du produit
+[category]      Catégorie ou variante du produit
+[price]         Prix unitaire du produit
+[quantity]      Quantité commandée
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

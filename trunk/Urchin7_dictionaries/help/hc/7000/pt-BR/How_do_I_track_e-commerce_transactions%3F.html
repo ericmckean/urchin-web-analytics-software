@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como faço para monitorar transações de e-commerce?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Este artigo foi escrito por</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, consultor autorizado do software Urchin</em> </li></ul><p class="line874">O Urchin oferece suporte a uma técnica de coleta de dados no lado do cliente para a captura de transações de e-commerce.Com algumas adições simples à sua página de recibo, o Urchin pode detectar e registrar automaticamente informações sobre transações e produtos.As informações necessárias são colocadas em um formulário oculto, que é analisado quanto a transações e informações sobre produtos.Muitos sistemas de e-commerce com base em modelos podem ser modificados de forma a incluírem essas informações ocultas no recibo. <p class="line867"><strong>Como ativar o monitoramento de E-Commerce</strong> <p class="line874">A primeira etapa do monitoramento das transações de e-commerce é ativar relatórios de e-commerce para o seu perfil selecionado.Para ativar relatórios de e-commerce, siga estas etapas: <ol type="1"><li>Faça login no Urchin. </li><li>Clique em "Editar" ao lado do perfil que você deseja ativar. </li><li>Na página "Configurações do perfil", clique em "Editar", ao lado de "Informações do perfil do site principal". </li><li>Altere o botão de opção "Site da web de E-Commerce" de "Não" para "Sim". </li></ol><p class="line867"><strong>Formato da página de recibo</strong> <p class="line874">A segunda etapa é garantir que o código de monitoramento seja incluído na página de recibo da maneira padrão.Isso pode ser feito usando uma inclusão no lado do servidor ou outro driver de modelo, ou o código de monitoramento pode ser inserido manualmente no seu código HTML: <pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+</pre><p class="line874">Em seguida, em algum lugar no recibo abaixo do código de monitoramento, o texto a seguir precisa ser escrito pelo seu mecanismo.Tudo o que estiver entre colchetes deve ser substituído por valores reais, conforme descrito na referência de parâmetros abaixo. <pre>   &lt;form style="display:none;" name="utmform"&gt;
+   &lt;textarea id="utmtrans"&gt;UTM:T|[order-id]|[affiliation]|
+   [total]|[tax]| [shipping]|[city]|[state]|[country] UTM:I|[order-id]|[sku/code]|[productname]|[category]|[price]|
+   [quantity] &lt;/textarea&gt;
+   &lt;/form&gt;
+</pre><p class="line862">Por fim, a função utmSetTrans deve ser chamada após o envio do formulário, a fim de registrar a transação.A forma mais fácil de fazer isso é através de um evento onLoad na tag &lt;body&gt; de abertura: <pre>   &lt;body onLoad="javascript:__utmSetTrans()"&gt;
+</pre><p class="line874">Se você não conseguir editar a tag body, poderá chamar a função utmSetTrans em uma tag de script separada, desde que garanta que essa função será chamada depois do formulário: <pre>   &lt;script type="text/javascript"&gt;
+   __utmSetTrans();
+   &lt;/script&gt;
+</pre><p class="line874">OBSERVAÇÃO:não inclua colchetes ao definir valores para o formulário.Além disso, não use vírgulas como separador de milhares nos campos "total", "imposto" e "frete"; qualquer dígito após a vírgula será removido. <p class="line867"><strong>Exemplo</strong> <pre>UTM:T|34535|Main Store|111108.06|8467.06|10.00|San Diego|CA|USA
+UTM:I|34535|XF-1024|Urchin T-Shirt|Shirts|11399.00|9
+UTM:I|34535|CU-3424|Urchin Drink Holder|Accessories|20.00|2
+</pre><p class="line874">Dentro do formulário oculto, há dois tipos de linhas:a linha de transações e as linhas de itens.Para cada transação, deve haver somente uma linha de transação, que é indicada por um "T" logo após "UTM:".Essa linha especifica o total para a transação, incluindo os impostos, o frete e outras informações.Para cada item do recibo, crie uma linha de item, especificada pela letra "I".As linhas de item podem conter nomes, códigos, preços unitários e quantidades de produtos.Não há limite para o número de linhas de item por transação. <p class="line867"><strong>Referência de parâmetros</strong> <p class="line867"><strong>Variáveis da linha da transação</strong> <pre>[order-id]      Número interno e exclusivo do ID do seu pedido
+[affiliation]   Afiliação opcional de parceiro ou loja
+[total]         Valor total da transação na moeda padrão
+[tax]   Valor dos impostos sobre a transação
+[shipping]      O valor de frete da transação
+[city]  Cidade com a qual relacionar a transação
+[state/region]  Estado
+[country]       País
+</pre><p class="line867"><strong>Variáveis da linha de item</strong> <pre>[order-id]      Número interno exclusivo de id do pedido (deve ser o mesmo da linha da transação)
+[sku/code]      Código SKU do produto
+[product name]  Nome do produto ou descrição
+[category]      Categoria do produto ou variação
+[price]         Preço unitário do produto
+[quantity]      Quantidade solicitada
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

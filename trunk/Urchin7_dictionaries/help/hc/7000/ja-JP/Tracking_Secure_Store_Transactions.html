@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>セキュリティで保護されたショップ トランザクションのトラッキング</strong> <p class="line867"><em>この記事は、Urchin ソフトウェア認定コンサルタントの</em> <a href="ivantageLimited.html">ivantage Limited</a><em> によって作成されています。 </em> <p class="line862">Urchin ではいくつかのコードを追加することで、所有するドメインだけでなく、他のドメインにあるショッピング カートのデータもトラッキングできます。 Urchin でトランザクション データを集計するようページを設定するには、<a href="How_do_I_track_e-commerce_transactions%253F.html">e コマース トランザクションをトラッキングする</a>をご覧ください。 <p class="line874">ショップ サイトがメイン サイトとは異なるサブドメインやドメインにある場合は、次の手順でページを設定します。 <p class="line874">精算手続きの開始ページが異なるサブドメインにある場合 (たとえば、顧客が www.mystore.com から shoppingcart.mystore.com に移動する場合など):  <ul><li style="list-style-type:none">ショップ サイトとショッピング カートのページのトラッキング コードに次の太字の行を追加します。 </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">精算手続きの開始ページが異なるドメインにある場合 (たとえば、顧客が www.mystore.com から www.securecart.com に移動する場合):  <ul><li style="list-style-type:none">ショップ サイトとショッピング カートのページのトラッキング コードに次の太字の行を追加します。 </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line891"><span class="u">utmLinker を使用して、メイン サイトからセキュリティで保護されたサイトにリンクを変更する方法は次のとおりです。 現在のリンクが次のようになっているとします。 </span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;今すぐ購入&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">このリンクを次のように変更します。 </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;今すぐ購入&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;今すぐ購入&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line891">JavaScript が有効かどうかに関係なく、上記のコードでユーザーへのリンクが表示されます。 リンクまたはリンクのテキストにアポストロフィがある場合、バックスラッシュ (\) でエスケープ処理する必要があります。 重要:  ページに urchinTracker()、utmLinker()、utmSetTrans() または utmLinkPost() へのコールが含まれている場合、トラッキング コードをこれらの関数より上部の HTML コードに配置する必要があります。 この場合、トラッキング コードは、開始 &lt;body&gt; タグと JavaScript 関数の間の任意の場所に配置してください。 </li></ul><p class="line874">フォームを使用してショッピング カートに情報を送信する場合は、utmLinkPost() 関数を使用します。 この関数を使用すると、該当フォームの URL に Cookie データが追加されます。 <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">これは、method="GET" のフォームにも使用できます。 <p class="line891"><strong>重要: </strong> ページに urchinTracker()、utmLinker()、utmSetTrans() または utmLinkPost() へのコールが含まれている場合、トラッキング コードをこれらの関数より上部の HTML コードに配置する必要があります。 この場合、トラッキング コードは、開始 &lt;body&gt; タグと JavaScript 関数の間の任意の場所に配置してください。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

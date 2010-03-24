@@ -1,0 +1,10 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><hr class="hr1" /><p class="line874"> この記事は、Urchin ソフトウェア認定コンサルタントの [<a href="FriedrichsoftwareResources.html">FriedrichsoftwareResources</a>] によって作成されています。  <hr class="hr1" /><p class="line874"> <strong>「アーカイブされているため書き込み用にデータベースを開くことができません」エラーから復旧する </strong> <p class="line874">Urchin 6 でプロファイルを実行しようとすると、次のエラーが表示されることがあります。 <p class="line867"><pre>WARNING: (7063-54-63) Unable to open database for writing since it has been archived
+</pre><p class="line874">このエラーが発生するのは、ログのトラッキング データベースは月単位で Urchin に保存されるためです。 Urchin は処理時にログ ファイルの最初の数行を読み込み、ログが属している月を判断し、その月のデータベースを開こうとします。 その月のデータベースがアーカイブされている場合、Urchin はアーカイブされているデータベースの読み書きを行うことはできないため、エラーが返されます。 回避方法は 2 つあります。 <ol type="1"><li>アーカイブ機能をオフにして、該当のプロファイルの *-archive.zip ファイルを解凍し、*-archive.zip ファイルを削除します。 </li><li>ログのワイルドカードを変更して、文字列に一致する日付を含めます (今年のファイルのみを指定する場合は YY* または YYYY* を使用できます)。 </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

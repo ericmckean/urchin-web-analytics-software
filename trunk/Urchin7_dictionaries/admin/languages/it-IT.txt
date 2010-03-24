@@ -1,0 +1,1264 @@
+######################################################
+#  Urchin 7 admin default dictionary file
+#  NOTE:  Don't edit this file! Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+######################################################
+0	Non utilizzato
+1	Configurazione
+2	Visualizzazione dei rapporti
+3	Preferenze
+4	2999803979
+5	Contabilità
+6	Aggiornamento database DNS
+7	Utenti e gruppi
+8	Account
+9	Utenti
+10	Gruppi
+11	Profili Urchin
+12	Profili
+13	Impostazioni
+14	Impostazioni di elaborazione
+15	Impostazioni globali
+16	Guida
+17	Guida dell'amministratore
+18	Glossario dei termini
+19	Informazioni su Urchin
+20	Guida utente Urchin
+21	Programma di pianificazione
+22	Indietro
+23	Avanti
+24	Guida di avvio rapido
+25	Procedura guidata account. Informazioni di base
+26	Procedura guidata account: Fine
+27	Procedura guidata account: Conferma
+28	Cronologia di attività profilo
+29	Nome
+30	Centro documentazione
+31	Corrispondenza parole chiave organiche
+32	Corrispondenza parametri pagina
+33	Corrispondenza mimi visualizzazioni di pagina
+34	includi
+35	escludi
+36	Elabora i visitatori e le sessioni
+37	Mappa di dati
+38	Set di rapporti
+39	Impostazioni di elaborazione
+40	Aggiungi
+41	Nome account
+42	Indirizzo IP
+43	Modifica
+44	Elimina
+45	Esegui
+46	Informazioni sull'account
+47	Destino log
+48	Riepilogo account
+49	elimina
+50	Impostazioni pannello di controllo amministratore
+51	Ricerca DNS
+52	attivato
+53	disattivato
+54	Risolutore IP
+55	Loop DNS
+56	Target di risoluzione %
+57	dipendente da impostazioni valide di Ricerca DNS
+58	Limite tabella DB
+59	Modalità Datacenter
+60	Scarto con il fuso orario GMT
+61	Scarto con fuso orario GMT
+62	Guida di Urchin
+63	Timeout sessione
+64	Non toccare
+65	Archivio - Compressione
+66	Elimina
+67	Applica data
+68	Sostituzione carattere jolly data/ora in Nome percorso log
+69	Sostituisci ora con
+70	Cerca e sostituisci
+71	Do
+72	L
+73	Ma
+74	W
+75	Gi
+76	V
+77	Sa
+78	Gen
+79	Feb
+80	Mar
+81	Apr
+82	Mag
+83	Giu
+84	Lug
+85	Ago
+86	Set
+87	Ott
+88	Nov
+89	Dic
+90	Aggiorna
+91	Account
+92	Visualizzazione rapida
+93	#Elementi visualizzati
+94	Privilegi amministrativi
+95	Opzione 1 (Utente,Gruppi,Programma pianificazione profilo,Cronologia di attività profilo)
+96	Ricerca DNS
+97	Impostazioni database rapporti
+98	Regolazione ora
+99	Opzioni monitoraggio visitatore
+100	Contattaci
+101	Informazioni sull'account
+102	Aggiunta non riuscita - Raggiunto limite licenza per il profilo.<p>  Effettua l'upgrade della licenza o elimina<br> un profilo esistente e riprova.
+103	Aggiunta non riuscita
+104	Eliminazione non riuscita
+105	Richiesta non riuscita
+106	Aggiornamento non riuscito
+107	Email della persona da contattare
+108	Utenti
+109	Nome utente
+110	Profili
+111	Nome completo
+112	Informazioni utente
+113	Opzione 2 (opzione 1 + Filtri)
+114	Password
+115	Account facoltativo
+116	Tutti
+117	Opzione 3 (opzione 2 + profili, sorgenti log)
+118	Livello amministratore
+119	Preferenze utente
+120	Lingua rapporto
+121	Lingua amministratore
+122	Gruppi
+123	Nome gruppo
+124	Informazioni sul gruppo
+125	Utenti assegnati al gruppo
+126	Copia
+127	Utenti nel gruppo
+128	Pulizia e backup DB
+129	Crea copie di backup
+130	Backup validi
+131	Numero di backup da conservare
+132	Avanzato
+133	Locale
+134	GMT
+135	Ore
+136	Domini sito
+137	Decodifica URL
+138	Cerca stringa
+139	Sostituisci stringa
+140	Accesso concesso
+141	Sorgenti log da elaborare
+142	Sorgenti log da elaborare
+143	Seleziona uno dei profili elencati sopra
+144	Gestione log
+145	Gestione filtri
+146	Gestione log
+147	Gestione filtri
+148	Nome sorgente log
+149	Nome filtro
+150	Annulla attività
+151	Informazioni su sorgente log
+152	Percorso file di log
+153	Formato log
+154	Impostazione utente: Configura set rapporti
+155	Informazioni sul filtro
+156	Tipo filtro
+157	Campo filtro
+158	Includi SOLO pattern
+159	Escludi pattern
+160	URL dinamico
+161	Filtro(i) da applicare
+162	Filtri disponibili
+163	Filtri applicati
+164	Campo A
+165	Campo B
+166	Output in
+167	Estrai A
+168	Estrai B
+169	Constructor
+170	Sostituisci campo di output
+171	Campo A obbligatorio
+172	Sì
+173	No
+174	Solo A obbligatorio
+175	Solo B obbligatorio
+176	Entrambi i campi
+177	L'uno o l'altro campo
+178	Nessuno dei campi
+179	Seleziona set di rapporti
+180	Set di rapporti
+181	Sostituisci set rapporti per il profilo
+182	Dati geografici
+183	Pulizia e backup DB Urchin
+184	<nobr><span class=title1><b>Impostazioni globali: Aggiornamento automatico (Ref. #A-2704)</b></span></nobr><p><b>Versioni<br></b>La funzionalità di aggiornamento automatico consente di aggiornare in modo indipendente i seguenti componenti Urchin:<ul><li>Urchin - contiene tutti i componenti tranne i database geografici (all'incirca 50 MB)</li><li>Articoli della guida - contiene gli articoli della guida integrata e quelli del Centro assistenza (circa 5 MB per lingua)</li><li>Database geografici - contiene tutti i database (circa 200 MB)</li></ul>Azioni disponibili:<ul><li>controlla ora - controlla se vi sono aggiornamenti</li><li>visualizza elenco modifiche - visualizza l'elenco modifiche di una nuova versione</li><li>pianifica download adesso - avvia il download di una nuova versione</li><li>annulla - annulla il download</li><li>installa ora - avvia la procedura di installazione</li><li>visualizza log errori - visualizza gli errori</li></ul></p><p><b>Pianifica aggiornamento<br></b>Usa questi comandi per modificare se e quando i componenti devono essere aggiornati. Per impostazione predefinita, i componenti sono aggiornati ogni giorno. Se questa funzione è attivata, ogni giorno all'ora impostata, Urchin scaricherà automaticamente gli aggiornamenti. Tieni presente che gli aggiornamenti dei database geografici sono relativamente grandi (circa 200 MB), pertanto il download può avere un impatto sull larghezza di banda della rete.</p><p><b>Impostazioni proxy HTTP (opzionale)<br></b>Se è necessario un proxy per l'accesso in uscita al server di download di Google che ospita gli aggiornamenti dei dati geografici, utilizza questi campi per specificare il nome e la porta del server proxy, nonché un nome utente e una password.</p><p><b>Impostazioni aggiornamento<br></b>Se la funzione è attivata, gli articoli della guida o i database geografici verranno aggiornati all'ora imposta in modo silente senza alcun disturbo per l'utente.</p>
+185	<nobr><span class=title1><b>Profili: Memorizzazione/DB (Ref. #A-2108)</b></span></nobr><br>Questa schermata consente di impostare le opzioni di gestione dei dati. Per un funzionamento a tolleranza di errore, Urchin dispone di opzioni di backup e di ripristino automatici. Utilizza queste opzioni per un funzionamento affidabile. Urchin fornisce anche un'opzione di archiviazione automatica, che può comprimere automaticamente i dati obsoleti. <p><b>Utilizzo memoria DB</b><br>In condizioni di funzionamento normale, Urchin utilizza un sistema cache per limitare l'utilizzo della RAM da parte del motore di elaborazione. Le prestazioni possono essere migliorate per eseguire l'intero processo in memoria, ma questo metodo deve essere utilizzato solo su sistemi Urchin dedicati. Inoltre, occorre tenere presente che tale processo potrebbe esaurire tutta la RAM disponibile nel sistema. Per la maggior parte delle operazioni, lasciare attivata l'impostazione "Limite con sistema cache".<p><b>Limite tabella DB</b><br>In caso di siti di grandi dimensioni, questa impostazione permette di indicare il numero massimo di record delle tabelle dei database Urchin e quindi di controllare il volume di dati e le prestazioni di Urchin. L'opzione predefinita è adatta alla maggior parte delle installazioni. Se questo limite viene raggiunto entro un determinato mese, le voci aggiuntive vengono aggregate sotto la voce "Altro". Per prestazioni ottimali, utilizzare valori pari o inferiori a 100.000. <p><b>Mantieni dati di monitoraggio non elaborati</b><br>Se disattivata, questa opzione elimina i dati non formattati su sessioni e visitatori dopo l'elaborazione. Ciò può migliorare significativamente l'elaborazione dei log e ridurre la quantità di dati memorizzati per i siti di grandi dimensioni. Una volta eliminati i dati di sessione non elaborati, qualsiasi hit aggiuntivo per tale sessione sarà considerato come una nuova sessione, provocando un lieve effetto secondario sui rapporti. <p><b>Monitoraggio log</b><br>Urchin è dotato di una funzione "intelligente" di monitoraggio dei log, che consente di stabilire se un determinato file di log è già stato elaborato. Questa funzione permette di eseguire una rotazione dei log ogni volta che risulta utile, anziché rimanere vincolati a una pianificazione rigida. Questa opzione consente inoltre di puntare Urchin a una directory di file di log, senza dover verificare se alcuni di essi sono già stati elaborati. NOTA IMPORTANTE. Se Urchin non risiede fisicamente sul sistema in cui sono memorizzati i file di log, copia tutti i log sul sistema Urchin locale prima di determinare se essi sono già stati elaborati. Di conseguenza, in caso di analisi di file di log di grandi dimensioni, la rete risulta notevolmente sovraccaricata.<p><b>Rollback DB automatico</b><br>Se abilitata, questa opzione consente di ripristinare automaticamente i dati in caso di interruzione accidentale o intenzionale dell'elaborazione. Urchin rileva automaticamente questa condizione e, prima di continuare, ripristina i dati dell'ultimo backup (supponendo che ve ne sia uno).<p><b>Crea copie di backup</b><br>Questa opzione abilita la creazione automatica di copie di backup dopo l'elaborazione. Le copie di backup vengono compresse per ridurre lo spazio di archiviazione richiesto.<p><b>Pulisci backup</b><br> Questa opzione permette la pulizia automatica dei backup obsoleti in base al numero di backup che si desidera conservare (specificato nell'opzione seguente). Se l'opzione è abilitata, Urchin elimina automaticamente le copie di backup obsolete per tenere sotto controllo lo spazio di archiviazione. <p><b>Numero di backup da conservare</b><br>Questa opzione specifica il numero di backup da conservare ogni mese per la funzione di pulizia sopra citata.<p><b>Archivia DB</b><br>Questa opzione consente l'archiviazione automatica dei dati mensili obsoleti. I dati obsoleti vengono automaticamente compressi in un solo archivio, i backup vengono eliminati e i dati protetti. È sempre possibile consultare i dati archiviati dei rapporti, ma nessun altro hit può essere elaborato per i mesi archiviati.<p><b>Archivia DB dopo</b><br>Questa opzione specifica l'anzianità (in mesi) dei dati da archiviare automaticamente.<p><b>Elimina TUTTI i dati del profilo</b><br>Utilizza questa azione per eliminare in modo definitivo TUTTI i dati di questo profilo inclusi TUTTI i backup e gli archivi. Occorrerà rielaborare tutti i file di log del profilo. <b>Avviso</b>: prima di eliminare questi dati occorre verificare di disporre di tutti i file di log.
+186	Personalizza
+187	Impostazioni profilo
+188	Nome profilo
+189	Dominio
+190	Informazioni sul profilo
+191	Benvenuti nella Procedura guidata di installazione di Urchin! <p>La Procedura guidata di installazione è una serie semplificata di passaggi di configurazione che ti consentono di configurare e utilizzare Urchin in pochissimo tempo. Se desideri apportare modifiche in un secondo momento, avrai accesso a tutte le impostazioni tramite la sezione Configurazione dell'interfaccia di amministrazione.<p> Fai clic su Continua per iniziare.
+192	<nobr><span class=title1><b>Programma di pianificazione: avanzamento attività (Ref. #A-2664)</b></span></nobr><br>Questa schermata indica lo stato di avanzamento dell'attività in corso. Inoltre, fornisce comandi per annullare l'operazione. Nella parte superiore della finestra viene visualizzata una barra di avanzamento che indica la percentuale approssimativa dell'elaborazione completata. Usa il pulsante “Annulla attività” per interrompere l'esecuzione e ripristinare il profilo. Sopra la barra di avanzamento è disponibile un link selezionabile che rimanda ai rapporti del profilo. Nella finestra “Dettaglio processo attività” viene visualizzato il risultato dell'esecuzione fornito dal motore di elaborazione dei log. <p>Nota. Se viene elaborato un file di log remoto di grandi dimensioni, può essere richiesta una notevole quantità di tempo per copiare i dati, durante il quale la barra di avanzamento non si muove. Una volta copiato il file sul computer su cui Urchin è in esecuzione, l'aggiornamento della barra di avanzamento dovrebbe avvenire in modo pressoché continuativo.
+193	<nobr><span class=title1><b>Programma di pianificazione: Dettaglio cronologia (Ref. #A-2563)</b></span></nobr><br>Lo scopo di questa schermata è visualizzare i dettagli dell'esecuzione di un'attività, generalmente per valutare le prestazioni o per il debug. Se si è verificato un errore, questa schermata fornisce indicazioni per una possibile soluzione. <p><b>Problemi comuni</b><br>I problemi comuni includono errori tipo "file di log non trovato", a cui può essere facilmente posto rimedio correggendo il percorso o il nome del file. Se viene utilizzato il protocollo FTP per spostare file di log nella rete, assicurati che il nome utente e la password siano corretti connettendoti al server con un client FTP dedicato. Se il tempo di "elab dati" (elaborazione dati) è solo una piccola frazione del tempo di esecuzione totale, si è probabilmente verificato un problema durante la copia del file di log sulla rete; in questo caso puoi prendere in considerazione l'ipotesi di installare Urchin direttamente sul server.
+194	<nobr><span class=title1><b>Browser di file (Ref. #A-5000)</b></span></nobr><br>Questa schermata consente di esaminare il file system locale per individuare la sorgente log desiderata. Ciò è particolarmente utile se non sei completamente sicuro del nome del file di log. Il riquadro Vai a directory (lato sinistro) è utilizzato per selezionare una directory in cui navigare. I file nella directory vengono visualizzati nel riquadro Seleziona file (lato destro). Una volta che hai trovato il file di log che desideri, fai clic su di esso nel riquadro Seleziona file, quindi fai clic su OK.<p><b>Directory corrente</b><br>Il campo Directory corrente nella parte superiore della finestra può essere modificato direttamente. Una volta completate le modifiche premi INVIO per visualizzare il contenuto di quella directory.<p><b>Vai su di una directory</b><br>L'icona Vai su di una directory nella parte superiore destra (icona di cartella con freccia) se cliccata sposta la directory corrente di un livello verso l'alto. Viene visualizzato il contenuto della nuova directory.<p><b>Vai a directory</b><br>La finestra di sinistra consente di selezionare una directory all'interno della directory corrente. Fai clic una volta su una directory elencata nella finestra Vai a directory per rendere tale directory la directory corrente.<p><b>Seleziona file</b><br>La finestra Seleziona file sulla destra consente di selezionare un file. Fai clic una volta sul file desiderato e il nome del file verrà inserito nel campo Nome file. Fai clic su OK se hai terminato la selezione del file.<p><b>OK/Verifica/Annulla</b><br>Il pulsante OK chiude la finestra e inserisce nel campo del percorso della finestra precedente il percorso della directory selezionata. Il pulsante Annulla chiude la finestra. Il pulsante Verifica apre una nuova finestra che ti consente di controllare le autorizzazioni e le dimensioni di un singolo file o di più file se un carattere jolly è utilizzato nel nome del file.
+195	<nobr><span class=title1><b>Browser log remoto (Ref. #A-5001)</b></span></nobr><br>Questa schermata consente di esaminare un file system remoto (utilizzando FTP) per individuare la sorgente log desiderata. Ciò è particolarmente utile se non sei completamente sicuro del nome del file di log o se desideri verificare le impostazioni FTP configurate in Urchin. Il riquadro Vai a directory (lato sinistro) è utilizzato per selezionare una directory in cui navigare. I file nella directory vengono visualizzati nel riquadro Seleziona file (lato destro). Una volta che hai trovato il file di log che desideri, fai clic su di esso nel riquadro Seleziona file, quindi fai clic su OK.<p><b>Directory corrente</b><br>Il campo Directory corrente nella parte superiore della finestra può essere modificato direttamente. Una volta completate le modifiche, premi Invio per visualizzare il contenuto di quella directory.<p><b>Vai su di una directory</b><br>L'icona Vai su di una directory nella parte superiore destra (icona di cartella con freccia), se selezionata, sposta la directory corrente di un livello verso l'alto. Viene visualizzato il contenuto della nuova directory.<p><b>Vai a directory</b><br>La finestra di sinistra consente di selezionare una directory all'interno della directory corrente. Fai clic una volta su una directory elencata nella finestra Vai a directory per rendere tale directory la directory corrente.<p><b>Seleziona file</b><br>La finestra Seleziona file sulla destra consente di selezionare un file. Fai clic una volta sul file desiderato per inserire il nome del file nel campo Nome file. Una volta completata la selezione del file, fai clic su “OK”.<p><b>OK/Annulla</b><br>Il pulsante OK chiude la finestra e inserisce nel campo del percorso della finestra precedente il percorso della directory selezionata. Il pulsante Annulla chiude la finestra.
+196	<nobr><span class=title1><b>Browser directory (Ref. #A-5002)</b></span></nobr><br>Questa schermata consente di sfogliare il file system locale per selezionare la directory del parametro che si sta modificando.<p><b>Directory corrente</b><br>Il campo Directory corrente nella parte superiore della finestra può essere modificato direttamente. Una volta completate le modifiche premi INVIO per visualizzare il contenuto di quella directory.<p><b>Vai su di una directory</b><br>L'icona Vai su di una directory nella parte superiore destra (icona di cartella con freccia) se cliccata sposta la directory corrente di un livello verso l'alto. Viene visualizzato il contenuto della nuova directory.<p><b>Seleziona directory</b><br>Utilizza la finestra Seleziona directory per selezionare la directory desiderata. Fai clic una volta su una directory elencata per selezionarla. Una volta che la Directory corrente visualizza la directory desiderata, fai clic sul pulsante OK.<p><b>OK/Annulla</b><br>Il pulsante OK chiude la finestra e inserisce nel campo del percorso della finestra precedente il percorso della directory selezionata. Il pulsante Annulla chiude la finestra.
+197	Super amministratore
+198	Utente
+199	Amministratore account
+200	Cinese
+201	English
+202	Francese
+203	Tedesco
+204	Italiano
+205	Giapponese
+206	Coreano
+207	Portoghese (Brasile)
+208	Spagnolo
+209	Svedese
+210	Record aggiunto
+211	Record aggiornato
+212	Pianifica aggiornamento DB geografico
+213	Pianifica pulizia e backup DB Urchin
+214	Rollback DB automatico
+215	Mantieni dati di monitoraggio non formattati
+216	Opzioni rapporti
+217	Seleziona per modificare.
+218	Default globale
+219	Autorizzazioni rapporto
+220	Profili disponibili
+221	Accesso concesso
+222	Memorizzazione/DB
+223	Rapporti
+224	Gruppi assegnati al gruppo
+225	Stem degli URI in minuscolo
+226	Gruppi nel gruppo
+227	Impostazioni rapporti
+228	Set di rapporti
+229	Set rapporti di default del profilo
+230	Opzioni memorizzazione dati
+231	Utenti disponibili
+232	Gruppi disponibili
+233	Dominio UTM
+234	Gruppi assegnati a
+235	Membro di questi gruppi
+236	Impostazioni log
+237	Impostazioni filtro
+238	Sorgenti log disponibili
+239	Applicato a
+240	Sorgenti log applicate a
+241	Visualizzazione rapida profilo
+242	Utenti assegnati al profilo
+243	Opzioni archiviazione DB
+244	Archivia DB
+245	Archivia DB dopo
+246	Mesi
+247	Tipo profilo
+248	Procedura guidata profilo: Impostazioni generali
+249	<nobr><span class=title1><b>Procedura guidata profilo: Impostazioni generali (Ref. #A-249)</b></span></nobr><br>Utilizza questa schermata per impostare vari parametri che permettono di controllare l'elaborazione dei dati del profilo.<p><b>URL sito web</b><br>Questa impostazione viene utilizzata per creare link di riferimento che rimandano al tuo sito web effettivo. In questo campo deve comparire il nome di dominio completo del sito preceduto da http://. <p><b>Domini del sito</b><br>Questa impostazione deve elencare tutti i domini possibili per il tuo sito web, con e senza “www”. Questo campo è utilizzato per determinare se un referral è esterno al tuo sito (i referral interni non sono utilizzati nei rapporti sui referral). Utilizza le virgole per separare ciascuna voce di dominio.<p><b>Pagina predefinita</b><br>Utilizza questa opzione per immettere la pagina predefinita del tuo sito. Spesso, alla stessa pagina è possibile accedere tramite www.site.com/ e www.site.com/index.html o default.html. Urchin deve conoscere il nome di questa pagina per aggregare le voci internamente qualora siano utilizzate entrambe le varianti.<p><b>Elaborazione log in parallelo</b><p>Attiva questa opzione per un'elaborazione più efficace dei log con bilanciamento del carico. Questa opzione richiede l'impostazione di una sorgente log distinta per ciascun file di log del server con bilanciamento del carico.
+250	Errore porta server! \n\nVerifica che la porta sia nell'intervallo corretto.
+251	Privilegi utente
+252	Cambia password
+253	Cambia lingua rapporto
+254	Risorse aggiuntive
+255	Moduli installati
+256	Pacchetto installazione lingua
+257	E-commerce (elaborazione ELF)
+258	Monitoraggio campagna
+259	Raggiunto limite licenza per il profilo! \n\nControlla la schermata della licenza per informazioni sull’upgrade della licenza. \n\nImpostazioni->Licenza
+260	Codifica Latin-1 (UTF-8)
+261	Utente - No Aggiornamento
+262	Impostazioni account
+263	Ubicazione dati rapporto
+264	Ubicazione directory di esplorazione
+265	Contabilità
+266	Riepilogo installazione di Urchin
+267	Numero di account
+268	Numero di gruppi
+269	Numero di utenti
+270	Numero di profili
+271	UTM installato
+272	Numero di set di dati
+273	Numero di sorgenti log
+274	Numero di formati log
+275	Numero di filtri log
+276	Numero di schema
+277	Numero di campi DB
+278	Numero di macchine
+279	Numero di attività pianificate
+280	Riepilogo degli account
+281	Programma di pianificazione attività del profilo
+282	Applicazione
+283	Nome attività
+284	Informazioni sulla pianificazione
+285	Impostazione pianificazione
+286	Numero di processi
+287	Applicazione da eseguire
+288	Impostazioni attività
+289	Frequenza
+290	Ogni giorno
+291	Ogni settimana
+292	Ogni mese
+293	Una volta
+294	Ora di inizio
+295	Ora
+296	Minuto
+297	Licenza di base
+298	Pianifica attività ogni giorno
+299	Ogni numero di giorni
+300	Pianifica attività ogni settimana
+301	Ogni numero di settimane
+302	Giorno della settimana
+303	Lun
+304	Mar
+305	Mer
+306	Gio
+307	Ven
+308	Sab
+309	Dom
+310	Pianifica attività ogni mese
+311	Giorno del mese
+312	Pianifica attività una volta
+313	Data
+314	Ogni ora
+315	Pianifica attività ogni ora
+316	Ora del giorno
+317	Minuto di ora
+318	Tutti
+319	(Nessuno)
+320	Seleziona
+321	Codifica giapponese (UTF-8)
+322	Elabora
+323	Nome
+324	Ora di inizio
+325	Ora di fine
+326	Stato
+327	Guida procedura guidata aggiungi profilo 2
+328	Visitatori
+329	Visualizzazioni di pagina
+330	Hit
+331	Byte
+332	Campi personalizzati
+333	Separatore personalizzato
+334	Totali
+335	Pianifica adesso
+336	Pianifica dopo
+337	Visualizza
+338	Procedura guidata profilo:  Conferma copia
+339	Duplicazione profilo riuscita! Per apportare adesso modifiche al profilo, fai clic su "Altre opzioni" o su "Completato" se desideri eseguire altre operazioni.
+340	Programma di pianificazione attività del profilo
+341	Vai al rapporto
+342	Nessun rapporto da visualizzare
+343	Preferenze
+344	Questa schermata visualizza un riepilogo del profilo che hai copiato. Se le impostazioni sembrano corrette, fai clic su Termina per finalizzare la duplicazione. Se desideri apportare modifiche, fai clic sul pulsante Indietro.
+345	Record (per ulteriori informazioni, consulta la Guida)
+346	Ora locale
+347	Procedura guidata profilo: Fine copia
+348	Minuti
+349	<nobr><span class=title1><b>Procedura guidata profilo: Copia (Ref. #A-349)</b></span></nobr><br>Questa schermata consente di copiare un profilo esistente. Il profilo creato sarà identico, ad eccezione del fatto che occorrerà specificare il nome, l'URL principale (nome di dominio) e qualsiasi URL aggiuntivo che punta a questo sito.<p><b>Account facoltativo</b> (modalità Datacenter)<br>In modalità Datacenter, l'impostazione Account può essere utilizzata per abbinare il profilo a un account, utilizzabile a sua volta per controllare l'accesso e l'amministrazione a livello di account.<p><b>Nome profilo</b><br>Questo campo obbligatorio consente di impostare il nome associato a questo profilo. Questo nome univoco può essere arbitrario o corrispondere al nome del sito web. Se si immette il nome di un sito web quale, ad esempio, www.urchin.com, gli altri due campi vengono compilati automaticamente.<p><b>URL sito web</b><br>Questa impostazione viene utilizzata per creare link di riferimento che rimandano al tuo sito web effettivo. In questo campo deve comparire il nome di dominio completo del sito preceduto da http://. <p><b>Domini del sito</b><br>Questa impostazione deve elencare tutti i domini possibili per il tuo sito web, con e senza "www". Questo campo è utilizzato per determinare se un referral è esterno al tuo sito. Utilizza le virgole per separare ciascuna voce di dominio.<p><b>Dominio UTM</b> (per i profili con monitoraggio UTM)<br>In condizioni normali, lascia vuoto questo campo. UTM individuerà automaticamente il dominio per il sito. La funzione Dominio UTM viene utilizzata unicamente in caso di domini coincidenti che devono essere monitorati separatamente.
+350	Priorità di esecuzione di Urchin
+351	Bassa
+352	Normale
+353	Alta
+354	Impostazioni di accesso
+355	Informazioni sulla licenza
+356	Codice licenza
+357	Numero di serie
+358	Impostazioni accesso remoto
+359	Procedura guidata profilo: Copia
+360	Accesso rapporto basato sul Web
+361	Amministrazione basata sul Web
+362	Impostazioni server rapporti
+363	Numero porta server
+364	Procedura guidata di installazione di Urchin: Benvenuti
+365	Procedura guidata di impostazione: Impostazioni amministratore
+366	Procedura guidata di impostazione: Utente amministrativo
+367	Procedura guidata di impostazione: Ricerca DNS
+368	<nobr><span class=title1><b>Procedura guidata sorgente log: log disponibili (Ref. #A-368)</b></span></nobr><br>Questa schermata mostra l'elenco delle sorgenti log esistenti disponibili e consente di aggiungerle al profilo.<p><b>Aggiungi sorgente log</b><br>Per aggiungere una sorgente log a questo profilo, seleziona la sorgente log nella finestra di sinistra, quindi fai clic sulla freccia rivolta verso destra. Per rimuovere una sorgente log da questo profilo, seleziona la sorgente log nella finestra di destra, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Termina per rendere attive le modifiche.
+369	<nobr><span class=title1><b>Procedura guidata filtro: Filtri disponibili (Ref. #A-369)</b></span></nobr><br>Questa schermata mostra l'elenco di filtri precedentemente configurati e consente di applicarli a questo profilo/sorgente log.<p><b>Applica filtro</b><br>Per applicare un filtro esistente a questo profilo/sorgente log, fai clic sul filtro nel riquadro di sinistra, quindi fai clic sulla freccia rivolta verso destra. Puoi applicare più di un filtro a qualsiasi profilo o sorgente log. Per rimuovere un filtro, fai clic su di esso nel riquadro sul lato destro, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Termina per rendere attive le modifiche.
+370	UNC
+371	Avanti
+372	Indietro
+373	Fine
+374	Continua
+375	<nobr><span class=title1><b>Procedura guidata di installazione: Impostazioni amministratore (Ref. #A-375)</b></span></nobr><br>Utilizza queste impostazioni per controllare l'accesso al sistema Urchin.<p><b>Accesso rapporto basato sul Web</b><br>Questa impostazione consente di controllare se i rapporti possono essere visualizzati da computer diversi rispetto a quelli su cui è in esecuzione Urchin. Per consentire l'accesso in remoto ai rapporti, seleziona "attivato". <p><b>Amministrazione basata sul Web</b><br>Questa impostazione abilita o disabilita l'accesso via web come amministratore alla configurazione Urchin. Se desideri controllare il funzionamento di Urchin da un computer diverso rispetto a quello su cui è installato Urchin, seleziona "attivato". NOTA IMPORTANTE. Se esegui questa configurazione da un computer diverso rispetto a quello su cui è in esecuzione Urchin e non abiliti l'amministrazione basata sul Web, potrai accedere al sistema di amministrazione unicamente dalla console del computer su cui è in esecuzione Urchin. <p><b>Modalità Datacenter</b><br>Questa opzione abilita gli account e i sottoamministratori nella configurazione. Questi controlli supplementari consentono ai datacenter di gestire clienti complessi e forniscono a tali clienti funzioni amministrative limitate. Raggruppando profili, file di log e utenti in un account, il datacenter può controllare l'ubicazione dei dati e i privilegi amministrativi del cliente.
+376	<nobr><span class=title1><b>Procedura guidata di impostazione: Utente amministrativo (Ref. #A-376)</b></span></nobr><br>Utilizza questa schermata per impostare la password amministrativa per il sistema Urchin. Dal momento che tutte le distribuzioni Urchin vengono consegnate con la stessa password di default, è importante modificare la password durante l'installazione.<p><b>Password amministratore</b><br>Questa schermata consente di modificare la password per l'utente amministratore di questa installazione di Urchin. Per proteggere il sistema è consigliabile scegliere una password difficile da indovinare. Assicurati di ricordare la tua password dato che ti verrà chiesta per apportare modifiche alla configurazione di Urchin.<p>Se Accesso amministratore remoto è stato disattivato nel passaggio precedente, dovrai accedere a Urchin direttamente dalla macchina su cui è in esecuzione Urchin. In questo caso Urchin non richiederà una password.<p>Per configurare la tua installazione di Urchin in modo da utilizzare SSL come una misura aggiuntiva di sicurezza, consulta il nostro Centro documentazione per gli ultimi aggiornamenti.
+377	<nobr><span class=title1><b>Verifica log (Ref. #A-5003)</b></span></nobr><br>Questa schermata consente di esaminare il file di log che hai selezionato e per assicurarti che si tratti della sorgente log corretta. Per informazioni sul log, fai clic sul suo nome nel riquadro di sinistra e osserva il testo che viene visualizzato nel riquadro inferiore. Ti indicherà l'ubicazione (percorso), la dimensione, la data di modifica e le autorizzazioni associate al log in oggetto. Per modificare i parametri del log selezionato, modifica il testo nel campo superiore. Puoi utilizzare espressioni regolari, come un asterisco (ad esempio, access_log*, seleziona tutti i log preceduti da "access_log") o un'espressione data (ad esempio, access_logDDMMYYYY). Per vedere i risultati di corrispondenza del pattern, premi il tasto INVIO. Fai clic su OK per continuare.<p><b>File di log</b><br>Il campo File di log nella parte superiore della finestra può essere modificato direttamente. Premi INVIO per visualizzare i risultati relativi a quella voce.<p><b>File selezionati</b><br>Fai clic su un file nella finestra File selezionati per visualizzare le Informazioni sul file per quel file specifico. Le informazioni sono presentate nella parte inferiore della finestra.<p><b>Altri file nella directory</b><br>Fai clic su un file in questa finestra per visualizzare le Informazioni sul file per quel file specifico. Le informazioni sono presentate nella parte inferiore della finestra.<p><b>OK/Annulla</b><br>Il pulsante OK chiude la finestra e inserisce nel campo del percorso della finestra precedente il percorso della directory selezionata. Il pulsante Annulla chiude la finestra.
+378	<nobr><span class=title1><b>Procedura guidata di impostazione: Ricerca DNS (Ref. #A-378)</b></span></nobr><br>Questa schermata consente di impostare i parametri della ricerca DNS per questa installazione di Urchin. In sintesi, la ricerca DNS è la traduzione degli indirizzi IP numerici, come 63.212.171.4, in nomi di dominio, come www.urchin.com. In genere è consigliabile attivare la ricerca DNS per potere disporre nei rapporti di dati utili relativi ai domini. <p><b>Ricerca DNS</b><br>Seleziona il pulsante attivato per abilitare questa funzione.<p><b>Risolutore IP</b><br>Utilizza questo campo per immettere l'indirizzo IP di un server DNS valido, il tuo o quello del tuo provider, nel campo Risolutore IP. Se non conosci l'IP, contatta il tuo amministratore di sistema o il tuo provider. Per un funzionamento ottimale il server DNS dovrebbe essere presente in locale sulla tua rete.
+379	(consigliato)
+380	Pagina predefinita
+381	Profili assegnati a
+382	Nessun <b>profilo</b> nella configurazione. Fai clic sul pulsante "Aggiungi"<br> nella parte superiore destra per aggiungere un nuovo <b>Profilo</b>.
+383	Nessuna <b>sorgente log</b> nella configurazione. Fai clic sul pulsante "Aggiungi"<br> nella parte superiore destra per aggiungere una nuova <b>sorgente log</b>.
+384	Nessun <b>filtro</b> nella configurazione. Fai clic sul pulsante "Aggiungi"<br> nella parte superiore destra per aggiungere un nuovo <b>filtro</b>.
+385	Nessun <b>utente</b> nella configurazione. Fai clic sul pulsante "Aggiungi"<br> nella parte superiore destra per aggiungere un nuovo <b>utente</b>.
+386	Procedura guidata profilo: Impostazioni profilo
+387	Nessun <b>gruppo</b> nella configurazione. Fai clic sul pulsante "Aggiungi"<br> nell'angolo superiore destro per aggiungere un nuovo <b>gruppo</b>.
+388	Procedura guidata profilo: Impostazioni log
+389	Nessuna <b>attività</b> nella configurazione. Aggiungi un <br>profilo per aggiungere l'attività associata.
+390	Abilita attività
+391	<nobr><b>Procedura guidata profilo: Informazioni sul profilo</b></span></nobr><br>Utilizza questa schermata per impostare il nome e il tipo di profilo che viene aggiunto. <p><b>Account facoltativo</b> (modalità Datacenter)<br>Nella modalità Datacenter, l'impostazione Account può essere utilizzata per abbinare il profilo a un account. Gli account possono avere amministratori propri che controllano e modificano le impostazioni nell'ambito dell'account di appartenenza.<p><b>Nome profilo</b><br>Questo campo obbligatorio consente di impostare il nome associato a questo profilo. Questo nome univoco può essere arbitrario o corrispondere al nome del sito web o del servizio.<p><b>Tipo profilo</b><br>Questa impostazione in genere non deve essere modificata, a meno che non siano state configurate mappe dati personalizzate. Se disponi di mappe dati personalizzate, utilizza questa impostazione per definire la mappa dati che si applica a questo profilo.<p><b>Sito web e-commerce</b><br>Se hai intenzione di elaborare dati e-commerce insieme a questo profilo, seleziona "Sì". In caso contrario, seleziona "No". Se E-commerce è disattivato, puoi impostare un importo obiettivo per fornire informazioni generali sul ROI.<p><b>Metodo monitoraggio visitatore</b><br>Urchin è dotato di due modalità per identificare i visitatori. Il modo più preciso è quello di utilizzare la codifica JavaScript UTM. Se UTM è installato, selezionalo come opzione. Se UTM non è installato, seleziona il metodo IP+User-Agent. Alcuni rapporti non verranno compilati se non si utilizza UTM.<p><b>Dominio UTM</b><br>In condizioni normali, lascia vuoto questo campo. UTM individuerà automaticamente il dominio per il sito. La funzione Dominio UTM viene utilizzata unicamente in caso di domini coincidenti che devono essere monitorati separatamente.
+392	<nobr><span class=title1><b>Procedura guidata profilo: Impostazioni log (Ref. #A-391)</b></span></nobr><br>Questa schermata elenca tutte le sorgenti log che devono essere elaborate per questo profilo. Utilizza il pulsante Aggiungi nella parte superiore destra per avviare la Procedura guidata sorgente log, che consente di aggiungere una sorgente log supplementare. I siti con bilanciamento del carico e con più sorgenti log necessitano di ulteriori licenze. Quando il processo è completato, viene nuovamente visualizzata questa schermata. Fai clic su Termina per completare la procedura guidata.<p><b>Opzioni di bilanciamento del carico</b><br>Questa opzione è disponibile se hai acquistato una licenza per il bilanciamento del carico. Se Elaborazione log in parallelo è attivato, Urchin apre tutti i file di log contemporaneamente e li legge a rotazione, una sezione alla volta; ciascuna sezione corrisponde a 15 minuti di attività di log. L'attivazione di questa opzione aumenta significativamente le prestazioni sui siti con bilanciamento del carico.<br><p><b>Aggiungi</b><br>Fai clic sul pulsante "Aggiungi" in alto a destra per aggiungere una sorgente log al profilo. Alla scadenza della licenza, il pulsante Aggiungi verrà disattivato.
+393	Questa schermata visualizza un riepilogo del profilo che hai configurato. Se le impostazioni sembrano corrette, fai clic su Termina per finalizzare l'installazione. Se desideri apportare modifiche, fai clic sul pulsante Indietro.
+394	Procedura guidata sorgente log: Sorgenti log disponibili
+395	Procedura guidata sorgente log: Opzioni
+396	Procedura guidata sorgente log: Fine
+397	Impostazioni sorgente log
+398	Nessuna <b>cronologia di attività profilo</b> trovata.
+399	Aggiunta gruppo riuscita! Questo gruppo è ora disponibile per organizzare utenti e altri gruppi in unità facili da gestire. Fai clic su "Altre opzioni" per modificare l'accesso ai rapporti e gli utenti per questo Gruppo. Fai clic su "Completato" per uscire dalla schermata.
+400	Configurazione profilo riuscita. Per aggiungere una sorgente log esistente, fai clic su Aggiungi sorgente log esistente. Per creare una nuova sorgente log e allegarla a questo profilo, fai clic su Aggiungi nuova sorgente log, nella parte inferiore della schermata. Per configurare opzioni aggiuntive per il profilo, fai clic su Opzioni rapporti. Per pianificare questo profilo affinché venga eseguito immediatamente o in futuro, seleziona Pianifica ora.
+401	Procedura guidata profilo: Fine
+402	Procedura guidata profilo. Conferma
+403	Procedura guidata sorgente log: Ubicazione log remoto
+404	Completato
+405	L'utente è stato aggiunto. Questo utente può ora ricevere le autorizzazioni di accesso a uno o più rapporti del profilo. Per concedere le autorizzazioni di accesso o modificare le autorizzazioni di gruppo, fai clic sul link "Altre opzioni". Per uscire dalla schermata, fai clic su Completato.
+406	Aggiunta record non riuscita. <p> Esiste un altro record con lo stesso nome. <br>Torna indietro e correggi l'errore.
+407	Procedura guidata profilo.
+408	Procedura guidata sorgente log: Fine
+409	Risultato procedura guidata filtro.
+410	Procedura guidata sorgente log: Conferma
+411	Risultato procedura guidata sorgente log.
+412	Procedura guidata filtro: Opzioni
+413	Procedura guidata filtro: Impostazioni
+414	Procedura guidata filtro: Fine
+415	Procedura guidata filtro: conferma
+416	<nobr><span class=title1>Procedura guidata filtro: Opzioni (Ref. #A-416)<b></b></span></nobr><br>Questa schermata consente di scegliere se creare un nuovo filtro o utilizzarne uno creato in precedenza. In questo modo, puoi creare un tipo di filtro una volta e utilizzarlo più volte.<p><b>Aggiungi nuovo filtro</b><br>Seleziona questa opzione per creare un nuovo filtro e applicarlo al profilo/sorgente log.<p><b>Filtro preconfigurato</b><br>Seleziona questa opzione per applicare al profilo/sorgente log un filtro già presente sul sistema Urchin.
+417	È tutto! Adesso sei pronto per iniziare a utilizzare Urchin. <br>Fai clic su Completato per iniziare ad aggiungere il tuo primo profilo.
+418	Questa schermata visualizza un riepilogo del filtro che hai configurato. Se le impostazioni sembrano corrette, fai clic su Termina per finalizzare l'installazione. Se desideri apportare modifiche, fai clic sul pulsante Indietro.
+419	Configurazione filtro completata. Per applicare questo filtro a uno o più profili o sorgenti log, fai clic sul collegamento "Altre opzioni". [L'unico motivo per applicare un filtro a una sorgente log piuttosto che a un profilo è se più profili usano la stessa sorgente log]. Fai clic su "Completato" per uscire dalla schermata.
+420	Annulla
+421	Procedura guidata utente: Informazioni di base
+422	Procedura guidata utente: Impostazioni utente
+423	Procedura guidata utente: Gruppi
+424	Procedura guidata utente. Accesso ai rapporti
+425	Procedura guidata utente: Fine
+426	Procedura guidata utente: Conferma
+427	<nobr><span class=title1><b>Procedura guidata utente: informazioni di base (Ref. #A-427)</b></span></nobr><br>Utilizza questa schermata per impostare il nome utente e la password del nuovo utente.<p><b>Account facoltativo</b> (modalità Datacenter)<br>In modalità Datacenter, l'impostazione "Account" può essere utilizzata per abbinare un utente a un account. Gli account possono avere propri amministratori che controllano e modificano le impostazioni nell'ambito dell'account di appartenenza<p><b>Nome utente</b><br>Ogni utente dovrà effettuare l'accesso utilizzando il proprio nome utente e la propria password. Utilizza questo campo per specificare un nome utente univoco per ciascun utente. I nomi utente non possono contenere spazi.<p><b>Password</b><br>Inserisci la password nei campi "Password" e "Verifica Password" di questo utente. L'utente potrà modificare la password nell'area "Preferenze"<p><b>Tipo di autenticazione</b><br>Nella casella "Tipo di autenticazione" scegli il metodo per l'autenticazione dei clienti, ad es. Nativa/LDAP/MSAD. "Nativa" è l'autenticazione nativa di Urchin. Altri valori per il tipo di autenticazione fanno riferimento ad altri metodi di autenticazione personalizzati che possono essere configurati nella tua istanza Urchin da un amministratore. Se il valore della casella "Tipo di autenticazione" è diverso da "Nativa", i campi "Password" e "Verifica password" saranno disattivati. La casella "Tipo di autenticazione" viene visualizzata solo quando almeno un provider di autenticazione personalizzato viene configurato da un amministratore Urchin nella tua istanza.<p><b>Nome completo</b><br>Utilizza questo campo per specificare il nome e il cognome dell'utente.
+428	<nobr><span class=title1><b>Procedura guidata utente: Impostazioni utente (Ref. #A-428)</b></span></nobr><br>Questa schermata consente di impostare gli eventuali privilegi di amministratore e le impostazioni di localizzazione predefinite dell'utente.<p><b>Livello amministratore</b><br>Questa opzione consente di verificare se l'utente dispone di privilegi di amministratore. L'impostazione “Utente” indica che l'utente può visualizzare i rapporti, nonché modificare la propria password e le impostazioni internazionali, ma non può controllare la configurazione. L'impostazione “Utente (nessun aggiornamento)” indica che l'utente può visualizzare i rapporti senza poter modificare le preferenze personali. L'impostazione “Amministratore account” indica che l'utente dispone di privilegi amministrativi limitati, quali la possibilità di aggiungere utenti e configurare obiettivi. L'impostazione “Super amministratore” indica che l'utente ha il totale controllo del sistema. Solo un super amministratore preesistente può creare un nuovo utente super amministratore. <p><b>Lingua rapporto</b><br>Questa opzione consente di scegliere la lingua in cui l'utente visualizza i rapporti. L'utente potrà modificare la lingua dalla scheda “Preferenze”.<p><b>Regione</b><br>Utilizza questa impostazione per determinare i criteri di localizzazione da applicare per la visualizzazione dei rapporti per l'utente. Questa impostazione determina il formato di date, ore e numeri, che può essere diverso a seconda dei Paesi. Se il Paese dell'utente non compare nell'elenco, seleziona una regione che utilizza gli stessi formati di data/numero.<p><b>Accesso agli Strumenti AdWords</b><br/>Questa opzione controlla l'accesso dell'utente agli “Strumenti AdWords” nell'interfaccia dei rapporti. L'attivazione di questa opzione rende disponibili gli Strumenti AdWords in TUTTI i profili con dati CPC a cui l'utente ha accesso. La disattivazione di questa opzione rende di sola lettura i rapporti correlati al CPC (ovvero nasconde tutti gli strumenti AdWords).</p><p>Fai clic su Fine per completare la procedura guidata.
+429	Questa schermata consente di associare uno o più gruppi all'utente in questione. Ciò ti permette, ad esempio, di dare a un utente accesso a due siti diversi. Per assegnare questo utente a un gruppo, evidenzia il gruppo nel riquadro di sinistra, quindi fai clic sulla freccia rivolta verso destra. Per rimuovere l'utente da un gruppo, seleziona il gruppo nel riquadro di destra, quindi fai clic sulla freccia rivolta verso sinistra. Una volta completato questo passaggio, fai clic su Avanti per continuare.
+430	Questa schermata consente di associare uno o più rapporti all'utente in questione. Per aggiungere l'accesso al rapporto per un utente, evidenzia il rapporto nel riquadro di sinistra, quindi fai clic sulla freccia rivolta verso destra. Per rimuovere l'accesso al rapporto per un utente, seleziona il rapporto nel riquadro di destra, quindi fai clic sulla freccia rivolta verso sinistra. Una volta completato questo passaggio, fai clic su Avanti per continuare.
+431	Questa schermata visualizza un riepilogo dell'utente che hai configurato. Se le impostazioni sembrano corrette, fai clic su Termina per finalizzare l'installazione. Se desideri apportare modifiche, fai clic sul pulsante Indietro.
+432	Risultato procedura guidata utente.
+433	Procedura guidata gruppo. Informazioni di base
+434	Procedura guidata gruppo: Impostazioni
+435	Procedura guidata gruppo: Gruppi nel gruppo
+436	Procedura guidata gruppo. Accesso ai rapporti
+437	Procedura guidata gruppo: Fine
+438	Procedura guidata gruppo: Conferma
+439	<nobr><span class=title1><b>Procedura guidata gruppo: Informazioni di base (Ref. #A-439)</b></span></nobr><br>Utilizza questa schermata per configurare le impostazioni di base necessarie per creare un gruppo. I gruppi possono essere utilizzati per concedere l'accesso a più utenti contemporaneamente. Tutti gli utenti che appartengono a un gruppo ereditano le autorizzazioni del gruppo oltre a quelle personali.<p><b>Account facoltativo</b> (modalità Datacenter)<br>In modalità Datacenter, l'account può essere utilizzato per abbinare il gruppo a un determinato account, utilizzabile a sua volta per gestire clienti complessi. Gli account possono essere considerati come "super gruppi", ognuno dei quali con un proprio amministratore. <p><b>Nome gruppo</b><br>Utilizza questo campo per specificare il nome del gruppo. Utilizza un nome descrittivo. I nomi di gruppo devono essere univoci.<p><b>Descrizione gruppo</b> (facoltativo) <br>Questo campo è utilizzato per fornire una descrizione del gruppo ed è utile per tenere traccia dello scopo dei vari gruppi. Utilizza un nome descrittivo. Fai clic su Termina per completare la procedura guidata.
+440	Questa schermata ti consente di selezionare un utente dall'elenco degli utenti disponibili che sono stati configurati nella configurazione di Urchin e di aggiungerli al gruppo in questione. Per aggiungere un utente a un gruppo, evidenzialo nel riquadro di sinistra, quindi fai clic sulla freccia rivolta verso destra. Per rimuovere un utente da un gruppo, seleziona l'utente dalla casella Utenti nel gruppo, quindi fai clic sulla freccia rivolta verso sinistra. Una volta completato questo passaggio, fai clic su Avanti per continuare.
+441	Questa schermata consente di selezionare tra i gruppi disponibili configurati nella configurazione Urchin, se ve ne sono, e di aggiungerli al gruppo in questione. Risulta pertanto utile per organizzare in modo gerarchico i gruppi. Per aggiungere un gruppo a un gruppo, evidenzialo nel riquadro di sinistra, quindi fai clic sulla freccia rivolta verso destra. Per rimuovere un gruppo da un gruppo, selezionalo nel riquadro di destra, quindi fai clic sulla freccia rivolta verso sinistra. Una volta completato questo passaggio, fai clic su Avanti per continuare.
+442	Questa schermata consente di selezionare un rapporto fra quelli disponibili impostati nella configurazione di Urchin, se ve ne sono, e consente al gruppo in oggetto di visualizzarli. Per concedere a un gruppo l'autorizzazione per visualizzare un rapporto, seleziona il rapporto nella casella di sinistra e fai clic sulla freccia rivolta verso destra. Per rimuovere tale autorizzazione, seleziona il rapporto nel riquadro di destra e fai clic sulla freccia rivolta verso sinistra. Una volta completato questo passaggio, fai clic su Avanti per continuare.
+443	Questa schermata visualizza un riepilogo del gruppo che hai configurato. Se le impostazioni sembrano corrette, fai clic su Termina per finalizzare l'installazione. Se desideri apportare modifiche, fai clic sul pulsante Indietro.
+444	Risultato procedura guidata gruppo.
+445	Procedura guidata attività: Informazioni di base
+446	Procedura guidata filtro. Filtri disponibili
+447	Procedura guidata filtro: Fine
+448	<nobr><span class=title1><b>Gestione filtri: Impostazioni filtri (Ref. #A-1701)</b></span></nobr><br>Questa schermata consente di configurare e regolare le impostazioni di un filtro. Per ulteriori informazioni sui filtri, consulta il manuale o il nostro Centro documentazione online.<p><b>Esempi</b><br>Quando si aggiunge un nuovo filtro, per maggiore praticità viene fornito un elenco di filtri di esempio. Se selezioni un filtro di esempio, le impostazioni per il filtro verranno fissate automaticamente; dovrai poi modificarne i dettagli per adattarle. In questo modo, è possibile conoscere facilmente il modo in cui vengono create le impostazioni per i filtri più comuni.<p><b>Account facoltativo</b> (solo modalità Datacenter)<br>Per i nuovi filtri, consente di selezionare l'account a cui il filtro deve essere associato. Per i filtri esistenti, viene visualizzato il nome dell'account a cui il filtro appartiene.<p><b>Nome filtro</b><br>Inserire in questo campo obbligatorio un nome arbitrario che verrà utilizzato per fare riferimento a questo filtro. Immetti un nome univoco per questo filtro.<p><b>Tipo filtro</b><br>A seconda di cosa desideri filtrare, seleziona uno dei tipi di filtro: <li><b>Escludi pattern</b>: questo tipo di filtro esclude <i>solo</i> le righe del file di log (hit) che corrispondono al pattern del filtro. Le righe che corrispondono saranno completamente ignorate; tieni presente quindi che un filtro che esclude Netscape, ad esempio, provoca l'esclusione di tutte le altre informazioni contenute in tale riga, quali visitatore, percorso, referral e dominio. <li><b>Includi pattern</b>: questo tipo di filtro include <i>solo</i> le righe del file di log (hit) che corrispondono al pattern del filtro; tutte le altre vengono ignorate. Come nell'esempio precedente, qualsiasi hit che viene ignorato non è disponibile nel sistema Urchin dal punto di vista dei rapporti. <li><b>Cerca e sostituisci</b>: si tratta di un filtro semplice che può essere utilizzato per cercare un pattern all'interno di un campo e sostituirlo con un altro. Se il pattern è presente nel campo più di una volta, viene sostituita solo l'ultima occorrenza. È possibile utilizzare il carattere "^" affinché la corrispondenza sia applicata all'inizio del campo e il carattere "$" affinché la corrispondenza sia applicata alla fine del campo. <li><b>Tabella di ricerca</b>: se si seleziona questo filtro, è possibile selezionare il nome di una tabella di ricerca utilizzabile per mappare i codici con etichette più comprensibili. È necessario in primo luogo creare una tabella di ricerca e installarla nella directory lib/custom/lookuptables della distribuzione Urchin (interna) o ubicata nel file system locale oppure nella condivisione NFS o UNC (solo Windows). Le origini FTP/HTTP non sono supportate.<li><b>Avanzato</b>: questo tipo di filtro consente di costruire un campo da uno o due altri campi. Il motore di filtro applicherà le espressioni nei due campi Estrai ai campi specificati, quindi costruirà un campo utilizzando l'espressione Constructor. La tecnica è in linea con l'utilizzo di espressioni regolari POSIX. <p><b>Campo da filtrare</b><br>Utilizza il menu a discesa per selezionare il campo della sorgente log a cui deve essere applicato il filtro. I campi con etichetta "RAW" rappresentano il contenuto effettivo del file di log prima dell'elaborazione. I campi con etichetta "AUTO" sono campi calcolati automaticamente e determinati sulla base dei campi RAW e di altri campi AUTO. Per un elenco completo dei vari utilizzi dei campi, consulta la sezione sui filtri del nostro Centro documentazione online. <p><b>Pattern filtro</b><br>Imposta questa opzione sul pattern da applicare al filtro. Il pattern può utilizzare caratteri jolly definiti dallo standard delle espressioni regolari POSIX.<p><b>Cerca stringa</b><br>Per i filtri Cerca e sostituisci, Cerca stringa viene usato come pattern di corrispondenza nel campo.<p><b>Sostituisci stringa</b><br>Per i filtri Cerca e sostituisci, Sostituisci stringa viene utilizzato in sostituzione di Cerca stringa.<p><b>Nome tabella</b> (solo Tabella di ricerca)<br>Questo campo, disponibile quando selezioni Tabella di ricerca come tipo di filtro, consente di selezionare una tabella che mappa i codici con nomi più comprensibili. La tabella modelli telefono mappa gli identificativi abbreviati di piattaforme telefoniche ai nomi dei produttori e ai modelli di browser web via telefono. Puoi creare tabelle di ricerca personalizzate per mappare i codici alle campagne (per il modulo monitoraggio campagna) o le variabili di un URL ai nomi di pagina. Qualsiasi file creato con l'estensione .lt nella directory "lib/custom/lookuptables" della distribuzione Urchin sarà visualizzato in questo menu a discesa.<p><b>Nome file</b> (solo tabella di ricerca esterna)<br>Questo campo visibile quando si seleziona la tabella di ricerca come tipo di filtro, consente di selezionare un file di tabella di ricerca esterna che mappa i codici con nomi più comprensibili. Puoi creare tabelle di ricerca personalizzate per mappare i codici alle campagne (per il modulo monitoraggio campagna) o le variabili di un URL ai nomi di pagina.<p><b>Nome utente/password</b> (Windows, solo tabella di ricerca esterna)<br>Questi campi sono utilizzati per specificare le credenziali utenti per la condivisione UNC nella quale si trova la tabella di ricerca esterna.<p><b>Comandi</b><br>Fai clic sul pulsante Fine (per un nuovo filtro) o Aggiorna (per un filtro esistente) per salvare le modifiche. Per i filtri esistenti, le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del filtro.
+449	<nobr><span class=title1><b>Filtri Profili (Ref. #A-1702)</b></span></nobr><br>Questa schermata è utilizzata per applicare il filtro a uno o più profili esistenti. Una volta che un filtro è applicato a un profilo, tutte le sorgenti log associate a quel profilo saranno filtrate durante l'elaborazione del profilo.<p><b>Applica a profilo</b><br>Per applicare questo filtro a un profilo, seleziona il nome del profilo dal riquadro Profili disponibili, quindi fai clic sulla freccia rivolta verso destra. Per rimuovere il filtro da un profilo, seleziona il profilo nella finestra Applicato a, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiornamento per rendere attive le modifiche.<p><b>Comandi</b><br>Per salvare le modifiche fai clic sul pulsante Aggiorna. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del filtro.
+450	<nobr><span class=title1><b>Filtri: Sorgenti log (Ref. #A-1703)</b></span></nobr><br>Questa schermata è utilizzata per applicare il filtro a una o più sorgenti log esistenti. Una volta che il filtro è applicato a una sorgente log, tutte le sorgenti log utilizzeranno il filtro indipendentemente dal profilo in esecuzione.<p><b>Applica a sorgente log</b><br>Per applicare questo filtro a una sorgente log, seleziona il nome della sorgente log dal riquadro Sorgenti log disponibili, quindi fai clic sulla freccia rivolta a destra. Per rimuovere questo filtro da una sorgente log, seleziona la sorgente log nel riquadro Applicato a, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiorna per rendere attive le modifiche.<p><b>Comandi</b><br>Per salvare le modifiche fai clic sul pulsante Aggiorna. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del filtro.
+451	<nobr><span class=title1><b>Gestione filtri: Riepilogo (Ref. #A-1704)</b></span></nobr><br>Questa schermata visualizza il set completo di parametri per il filtro. Esamina attentamente queste impostazioni prima di elaborare un profilo per assicurarti che tutto sia corretto. Ove sia necessario apportare delle modifiche, fai clic sulla scheda correlata e aggiorna le impostazioni desiderate. <p><b>Comandi</b><br>Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del filtro.
+452	<nobr><span class=title1> <b>Utenti: Informazioni sull'utente (Ref. #A-1301)</b></span></nobr><br>Questa schermata consente di modificare le varie impostazioni relative all'utente. <p><b>Account facoltativo</b> (solo modalità Datacenter)<br>Visualizza l'account a cui è associato l'utente.<p><b>Nome utente</b><br>Utilizza questo campo per specificare un nome utente univoco per questo utente. I nomi utente non possono contenere spazi.<p><b>Tipo di autenticazione</b><br>Nella casella "Tipo di autenticazione" scegli il metodo per l'autenticazione dei clienti, ad es. Nativa/LDAP/MSAD. "Nativa" è l'autenticazione nativa di Urchin. Altri valori per il tipo di autenticazione fanno riferimento ad altri metodi di autenticazione personalizzati che possono essere configurati nella tua istanza Urchin da un amministratore. Se il valore della casella "Tipo di autenticazione" è diverso da "Nativa", i campi "Password" e "Verifica password" saranno disattivati. La casella "Tipo di autenticazione" viene visualizzata solo quando almeno un provider di autenticazione personalizzato viene configurato da un amministratore nella tua istanza Urchin.<p><b>Password</b><br>Le password devono essere costituite da almeno 8 caratteri e non contenere spazi. Nelle password si fa distinzione tra maiuscole e minuscole: "password" è dunque diverso da "Password". Per modificare la password, immettila sia nel campo Password che nel campo Verifica password. Se sono state apportate modifiche, assicurati di fare clic sul pulsante Aggiorna. <p><b>Nome completo</b><br>Per questo utente, usa questo campo per specificare il nome completo della persona che effettuerà l'accesso.<p><b>Comandi</b><br>Fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili relative all'utente.
+453	<nobr><span class=title1>    <b>Utenti: Preferenze (Ref. #A-1302)</b></span></nobr><br>Questa schermata consente di modificare diverse impostazioni relative all'utente, tra cui il livello di amministrazione e la lingua predefinita. <p><b>Livello amministratore</b><br>Questa opzione consente l'attribuzione dei privilegi di amministratore all'utente. L'impostazione "Utente" indica che l'utente può visualizzare i rapporti e modificare le preferenze, ma non controllare la configurazione. L'impostazione "Utente - Nessun aggiornamento" indica che l'utente non può modificare i rapporti ma solo visualizzarli. L'impostazione "Amministratore account" indica che l'utente dispone di privilegi amministrativi limitati nel gruppo di account (utilizzato in modalità Datacenter). L'impostazione "Super amministratore" indica che l'utente ha il totale controllo del sistema. Solo un super amministratore preesistente può impostare il livello amministratore su Super amministratore.<p><b>Lingua rapporto</b><br>Questa opzione consente di scegliere la lingua in cui l'utente visualizza i rapporti. L'utente potrà modificare la lingua dalla scheda "Preferenze".<p><b>Regione</b><br>Utilizza questa impostazione per determinare i criteri di localizzazione da applicare per la visualizzazione dei rapporti per l'utente. Questa impostazione determina il formato di date, ore e numeri, che può essere diverso a seconda dei Paesi. Se il Paese dell'utente non compare nell'elenco, seleziona una regione che utilizza gli stessi formati di data/numero. <p><b>Accesso agli Strumenti AdWords</b><br>Questa opzione controlla l'accesso dell'utente agli "Strumenti AdWords" nell'interfaccia dei rapporti. L'attivazione di questa opzione rende disponibili gli Strumenti AdWords in TUTTI i profili con dati CPC a cui l'utente ha accesso. La disattivazione di questa opzione rende i rapporti correlati al CPC di sola lettura (ovvero nasconde tutti gli strumenti AdWords).</p><p><b>Comandi</b><br>Dopo aver modificato la configurazione, fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili relative all'utente.
+454	<nobr><span class=title1><b>Utenti: Gruppi (Ref. #A-1303)</b></span></nobr><br>Questa schermata viene utilizzata per selezionare gli eventuali gruppi a cui appartiene l'utente. Le autorizzazioni per visualizzare i rapporti possono essere concesse a livello di gruppo. Gli utenti saranno in grado di visualizzare tutti i rapporti a cui ha accesso il loro gruppo.<p><b>Aggiungi a gruppo</b><br>Per aggiungere questo utente a un gruppo, seleziona il nome del gruppo dalla casella Gruppi disponibili quindi fai clic sulla freccia rivolta verso destra. Per rimuovere questo utente da un gruppo, seleziona il gruppo tra le voci della casella Gruppi quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiorna per rendere attive le modifiche.<p><b>Comandi</b><br>Dopo aver corretto la configurazione, assicurati di fare clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili per questo utente.
+455	<nobr><span class=title1><b>Utenti: Accesso rapporto (Ref. #A-1304)</b></span></nobr><br>Questa schermata è utilizzata per concedere a questo utente l'autorizzazione per visualizzare i rapporti per uno o più profili esistenti. Oltre ad autorizzazioni di gruppo, è possibile concedere all'utente un accesso individuale al rapporto nel modo impostato in questa schermata.<p><b>Concedi accesso</b><br>Per concedere all'utente un accesso ai rapporti di un profilo, seleziona il nome del profilo dal riquadro Profili disponibili, quindi fai clic sulla freccia rivolta verso destra. Per negare l'accesso, seleziona il profilo nel riquadro Accesso concesso, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiorna per rendere attive le modifiche.<p><b>Comandi</b><br>Dopo aver corretto la configurazione, assicurati di fare clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili per questo utente.
+456	<nobr><span class=title1><b>Utenti. Riepilogo (Ref. #A-1305)</b></span></nobr><br>Questa schermata visualizza il set completo di parametri per l'utente. Ove sia necessario apportare modifiche, fai clic sulla scheda correlata e aggiorna le impostazioni desiderate. <p><b>Comandi</b><br> Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili per l'utente.
+457	Profilo da eseguire
+458	Browser di file
+459	Directory corrente
+460	Vai a directory
+461	Seleziona file
+462	Nome file
+463	OK
+464	Sfoglia
+465	Procedura guidata sorgente log. Ubicazione log locale
+466	Visualizzazione rapida sorgente log
+467	Procedura guidata sorgente log: impostazioni remote
+468	Nome utente e password
+469	Procedura guidata sorgente log: Impostazioni
+470	<nobr><span class=title1><b>Procedura guidata sorgente log: Opzioni (Ref. #A-470)</b></span></nobr><br>Questa schermata consente di specificare una sorgente log locale (ad esempio il computer su cui è installato Urchin) o una sorgente log remota (ad esempio un altro computer). Fai clic su Avanti per continuare.<p><b>Sorgente log locale</b><br>Viene considerato locale qualsiasi file di log che risiede nel file system locale del computer su cui Urchin è in esecuzione (compresi i file system installati su NFS). Seleziona questa opzione se il tuo file di log è “locale” rispetto al sistema Urchin.<p><b>Sorgente log remota</b><br>Urchin è in grado di trasferire log remoti al sistema Urchin prima di elaborarli utilizzando i protocolli FTP, HTTP o HTTPS. Nei sistemi Windows, Urchin può anche accedere a nomi di percorso UNC. Seleziona questa opzione se il tuo file di log è remoto e se devi trasferirlo o accedervi tramite UNC.
+471	<nobr><span class=title1><b>Procedura guidata sorgente log: Impostazioni remote (Ref. #A-471)</b></span></nobr><br>Questa schermata consente di specificare in che modo recuperare o accedere al file di log remoto per questa sorgente log.<p><b>Protocollo server</b><br>Urchin può gestire quattro tipi di file di log remoti: HTTP (www), HTTPS, FTP e UNC (solo Windows). Se il tuo file di log è accessibile tramite un browser web, utilizza HTTP. Se non è richiesta la password, lascia vuoti i campi nome utente e password. FTP può essere utilizzato con nome utente e password (di norma lo stesso nome utente utilizzato per caricare i contenuti sul sito). UNC, disponibile unicamente su sistemi Windows, richiede nome utente e password per accedere alla condivisione UNC.<p><b>Nome server/IP</b><br>Immetti il nome del server (ad esempio www.urchin.com) o l'indirizzo IP (ad esempio 63.212.171.4) dell'ubicazione del file di log. Per UNC, utilizza la notazione \server.<p><b>Porta server</b><br>Il campo Porta server viene compilato automaticamente. Tuttavia, se utilizzi una porta non standard, puoi modificarlo manualmente.<p><b>Login remoto e locale identici</b> (solo UNC)<br>Questa opzione è disponibile se come protocollo server (solo Windows) è stato selezionato UNC. Seleziona Sì se lo stesso login e la stessa password possono essere utilizzati sia per il server locale che per quello remoto. Seleziona No se il server remoto richiede un login o una password diversi da quelli del server locale. Se selezioni No, saranno disponibili ulteriori campi per Login server locale.<p><b>Nome utente/password</b><br>Questi campi possono essere lasciati vuoti per connessioni HTTP non autenticate e FTP anonime. Per utilizzare una connessione HTTP/FTP autenticata, immetti il tuo nome utente e la tua password in questo campo. UNC richiede nome utente e password per l'accesso alla condivisione. <p><b>Dominio</b> (solo UNC)<br>Se la condivisione UNC è parte di un dominio, immetti le informazioni sulla rete del dominio in questo campo. <p><b>Modalità FTP</b> (solo FTP)<br>Questa opzione è disponibile se è stato selezionato FTP come protocollo del server. Seleziona il metodo di trasferimento Passivo per passivo (PASV, Passive for passive). Seleziona Attivo come metodo di trasferimento (PORT) diretto.
+472	<nobr><span class=title1><b>Procedura guidata sorgente log: Locale/Remoto (Ref. #A-472)</b></span></nobr><br>Utilizza questa schermata per specificare l'ubicazione/destinazione e il nome della sorgente log.<p><b>Percorso file di log</b> (solo locale)<br>Utilizza questo campo per inserire il percorso completo e il nome del file di log (ad esempio, /var/logs/access-log). Per semplificare l'operazione, è disponibile un pulsante Sfoglia. Il nome del file può contenere caratteri jolly, come l'asterisco.<p><b>File sorgente log remoto</b> (solo remoto)<br>Utilizza questo campo per specificare il percorso remoto del file di log. Si tratta del percorso completo senza le informazioni di dominio. Tieni presente che i caratteri jolly non sono supportati per i nomi di percorso di file sorgente log remoti basati su HTTP. Per semplificare l'operazione, è disponibile un pulsante Sfoglia per i collegamenti FTP e UNC.<p><b>Destinazione log</b> (solo remoto)<br>Prima dell'elaborazione, i file di log remoti vengono trasferiti sul sistema locale. Seleziona una directory locale per la memorizzazione del file di log. È disponibile un pulsante Sfoglia.<p><b>Account facoltativo</b> (solo modalità Datacenter)<br>In modalità Datacenter, questo campo facoltativo può essere utilizzato per abbinare la sorgente log a un account, operazione che la renderà disponibile solo per tale account.<p><b>Nome sorgente log</b><br>In questo campo obbligatorio inserisci un nome arbitrario, che verrà utilizzato per fare riferimento alla sorgente log. Immetti un nome univoco per la sorgente log.
+473	<nobr><span class=title1><b>Procedura guidata sorgente log: Impostazioni (Ref. #A-473)</b></span></nobr><br>Questa schermata consente di specificare il formato del file di log in corso di elaborazione. Per la maggior parte dei server web occorre selezionare il tipo di formato log <i>auto</i>. Altri tipi di formati log di server web sono forniti per compatibilità inversa con versioni precedenti di Urchin, anche se in genere non sono necessari. È possibile creare formati log personalizzati utilizzando i modelli contenuti nella directory lib/custom/logformats della distribuzione Urchin.<p><b>Formato log</b><br>Utilizza l'opzione Formato log per specificare il formato della sorgente log. <ul><li><b>Auto:</b> questo formato rileva automaticamente i formati log dei server web, inclusi Apache, W3C (Microsoft IIS), NCSA, Netscape e iPlanet. <li><b>Campagna:</b> utilizza questo formato per i dati sui costi delle campagne specificatamente formattati per l'utilizzo di Urchin. Per informazioni specifiche, consulta la documentazione online. Il formato log delle campagne non può essere rilevato automaticamente.<li><b>Elf2:</b> utilizza questo formato per i log di e-commerce in formato ELF2. Il formato log E-commerce non può essere rilevato automaticamente.<li><b>Google:</b> utilizza questo formato per i log che contengono i dati sul costo per clic di Google. Il formato log Google non può essere rilevato automaticamente.<li><b>NCSA:</b> in genere questo formato può essere rilevato automaticamente e viene utilizzato di norma dai server web Apache. Per creare rapporti completi, è necessario utilizzare la registrazione combinata estesa, che nella maggior parte dei casi non rappresenta l'impostazione predefinita di Apache. <li><b>Netscape:</b> i server Netscape preesistenti (non iPlanet) utilizzano questo formato per impostazione predefinita.<li><b>Overture:</b> utilizza questo formato per i log che contengono i dati sul costo per clic di Overture. Il formato log Overture non può essere rilevato automaticamente.<li><b>W3C:</b> questo formato può essere rilevato automaticamente e viene utilizzato per i server web che registrano in formato W3C standard, come i server Microsoft IIS.</ul>
+474	Questa schermata visualizza un riepilogo della sorgente log che hai configurato. Se le impostazioni sembrano corrette, fai clic su Termina per finalizzare l'installazione. Se desideri apportare modifiche, fai clic sul pulsante Indietro.
+475	Ubicazione file di log
+476	Locale
+477	Remoto
+478	Impostazioni server remoto
+479	FTP
+480	HTTP
+481	Protocollo server
+482	Nome server/IP
+483	Porta server
+484	Configurazione log riuscita! La sorgente log che hai aggiunto è ora disponibile per essere elaborata da qualsiasi profilo configurato nel sistema. Fai clic sul pulsante "Completato" per ritornare al sistema di amministrazione o fai clic su Altre opzioni per impostare parametri aggiuntivi.
+485	Login server remoto
+486	Nome utente
+487	Password
+488	Configurazione log riuscita. Le sorgenti log selezionate vengono ora aggiunte al profilo. Fai clic sul pulsante "Completato" per ritornare al sistema di amministrazione.
+489	Configurazione filtro completata! Il filtro o i filtri selezionati sono stati aggiunti al profilo. Fai clic sul pulsante "Completato" per ritornare al sistema di amministrazione.
+490	Ubicazione file di log
+491	File sorgente log remoto
+492	Browser log remoto
+493	https
+494	Browser directory
+495	Seleziona directory
+496	Ubicazione log remoto
+497	Procedura guidata di impostazione: Conferma
+498	<p><b>Gli utenti che utilizzano per la prima volta il sistema devono leggere la sezione Concetti e terminologia</b><br><ul><li>Profilo è il termine utilizzato per designare un set di rapporti per un sito web e per le impostazioni di configurazione necessarie per creare tali rapporti. <li>Prima di poter visualizzare i rapporti, Urchin deve elaborare file di log creati dal server del tuo sito web. Questi file di log sono chiamati "Sorgenti log".<li>Una volta che hai individuato l'ubicazione delle sorgenti log, Urchin può elaborare i log immediatamente o può essere pianificato affinché elabori i log periodicamente man mano che sono creati. <li>Per ciascuna schermata di configurazione è possibile visualizzare la guida facendo clic sul punto interrogativo nella parte inferiore della schermata.
+499	Impostazione profili
+500	Esci
+501	Importa profili
+502	Seleziona per importare
+503	Importa profili
+504	Importa
+505	Procedura guidata di installazione
+506	<nobr><span class=title1><b>Procedura guidata sorgente log: Opzioni (Ref. #A-506)</b></span></nobr><br>Questa schermata consente di specificare una sorgente log locale (il computer su sui è installato Urchin) o una sorgente log remota (un altro computer). Fai clic su Avanti per continuare.<p><b>Sorgente log locale</b><br>Viene considerato locale qualsiasi file di log locale che risiede sul computer su cui Urchin è in esecuzione o su un'unità montata sul sistema. Seleziona questa opzione se il tuo file di log è in locale sul sistema Urchin.<p><b>Sorgente log remota</b><br>Urchin è in grado di trasferire log remoti al sistema Urchin prima di elaborarli utilizzando il protocollo FTP o HTTP. Inoltre, su piattaforme Windows, Urchin può accedere a file di log su condivisioni UNC. Se il tuo file di log è remoto e deve essere trasferito o acceduto su una condivisione, seleziona questa opzione.<p><b>Sorgente log preconfigurata</b><br>Seleziona questa opzione se desideri assegnare una sorgente log che è stata già immessa nel sistema Urchin
+507	Configurazione log riuscita. La sorgente log che hai aggiunto è ora disponibile per essere elaborata da qualsiasi profilo configurato nel sistema. Fai clic sul pulsante "Completato" per ritornare al sistema di amministrazione.
+508	Configurazione filtro completata. Il filtro è stato aggiunto. Fai clic sul pulsante "Completato" per ritornare al sistema di amministrazione.
+509	Stato
+510	% completato
+511	In coda
+512	Ultima ora di esecuzione
+513	Frequenza
+514	Mai
+515	Tempo reale
+516	Esegui/pianifica
+517	Non pianificato
+518	Non pianificato
+519	Pianificato
+520	In esecuzione
+521	Completata
+522	Errore
+523	Impostazioni remote
+524	Esegui ora
+525	Nessun <b>account</b> nella configurazione. Fai clic sul pulsante "Aggiungi"<br> nella parte superiore destra per aggiungere un nuovo <b>account</b>.
+526	Nome server mancante
+527	Impossibile risolvere il nome host
+528	Impossibile collegarsi al server
+529	Accesso negato
+530	Nome utente o password errati
+531	Elenco vuoto
+532	Cronologia di attività profilo
+533	Successo
+534	Avviso
+535	Errore
+536	<nobr><span class=title1><b>Account: Riepilogo (Ref. #A-1202)</b></span></nobr><br>Questa schermata visualizza il set completo di parametri per l'account. Ove sia necessario apportare delle modifiche, fai clic sulla scheda correlata e aggiorna le impostazioni desiderate.<p><b>Comandi</b><br>Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili per l'account.
+537	Anno/mese
+538	<nobr><span class=title1><b>Procedura guidata account: informazioni di base (Ref. #A-538)</b></span></nobr><br>Utilizza questa schermata per impostare i parametri del nuovo account. Gli account possono essere utilizzati per raggruppare in un solo account i profili, gli utenti, le sorgenti log, ecc. di un singolo cliente.<p><b>Nome account</b><br>Ogni account deve avere un nome univoco. Tale nome nome può essere arbitrario o basato sul nome del cliente o del sito web.<p><b>Contatto e email contatto</b><br>I dati di contatto sono facoltativi e consentono di tenere traccia più facilmente dei clienti.<p><b>Ubicazione dati rapporto</b><br>È un'impostazione facoltativa che consente di specificare il percorso della directory per la memorizzazione dei dati dei rapporti di tutti i profili appartenenti all'account. L'ubicazione predefinita è la directory data/reports<i>nome_account</i> nell'ambito della distribuzione Urchin. L'intera directory dei dati può essere spostata a livello di sistema modificando il file urchin.conf nella directory etc. Per facilitare l'operazione, è disponibile un pulsante Sfoglia.<p><b>Ubicazione cronologia esecuzione</b><br>Questa impostazione facoltativa consente di specificare il percorso della directory per la memorizzazione dei dati della cronologia di esecuzione di tutti i profili appartenenti all'account. L'ubicazione predefinita è la directory data/history/<i>nome_account</i> nell'ambito della distribuzione Urchin. Per semplificare l'operazione, è disponibile un pulsante Sfoglia.<p><b>Ubicazione navigazione directory</b><br>Questa impostazione facoltativa rappresenta una misura di sicurezza nel momento in cui si concedono a un account i diritti di amministratore per creare profili. Un percorso di directory immesso in questo campo limita la capacità dell'amministratore dell'account di esplorare la directory per cercare file di log. Per impostazione predefinita non vi sono limitazioni alla navigazione. Questa impostazione può essere modificata a livello dell'intero sistema modificando il file urchin.conf nella directory etc. Per facilitare l'operazione, è disponibile un pulsante Sfoglia.
+539	<nobr><span class=title1><b>Impostazioni: Impostazioni globali (Ref. #A-2701)</b></span></nobr><br>Questa schermata consente di impostare le impostazioni di accesso per questa installazione di Urchin. Le impostazioni variano a seconda che l'installazione di Urchin avvenga su un server o su un computer desktop.<p><b>Accesso rapporto basato sul Web</b><br>Per autorizzare gli utenti a collegarsi e a visualizzare i rapporti in modalità remota utilizzando un browser web, seleziona "attivato". Per autorizzarli a consultare i rapporti solo dalla console del sistema su cui Urchin è installato, seleziona "disattivato".<p><b>Amministrazione basata sul Web</b><br>Per autorizzare l'utente con diritti di "amministratore" a collegarsi e a modificare la configurazione in modalità remota utilizzando un browser web, seleziona "attivato". Per autorizzarlo a modificare la configurazione solo dalla console del sistema su cui Urchin è installato, seleziona "disattivato".<p>In genere, entrambe le opzioni sono impostate su "attivato" per le installazioni su server, mentre per le installazioni su computer tradizionale, almeno l'amministrazione basata sul Web è "disattivata".<p>Tieni presente che questa impostazione può essere sovrascritta dall'opzione ALLOW_AUTO_LOGIN nel file etc/session.conf.<p><b>Collegamento diretto al rapporto</b><br>NOTA DI SICUREZZA IMPORTANTE. Attivando questa funzione, i controlli di sicurezza basati su sessione risultano disattivati ed è possibile creare link diretti ai rapporti. Questa funzione può risultare utile per i sistemi già protetti da password o da una rete. Una volta attivata la funzione, puoi creare link diretti ai rapporti utilizzando il formato:<p>&nbsp;&nbsp;(URL di base)/report.cgi?profile=(nome profilo)&user=(nome utente)<p>dove (URL di base) corrisponde a tutti gli elementi che precedono session.cgi nell'URL corrente, (nome profilo) corrisponde al nome del profilo convertito in formato URI-escape e (nome utente) corrisponde all'utente che ha accesso al rapporto. L'impostazione "user=" è facoltativa e controlla le preferenze di lingua e di localizzazione. Se non viene specificata, il sistema presuppone che corrisponda all'utente amministratore. Consulta il file .report.conf nella directory htdocs della distribuzione Urchin per ulteriori opzioni di configurazione e controllo dell'accesso.<p><b>Numero porta server</b><br>Questa opzione permette di specificare il numero di porta sul quale deve essere eseguito il servizio web di Urchin. Dopo aver modificato questa opzione, occorre riavviare i servizi Urchin utilizzando l'applicazione "urchinctl" nella directory bin del prodotto. Per maggiori dettagli, consulta la documentazione sull'installazione. Per impostazione predefinita Urchin utilizza la porta 9999, sebbene sia possibile modificare questa impostazione durante l'installazione.<p><b>Comandi</b><br>Fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere ad altre impostazioni.
+540	<nobr><span class=title1><b>Impostazioni. Impostazioni server (Ref. #A-2702)</b></span></nobr><br>Questa schermata consente di modificare la porta server utilizzata da Urchin e i sistemi di generazione dei rapporti. <p><b>Numero porta server</b><br>L'amministrazione basata sul Web e la visualizzazione dei rapporti sono eseguiti sulla porta del server su cui è installato Urchin. Per impostazione predefinita il numero della porta è 9999. Nota importante. Non modificare questo valore con un numero di porta utilizzato da un altro servizio, ad esempio HTTP standard (porta 80) o posta in uscita (porta 25). Se pensi di modificare il numero della porta da 9999 a un altro valore, ti consigliamo di discuterne con il tuo amministratore di sistema. Dopo aver modificato questo valore, dovrai riavviare i servizi Urchin per rendere effettive le modifiche. I due Servizi Urchin sono il Programma di pianificazione ("urchind") e il Server ("urchinwebd"). Per riavviare questi servizi da piattaforme Windows, utilizza le opzioni Disabilita e Abilita nel menu Start->Programmi->Urchin. Sulle piattaforme di tipo UNIX, esegui "bin/urchinctl restart" nella directory Urchin.
+541	<b>Visualizza rapporti</b><br>Questa schermata elenca tutti i profili disponibili ai quali hai accesso. Consente di verificare le metriche di rendimento per più profili in un'unica schermata.<p><b>Il calendario limitato</b><br>Il calendario limitato nell'angolo superiore destro consente di scegliere un intervallo di date (Giorno, Settimana, Mese, Anno).<p><b>Vai al rapporto</b><br>Fai clic sul nome del profilo per avviare la finestra del rapporto per tale profilo. La finestra del rapporto consente di visualizzare tutti i rapporti disponibili per il profilo.<p><b>Modifica</b> (solo super amministratore)<br>Il pulsante "Modifica" consente di accedere a tutte le impostazioni del profilo, organizzate in schede.<p><b>Stato</b> (link ipertestuale, solo super amministratore)<br>Lo stato di un'attività può essere "Non pianificata", "In attesa", "In coda", "In esecuzione", "In corso di annullamento", "Completata", "Annullata", "Avviso" o "Errore". Ciascuno di essi è codificato a colori. Per ordinare l'elenco per Stato, fai clic sulla freccia sotto la parola &#;Stato&#;. Per visualizzare i dettagli dell'esecuzione di un'attività, fai clic sulla voce dello stato con codifica a colori ad essa corrispondente. Verrà visualizzata una nuova finestra in cui sono visualizzati i dettagli sull'esecuzione. <p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzat" per modificare il numero di voci elencate contemporaneamente. Per scorrere tra le voci visualizzando una pagina alla volta, utilizza il pulsante "Indietro" o "Avanti". Per fare clic e andare al sito vero e proprio, fai clic sul link accanto al nome del profilo.<p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter, il menu Account può filtrare le voci.<p><b>Visualizza</b><br>Utilizza il menu a discesa "Visualizza" per selezionare la visualizzazione "Amministratore", "Business" o "Base" per le pagine di panoramica.
+542	<nobr><span class=title1><b>Preferenze (Ref. #A-1001)</b></span></nobr><br>Questa schermata consente di impostare/modificare la password e controllare la lingua e le impostazioni di localizzazione predefinite dei rapporti Urchin. Fai clic su Aggiornamento per rendere attive le modifiche. Alcune impostazioni potrebbero non essere modificabili se le autorizzazioni sono riservate all'amministratore.<p><b>Password</b><br>Per modificare la password, inserisci la nuova password nei campi Password e Verifica password, quindi fai clic sul pulsante Aggiorna. In occasione del successivo accesso, verrà utilizzata la nuova password. Le password non devono contenere spazi o altri caratteri speciali. <b>Nota per gli amministratori.</b> Non dimenticare la password amministratore. <p><b>Lingua rapporto</b><br>Utilizza questo menu per selezionare la lingua di visualizzazione dei rapporti. Tutte le informazioni di navigazione e della guida dell'interfaccia rapporti saranno visualizzate nella lingua selezionata. Fai clic su Aggiorna dopo aver apportato le modifiche desiderate.<p><b>Regione</b><br>Utilizza questa impostazione per determinare i criteri di localizzazione da applicare per la visualizzazione dei rapporti. Questa impostazione determina il formato di date, ore e numeri, che può essere diverso a seconda dei Paesi. Se il Paese desiderato non compare nell'elenco, seleziona una regione che utilizza gli stessi formati di data/numero. Fai clic sul pulsante Aggiorna per salvare le modifiche.
+543	<nobr><span class=title1><b>Impostazioni di elaborazione: Impostazioni DNS (Ref. #A-2301)</b></span></nobr><br>Questa schermata consente di configurare la funzione Ricerca DNS di Urchin che traduce gli indirizzi IP in nomi di dominio (ad esempio 63.212.171.4 -> urchin.com). Ciò consente a Urchin di generare rapporti per nome di dominio, reti e Paesi. Per configurare il DNS occorre l'indirizzo IP di un server dei nomi locale. Per maggiori informazioni, contatta il tuo amministratore.<p><b>Ricerca DNS</b><br>Seleziona il pulsante "attivato" per abilitare Ricerca DNS.<p><b>Risolutore IP</b><br>Inserisci l'indirizzo IP di un server dei nomi DNS locale che Urchin può utilizzare per eseguire l'interrogazione per convertire gli indirizzi IP in nomi di dominio.<p><b>Loop DNS</b><br>Questa impostazione definisce il numero di tentativi di risoluzione che esegue Urchin prima abbandonare la conversione. L'impostazione di default di 5 è adatta alla maggior parte delle installazioni.<p><b>Target risoluzione</b><br>Una volta raggiunto il target di risoluzione, Urchin interrompe l'elaborazione dei DNS. Un'impostazione dell'80% è un buon compromesso tra velocità di elaborazione e risoluzione. Aumentare questo valore può rallentare il sistema.<p><b>Comandi</b><br>Per salvare le modifiche fai clic sul pulsante Aggiorna. Le schede nella parte superiore della schermata consentono di accedere ad altre impostazioni.
+544	<nobr><span class=title1><b>Impostazioni globali: Impostazioni DB (Ref. #A-2302)</b></span></nobr><br>Questa schermata consente di impostare alcuni parametri di base per confrontare le prestazioni e l'utilizzo delle risorse. In genere, i valori predefiniti offrono il migliore compromesso in termini di velocità/processore e utilizzo del disco; tuttavia, se desideri aumentare la velocità di Urchin o ridurre il suo impatto sul computer su cui è in esecuzione, modifica queste impostazioni di conseguenza. <p><b>Limite tabella DB</b><br>In caso di siti di grandi dimensioni, questa impostazione permette di indicare il numero massimo di record delle tabelle e quindi di controllare le dimensioni del database Urchin. L'opzione predefinita è adatta alla maggior parte delle installazioni. Se questo limite viene raggiunto entro un determinato mese, le voci aggiuntive vengono aggregate sotto la voce "Altro". Se i tuoi rapporti visualizzano un'elevata proporzione di voci "Altro", potrebbe essere necessario aumentare tale limite. Per prestazioni ottimali, utilizza valori pari o inferiori a 100.000<p><b>Target di utilizzo della memoria</b><br>Questa impostazione indica al processo Urchin la quantità di memoria da utilizzare durante l'esecuzione. Per siti di grandi dimensioni, una maggiore quantità di memoria può permettere di migliorare le prestazioni, in quanto il sistema utilizza in misura minore la cache su disco. L'impostazione predefinita è poco elevata: è consigliabile aumentare l'obiettivo fino a un minimo di 512 MB sui sistemi con memoria fisica sufficiente.<p><b>Dettagli geografici</b><br><p><b>Informazioni geografiche</b><br>Questa impostazione controlla quali dati geografici saranno inclusi nei rapporti del profilo. Selezionando opzioni aggiuntive aumenta la quantità di memoria utilizzata dal motore di elaborazione dei log (circa 350 MB per le reti, 100 MB per i domini e 20-150 MB per le aree geografiche, a seconda del database geografico scelto). Urchin viene fornito con vari database geografici, che variano a seconda del livello di dettaglio Paese/regione fornito. Seleziona il database geografico che meglio si adatta alle tue esigenze dal menu a discesa.<p><b>Database geografico</b><br>Urchin viene fornito con vari database geografici, ciascuno con differenti livelli di informazioni sulle aree geografiche:<br>- Mondo (contiene informazioni dettagliate su Paese/Regione/Città per tutto il mondo)<br>- Mondo versione leggera (contiene informazioni solo a livello di Paese per tutto il mondo)<br>- Database regionali come Stati Uniti, Unione Europea e Giappone che contengono informazioni dettagliate sulle regioni corrispondenti e informazioni a livello di Paese per il resto del mondo). <br><br>Le impostazioni dei database geografici possono essere definite globalmente o a livello di profilo.<p><b>Controls</b><br>Fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore dello schermo consentono di accedere alle altre impostazioni.
+545	<nobr><span class=title1><b>Impostazioni di elaborazione: Utilizzo memoria (Ref. #A-2303)</b></span></nobr><br>Questa schermata consente di impostare l'utilizzo approssimato della memoria del motore di elaborazione dei log di Urchin. A meno che tu non abbia file di log molto grandi, ti consigliamo di utilizzare l'impostazione di default. Per grandi log, la velocità di Urchin può essere aumentata incrementando l'uso della memoria per sfruttare le risorse disponibili. L'impostazione della memoria su valori troppo alti può causare errori nell'allocazione della memoria o rallentare lo swapping.<p><b>Target di utilizzo della memoria</b><br>Utilizza il menu a discesa per selezionare la quantità di memoria che Urchin deve utilizzare durante l'elaborazione. Urchin può utilizzare un po' più o un po' meno del numero selezionato, a seconda dei dati. L'opzione Personalizza deve essere utilizzata solo in casi molto specifici e da amministratori Urchin esperti.<p><b>Impostazioni personalizzate di utilizzo della memoria</b><br>Se viene selezionata l'impostazione personalizzata della memoria, vengono visualizzate opzioni supplementari per consentire l'impostazione manuale di ciascuno dei buffer primari di Urchin. Le impostazioni di questi valori in megabyte modificano le dimensioni del buffering, influendo quindi sulle prestazioni complessive. Non è consigliato modificare questi valori.<p><b>Comandi</b><br>Per salvare le modifiche fai clic sul pulsante Aggiorna. Le schede nella parte superiore della schermata consentono di accedere ad altre impostazioni.
+546	<nobr><span class=title1><b>Impostazioni: Contabilità (Ref. #A-3000)</b></span></nobr><br>Questa schermata offre una rapida panoramica sullo stato di base di questa installazione Urchin sotto il profilo di utenti/gruppi e licenze. I parametri sono:<ul><li>Account (solo modalità Datacenter): Il numero di clienti o supergruppi presenti nel sistema. Gli account sono utilizzati per raggruppare insieme più profili e utenti. Gli account possono avere privilegi amministrativi distinti.<li>Utenti: Il numero di singoli utenti che hanno accesso ai rapporti e/o al sistema di amministrazione.<li>Gruppi: Il numero di gruppi di utenti che sono stati configurati.<li>Profili: Il numero di profili che sono stati configurati. <li>Sorgenti log: Il numero di sorgenti log che sono state configurate. <li>Filtri log: Il numero di filtri log che sono stati configurati. <li>Sorgenti CPC: Il numero di sorgenti CPC che sono state configurate.</ul>.
+547	<nobr><span class=title1>    <b>Profili (Ref. #A-2100)</b></span></nobr><br>Questa schermata ha lo scopo di visualizzare i profili configurati per questa installazione di Urchin, di consentire la regolazione dei relativi parametri e di permettere all'amministratore di aggiungere profili. Ciascun sito web per il quale desideri creare rapporti richiede un profilo di configurazione.<p><b>Aggiungi</b> (solo super amministratore)<br>Per aggiungere un profilo, fai clic sul pulsante Aggiungi nella parte superiore destra della schermata. Viene avviata la procedura guidata che consente di aggiungere un profilo in pochi passaggi.<p><b>Modifica</b><br>Accanto a ciascun profilo dell'elenco è presente una serie di pulsanti che ne consente il controllo. Il pulsante Modifica consente di accedere a tutte le impostazioni relative a questo profilo, organizzate in schede.<p><b>Elimina</b> (solo super amministratore)<br>Fai clic sul pulsante Elimina accanto a un profilo per rimuovere il profilo dalla configurazione. Vengono così rimossi in modo definitivo tutti i dati e la configurazione del profilo in oggetto. Verrà eliminata analogamente la cronologia dell'elaborazione relativa al profilo.<p><b>Copia</b> (solo super amministratore)<br>Il pulsante "Copia" consente di creare facilmente un nuovo profilo con impostazioni simili a quelle di un profilo già esistente. Fai clic su questo pulsante per avviare la procedura guidata di copia, nel corso della quale verrà chiesto di immettere un nome per il nuovo profilo. <p><b>Esegui</b> (solo super amministratore)<br>Il pulsante "Esegui" è una scorciatoia che consente di accedere alla schermata Esegui/pianifica, nella quale è possibile scegliere di eseguire il profilo immediatamente oppure pianificarne l'esecuzione su base periodica. Nessuno dato dei rapporti sarà disponibile finché il profilo è in esecuzione.<p><b>Visualizza</b><br>Questo pulsante permette di aprire direttamente la finestra di creazione dei rapporti per ciascun profilo.<p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti. <p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter il menu Account può essere utilizzato per filtrare le voci da visualizzare.
+548	<nobr><span class=title1>    <b>Gestione log (Ref. #A-1600)</b></span></nobr><br>Lo scopo di questa schermata è quello di visualizzare le sorgenti log configurate per questa installazione di Urchin, di consentire la correzione dei parametri di ciascuna e di fornire all'amministratore i diritti per aggiungere sorgenti log.<p><b>Aggiungi</b><br>Per aggiungere una sorgente log, fai clic sul pulsante Aggiungi nella parte superiore destra della schermata. In questo modo viene avviata la procedura guidata Aggiungi sorgente log che ti guiderà attraverso i passaggi richiesti per aggiungere una sorgente log.<p><b>Modifica</b><br>Nell'elenco, accanto a ciascuna sorgente log vi è una serie di pulsanti che ti consentono di controllarla. Il pulsante Modifica consente di accedere a tutte le impostazioni per questa sorgente log tramite schede.<p><b>Elimina</b><br>Fai clic sul pulsante Elimina accanto a una sorgente log per eliminarla dalla configurazione e da tutti i profili che vi fanno riferimento. In questo modo non vengono eliminati né il file di log né i dati di un profilo.<p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci elencate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti.<p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter, il menu Account può filtrare le voci elencate.
+549	<nobr><span class=title1>    <b>Gestione filtri (Ref. #A-1700)</b></span></nobr><br>Questa schermata visualizza i filtri configurati per questa installazione di Urchin, consente la regolazione dei relativi parametri e permette all'amministratore di aggiungere filtri. I filtri possono essere applicati a singoli profili o sorgenti log. È possibile creare filtri per escludere o includere gli hit corrispondenti al criterio impostato o per convertire un URL dinamico in un URL più facilmente comprensibile quando visualizzato nei rapporti. Nota. Il filtro Decodifica parole chiave, che formatta correttamente le parole chiave/i termini di ricerca, è attivo per impostazione predefinita e non deve essere eliminato.<p><b>Aggiungi</b><br>Per aggiungere un filtro, fai clic sul pulsante Aggiungi nella parte superiore destra della schermata. Viene avviata la procedura guidata che consente di aggiungere un filtro in pochi passaggi.<p><b>Modifica</b><br>Accanto a ciascun filtro dell'elenco è presente una serie di pulsanti che ne consente il controllo. Il pulsante Modifica consente di accedere a tutte le impostazioni relative a questo filtro, organizzate in schede.<p><b>Elimina</b><br>Fai clic sul pulsante Elimina accanto a un filtro per rimuovere il filtro dalla configurazione e da tutti i profili e le sorgenti log che vi fanno riferimento. <p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti. <p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter il menu Account può filtrare le voci da visualizzare.
+550	<nobr><span class=title1><b>Impostazioni: Licenza (Ref. #A-6001)</b></span></nobr><br>Questa schermata indica lo stato della licenza corrente di questa installazione e consente di eseguire diverse azioni a seconda delle modalità di denominazione della pagina Licenza: richiesta di una licenza demo, attivazione di un codice di serie demo o definitivo esistente, riattivazione di una licenza esistente. Le informazioni sullo stato della licenza includono il tipo di licenza esistente, la data di scadenza delle licenze demo, il codice di serie utilizzato per attivare la licenza e la versione della licenza.<p><b>Richiedi licenza demo</b><br>Fai clic sul link Richiedi licenza demo per ottenere una licenza demo per un periodo limitato di tempo. Si aprirà automaticamente la pagina protetta di Urchin per la registrazione delle licenze. Dopo avere inserito le informazioni di contatto facoltative e accettato il contratto di licenza, verrà visualizzato un link che consente di installare automaticamente la licenza demo.<p><b>Attiva licenza</b><br>Se hai ricevuto un codice di serie demo o definitivo da un distributore o un rivenditore autorizzato Urchin, fai clic su questo link. Si aprirà automaticamente la pagina protetta di Urchin in cui eseguire la registrazione e attivare la licenza. Verrà quindi richiesto di inserire il codice di serie ricevuto. Dopo avere inserito le informazioni di contatto facoltative e accettato il contratto di licenza, verrà visualizzato un link che consente di attivare automaticamente il codice di serie e installare la relativa licenza nella tua configurazione Urchin.<p><b>Riattiva licenza</b><br>Qualora sia necessario spostare o ripristinare l'installazione di Urchin, verrà chiesto di riattivare la licenza. Fai clic sul link Riattiva licenza per riattivare l'installazione. Si aprirà automaticamente la pagina protetta di Urchin per la registrazione. Dopo avere accettato le condizioni del contratto di licenza, sarà disponibile un link per la riattivazione della licenza.
+551	<nobr><span class=title1>    <b>Gruppi(Ref. #A-1400)</b></span></nobr><br>Questa schermata visualizza i gruppi configurati per questa installazione di Urchin, consente la regolazione dei relativi parametri e permette all'amministratore di aggiungere gruppi. I gruppi consentono di controllare le autorizzazioni di accesso alla visualizzazione dei rapporti concesse a un gruppo di utenti.<p><b>Aggiungi</b><br>Per aggiungere un gruppo, fai clic sul pulsante Aggiungi in alto a destra nella schermata. Viene avviata la procedura guidata che consente di aggiungere un gruppo in pochi passaggi.<p><b>Modifica</b><br>Accanto a ciascun gruppo dell'elenco è presente una serie di pulsanti che ne consente il controllo. Il pulsante Modifica consente di accedere a tutte le impostazioni di questo gruppo, organizzate in schede.<p><b>Elimina</b><br>Fai clic sul pulsante Elimina accanto a un gruppo per rimuoverlo dalla configurazione. <p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti.<p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter il menu Account può essere utilizzato per filtrare le voci da visualizzare.
+552	<nobr><span class=title1>    <b>Utenti (Ref. #A-1300)</b></span></nobr><br>Questa schermata visualizza gli utenti configurati per questa installazione di Urchin, consente la regolazione dei relativi parametri e permette all'amministratore di aggiungere utenti. Ciascun utente dispone di nome utente e password. L'autorizzazione per la visualizzazione dei rapporti è controllata tramite la configurazione utente.<p><b>Aggiungi</b><br>Per aggiungere un utente, fai clic sul pulsante Aggiungi in alto a destra nella schermata. Viene avviata la procedura guidata che consente di aggiungere un utente in pochi passaggi.<p><b>Modifica</b><br>Accanto a ciascun utente dell'elenco è presente una serie di pulsanti che ne consente il controllo. Il pulsante Modifica consente di accedere a tutte le impostazioni relative a questo utente, organizzate in schede.<p><b>Elimina</b><br>Fai clic sul pulsante Elimina accanto a un utente per rimuovere l'utente dalla configurazione. <p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti<p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter il menu Account può filtrare le voci da visualizzare.
+553	<nobr><span class=title1><b>Programma di pianificazione (Ref. #A-2600)</b></span></nobr><br>L'obiettivo di questa schermata è visualizzare le attività pianificate per l'esecuzione in ogni profilo della configurazione. Per ciascun profilo sono disponibili diverse informazioni, tra cui il nome del profilo, la frequenza di esecuzione, lo stato di esecuzione (Non pianificato, In sospeso, In coda, In esecuzione, In corso di annullamento) e, per le attività in esecuzione, la percentuale di completamento, le azioni disponibili e l'ora di inizio dell'attività. Fai clic sulle frecce sotto ogni campo per ordinare l'elenco in base al campo in oggetto. NOTA. L'attività "aggiornamento dati geografici#; è un'attività interna che consente di aggiornare il database geografico utilizzato per l'elaborazione delle informazioni geografiche sui visitatori.<p><b>Nome profilo</b><br>Sono visualizzati tutti i profili configurati.<p><b>Frequenza</b><br>Visualizza la frequenza di esecuzione del profilo<p><b>Stato</b><br>Gli stati delle attività sono Non pianificato, In sospeso (in attesa della successiva esecuzione pianificata), In coda (l'attività è presente nella coda di esecuzione del Programma di pianificazione attività), In esecuzione o In corso di annullamento(l'attività verrà annullata il prima possibile). Per le attività in corso di esecuzione o di annullamento, la voce Stato è collegata alla finestra di avanzamento, utilizzabile per visualizzare i dettagli di esecuzione dell'attività. Fai clic sullo stato di un'attività per aprire la relativa finestra.<p><b>Azione</b><br>In questo campo sono mostrate le azioni per le attività pianificate. Il campo Azione presenta l'azione "Annulla" per le attività in corso di esecuzione.<p><b>Percentuale completata</b><br>Per le attività in esecuzione, questo campo mostra una barra di avanzamento che indica una percentuale approssimativa dell'elaborazione dell'attività completata.<p><b>Ora di inizio</b><br>Per le attività in esecuzione, visualizza l'ora di inizio dell'attività nel fuso orario GMT.<p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti. <p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter il menu Account può essere utilizzato per filtrare le voci da visualizzare.
+554	<nobr><span class=title1><b>Programma di pianificazione: cronologia di un'attività profilo (Ref. #A-2500)</b></span></nobr><br>Questa schermata elenca la cronologia di ogni attività eseguita tramite il Programma di pianificazione attività profilo o il pulsante Esegui ora. È riportato un riepilogo delle attività, con informazioni importanti su ciascuna di esse. Il campo Stato può essere selezionato con il mouse per visualizzare i dettagli di esecuzione relativi a una specifica attività della cronologia. Le frecce sotto ogni campo consentono di ordinare le voci in base a quel campo.<p>Ciascuna voce mostra il nome dell'attività (profilo), l'host e l'ID di elaborazione, lo stato dell'attività, il momento in cui è stata avviata, il momento in cui è terminata e la quantità di dati elaborati.<p><b>Stato</b> (con link ipertestuale)<br>Lo stato di ogni attività "Completata" "Annullata", "Avviso" o "Errore". Ciascuna attività è codificata con un colore diverso e l'elenco può essere ordinato in base allo stato facendo clic sulla freccia sotto la parola "Stato". Per visualizzare i dettagli di esecuzione di una specifica attività, fai clic sulla voce dello stato con la codifica a colori accanto all'attività desiderata. Si aprirà una nuova finestra in cui verranno visualizzati i dettagli di esecuzione.<p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per navigare tra le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti. <p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter il menu Account può essere utilizzato per filtrare le voci da visualizzare.
+555	<nobr><span class=title1><b>Importa configurazione IIS (Ref. #A-5004)</b></span></nobr><br>Questa schermata consente di importare le configurazioni dei siti esistenti da una configurazione di server web IIS Microsoft e convertire i siti in profili Urchin. Questo metodo può comportare un sensibile risparmio di tempo ed è quello consigliato per configurare rapidamente i sistemi IIS. Seleziona la casella accanto a ogni sito rilevato per selezionare quelli da importare e fai clic sul pulsante Importa profili.<p><b>Seleziona per importare</b><br>Questo modulo rileva automaticamente i siti web IIS locali. Seleziona la casella di controllo a destra di ogni sito rilevato, per importarlo. Se invece di una casella è presente un segno di spunta fisso, significa che il sito è stato già importato. Per completare l'importazione, fai clic sul pulsante Importa profili. <p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero delle voci elencate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti.
+556	Questa schermata visualizza un riepilogo dell'account che hai configurato. Se le impostazioni ti sembrano corrette, fai clic su Termina per completare l'installazione. Se desideri apportare modifiche, fai clic sul pulsante Indietro.
+557	Aggiunta del gruppo riuscita!  Questo account è ora disponibile per organizzare profili, utenti, sorgenti log, ecc.
+558	<nobr><span class=title1><b>Profili: impostazioni (Ref. #A-2101)</b></span></nobr><br>Utilizza questa schermata per controllare il tipo di profilo, il metodo di monitoraggio e i rapporti disponibili.<p><b>Account facoltativo</b> (Solo modalità Datacenter)<br>Visualizza l'account al quale è associato il profilo.<p><b>Nome profilo</b><br>Questo è il nome del profilo, in genere l'indirizzo del sito web, ad esempio &#;www.urchin.com&#;. Tuttavia, se vi sono più profili per lo stesso sito, è normale assegnare a ciascun profilo un nome che consenta di distinguerlo dagli altri, ad esempio &#;www.urchin.com - filtrato&#;<p><b>Tipo profilo</b><br>Questa impostazione non richiede in genere alcuna regolazione, a meno che tu non abbia mappe dati configurate. Se disponi di mappe dati personalizzate, utilizza questa impostazione per definire la mappa dati che si applica a questo profilo.<p><b>Sito web e-commerce</b><br>Se hai intenzione di elaborare dati e-commerce insieme a questo profilo, seleziona &#;Sì&#;. In caso contrario, seleziona &#;No&#;. Se E-commerce è disattivato, puoi impostare un importo obiettivo per fornire informazioni generali sul ROI.<p><b>Metodo monitoraggio visitatore</b><br>Urchin è dotato di due modalità per identificare i visitatori. Il modo più preciso è quello di utilizzare la codifica JavaScript UTM. Se UTM è installato, selezionalo come opzione. Se UTM non è installato, seleziona il metodo IP+User-Agent. Alcuni rapporti non verranno compilati se non si utilizza UTM.<p><b>Dominio UTM</b><br>In condizioni normali, lascia vuoto questo campo. UTM individuerà automaticamente il dominio per il sito. La funzione Dominio UTM viene utilizzata unicamente in caso di domini coincidenti che devono essere monitorati separatamente. <p><b>Set rapporti</b><br>Questa impostazione in genere non deve essere modificata, a meno che siano stati configurati set di rapporti personalizzati. Se disponi di set di rapporti personalizzati, utilizza questa impostazione per controllare quale set è utilizzato per questo profilo.<p><b>Dashboard disponibili</b><br>Il set di rapporti predefinito comprende tre dashboard. Questa impostazione consente di definire la dashboard disponibile nei rapporti e quella da visualizzare per prima come predefinita.<p><b>Sezioni rapporti</b><br>Oltre alle dashboard, i rapporti presentano quattro sezioni principali. Queste sezioni possono essere disattivate deselezionando le caselle di controllo appropriate. Per limitare l'accesso ai rapporti in base all'utente, fai clic sulla scheda &#;Utenti&#; e utilizza la funzione &#;Sostituisci dashboard&#;. Fai clic sul pulsante Aggiorna per salvare le modifiche.
+559	Risultato procedura guidata account
+560	<nobr><span class=title1>    <b>Account(Ref. #A-1200)</b></span></nobr><br>Questa schermata visualizza gli account configurati per questa installazione di Urchin, permette la regolazione dei relativi parametri e consente all'amministratore di aggiungere account. Gli account vengono utilizzati per organizzare profili, sorgenti log, utenti e gruppi sotto un'unica voce aziendale. Per i fornitori con clienti complessi, l'uso di un account per il controllo di un cliente semplifica il monitoraggio di tutti i componenti associati a tale cliente.<p><b>Aggiungi</b><br>Per aggiungere un account, fai clic sul pulsante Aggiungi nell'angolo in alto a destra dello schermo. Viene avviata la procedura guidata che consente di aggiungere un account in pochi passaggi.<p><b>Modifica</b><br>Accanto a ciascun account dell'elenco è presente una serie di pulsanti che ne consente il controllo. Il pulsante Modifica consente di accedere a tutte le impostazioni relative all'account, organizzate in schede.<p><b>Elimina</b><br>Fai clic sul pulsante Elimina accanto a un account per rimuovere l'account dalla configurazione.<p><i>ATTENZIONE.</i>Tutti i profili, le sorgenti log, i filtri, gli utenti e i gruppi associati a questo account verranno eliminati.<p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti.
+561	<nobr><span class=title1><b>Profili. Sorgenti log (Ref. #A-2102)</b></span></nobr><br>Utilizza questa schermata per aggiungere <b>sorgenti log da elaborare</b> dall'elenco <b>sorgenti log disponibili</b>. Nella colonna <b>Sorgenti log da elaborare</b> sono visualizzate le sorgenti log che vengono elaborate come parte del profilo. In genere ciascun profilo è associato a una sola sorgente log, ma nelle configurazioni con bilanciamento del carico o per i siti dotati di log di e-commerce (in formato ELF) o di log CPC, possono esistere più sorgenti log. <p><b>Comandi:</b><br><ul><li><b>Aggiungi</b><br>Fai clic sull'icona Aggiungi per aggiungere un'ulteriore sorgente log alle sorgenti log disponibili. Viene avviata la procedura guidata che consente di aggiungere in pochi passaggi una sorgente log locale o remota. <li><b>Modifica</b><br>Evidenzia le sorgenti log disponibili che desideri modificare e fai clic sull'icona Modifica. <li>Fai clic sul pulsante <b>Aggiorna</b> per salvare le modifiche. <li>Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del profilo.
+562	<nobr><span class=title1><b>Profili: Filtri (Ref. #A-2103)</b></span></nobr><br>Utilizza questa schermata per aggiungere <b>filtri applicati</b> dall'elenco <b>Filtri disponibili</b>. <p><b>Comandi:</b><br><ul><li><b>Aggiungi</b><br>Fai clic sull'icona Aggiungi per aggiungere un filtro supplementare ai filtri disponibili. Viene avviata la procedura guidata che consente di aggiungere in pochi passaggi un filtro nuovo o preesistente.<li><b>Modifica</b><br>Evidenzia il filtro disponibile che desideri modificare e fai clic sull'icona Modifica. <br><li>Fai clic sulle frecce Su e Giù per modificare l'ordine di applicazione dei filtri.<br><li>Fai clic sul pulsante <b>Aggiorna</b> per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del profilo.
+563	<nobr><span class=title1><b>Profili: Utenti(Ref. #A-2104)</b></span></nobr><br>Utilizza questa schermata per concedere l'accesso per visualizzare i rapporti del profilo a utenti configurati nel sistema Urchin. Quando un utente non amministrativo accede al sistema Urchin, gli verrà concesso l'accesso solo a quei rapporti a cui è stato aggiunto dall'amministratore. <p><b>Assegna utenti</b><br>Per concedere l'accesso al profilo per un determinato utente, seleziona l'utente nel riquadro di sinistra "Profili disponibili", quindi fai clic sulla freccia rivolta verso destra. Per negare l'accesso al profilo per un determinato utente, seleziona l'utente nel riquadro di destra, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiorna per salvare le modifiche.<p><b>Sostituisci dashboard</b><br>Questa opzione consente di modificare i rapporti e le dashboard disponibili per i singoli utenti. Fai clic su un utente nella finestra "Accesso concesso" per evidenziare l'utente. Fai quindi clic sul pulsante "Sostituisci dashboard" per visualizzare un popup in cui puoi attivare e disattivare intere sezioni dei rapporti per l'utente selezionato e selezionare la dashboard finale predefinita per gli utenti. Quando sposti un utente da Utenti disponibili a Accesso concesso, devi aggiornare prima che questa opzione sia disponibile per questo utente specifico.<p><b>Comandi</b><br><ul><li><b>Aggiungi</b><br>Fai clic sull'icona Aggiungi per avviare la procedura guidata utente e aggiungere l'utente all'elenco degli utenti disponibili.<li><b>Modifica</b><br>Per modificare l'utente evidenziato, fai clic sull'icona Modifica.<li>Per salvare le modifiche fai clic sul pulsante Aggiorna. <li>Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili per il profilo.
+564	Questa schermata visualizza tutti i parametri configurati per il file di log che hai selezionato. Se le informazioni sono errate, per modificare le impostazioni fai clic su Modifica nella parte superiore destra. Se i filtri o le informazioni relative a Profili assegnati a devono essere modificate, fai clic sul pulsante Modifica nella sezione corrispondente di questa pagina.
+565	<nobr><span class=title1><b>Gestione log: Impostazioni log (Ref. #A-1601)</b></span></nobr><br>Questa schermata consente di configurare l'ubicazione e il formato della sorgente log. Per creare rapporti affidabili, è essenziale che queste impostazioni vengano configurate correttamente. <p><b>Account facoltativo</b> (solo modalità Datacenter)<br>Visualizza l'account a cui è associata la sorgente log.<p><b>Ubicazione file di log</b><br>Seleziona Locale se il file di log è accessibile sul file system locale o su un file system di rete installato sul computer. Seleziona Remoto se il file di log deve essere trasferito da un sistema remoto tramite FTP o HTTP oppure è accessibile tramite una condivisione UNC (solo Windows). Per i log remoti, facendo clic sul pulsante Aggiorna è possibile visualizzare la scheda "Impostazioni remote" nella parte superiore della schermata. Fai clic sulla scheda per configurare i dettagli di accesso al log remoto.<p><b>Nome sorgente log</b><br>Specifica il nome scelto per la sorgente log. <p><b>Formato log</b><br>Utilizza questa opzione per specificare il formato del file di log in corso di elaborazione. Per la maggior parte dei server web occorre selezionare il tipo di formato log <i>auto</i>. Altri tipi di formati log di server web sono forniti per compatibilità inversa con versioni precedenti di Urchin, anche se in genere non sono necessari. È possibile creare formati log personalizzati utilizzando i modelli contenuti nella directory lib/custom/logformats della distribuzione Urchin.<ul><li><b>Auto:</b> questo formato rileva automaticamente i formati log dei server web, inclusi Apache, W3C (Microsoft IIS), NCSA, Netscape e iPlanet. <li><b>Campagna:</b> utilizza questo formato per i dati sui costi delle campagne specificatamente formattati per l'utilizzo di Urchin. Per informazioni specifiche, consulta la documentazione online. Il formato log delle campagne non può essere rilevato automaticamente.<li><b>Elf2:</b> utilizza questo formato per i log di e-commerce in formato ELF2. Il formato log E-commerce non può essere rilevato automaticamente.<li><b>Google:</b> utilizza questo formato per i log che contengono i dati sul costo per clic di Google. Il formato log Google non può essere rilevato automaticamente.<li><b>NCSA:</b> in genere questo formato può essere rilevato automaticamente e viene utilizzato di norma dai server web Apache. Per creare rapporti completi, è necessario utilizzare la registrazione combinata estesa, che nella maggior parte dei casi non rappresenta l'impostazione predefinita di Apache. <li><b>Netscape:</b> i server Netscape preesistenti (non iPlanet) utilizzano questo formato per impostazione predefinita.<li><b>Overture:</b> utilizza questo formato per i log che contengono i dati sul costo per clic di Overture. Il formato log Overture non può essere rilevato automaticamente.<li><b>W3C:</b> questo formato può essere rilevato automaticamente e viene utilizzato per i server web che registrano in formato W3C standard, come i server Microsoft IIS.</ul></ul></ul> <p><b>Percorso file di log</b><br>Per le sorgenti log locali, il percorso file di log specifica l'ubicazione sul file system locale del file di log. Per semplificare l'operazione, utilizza il pulsante Sfoglia. <p><b>Comandi</b><br>Fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili della sorgente log.
+566	Questa schermata visualizza tutti i parametri configurati per il filtro di log che hai selezionato. Se le informazioni sono errate, per modificare le impostazioni fai clic su Modifica nella parte superiore destra della schermata. Se le informazioni "Sorgenti log applicate a" devono essere modificate, fai clic sul pulsante Modifica nella sezione corrispondente di questa pagina.
+567	<nobr><span class=title1>   <b>Account: Informazioni (Ref. #A-1201)</b></span></nobr><br>Questa schermata consente di modificare le varie impostazioni dell'account.<p><b>Nome account</b><br>Ogni account deve avere un nome univoco. Il nome può essere arbitrario o corrispondere al nome del cliente o del sito web.<p><b>Contatto e email contatto</b><br>I dati di contatto sono facoltativi e consentono di tenere traccia più facilmente dei clienti.<p><b>Ubicazione dati rapporto</b><br>È un'impostazione facoltativa che consente di specificare il percorso della directory per la memorizzazione dei dati dei rapporti di tutti i profili appartenenti all'account. L'ubicazione predefinita è la directory data/reports/<i>nome_account</i> nell'ambito della distribuzione Urchin. L'intera directory dei dati può essere spostata a livello di sistema modificando il file urchin.conf nella directory etc. Per semplificare l'operazione, è disponibile un pulsante Sfoglia.<p><b>Ubicazione cronologia esecuzione</b><br>Questa impostazione facoltativa consente di specificare il percorso della directory per la memorizzazione dei dati della cronologia di esecuzione di tutti i profili appartenenti all'account. L'ubicazione predefinita è la directory data/history/<i>nome_account</i> nell'ambito della distribuzione Urchin. Per semplificare l'operazione, è disponibile un pulsante Sfoglia.<p><b>Ubicazione navigazione directory</b><br>Questa impostazione facoltativa agisce come misura di sicurezza nel momento in cui si concedono a un account i diritti di amministratore per creare profili. Un percorso di directory immesso in questo campo limita la capacità dell'amministratore dell'account di esplorare la directory per cercare file di log. Per impostazione predefinita non vi sono limitazioni alla navigazione. Questa impostazione può essere modificata a livello dell'intero sistema modificando il file urchin.conf nella directory etc. Per semplificare l'operazione, è disponibile un pulsante Sfoglia.<p><b>Comandi</b><br>Fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili dell'account.
+568	<nobr><span class=title1><b>Profili: Esegui/Pianifica (Ref. #A-2105)</b></span></nobr><br>Questa schermata consente di programmare l'esecuzione di un'attività (elabora le sorgenti log associate a un profilo) o di eseguire immediatamente l'attività facendo clic sul pulsante Esegui ora a destra. Facendo clic su uno dei pulsanti di programmazione risultano disponibili ulteriori opzioni, ad esempio l'ora e il minuto desiderati, a seconda della frequenza prescelta. Fai clic sul pulsante Aggiorna per applicare le eventuali modifiche apportate. Se si seleziona il pulsante Esegui ora, viene programmata l'esecuzione immediata del profilo. Per visualizzare i dettagli dell'esecuzione, controlla lo stato dell'attività in Programma di pianificazione.<p><b>Esegui ora</b><br>Per elaborare questo profilo immediatamente, fai clic sul grande pulsante verde Esegui ora, sulla destra. In tal modo, l'attività verrà messa in coda per essere eseguita dal Programma di pianificazione di Urchin<p><b>Pianifica</b><br>Per programmare l'esecuzione di questa attività di profilo in un secondo momento o periodicamente, seleziona una delle opzioni di frequenza: Ogni ora, Giornaliera, Settimanale o Mensile. Il profilo verrà eseguito in base a tale frequenza. Per specificare l'ora esatta di avvio, utilizza i comandi della data visualizzati dopo la selezione della frequenza. Tutti gli orari vengono specificati come orari locali rispetto al sistema su cui è in esecuzione Urchin.<p><b>Comandi</b><br>Fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del profilo.
+569	<nobr><span class=title1><b>Profili: rapporti (Ref. #A-2106)</b></span></nobr><br>La schermata Impostazioni rapporti consente di controllare varie importanti funzioni di elaborazione di Urchin compresa l'identificazione di determinati filtri e impostazioni proxy.<p><b>URL sito web</b><br>Questa impostazione è utilizzata per creare link che indirizzano al tuo sito web. Deve essere il nome di dominio completo, compreso http://. <p><b>Domini del sito</b> (solo super amministratore)<br>In questa impostazione devono essere elencati tutti i possibili domini del tuo sito web, con e senza "www". Questo campo è utilizzato per determinare se un referral è esterno al tuo sito. Usa le virgole per separare ciascuna voce di dominio. <p><b>Pagina predefinita</b><br> Questa dovrebbe essere impostata sulla pagina "default" (o "index") nelle directory del sito. In genere si tratta di "index.html", ma nei server Windows IIS, è spesso "Default.htm" o "index.htm". Queste informazioni consentono a Urchin di riconciliare le voci del log quali "http://www.urchin.com/" e "http://www.urchin.com/index.html", che in realtà sono nella stessa pagina. Se le informazioni della Pagina predefinita non vengono inserite correttamente, queste due pagine vengono considerate diverse. Si deve specificare solo una pagina predefinita. <p><b>Impostazioni proxy</b> (solo super amministratore)<br>Alcune installazioni possono richiedere l'utilizzo delle impostazioni del proxy per poter visualizzare l'home page nei rapporti overlay. Poiché le query overlay sono avviate dal sistema Urchin, è possibile che le impostazioni del firewall non consentano la comunicazione esterna. In questo caso, puoi utilizzare un proxy per consentire questo tipo di query. Il server proxy deve essere il nome host del server. La porta proxy deve essere il numero di porta che comunica con il proxy. I campi nome utente e password possono fornire sicurezza aggiuntiva, se un nome utente e una password sono necessari per accedere al proxy. Lascia vuoti tutti i campi, a meno che non ricevi un errore durante l'utilizzo della funzione overlay. In tal caso, contatta l'amministratore di rete per le impostazioni.<p><b>Elaborazione log in parallelo</b> (solo super amministratore)<br>Se hai log molto grandi con bilanciamento del carico, per migliorare le prestazioni può essere consigliabile eseguirli in parallelo. Ciò dipende da molti fattori, tra cui le dimensioni dei dati e le prestazioni IO della macchina. In particolare, se hit di una sessione singolo utente sono presenti in più log, puoi provare ad abilitare questa impostazione per migliorare le prestazioni. <p><b>Scarto con fuso orario</b> (solo super amministratore)<br>Questa impostazione determina il fuso orario dei dati nei rapporti Urchin. Poiché tutti gli hit contengono riferimenti a GMT, Urchin può registrare i dati nei rapporti in qualsiasi fuso orario. L'opzione "Ora locale" registra i dati in base al fuso orario impostato sul server su cui è in esecuzione Urchin. Per utilizzare un'impostazione diversa, seleziona lo scarto desiderato rispetto al fuso orario di Greenwich (GMT). <p><b>Corrispondenza parole chiave organiche</b> (solo super amministratore)<br>Questa impostazione permette di controllare il modo in cui Urchin rileva i motori di ricerca e le parole chiave per i relativi rapporti. Utilizzando questo elenco (valori separati da virgola), Urchin cerca i parametri nelle query di ricerca dei siti referenti che corrispondono. Urchin acquisisce quindi il valore del parametro come parola chiave o termine della ricerca utilizzato nel referral. Utilizza questo elenco per aggiungere voci al fine di acquisire termini di ricerca che potrebbero non essere inclusi automaticamente. L'elenco predefinito è adatto per la maggior parte dei motori di ricerca.<p><b>Corrispondenza MIME delle visualizzazioni di pagina</b> (solo super amministratore)<br> Questo elenco di valori separati da virgola controlla quali sono le estensioni di file trattate come visualizzazioni di pagina. È possibile impostare l'elenco in modo da escludere o includere determinate estensioni. L'elenco predefinito è utilizzabile con la maggior parte dei siti.<p><b>Corrispondenza parametri pagina</b><br>Questa impostazione permette di controllare i parametri che verranno acquisiti o ignorati da Urchin nel rapporto Parametri. I parametri provengono dalla porzione di query dell'URL richiesto e possono contenere termini di ricerca interni o altri contenuti dinamici. Urchin acquisirà automaticamente queste coppie nome/valore e le inserirà nel rapporto Parametri. Questo elenco di valori separati da virgola consente di escludere o includere determinati parametri. Ad esempio, un sito con milioni di ID di sessione casuali potrebbe voler escludere la variabile SID da questo rapporto per utilizzare meno spazio di archiviazione dati.<p><b>I download corrispondono</b> (solo super amministratore)<br> Questo elenco di valori separati da virgola controlla quali sono le estensioni di file trattate come download nel rapporto Download. Modifica l'elenco per includere le estensioni di file utilizzate per i download.<p><b>Dettagli geografici</b><br><p><b>Informazioni geografiche</b><br>Questa impostazione controlla quali dati geografici saranno inclusi nei rapporti del profilo. Selezionando opzioni aggiuntive si aumenta la quantità di memoria utilizzata dal motore di elaborazione dei log (circa 350 MB per le reti, 100 MB per i domini e 20-150 MB per le aree geografiche, a seconda del database geografico scelto). Urchin viene fornito con vari database geografici, che variano a seconda del livello di dettaglio Paese/regione fornito. Seleziona il database geografico che meglio si adatta alle tue esigenze dal menu a discesa.<p><b>Database geografico</b><br>Urchin viene fornito con vari database geografici, ciascuno con differenti livelli di informazioni sulle aree geografiche:<br>- Mondo (contiene informazioni dettagliate su Paese/Regione/Città per tutto il mondo) <br>- Mondo versione leggera (contiene informazioni solo a livello di Paese per tutto il mondo)<br>- Database regionali come Stati Uniti, Unione Europea e Giappone che contengono informazioni dettagliate sulle regioni corrispondenti e informazioni a livello di Paese per il resto del mondo).<br> <p><b>Codifica dei caratteri</b><br>Se i log che elabori contengono dati non codificati in UTF-8, scegli per essi il formato di codifica corretto. Sono supportati i formati Giapponese nativo e Latin-1. <p><b>Valuta e precisione</b><br>Se possiedi un sito di e-commerce, utilizza le impostazioni Valuta e precisione per modificare i simboli di valuta predefiniti, la formattazione da visualizzare e la precisione numerica. <p><b>Comandi:</b><br>fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del profilo.
+570	<nobr><span class=title1>    <b>Gruppi: Informazioni sul gruppo (Ref. #A-1401)</b></span></nobr><br>Questa schermata consente di modificare le varie impostazioni del gruppo.<p><b>Account facoltativo</b> (solo modalità Datacenter)<br>Visualizza l'account a cui è associato il gruppo.<p><b>Nome gruppo</b><br>Utilizza questo campo per specificare il nome del gruppo. Utilizza un nome descrittivo. I nomi di gruppo devono essere univoci.<p><b>Descrizione gruppo</b> (facoltativo)<br>In questo campo facoltativo, è possibile monitorare lo scopo di ciascun gruppo. Immetti una breve descrizione per mantenere i gruppi organizzati.<p><b>Comandi</b><br>Fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del gruppo.
+571	<nobr><span class=title1><b>Gruppi: Utenti nel gruppo (Ref. #A-1402)</b></span></nobr><br>Questa schermata viene utilizzata per selezionare gli utenti che appartengono al gruppo. Le autorizzazioni per visualizzare i rapporti possono essere concesse al livello di gruppo. Gli utenti che appartengono a questo gruppo possono visualizzare tutti i rapporti accessibili al gruppo.<p><b>Aggiungi utente a gruppo</b><br>Per aggiungere un utente a questo gruppo, seleziona il nome utente dal riquadro Utenti disponibili, quindi fai clic sulla freccia rivolta verso destra. Per rimuovere un utente dal gruppo, selezionalo nel riquadro Utenti nel gruppo e fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiornamento per rendere attive le modifiche.<p><b>Comandi</b><br>Per salvare le modifiche fai clic sul pulsante Aggiorna. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del gruppo.
+572	<nobr><span class=title1><b>Gruppi: Accesso rapporto (Ref. #A-1403)</b></span></nobr><br>Questa schermata è utilizzata per concedere a questo gruppo l'autorizzazione per visualizzare i rapporti per uno o più profili esistenti. Oltre a singole autorizzazioni utente, agli utenti che appartengono a questo gruppo sarà concesso l'accesso ai rapporti come impostato nella presente schermata.<p><b>Concedi accesso</b><br>Per concedere l'accesso ai rapporti di un profilo, seleziona il nome del profilo dal riquadro Profili disponibili, quindi fai clic sulla freccia rivolta verso destra. Per negare accesso ai rapporti di un profilo, seleziona il profilo nel riquadro Accesso concesso, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiornamento per rendere attive le modifiche.<p><b>Comandi</b><br>Per salvare le modifiche fai clic sul pulsante Aggiorna. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del gruppo.
+573	<nobr><span class=title1><b>Gruppi: Riepilogo (Ref. #A-1404)</b></span></nobr><br>Questa schermata visualizza il set completo di parametri per il gruppo. Se sono necessarie modifiche, fai clic sulla scheda appropriata e aggiorna le impostazioni come necessario.<p><b>Comandi</b><br> Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili per il gruppo.
+574	<nobr><span class=title1><b>Profili: Riepilogo (Ref. #A-2107)</b></span></nobr><br>Questa schermata visualizza il set completo di parametri per il profilo. Esaminare attentamente le impostazioni prima di elaborare il profilo per verificare che tutto sia corretto. Se sono necessarie modifiche, fai clic sulla scheda appropriata e aggiorna le impostazioni come necessario. <p><b>Comandi</b><br>Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili per il profilo.
+575	<nobr><span class=title1><b>Gestione log: Impostazioni remote (Ref. #A-1602)</b></span></nobr><br>Questa schermata consente di specificare come recuperare o accedere ai file di log remoti per questa sorgente log.<p><b>Protocollo server</b><br>Urchin può gestire quattro tipi di file di log remoti, HTTP (www), HTTPS, FTP e UNC (solo Windows). Se il tuo file di log è accessibile tramite un browser web, utilizza HTTP. Se non è richiesta la password, lascia vuoti i campi nome utente e password. FTP può essere utilizzato con nome utente e password (di solito lo stesso del nome utente che utilizzi per caricare i contenuti sul tuo sito). UNC, disponibile unicamente su sistemi Windows, richiede nome utente e password per accedere alla condivisione UNC.<p><b>Nome server/IP</b><br>Immetti il nome del server (ad esempio, www.urchin.com) o l'indirizzo IP (ad esempio, 63.212.171.4) dell'ubicazione del file di log. Per UNC, usa la notazione \server.<p><b>Login remoto e locale identici</b><br>Questa opzione è visibile se UNC è stato selezionato come protocollo server (solo Windows). Seleziona Sì se lo stesso login e password possono essere utilizzati sia per il server locale che quello remoto. Seleziona No se il server remoto richiede un login o una password diversi da quelli del server locale. Se selezioni No vengono visualizzati ulteriori campi per Login server locale.<p><b>Porta server</b><br>Il campo Porta server viene compilato automaticamente. Ma se utilizzi una porta non-standard, puoi modificarlo manualmente.<p><b>Nome utente/password</b><br>Questi campi sono vuoti per HTTP non autenticato e per connessioni FTP anonime. Per utilizzare una connessione HTTP/FTP autenticata, immetti il tuo nome utente e la tua password in questo campo. UNC richiede nome utente e password per l'accesso alla condivisione. <p><b>Dominio (solo UNC)</b><br>Se la condivisione UNC è parte di un dominio, immetti le informazioni sulla rete del dominio in questo campo. <p><b>Modalità FTP</b><br>Questa opzione è visibile se è stato selezionato FTP come protocollo del server. Seleziona come metodo di trasferimento Passivo per passivo (PASV, Passive for passive). Seleziona Attivo per un metodo di trasferimento diretto (PORT). <p><b>File sorgente log remoto</b><br>File sorgente log remoto specifica il percorso del file di log sul sistema remoto. Se utilizzi HTTP, è spesso più facile individuare prima il file di log tramite un browser web. A tale scopo, immetti l'URL del sito in un browser seguito da una barra inclinata verso destra, quindi i nomi delle directory utilizzate e infine il nome del file di log. (ad esempio, http://www.urchin.com/logs/access_log). Se la schermata del browser visualizza del testo il percorso è corretto. Immetti tutto a destra del dominio (ad esempio, /logs/access_log). Tieni presente che i caratteri jolly non sono supportati per percorsi di sorgenti log basate su HTTP remoti. Se utilizzi FTP, puoi navigare nel server remoto per individuare il file di log. Prima dovrai configurare le informazioni relative a server / nome utente.<p><b>Destinazione log</b> (Solo remoto)<br>Prima dell'elaborazione, i file di log remoti vengono trasferiti sul sistema locale. Seleziona una directory locale per la memorizzazione del file di log. Viene fornito un pulsante Sfoglia per consentire la navigazione.<p><b>Server proxy</b> (Solo HTTP e HTTPS)<br>Se il log è disponibile tramite un computer proxy, specifica l'indirizzo IP e il nome host. <p><b>Porta proxy</b> (Solo HTTP e HTTPS)<br>Se il log è disponibile tramite un computer proxy, specifica la porta.<p><b>Nome utente proxy</b> e <b>Password proxy</b><br>Se il log è disponibile tramite un computer proxy che richiede nome utente e password, immettili in questi campi.
+576	<nobr><span class=title1><b>Gestione log: Filtri log (Ref. #A-1603)</b></span></nobr><br>Utilizza questa schermata per applicare i filtri alla sorgente log. Per applicare un filtro, seleziona il filtro nella casella a sinistra sotto "Filtri disponibili", quindi fai clic sulla freccia rivolta verso destra. Per rimuovere un filtro, seleziona il filtro nella casella a destra, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiorna per salvare le modifiche.<p><b>Comandi</b><br><ul><li><b>Aggiungi</b><br>Fai clic sull'icona Aggiungi per avviare la procedura guidata di creazione dei filtri e aggiungerli all'elenco di filtri disponibili.<li><b>Modifica</b><br>Fai clic sull'icona Modifica per modificare il filtro selezionato.<li>Fai clic sulle frecce Su e Giù per modificare l'ordine di applicazione dei filtri.<br><li>Per salvare le modifiche fai clic sul pulsante Aggiorna.
+577	<nobr><span class=title1><b>Gestione log: Impostazioni avanzate (Ref. #A-1604)</b></span></nobr><br>Questa schermata consente di configurare impostazioni avanzate per la sorgente log, ad esempio in che modo gestire il file di log al termine dell'elaborazione e quale tipo di codifica utilizzare.<p><b>Destino log</b><br>Una volta terminata l'elaborazione della sorgente log per tutti i profili ai quali essa è stata applicata, Urchin può archiviare o eliminare il file di log o non utilizzarlo. <ul><li>Seleziona Non toccare per lasciare inalterato il log dopo l'elaborazione.<li>Seleziona Archivio-Compressione per comprimere (gzip) il file di log e registrarne la data e l'ora. <li>Seleziona Archivio-Nessuna compressione per archiviare un log senza comprimerlo. Questa scelta è utile per i log già compressi. <li>Seleziona Elimina per eliminare il file di log dopo l'elaborazione.</ul> Le due selezioni Archivio ed Elimina sono disponibili se il processo Urchin dispone delle autorizzazioni del caso. Per le sorgenti log utilizzate da più profili, seleziona solo l'opzione Non toccare. <b>Avviso:</b> non usare sui file di log attivi.<p><b>Codifica file di log</b><br>Se si stanno elaborando log in lingua giapponese a doppio byte, questa opzione va impostata su Maiusc-JIS. Altrimenti, lascia l'impostazione predefinita inglese (ISO) adatta per tutti i log non a doppio byte.<p><b>Decodifica URL</b><br>Se stai utilizzando un server di applicazioni o un altro sistema di generazione pagine dinamico e desideri convertire gli URL delle pagine in voci di rapporto più significative (più facili da leggere e capire), fai clic sul pulsante "attivato".<p><b>Token della query</b><br>Gli URL di pagine generate dinamicamente utilizzano di solito un "token della query" per separare la base dell'URL dalle specifiche informazioni relative alla query. Urchin deve conoscerne la funzione per analizzare sintatticamente l'URL per i suoi rapporti. Di solito il token della query è costituito da un punto interrogativo.<p><b>Comandi</b><br>Per salvare le modifiche, fai clic sul pulsante Aggiorna. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili della sorgente log.
+578	URL sito web
+579	Benvenuti in Urchin! Per iniziare, fai clic sul<br> pulsante Procedura guidata di impostazione rapporti sulla sinistra.
+580	Hai scelto di modificare Numero porta server. \n\nLa modifica avrà effetto solo quando i servizi Urchin \nsaranno disattivati e riavviati dal menu Start. \n\n
+581	Codifica file di log
+582	<nobr><span class=title1><b>Gestione log: Impostazioni avanzate (Ref. #A-1605)</b></span></nobr><br>Questa schermata consente di configurare le impostazioni avanzate per la sorgente log, comprese le modalità di gestione del file di log al termine dell'elaborazione. La codifica e decodifica del file di log sono state spostate nei filtri.<p><b>Destino log</b><br>Utilizza Destino log per indicare in che modo devono essere gestiti i file di log una volta elaborati per i profili cui fanno riferimento. <ul><li>Seleziona Non toccare per indicare che, una volta completata l'elaborazione, non devono essere eseguite ulteriori operazioni. <li>Seleziona Archivio-Compressione per comprimere (zip) il file di log e registrarne la data e l'ora. <li>Seleziona Archivio-Nessuna compressione per archiviare un log senza comprimerlo, ma registrandone data e ora. Questa opzione è utile per i log già compressi. <li>Seleziona Elimina per eliminare il file di log dopo l'elaborazione.</ul> Le due selezioni Archivio ed Elimina sono disponibili solo se il processo Urchin dispone delle autorizzazioni necessarie. Per le sorgenti log utilizzate da più profili, deve essere selezionata solo l'opzione Non toccare. <b>Avviso.</b> Non utilizzare le opzioni Archivio o Elimina con file di log attivi. <p><b>Radice degli URI in minuscolo</b><br> Se attivata, questa opzione forza automaticamente le minuscole nell'URL dei log creati sulle piattaforme Windows, in cui l'URL dello stesso file può essere sia in maiuscolo che in minuscolo, e successivamente dà origine a due diverse voci per questo file nei rapporti Contenuto<p><b>Token della query</b><br>Gli URL di pagina generati dinamicamente di norma utilizzano un token della query per separare la base dell'URL dalle specifiche informazioni sulla query. Urchin deve conoscerne la funzione per analizzare sintatticamente l'URL per i suoi rapporti. Di norma il token della query è costituito da un punto interrogativo.<p><b>Sostituzione carattere jolly data/ora in Nome percorso log</b><br>Per automatizzare Urchin e fare in modo che vengano aperti i file di log corretti, il nome del percorso del file di log può contenere caratteri jolly con la data/ora basati sull'orario corrente. Tuttavia, accade spesso che Urchin venga eseguito dopo che i file di log sono stati ruotati e contrassegnati con la data e l'ora. Affinché Urchin possa trovare il file di log corretto, potrebbe essere necessario conoscere le modalità di modifica dell'ora quando si sostituiscono i caratteri jolly della data. Per impostazione predefinita, Urchin cerca i file di log del giorno precedente (locali, 24 ore). La tecnica dei caratteri jolly segue la convenzione <i>strftime</i>, descritta nel Centro documentazione online. Intervallo di giorni indica il numero di giorni che Urchin deve ripercorrere indietro nel tempo quando deve cercare la stringa conforme a strftime corrispondente nel nome del file di log. Questa impostazione è molto utile in ambienti in cui il file di log del giorno corrente potrebbe non essere presente e consente a Urchin di eseguire l'elaborazione "catch-up" se il file di log è disponibile a una data futura nella finestra Intervallo di giorni.<p><b>Comandi</b><br>Fai clic sul pulsante Aggiorna per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili della sorgente log.
+583	<nobr><span class=title1><b>Gestione log: Riepilogo (Ref. #A-1606)</b></span></nobr><br>Questa schermata visualizza il set completo di parametri per questa sorgente log. Esaminare attentamente queste impostazioni prima di elaborare i profili correlati per verificare che sia tutto corretto. Se è necessario apportare modifiche, fai clic sulla scheda correlata e aggiornare le impostazioni desiderate. <p><b>Comandi</b><br>Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili della sorgente log.
+584	Verifica file di log
+585	Verifica
+586	File selezionati
+587	Altri file nella directory
+588	Informazioni sul file
+589	Ubicazione file di log
+590	Dimensione del file (byte)
+591	Ultima modifica
+592	Autorizzazioni file
+593	Lettura
+594	Scrittura
+595	Impossibile ottenere informazioni sul file.
+596	File di log
+597	Directory corrente
+598	Nessuna autorizzazione
+599	Hai scelto di modificare Numero porta server.\n\nTieni presente che la modifica non avrà effetto fino a quando il server web Urchin \nnon viene riavviato eseguendo urchinctl -w restart dalla directory bin di Urchin.\n\n
+600	Licenza Urchin
+601	Informazioni sulla licenza
+602	Azioni
+603	Ottieni licenza demo
+604	Attiva licenza pre-acquistata
+605	Acquista licenza
+606	Riattiva licenza
+607	Attiva licenza
+608	Nessuna autorizzazione per la directory
+609	Effettua upgrade licenza
+610	Fai clic su una delle seguenti opzioni
+611	Licenza valida-Regolare
+612	Licenza valida - Demo
+613	Mai
+614	Nessuna licenza installata
+615	Licenza non valida
+616	(Scaduto)
+617	(chiave sbagliata)
+618	In attesa di attivazione
+619	Stato di licenza
+620	Scadenza della licenza
+621	Profili con base
+622	Server con base
+623	Prodotto
+624	Versione
+625	Licenza valida
+626	Riattiva Gold Master
+627	Licenza
+628	Codice di serie
+629	Decodifica URL
+630	Impostazioni avanzate
+631	Token della query
+632	Livello di referral
+633	Predefinito
+634	Problema relativo alla licenza
+635	È stato rilevato un problema con la licenza. Contatta il tuo amministratore di sistema per risolverlo.
+636	Elabora DNS
+637	Filtro
+638	Limite licenza
+639	Nome profilo
+640	Impostazioni generali
+641	Sorgenti log
+642	Filtri
+643	Utenti
+644	Avanzato
+645	Avanzato
+646	Altre opzioni
+647	Byte di log
+648	sec
+649	Filtri/Avanzati/Profili
+650	Impostazioni log
+651	Impostazioni remote
+652	Filtri log
+653	Impostazioni avanzate
+654	Regolazione ora
+655	Aggiungi sorgente log locale
+656	Aggiungi sorgente log remota
+657	Seleziona sorgente log preconfigurata
+658	Destinazione log
+659	Profili applicati a
+660	Impostazioni filtro
+661	Profili
+662	Sorgenti log
+663	Seleziona filtro preconfigurato
+664	Aggiungi nuovo filtro
+665	Opzioni di aggiunta sorgenti log
+666	Avviso! Hai scelto di interrompere l'attività Urchin. \nL'interruzione dell'attività può danneggiare il database Urchin. \nPer ulteriori informazioni consulta l'articolo della Knowledgebase sulla Chiusura forzata ("Hard Close"). \n\nArrestare l'attività?
+667	Avviso! Programma di pianificazione slave disattivato.
+668	Profili/Sorgenti log
+669	Opzione
+670	Rimuovi
+671	Visualizzazione rapida utente
+672	Impostazioni utente
+673	Informazioni sull'utente
+674	Preferenze
+675	Gruppi
+676	Accesso ai rapporti
+677	Verifica password
+678	Accesso rapporto/Gruppi
+679	Ora di Greenwich (GMT)
+680	Visualizzazione rapida gruppo
+681	Descrizione gruppo
+682	I seguenti caratteri non sono ammessi: (*?“<>|).
+683	Informazioni sul gruppo
+684	Utenti nel gruppo
+685	Accesso ai rapporti
+686	Nel Nome profilo non sono ammessi i seguenti caratteri:\n\n -> / (barra)\\n -> \\ (barra rovesciata)\n -> + (segno più). \n\n Rimuovi i caratteri e riprova.
+687	Accesso rapporto/Utenti
+688	Errore.\n\nLe password non corrispondono.
+689	I seguenti campi obbligatori sono vuoti o non validi.
+690	Impostazioni DNS
+691	Impostazioni DB
+692	Impostazioni sessione
+693	Impostazioni di accesso
+694	Impostazioni server
+695	Pattern filtro
+696	Righe
+697	Eliminare questo record?
+698	Riepilogo
+699	Ulteriori informazioni
+700	Pianificazione
+701	Esegui ora
+702	Avanzamento attività
+703	Tutti i rapporti profilo
+704	Fai clic qui per dettagli
+705	Ora di inizio
+706	Ora di fine
+707	Dettaglio processo attività
+708	Nascondi dettagli
+709	Metodo monitoraggio visitatore
+710	IP+User-Agent
+711	ID sessione
+712	Urchin Traffic Monitor (UTM)
+713	Definizione analisi sintattica sessione
+714	Ora corrente
+715	Campo sessione
+716	ERRORE:  l'attività è stata terminata. \nERRORE:  è possibile che i dati vengano danneggiati. Per ulteriori informazioni sull'esecuzione di udb-sanitizer, consultare l'articolo della Knowledgebase sulla Chiusura forzata ("Hard Close").
+717	ERRORE: chiusura dell'attività non riuscita.
+718	SOLO IP
+719	La sessione richiede visualizzazioni di pagina
+720	Nessun profilo da importare
+721	Versione
+722	Utilizzo memoria
+723	Impostazioni utilizzo memoria
+724	Target di utilizzo della memoria
+725	Opzione di analisi sintattica dei dati
+726	Personalizza
+727	Impostazioni personalizzate di utilizzo della memoria
+728	Dimensione del buffer visitatore
+729	Dimensione del buffer di sessione
+730	Dimensione del buffer di percorsi
+731	Dimensione del buffer di dati
+732	Dimensione del buffer di stringa di dati
+733	File di log-In esecuzione
+734	In esecuzione-DNS
+735	Completata
+736	Errore
+737	In attesa
+738	Percorsi dei processi
+739	Livello percorso
+740	Cronologia di attività profilo
+741	Monitoraggio log
+742	utilizzare un nome descrittivo
+743	Valuta
+744	Simbolo di valuta
+745	Prima del numero
+746	Dopo numero
+747	Precisione
+748	nessuno
+749	U.S.A.
+750	Cina
+751	Francia
+752	Germania
+753	Italia
+754	Giappone
+755	Corea
+756	Portogallo
+757	Spagna
+758	Svezia
+759	Regno Unito
+760	Regione
+761	Cambia regione
+762	Localizzazione
+763	Collegamento diretto rapporto
+764	Pulisci o modifica DB
+765	Elimina TUTTI i dati del profilo
+766	Elimina tutti i dati
+767	Eliminare DEFINITIVAMENTE TUTTI i dati di questo profilo?
+768	per maggiori dettagli, consulta la Guida
+769	Seleziona filtro di esempio
+770	Filtra traffico interno
+771	Filtra ed escludi traffico dei robot
+772	Filtra traffico agente di monitoraggio
+773	Filtra tutte le richieste di immagine
+774	Solo rapporto sul traffico verso una sottodirectory
+775	escludi traffico interno
+776	escludi robot
+777	escludi agente di monitoraggio
+778	escludi immagini
+779	includere la sottodirectory
+780	I download corrispondono
+781	<nobr><span class=title1><b>Impostazioni accesso: Valori predefiniti globali (Ref. #A-781)</b></span></nobr><br>Questa schermata contiene alcune impostazioni di sistema che determinano il comportamento predefinito per l'accesso ai rapporti e la loro visualizzazione. <p><b>Lingua rapporto</b><br>Utilizza l'impostazione Lingua rapporto per determinare la lingua predefinita per la visualizzazione dei rapporti. Quando vengono creati nuovi utenti, la lingua del rapporto verrà impostata automaticamente su questo valore. <p><b>Regione</b><br>Utilizza questa impostazione per determinare i criteri di localizzazione predefiniti da applicare per la visualizzazione dei rapporti. Quando vengono creati nuovi utenti, il parametro Regione verrà impostato automaticamente su questo valore. Questa impostazione determina il formato di valute, date, ore e numeri, che può essere diverso a seconda dei Paesi. Se il Paese desiderato non compare nell'elenco, seleziona una regione che utilizza gli stessi formati di data/numero. Fai clic su Aggiorna per salvare le modifiche.
+782	Non riuscito
+783	Maiuscole/minuscole
+784	Opzioni di bilanciamento del carico
+785	Elaborazione log in parallelo
+786	FTPS
+787	HTTPS
+788	Impostazioni proxy HTTP (opzionale)
+789	Server proxy
+790	Porta proxy
+791	Nome utente proxy
+792	Password proxy
+793	Opzioni campagna
+794	Corrispondenza obiettivo primario
+795	Campo Obiettivo primario
+796	Maiuscole/minuscole
+797	UTM obbligatorio per campagna
+798	Modalità FTP
+799	Passivo
+800	Attiva
+801	Login server locale
+802	Login remoto e locale identici
+803	Nome utente
+804	Password
+805	Verifica password
+806	Dominio
+807	Tabella di ricerca
+808	Nome tabella
+809	Archivio - Nessuna compressione
+810	Australia
+811	Nuova Zelanda
+812	Aggiungi voce CTM
+813	<b>Procedura guidata di aggiunta voci CTM</b><br>Utilizza questa procedura guidata per inserire il costo statico e/o dati sulle impressioni per una campagna. Completa i campi per ognuno dei tre passaggi e fai clic su Aggiungi ed Esecuzione successiva. Una volta inseriti, i dati vengono aggiunti al database Urchin durante la successiva esecuzione programmata del profilo. <p><b>Passaggio 1. Data di immissione</b><br>Inserisci la data a partire dalla quale devono applicarsi il costo e/o il numero delle impressioni. <p><b>Passaggio 2. Variabili CTM</b><br>Inserisci le variabili CTM che descrivono la campagna per cui si stanno inserendo i dati. Ad esempio, per applicare i dati a tutti i referral organici di Google, specifica Google come sorgente e organico come Mezzo. Per applicare i dati a una newsletter estiva (presumendo che i riferimenti della newsletter siano contrassegnati con utm_source=summer_news), specifica la sorgente come summer_news. <ul><li><b>ID campagna</b><br>Se la campagna per cui stai inserendo i dati è identificabile con un ID campagna (cioè utm_id), inseriscilo qui e procedi con il passaggio 3. <li><b>Campagna</b><br>Inserisci il nome della campagna a cui si riferiscono i dati. <li><b>Sorgente</b><br>Inserisci la sorgente (ad esempio google) a cui si riferiscono i dati.<li><b>Mezzo</b><br>Inserisci il mezzo (ad esempio organico o email) a cui si riferiscono i dati. <li><b>Termine di ricerca</b><br>Inserisci la parola chiave (ad esempio mazze da golf) a cui si riferiscono i dati.<li><b>Contenuto dell'annuncio</b><br>Inserisci il contenuto a cui si riferiscono i dati.</ul><p><b>Passaggio 3. Aggiungi dati costo/impressione</b><br>Inserisci l'importo dei costi e/o il numero di impressioni che desideri associare a questa campagna.<ul><li><b>Costo</b><br>Inserisci l'importo del costo. <li><b>Impressioni</b><br>Inserisci il numero di impressioni.</ul><p>Fai clic su <b>Aggiungi a esecuzione successiva</b> per aggiungere i dati la prossima volta che viene eseguito il profilo. Fai clic su <b>Visualizza sospesi</b> per visualizzare le voci dei dati che saranno aggiunte al database Urchin la volta successiva che si esegue il profilo. Fai clic su <b>Chiudi</b> per uscire. Fai clic su <b>Cancella</b> per svuotare tutti i campi.
+814	Aggiungi dati di costo manuali
+815	Aggiungi dati di costo
+816	Aggiungi a esecuzione successiva
+817	Passaggio 1. data di immissione
+818	Data di immissione
+819	Passaggio 2. Variabili CTM
+820	Campagna
+821	Sorgente
+822	Mezzo
+823	Termine della ricerca
+824	Contenuti dell'annuncio
+825	Passaggio 3: Aggiungi dati costo/impressione
+826	Costo
+827	Impressioni
+828	ID campagna
+829	Identificativo campagna o sorgente
+830	Costo o Impressioni
+831	Voce CTM aggiunta.
+832	Voce CTM non riuscita.
+833	Cancella
+834	Visualizza sospesi
+835	Voci CTM in attesa
+836	<b>Voci CTM in attesa</b><br>Questa schermata visualizza le voci relative ai dati costo e impressione che saranno scritte nel database Urchin la volta successiva che si esegue il profilo.
+837	Nessuna voce CTM in sospeso.
+838	Chiudi
+839	Aggiunta non riuscita. Numero record profilo non valido (1001).
+840	Aggiunta non riuscita. Richiesta record profilo non riuscita (1002).
+841	Aggiunta non riuscita. Impossibile creare la directory della voce CTM (1003).
+842	Aggiunta non riuscita. Impossibile aprire file delle voci CMT (1004).
+843	Obiettivo 1
+844	Obiettivo 2
+845	Obiettivo 3
+846	Obiettivo 4
+847	Attiva obiettivo
+848	Valore obiettivo (Entrate)
+849	Passaggio 1
+850	Passaggio 2
+851	Passaggio 3.
+852	Obiettivo
+853	Campo B obbligatorio
+854	Utilizza valore obiettivo
+855	Elenco profili disponibili
+856	Intervallo di giorni
+857	Nome utente server remoto o password mancanti.
+858	Nome utente server locale o password mancanti.
+859	Connessione al server locale non riuscita.
+860	Connessione al server remoto non riuscita.
+861	Passaggio 4
+862	Passaggio 5
+863	Passaggio 6
+864	Passaggio 7
+865	Passaggio 8
+866	Passaggio 9
+867	Passaggio 10
+868	Home page
+869	Impostazioni proxy HTTP sito web (opzionali)
+870	Passaggio 1 obbligatorio
+871	Opzione 4 (su richiesta)
+872	Campi obbligatori
+873	Esempi di filtri
+874	Passaggi
+875	Obiettivi
+876	<b>Profili: obiettivi</b><p>Modifica un obiettivo facendo clic sulla scheda corrispondente nella parte superiore dello schermo. Quindi, fai clic su <img alt='Analysis Options Button' title='magic wand' src ='/uicons/default/wizard.gif' border=''> in alto a destra per attivare la procedura guidata di impostazione dell'obiettivo. Utilizza il browser web incorporato nella procedura guidata per aprire la pagina che desideri impostare come passaggio di canalizzazione o come obiettivo. Per selezionare la pagina come passaggio 1, fai clic su <b>Imposta pagina come passaggio: 1</b>. Ripeti l'operazione per ciascun passaggio della canalizzazione. Fai clic su <b>Imposta pagina come obiettivo</b> per impostare la pagina come obiettivo e chiudere la procedura guidata. Le pagine selezionate verranno visualizzate nei campi Passaggi e Indirizzo web obiettivo. Tieni presente che non è necessario includere la porzione dell'URL <i>http://www.dominio.it</i> nel campo Indirizzo web obiettivo o Indirizzo web per qualsiasi passaggio. Urchin ignorerà questa parte dell'URL. <p>IMPORTANTE: Urchin consente l'uso di espressioni regolari in tutti i campi Indirizzo web dei passaggi e dell'obiettivo. Accertati di convertire in caratteri escape tutti i metacaratteri delle espressioni regolari dopo l'ultima barra (&#;), ad esempio caratteri come &#; o &#, nel campo Indirizzo web aggiungendo una barra rovesciata (&#;) se desideri che Urchin li interpreti letteralmente. <p><b>Impostazioni obiettivo</b><br>Urchin conteggia ogni visita all'URL specificato in <b>Indirizzo web obiettivo</b> come una conversione all'obiettivo ogni qualvolta l'opzione <b>Attiva obiettivo</b> è attivata. Nei rapporti Urchin viene visualizzato il <b>Nome obiettivo</b> specificato. Il valore indicato in <b>Valore obiettivo (entrate)</b> viene utilizzato per calcolare il ROI e altri parametri di valutazione.<p><b>Impostazioni percorso obiettivo</b><br>In questa sezione specifica i passaggi che conducono all'obiettivo. Ciascun passaggio è una pagina nel percorso verso la conversione dell'obiettivo. Nel loro insieme, i tre passaggi rappresentano una canalizzazione di conversione. Urchin indica il numero di visitatori che completano ogni passaggio e, per ogni passaggio, il numero di quelli che lasciano la canalizzazione nel rapporto Ottimizzazione contenuto-->Obiettivi e processo di canalizzazione-->Abbandono canalizzazione definita. Indica un URL e un nome di pagina per ciascun passaggio. <p><b>Impostazioni avanzate obiettivo</b><br>Quando genera i rapporti sulle conversioni agli obiettivi e sul completamento dei passaggi, Urchin confronta gli URL specificati con gli URL visitati. Quando<b>Opzione indirizzo web</b> è impostato su "URL senza query", Urchin ignora la porzione di query dell'URL in questi confronti. Impostando <b>Maiuscole/minuscole</b> su "Sì", i confronti faranno distinzione tra maiuscole e minuscole. Impostando <b>Richiedi passaggio 1</b> su "Sì", solo i percorsi diretti verso la conversione che includono il primo passaggio saranno inclusi nei rapporti di canalizzazione.
+877	Impostazioni
+878	Procedura guidata di impostazione obiettivo
+879	Guida procedura guidata di impostazione obiettivo
+880	Seleziona obiettivo
+881	Passaggio attuale
+882	Impostazioni globali di localizzazione
+883	Individua obiettivi e passaggi
+884	Indirizzo
+885	Nome pagina
+886	Utilizza questo indirizzo
+887	Utilizza questo nome
+888	Applica
+889	Il filtro di decodifica degli URL è stato disapprovato. La decodifica del campo è ora gestita automaticamente. Se devi decodificare un campo speciale, per ulteriori informazioni consulta la documentazione.
+890	Impostazioni obiettivo
+891	Indirizzo web obiettivo
+892	Nome obiettivo
+893	Impostazioni canalizzazione
+894	Impostazioni avanzate obiettivo
+895	URL senza query
+896	URL con query
+897	Opzione indirizzo web
+898	Indirizzo web
+899	Nome
+900	Sito web e-commerce
+901	Dati E-commerce
+902	Valore obiettivo
+903	Imposta pagina come passaggio
+904	Imposta pagina come obiettivo
+905	Apri una pagina sul tuo sito web. Per aggiungere la pagina come passaggio della canalizzazione, fai clic su <b>Imposta pagina come passaggio...</b>  Ripeti l'operazione per ciascun passaggio della canalizzazione. Per aggiungere la pagina come obiettivo e chiudere la procedura guidata, fai clic su <b>Imposta pagina come obiettivo.</b>. Per tornare al passaggio precedente, fai clic su <b>Indietro</b>. Per chiudere la procedura guidata senza salvare i passaggi o la pagina obiettivo, fai clic su <b>Annulla</b>.
+906	Utilizzo memoria DB
+907	Limite con sistema cache
+908	Conserva tutto in memoria
+909	Gruppi
+910	<b>Profili: Gruppi</b><br>Utilizza questa schermata per concedere un accesso di gruppo ai rapporti di questo profilo. <p><b>Assegna gruppi</b><br>Per concedere l'accesso al profilo per un determinato gruppo, seleziona il gruppo nel riquadro di sinistra "Gruppi disponibili", quindi fai clic sulla freccia rivolta verso destra. Per negare l'accesso al profilo per un determinato gruppo, seleziona il gruppo nel riquadro di destra, quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su Aggiorna per salvare le modifiche. <p><b>Sostituisci dashboard</b> (solo super amministratore)<br>Questa opzione consente di modificare i rapporti e le dashboard disponibili per i singoli gruppi. Fai clic su un gruppo nella finestra "Accesso concesso" per evidenziare il gruppo. Successivamente, fai clic sul pulsante "Sostituisci dashboard" per visualizzare una finestra a comparsa in cui attivare e disattivare intere sezioni dei rapporti per il gruppo selezionato e selezionare la dashboard finale predefinita per gli utenti. Quando sposti un gruppo da Gruppi disponibili ad Accesso concesso, devi selezionare "Aggiorna" prima che questa opzione risulti disponibile per quel gruppo. <p><b>Comandi</b><br><ul><li><b>Aggiungi</b><br>Fai clic sull'icona Aggiungi per avviare la procedura guidata gruppo e aggiungere il gruppo all'elenco degli utenti disponibili.<li><b>Modifica</b><br>Fai clic sull'icona Modifica per modificare il gruppo selezionato.<li>Fai clic sul pulsante Aggiorna per salvare le modifiche. <li>Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del profilo.
+911	Scarto con il fuso orario GMT
+912	Aggiungi nuova sorgente log
+913	Aggiungi altre sorgenti log
+914	Aggiungi sorgente log esistente
+915	Pagina degli errori
+916	Errore dell'utilità di configurazione Urchin
+917	Ubicazione cronologia esecuzione
+918	Seleziona un record da modificare.
+919	Errore sconosciuto.
+920	10001 - Errore DB: impossibile collegarsi al database di configurazione.
+921	10002 - Errore DB, Impossibile iniziare la transazione.
+922	10003 - Errore DB: impossibile avviare la transazione.
+923	10004-Errore DB: impossibile eseguire il rollback della transazione.
+924	11001 - Errore di configurazione: impossibile leggere i parametri di input dell'utente.
+925	11002 - Errore di configurazione: Impossibile ottenere record di configurazione globale.
+926	11003 - Errore di configurazione: impossibile ottenere il record utente.
+927	11004-Errore di configurazione: impossibile ottenere informazioni sulla licenza.
+928	11005-Errore di configurazione: impossibile ottenere la navigazione.
+929	11006-Errore di configurazione: impossibile ottenere il record di visualizzazione.
+930	11007 - Errore di configurazione: impossibile ottenere il record dell'azione.
+931	12001 - Azione: impossibile aggiungere il record.
+932	12002 - Azione: impossibile eliminare il record.
+933	12003 - Azione: impossibile aggiornare il record. Possibili motivi: <br><br> * Esiste un altro record con lo stesso nome.<br> * Il record potrebbe essere stato aggiornato da un altro utente dopo il recupero.<br><br>Dovrebbero venire visualizzati ora i dati più recenti. Risolvi gli eventuali conflitti di denominazione e prova a eseguire un nuovo aggiornamento.<br><br>
+934	12004 - Azione: impossibile collegare i record.
+935	12005 - Azione: impossibile importare il record.
+936	12006 - Azione. Impossibile eliminare i dati del rapporto. I dati potrebbero già essere stati eliminati o potrebbero esistere problemi di autorizzazione. Verifica e riprova.
+937	12007 - Azione: impossibile aggiungere il profilo alla coda del programma pianificazione. Il profilo è già in coda.
+938	12008 - Azione: impossibile annullare il processo Urchin.
+939	15001 - Autorizzazione: licenza mancante o non valida.
+940	15002 - Autorizzazione: l'utente non dispone di autorizzazioni per la visualizzazione.
+941	15003 - Autorizzazione: l'utente non è autorizzato a eseguire l'azione specificata.
+942	15004 - Autorizzazione. Uso non autorizzato del file di dizionario.
+943	13001 - Visualizzazione: impossibile ottenere l'elenco dei record.
+944	13002 - Visualizzazione. Impossibile ottenere il record.
+945	13003 - Visualizzazione: riepilogo configurazione non riuscito.
+946	13004 - Visualizzazione. Impossibile ottenere i record relazionali.
+947	13005 - Visualizzazione: impossibile ottenere la cronologia delle attività.
+948	13006 - Visualizzazione: impossibile superare le direttive di configurazione della procedura guidata.
+949	13007 - Visualizzazione: impossibile ottenere il record obiettivo per il profilo.
+950	13008 - Visualizzazione: impossibile ottenere l'elenco directory.
+951	13009 - Visualizzazione. Impossibile ottenere l'elenco ftp.
+952	13010 - Visualizzazione: impossibile ottenere l'elenco di file e directory da verificare.
+953	13011 - Visualizzazione. Impossibile ottenere la cronologia delle attività in dettaglio.
+954	13012 - Visualizzazione: impossibile ottenere la visualizzazione del monitoraggio campagna.
+955	13013 - Visualizzazione: il sito web non è in grado di impostare gli obiettivi.
+956	13014 - Visualizzazione: impossibile ottenere informazioni sulla licenza per la visualizzazione.
+957	13015 - Visualizzazione: importazione non riuscita per i siti web IIS.
+958	13016 - Visualizzazione: impossibile ottenere l'elenco directory UNC.
+959	13017 - Visualizzazione. Impossibile ottenere l'elenco degli account.
+960	13018 - Visualizzazione. Impossibile ottenere l'elenco delle attività.
+961	Fuso orario
+962	GMT-12.00: Linea internazionale cambio data
+963	GMT-11.00: Isole Midway, Samoa
+964	GMT-10.00: Hawaii
+965	GMT-09.00: Alaska
+966	GMT-08:00: Pacific Time (Stati Uniti e Canada); Tijuana
+967	GMT-07.00: Arizona
+968	GMT-07.00: Mountain Time (Stati Uniti e Canada)
+969	GMT-06.00: Fuso centrale (Stati Uniti e Canada)
+970	GMT-05.00: Indiana (Est)
+971	GMT-05.00: Fuso orientale (Stati Uniti e Canada)
+972	GMT-04.00: Ora costa atlantica (Canada)
+973	GMT-03.00: Buenos Aires, Georgetown
+974	GMT-02.00: Medioatlantico
+975	GMT-01.00: Azzorre, Isola di Capo Verde
+976	GMT-00.00: Ora di Greenwich (Londra)
+977	GMT+01.00: Amsterdam, Berlino, Parigi
+978	GMT+02.00: Atene, Beirut, Minsk
+979	GMT+03.00: Mosca, Kuwait
+980	GMT+04.00: Abu Dhabi, Muscat
+981	GMT+05.00: Ekaterinburg, Karachi
+982	GMT+06.00: Astana, Dhaka
+983	GMT+07.00: Bangkok, Hanoi
+984	GMT+08.00: Pechino, Hong Kong
+985	GMT+09.00: Tokyo, Seoul
+986	GMT+10.00: Sydney, Melbourne, Guam
+987	GMT+11.00: Isole Salomone
+988	GMT+12.00: Fiji, Isole Marshall
+989	GMT+13:00: Nuku‘alofa
+990	Cinese (semplificato)
+991	Cinese (tradizionale)
+992	Olandese
+993	Brasile
+994	Paesi Bassi
+995	Taiwan
+996	Localizzazione
+997	Codifica dei caratteri
+998	ASCII/UTF-8 (nessuna conversione set di caratteri)
+999	Giapponese (EUC-JP, SHIFT-JIS, ISO-2022-JP)
+1000	Latino 1 (ISO-8859-1)
+1001	Email
+1002	Dashboard disponibili
+1003	Sezioni rapporti
+1004	Dirigente
+1005	Operatore di marketing
+1006	Webmaster
+1007	Ottimizzazione marketing
+1008	Ottimizzazione contenuto
+1009	Analisi e-commerce
+1010	Rapporti IT
+1011	Dashboard e sezioni
+1012	Predefinito
+1013	Impostazioni dashboard utente del profilo
+1014	Utilizza predefinito del profilo
+1015	Aggiorna prima di sovrascrivere la dashboard del profilo.
+1016	Sostituisci dashboard
+1017	Impostazioni dashboard gruppo profili
+1018	Impostazioni dashboard gruppo profili: Guida
+1019	Impostazioni dashboard utente del profilo: Guida
+1020	13019 - Visualizzazione. Impossibile ottenere autorizzazioni per l'utente/il gruppo
+1021	Standard
+1022	Avanzato
+1023	Eliminare questo account?\n\nATTENZIONE. TUTTI i profili, le sorgenti log, i filtri, gli utenti e i gruppi associati a questo account verranno eliminati.
+1024	(GMT)
+1025	Password errata. \n\nLe password non corrispondono o contengono meno di 8 caratteri.
+1026	facoltativo, consulta la Guida
+1027	12009 - Azione: il profilo è stato messo in coda per l'esecuzione. Controlla lo stato e il risultato dell'esecuzione nella schermata Cronologia di attività profilo.
+1028	Avviso! Programma di pianificazione master disattivato.
+1029	Avviso! Programma di pianificazione master e slave disattivati.
+1030	ad esempio
+1031	Email
+1032	Sorgente CPC - Cronologia di download
+1033	Sorgente CPC - dettagli download
+1034	Database geografico - Cronologia di download
+1035	Database geografico - Dettaglio download
+1036	Risultato procedura guidata origine costi.
+1037	Gestione sorgenti CPC
+1038	Nome sorgente CPC
+1039	Tipo sorgente CPC
+1040	<nobr><span class=title1>    <b>Gestione sorgenti CPC (Ref. #A-1500)</b></span></nobr><br>Lo scopo di questa schermata è visualizzare le sorgenti CPC configurate per questa installazione di Urchin, consentire la correzione dei parametri di ciascuna di esse e fornire all'amministratore diritti per aggiungere sorgenti CPC. Le sorgenti CPC possono essere applicate a singoli profili.<p><b>Aggiungi</b><br>Per aggiungere una sorgente CPC, fai clic sul pulsante Aggiungi nell'angolo in alto a destra della schermata. In tal modo, verrà avviata la procedura guidata per l'aggiunta di una sorgente CPC, che ti guiderà attraverso la procedura per aggiungere una sorgente CPC.<p><b>Modifica</b><br>Nell'elenco, accanto a ciascuna sorgente CPC, è presente una serie di pulsanti che consentono di controllare ciascuna sorgente CPC. Il pulsante Modifica consente di accedere a tutte le impostazioni per questa sorgente CPC attraverso una navigazione a schede.<p><b>Elimina</b><br>Fai clic sul pulsante Elimina accanto a una sorgente CPC per eliminare la sorgente CPC dalla configurazione e da tutti i profili che vi fanno riferimento. <p><b>Download</b><br>Il pulsante Download permette di aprire la schermata Download, dove puoi scegliere di scaricare rapporti per questa sorgente CPC immediatamente oppure pianificare il download su base regolare. Nessun dato relativo al CPC è disponibile fintanto che il rapporto non è scaricato.<p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per navigare tra le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti. <p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter il menu Account può essere utilizzato per filtrare le voci da visualizzare.
+1041	Procedura guidata per sorgente CPC: impostazioni
+1042	<nobr><span class=title1><b>Gestione sorgenti CPC: Impostazioni CPC (Ref. #A-1501)</b></span></nobr><br>Questa schermata consente di configurare e regolare le impostazioni di una sorgente CPC. Per ulteriori informazioni sulle sorgenti CPC, consulta il manuale o il nostro Centro documentazione online.<p><b>Account facoltativo</b> (solo modalità Datacenter)<br>Per le nuove sorgenti CPC questa opzione consente di selezionare l'account al quale deve essere associata la sorgente CPC. Nel caso di sorgenti CPC esistenti, viene visualizzato il nome dell'account al quale appartiene la sorgente CPC.<p><b>Nome sorgente CPC</b><br>Questo campo obbligatorio è un nome arbitrario utilizzato per praticità quando si fa riferimento a questa sorgente CPC. Inserisci un nome univoco per questa sorgente CPC.<p><b>Tipo sorgente CPC</b><br>Urchin ti consente di creare le seguenti sorgenti CPC:<p><b>Google AdWords</b><br>Una sorgente CPC di Google AdWords richiede i seguenti campi: <li><b>Email</b>: Questo è l'indirizzo email dell'inserzionista o l'ID di accesso del Centro clienti (obbligatorio).<li><b>Password</b>: Questa è la password di accesso all'account AdWords (obbligatorio).<li><b>Token sviluppatore</b>: Una stringa univoca che identifica uno sviluppatore autorizzato dell'API di AdWords (facoltativo). Urchin include un token per sviluppatori predefinito che viene cambiato a rotazione su base mensile. Se l'utente non specifica il token per sviluppatori, Urchin utilizzerà il token predefinito. Tieni presente che l'API di AdWords addebita il token per sviluppatori per tutte le chiamate API effettuate tramite quella sorgente CPC. Pertanto, se gli utenti utilizzano i propri token per sviluppatori, il proprio accesso o il proprio account CC verrà addebitato per l'utilizzo dell'API. Per mantenere l'impostazione predefinita, lascia vuoto questo campo.<li><b>Token applicazione</b>: Questo è il token dell'applicazione che verrà utilizzato per l'accesso all'API di AdWords. Se l'utente ha specificato il token per sviluppatori, gli verrà richiesto di specificare anche il token dell'applicazione. In caso contrario, lascia vuoto questo campo.<li><b>Email e ID cliente</b>: Se l'utente sta utilizzando i dati di accesso del Centro clienti anziché il proprio indirizzo email di inserzionista, uno di questi due campi (ma non entrambi) è obbligatorio.<p><b>Yahoo! Search Marketing</b><br> Una Sorgente CPC di Yahoo! richiede i seguenti campi: <li><b>Nome utente</b>: Questo è il nome utente dell'account Yahoo! Search Marketing a cui si accede (obbligatorio). Può essere l'indirizzo email dell'inserzionista o l'indirizzo email dell'agenzia che effettua l'accesso al rapporto a nome dell'inserzionista.<li><b>Password</b>: Questa è la password dell'account Yahoo! Search Marketing a cui si accede (obbligatorio).<li><b>ID account principale</b>: Questo è l'ID dell'account principale dell'inserzionista (obbligatorio).<li><b>ID account</b>: Questo è l'ID dell'account Yahoo! Search Marketing a cui si accede. (obbligatorio). <li><b>Chiave di licenza</b>: Questa è la chiave di licenza per l'utente che ha effettuato l'accesso, l'inserzionista o l'agenzia (obbligatorio).<li><b>Nome utente “Per conto di”</b>: Questo è il nome utente che agisce per conto dell'inserzionista. È obbligatorio solo se il nome utente è utilizzato per l'accesso dell'agenzia e non dell'inserzionista (facoltativo).<li><b>Password “Per conto di”</b>: Questa è la password utilizzata per conto dell'inserzionista (facoltativo) <p><b>Download del rapporto CPC abilitato</b><br> (visibile solamente durante la modifica di una sorgente CPC) Questa opzione attiva e disattiva i futuri download di rapporti relativi a questa sorgente CPC. <b>Nota</b>. Anche se scegli di disattivare il download di rapporti futuri, i profili associati a questa sorgente CPC continueranno a utilizzare i rapporti già scaricati.
+1043	Impostazioni sorgente CPC
+1044	Google AdWords
+1045	Microsoft AdCenter
+1046	Yahoo! Search Marketing
+1047	Email
+1048	Password
+1049	Token sviluppatore
+1050	Token dell'applicazione
+1051	Accesso ad AdCenter
+1052	Chiave accesso utente
+1053	Nome utente
+1054	ID account principale
+1055	ID account
+1056	Chiave di licenza
+1057	Configurazione della sorgente CPC completata.
+1058	Procedura guidata per sorgente CPC: conferma
+1059	Nome utente “Per conto di”
+1060	Password “Per conto di”
+1061	Password “Per conto di” (digita nuovamente)
+1062	Password (digita nuovamente)
+1063	Le password non sono state immesse, non sono valide o non coincidono
+1064	Numero di sorgenti CPC
+1065	<nobr><span class=title1><b>Sorgenti CPC. Profili (Ref. #A-1502)</b></span></nobr><br>Utilizza questa schermata per applicare questa origine costi a uno o più profili.<p><b>Applica a profilo</b><br>Per applicare l'origine costi a un profilo, seleziona il nome del profilo dal riquadro "Profili disponibili", quindi fai clic sulla freccia rivolta verso destra. Per rimuovere l'origine costi da un profilo, seleziona il profilo nella finestra "Applicato a", quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su "Aggiorna" per rendere attive le modifiche.<p><b>Comandi</b><br>Fai clic sul pulsante "Aggiorna" per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili dell'origine costi.
+1066	Download del rapporto CPC abilitato
+1067	Test sorgente CPC
+1068	Connessione sorgente CPC riuscita
+1069	Connessione sorgente CPC non riuscita
+1070	Sorgenti CPC da applicare
+1071	Sorgenti CPC disponibili
+1072	Sorgenti CPC applicate
+1073	<nobr><span class=title1><b>Profili. Origini dei costi (Ref. #A-2106)</b></span></nobr><br>Utilizza questa schermata per aggiungere <b>Origini dei costi applicate</b> dall'elenco <b>Origini dei costi disponibili</b>. <p><b>Comandi:</b><br><ul><li><b>Aggiungi</b><br>Fai clic sull'icona "Aggiungi" per aggiungere ulteriori origini dei costi alle origini dei costi disponibili. Verrà avviata la procedura guidata per l'aggiunta di un filtro che ti consentirà di aggiungere rapidamente origini dei costi nuovi o già esistenti.<li><b>Modifica</b><br>Evidenzia le origini dei costi disponibili che desideri modificare e fai clic sull'icona "Modifica". <li>Fai clic sul pulsante <b>Aggiorna</b> per salvare le modifiche. <li>Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili del profilo.
+1074	Sorgenti CPC
+1075	Attenzione! Google AdWords rende disponibili i rapporti con un certo ritardo. Assicurati che le sorgenti CPC siano pianificate per un'ora in cui rapporti sono disponibili. Per ulteriori informazioni, consulta l'articolo dedicato a questo argomento nel <a href="https://secure.urchin.com/helpwiki/en/Help_Center"><b>Centro assistenza online</b></a>.
+1076	Email cliente
+1077	ID cliente
+1078	Specifica “Email cliente” o “ID cliente”, ma non entrambi
+1079	<nobr><span class=title1><b>Sorgente CPC - Pianificazione (Ref. #A-1503)</b></span></nobr><br>Questa schermata consente di impostare le opzioni di download della sorgente CPC.<p><b>Scarica ora</b><br>Per scaricare questa sorgente CPC immediatamente, fai clic sul grande pulsante verde "Scarica ora" sulla destra. L'attività CPC verrà così inserita in coda per essere eseguita dal Programma di pianificazione CPC di Urchin.<p><b>Pianificazione - Intervallo di download</b><br>L'operazione di download dei rapporti CPC avviene in due fasi. Nella prima fase, vengono convalidate le credenziali CPC e la richiesta del rapporto viene inoltrata al server (AdWords e così via). Nella seconda fase, viene verificata periodicamente la disponibilità del rapporto, finché questo diventa disponibile. La seconda fase termina con il download vero e proprio del rapporto. La verifica della disponibilità del rapporto può richiedere da pochi secondi a mezz'ora e ogni chiamata API per tali verifiche può comportare un costo per il cliente (1 unità nel caso di AdWords); Urchin inizia quindi a verificare la disponibilità del rapporto una volta trascorso l'intervallo specificato tra due fasi. <br><br>Questa opzione consente di impostare l'intervallo tra la pianificazione del rapporto e il momento effettivo di verifica/download per questa sorgente di costo.<p><b>Download - Ora del giorno</b><br>Questa opzione consente di configurare l'ora del giorno in cui deve essere scaricato il rapporto aggiornato per questa sorgente CPC.<p><b>Dati dell'account - Intervallo di download</b><br>Questa opzione consente di impostare l'intervallo di download per la struttura dell'account AdWords. La struttura dell'account AdWords deve essere scaricata prima di poter visualizzare i metadati Campagna e Parola chiave o utilizzare lo Strumento per le parole chiave e lo strumento Gestore codifica AdWords.
+1080	Pianificazione
+1081	Impostazioni di download sorgente CPC
+1082	<nobr><span class=title1><b>Impostazioni globali - Aggiornamento origine CPC (Ref. #A-2705)</b></span></nobr><br>Questa schermata consente di impostare le opzioni globali per il download della sorgente CPC.<p><b>Pianificazione - Intervallo di download</b><br>L'operazione di download dei rapporti CPC avviene in due fasi. Nella prima fase, vengono convalidate le credenziali CPC e la richiesta del rapporto viene inoltrata al server (AdWords e così via). Nella seconda fase, viene verificata periodicamente la disponibilità del rapporto, finché questo diventa disponibile. La seconda fase termina con il download vero e proprio del rapporto. La verifica della disponibilità del rapporto può richiedere da pochi secondi a mezz'ora e ogni chiamata API per tali verifiche può comportare un costo per il cliente (1 unità nel caso di AdWords); Urchin inizia quindi a verificare la disponibilità del rapporto una volta trascorso l'intervallo specificato tra due fasi. <br><br>Questa opzione consente di impostare il valore globale dell'intervallo tra la pianificazione del rapporto e il momento effettivo di verifica/download.<p><b>Download - Ora del giorno</b><br>Questa opzione consente di configurare l'ora globale del giorno in cui deve essere scaricato il rapporto aggiornato per questa sorgente CPC.<p><b>Dati dell'account - Intervallo di download</b><br>Questa opzione consente di impostare l'intervallo di download per la struttura dell'account AdWords. La struttura dell'account AdWords deve essere scaricata prima di poter visualizzare i metadati Campagna e Parola chiave o utilizzare lo Strumento per le parole chiave e lo strumento Gestore codifica AdWords.
+1083	Aggiornamento sorgente CPC
+1084	Pianificazione - Intervallo di download
+1085	Download - Ora del giorno
+1086	secondi
+1087	minuti
+1088	Download
+1089	Aggiorna automaticamente cronologia
+1090	Cronologia di download CPC
+1091	<nobr><span class=title1><b>Programma di pianificazione. Cronologia di download database geografico (Ref. #A-2800)</b></span></nobr><br>Questa schermata elenca la cronologia di ogni download del database geografico eseguito tramite il Programma di pianificazione attività. È riportato un riepilogo dei download, con informazioni importanti su ciascuno di essi. È possibile fare clic sul campo "Stato" per visualizzare i dettagli di esecuzione per una specifica attività della cronologia. Le frecce sotto ogni campo consentono di ordinare le voci in base al campo in oggetto.<p>Ciascuna voce mostra il nome dell'attività di download del database geografico, lo stato dell'attività, il momento in cui è stata avviata e il momento in cui è terminata.<p><b>Stato</b> (con link ipertestuale)<br>Lo stato di ogni attività è "In esecuzione", "Completata", "Avviso" o "Errore". Ciascuno di essi è codificato a colori e l'elenco può essere ordinato in base allo stato facendo clic sulla freccia sotto la parola "Stato". Per visualizzare i dettagli di esecuzione di uno specifico download del database geografico, fai clic sulla voce dello stato con codifica a colori accanto all'attività desiderata. Si aprirà una nuova finestra in cui verranno visualizzati i dettagli di esecuzione.<p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante "Avanti" o "Indietro".
+1092	Configurazione dell'origine costi completata. L'origine costi è stata aggiunta. Fai clic sul pulsante "Fine" per ritornare al sistema di amministrazione.
+1093	Nessuna <b>cronologia di attività aggiornamento automatico</b> trovata.
+1094	<nobr><span class=title1><b>Programma di pianificazione: Cronologia di download (Ref. #A-2900)</b></span></nobr><br>Questa schermata elenca la cronologia di ogni attività di download CPC eseguita tramite il Programma di pianificazione attività CPC. I download della struttura dell'account AdWords sono registrati come attività separate in questo elenco. Viene fornito il riepilogo di ciascun download di CPC. Fai clic sul campo Stato per visualizzare dettagli di esecuzione per ciascuna attività elencata nella cronologia. Usa le frecce sotto ogni campo per ordinare l'elenco in base a tale campo.<p>Ciascuna voce mostra il nome della sorgente CPC, il tipo di CPC, lo stato dell'attività, il momento in cui è stata avviata, il momento in cui è terminata, il numero di unità API consumate e l'host di elaborazione.<p><b>Stato</b> (link ipertestuale)<br>Lo stato di ogni attività è "In attesa", "In esecuzione", "Completata" o "Errore". Ciascuno di essi è codificato a colori e l'elenco può essere ordinato in base allo stato facendo clic sulla freccia sotto la parola "Stato". Per visualizzare i dettagli di esecuzione di una specifica attività, fai clic sulla voce dello stato con codifica a colori accanto all'attività desiderata. Si aprirà una nuova finestra in cui verranno visualizzati i dettagli di esecuzione.<p><b>Comandi</b><br>Utilizza il menu a discesa #Elementi visualizzati per modificare il numero di voci visualizzate contemporaneamente. Per scorrere le voci una pagina alla volta, utilizza il pulsante Indietro o Avanti. <p><b>Account</b> (solo modalità Datacenter)<br>In modalità Datacenter il menu Account può essere utilizzato per filtrare le voci da visualizzare.
+1095	Attenzione! Programma di pianificazione CPC disattivato.
+1096	Nessuna <b>cronologia di download CPC</b> trovata.
+1097	Tipo CPC
+1098	Interrotta
+1099	Download
+1100	Unità consumate
+1101	Elabora
+1102	Attira traffico più qualificato sul tuo sito con <A href="http://www.google.com/urchin/sign-up65.html#rd=adwords&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>Google AdWords</B></FONT></A>.<br/>Disponi già di un account? Valuta l'idea di <A href="http://www.google.com/urchin/sign-up65.html#rd=keygen&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>aggiungere altre parole chiave</B></FONT></A> alla tua campagna.
+1103	12010 - Azione: la sorgente CPC è stata inserita nella coda di download. Verifica lo stato e il risultato dell'esecuzione nella schermata Cronologia attività.
+1104	12011 - Azione: impossibile aggiungere la sorgente CPC alla coda del programma di pianificazione. La sorgente CPC è già in coda.
+1105	Azione
+1106	Impossibile “annullare” l'attività del profilo.
+1107	12016 - Azione: impossibile annullare l'attività pianificata. L'elaborazione del profilo è in corso.
+1108	Annullato
+1109	Deve essere attivata la normale creazione del backup
+1110	12014 - Azione: l'elaborazione del profilo sarà annullata.
+1111	In corso di annullamento
+1112	Durata media della visita
+1113	Sorgenti log
+1114	Filtrato
+1115	Visite
+1116	Frequenza di rimbalzo
+1117	Obiettivi realizzati
+1118	Account annunci
+1119	Aggiunta non riuscita. Hai raggiunto il limite massimo di profili.<p>Esegui l'upgrade della licenza oppure elimina un profilo esistente e riprova.
+1120	Aggiunta non riuscita. Hai raggiunto il limite massimo delle sorgenti log.<p>Effettua l'upgrade della licenza oppure cancella una sorgente log esistente e riprova.
+1121	Hai raggiunto il limite massimo di sorgenti log per profilo.
+1122	Hai raggiunto il limite massimo di profili.
+1123	La licenza demo che stai utilizzando scadrà il
+1124	Informazione
+1125	Licenza valida - USP
+1126	(Ora sbagliata)
+1127	La licenza USP scadrà il
+1128	Contatta il tuo amministratore di sistema per risolvere il problema.
+1129	Inserzionista
+1130	Ottimizzazione annuncio
+1131	Log CPC
+1132	Struttura dell'account
+1133	Dati dell'account - Intervallo di download
+1134	ore
+1135	giorni
+1136	Tipo autenticazione
+1137	12015 - Impossibile verificare l'utente.
+1138	Impossibile verificare l'utente.<p>Possibili motivi:<ul><li>è stato inserito un nome utente errato;</li><li>problema di connettività con il servizio di autenticazione esterno;</li><li>provider di autenticazione esterno configurato incorrettamente.</li></ul><p>Verifica il nome utente inserito, riprova e, se il problema persiste, verifica la configurazione del provider di autenticazione esterno, a seconda delle linee guida del provider.
+
+1139	giorno
+1140	ora
+1141	minuto
+1142	Accesso agli Strumenti AdWords
+1143	Aree geografiche/Velocità di connessione
+1144	Ubicazioni rete
+1145	Domini
+1146	Dettagli geografici
+1147	Informazioni geografiche
+1148	Database geografico
+1149	<nobr><span class=title1><b>Sorgenti log: profili</b></span></nobr><br>Utilizza questa schermata per applicare questa sorgente log a uno o più profili.<p><b>Applica a profilo</b><br>Per applicare questa sorgente log a un profilo, seleziona il nome del profilo nel riquadro "Profili disponibili", quindi fai clic sulla freccia rivolta verso destra. Per rimuovere la sorgente log da un profilo, seleziona il profilo nella finestra "Applicato a", quindi fai clic sulla freccia rivolta verso sinistra. Fai clic su "Aggiorna" per convalidare le modifiche.<p><b>Comandi</b><br>Fai clic sul pulsante "Aggiorna" per salvare le modifiche. Le schede nella parte superiore della schermata consentono di accedere a tutte le impostazioni modificabili di questa sorgente log.
+1150	Giorno
+1151	Settimana
+1152	Mese
+1153	Anno
+1154	Amministratore
+1155	Business
+1156	Base
+1157	Gestisci segmenti
+1158	Operazione non riuscita
+1159	Hai raggiunto il limite massimo di segmenti per utente
+1160	Internal
+1161	External
+1162	File
+1163	Risorse di assistenza
+1164	Informazioni su questo rapporto
+1165	Sito web Urchin
+1166	Pianifica aggiornamento
+1167	Impostazioni aggiornamento
+1168	Silenziosamente effettua l'upgrade degli articoli della guida
+1169	Silenziosamente effettua l'upgrade del database geografico
+1170	Versioni
+1171	Urchin e versioni successive
+1172	Articoli della guida
+1173	Database geografico
+1174	Componente
+1175	Versione corrente
+1176	Nuova versione
+1177	Azione
+1178	download in corso…
+1179	upgrade in corso…
+1180	visualizza log errori
+1181	controlla ora
+1182	visualizza elenco modifiche
+1183	pianifica download adesso
+1184	installa ora
+1185	annulla
+1186	Aggiornamento automatico
+1187	Aggiornamenti disponibili.
+1188	Visualizza ora.
+1189	Ultimo controllo
+1190	I servizi Urchin verranno chiusi durante un upgrade. Sei sicuro di voler continuare?
+1191	Vi sono attività di elaborazione in coda, attendi finché non sono stati completati.
+1192	Componente
+1193	prodotto
+1194	guida
+1195	dati geografici
+1196	Nome macchina
+1197	Centro assistenza online Urchin
+1198	Nuova!
+1199	Consulenti Urchin autorizzati
+1200	Google Analytics e il blog di Urchin
+1201	Centro assistenza
+1202	contenente
+1203	escludendo
+1204	Vai
+1205	Mostra righe:
+1206	Home page di Google Analytics
+1207	Domande frequenti (FAQ)
+1208	Norme sulla privacy
+1209	Urchin Help Center
+1210	completata
+1211	aggiorna
+1212	aggiornamento
+1213	aggiornato
+1214	scarica
+1215	download in corso
+1216	scaricato
+1217	upgrade
+1218	upgrade in corso
+1219	annullato
+1220	errore
+1221	Stampa visualizzazione
+1222	Visualizzazione standard
+1223	Permalink
+1224	Permalink (incolla in email o IM)
+1225	Consigliati per te
+1226	Quali sono le novità?
+1227	Beta
+1228	Alfa
+1229	Nuova interfaccia utente per i rapporti
+1230	Segmenti avanzati
+1231	Monitoraggio eventi
+1232	Elaborazione profilo in parallelo
+1233	Permalink
+1234	Dati geografici/DNS personalizzabili
+1235	Ordine personalizzato dei filtri
+1236	API dati v2
+1237	Aggiornamenti automatici
+1238	Centro assistenza locale
+1239	Campionamento traffico
+1240	Campionamento segmento
+1241	Google Analytics
+1242	Google AdWords
+1243	Strumento per ottimizzare il sito
+1244	Strumento per le parole chiave di Google
+1245	Filtro:
+1246	Software Urchin di Google
+1247	Norme sulla privacy di Google
+1248	Norme sulla privacy
+1249	Blog di Analytics
+1250	Contratto di licenza con l'utente finale
+1251	Forum degli utenti di Urchin
+1252	Task state is not up to date, please refresh the page
+1253	Personalizzati
+1254	Script esterno
+1255	Comando
+1256	Riga di comando
+1257	Parametri facoltativi

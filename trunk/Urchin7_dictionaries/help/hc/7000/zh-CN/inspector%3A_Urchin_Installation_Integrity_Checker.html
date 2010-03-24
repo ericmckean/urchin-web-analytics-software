@@ -1,0 +1,18 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>检查工具： Urchin Installation Integrity Checker</strong> <p class="line867"><strong>概述</strong> <p class="line874">检查工具 Urchin Installation Integrity Checker 提供了检查 Urchin 发行套装的方法，并会报告以下内容： <ul><li>Urchin 6 服务器的状态（网络服务器和调度程序） </li><li class="gap">许可或权限问题  </li><li class="gap">丢失的文件 </li><li class="gap">其他配置问题   </li></ul><p class="line874">默认情况下，它还会提供有关 Urchin 安装和安装平台类型的摘要信息。 <p class="line874">检查工具可执行的操作类型有： <ul><li>对 Urchin 发行套装执行健全性检查，包括检查是否存在相关文件及是否具备相应权限 </li><li class="gap">检查网络服务器端口（用于 Urchin 网络服务器）的可用性 </li><li class="gap">在 Urchin 发行套装上重置相应的权限 </li></ul><p class="line867"><strong>用法</strong> <p class="line874">检查工具位于 Urchin 6 发行套装的 util 目录下。 <p class="line874">该实用程序的用法如下： <p class="line867"><pre>
+  检查工具 [-h]（显示用法消息并退出）
+
+  检查工具 [-v] 显示检查工具的版本
+
+  检查工具 [-p] 检查指定的端口以确定其可用性
+
+  检查工具 [-r] 指定修复发行套装文件的权限
+
+</pre><p class="line874">如果调用时没有使用命令行参数，检查工具将对 Urchin 安装执行多个方面的健全性检查，以确保安装的完整性。 具体来说，检查工具将执行以下操作： <ol type="1"><li>显示 Urchin 的版本和服务器信息，如操作系统版本和主机名 </li><li class="gap">验证所有相应的 Urchin 二进制程序和实用程序是否已存在以及版本是否正确。 另外，对于 UNIX 类型的平台，还将验证 Urchin 发行套装二进制程序和文件中的权限是否一致。 </li><li class="gap">检查并报告 Urchin Apache 网络服务器 (urchinwebd) 的状态 </li><li class="gap">检查并报告 Urchin Scheduler (urchind) 的状态 </li><li class="gap">检查 Urchin 的配置，报告记录的总数和一些摘要许可信息 </li><li class="gap">Urchin 6 的配置信息（序列号、许可状态和许可版本） </li></ol><p class="line874">使用  "-p" 参数调用检查工具时，会检查 Urchin6 网络服务器所指定使用的端口的可用性。  <p class="line874">"-r"（修复）选项将使实用程序尝试修复 Urchin 发行套装中任何与原安装不一致的文件的权限。 通常，此选项对 UNIX 类型的平台非常有帮助，而且大多数情况它需要实用程序作为 "root" 用户来运行。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

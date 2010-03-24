@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>How do I track all the subdomains for my site in one profile?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>This article authored by</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, an Urchin Software Authorized Consultant </em> </li></ul><p class="line874">You can track subdomains within the same profile as the domain. In order to do so, you will need to add a line to the tracking code on each page of the subdomain. The instructions below assume that this profile was set up with the primary domain as the listed website (e.g. example.co.uk) <ol type="1"><li>Add the following line (in bold) to the tracking code on all pages of your subdomain and your main domain: </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">This line should reference the primary domain (example.co.uk). </li></ul><p class="line874">Please be aware that while this change will allow you to track subdomains within one profile, your reports may not distinguish between pages coming from www.example.co.uk versus help.example.co.uk. For example, in your Top Content report, you may have hits to www.example.co.uk/index.html and help.example.co.uk/more.html, but the report will display the following: <pre>   /index.html
+   /more.html
+</pre><p class="line874">If you would like to distinguish between your subdomains, you can create an Advanced filter for your profile with the following settings: <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">With this filter in place, the previous examples would appear with the subdomain attached: <pre>   www.example.co.uk/index.html
+   help.example.co.uk/more.html
+</pre><p class="line874">NOTE: This filter relies on the hostname of your website including sub-domain being written to your web access log file. If your web access log file does not contain the hostname it will not be possible for Urchin 6 reports to record the difference, for example,  between index.html on the two domains: <pre> www.example.co.uk/index.html
+ help.example.co.uk/more.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

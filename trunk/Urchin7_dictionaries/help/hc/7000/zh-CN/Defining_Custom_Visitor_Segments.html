@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>自定义访问者群体</strong> <p class="line874">除了按预定义群体对用户进行分组（如地理区域和语言）外，Urchin 6 还可让您自定义群体并对各群体行为进行分析。例如，您可以要求访问者在表单上选择其工作类别（如技术人员/工程师、营销/公关等）。然后，您可以根据访问者选中的工作类别信息分析其浏览和购买行为。 <p class="line862">您可以在"营销优化"&gt;"访问者群体效果"&gt;"用户定义报告"中查看每个自定义用户群体的转换行为。另外，根据访问者群体，您还可以使用许多其他报告来交叉分析数据。要进行交叉分析，请点击"分析选项"按钮，在大多数报告中，该按钮位于条目的最左边。选择"用户定义"查看您自定义的用户群体。 <p class="line862">要设置访问者群体，只需调用 javascript <tt class="backtick">__</tt>utmSetVar 函数即可。例如，在 UTM 下的任何网页中执行以下调用： <pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line874">示例：将该页面的访问者分配到"营销/公关"群体 <p class="line874">在此例中，所有访问该页面的访问者都将被分配到"营销/公关"群体。 <pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line874">示例：根据访问者选择的群体分配访问者 <p class="line874">在此例中，将根据访问者在表单中的选择来分组。 <pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;技术人员/工程师&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;营销/公关&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;制造业&lt;/option&gt;
+    &lt;option value="General Management"&gt;综合管理&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

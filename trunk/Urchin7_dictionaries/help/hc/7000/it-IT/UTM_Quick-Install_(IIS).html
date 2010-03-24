@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Installazione rapida di UTM (IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Articolo di </em> <a href="EpikOne.html">EpikOne</a><em>, consulente autorizzato del software Urchin </em> </li></ul><p class="line874">Nel seguente paragrafo viene rapidamente illustrato come installare UTM per i siti web gestiti su un server Microsoft IIS su qualsiasi piattaforma Windows. Per informazioni dettagliate su UTM, consulta l'articolo intitolato "Urchin Traffic Monitor (UTM)" in questa sezione. <p class="line867"><strong>Passaggio 1.</strong> Copia dei file UTM nella root dei documenti del sito web. I file, urchin.js e <tt class="backtick">__</tt>utm.gif sono ubicati nella cartella "utils\utm" della distribuzione di Urchin. Copia questi due file nella cartella principale dei contenuti del sito web. IMPORTANTE: Il nome del file GIF comincia con due trattini di sottolineatura. <p class="line867"><strong>Passaggio 2.</strong> Inserimento di un riferimento UTM nel codice HTML del sito web. Inserisci la seguente riga in tutte le pagine HTML. Puoi posizionarla in qualsiasi punto delle pagine, tuttavia, è consigliabile inserirla direttamente prima del tag &lt;/body&gt; di chiusura. Se utilizzi una normale inclusione o un modello, puoi inserire il codice in quel punto. <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line874">Se utilizzi un pacchetto come "HTML Tidy", puoi inserire la riga Javascript nell'area HEAD della pagina, ad esempio: <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>Passaggio 3.</strong> Attivazione dei cookie nella registrazione log IIS. Apri l'IIS Manager e visualizza la finestra delle proprietà del tuo sito web. Assicurati che la registrazione log sia attivata e impostata sul formato W3C esteso. Fai clic sul pulsante Proprietà accanto al formato e nella scheda Proprietà estese, seleziona la casella accanto a Cookie. <p class="line867"><strong>Passaggio 4.</strong> Impostazione dell'uso di UTM (Urchin Traffic Monitor) nel profilo Urchin. Nell'interfaccia di amministrazione di Urchin, modifica il profilo in questione e fai clic sulla scheda Impostazioni. Imposta il metodo monitoraggio dei visitatori su UTM. In Dominio UTM indica l'indirizzo del tuo sito web, senza www. Scegli quindi l'impostazione predefinita per il set di rapporti e fai clic sul pulsante Aggiorna. <p class="line874">È tutto. Il sito web comincia a registrare i dati UTM nel normale file di log che verrà identificato al successivo avvio di Urchin. <p class="line874">Funziona? Per verificare se il sistema UTM esegue correttamente le registrazioni nel file di log, esamina il log dopo avere installato l'UTM e selezionato alcune pagine del sito. In fondo al file di log dovrebbe essere riportata una voce simile alla seguente: <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">Se le voci utma non sono presenti, verifica che i cookie siano stati attivati correttamente nella registrazione. Se il codice di stato non è 200, verifica che i file siano stati copiati correttamente nella root dei documenti.<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,1263 @@
+######################################################
+#  Urchin 7 admin default dictionary file
+#  NOTE:  Don't edit this file! Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+######################################################
+0	Non utilisé
+1	Configuration
+2	Affichage des rapports
+3	Préférences
+4	2999803979
+5	Comptabilité
+6	Mise à jour de la base de données DNS
+7	Utilisateurs et groupes
+8	Comptes
+9	Utilisateurs
+10	Groupes
+11	Profils Urchin
+12	Profils
+13	Paramètres
+14	Paramètres de traitement
+15	Paramètres globaux
+16	Informations sur l'aide
+17	Guide d'administration
+18	Glossaire
+19	À propos d'Urchin
+20	Guide de l'utilisateur Urchin
+21	Planificateur
+22	Précédent
+23	Suivant
+24	Guide de mise en route rapide
+25	Assistant de compte : Informations générales
+26	Assistant de compte : Terminer
+27	Assistant de compte : Confirmation
+28	Historique des tâches du profil
+29	Nom
+30	Centre de documentation
+31	Correspondance de mots clés naturels
+32	Correspondance des paramètres de page
+33	Correspondance MIME des pages vues
+34	inclure
+35	exclure
+36	Traiter les visiteurs et les sessions
+37	Carte des données
+38	Groupe de rapports
+39	Paramètres de traitement
+40	Ajouter
+41	Nom du compte
+42	Adresse IP
+43	Modifier
+44	Supprimer
+45	Exécuter
+46	Infos sur le compte
+47	Avenir du journal
+48	Récapitulatif du compte
+49	supprimer
+50	Paramètres du panneau de configuration admin
+51	Résolution de noms de domaine
+52	activer
+53	désactiver
+54	Résolveur d'adresses IP
+55	Boucles DNS
+56	% de résolution cible
+57	subordonné à des paramètres de résolution de noms de domaine valides
+58	Nombre maximal d'enregistrements par table
+59	Mode Datacenter
+60	Passer en GMT
+61	Décalage horaire
+62	Informations sur l’aide Urchin
+63	Fin de la session
+64	Ne pas toucher
+65	Archiver - Compresser
+66	Supprimer
+67	Appliquer la date
+68	Substitution de la date et de l'heure par des caractères génériques dans le nom du chemin d'accès au journal
+69	Remplacer l'heure par
+70	Rechercher et remplacer
+71	D
+72	L
+73	M
+74	M
+75	J
+76	V
+77	S
+78	janv.
+79	févr.
+80	mars
+81	avr.
+82	mai
+83	juin
+84	juil.
+85	août
+86	sept.
+87	oct.
+88	nov.
+89	déc.
+90	Mettre à jour
+91	Compte
+92	Aperçu rapide
+93	Nombre d'éléments à afficher
+94	Droits d'administrateur
+95	Option 1 (Utilisateur, Groupes, Planificateur de tâches du profil, Historique des tâches du profil)
+96	Résolution de noms de domaine
+97	Paramètres de la base de données des rapports
+98	Ajustement de l'heure
+99	Options de suivi des visiteurs
+100	Contact
+101	Informations sur le compte
+102	Échec de l'ajout - La licence de ce profil est arrivée à expiration.<p> Mettez votre licence à niveau ou supprimez<br> un profil existant et réessayez.
+103	Échec de l'ajout
+104	Échec de la suppression
+105	Échec de l'opération de récupération
+106	Échec de la mise à jour
+107	Adresse e-mail du contact
+108	Utilisateurs
+109	Nom d'utilisateur
+110	Profils
+111	Nom et prénom
+112	Informations sur l'utilisateur
+113	Option 2 (Option 1 + Filtres)
+114	Mot de passe
+115	Compte facultatif
+116	Tous
+117	Option 3 (Option 2 + Profils,Sources de journal)
+118	Niveau Admin
+119	Préférences d'utilisateur
+120	Langue des rapports
+121	Langue d'administration
+122	Groupes
+123	Nom du groupe
+124	Informations sur le groupe
+125	Utilisateurs attribués au groupe
+126	Copier
+127	Utilisateurs du groupe
+128	Sauvegardes et nettoyages de la base de données
+129	Créer des sauvegardes
+130	Nettoyer les sauvegardes
+131	Nombre de sauvegardes à conserver
+132	Avancé
+133	Local
+134	GMT
+135	Heures
+136	Domaines du site
+137	Décoder l'URL
+138	Chaîne de recherche
+139	Chaîne de remplacement
+140	Accès autorisé
+141	Sources de journal à traiter
+142	Sources de journal à traiter
+143	Sélectionnez un profil ci-dessus
+144	Gestionnaire de journaux
+145	Gestionnaire de filtres
+146	Gestionnaire de journaux
+147	Gestionnaire de filtres
+148	Nom de la source de journal
+149	Nom du filtre
+150	Annuler la tâche
+151	Informations sur la source de journal
+152	Chemin d'accès au fichier journal
+153	Format du journal
+154	Configuration des utilisateurs : Configurer le groupe de rapports
+155	Informations sur les filtres
+156	Type de filtre
+157	Champ de filtrage
+158	Inclure UNIQUEMENT la règle
+159	Exclure la règle
+160	URL dynamique
+161	Filtre(s) à appliquer
+162	Filtres disponibles
+163	Filtres appliqués
+164	Champ A
+165	Champ B
+166	Sortie vers
+167	Extraire A
+168	Extraire B
+169	Constructeur
+170	Remplacer le champ de sortie
+171	Champ A obligatoire
+172	Oui
+173	Non
+174	A obligatoire uniquement
+175	B obligatoire seulement
+176	Les deux champs
+177	L'un des champs
+178	Aucun des champs
+179	Sélectionner un groupe de rapports
+180	Groupes de rapports
+181	Remplacer le groupe de rapports du profil
+182	Données géographiques
+183	Sauvegarde et nettoyage de la base de données Urchin
+184	<nobr><span class=title1><b>Paramètres globaux : Mise à jour automatique (Ref. #A-2704)</b></span></nobr><p><b>Versions<br></b>La fonction de mise à jour automatique permet de mettre à jour les composants Urchin suivants de manière indépendante :<ul><li>Urchin : contient tous les composants sauf les bases de données géographiques (environ 50 Mo)</li><li>Articles d'aide : contient l'aide intégrée et les articles du centre d'aide (environ 5 Mo par langue)</li><li>Bases de données géographiques : contient toutes les bases de données géographiques (environ 200 Mo)</li></ul>Actions disponibles :<ul><li>vérifier maintenant : rechercher les mises à jour</li><li>afficher la liste des modifications : afficher la liste des modifications d'une nouvelle version</li><li>planifier un téléchargement maintenant : lancer le téléchargement d'une nouvelle version</li><li>annuler : annuler le téléchargement</li><li>installer maintenant : lancer le processus d'installation</li><li>afficher le journal d'erreurs : consulter les erreurs</li></ul></p><p><b>Planifier la mise à jour<br></b>Utilisez ces commandes pour spécifier si les composants doivent être mis à jour et, si oui, quand cette opération doit avoir lieu. Par défaut, ils sont mis à jour quotidiennement. Si cette option est activée, Urchin télécharge automatiquement les mises à jour, une fois par jour à l'heure spécifiée. Les mises à jour de la base de données géographique étant relativement volumineuses (environ 200 Mo), leur téléchargement peut avoir un impact sur la bande passante du réseau.</p><p><b>Paramètres proxy HTTP (facultatif)<br></b>Si un proxy est nécessaire pour l'accès sortant vers le serveur de téléchargement Google qui héberge les mises à jour des données géographiques, utilisez ces champs pour spécifier le nom et le port du serveur, ainsi qu'un nom d'utilisateur et un mot de passe.</p><p><b>Mettre à jour les paramètres<br></b>Si cette option est activée, les articles d'aide ou les bases de données géographiques seront mis à jour en fonction de l'heure configurée, de façon automatisée et sans intervention de l'utilisateur.</p>
+185	<nobr><span class=title1><b>Profils : Stockage/Base de données (Ref. #A-2108)</b></span></nobr><br>Cet écran permet de définir des options de gestion des données. Urchin propose des options de sauvegarde automatique et de récupération des données pour la tolérance de pannes. Utilisez ces options pour travailler sans risque. Urchin propose également une option d'archivage automatique qui peut compresser automatiquement les données obsolètes. <p><b>Utilisation de la mémoire de la base de données</b><br>En fonctionnement normal, Urchin utilise un système cache pour limiter la quantité de mémoire RAM utilisée par le moteur de traitement. Les performances peuvent être augmentées pour exécuter l'intégralité du processus en mémoire, mais cette méthode doit uniquement être utilisée sur des systèmes Urchin dédiés. De plus, sachez que ce processus risque de consommer toute la mémoire RAM disponible sur le système. Pour la plupart des opérations, choisissez "Limiter avec un système cache" pour cette option.<p><b>Nombre maximal d'enregistrements par table</b><br>Lors de la vérification de sites volumineux, ce paramètre vous permet d'indiquer le nombre maximal d'enregistrements dans les tables des bases de données Urchin et donc de maîtriser la taille des données et les performances d'Urchin. L'option par défaut convient pour la plupart des installations. Si cette limite est atteinte pour un mois donné, les entrées supplémentaires sont regroupées sous une entrée intitulée "Autre". Pour bénéficier de performances optimales, utilisez une valeur inférieure ou égale à 100 000. <p><b>Conserver les informations de suivi brutes</b><br>Lorsque cette option est désactivée, les informations brutes relatives aux sessions et aux visiteurs sont supprimées une fois traitées. Cela permet d'améliorer nettement les performances de traitement des journaux et de réduire la quantité de données stockées pour les sites volumineux. Une fois les données de session brutes supprimées, tous les appels de fichier supplémentaires pour cette session sont considérés comme de nouvelles sessions, ce qui peut provoquer un léger effet secondaire dans la génération des rapports. <p><b>Suivi du journal</b><br>Urchin est équipé d'un outil de suivi de journaux "intelligent" qui lui permet de déterminer si tel ou tel fichier journal a déjà été traité. Une rotation des journaux est ainsi possible chaque fois que cela est utile, ce qui évite une planification rigide. Cette option permet également de renvoyer Urchin à un répertoire de fichiers journaux sans avoir besoin de vérifier si certains de ces fichiers ont déjà été traités. REMARQUE IMPORTANTE : si Urchin ne se trouve pas physiquement sur le système où sont stockés les fichiers journaux, il copie tous les journaux sur le système Urchin local avant de déterminer s'ils ont déjà été traités. Par conséquent, le réseau devient vite encombré en cas d'analyse de fichiers journaux volumineux.<p><b>Restauration de BD automatique</b><br>Lorsque cette option est sélectionnée, les données sont restaurées automatiquement si le traitement a été interrompu ou supprimé. Urchin détecte automatiquement l'interruption ou la suppression de l'opération et restaure les données de la sauvegarde la plus récente (s'il en existe une) avant de continuer.<p><b>Créer des sauvegardes</b><br>Cette option permet la création automatique de sauvegardes après le traitement. Les sauvegardes sont compressées afin de réduire l'espace de stockage requis.<p><b>Nettoyer les sauvegardes</b><br> Cette option permet le nettoyage automatique des sauvegardes antérieures en fonction du nombre de sauvegardes à conserver (spécifié à l'aide de l'option suivante). Si cette option est sélectionnée, Urchin supprime automatiquement les sauvegardes antérieures, permettant ainsi de maîtriser l'espace de stockage. <p><b>Nombre de sauvegardes à conserver</b><br> Cette option spécifie le nombre de sauvegardes à conserver chaque mois lorsque l'option de nettoyage ci-dessus est sélectionnée.<p><b>Archiver la base de données</b><br> Cette option permet d'archiver automatiquement, chaque mois, les données obsolètes. Ces dernières sont automatiquement compressées en un seul dossier d'archives, les sauvegardes sont supprimées et les données verrouillées. Il est toujours possible de consulter les données archivées, mais les appels de fichier ne peuvent plus être traités pour les mois archivés.<p><b>Archiver la base de données après</b><br>Cette option spécifie l'ancienneté (en mois) des données à archiver automatiquement.<p><b>Supprimer TOUTES les données du profil</b><br>Utilisez cette option pour supprimer définitivement TOUTES les données de ce profil, y compris TOUTES les archives et sauvegardes. Il faut ensuite traiter de nouveau tous les fichiers journaux de ce profil. <b>Avertissement</b> : vérifiez que vous disposez de tous les fichiers journaux avant de supprimer ces données.
+186	Personnaliser
+187	Paramètres de profil
+188	Nom du profil
+189	Domaine
+190	Informations sur le profil
+191	Bienvenue dans l'assistant de configuration Urchin. <p>L'assistant propose des étapes de configuration simples qui permettent une mise en route rapide. Si vous souhaitez modifier certaines options ultérieurement, vous pourrez le faire via la section "Configuration" de l'interface d'administrateur, où vous disposez d'un accès complet aux paramètres.<p> Cliquez sur "Continuer" pour commencer.
+192	<nobr><span class=title1><b>Planificateur : Progression de la tâche (Ref. #A-2664)</b></span></nobr><br>Cet écran affiche la progression de la tâche en cours d'exécution. Il comporte également des commandes permettant d'annuler cette dernière. Une barre de progression s'affiche en haut de la fenêtre. Elle indique l'état d'avancement approximatif du traitement sous forme de pourcentage. Le bouton “Annuler la tâche” permet de stopper la tâche en cours et de restaurer le profil. Un lien permettant d'accéder aux rapports concernant le profil est disponible au-dessus de la barre de progression. Le résultat de l'exécution fourni par le moteur de traitement du journal s'affiche dans la fenêtre “Détails du traitement de la tâche”. <p>Remarque : Si un fichier journal distant assez volumineux est en cours de traitement, la copie peut prendre du temps. Dans ce cas, la barre de progression reste immobile. Une fois le fichier copié sur l'ordinateur qui exécute Urchin, la mise à jour de la barre de progression devrait se faire de façon continue.
+193	<nobr><span class=title1><b>Planificateur : Historique détaillé (Ref. #A-2563)</b></span></nobr><br>Cet écran affiche les détails de l'exécution d'une tâche, qui servent en général au débogage ou à l'évaluation des performances. Si une erreur s'est produite, cet écran indique comment la corriger. <p><b>Problèmes courants</b><br>Parmi les problèmes courants, on trouve les erreurs de type "fichier journal introuvable", qui en général se règlent en corrigeant le chemin d'accès ou le nom du fichier. Si les fichiers journaux sont transmis sur le réseau via un serveur FTP, vérifiez l'exactitude du nom d'utilisateur et du mot de passe en vous connectant au serveur à l'aide d'un programme FTP dédié. Si le temps de traitement ne représente qu'une petite fraction du temps d'exécution total, il existe probablement un problème de copie du fichier journal sur le réseau. Dans ce cas, il est recommandé d'installer Urchin directement sur le serveur.
+194	<nobr><span class=title1><b>Navigateur de fichiers (Ref. #A-5000)</b></span></nobr><br>Cet écran permet de naviguer dans le système de fichiers local afin de trouver la source de journal souhaitée. Cette option est particulièrement utile lorsque vous n'êtes pas certain du nom du fichier journal. La zone “Accéder au répertoire” (à gauche) permet de sélectionner un répertoire de navigation. Les fichiers se trouvant dans ce répertoire s'affichent dans la zone “Sélectionner un fichier” (à droite). Une fois que vous avez trouvé le fichier journal recherché, cliquez sur celui-ci dans la zone “Sélectionner un fichier”, puis sur “OK”.<p><b>Répertoire actuel</b><br>Vous pouvez modifier directement le champ “Répertoire actuel” situé en haut de la fenêtre. Appuyez sur la touche “Entrée” pour afficher le contenu de ce répertoire après modification.<p><b>Répertoire supérieur</b><br>Si vous cliquez sur le bouton “Répertoire supérieur”, en haut à droite (icône de dossier avec une flèche), le répertoire actuel avance d'un niveau vers le répertoire parent. Le contenu du nouveau répertoire s'affiche.<p><b>Accéder au répertoire</b><br>La fenêtre de gauche permet de sélectionner un répertoire à l'intérieur du répertoire actuel. Cliquez sur un répertoire apparaissant dans la fenêtre “Accéder au répertoire” pour le sélectionner.<p><b>Sélectionner un fichier</b><br>Pour sélectionner un fichier, utilisez la fenêtre “Sélectionner un fichier” située à droite. Cliquez une fois sur le fichier souhaité pour que le nom du fichier apparaisse dans le champ “Nom de fichier”. Cliquez sur “OK” lorsque vous avez sélectionné le fichier.<p><b>OK/Vérifier/Annuler</b><br>Lorsque vous cliquez sur “OK”, la fenêtre se ferme et votre sélection apparaît dans le champ du chemin d'accès de la fenêtre précédente. Si vous cliquez sur le bouton “Annuler”, la fenêtre se ferme. Si vous cliquez sur le bouton “Vérifier”, une nouvelle fenêtre s'ouvre, vous permettant de vérifier les autorisations et la taille d'un ou de plusieurs fichiers. Il faut pour cela que le nom du ou des fichiers contienne un caractère générique.
+195	<nobr><span class=title1><b>Navigateur de journaux distants (Ref. #A-5001)</b></span></nobr><br>Cet écran permet de naviguer dans un système de fichiers distant (via FTP) afin de trouver la source de journal qui vous intéresse. Cette option est particulièrement utile lorsque vous n'êtes pas certain du nom du fichier journal ou si vous souhaitez tester les paramètres FTP que vous avez configurés dans le système Urchin. La zone “Accéder au répertoire” (à gauche) permet de sélectionner un répertoire de navigation. Les fichiers se trouvant dans ce répertoire s'affichent dans la zone “Sélectionner un fichier” (à droite). Une fois que vous avez trouvé le fichier journal recherché, cliquez sur celui-ci dans la zone “Sélectionner un fichier”, puis sur “OK”.<p><b>Répertoire actuel</b><br>Vous pouvez modifier directement le champ “Répertoire actuel” situé en haut de la fenêtre. Appuyez sur la touche “Entrée” pour afficher le contenu de ce répertoire après modification.<p><b>Répertoire supérieur</b><br>Si vous cliquez sur le bouton “Répertoire supérieur”, en haut à droite (icône de dossier avec une flèche), le répertoire actuel avance d'un niveau vers le répertoire parent. Le contenu du nouveau répertoire s'affiche.<p><b>Accéder au répertoire</b><br>La fenêtre de gauche permet de sélectionner un répertoire à l'intérieur du répertoire actuel. Cliquez sur un répertoire apparaissant dans la fenêtre “Accéder au répertoire” afin de le sélectionner.<p><b>Sélectionner un fichier</b><br>Pour sélectionner un fichier, utilisez la fenêtre “Sélectionner un fichier” située à droite. Cliquez une fois sur le fichier souhaité pour que le nom du fichier apparaisse dans le champ “Nom de fichier”. Cliquez sur “OK” lorsque vous avez sélectionné le fichier.<p><b>OK/Annuler</b><br>Lorsque vous cliquez sur “OK”, la fenêtre se ferme et votre sélection apparaît dans le champ du chemin d'accès de la fenêtre précédente. Si vous cliquez sur le bouton “Annuler”, la fenêtre se ferme.
+196	<nobr><span class=title1><b>Navigateur de répertoires (Ref. #A-5002)</b></span></nobr><br>Cet écran vous permet de parcourir le système de fichiers local d'Urchin afin de sélectionner un répertoire pour le paramètre que vous modifiez.<p><b>Répertoire actuel</b><br>Vous pouvez modifier directement le champ “Répertoire actuel” situé en haut de la fenêtre. Appuyez sur la touche “Entrée” pour afficher le contenu de ce répertoire après modification.<p><b>Répertoire supérieur</b><br>Si vous cliquez sur le bouton “Répertoire supérieur”, en haut à droite (icône de dossier avec une flèche), le répertoire actuel avance d'un niveau vers le répertoire parent. Le contenu du nouveau répertoire s'affiche.<p><b>Sélectionner un répertoire</b><br>Accédez à la fenêtre “Sélectionner un répertoire” pour choisir un répertoire. Cliquez sur un répertoire pour le sélectionner. Lorsque “Répertoire actuel” affiche le répertoire souhaité, cliquez sur OK.<p><b>OK/Annuler</b><br>Lorsque vous cliquez sur “OK”, la fenêtre se ferme et votre sélection apparaît dans le champ du chemin d'accès de la fenêtre précédente. Si vous cliquez sur le bouton “Annuler”, la fenêtre se ferme.
+197	Super administrateur
+198	Utilisateur
+199	Administrateur de compte
+200	Chinois
+201	English
+202	Français
+203	Allemand
+204	Italien
+205	Japonais
+206	Coréen
+207	Portugais (Brésil)
+208	Espagnol
+209	Suédois
+210	Enregistrement ajouté
+211	Enregistrement mis à jour
+212	Planifier la mise à jour de la base de données géographique
+213	Planifier la sauvegarde et le nettoyage de la base de données Urchin
+214	Restauration automatique de la base de données
+215	Conserver les informations de suivi brutes
+216	Options de création de rapports
+217	Pour modifier, effectuez une sélection.
+218	Valeur globale par défaut
+219	Autorisations relatives aux rapports
+220	Profils disponibles
+221	Accès autorisé
+222	Stockage/Base de données
+223	Création de rapports
+224	Groupes attribués au groupe
+225	Racine de l'URI en minuscule
+226	Groupes du groupe
+227	Paramètres de rapport
+228	Groupe de rapports
+229	Groupe de rapports par défaut des profils
+230	Options de stockage des données
+231	Utilisateurs disponibles
+232	Groupes disponibles
+233	Domaine UTM
+234	Groupes attribués à
+235	Membre de ces groupes
+236	Paramètres du journal
+237	Paramètres de filtrage
+238	Sources de journal disponibles
+239	Appliqué à
+240	Sources de journal appliquées à
+241	Aperçu rapide du profil
+242	Utilisateurs attribués au profil
+243	Options d'archivage de la base de données
+244	Archiver la base de données
+245	Archiver la base de données après
+246	Mois
+247	Type de profil
+248	Assistant de profil : Paramètres généraux
+249	<nobr><span class=title1><b>Assistant profil : Paramètres généraux (Ref. #A-249)</b></span></nobr><br>Utilisez cet écran pour définir plusieurs paramètres permettant de déterminer la façon dont les données du profil sont traitées.<p><b>URL du site Web</b><br>Ce paramètre permet de créer des liens renvoyant à votre site Web réel. Dans ce champ doit apparaître le nom de domaine complet du site, précédé de http://. <p><b>Domaines du site</b><br>Ce paramètre doit répertorier tous les domaines possibles pour votre site Web, avec ou sans www. Ce champ permet de déterminer si une visite a été générée par un site externe (les visites générées par des liens internes ne sont pas utilisées pour la création de rapports sur les sites référents). Séparez les domaines par des virgules.<p><b>Page par défaut</b><br>Utilisez cette option pour saisir la page par défaut de votre site. Dans la plupart des cas, il est possible d'accéder à la même page via www.site.com/ et www.site.com/index.html ou default.html. Urchin a besoin de connaître le nom de cette page pour pouvoir combiner les entrées en interne lorsque les deux styles sont utilisés.<p><b>Traitement du journal parallèle</b><p>Activez cette option pour une meilleure efficacité du traitement du journal avec des journaux à équilibrage de charge. Pour ceci, notez qu'il est nécessaire de configurer une source de journal distincte pour le fichier journal de chaque serveur utilisé pour équilibrer la charge.
+250	Erreur de port du serveur. \n\nVérifiez les valeurs définies pour la plage de port.
+251	Droits d'utilisateur
+252	Modification du mot de passe
+253	Changer la langue des rapports
+254	Autres sources d'information
+255	Modules installés
+256	Module linguistique
+257	E-commerce (traitement ELF)
+258	Suivi des campagnes
+259	La licence est arrivée à expiration pour cette source de journal. \n\nConsultez l’écran de la licence pour savoir comment la mettre à niveau. \n\nParamètres->Licence
+260	Codage Latin-1 (UTF-8)
+261	Utilisateur (pas de mise à jour)
+262	Paramètres du compte
+263	Emplacement des données de rapport
+264	Emplacement de consultation de répertoires
+265	Comptabilité
+266	Récapitulatif de la configuration d'Urchin
+267	Nombre de comptes
+268	Nombre de groupes
+269	Nombre d'utilisateurs
+270	Nombre de profils
+271	UTM installé
+272	Nombre d'ensembles de données
+273	Nombre de sources de journal
+274	Nombre de formats de journaux
+275	Nombre de filtres de journal
+276	Numéro du schéma
+277	Nombre de champs de base de données
+278	Nombre de machines
+279	Nombre de tâches planifiées
+280	Récapitulatif des comptes
+281	Planificateur de tâches du profil
+282	Demande d'inscription
+283	Nom de la tâche
+284	Informations sur la planification
+285	Paramètre de planification
+286	Nombre de processus
+287	Application à exécuter
+288	Paramètres des tâches
+289	Fréquence
+290	Tous les jours
+291	Hebdomadaire
+292	Mensuel
+293	Une fois
+294	Heure de début
+295	Heure
+296	Minute
+297	Licence de base
+298	Planifier les tâches tous les jours
+299	Tous les X jours
+300	Planifier les tâches toutes les semaines
+301	Toutes les X semaines
+302	Jour de la semaine
+303	Lun
+304	Mar
+305	Mer
+306	Jeu
+307	Ven
+308	Sam
+309	Dim
+310	Planifier les tâches tous les mois
+311	Jour du mois
+312	Planifier la tâche une seule fois
+313	Date
+314	Toutes les heures
+315	Planifier les tâches toutes les heures
+316	Heure du jour
+317	Minute de l'heure
+318	Tous
+319	(Aucun)
+320	Sélectionner
+321	Codage japonais (UTF-8)
+322	Processus
+323	Nom
+324	Heure de début
+325	Heure de fin
+326	État
+327	Ajouter le profil d'assistant à l'aide
+328	Visiteurs
+329	Pages vues
+330	Appels de fichier
+331	Octets
+332	Champs personnalisés
+333	Séparateur personnalisé
+334	Totaux
+335	Planifier
+336	Planifier plus tard
+337	Afficher
+338	Assistant de profil : Confirmation de la copie
+339	Le profil a été copié. À présent, vous pouvez soit modifier le profil en cliquant sur "Autres options", soit cliquer sur "Terminé" pour effectuer d'autres opérations.
+340	Planificateur de tâches du profil
+341	Accéder au rapport
+342	Aucun rapport à consulter
+343	Préférences
+344	Cet écran affiche un récapitulatif du profil que vous avez copié. Si les paramètres sont corrects, cliquez sur "Terminer" pour achever la duplication. Pour apporter des modifications, cliquez sur le bouton "Précédent".
+345	Enregistrements (pour plus de détails, consultez l'aide)
+346	Heure locale
+347	Assistant de profil : Fin de la copie
+348	Minutes
+349	<nobr><span class=title1><b>Assistant profil : Copier (Ref. #A-349)</b></span></nobr><br>Cet écran permet de copier un profil existant. Le profil créé est identique. Spécifiez simplement le nom, l'URL principale (le nom de domaine) et toute autre URL renvoyant à ce site.<p><b>Compte facultatif</b> (mode Datacenter)<br>En mode Datacenter, le paramètre "Compte" peut servir à associer ce profil à un compte pouvant être utilisé pour contrôler l'accès et l'administration au niveau du compte.<p><b>Nom du profil</b><br>Ce champ est obligatoire. Vous y spécifiez le nom associé au profil. Vous pouvez le choisir librement ou utiliser le nom du site Web. Si vous saisissez un nom de site du type www.urchin.com, les deux autres champs sont automatiquement renseignés.<p><b>URL du site Web</b><br>Ce paramètre permet de créer des liens renvoyant à votre site Web réel. Dans ce champ doit apparaître le nom de domaine complet du site, précédé de http://. <p><b>Domaines du site</b><br>Ce paramètre doit répertorier tous les domaines possibles pour votre site Web, avec ou sans www. Ce champ permet de déterminer si une visite a été générée par un site externe. Séparez les domaines par des virgules.<p><b>Domaine UTM</b> (pour les profils suivis par UTM)<br>En fonctionnement normal, laissez ce champ vide. UTM détecte automatiquement le domaine du site. La fonction "Domaine UTM" est utilisée uniquement lorsque vous disposez de domaines qui se chevauchent et qui doivent faire l'objet d'un suivi séparé.
+350	Priorité d'exécution Urchin
+351	Faible
+352	Normal
+353	Élevé
+354	Paramètres d'accès
+355	Informations de licence
+356	Code de licence
+357	Numéro de série
+358	Paramètres d'accès à distance
+359	Assistant de profil : Copier
+360	Accès aux rapports en ligne
+361	Administration Web
+362	Paramètres du serveur de rapports
+363	Numéro de port du serveur
+364	Assistant de configuration Urchin : Bienvenue
+365	Assistant de configuration : Paramètres Admin
+366	Assistant de configuration : Utilisateur administrateur
+367	Assistant de configuration : Résolution de noms de domaine
+368	<nobr><span class=title1><b>Assistant de source de journal : Journaux disponibles (Ref. #A-368)</b></span></nobr><br>Cet écran contient la liste des sources de journal disponibles et vous permet de les ajouter au profil.<p><b>Ajouter une source de journal</b><br>Pour ajouter une source de journal à ce profil, sélectionnez la source dans la zone de gauche, puis cliquez sur la flèche vers la droite. Pour supprimer une source de journal de ce profil, sélectionnez la source dans la zone de droite, puis cliquez sur la flèche vers la gauche. Cliquez sur "Terminer" pour appliquer les modifications.
+369	<nobr><span class=title1><b>Assistant de filtres : Filtres disponibles (Ref. #A-369)</b></span></nobr><br>Cet écran contient la liste des filtres configurés précédemment, que vous pouvez appliquer à ce profil/à cette source de journal.<p><b>Appliquer le filtre</b><br>Pour appliquer un filtre existant à ce profil/à cette source de journal, cliquez sur le filtre dans la zone de gauche, puis cliquez sur la flèche vers la droite. Il est possible d'appliquer plusieurs filtres à un profil ou à une source de journal. Pour supprimer un filtre, cliquez sur le filtre dans la zone de droite, puis cliquez sur la flèche vers la gauche. Cliquez sur "Terminer" pour appliquer les modifications.
+370	UNC
+371	Suivant
+372	Retour
+373	Terminer
+374	Continuer
+375	<nobr><span class=title1><b>Assistant de configuration : Paramètres Admin (Ref. #A-375)</b></span></nobr><br>Ces paramètres servent à contrôler l'accès au système Urchin.<p><b>Accès aux rapports en ligne</b><br>Ce paramètre permet de spécifier si les rapports peuvent être consultés par d'autres ordinateurs que celui où est installé Urchin. Pour autoriser l'accès aux rapports à distance, sélectionnez "activer". <p><b>Administration Web</b><br>Ce paramètre permet d'activer ou de désactiver l'accès de l'administrateur à la configuration Urchin sur le Web. Si vous souhaitez contrôler Urchin depuis un autre ordinateur que celui où Urchin est installé, sélectionnez "activer". REMARQUE IMPORTANTE : si vous procédez à cette configuration depuis un ordinateur autre que celui où Urchin est exécuté et si l'administration Web est désactivée, vous pouvez accéder au système d'administration uniquement depuis la console de ce dernier. <p><b>Mode Datacenter</b><br>Cette option active les comptes et les sous-administrateurs dans la configuration. Ces commandes supplémentaires permettent aux centres de données de gérer des clients complexes et de leur attribuer des fonctions d'administration limitées. Si vous regroupez les profils, les fichiers journaux et les utilisateurs dans un compte unique, le centre de données peut contrôler l'emplacement des données et les droits d'administration du client.
+376	<nobr><span class=title1><b>Assistant de configuration : Utilisateur administrateur (Ref. #A-376)</b></span></nobr><br>Utilisez cet écran pour spécifier le mot de passe d'administrateur du système Urchin. Étant donné que toutes les diffusions Urchin ont le même mot de passe, il est important de modifier celui-ci pendant la configuration.<p><b>Mot de passe d'administrateur</b><br>Cet écran permet de modifier le mot de passe de l'utilisateur administrateur pour cette installation d'Urchin. Il est recommandé de choisir un mot de passe unique afin de sécuriser votre système. N'oubliez pas ce mot de passe, qui vous sera demandé lorsque vous souhaiterez modifier la configuration d'Urchin.<p>Si l'option "Accès admin à distance" a été désactivée à l'étape précédente, vous devez accéder à Urchin directement depuis la machine sur laquelle il est installé. Dans ce cas, vous n'avez pas besoin de mot de passe pour accéder à Urchin.<p>Pour configurer Urchin de sorte qu'il utilise SSL comme mesure de sécurité supplémentaire, consultez les informations les plus récentes de notre centre de documentation.
+377	<nobr><span class=title1><b>Vérification du journal (Ref. #A-5003)</b></span></nobr><br>Dans cet écran, vous pouvez consulter le fichier journal que vous avez sélectionné afin de vérifier qu'il s'agit de la source de journal correcte. Pour obtenir des informations sur le journal, cliquez sur son nom dans la zone de gauche et lisez le texte qui apparaît dans la zone située en dessous. L'emplacement (chemin), la taille, la date de modification et les autorisations accordées pour ce journal y sont indiqués. Pour modifier les paramètres du journal, changez le texte dans le champ du dessus. Vous pouvez utiliser n'importe quelle expression standard, un astérisque par exemple (ex : access_log*, qui permet de sélectionner tous les journaux commençant par access_log) ou une date (ex : access_logJJMMAAAA). Pour consulter les résultats des correspondances de format, appuyez sur la touche "Entrée". Cliquez sur "OK" pour continuer.<p><b>Fichier(s) journal/aux</b><br>Ce champ, situé en haut de la fenêtre, peut être modifié directement. Appuyez sur la touche "Entrée" pour afficher le résultat de ce que vous avez saisi.<p><b>Fichiers sélectionnés</b><br>Cliquez sur un fichier dans la fenêtre "Fichiers sélectionnés" pour afficher les informations le concernant. Elles apparaissent en bas de la fenêtre.<p><b>Autres fichiers du répertoire</b><br>Dans cette fenêtre, cliquez sur un fichier pour afficher les informations le concernant. Elles apparaissent en bas de la fenêtre.<p><b>OK/Annuler</b><br>Lorsque vous cliquez sur "OK", la fenêtre se ferme et votre sélection apparaît dans le champ du chemin d'accès de la fenêtre précédente. Si vous cliquez sur le bouton "Annuler", la fenêtre se ferme.
+378	<nobr><span class=title1><b>Assistant de configuration : Résolution de noms de domaine (Ref. #A-378)</b></span></nobr><br>Cet écran permet de spécifier les paramètres de la résolution de noms de domaine pour cette installation d'Urchin. En un mot, une résolution de nom de domaine est la conversion d'une adresse IP numérique (63.212.171.4, par exemple) en nom de domaine (www.urchin.com, par exemple). En général, il est recommandé d'activer la résolution de noms de domaine afin d'obtenir des informations de domaine intéressantes dans les rapports. <p><b>Résolution de noms de domaine</b><br>Sélectionnez "activer" pour utiliser cette option.<p><b>Résolveur d'adresses IP</b><br>Dans ce champ, saisissez l'adresse IP d'un serveur DNS, soit le vôtre, soit celui de votre fournisseur. Si vous ne connaissez pas l'adresse IP, demandez-la à votre administrateur système ou à votre FAI. Pour fonctionner, le serveur DNS doit être situé sur votre réseau local.
+379	(recommandé)
+380	Page par défaut
+381	Profils attribués à
+382	Aucun <b>profil</b> dans la configuration. Cliquez sur le bouton "Ajouter"<br> en haut à droite pour ajouter un nouveau <b>profil</b>.
+383	Aucune <b>source de journal</b> dans la configuration. Cliquez sur le bouton "Ajouter"<br> en haut à droite pour ajouter une nouvelle <b>source de journal</b>.
+384	Aucun <b>filtre</b> dans la configuration. Cliquez sur le bouton "Ajouter"<br> en haut à droite pour ajouter un nouveau <b>filtre</b>.
+385	Aucun <b>utilisateur</b> dans la configuration. Cliquez sur le bouton "Ajouter"<br> en haut à droite pour ajouter un nouvel <b>utilisateur</b>.
+386	Assistant de profil : Paramètres de profil
+387	Aucun <b>groupe</b> dans la configuration. Cliquez sur le bouton "Ajouter"<br> en haut à droite pour ajouter un <b>groupe</b>.
+388	Assistant de profil : Paramètres du journal
+389	Aucune <b>tâche</b> dans la configuration. Ajoutez un<br> profil pour ajouter la tâche associée.
+390	Activer une tâche
+391	<nobr><b>Assistant de profil : Informations relatives au profil</b></span></nobr><br>Dans cet écran, spécifiez le nom et le type de profil à ajouter. <p><b>Compte facultatif</b> (mode Datacenter)<br>En mode Datacenter, le paramètre "Compte" peut servir à associer ce profil à un compte. Les comptes peuvent disposer de leur propre administrateur, qui peut contrôler et modifier les paramètres à l'intérieur du compte.<p><b>Nom du profil</b><br>Ce champ est obligatoire. Vous y spécifiez le nom associé au profil. Vous pouvez le choisir librement ou utiliser le nom du site Web ou du service.<p><b>Type de profil</b><br>Généralement, il n'est pas nécessaire de modifier ce paramètre, sauf si vous disposez de cartes de données personnalisées configurées. Dans ce cas, utilisez ce paramètre pour désigner la carte de données qui s'applique à ce profil.<p><b>Site Web de commerce électronique</b><br>Si vous prévoyez de traiter des données de commerce électronique conjointement à ce profil, associez cette option à "Oui". Dans le cas contraire, associez-la à "Non". Lorsque la fonction de commerce électronique est désactivée, vous pouvez définir une valeur en dollar pour fournir des informations générales sur le retour sur investissement (ROI).<p><b>Méthode de suivi des visiteurs</b><br>Urchin propose deux méthodes d'identification des visiteurs. La méthode la plus précise consiste à utiliser les balises JavaScript UTM. Si UTM est installé, sélectionnez cette option. Dans le cas contraire, sélectionnez la méthode IP+User-Agent. Certains rapports ne seront renseignés que si vous utilisez UTM.<p><b>Domaine UTM</b><br>En fonctionnement normal, laissez ce champ vide. UTM détecte automatiquement le domaine du site. La fonction "Domaine UTM" est utilisée uniquement lorsque vous disposez de domaines qui se chevauchent et qui doivent faire l'objet d'un suivi séparé.
+392	<nobr><span class=title1><b>Assistant de profil : Paramètres du journal (Ref. #A-391)</b></span></nobr><br>Cet écran répertorie toutes les sources de journal à traiter pour ce profil. Pour ajouter une source de journal supplémentaire, cliquez sur le bouton "Ajouter" en haut à droite permettant de lancer l'assistant de source de journal. Les sites à équilibrage de charge avec plusieurs sources de journal requièrent une licence supplémentaire. Une fois cette opération effectuée, vous revenez à cet écran. Cliquez sur "Terminer" pour quitter l'assistant.<p><b>Options d'équilibrage de charge</b><br>Cette option est disponible si vous avez acheté une licence d'équilibrage de charge. Lorsque l'option "Traitement journal parallèle" est activée, Urchin ouvre tous les fichiers journaux simultanément et les lit selon un système de rotation, une section après l'autre, chaque section correspondant à 15 minutes d'activité des journaux. Cette option améliore considérablement les performances des sites à équilibrage de charge.<br><p><b>Ajouter</b><br>Cliquez sur le bouton "Ajouter" en haut à droite pour ajouter une source de journal à ce profil. Lorsque la licence est arrivée à expiration, le bouton "Ajouter" est désactivé.
+393	Cet écran affiche un récapitulatif du profil que vous avez configuré. Si les paramètres sont corrects, cliquez sur "Terminer" pour achever la configuration. Pour apporter des modifications, cliquez sur le bouton "Précédent".
+394	Assistant de source de journal : Sources de journal disponibles
+395	Assistant de source de journal : Options
+396	Assistant de source de journal : Terminer
+397	Paramètres de la source de journal
+398	Aucun <b>Historique des tâches du profil</b> trouvé.
+399	Le groupe a été ajouté. Vous pouvez désormais l'utiliser pour organiser les utilisateurs et d'autres groupes en unités faciles à gérer. Cliquez sur "Autres Options" pour modifier les accès aux rapports et les utilisateurs de ce groupe. Cliquez sur "Terminé" pour quitter cet écran.
+400	Le profil a été configuré. Pour ajouter une source de journal existante, cliquez sur "Ajouter une source de journal existante". Pour créer une source de journal et la joindre à ce profil, cliquez sur "Ajouter une nouvelle source de journal", en bas de l'écran. Pour configurer d'autres options de profil, cliquez sur "Options de création de rapports". Pour planifier l'exécution immédiate ou ultérieure de ce profil, sélectionnez "Planifier".
+401	Assistant de profil : Terminer
+402	Assistant de profil : Confirmation
+403	Assistant de source de journal : Emplacement du journal distant
+404	Terminé
+405	L'utilisateur a été ajouté. Il peut maintenant recevoir des autorisations d'accès à un ou plusieurs rapports de profils. Pour autoriser l'accès à un groupe ou modifier des autorisations de groupe, cliquez sur le lien "Autres options". Cliquez sur "Terminé" pour quitter cet écran.
+406	Échec de l'ajout d'enregistrement <p> Un enregistrement du même nom existe déjà. <br>Revenez en arrière et corrigez l'erreur.
+407	Résultat de l'assistant de profil.
+408	Assistant de source de journal : Terminer
+409	Résultat de l'assistant filtre.
+410	Assistant de source de journal : Confirmation
+411	Résultat de l'assistant de source de journal.
+412	Assistant de filtres : Options
+413	Assistant de filtres : Paramètres
+414	Assistant de filtres : Terminer
+415	Assistant de filtres : Confirmation
+416	<nobr><span class=title1><b>Assistant de filtres : Options (Ref. #A-416)</b></span></nobr><br>Dans cet écran, vous pouvez choisir de créer un filtre ou d'utiliser un filtre créé précédemment. Vous pouvez ainsi créer un type de filtre à réutiliser.<p><b>Ajouter un filtre</b><br>Sélectionnez cette option pour créer un filtre et l'appliquer à ce profil/cette source de journal.<p><b>Filtre pré-configuré</b><br>Sélectionnez cette option pour appliquer un filtre se trouvant déjà dans le système Urchin à ce profil/cette source de journal.
+417	L'opération est terminée. Vous êtes prêt à utiliser Urchin. <br>Cliquez sur "Terminé" pour ajouter votre premier profil.
+418	Cet écran affiche un récapitulatif du filtre que vous avez configuré. Si les paramètres sont corrects, cliquez sur "Terminer" pour achever la configuration. Pour apporter des modifications, cliquez sur le bouton "Précédent".
+419	Configuration du filtre terminée. Pour appliquer ce filtre à un ou plusieurs profils ou sources de journal, cliquez sur le lien "Autres options". [On applique un filtre à une source de journal plutôt qu'à un profil uniquement lorsque plusieurs profils utilisent la même source de journal.] Cliquez sur "Terminé" pour quitter cet écran.
+420	Annuler
+421	Assistant d'utilisateur : Informations générales
+422	Assistant d'utilisateur : Paramètres utilisateur
+423	Assistant d'utilisateur : Groupes
+424	Assistant d'utilisateur : Accès aux rapports
+425	Assistant d'utilisateur : Terminer
+426	Assistant d'utilisateur : Confirmation
+427	<nobr><span class=title1><b>Assistant d'utilisateur : Informations générales (Ref. #A-427)</b></span></nobr><br>Utilisez cet écran pour spécifier le nom d'utilisateur et le mot de passe du nouvel utilisateur.<p><b>Compte facultatif</b> (mode Datacenter)<br>En mode Datacenter, le paramètre "Compte" permet d'associer cet utilisateur à un compte. Les comptes peuvent disposer de leur propre administrateur, qui peut contrôler et modifier les paramètres au sein du compte.<p><b>Nom d'utilisateur</b><br>Pour se connecter, chaque utilisateur doit saisir son nom d'utilisateur et son mot de passe. Spécifiez dans ce champ le nom d'utilisateur unique de chaque utilisateur. Les noms d'utilisateur ne doivent pas contenir d'espaces.<p><b>Mot de passe</b><br>Saisissez le mot de passe de cet utilisateur dans les champs "Mot de passe" et "Confirmez le mot de passe". L'utilisateur peut modifier son mot de passe dans la zone "Préférences".<p><b>Type d'authentification</b><br>Dans la zone de liste "Type d'authentification", choisissez la méthode à utiliser pour authentifier les utilisateurs, à savoir "Native", "LDAP" ou "MSAD". "Native" correspond à l'authentification native d'Urchin. Les autres valeurs de type d'authentification correspondent à d'autres méthodes d'authentification personnalisées qui peuvent être configurées dans votre instance Urchin par un administrateur. Si la valeur indiquée dans la zone de liste "Type d'authentification" n'est pas "Native", les champs "Mot de passe" et "Confirmez le mot de passe" sont désactivés. Pour que la zone de liste "Type d'authentification" s'affiche, au moins un fournisseur d'authentification personnalisée doit être configuré par un administrateur dans votre instance Urchin.<p><b>Nom et prénom</b><br>Ce champ permet de spécifier le nom et le prénom de l'utilisateur.
+428	<nobr><span class=title1><b>Assistant d'utilisateur : Paramètres utilisateur (Ref. #A-428)</b></span></nobr><br>Cet écran permet de spécifier les droits d'administrateur (le cas échéant) et les paramètres de localisation par défaut de l'utilisateur.<p><b>Niveau Admin</b><br>Cette option détermine l'attribution de droits d'administrateur à un utilisateur. Le paramètre “Utilisateur” indique que l'utilisateur peut afficher les rapports et modifier son mot de passe ainsi que les paramètres régionaux, mais qu'il ne peut pas contrôler la configuration. Le paramètre “Utilisateur - Pas de mise à jour” indique que l'utilisateur peut afficher les rapports, mais qu'il ne peut pas modifier les préférences personnelles. L'administrateur de compte a des droits d'administration limités, par exemple le droit d'ajouter des utilisateurs et de configurer des objectifs. Le super administrateur peut contrôler l'ensemble du système. Seul un super administrateur peut créer un super administrateur. <p><b>Langue des rapports</b><br>Cette option permet de choisir la langue dans laquelle l'utilisateur consulte les rapports. Ce dernier peut ensuite modifier la langue dans l'onglet “Préférences”.<p><b>Région</b><br>Utilisez ce paramètre pour déterminer les critères de localisation concernant l'affichage des rapports pour cet utilisateur. Ce paramètre détermine le format des dates, des heures et des nombres, qui peut être différent selon les pays. Si le pays de l'utilisateur n'apparaît pas dans la liste, sélectionnez une région utilisant le même format de date ou de nombre.<p><b>Accès aux outils AdWords</b><br/>Cette option permet de contrôler l'accès de l'utilisateur aux “outils AdWords” dans l'interface de création de rapports. Lorsqu'elle est activée, les outils AdWords sont disponibles pour TOUS les profils avec données de CPC auxquels l'utilisateur a accès. Lorsqu'elle est désactivée, les rapports relatifs au CPC sont en lecture seule (c'est-à-dire que tous les outils AdWords sont masqués).</p><p>Cliquez sur “Terminer” pour quitter l'assistant.
+429	Cet écran permet d'associer un ou plusieurs groupes à l'utilisateur en question. Vous pouvez, par exemple, autoriser un utilisateur à accéder à deux sites différents. Pour attribuer cet utilisateur à un groupe, mettez-le en surbrillance dans la zone de droite, puis cliquez sur la flèche vers la gauche. Pour retirer cet utilisateur d'un groupe, sélectionnez le groupe dans la zone de droite, puis cliquez sur la flèche vers la gauche. Une fois cette opération terminée, cliquez sur "Suivant" pour continuer.
+430	Cet écran permet d'associer un ou plusieurs rapports à l'utilisateur en question. Pour attribuer un accès supplémentaire à un utilisateur, mettez le rapport en surbrillance dans la zone de gauche, puis cliquez sur la flèche vers la droite. Pour retirer un accès, sélectionnez le rapport dans la zone de droite, puis cliquez sur la flèche vers la gauche. Une fois cette opération terminée, cliquez sur "Suivant" pour continuer.
+431	Cet écran affiche un récapitulatif de l'utilisateur que vous avez configuré. Si les paramètres sont corrects, cliquez sur "Terminer" pour achever la configuration. Pour apporter des modifications, cliquez sur le bouton "Précédent".
+432	Résultat de l'assistant d'utilisateur.
+433	Assistant de groupe : Informations générales
+434	Assistant de groupe : Paramètres
+435	Assistant de groupe : Groupes à l'intérieur du groupe
+436	Assistant de groupe : Accès aux rapports
+437	Assistant de groupe : Terminer
+438	Assistant de groupe : Confirmation
+439	<nobr><span class=title1><b>Assistant de groupe : Informations générales (Ref. #A-439)</b></span></nobr><br>Utilisez cet écran pour configurer les paramètres généraux nécessaires pour créer un groupe. Les groupes peuvent servir à octroyer à plusieurs utilisateurs à la fois des autorisations d'accès aux rapports. Tous les utilisateurs appartenant à un groupe héritent des autorisations du groupe en plus des autorisations individuelles.<p><b>Compte facultatif</b> (mode Datacenter)<br>En mode Datacenter, le compte peut servir à associer ce groupe à un compte particulier utilisé pour gérer les clients avec des besoins plus complexes. Les comptes peuvent être considérés comme des "super groupes", chacun pouvant avoir son propre administrateur. <p><b>Nom du groupe</b><br>Dans ce champ, spécifiez le nom du groupe. Utilisez un nom descriptif. Chaque nom doit être unique.<p><b>Description du groupe</b> (facultatif) <br>Dans ce champ, saisissez une description du groupe. Cette description permet de connaître l'objectif de chaque groupe. Utilisez un nom descriptif. Cliquez sur "Terminer" pour quitter l'assistant.
+440	Dans cet écran, vous pouvez sélectionner des utilisateurs définis dans la configuration Urchin (le cas échéant) et les ajouter au groupe en question. Pour ajouter un utilisateur à un groupe, mettez-le en surbrillance dans la zone de gauche, puis cliquez sur la flèche vers la droite. Pour retirer un utilisateur d'un groupe, sélectionnez-le dans la zone "Utilisateurs du groupe", puis cliquez sur la flèche vers la gauche. Une fois cette opération terminée, cliquez sur "Suivant" pour continuer.
+441	Dans cet écran, vous pouvez sélectionner un ou plusieurs groupes définis dans la configuration Urchin (s'il y en a) et les ajouter au groupe en question. Cela permet d'organiser les groupes de façon hiérarchique dans votre système. Pour ajouter un groupe à un autre groupe, mettez-le en surbrillance dans la zone de gauche et cliquez sur la flèche vers la droite. Pour retirer un groupe d'un autre groupe, sélectionnez-le dans la zone de droite et cliquez sur la flèche vers la gauche. Une fois cette opération terminée, cliquez sur "Suivant" pour continuer.
+442	Dans cet écran, vous pouvez sélectionner des rapports définis dans la configuration Urchin (le cas échéant) et autoriser leur consultation par le groupe en question. Pour attribuer à un groupe une autorisation de consultation de rapport supplémentaire, mettez le rapport en surbrillance dans la zone de gauche, puis cliquez sur la flèche vers la droite. Pour retirer à un groupe une autorisation de consultation de rapport, sélectionnez le rapport dans la zone de droite, puis cliquez sur la flèche vers la gauche. Une fois cette opération terminée, cliquez sur "Suivant" pour continuer.
+443	Cet écran affiche un récapitulatif du groupe que vous avez configuré. Si les paramètres sont corrects, cliquez sur "Terminer" pour achever la configuration. Pour apporter des modifications, cliquez sur le bouton "Précédent".
+444	Résultat de l'assistant de groupe.
+445	Assistant de tâches : Informations générales
+446	Assistant de filtres : Filtres disponibles
+447	Assistant de filtres : Terminer
+448	<nobr><span class=title1><b>Gestionnaire de filtres : Paramètres de filtrage (Ref. #A-1701)</b></span></nobr><br>Cet écran permet de configurer et d'ajuster les paramètres d'un filtre. Pour plus d'informations sur le filtrage, consultez notre manuel ou notre centre de documentation en ligne.<p><b>Exemples</b><br>Lorsque vous ajoutez un filtre, une liste de modèles de filtres est mise à votre disposition. Si vous sélectionnez l'un de ces modèles, les paramètres du filtre sont automatiquement renseignés et il vous suffit de les modifier pour les personnaliser. Cela permet de voir facilement comment les paramètres sont créés pour divers filtres standard.<p><b>Compte facultatif</b> (mode Datacenter uniquement)<br>Pour les nouveaux filtres, ce paramètre vous permet de sélectionner le compte auquel associer le filtre. Pour les filtres existants, le nom du compte auquel le filtre appartient s'affiche.<p><b>Nom du filtre</b><br>Dans ce champ obligatoire, saisissez le nom de votre choix qui sera utilisé pour désigner ce filtre. Il doit s'agir d'un nom unique.<p><b>Type de filtre</b><br>Sélectionnez un type de filtre en fonction de vos besoins : <li><b>Exclure la règle</b> : ce type de filtre exclut <i>uniquement</i> les lignes du fichier journal (appels de fichier) concordant avec la règle de filtrage. Les lignes qui ne concordent pas sont ignorées : gardez par conséquent à l'esprit que si un filtre exclut Netscape (par exemple), Urchin exclut toutes les informations de cette ligne de journal, notamment le visiteur, le chemin, le site référent et le domaine. <li><b>Inclure la règle</b> : ce type de filtre inclut <i>uniquement</i> les lignes du fichier journal (appels de fichier) concordant avec la règle de filtrage. Toutes les autres sont ignorées. Comme dans l'exemple ci-dessus, le système Urchin ne peut accéder à aucun appel de fichier ayant été ignoré lors de la création de rapports. <li><b>Rechercher et remplacer</b> : ce filtre permet de rechercher une chaîne dans un champ et de la remplacer par une autre. Si la règle apparaît plusieurs fois dans le champ, seule la dernière occurrence est remplacée. Il est possible d'utiliser le caractère "^" pour que la concordance soit appliquée au début du champ, et "$" pour qu'elle soit appliquée à la fin du champ. <li><b>Tableau de conversion</b> : ce filtre permet de choisir un nom de tableau de conversion pouvant servir à faire correspondre les codes avec des libellés intelligibles. Il est nécessaire de créer au préalable un tableau de conversion et de l'installer dans le répertoire lib/custom/lookuptables de la distribution Urchin. Vous pouvez choisir les tableaux de conversion existants dans la zone "Nom du tableau".<li><b>Avancé</b> : ce type de filtre permet de générer un champ à partir d'un ou deux autres champs. Le moteur de filtrage applique alors les expressions des deux champs "Extraire" aux champs spécifiés, puis génère un champ à l'aide de l'expression "Constructeur". La technique est la même que celle de l'utilisation de l'expression régulière POSIX. <p><b>Champ de filtrage</b><br>Utilisez le menu déroulant pour sélectionner le champ de la source de journal auquel le filtre doit être appliqué. Les champs intitulés "RAW" représentent le contenu réel du fichier journal avant traitement. Les champs intitulés "AUTO" sont des champs calculés automatiquement qui sont déterminés en fonction des champs "RAW" et d'autres champs "AUTO". Pour connaître la fonction de chaque champ, consultez la section sur le filtrage dans le centre de documentation en ligne. <p><b>Règle de filtrage</b><br>Choisissez la règle que le filtre doit respecter. Elle peut utiliser des caractères génériques définis par la norme d'expression régulière POSIX.<p><b>Chaîne de recherche</b><br>Pour les filtres "Rechercher et remplacer", la chaîne de recherche est utilisée comme règle pour la concordance avec le champ.<p><b>Chaîne de remplacement</b><br>Pour les filtres "Rechercher et remplacer", la chaîne de remplacement remplace la chaîne de recherche.<p><b>Nom du tableau</b> (tableau de conversion uniquement)<br>Ce champ, qui apparaît lorsque vous sélectionnez "Tableau de conversion" comme type de filtre, permet de choisir un tableau faisant correspondre les codes avec des noms intelligibles par l'homme. Le tableau de modèles de téléphone fait correspondre les identifiants de plateforme téléphonique abrégés avec les noms de modèle et de fabricant pour les navigateurs Web utilisés à partir d'un téléphone. Il est possible de créer ses propres tableaux de conversion afin de faire correspondre des codes aux campagnes (pour le module de suivi de campagne) ou de faire correspondre les variables d'une URL à des noms de pages. Tout fichier associé à l'extension .lt créé dans le répertoire lib/custom/lookuptables de la distribution Urchin apparaît dans ce menu déroulant.<p><b>Nom de fichier</b> (tableau de conversion externe uniquement)<br> Ce champ, qui apparaît lorsque vous sélectionnez "Tableau de conversion" comme type de filtre, permet de choisir un tableau de conversion externe, faisant correspondre les codes avec des noms intelligibles par l'homme. Vous pouvez créer vos propres tableaux de conversion afin de faire correspondre des codes aux campagnes (pour le module de suivi de campagne) ou de faire correspondre les variables d'une URL à des noms de pages.<p><b>Nom d'utilisateur/Mot de passe</b> (Windows, tableau de conversion externe uniquement)<br>Ces champs permettent de spécifier les informations d'identification au partage UNC sur lequel le tableau de conversion externe est situé.<p><b>Commandes</b><br>Pour enregistrer les changements, cliquez sur le bouton "Terminer" (pour un nouveau filtre) ou "Mettre à jour" (pour un filtre existant). Pour les filtres existants, les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce filtre.
+449	<nobr><span class=title1><b>Filtres : Profils (Ref. #A-1702)</b></span></nobr><br>Dans cet écran, vous pouvez appliquer ce filtre à un ou plusieurs profils. Une fois qu'un filtre est appliqué au profil, toutes les sources de journal associées à ce profil sont filtrées pendant le traitement du profil.<p><b>Appliquer au profil</b><br>Pour appliquer ce filtre à un profil, sélectionnez le nom du profil dans la zone "Profils disponibles", puis cliquez sur la flèche vers la droite. Pour supprimer ce filtre d'un profil, sélectionnez le profil dans la zone "Appliqué à", puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce filtre.
+450	<nobr><span class=title1><b>Filtres : Sources de journal (Ref. #A-1703)</b></span></nobr><br>Dans cet écran, vous pouvez appliquer ce filtre à une ou plusieurs sources de journal. Une fois que ce filtre est appliqué à une source de journal, il est utilisé pour tous les traitements de la source, quel que soit le profil exécuté.<p><b>Appliquer à la source de journal</b><br>Pour appliquer ce filtre à une source de journal, sélectionnez le nom de la source dans la zone "Sources de journal disponibles", puis cliquez sur la flèche vers la droite. Pour supprimer ce filtre d'une source de journal, sélectionnez la source dans la zone "Appliqué à", puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce filtre.
+451	<nobr><span class=title1><b>Gestionnaire de filtres : Résumé (Ref. #A-1704)</b></span></nobr><br>Cet écran contient tous les paramètres disponibles pour ce filtre. Examinez-les attentivement avant de traiter un profil afin de vérifier qu'ils sont corrects. Si certains paramètres doivent être ajustés, cliquez sur l'onglet approprié et mettez-les à jour. <p><b>Commandes</b><br>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce filtre.
+452	<nobr><span class=title1> <b>Utilisateurs : Infos sur l'utilisateur (Ref. #A-1301)</b></span></nobr><br>Cet écran vous permet de modifier les différents paramètres pour cet utilisateur. <p><b>Compte facultatif</b> (mode Datacenter uniquement)<br>Affiche le compte auquel l'utilisateur est associé.<p><b>Nom d'utilisateur</b><br>Spécifiez dans ce champ un nom unique pour cet utilisateur. Les noms d'utilisateur ne peuvent pas contenir d'espaces.<p><b>Type d'authentification</b><br>Dans la zone de liste "Type d'authentification", choisissez la méthode à utiliser pour authentifier les utilisateurs, à savoir Native, LDAP ou MSAD. "Native" correspond à l'authentification native d'Urchin. Les autres valeurs de type d'authentification font référence à d'autres méthodes d'authentification personnalisées qui peuvent être configurées dans votre instance Urchin par un administrateur. Si la valeur de la zone de liste "Type d'authentification" n'est pas "Native", les champs "Mot de passe" et "Confirmez le mot de passe" seront désactivés. La zone de liste "Type d'authentification" s'affiche seulement si au moins un fournisseur d'authentification personnalisée a été configuré par l'administrateur dans votre instance Urchin.<p><b>Mot de passe</b><br>Les mots de passe doivent contenir au moins 8 caractères et ne doivent pas contenir d'espaces. Les mots de passe sont sensibles à la casse, par exemple "motdepasse" est différent de "Motdepasse". Pour changer de mot de passe, saisissez-le dans les deux champs "Mot de passe" et "Confirmez le mot de passe". N'oubliez pas de cliquer sur le bouton "Mettre à jour" si vous avez effectué des modifications. <p><b>Nom et prénom</b><br>Saisissez dans ce champ les nom et prénom de la personne qui se connectera sous cet utilisateur.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets situés dans la partie supérieure de l'écran permettent d'accéder à tous les paramètres modifiables pour cet utilisateur.
+453	<nobr><span class=title1>    <b>Utilisateurs : Préférences (Ref. #A-1302)</b></span></nobr><br>Cet écran permet de modifier divers paramètres relatifs à l'utilisateur, notamment le niveau d'administration et la langue par défaut. <p><b>Niveau Admin</b><br>Cette option contrôle l'attribution de droits d'administrateur à un utilisateur. Le paramètre "Utilisateur" indique que l'utilisateur peut afficher les rapports et modifier les préférences, mais qu'il ne peut pas contrôler la configuration. Le paramètre "Utilisateur - Pas de mise à jour" indique que l'utilisateur ne peut pas modifier les rapports et qu'il peut uniquement les afficher. L'administrateur de compte a des droits d'administration limités dans le groupe de comptes (utilisé en mode Datacenter). Le super administrateur peut contrôler l'ensemble du système. Seul un super administrateur existant peut associer l'option "super administrateur" au niveau d'administration.<p><b>Langue des rapports</b><br>Cette option permet de choisir la langue dans laquelle l'utilisateur consulte les rapports. Ce dernier peut ensuite modifier la langue dans l'onglet "Préférences".<p><b>Région</b><br>Utilisez ce paramètre pour déterminer les critères de localisation concernant l'affichage des rapports pour cet utilisateur. Ce paramètre détermine le format des dates, des heures et des nombres, qui peut être différent selon les pays. Si le pays de l'utilisateur n'apparaît pas dans la liste, sélectionnez une région utilisant le même format de date ou de nombre. <p><b>Accès aux outils AdWords</b><br>Cette option permet de contrôler l'accès de l'utilisateur aux "outils AdWords" dans l'interface des rapports. Lorsqu'elle est activée, les outils AdWords sont disponibles pour TOUS les profils avec données CPC auxquels l'utilisateur a accès. Lorsqu'elle est désactivée, les rapports CPC sont en lecture seule (c'est-à-dire que tous les outils AdWords sont masqués). </p><p><b>Commandes</b><br>Après avoir modifié la configuration, n'oubliez pas de cliquer sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets situés dans la partie supérieure de l'écran permettent d'accéder à tous les paramètres modifiables pour cet utilisateur.
+454	<nobr><span class=title1><b>Utilisateurs : Groupes (Ref. #A-1303)</b></span></nobr><br>Dans cet écran, sélectionnez les groupes (s'il en existe) auxquels cet utilisateur appartient. Les autorisations d'affichage des rapports peuvent être accordées au niveau des groupes. Les utilisateurs peuvent alors consulter tous les rapports auxquels leur groupe peut accéder.<p><b>Ajouter au groupe</b><br>Pour que cet utilisateur devienne membre d'un groupe, sélectionnez le nom du groupe dans la zone "Groupes disponibles", puis cliquez sur la flèche vers la droite. Pour retirer cet utilisateur d'un groupe, sélectionnez le nom du groupe dans la zone "Membre de ces groupes", puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications.<p><b>Commandes</b><br>N'oubliez pas de cliquer sur le bouton de mise à jour pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour cet utilisateur.
+455	<nobr><span class=title1><b>Utilisateurs : Accès aux rapports (Ref. #A-1304)</b></span></nobr><br>Dans cet écran, vous pouvez autoriser cet utilisateur à accéder aux rapports d'un ou plusieurs profils. L'utilisateur peut recevoir des autorisations d'accès individuelles en plus des autorisations de groupe qu'il possède déjà.<p><b>Autoriser l'accès</b><br>Pour autoriser un utilisateur à accéder aux rapports d'un profil, sélectionnez le nom du profil dans la zone "Profils disponibles", puis cliquez sur la flèche vers la droite. Pour interdire l'accès, sélectionnez le profil dans la zone "Accès autorisé", puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications.<p><b>Commandes</b><br>N'oubliez pas de cliquer sur le bouton de mise à jour pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour cet utilisateur.
+456	<nobr><span class=title1><b>Utilisateurs : Résumé (Ref. #A-1305)</b></span></nobr><br>Cet écran contient tous les paramètres disponibles pour cet utilisateur. Si certains paramètres doivent être modifiés, cliquez sur l'onglet approprié et mettez-les à jour. <p><b>Commandes</b><br>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour cet utilisateur.
+457	Profil à exécuter
+458	Navigateur de fichiers
+459	Répertoire actuel
+460	Accéder au répertoire
+461	Sélectionner un fichier
+462	Nom de fichier
+463	OK
+464	Parcourir
+465	Assistant de source de journal : Emplacement du journal local
+466	Aperçu rapide de la source de journal
+467	Assistant de source de journal : Paramètres distants
+468	Nom d'utilisateur et mot de passe
+469	Assistant de source de journal : Paramètres
+470	<nobr><span class=title1><b>Assistant de source de journal : Options (Ref. #A-470)</b></span></nobr><br>Cet écran permet de spécifier soit une source de journal locale (c'est-à-dire sur l'ordinateur où Urchin est installé), soit une source de journal distante (c'est-à-dire sur un autre ordinateur). Cliquez sur “Suivant” pour continuer.<p><b>Source de journal locale</b><br>Tout fichier journal se trouvant sur le système de fichiers local de l'ordinateur où est installé Urchin (y compris s'il s'agit d'un système de fichiers NFS) est considéré comme “local”. Sélectionnez cette option si votre fichier journal est “local” par rapport à votre système Urchin.<p><b>Source de journal distante</b><br>Urchin peut transférer des fichiers journaux distants sur le système Urchin avant de les traiter, via les protocoles FTP, HTTP ou HTTPS. Sous Windows, Urchin peut également accéder aux noms de chemins d'accès UNC. Si votre fichier journal est distant et si vous devez le transférer ou y accéder via UNC, sélectionnez cette option.
+471	<nobr><span class=title1><b>Assistant de source de journal : Paramètres distants (Ref. #A-471)</b></span></nobr><br>Cet écran permet de spécifier comment accéder au fichier journal distant de cette source de journal ou comment extraire ce fichier.<p><b>Protocole de serveur</b><br>Urchin peut gérer quatre types de fichiers journaux distants : HTTP (www), HTTPS, FTP et UNC (Windows uniquement). Si votre fichier journal est accessible via un navigateur Web, utilisez HTTP. Si aucun mot de passe n'est requis, laissez les champs de nom d'utilisateur et mot de passe vides. FTP peut être utilisé avec un nom d'utilisateur et un mot de passe (en général, les mêmes que le nom d'utilisateur vous permettant d'envoyer un contenu sur votre site). UNC, disponible uniquement sur les systèmes Windows, nécessite un nom d'utilisateur et un mot de passe pour accéder au partage UNC.<p><b>Nom/Adresse IP du serveur</b><br>Entrez le nom du serveur (ex. www.urchin.com) ou l'adresse IP (ex. 63.212.171.4) correspondant à l'emplacement du fichier journal. Pour UNC, utilisez la notation \\serveur\partage.<p><b>Port du serveur</b><br>Le port du serveur est spécifié automatiquement. Cependant, si vous n'utilisez pas un port standard, vous pouvez le modifier manuellement.<p><b>Connexions locale et distante identiques</b> (UNC uniquement)<br>Cette option est visible si UNC a été sélectionné comme protocole de serveur (Windows uniquement). Sélectionnez “Oui” si les mêmes nom de connexion et mot de passe peuvent être utilisés pour les serveurs local et distant. Sélectionnez “Non” si le serveur distant requiert un nom de connexion ou mot de passe différent du serveur local. Les champs supplémentaires de connexion au serveur local deviennent visibles si vous sélectionnez “Non”.<p><b>Nom d'utilisateur/Mot de passe</b><br>Vous pouvez laisser vides ces champs pour les connexions FTP anonymes et HTTP non sécurisées. Pour utiliser une connexion HTTP/FTP sécurisée, entrez votre nom d'utilisateur et votre mot de passe ici. UNC nécessite un nom d'utilisateur et un mot de passe pour accéder au partage. <p><b>Domaine</b> (UNC uniquement)<br>Si le partage UNC appartient à un domaine, entrez ici les informations sur le réseau du domaine. <p><b>Mode FTP</b> (FTP uniquement)<br>Cette option est visible si FTP a été sélectionné comme protocole de serveur. Sélectionnez “Passive” pour une méthode de transfert passive (PASV). Sélectionnez “Active” pour une méthode de transfert directe (PORT).
+472	<nobr><span class=title1><b>Assistant de source de journal : Local/Distant (Ref. #A-472)</b></span></nobr><br>Utilisez cet écran pour spécifier l'emplacement/la destination et le nom de la source de journal.<p><b>Chemin d'accès au fichier journal</b> (en local uniquement)<br>Dans ce champ, saisissez le chemin complet et le nom de fichier du journal (par exemple /var/logs/access-log). Un bouton de navigation est disponible. Le nom de fichier peut contenir des caractères génériques (un astérisque par exemple).<p><b>Fichier source de journal distant</b> (à distance uniquement)<br>Dans ce champ, spécifiez le chemin distant du fichier journal. Il s'agit du chemin complet sans les informations de domaine. Notez que les caractères génériques ne sont pas pris en charge pour les noms de chemin d'accès distants aux journaux basés sur HTTP. Pour les connexions FTP et UNC, un bouton de navigation est disponible.<p><b>Destination du journal</b> (à distance uniquement)<br>Pour être traités, les fichiers journaux distants sont transférés sur le système local. Sélectionnez le répertoire local où sera stocké le fichier. Un bouton de navigation est disponible.<p><b>Compte facultatif</b> (mode Datacenter uniquement)<br>En mode Datacenter, ce champ facultatif peut servir à lier la source de journal en question à un compte. La source n'est alors disponible que pour ce compte.<p><b>Nom de la source de journal</b><br>Dans ce champ obligatoire, saisissez le nom de votre choix qui sera utilisé pour désigner cette source de journal. Il doit s'agir d'un nom unique.
+473	<nobr><span class=title1><b>Assistant de source de journal : Paramètres (Ref. #A-473)</b></span></nobr><br>Cet écran permet de spécifier le format du fichier journal en cours de traitement. Le type de format de journal <i>auto</i> est recommandé pour la plupart des serveurs Web. Les autres formats existent pour des raisons de compatibilité avec d'anciennes versions d'Urchin, mais elles ne sont généralement pas utilisées. Les formats de journaux personnalisés peuvent être créés à l'aide des fichiers de modèles situés dans le répertoire lib/custom/logformats de la diffusion Urchin.<p><b>Format du journal</b><br>Utilisez cette option pour spécifier le format de la source du journal. <ul><li><b>Auto :</b> ce format détecte automatiquement la plupart des formats journaux de serveurs Web tels qu'Apache, W3C (Microsoft IIS), NCSA, Netscape et iPlanet. <li><b>Campagne :</b> utilisez ce format pour les données de coût de campagne spécifiquement formatées pour être utilisées par Urchin. Pour plus de détails, consultez la documentation en ligne. Notez que le format du journal de campagne ne peut pas être détecté automatiquement.<li><b>Elf2 :</b> utilisez ce format pour les journaux de commerce électronique au format ELF2. Notez que le format des journaux de commerce électronique ne peut pas être détecté automatiquement.<li><b>Google :</b> utilisez ce format pour les journaux contenant des données de coût par clic Google. Notez que le format de journaux Google ne peut pas être détecté automatiquement.<li><b>NCSA :</b> ce format peut en général être détecté automatiquement. Il est généralement utilisé par les serveurs Web Apache. Notez que, pour une création complète de rapports, il faut utiliser la connexion combinée étendue, qui ne correspond en général pas au comportement d'Apache par défaut. <li><b>Netscape :</b> les serveurs Netscape existants (mais pas les serveurs iPlanet) utilisent ce format par défaut.<li><b>Overture :</b> utilisez ce format pour les journaux contenant des données de coût par clic Overture. Notez que le format de journaux Overture ne peut pas être détecté automatiquement.<li><b>W3C :</b> ce format peut être détecté automatiquement. Il est utilisé pour les serveurs Web qui se connectent au format W3C standard tels que les serveurs Microsoft IIS.</ul>
+474	Cet écran affiche un récapitulatif de la source de journal que vous avez configurée. Si les paramètres sont corrects, cliquez sur "Terminer" pour achever la configuration. Pour apporter des modifications, cliquez sur le bouton "Précédent".
+475	Emplacement du fichier journal
+476	Local
+477	Distant
+478	Paramètres du serveur distant
+479	FTP
+480	HTTP
+481	Protocole de serveur
+482	Nom/Adresse IP du serveur
+483	Port du serveur
+484	Configuration du journal terminée. La source de journal que vous avez ajoutée peut maintenant être traitée par tous les profils configurés dans le système. Cliquez sur le bouton "Terminé" pour revenir au système d'administration ou sur "Autres options" pour spécifier des paramètres supplémentaires.
+485	Connexion au serveur distant
+486	Nom d'utilisateur
+487	Mot de passe
+488	Configuration du journal terminée. La ou les sources de journal que vous avez sélectionnées ont été ajoutées au profil. Cliquez sur le bouton "Terminé" pour revenir au système d'administration.
+489	Configuration des filtres terminée. Le ou les filtres que vous avez sélectionnés ont été ajoutés au profil. Cliquez sur le bouton "Terminé" pour revenir au système d'administration.
+490	Emplacement du fichier journal
+491	Fichier de la source de journal distante
+492	Navigateur de journaux distants
+493	https
+494	Navigateur de répertoires
+495	Sélectionner un répertoire
+496	Emplacement du journal distant
+497	Assistant de configuration : Confirmation
+498	<p><b>Nouveaux utilisateurs - À lire - Concepts et terminologie</b><br><ul><li>Le terme "profil" est utilisé pour désigner un groupe de rapports d'un site Web et les paramètres de configuration nécessaires pour créer ces rapports. <li>Pour que les rapports s'affichent, Urchin doit d'abord traiter les fichiers journaux créés par le serveur de votre site Web. Ces fichiers journaux sont appelés "Sources de journal".<li>Une fois l'emplacement des sources de journal déterminées, Urchin peut immédiatement traiter les journaux. Il est également possible de configurer Urchin de manière qu'il traite les journaux périodiquement, au fur et à mesure qu'ils sont créés. <li>Une aide est proposée pour chaque écran de configuration. Pour y accéder, il suffit de cliquer sur le point d'interrogation en bas de l'écran.
+499	Configurer les profils
+500	Déconnexion
+501	Importer les profils
+502	Sélection à importer
+503	Importer les profils
+504	Importer
+505	Assistant de configuration
+506	<nobr><span class=title1><b>Assistant de source de journal : Options (Ref. #A-506)</b></span></nobr><br>Cet écran permet de spécifier soit une source de journal locale (c'est-à-dire sur l'ordinateur où Urchin est installé), soit une source de journal distante (c'est-à-dire sur un autre ordinateur). Cliquez sur "Suivant" pour continuer.<p><b>Source de journal locale</b><br>Tout fichier journal se trouvant sur l'ordinateur où est installé Urchin ou sur un lecteur monté en externe est considéré comme "local". Sélectionnez cette option si votre fichier journal est "local" par rapport à votre système Urchin.<p><b>Source de journal distante</b><br>Urchin peut transférer des fichiers journaux distants sur le système Urchin avant de les traiter, via le protocole FTP ou HTTP. Sous Windows, Urchin peut également accéder à des fichiers journaux via le partage UNC. Si votre fichier journal est distant et si vous devez le transférer ou y accéder via un disque partagé, sélectionnez cette option.<p><b>Source de journal pré-configurée</b><br>Sélectionnez cette option pour attribuer une source de journal qui a déjà été saisie dans le système Urchin.
+507	Configuration du journal terminée. La source de journal que vous avez ajoutée peut maintenant être traitée par tous les profils configurés dans le système. Cliquez sur le bouton "Terminé" pour revenir au système d'administration.
+508	Configuration des filtres terminée. Le filtre a été ajouté. Cliquez sur le bouton "Terminé" pour revenir au système d'administration.
+509	État
+510	% terminé
+511	Placé en file d'attente
+512	Dernière exécution
+513	Fréquence
+514	Jamais
+515	Temps réel
+516	Exécuter/Planifier
+517	Non planifié
+518	Non planifié
+519	Planifié
+520	Exécution
+521	Terminé
+522	Erreur
+523	Paramètres distants
+524	Exécuter
+525	Aucun <b>compte</b> dans la configuration. Cliquez sur le bouton "Ajouter" <br> en haut à droite pour ajouter un nouveau <b>compte</b>.
+526	Nom du serveur manquant
+527	Impossible de résoudre le nom d'hôte
+528	Impossible de se connecter au serveur.
+529	Accès refusé
+530	Nom d'utilisateur ou mot de passe incorrect
+531	Liste vide
+532	Historique des tâches du profil
+533	Réussite
+534	Avertissement
+535	Erreur
+536	<nobr><span class=title1><b>Comptes : Résumé (Ref. #A-1202)</b></span></nobr><br>Cet écran contient tous les paramètres disponibles pour ce compte. Si certains paramètres doivent être ajustés, cliquez sur l'onglet approprié et mettez-les à jour. <p><b>Commandes</b><br>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce compte.
+537	Année/Mois
+538	<nobr><span class=title1><b>Assistant de compte : Informations générales (Ref. #A-538)</b></span></nobr><br>Utilisez cet écran pour spécifier les paramètres du nouveau compte. Un compte peut servir à regrouper tous les profils, utilisateurs, sources de journal, etc. d'un seul client.<p><b>Nom du compte</b><br>Un nom unique doit être attribué à chaque compte. Vous pouvez le choisir librement ou utiliser le nom du client ou du site Web.<p><b>Contact et adresse e-mail du contact</b><br>Les informations de contact sont facultatives. Elles peuvent faciliter le suivi de vos clients.<p><b>Emplacement des données de rapport</b><br>Paramètre facultatif qui spécifie le chemin d'accès au répertoire de stockage des données de rapport pour tous les profils appartenant à ce compte. L'emplacement par défaut se trouve dans le répertoire données/rapports/<i>nom_de_compte</i> de la distribution Urchin. L'ensemble du répertoire de données peut être déplacé pour tout le système en modifiant le fichier "urchin.conf" du répertoire "etc". Un bouton de navigation est disponible.<p><b>Emplacement de l'historique d'exécution</b><br>Paramètre facultatif qui spécifie le chemin d'accès au répertoire de stockage des données de l'historique d'exécution pour tous les profils appartenant à ce compte. L'emplacement par défaut se trouve dans le répertoire données/historique/<i>nom_de_compte</i> de la distribution Urchin. Un bouton de navigation est disponible.<p><b>Emplacement de consultation de répertoires</b><br>Ce paramètre facultatif permet de limiter l'accès lorsque vous donnez des droits à un administrateur de compte pour créer des profils. Si vous indiquez un chemin d'accès à un répertoire dans ce champ, les droits de consultation des fichiers journaux dont dispose l'administrateur de compte seront limités à ce répertoire. Aucune restriction de navigation n'est spécifiée par défaut. Vous pouvez changer ce paramètre pour l'ensemble du système en modifiant le fichier "urchin.conf" du répertoire "etc". Un bouton de navigation est disponible.
+539	<nobr><span class=title1><b>Paramètres : Paramètres globaux (Ref. #A-2701)</b></span></nobr><br>Cet écran permet de spécifier les paramètres d'accès pour cette installation d'Urchin. Ils varient selon que vous installez Urchin sur un serveur ou sur un ordinateur de bureau.<p><b>Accès aux rapports en ligne</b><br>Pour autoriser les utilisateurs à se connecter et à consulter des rapports à distance à partir de leur navigateur Web, sélectionnez "activer". Pour les autoriser à consulter les rapports uniquement depuis la console du système où Urchin est installé, sélectionnez "désactiver".<p><b>Administration Web</b><br>Pour autoriser l'utilisateur administrateur à se connecter et à modifier la configuration à distance à partir de son navigateur Web, sélectionnez "activer". Pour l'autoriser à modifier la configuration uniquement depuis la console du système où Urchin est installé, sélectionnez "désactiver".<p>En général, ces deux paramètres sont activés pour les installations sur serveur ; pour les installations sur ordinateur de bureau, l'administration Web au moins est désactivée.<p>Notez que ce paramètre peut être annulé par l'option ALLOW_AUTO_LOGIN dans le fichier etc/session.conf.<p><b>Liens directs aux rapports</b><br>REMARQUE IMPORTANTE SUR LA SÉCURITÉ : lorsque vous activez cette option, les contrôles de sécurité par session sont désactivés et vous pouvez créer des liens renvoyant directement aux rapports. C'est une fonction qui peut s'avérer utile pour les systèmes qui sont déjà protégés par un mot de passe ou un réseau. Lorsqu'elle est activée, vous pouvez établir un lien direct vers les rapports en utilisant le format suivant :<p>&nbsp;&nbsp;(URL de base)/report.cgi?profile=(nom du profil)&user=(nom d'utilisateur)<p>où (URL de base) correspond à tous les éléments précédant session.cgi dans l'URL actuelle, (nom du profil) correspond au nom du profil issu de l'URL et (nom d'utilisateur) correspond à l'utilisateur qui a accès au rapport. Le paramètre "user=" est facultatif et détermine les préférences linguistiques et géographiques. S'il n'est pas spécifié, le système considère que l'utilisateur est l'administrateur. Pour d'autres options de configuration et de contrôle d'accès, consultez le fichier ".report.conf" dans le répertoire "htdocs" de la distribution Urchin.<p><b>Numéro de port du serveur</b><br>Cette option permet de spécifier le numéro du port sur lequel exécuter le service Web Urchin. Une fois cette option modifiée, vous devez redémarrer les services Urchin à l'aide de l'application "urchinctl" dans le répertoire bin du produit. Pour plus d'informations, consultez la documentation relative à l'installation. Par défaut, Urchin s'exécute sur le port 9999, mais vous pouvez modifier ce paramètre lors de l'installation.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à d'autres paramètres.
+540	<nobr><span class=title1><b>Paramètres : Paramètres du serveur (Ref. #A-2702)</b></span></nobr><br>Dans cet écran, vous pouvez modifier le port du serveur utilisé par l'administration Urchin et les systèmes de création de rapports. <p><b>Numéro de port du serveur</b><br>L'affichage des rapports et de l'administration en ligne s'exécute via le port du serveur sur lequel Urchin est installé. Le port par défaut est le port 9999. Important : ne remplacez pas ce port par un port utilisé par un autre service, HTTP (port 80) ou sendmail (port 25) par exemple. Si vous ne souhaitez pas utiliser le port 9999, parlez-en à votre administrateur système. Une fois cette valeur modifiée, vous devez redémarrer les services Urchin afin que les modifications prennent effet. Les deux services Urchin sont le Planificateur ('urchind') et le Serveur ('urchinwebd'). Pour redémarrer ces services sous Windows, utilisez les options "Activer" et "Désactiver" du menu "Démarrer"->"Programmes"->"Urchin". Sous UNIX, exécutez "bin/urchinctl restart" dans le répertoire Urchin.
+541	<b>Affichage des rapports</b><br>Cet écran affiche la liste de tous les profils disponibles auxquels vous avez accès. Vous avez la possibilité de consulter les données de performances de plusieurs profils sur un même écran.<p><b>Calendrier limité</b><br>Le calendrier limité, situé dans le coin supérieur droit de l'écran, vous permet de choisir une plage de dates (jour, semaine, mois, année).<p><b>Accéder au rapport</b><br>Cliquez sur le nom du profil pour lancer la fenêtre de création de rapports pour ce profil. La fenêtre de création de rapports vous permet de consulter tous les rapports disponibles pour ce profil.<p><b>Modifier</b> (super administrateur uniquement)<br>Le bouton "Modifier" vous donne accès à tous les paramètres du profil, sous forme d'onglets.<p><b>État</b> (lien hypertexte, super administrateur uniquement)<br>L'état de chaque tâche peut être : "Non planifié", "En attente", "Placé en file d'attente", "Exécution", "Annulation", "Terminé", "Annulé", "Avertissement" ou "Erreur". Ces états sont codés par des couleurs. Pour trier la liste par état, cliquez sur la flèche située sous le mot "État". Pour afficher les détails d'exécution d'une tâche, cliquez sur l'entrée d'état codée par une couleur à côté de cette tâche. Une nouvelle fenêtre affiche alors les détails d'exécution. <p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Utilisez les boutons "Précédent" et "Suivant" pour consulter les entrées page par page. Pour accéder au site en lui-même, cliquez sur le lien à côté du nom du profil.<p><b>Compte</b> (en mode Datacenter)<br>En mode Datacenter, le menu "Compte" peut filtrer les entrées.<p><b>Afficher</b><br>Utilisez le menu déroulant "Afficher" pour sélectionner l'affichage Administrateur, Standard ou Entreprises pour les pages de présentation.
+542	<nobr><span class=title1><b>Préférences (Ref. #A-1001)</b></span></nobr><br>Dans cet écran, vous pouvez spécifier/modifier votre mot de passe et déterminer les paramètres de langue et de localisation par défaut à utiliser dans les rapports Urchin. Cliquez sur "Mettre à jour" pour appliquer les modifications. Certains paramètres ne sont pas modifiables si les autorisations sont réservées à l'administrateur.<p><b>Mot de passe</b><br>Pour modifier votre mot de passe, tapez votre nouveau mot de passe dans ce champ, puis dans le champ "Confirmez le mot de passe", et cliquez sur le bouton "Mettre à jour". Vous pourrez utiliser ce nouveau mot de passe lors de votre prochaine connexion. Les mots de passe ne doivent pas contenir d'espaces ni d'autres caractères réservés. <b>Note destinée aux administrateurs :</b> n'oubliez pas votre mot de passe d'administrateur. <p><b>Langue des rapports</b><br>Utilisez ce menu pour sélectionner la langue dans laquelle les rapports doivent s'afficher. Toutes les informations de navigation et d'aide de l'interface de création de rapports s'affichent alors dans la langue sélectionnée. N'oubliez pas de cliquer sur "Mettre à jour" une fois la modification effectuée.<p><b>Région</b><br>Utilisez ce paramètre pour déterminer les critères de localisation à appliquer lors de l'affichage des rapports. Ce paramètre détermine le format des dates, des heures et des chiffres, qui peut être différent selon les pays. Si le pays de l'utilisateur n'apparaît pas dans la liste, sélectionnez une région utilisant le même format de date ou de chiffre. Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications.
+543	<nobr><span class=title1><b>Paramètres de traitement : Paramètres DNS (Ref. #A-2301)</b></span></nobr><br>Dans cet écran, vous pouvez configurer la fonctionnalité de résolution de noms de domaine d'Urchin, qui convertit les adresses IP en noms de domaine (63.212.171.4 -> urchin.com). Urchin peut alors créer des rapports sur les noms de domaine, les réseaux et les pays. Pour configurer DNS, il vous faut l'adresse IP d'un serveur de noms local. Pour plus d'informations, contactez votre administrateur.<p><b>Résolution de noms de domaine</b><br>Sélectionnez "activer" pour activer la résolution de noms de domaine.<p><b>Résolveur d'adresses IP</b><br>Saisissez l'adresse IP d'un serveur de noms DNS local acceptant les requêtes d'Urchin concernant la conversion d'adresses IP en noms de domaine.<p><b>Boucles DNS</b><br>Ce paramètre détermine le nombre de tentatives de résolution effectuées par Urchin avant l'abandon. La valeur 5 par défaut convient à la plupart des installations.<p><b>Résolution cible</b><br>Une fois qu'Urchin a atteint la résolution cible, le traitement DNS s'arrête. La valeur par défaut de ce paramètre (80 %) constitue un bon compromis entre vitesse de traitement et résolution. Les performances risquent d'être ralenties si vous augmentez cette valeur.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à d'autres paramètres.
+544	<nobr><span class=title1><b>Paramètres globaux : Paramètres de la base de données (Ref. #A-2302)</b></span></nobr><br>Cet écran permet de spécifier des paramètres généraux visant à contrôler les performances en fonction de l'utilisation des ressources. En général, les valeurs par défaut offrent le meilleur compromis en termes de vitesse/processeur et utilisation du disque. Toutefois, vous pouvez modifier ces paramètres si vous souhaitez augmenter la vitesse d'Urchin ou réduire son impact sur l'ordinateur sur lequel il est installé. <p><b>Nombre maximal d'enregistrements par table</b><br>Dans le cas de sites volumineux, ce paramètre permet d'indiquer le nombre maximal d'enregistrements dans les tables et donc de maîtriser la taille de la base de données Urchin. L'option par défaut convient à la plupart des installations. Si cette limite est atteinte pour un mois donné, les entrées supplémentaires sont regroupées sous une entrée intitulée "Autre". Notez que si vos rapports contiennent de nombreuses entrées "Autre", il faudra augmenter la valeur de ce paramètre. Pour bénéficier de performances optimales, utilisez une valeur inférieure ou égale à 100 000<p><b>Cible d'utilisation de la mémoire</b><br>Ce paramètre fournit des indications au processus Urchin quant à la quantité de mémoire à utiliser lors de l'exécution. Pour les sites de grande taille, l'augmentation de l'empreinte mémoire peut permettre d'accroître les performances puisque le système utilise moins le cache disque. Le paramètre par défaut est peu élevé : il est recommandé d'augmenter la cible à 512 Mo au moins sur les systèmes dont la mémoire physique est suffisante.<p><b>Détail géographique</b><br><p><b>Informations géographiques</b><br>Ce paramètre permet de définir quelles informations géographiques seront incluses dans les rapports sur les profils. Vous pouvez augmenter l'empreinte mémoire du moteur de traitement des journaux (environ 350 Mo pour les réseaux, 100 Mo pour les domaines, et entre 20 et 150 Mo pour les origines géographiques, en fonction de la base de données géographique choisie) en sélectionnant des options supplémentaires. Urchin comprend un certain nombre de bases de données géographiques, qui ne sont pas toutes aussi détaillées en termes d'informations sur le pays ou la région. À partir du menu déroulant, vous pouvez sélectionner la base de données géographique qui correspond le mieux à vos besoins.<p><b>Base de données géographique</b><br>Urchin comprend des bases de données géographiques, qui fournissent différents niveaux d'informations concernant l'origine géographique :<br>- Monde (informations détaillées sur le pays, la région et la ville, pour le monde entier)<br>- Monde version allégée (informations au niveau du pays uniquement, pour le monde entier)<br>- Bases de données régionales (États-Unis, Union européenne et Japon, par exemple), contenant des informations détaillées au niveau des régions et pays correspondants, pour le reste du monde). <br><br>Les paramètres des bases de données géographiques peuvent être définis de façon globale ou au niveau du profil.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à d'autres paramètres.
+545	<nobr><span class=title1><b>Paramètres de traitement : Utilisation de la mémoire (Ref. #A-2303)</b></span></nobr><br>Cet écran permet de modifier de façon approximative l'utilisation de la mémoire du moteur de traitement du journal Urchin. À moins d'avoir des fichiers journaux très volumineux, il est recommandé d'utiliser le paramètre par défaut. Pour les journaux volumineux, la vitesse d'Urchin peut être augmentée en allouant plus de mémoire afin de profiter des ressources disponibles. Un paramétrage trop élevé de la mémoire est susceptible d'avoir un effet négatif sur l'allocation de mémoire ou de causer des ralentissements dus à la permutation.<p><b>Cible d'utilisation de la mémoire</b><br>Utilisez le menu déroulant pour sélectionner la quantité de mémoire utilisée par Urchin au cours du traitement. Urchin peut utiliser un peu plus ou moins que la quantité sélectionnée en fonction des données. L'option "Personnaliser" ne doit être utilisée que dans des cas bien définis, par des administrateurs Urchin expérimentés.<p><b>Paramètres personnalisés d'utilisation de la mémoire</b><br>Si le paramètre de mémoire personnalisé est sélectionné, des options supplémentaires s'affichent pour permettre de paramétrer manuellement chacune des principales mémoires tampon d'Urchin. Le paramétrage de ces valeurs en mégaoctets modifiera la taille de la mémoire tampon et donc les performances globales. L'ajustement de ces valeurs n'est pas recommandé.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à d'autres paramètres.
+546	<nobr><span class=title1><b>Paramètres : Comptabilité (Ref. #A-3000)</b></span></nobr><br>Cet écran donne un aperçu rapide de l'état de cette installation Urchin du point de vue des utilisateurs/des groupes et de la licence. Les paramètres sont les suivants :<ul><li>Comptes (mode Datacenter uniquement) : nombre de clients ou de super groupes dans le système. Les comptes servent à regrouper plusieurs profils et utilisateurs. Il est possible de leur attribuer des droits d'administration distincts.<li>Utilisateurs : nombre d'utilisateurs ayant accès aux rapports et/ou au système d'administration.<li>Groupes : nombre de groupes d'utilisateurs qui ont été configurés.<li>Profils : nombre de profils qui ont été configurés. <li>Sources de journal : nombre de sources de journal qui ont été configurées. <li>Filtres de journal : nombre de filtres de journal qui ont été configurés. <li>Sources de CPC : nombre de sources de CPC qui ont été configurées. </ul>
+547	<nobr><span class=title1>    <b>Profils (Ref. #A-2100)</b></span></nobr><br>Cet écran affiche les profils qui ont été configurés pour cette installation d'Urchin. Il permet d'en ajuster les paramètres et d'autoriser l'administrateur à en ajouter d'autres. Un profil de configuration est nécessaire pour chaque site Web pour lequel vous souhaitez créer des rapports.<p><b>Ajouter</b> (super-administrateur uniquement)<br>Cliquez sur le bouton "Ajouter" en haut à droite pour ajouter un profil. Cette opération lance l'assistant d'ajout de profil, qui vous expose de façon simplifiée les étapes permettant d'ajouter un profil.<p><b>Modifier</b><br>Dans la liste de profils, une série de boutons apparaît en regard de chaque profil, ce qui vous permet de les contrôler. Le bouton "Modifier" permet d'accéder à tous les paramètres du profil choisi, organisés en onglets.<p><b>Supprimer</b> (super-administrateur uniquement)<br>Cliquez sur ce bouton pour supprimer le profil correspondant de la configuration. Cette opération supprime définitivement toutes les données et la configuration du profil. L'historique du traitement du profil est également supprimé.<p><b>Copier</b> (super-administrateur uniquement)<br>Ce bouton permet de créer un profil présentant les mêmes paramètres qu'un autre profil. Cliquez sur ce bouton pour lancer l'assistant de copie, qui vous invite à saisir un nouveau nom de profil. <p><b>Exécuter</b> (super-administrateur uniquement)<br>Ce bouton est un raccourci permettant d'accéder à l'écran "Exécuter/Planifier", où vous pouvez choisir d'exécuter ce profil immédiatement ou de planifier une exécution régulière. Aucune donnée de rapport n'est disponible tant que le profil n'a pas été exécuté.<p><b>Afficher</b><br>Ce bouton permet d'ouvrir directement la fenêtre de création de rapports de chaque profil.<p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant". <p><b>Compte</b> (mode Datacenter uniquement)<br>En mode Datacenter, le menu "Compte" peut filtrer les entrées à afficher.
+548	<nobr><span class=title1>    <b>Gestionnaire de journaux (Ref. #A-1600)</b></span></nobr><br>Cet écran affiche les sources de journal qui ont été configurées pour cette installation d'Urchin. Il permet d'en ajuster les paramètres et d'autoriser l'administrateur à en ajouter d'autres.<p><b>Ajouter</b><br>Cliquez sur le bouton "Ajouter" en haut à droite pour ajouter une source de journal. Cette opération lance l'assistant d'ajout de sources de journal qui vous guide, en quelques étapes, dans l'ajout d'une source de journal.<p><b>Modifier</b><br>Les boutons en regard de chaque source de journal de la liste vous permettent de les contrôler. Le bouton "Modifier" permet d'accéder à tous les paramètres de la source choisie, organisés en onglets.<p><b>Supprimer</b><br>Cliquez sur ce bouton pour supprimer la source de journal correspondante de la configuration ainsi que tous les profils y faisant référence. Cette opération ne supprime pas véritablement le fichier journal ni aucune des données du profil.<p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant". <p><b>Compte</b> (mode Datacenter uniquement)<br>En mode Datacenter, le menu "Compte" peut filtrer les entrées à afficher.
+549	<nobr><span class=title1>    <b>Gestionnaire de filtres (Ref. #A-1700)</b></span></nobr><br>Cet écran affiche les filtres qui ont été configurés pour cette installation d'Urchin. Il permet d'en ajuster les paramètres et d'autoriser l'administrateur à en ajouter d'autres. Il est possible d'appliquer des filtres à des profils ou à des sources de journal au cas par cas. Des filtres peuvent être créés pour exclure des appels de fichier, n'inclure que certains appels de fichier ou produire une URL dynamique plus explicite pour l'affichage dans les rapports. Remarque : le filtre de décodage des mots clés, qui met correctement en forme les mots clés et les termes de recherche, est activé par défaut et ne doit pas être supprimé.<p><b>Ajouter</b><br>Cliquez sur le bouton "Ajouter" en haut à droite pour ajouter un filtre. Cette opération lance l'assistant qui vous guide, en quelques étapes, dans l'ajout d'un filtre.<p><b>Modifier</b><br>Les boutons en regard de chaque filtre de la liste vous permettent de les contrôler. Le bouton "Modifier" permet d'accéder à tous les paramètres du filtre choisi, organisés en onglets.<p><b>Supprimer</b><br>Cliquez sur ce bouton pour supprimer le filtre correspondant de la configuration ainsi que tous les profils et sources de journal y faisant référence. <p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant". <p><b>Compte</b> (mode Datacenter uniquement)<br>En mode Datacenter, le menu "Compte" peut filtrer les entrées à afficher.
+550	<nobr><span class=title1><b>Paramètres : Licence (Ref. #A-6001)</b></span></nobr><br>Cet écran indique l'état de la licence de cette installation et permet d'accéder à plusieurs actions suivant le mode d'appel de la page de licence : l'obtention d'une licence de démo, l'activation d'un code de série permanent ou de démo existant, ou la réactivation d'une licence existante. Les informations sur l'état de la licence comprennent le type de licence, la date d'expiration des licences de démo, le code de série permettant d'activer la licence et la version de la licence.<p><b>Obtenir une licence de démo</b><br>Cliquez sur le lien correspondant pour obtenir une licence de démo limitée dans le temps. Vous accédez automatiquement à la page d'inscription aux licences sécurisée d'Urchin. Après avoir fourni les informations de contact facultatives et accepté l'accord de licence, vous obtenez un lien pour installer automatiquement la licence de démo.<p><b>Activer la licence</b><br>Si un détaillant ou un revendeur Urchin agréé vous a fourni un code de série permanent ou de démo, cliquez sur ce lien. Vous accédez automatiquement à la page d'inscription et d'activation de licence sécurisée d'Urchin. Vous êtes alors invité à entrer le code de série qui vous a été communiqué. Après avoir fourni les informations de contact facultatives et accepté l'accord de licence, vous obtenez un lien qui vous permet d'activer automatiquement le code de série et d'installer la licence correspondante dans votre configuration Urchin.<p><b>Réactiver la licence</b><br>Lors du déplacement ou du rétablissement de votre installation Urchin, vous devez réactiver votre licence. Cliquez sur le lien correspondant pour réactiver votre installation. Vous accédez automatiquement à la page d'inscription sécurisée d'Urchin. Après avoir accepté les conditions de l'accord de licence, un lien permettant de réactiver votre licence vous est fourni.
+551	<nobr><span class=title1>    <b>Groupes (Ref. #A-1400)</b></span></nobr><br>Cet écran affiche les groupes qui ont été configurés pour cette installation d'Urchin. Il permet d'en ajuster les paramètres et d'autoriser l'administrateur à en ajouter d'autres. Avec les groupes, vous pouvez contrôler les autorisations d'accès à l'affichage des rapports pour un groupe d'utilisateurs.<p><b>Ajouter</b><br>Cliquez sur le bouton "Ajouter" en haut à droite pour ajouter un groupe. Cette opération lance l'assistant qui vous guide, en quelques étapes, dans l'ajout d'un groupe.<p><b>Modifier</b><br>Les boutons en regard de chaque groupe de la liste vous permettent de les contrôler. Le bouton "Modifier" permet d'accéder à tous les paramètres du groupe, organisés en onglets.<p><b>Supprimer</b><br>Cliquez sur ce bouton pour supprimer le groupe correspondant de la configuration. <p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant".<p><b>Compte</b> (mode Datacenter)<br>En mode Datacenter, le menu "Compte" peut filtrer les entrées à afficher.
+552	<nobr><span class=title1>    <b>Utilisateurs (Ref. #A-1300)</b></span></nobr><br>Cet écran affiche les utilisateurs qui ont été configurés pour cette installation d'Urchin. Il permet d'ajuster les paramètres de chacun et d'autoriser l'ajout d'utilisateurs par l'administrateur. Chaque utilisateur a un nom d'utilisateur et un mot de passe. L'autorisation de consultation de rapport est contrôlée via la configuration de l'utilisateur.<p><b>Ajouter</b><br>Cliquez sur le bouton "Ajouter" en haut à droite pour ajouter un utilisateur. Cette opération lance l'assistant qui vous guide, en quelques étapes, dans l'ajout d'un utilisateur.<p><b>Modifier</b><br>Les boutons en regard de chaque utilisateur de la liste vous permettent de les contrôler individuellement. Le bouton "Modifier" permet d'accéder à tous les paramètres de cet utilisateur, organisés en onglets.<p><b>Supprimer</b><br>Cliquez sur ce bouton pour supprimer l'utilisateur correspondant de la configuration. <p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant".<p><b>Compte</b> (mode Datacenter uniquement)<br>En mode Datacenter, le menu "Compte" peut filtrer les entrées à afficher.
+553	<nobr><span class=title1><b>Planificateur de tâches du profil (Ref. #A-2600)</b></span></nobr><br>Cet écran affiche les tâches planifiées pour chaque profil de la configuration. Plusieurs informations sont disponibles pour chaque profil, notamment le nom du profil, la fréquence d'exécution, l'état de l'exécution ("Non planifié", "En attente", "Placé en file d'attente", "Exécution", "Annulation") et, pour les tâches en cours, le pourcentage de réalisation, les actions disponibles et l'heure de démarrage de la tâche. Utilisez les flèches situées sous les champs pour changer l'ordre de tri. REMARQUE : la tâche de "mise à jour des données géographiques" est une tâche de mise à jour interne destinée au traitement des informations géographiques des visiteurs.<p><b>Nom du profil</b><br>Tous les profils configurés s'affichent.<p><b>Fréquence</b><br>Affiche la fréquence d'exécution du profil.<p><b>État</b><br>Les différents états des tâches sont : "Non planifié", "En attente" (en attente de la prochaine exécution planifiée), "Placé en file d'attente" (la tâche est présente dans la file d'attente d'exécution du Planificateur de tâches), "Exécution" ou "Annulation" (la tâche sera annulée dès que possible). Pour les tâches en cours d'exécution ou d'annulation, l'entrée "État" est associée à la fenêtre de progression qui affiche les détails de l'exécution de la tâche. Cliquez sur l'état d'une tâche pour ouvrir cette fenêtre.<p><b>Action</b><br>Ce champ indique les actions pour les tâches planifiées. Le champ "Action" comprend une option "Annuler" pouvant s'appliquer aux tâches en cours d'exécution.<p><b>% terminé</b><br>Pour les tâches en cours d'exécution, ce champ affiche une barre de progression qui indique le pourcentage approximatif d'avancement du traitement de la tâche.<p><b>Heure de début</b><br>Pour les tâches en cours d'exécution, ce champ affiche l'heure GMT de début de la tâche.<p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant". <p><b>Compte</b> (mode Datacenter uniquement)<br>En mode Datacenter, le menu "Compte" permet de filtrer les entrées à afficher.
+554	<nobr><span class=title1><b>Planificateur : Historique des tâches du profil (Ref. #A-2500)</b></span></nobr><br>Cet écran affiche l'historique de toutes les tâches exécutées via le Planificateur de tâches du profil ou le bouton "Exécuter". Chaque tâche est associée à un résumé qui contient des informations utiles. Vous pouvez cliquer sur le champ "État" pour consulter les détails relatifs à l'exécution d'une tâche de l'historique. Utilisez les flèches situées sous les champs pour changer l'ordre de tri.<p>Chaque entrée indique le nom de la tâche (profil), l'identifiant et l'hôte de traitement, l'état de la tâche, le moment où elle a démarré, le moment où elle s'est terminée et la quantité de données traitées.<p><b>État</b> (lien hypertexte)<br>L'état de chaque tâche peut être : "Terminé", "Annulé", "Avertissement" ou "Erreur". Les états sont codés par couleur et vous pouvez trier la liste par état en cliquant sur la flèche située sous le mot "État". Cliquez sur l'état codé par couleur à côté d'une tâche pour consulter le détail de son exécution. Une fenêtre distincte s'ouvre avec les détails d'exécution.<p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant". <p><b>Compte</b> (mode Datacenter uniquement)<br>En mode Datacenter, le menu "Compte" permet de filtrer les entrées à afficher.
+555	<nobr><span class=title1><b>Importer la configuration IIS (Ref. #A-5004)</b></span></nobr><br>Cet écran permet d'importer des configurations de site existantes à partir d'une configuration de serveur Web Microsoft IIS et de convertir ces sites en profils Urchin. Cela peut permettre de gagner un temps considérable et cette méthode est recommandée pour une configuration rapide des systèmes IIS. Sélectionnez les sites détectés pour l'importation et cliquez sur le bouton "Importer les profils".<p><b>Sélection à importer</b><br>Ce module détecte automatiquement les sites Web IIS locaux. Cochez la case à droite de chaque site détecté pour l'importer. S'il s'agit d'une coche fixe et non d'une case, le site a déjà été importé. Cliquez sur le bouton "Importer les profils" pour terminer l'étape d'importation. <p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant".
+556	Cet écran affiche un récapitulatif du compte que vous avez configuré. Si les paramètres sont corrects, cliquez sur "Terminer" pour achever la configuration. Pour apporter des modifications, cliquez sur le bouton "Précédent".
+557	Le compte a été ajouté. Il est à présent disponible pour organiser les profils, utilisateurs, sources de journal, etc.
+558	<nobr><span class=title1><b>Profils : paramètres (Ref. #A-2101)</b></span></nobr><br>Cet écran permet de déterminer le type du profil, la méthode de suivi et les rapports disponibles.<p><b>Compte facultatif</b> (mode Datacenter uniquement)<br>Affiche le compte auquel le profil est associé.<p><b>Nom du profil</b><br>Il s'agit du nom du profil, qui est généralement l'adresse du site Web (par exemple, "www.urchin.com"). Toutefois, si le même site comporte plusieurs profils, il est d'usage de les nommer de façon à pouvoir les différencier (par exemple, "www.urchin.com - filtré")<p><b>Type de profil</b><br>Généralement, il n'est pas nécessaire d'ajuster ce paramètre, sauf si vous disposez de cartes de données personnalisées configurées. Dans ce cas, utilisez ce paramètre pour désigner la carte de données qui s'applique à ce profil.<p><b>Site Web de commerce électronique</b><br>Si vous prévoyez de traiter des données de commerce électronique conjointement à ce profil, définissez cette option sur "Oui". Dans le cas contraire, définissez-la sur "Non". Lorsque la fonctionnalité de commerce électronique est désactivée, vous pouvez définir une valeur en dollars pour fournir des informations générales sur le ROI.<p><b>Méthode de suivi des visiteurs</b><br>Urchin propose deux méthodes d'identification des visiteurs. La méthode la plus précise consiste à utiliser les balises JavaScript UTM. Si UTM est installé, sélectionnez cette option. Dans le cas contraire, sélectionnez la méthode IP+User-Agent. Certains rapports ne seront renseignés que si vous utilisez UTM.<p><b>Domaine UTM</b><br>En fonctionnement normal, laissez ce champ vide. UTM détecte automatiquement le domaine du site. La fonctionnalité "Domaine UTM" est utilisée uniquement lorsque vous disposez de domaines qui se chevauchent et qui doivent faire l'objet d'un suivi séparé. <p><b>Groupe de rapports</b><br>Généralement, il n'est pas nécessaire d'ajuster ce paramètre, sauf si vous disposez de groupes de rapports personnalisés configurés. Dans ce cas, utilisez ce paramètre pour désigner celui à utiliser pour ce profil.<p><b>Tableaux de bord disponibles</b><br>Le groupe de rapports par défaut comporte quatre tableaux de bord. Ce paramètre permet de désigner le tableau de bord disponible dans le rapport et le tableau de bord par défaut à afficher en premier.<p><b>Sections des rapports</b><br>En plus des tableaux de bord, le rapport contient quatre sections principales. Pour désactiver ces sections dans un rapport, il suffit de décocher la case correspondante. Pour limiter l'accès à un rapport en fonction de l'utilisateur, cliquez sur l'onglet "Utilisateurs" et utilisez la fonctionnalité "Remplacer le tableau de bord". Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications.
+559	Résultat de l'assistant de compte
+560	<nobr><span class=title1>    <b>Comptes (Ref. #A-1200)</b></span></nobr><br>Cet écran affiche les comptes qui ont été configurés pour cette installation d'Urchin. Il permet d'en ajuster les paramètres et d'autoriser l'administrateur à en ajouter d'autres. Un compte permet d'organiser les profils, sources de journal, utilisateurs et groupes sous une seule entrée d'entreprise. Pour les fournisseurs ayant des clients complexes, l'utilisation d'un compte facilite le suivi de tous les composants associés à ce type de client.<p><b>Ajouter</b><br>Cliquez sur le bouton "Ajouter" en haut à droite pour ajouter un compte. Cette opération lance l'assistant qui vous guide, en quelques étapes, dans l'ajout d'un compte.<p><b>Modifier</b><br>Les boutons en regard de chaque compte de la liste vous permettent de les contrôler. Le bouton "Modifier" permet d'accéder à tous les paramètres de ce compte, qui sont organisés en onglets.<p><b>Supprimer</b><br>Cliquez sur ce bouton pour supprimer le compte correspondant de la configuration.<p><i>ATTENTION :</i> Tous les profils, sources de journal, filtres, utilisateurs et groupes associés à ce compte vont être supprimés.<p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant".
+561	<nobr><span class=title1><b>Profils : Sources de journal (Ref. #A-2102)</b></span></nobr><br>Cet écran permet d'ajouter des <b>Sources de journal à traiter</b> à partir de la liste des <b>Sources de journal disponibles</b>. La colonne <b>Sources de journal à traiter</b> affiche les sources de journal traitées dans ce profil. Chaque profil n'est en général associé qu'à une seule source de journal, mais dans les configurations d'équilibrage de charge ou pour les sites dotés de journaux de commerce électronique (au format ELF) ou de journaux CPC, il existe plusieurs sources de journal. <p><b>Commandes :</b><br><ul><li><b>Ajouter</b><br>Cliquez sur l'icône "Ajouter" pour ajouter une source de journal aux sources de journal disponibles. Cette opération lance l'assistant qui vous guide, en quelques étapes, dans l'ajout d'une source de journal locale ou distante. <li><b>Modifier</b><br>Mettez la source du journal à modifier en surbrillance, puis cliquez sur l'icône "Modifier". <li>Cliquez sur le bouton <b>Mettre à jour</b> pour enregistrer les modifications. <li>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce profil.
+562	<nobr><span class=title1><b>Profils : Filtres (Ref. #A-2103)</b></span></nobr><br>Utilisez cet écran pour ajouter des <b>filtres appliqués</b> à partir de la liste des <b>Filtres disponibles</b>. <p><b>Commandes :</b><br><ul><li><b>Ajouter</b><br>Cliquez sur le bouton "Ajouter" pour ajouter un filtre aux filtres disponibles. Cette opération lance l'assistant qui vous guide, en quelques étapes, dans l'ajout d'un nouveau filtre ou d'un filtre existant.<li><b>Modifier</b><br>Mettez le filtre à modifier en surbrillance, puis cliquez sur l'icône "Modifier".<br><li>Cliquez sur les flèches vers le haut et vers le bas pour modifier l'ordre d'application des filtres.<br><li>Cliquez sur le bouton <b>Mettre à jour</b> pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce profil.
+563	<nobr><span class=title1><b>Profils : Utilisateurs (Ref. #A-2104)</b></span></nobr><br>Utilisez cet écran pour autoriser les utilisateurs configurés dans le système Urchin à accéder aux rapports de ce profil. Lorsqu'un utilisateur non-administrateur se connecte au système Urchin, il n'a accès qu'aux rapports pour lesquels il a reçu une autorisation de la part de l'administrateur. <p><b>Attribuer des utilisateurs</b><br>Pour autoriser un utilisateur donné à accéder au profil, sélectionnez l'utilisateur dans la zone de gauche sous "Utilisateurs disponibles", puis cliquez sur la flèche vers la droite. Pour empêcher qu'un utilisateur donné puisse accéder au profil, sélectionnez l'utilisateur dans la zone de droite, puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications.<p><b>Remplacer le tableau de bord</b><br>Cette option permet de modifier la disponibilité des rapports et des tableaux de bord pour chaque utilisateur. Pour mettre un utilisateur en surbrillance, cliquez sur celui-ci dans la fenêtre "Accès autorisé". Cliquez ensuite sur le bouton "Remplacer le tableau de bord" pour ouvrir une fenêtre contextuelle dans laquelle vous pouvez activer et désactiver des sections entières de rapports pour l'utilisateur sélectionné et définir son tableau de bord par défaut. Lorsque vous déplacez un utilisateur de la fenêtre "Utilisateurs disponibles" vers la fenêtre "Accès autorisé", vous devez cliquer sur "Mettre à jour" pour que cette option soit disponible pour l'utilisateur en question.<p><b>Commandes</b><br><ul><li><b>Ajouter</b><br>Cliquez sur l'icône "Ajouter" pour lancer l'assistant d'utilisateur et ajouter un élément à la liste des utilisateurs disponibles.<li><b>Modifier</b><br>Cliquez sur l'icône "Modifier" pour modifier l'utilisateur mis en surbrillance.<li>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. <li>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce profil.
+564	Cet écran affiche tous les paramètres configurés pour le fichier journal sélectionné. Si les informations sont incorrectes, cliquez sur "Modifier" en haut à droite pour modifier les paramètres. Pour ajuster les filtres ou les informations des "Profils attribués à", cliquez sur le bouton "Modifier" sous la section correspondante de cette page.
+565	<nobr><span class=title1><b>Gestionnaire de journaux : Paramètres du journal (Ref. #A-1601)</b></span></nobr><br>Cet écran permet de configurer l'emplacement et le format de la source de journal. Pour obtenir des rapports fiables, ces paramètres doivent être correctement configurés. <p><b>Compte facultatif</b> (mode Datacenter uniquement)<br>Affiche le compte auquel la source du journal est associée.<p><b>Emplacement du fichier journal</b><br>Sélectionnez "Local" si le fichier journal est accessible sur le système de fichiers local ou sur un système en réseau monté sur cet ordinateur. Sélectionnez "Distant" si le fichier journal doit être transféré depuis un système distant utilisant FTP ou HTTP, ou s'il est accessible via un partage UNC (Windows uniquement). Pour les journaux distants, l'onglet "Paramètres distants" s'affiche en haut de l'écran, une fois que le bouton "Mettre à jour" est sélectionné. Cliquez sur l'onglet pour configurer les détails d'accès au journal distant.<p><b>Nom de la source de journal</b><br>Tout nom choisi pour la source de journal. <p><b>Format du journal</b><br>Utilisez cette option pour spécifier le format du fichier journal en cours de traitement. Le type de format de journal <i>auto</i> est recommandé pour la plupart des serveurs Web. Les autres formats existent pour des raisons de compatibilité avec d'anciennes versions d'Urchin, mais ils ne sont généralement pas utilisés. Vous pouvez créer des formats de journaux personnalisés à l'aide des fichiers de modèles situés dans le répertoire lib/custom/logformats de la diffusion Urchin.<ul><li><b>Auto :</b> ce format détecte automatiquement la plupart des formats journaux de serveurs Web tels qu'Apache, W3C (Microsoft IIS), NCSA, Netscape et iPlanet. <li><b>Campagne :</b> utilisez ce format pour les données de coût de campagne spécifiquement formatées pour être utilisées par Urchin. Pour plus de détails, consultez la documentation en ligne. Notez que le format du journal de campagne ne peut pas être détecté automatiquement.<li><b>Elf2 :</b> utilisez ce format pour les journaux de commerce électronique au format ELF2. Notez que le format des journaux de commerce électronique ne peut pas être détecté automatiquement.<li><b>Google :</b> utilisez ce format pour les journaux contenant des données de coût par clic Google. Notez que le format de journaux Google ne peut pas être détecté automatiquement.<li><b>NCSA :</b> ce format peut en général être détecté automatiquement. Il est généralement utilisé par les serveurs Web Apache. Notez que, pour une création complète de rapports, il faut utiliser la connexion combinée étendue, qui ne correspond en général pas au comportement d'Apache par défaut. <li><b>Netscape :</b> les serveurs Netscape existants (mais pas les serveurs iPlanet) utilisent ce format par défaut.<li><b>Overture :</b> utilisez ce format pour les journaux contenant des données de coût par clic Overture. Notez que le format de journaux Overture ne peut pas être détecté automatiquement.<li><b>W3C :</b> ce format peut être détecté automatiquement. Il est utilisé pour les serveurs Web qui se connectent au format W3C standard comme les serveurs Microsoft IIS.</ul></ul></ul> <p><b>Chemin d'accès au fichier journal</b><br>Pour les sources du journal locales, le chemin d'accès au fichier journal spécifie l'emplacement du système de fichiers local du fichier journal. Utilisez simplement le bouton de navigation. <p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour cette source de journal.
+566	Cet écran affiche tous les paramètres configurés pour le filtre du journal sélectionné. Si les informations sont incorrectes, cliquez sur "Modifier" en haut à droite pour modifier les paramètres. Pour corriger les informations des "Sources de journal appliquées à", cliquez sur le bouton "Modifier" sous la section correspondante de cette page.
+567	<nobr><span class=title1>    <b>Comptes : Infos (Ref. #A-1201)</b></span></nobr><br>Cet écran permet de modifier les divers paramètres relatifs à ce compte.<p><b>Nom du compte</b><br>Un nom unique doit être attribué à chaque compte. Vous pouvez le choisir librement ou utiliser le nom du client ou du site Web.<p><b>Contact et adresse e-mail du contact</b><br>Les informations de contact sont facultatives. Elles peuvent faciliter le suivi de vos clients.<p><b>Emplacement des données de rapport</b><br>Paramètre facultatif qui spécifie le chemin d'accès au répertoire de stockage des données de rapport pour tous les profils appartenant à ce compte. L'emplacement par défaut se trouve dans le répertoire données/rapports/<i>nom_de_compte</i> de la diffusion Urchin. L'ensemble du répertoire de données peut être déplacé pour tout le système en modifiant le fichier "urchin.conf" du répertoire "etc". Un bouton de navigation est disponible.<p><b>Emplacement de l'historique d'exécution</b><br>Paramètre facultatif qui spécifie le chemin d'accès au répertoire de stockage des données de l'historique d'exécution pour tous les profils appartenant à ce compte. L'emplacement par défaut se trouve dans le répertoire données/historique/<i>nom_de_compte</i> de la diffusion Urchin. Un bouton de navigation est disponible.<p><b>Emplacement de consultation de répertoires</b><br>Ce paramètre facultatif agit comme mesure de sécurité lorsque vous autorisez l'accès à un administrateur de compte pour créer des profils. Si vous saisissez un chemin d'accès à un répertoire dans ce champ, les droits de consultation des fichiers journaux dont dispose l'administrateur de compte seront limités à ce répertoire. Aucune restriction de navigation n'est spécifiée par défaut. Vous pouvez changer ce paramètre pour l'ensemble du système en modifiant le fichier "urchin.conf" du répertoire "etc". Un bouton de navigation est disponible.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce compte.
+568	<nobr><span class=title1><b>Profils : Exécuter/Planifier (Ref. #A-2105)</b></span></nobr><br>Cet écran permet de planifier l'exécution d'une tâche (de traiter les sources de journal associées à un profil) ou d'exécuter la tâche immédiatement en cliquant sur le bouton "Exécuter" situé sur la droite. Après avoir cliqué sur l'un des boutons de planification, des options supplémentaires vous sont proposées, telles que les heures et minutes souhaitées, en fonction de la fréquence choisie. Cliquez sur le bouton "Mettre à jour" pour appliquer les modifications effectuées. Si vous sélectionnez le bouton "Exécuter", le profil sera planifié pour une exécution immédiate. Pour consulter les détails de l'exécution, vérifiez l'état de la tâche dans le Planificateur.<p><b>Exécuter</b><br>Pour traiter immédiatement ce profil, cliquez sur le grand bouton vert "Exécuter" situé à droite. La tâche devant être exécutée par le Planificateur Urchin est mise dans la file d'attente.<p><b>Planifier</b><br>Pour planifier cette tâche du profil ultérieurement ou régulièrement, sélectionnez l'une des options de fréquence : "Toutes les heures", "Tous les jours", "Hebdomadaire" ou "Mensuelle". Le profil s'exécute ensuite à cette fréquence. Pour spécifier l'heure de lancement exacte, utilisez les contrôles de date qui s'affichent une fois la fréquence sélectionnée. Toutes les heures sont spécifiées comme heure locale pour le système qui exécute Urchin.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce profil.
+569	<nobr><span class=title1><b>Profils : Création de rapports (Ref. #A-2106)</b></span></nobr><br>L'écran "Paramètres de rapport" permet de contrôler plusieurs fonctionnalités importantes de traitement dans Urchin, notamment l'identification de certains paramètres de filtres et de proxy.<p><b>URL du site Web</b><br>Ce paramètre permet de créer des liens renvoyant à votre site Web réel. Dans ce champ doit apparaître le nom de domaine complet du site, précédé de http://. <p><b>Domaines du site</b> (super administrateur uniquement)<br>Ce paramètre doit répertorier tous les domaines possibles pour votre site Web, avec ou sans "www". Ce champ permet de déterminer si un site référent est externe à votre site. Séparez les domaines par des virgules.<p><b>Page par défaut</b><br> Elle doit être définie sur la page (ou l'index) par défaut des répertoires de ce site. Il s'agit en général de "index.html", mais sur les serveurs Windows IIS, il s'agit souvent de "Default.htm" ou "index.htm". Ces informations permettent à Urchin de corriger les entrées du journal telles que "http://www.urchin.com/" et "http://www.urchin.com/index.html", qui correspondent en réalité à la même page. Si les informations sur la page par défaut ne sont pas entrées correctement, ces deux pages seront considérées comme distinctes. Vous ne pouvez définir qu'une seule page par défaut. <p><b>Paramètres de serveur proxy</b> (super administrateur uniquement)<br>Certaines installations peuvent nécessiter des paramètres de proxy afin d'afficher les rapports "Synthèse données/site" de la page d'accueil. Étant donné que les requêtes de synthèse données/site sont lancées à partir du système Urchin, il est possible que les paramètres du pare-feu n'autorisent pas de communication externe. Dans ce cas, vous pouvez utiliser un proxy pour autoriser ce type de requête. Le serveur proxy doit correspondre au nom d'hôte du serveur. Le port proxy doit correspondre au numéro de port utilisé pour communiquer avec le proxy. Les champs "nom d'utilisateur" et "mot de passe" du proxy peuvent également fournir une sécurité accrue si un nom d'utilisateur et un mot de passe sont exigés pour accéder au proxy. Laissez tous ces champs vides, sauf si vous obtenez un message d'erreur lorsque vous essayez d'utiliser la fonctionnalité "Synthèse données/site". Dans ce cas, contactez votre administrateur réseau pour obtenir les paramètres.<p><b>Traitement du journal parallèle</b> (super administrateur uniquement)<br>Si vous avez de nombreux journaux à équilibrage de charge, le fait de les exécuter en parallèle vous permet d'améliorer les performances du système. Cela dépend de nombreux facteurs, notamment la quantité de données et les performances E/S de la machine. Nous vous conseillons d'activer ce paramètre pour améliorer les performances, en particulier lorsque des appels de fichier provenant d'une seule session utilisateur sont susceptibles d'être présents dans plusieurs journaux. <p><b>Décalage horaire</b> (super administrateur uniquement)<br>Ce paramètre détermine le fuseau horaire dans lequel Urchin établit les rapports de données. Tous les appels de fichier contenant une référence GMT, Urchin peut établir des rapports dans l'ensemble des fuseaux horaires. L'option "Heure locale" permet d'enregistrer les données en fonction du fuseau horaire configuré sur le serveur exécutant Urchin. Pour utiliser un paramètre différent, sélectionnez le décalage par rapport à GMT. <p><b>Correspondance de mots clés naturels</b> (super administrateur uniquement)<br>Ce paramètre contrôle la manière dont Urchin détecte les moteurs de recherche et les mots clés pour les rapports. À l'aide de cette liste (séparée par des virgules), Urchin recherche les paramètres des requêtes sur les sites référents présentant une correspondance, puis capture la valeur du paramètre, c'est-à-dire le mot clé ou le terme de recherche sur le site référent. Vous pouvez ajouter des entrées à cette liste pour les termes de recherche qui n'ont pas été inclus automatiquement. La liste par défaut peut être utilisée par la plupart des moteurs de recherche.<p><b>Correspondance Mime des pages vues</b> (super administrateur uniquement)<br>Cette liste séparée par des virgules contrôle les extensions de fichiers traitées comme pages vues. Elle permet d'inclure ou d'exclure certaines extensions. La liste par défaut peut être utilisée par la plupart des sites.<p><b>Correspondance des paramètres de page</b><br>Cette variable contrôle les paramètres qui devront être capturés par Urchin dans le rapport sur les paramètres. Les paramètres proviennent de la partie requêtes de l'URL demandée et peuvent contenir des termes de recherche internes ou tout autre contenu dynamique. Urchin capture automatiquement ces paires nom-valeur et les inclut dans le rapport sur les paramètres. Cette liste séparée par des virgules permet d'exclure ou d'inclure certains paramètres. Par exemple, pour un site contenant des millions d'identifiants de session aléatoires, exclure la variable SID de ce rapport permettra d'économiser des ressources de stockage.<p><b>Correspondance des téléchargements</b> (super administrateur uniquement)<br> Cette liste séparée par des virgules contrôle les extensions de fichiers traitées comme des fichiers téléchargés dans le rapport sur les téléchargements. Modifiez la liste pour inclure les extensions de fichiers utilisées pour les téléchargements. <p><b>Détail géographique</b><br><p><b>Informations géographiques</b><br>Ce paramètre permet de définir quelles informations géographiques seront incluses dans les rapports sur les profils. Vous pouvez augmenter l'empreinte mémoire du moteur de traitement des journaux (environ 350 Mo pour les réseaux, 100 Mo pour les domaines, et entre 20 et 150 Mo pour les origines géographiques, en fonction de la base de données géographique choisie) en sélectionnant des options supplémentaires. Urchin comprend un certain nombre de bases de données géographiques, qui ne sont pas toutes aussi détaillées en termes d'informations sur le pays ou la région. À partir du menu déroulant, vous pouvez sélectionner la base de données géographique qui correspond le mieux à vos besoins.<p><b>Base de données géographique</b><br>Urchin comprend des bases de données géographiques, qui fournissent différents niveaux d'informations concernant l'origine géographique :<br>- Monde (informations détaillées sur le pays, la région et la ville, pour le monde entier)<br>- Monde version allégée (informations au niveau du pays uniquement, pour le monde entier)<br>- Bases de données régionales (États-Unis, Union européenne et Japon, par exemple), contenant des informations détaillées au niveau des régions et pays correspondants, pour le reste du monde) <br> <p><b>Codage de caractères</b><br>Si les journaux que vous allez traiter contiennent des données non codées selon la norme UTF-8, choisissez un codage approprié. Les formats "Japonais" et "Latin 1" sont pris en charge. <p><b>Devise et précision</b><br>Pour les sites de commerce électronique, utilisez les paramètres "Devise" et "Précision" pour modifier les symboles de devise, le format d'affichage et la précision numérique appliqués par défaut. <p><b>Commandes :</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets situés dans la partie supérieure de l'écran permettent d'accéder à tous les paramètres modifiables pour ce profil.
+570	<nobr><span class=title1>    <b>Groupes : Infos sur le groupe (Ref. #A-1401)</b></span></nobr><br>Cet écran vous permet de modifier les différents paramètres de ce groupe.<p><b>Compte facultatif</b> (mode Datacenter uniquement)<br>Affiche le compte auquel le groupe est associé.<p><b>Nom du groupe</b><br>Entrez le nom du groupe dans ce champ. Utilisez un nom descriptif. Chaque nom doit être unique.<p><b>Description du groupe</b> (facultatif)<br>Dans ce champ facultatif, vous pouvez effectuer le suivi de l'objectif de chaque groupe. Entrez une brève description permettant d'organiser les groupes.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce groupe.
+571	<nobr><span class=title1><b>Groupes : Utilisateurs du groupe (Ref. #A-1402)</b></span></nobr><br>Dans cet écran, vous pouvez sélectionner les utilisateurs appartenant à ce groupe. Les autorisations d'affichage des rapports peuvent être données au niveau des groupes. Les utilisateurs appartenant à ce groupe peuvent alors consulter tous les rapports auxquels ce groupe peut accéder.<p><b>Ajouter un utilisateur au groupe</b><br>Pour ajouter un utilisateur à ce groupe, sélectionnez le nom d'utilisateur dans la zone "Utilisateurs disponibles", puis cliquez sur la flèche vers la droite. Pour supprimer un utilisateur de ce groupe, sélectionnez l'utilisateur dans la zone "Utilisateurs du groupe", puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce groupe.
+572	<nobr><span class=title1><b>Groupes : Accès aux rapports (Ref. #A-1403)</b></span></nobr><br>Dans cet écran, vous pouvez autoriser ce groupe à accéder aux rapports d'un ou plusieurs profils. Les utilisateurs reçoivent les autorisations d'accès du groupe en plus des autorisations individuelles qu'ils possèdent déjà.<p><b>Autoriser l'accès</b><br>Pour autoriser l'accès à des rapports de profils, sélectionnez le nom du profil dans la zone "Profils disponibles", puis cliquez sur la flèche vers la droite. Pour refuser l'accès aux rapports d'un profil, sélectionnez le profil dans la zone "Accès autorisé", puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce groupe.
+573	<nobr><span class=title1><b>Groupes : Résumé (Ref. #A-1404)</b></span></nobr><br>Cet écran contient tous les paramètres disponibles pour ce groupe. Si certains paramètres doivent être ajustés, cliquez sur l'onglet approprié et mettez-les à jour. <p><b>Commandes</b><br>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce groupe.
+574	<nobr><span class=title1><b>Profils : Résumé (Ref. #A-2107)</b></span></nobr><br>Cet écran contient tous les paramètres disponibles pour ce profil. Examinez-les attentivement avant de traiter le profil afin de vérifier qu'ils sont corrects. Si certains paramètres doivent être ajustés, cliquez sur l'onglet approprié et mettez-les à jour. <p><b>Commandes</b><br>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce profil.
+575	<nobr><span class=title1><b>Gestionnaire de journaux : Paramètres distants (Ref. #A-1602)</b></span></nobr><br>Cet écran permet de spécifier comment extraire ou accéder au fichier journal distant de cette source de journal.<p><b>Protocole de serveur</b><br>Urchin peut gérer quatre types de fichiers journaux distants : HTTP (www), HTTPS, FTP et UNC (Windows uniquement). Si votre fichier journal est accessible via un navigateur Web, utilisez HTTP. Si aucun mot de passe n'est requis, laissez les champs de nom d'utilisateur et mot de passe vides. FTP peut être utilisé avec un nom d'utilisateur et un mot de passe (en général, les mêmes que le nom d'utilisateur permettant d'envoyer un contenu sur votre site). UNC, qui n'est disponible que sur les systèmes Windows, nécessite un nom d'utilisateur et un mot de passe pour accéder au partage UNC.<p><b>Nom/Adresse IP du serveur</b><br>Entrez le nom du serveur (par exemple, www.urchin.com) ou l'adresse IP (par exemple, 63.212.171.4) correspondant à l'emplacement du fichier journal. Pour UNC, utilisez la notation \\server\share.<p><b>Connexions locale et distante identiques</b><br>Cette option est visible si UNC a été sélectionné comme protocole de serveur (Windows uniquement). Sélectionnez "Oui" si le même nom de connexion et mot de passe peuvent être utilisés pour les serveurs local et distant. Sélectionnez "Non" si le serveur distant requiert un nom de connexion ou mot de passe différent du serveur local. Les champs supplémentaires de connexion au serveur local deviennent visibles si vous sélectionnez "Non".<p><b>Port du serveur</b><br>Le port du serveur est spécifié automatiquement. Cependant, si vous n'utilisez pas un port standard, vous pouvez le modifier manuellement.<p><b>Nom d'utilisateur/Mot de passe</b><br>Ces champs sont vides pour les connexions FTP anonymes et HTTP non sécurisées. Pour utiliser une connexion HTTP/FTP sécurisée, entrez votre nom d'utilisateur et votre mot de passe ici. UNC nécessite un nom d'utilisateur et un mot de passe pour accéder au partage. <p><b>Domaine (UNC uniquement)</b><br>Si le partage UNC appartient à un domaine, entrez ici les informations sur le réseau du domaine. <p><b>Mode FTP</b><br>Cette option est visible si FTP a été sélectionné comme protocole de serveur. Sélectionnez "Passive" pour une méthode de transfert passive (PASV). Sélectionnez "Active" pour une méthode de transfert directe (PORT). <p><b>Fichier source de journal distant</b><br>Le fichier source de journal distant spécifie le chemin d'accès au fichier journal sur le système distant. Si vous utilisez HTTP, il est souvent plus facile de localiser le fichier journal avec un navigateur Web pour commencer. Pour cela, entrez l'URL du site dans un navigateur, suivi d'une barre oblique, de tous les noms de répertoire utilisés et du nom du fichier journal (par exemple, http://www.urchin.com/logs/access_log). Si l'écran du navigateur se remplit de texte, le chemin d'accès est correct. Il vous suffit de tout entrer à droite du domaine (par exemple, /logs/access_log). Notez que les caractères génériques ne sont pas pris en charge pour les noms de chemin d'accès distants aux journaux basés sur HTTP. Si vous utilisez FTP, vous pouvez parcourir le serveur distant pour trouver le fichier journal. Avant cela, il vous faut configurer les informations sur le nom d'utilisateur/serveur.<p><b>Destination du journal</b> (à distance uniquement)<br>Pour être traités, les fichiers journaux distants sont transférés sur le système local. Sélectionnez le répertoire local où sera stocké le fichier. Un bouton de navigation est disponible.<p><b>Serveur proxy</b> (HTTP et HTTPS uniquement)<br>Si le journal est disponible via un ordinateur proxy, spécifiez l'adresse IP ou le nom d'hôte. <p><b>Port proxy</b> (HTTP et HTTPS uniquement)<br>Si le journal est disponible via un ordinateur proxy, spécifiez le port.<p><b>Nom d'utilisateur du proxy</b> et <b>Mot de passe du proxy</b><br>Si le journal est disponible via un ordinateur proxy qui requiert un nom d'utilisateur et un mot de passe, spécifiez-les dans ces champs.
+576	<nobr><span class=title1><b>Gestionnaire de journaux : Filtres de journal (Ref. #A-1603)</b></span></nobr><br>Cet écran permet d'appliquer des filtres à la source de journal. Pour appliquer un filtre, sélectionnez-le dans la zone de gauche sous "Filtres disponibles", puis cliquez sur la flèche vers la droite. Pour supprimer un filtre, sélectionnez-le dans la zone de droite, puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications.<p><b>Commandes</b><br><ul><li><b>Ajouter</b><br>Cliquez sur l'icône "Ajouter" pour lancer l'assistant de filtre et ajouter un élément à la liste des filtres disponibles.<li><b>Modifier</b><br>Cliquez sur l'icône "Modifier" pour modifier le filtre mis en surbrillance.<li>Cliquez sur les flèches vers le haut et vers le bas pour modifier l'ordre d'application des filtres.<br><li>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications.
+577	<nobr><span class=title1><b>Gestionnaire de journaux : Paramètres avancés (Ref. #A-1604)</b></span></nobr><br>Cet écran permet de configurer les paramètres avancés de cette source de journal, notamment en termes de gestion du fichier journal après traitement et de type de codage à utiliser.<p><b>Avenir du journal</b><br>Après le traitement de la source de journal pour tous les profils auxquels elle a été appliquée, Urchin peut archiver ou supprimer le fichier journal, ou encore ne rien faire. <ul><li>Sélectionnez "Ne pas toucher" pour laisser le journal tel quel après le traitement.<li>Sélectionnez "Archiver - Compresser" pour compresser le fichier journal au format gzip et le dater. <li>Sélectionnez "Archiver - Aucune compression" pour archiver un journal sans le compresser. Cette sélection est utile pour les journaux déjà compressés. <li>Sélectionnez "Supprimer" pour supprimer le fichier journal après le traitement.</ul> Les sélections "Archiver" et "Supprimer" nécessitent les autorisations appropriées pour procéder à leur traitement dans Urchin. Pour les sources de journal utilisées par plusieurs profils, seule l'option "Ne pas toucher" doit être sélectionnée. <b>Avertissement :</b> N'utilisez pas de fichiers journaux en ligne.<p><b>Codage du fichier journal</b><br>Si vous traitez des journaux en japonais sur deux octets, passez en Maj-JIS. Sinon, laissez le paramètre par défaut sur "Anglais (ISO)", pertinent pour tous les journaux n'étant pas sur deux octets.<p><b>Décoder l'URL</b><br>Si vous utilisez un serveur d'application ou tout autre système de génération de page dynamique et si vous souhaitez convertir des URL de page en entrées de rapports plus explicites (plus faciles à lire et à comprendre), cliquez sur le bouton "activer".<p><b>Jeton</b><br>Les URL de pages générées dynamiquement utilisent en général un jeton pour séparer la base de l'URL des informations de requêtes spécifiques. Urchin a besoin de le connaître afin de pouvoir analyser correctement l'URL pour ses rapports. Le jeton est généralement un point d'interrogation.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour cette source de journal.
+578	URL du site Web
+579	Bienvenue dans Urchin ! Cliquez sur le<br> bouton “Assistant de configuration des rapports” sur la gauche pour commencer.
+580	Vous avez décidé de modifier le numéro de port du serveur. \n\nCe changement ne prendra effet qu'après la désactivation et la réactivation \ndes services Urchin à partir du menu “Démarrer”. \n\n
+581	Codage du fichier journal
+582	<nobr><span class=title1><b>Gestionnaire de journaux : Paramètres avancés (Ref. #A-1605)</b></span></nobr><br>Cet écran permet de configurer les paramètres avancés de cette source de journal, notamment pour l'usage du fichier journal après traitement. Le codage et le décodage du fichier journal ont été déplacés dans les filtres.<p><b>Avenir du journal</b><br>Permet d'indiquer comment les fichiers journaux seront gérés après leur traitement pour tous les profils auxquels ils s'appliquent. <ul><li>Sélectionnez "Ne pas toucher" pour indiquer qu'aucune autre action ne doit être entreprise après le traitement. <li>Sélectionner "Archiver - Compresser" pour enregistrer le fichier journal au format zip et lui attribuer une date. <li>Sélectionner "Archiver - Aucune compression" pour archiver et dater un journal sans le compresser. Cette sélection est utile pour les journaux déjà compressés. <li>Sélectionnez "Supprimer" pour supprimer le fichier journal après le traitement.</ul> Les sélections "Archiver" et "Supprimer" nécessitent les autorisations appropriées pour le traitement d'Urchin. Pour les sources de journal utilisées par plusieurs profils, seule l'option "Ne pas toucher" doit être sélectionnée. <b>Avertissement :</b> n'utilisez pas les options "Archiver" ou "Supprimer" avec des fichiers journaux en ligne. <p><b>Racine de l'URL en minuscule</b><br> Lorsqu'elle est activée, cette option impose automatiquement les minuscules dans l'URL pour les journaux créés sur des plateformes Windows où l'URL d'un même fichier peut être en majuscules ou en minuscules, ce qui peut entraîner la présence de deux entrées dans les rapports de contenu.<p><b>Jeton</b><br>Les URL de pages générées dynamiquement utilisent en général un jeton pour séparer la base de l'URL des informations de requêtes spécifiques. Urchin a besoin de le connaître afin de pouvoir analyser correctement l'URL pour ses rapports. Le jeton est généralement un point d'interrogation.<p><b>Substitution de la date et de l'heure par des caractères génériques dans le nom du chemin d'accès au journal</b><br>Pour automatiser Urchin et faire en sorte qu'il ouvre les fichiers journaux appropriés, le nom du chemin d'accès au fichier journal peut contenir des caractères génériques horodatés pouvant être basés sur l'heure actuelle. Il est néanmoins commun pour Urchin de s'exécuter après le roulement et l'horodatage des fichiers journaux. Pour qu'Urchin trouve le bon fichier journal, il peut avoir besoin de savoir comment ajuster l'heure lors du remplacement des caractères génériques de la date. Par défaut, Urchin recherchera les fichiers journaux d'hier (local - 24 heures). L'utilisation de caractères génériques suit la convention <i>strftime</i> décrite dans le centre de documentation en ligne. "Nombre de jours" indique le nombre de jours de retour dans le temps pour Urchin lors du ciblage d'une chaîne compatible strftime dans le nom du fichier journal. Ce paramètre est très utile dans les environnements où le fichier journal du jour n'est peut-être pas présent. Il permet à Urchin de rattraper son retard dans le traitement si le fichier journal devient disponible à une date ultérieure comprise dans le nombre de jours indiqué dans la fenêtre.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour cette source de journal.
+583	<nobr><span class=title1><b>Gestionnaire de journaux : Résumé (Ref. #A-1606)</b></span></nobr><br>Cet écran contient tous les paramètres disponibles pour cette source de journal. Examinez attentivement ces paramètres avant de traiter les profils correspondants afin de vérifier qu'ils sont corrects. Si certains paramètres doivent être ajustés, cliquez sur l'onglet approprié et mettez-les à jour. <p><b>Commandes</b><br>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour cette source de journal.
+584	Vérifier le(s) fichier(s) journal/aux
+585	Vérifier
+586	Fichiers sélectionnés
+587	Tous les autres fichiers du répertoire
+588	Informations relatives au fichier
+589	Emplacement du fichier journal
+590	Taille du fichier (octets)
+591	Dernière modification
+592	Autorisations de fichier
+593	Lu
+594	Rédiger
+595	Impossible d'obtenir les informations sur ce fichier.
+596	Fichier(s) journal/aux
+597	Répertoire actuel
+598	Aucune autorisation
+599	Vous avez décidé de modifier le numéro de port du serveur. \n\nCe changement ne prendra effet qu'après le redémarrage du serveur Web Urchin \nen exécutant la commande urchinctl -w restart depuis le répertoire bin d'Urchin.\n\n
+600	Licence Urchin
+601	Informations de licence
+602	À traiter
+603	Obtenir une licence de démo
+604	Activer une licence préachetée
+605	Acheter une licence
+606	Réactiver la licence
+607	Activer la licence
+608	Accès au répertoire refusé
+609	Mettre la licence à niveau
+610	Cliquez sur l'une des options suivantes
+611	Licence valide - Standard
+612	Licence valide - Démo
+613	Jamais
+614	Aucune licence installée
+615	Licence non valide
+616	(Arrivé à expiration)
+617	(Mauvaise clé)
+618	Attente d'activation
+619	État de la licence
+620	Expiration de licence
+621	Profils comprenant une base
+622	Serveurs comprenant une base
+623	Produit
+624	Version
+625	Licence valide
+626	Réactiver la Gold Master
+627	Licence
+628	Code de série
+629	Décoder l'URL
+630	Paramètres avancés
+631	Jeton
+632	Niveau de site référent
+633	Valeur par défaut
+634	Problème de licence
+635	Un problème de licence a été détecté. Contactez votre administrateur système local pour résoudre le problème.
+636	Processus DNS
+637	Filtre
+638	Expiration de licence
+639	Nom du profil
+640	Paramètres généraux
+641	Sources de journal
+642	Filtres
+643	Utilisateurs
+644	Avancé
+645	Avancé
+646	Autres options
+647	Octets du journal
+648	s
+649	Filtres/Avancé/Profils
+650	Paramètres du journal
+651	Paramètres distants
+652	Filtres de journal
+653	Paramètres avancés
+654	Ajustement de l'heure
+655	Ajouter une source de journal locale
+656	Ajouter une source de journal distante
+657	Sélectionner une source de journal préconfigurée
+658	Destination du journal
+659	Profils appliqués à
+660	Paramètres de filtrage
+661	Profils
+662	Sources de journal
+663	Sélectionner un filtre préconfiguré
+664	Ajouter un filtre
+665	Options d'ajout de la source de journal
+666	Avertissement ! Vous avez choisi d'interrompre une tâche Urchin. \nL'interruption de la tâche risque de corrompre la base de données Urchin. \nPour plus d'informations, consultez l'article "Hard Close" (fermeture) de la base de connaissances. \n\nInterrompre la tâche ?
+667	Attention ! Planificateur esclave désactivé.
+668	Profils/Sources de journal
+669	Option
+670	Supprimer
+671	Aperçu rapide de l'utilisateur
+672	Paramètres utilisateur
+673	Infos sur l'utilisateur
+674	Préférences
+675	Groupes
+676	Accès aux rapports
+677	Confirmez le mot de passe
+678	Groupes/Accès aux rapports
+679	Heure GMT
+680	Aperçu rapide du groupe
+681	Description du groupe
+682	Les caractères suivants ne sont pas autorisés : (*?"<>|).
+683	Infos sur le groupe
+684	Utilisateurs du groupe
+685	Accès aux rapports
+686	Les caractères suivants ne sont pas autorisés dans le nom du profil :\n\n -> / (barre oblique)\n\ -> \\ (barre oblique inverse)\n -> + (signe plus). \n\n Supprimez les caractères et réessayez.
+687	Accès aux rapports/Utilisateurs
+688	Erreur.\n\nLes mots de passe ne correspondent pas.
+689	Le(s) champs obligatoire(s) suivant(s) sont vides ou incorrects.
+690	Paramètres DNS
+691	Paramètres de la base de données
+692	Paramètres de session
+693	Paramètres d'accès
+694	Paramètres du serveur
+695	Règle de filtrage
+696	Lignes
+697	Voulez-vous vraiment supprimer cet enregistrement ?
+698	Résumé
+699	Autres informations
+700	Planifier
+701	Exécuter
+702	Progression de la tâche
+703	Rapport de tous les profils
+704	Pour plus de détails, cliquez ici
+705	Heure de début
+706	Heure de fin
+707	Détails du traitement de la tâche
+708	Masquer les détails
+709	Méthode de suivi des visiteurs
+710	IP+User-Agent
+711	ID de session
+712	Urchin Traffic Monitor (UTM)
+713	Définition de l'analyse de session
+714	Heure actuelle
+715	Champ de session
+716	ERREUR : La fermeture de la tâche a été effectuée. \nERREUR : Les données sont peut-être corrompues. Consultez l'article "Hard Close" (fermeture) de la base de connaissances pour plus d'informations sur l'exécution de l'utilitaire udb-sanitizer.
+717	ERREUR : Échec de la fin de tâche.
+718	ADRESSE IP UNIQUEMENT
+719	La session nécessite une page vue
+720	Aucun profil à importer
+721	Version
+722	Utilisation de la mémoire
+723	Paramètres d'utilisation de la mémoire
+724	Cible d'utilisation de la mémoire
+725	Option d'analyse des données
+726	Personnaliser
+727	Paramètres personnalisés d'utilisation de la mémoire
+728	Taille de la mémoire tampon visiteur
+729	Taille de la mémoire tampon de la session
+730	Taille du tampon de suivi des clics
+731	Taille du tampon de données
+732	Taille de la mémoire tampon des chaînes de données
+733	Exécution - Fichiers journaux
+734	Exécution - DNS
+735	Terminé
+736	Erreur
+737	En attente
+738	Chemins d'accès des processus
+739	Niveau de chemin d'accès
+740	Historique des tâches du profil
+741	Suivi du journal
+742	saisir un nom descriptif
+743	Devise
+744	Symbole monétaire
+745	Avant le numéro
+746	Après le numéro
+747	Précision
+748	aucun
+749	États-Unis
+750	Chine
+751	France
+752	Allemagne
+753	Italie
+754	Japon
+755	Corée
+756	Portugal
+757	Espagne
+758	Suède
+759	Royaume-Uni
+760	Région
+761	Modifier la région
+762	Localisation
+763	Liens directs aux rapports
+764	Nettoyer ou modifier la base de données
+765	Supprimer TOUTES les données du profil
+766	Supprimer toutes les données
+767	Voulez-vous vraiment supprimer DÉFINITIVEMENT TOUTES les données de ce profil ?
+768	pour plus de détails, consultez l'aide
+769	Sélectionnez un filtre exemple
+770	Filtrer le trafic interne
+771	Filtrer le trafic des robots
+772	Exclure le trafic de l'agent de contrôle
+773	Exclure toutes les requêtes d'images
+774	Établir un rapport de trafic vers un sous-répertoire uniquement
+775	exclure le trafic interne
+776	exclure les robots
+777	exclure l'agent de contrôle
+778	exclure les images
+779	inclure un sous-répertoire
+780	Correspondance des téléchargements
+781	<nobr><span class=title1><b>Paramètres d'accès : Valeurs globales par défaut (Ref. #A-781)</b></span></nobr><br>Cet écran contient certains paramètres à l'échelle du système qui contrôlent le comportement par défaut pour l'accès et l'affichage des rapports. <p><b>Langue du rapport</b><br>Utilisez ce paramètre pour définir la langue d'affichage des rapports par défaut. Lors de la création d'utilisateurs, leur paramètre de langue du rapport est associé à cette valeur par défaut. <p><b>Région</b><br>Utilisez ce paramètre pour contrôler le style de localisation d'affichage des rapports par défaut. Lors de la création d'utilisateurs, leur paramètre régional est associé à cette valeur par défaut. Ce paramètre détermine le format des devises, des dates, des heures et des chiffres, qui peut être différent selon les pays. Si le pays de votre choix n'apparaît pas dans la liste, sélectionnez une région utilisant le même format de date ou de chiffre. Cliquez sur "Mettre à jour" pour appliquer les modifications.
+782	Échec
+783	Respect de la casse
+784	Options d'équilibrage de charge
+785	Traitement du journal parallèle
+786	FTPS
+787	HTTPS
+788	Paramètres du proxy HTTP (facultatif)
+789	Serveur proxy
+790	Port proxy
+791	Nom d'utilisateur du proxy
+792	Mot de passe du proxy
+793	Options de campagne
+794	Correspondance de l'objectif principal
+795	Champ d'objectif principal
+796	Respect de la casse
+797	UTM obligatoire pour la campagne
+798	Mode FTP
+799	Passif
+800	Actif
+801	Connexion au serveur local
+802	Connexions locale et distante identiques
+803	Nom d'utilisateur
+804	Mot de passe
+805	Confirmez le mot de passe
+806	Domaine
+807	Tableau de conversion
+808	Nom du tableau
+809	Archiver - Aucune compression
+810	Australie
+811	Nouvelle-Zélande
+812	Ajouter une entrée CTM
+813	<b>Assistant d'ajout d'entrée CTM</b><br>Cet assistant permet d'entrer des données d'impression et/ou de coût statique pour une campagne. Remplissez les champs de chacune des trois étapes et cliquez sur "Ajouter" à la prochaine exécution. Une fois entrées, les données sont ajoutées à la base de données Urchin lors de la prochaine exécution planifiée de ce profil. <p><b>Étape 1 : Date d'entrée</b><br>Entrez la date à laquelle le coût et/ou le nombre d'impressions s'appliquent. <p><b>Étape 2 : Variables CTM</b><br>Entrez les variables CTM décrivant la campagne pour laquelle vous entrez les données. Par exemple, pour appliquer les données à des visites générées par des recherches naturelles sur Google, spécifiez que la source est "google" et le support "naturel". Pour appliquer les données aux lettres d'information de l'été (en supposant que vous avez inclus la variable utm_source=summer_news dans les liens de la lettre d'information de l'été), spécifiez que la source est summer_news. <ul><li><b>ID de campagne</b><br>Si la campagne pour laquelle vous entrez des données peut être identifiée par un ID de campagne (ex. utm_id), entrez-le ici et passez à l'étape 3. <li><b>Campagne</b><br>Entrez le nom de la campagne à laquelle s'appliquent les données. <li><b>Source</b><br>Entrez la source (par exemple, google) à laquelle appliquer les données.<li><b>Support</b><br>Entrez le support (par exemple, naturel ou e-mail) auquel appliquer les données. <li><b>Terme de recherche</b><br>Entrez le mot clé (par exemple, clubs de golf) auquel appliquer les données.<li><b>Contenu</b><br>Entrez le contenu auquel appliquer les données.</ul><p><b>Étape 3 : Ajouter des données de coût/d'impression</b><br>Entrez le montant du coût et/ou le nombre d'impressions à associer à cette campagne.<ul><li><b>Coût</b><br>Entrez le montant du coût. <li><b>Impressions</b><br>Entrez le nombre d'impressions.</ul><p>Cliquez sur <b>Ajouter à la prochaine exécution</b> pour ajouter ces données à la base de données Urchin à la prochaine exécution de ce profil. Cliquez sur <b>Consulter les données en attente</b> pour voir les entrées des données à ajouter à la base de données Urchin à la prochaine exécution de ce profil. Cliquez sur <b>Fermer</b> pour quitter. Cliquez sur <b>Effacer</b> pour effacer tous les champs.
+814	Ajouter des données de coût manuelles
+815	Ajouter des données de coût
+816	Ajouter à la prochaine exécution
+817	Étape 1 : Date d'entrée
+818	Date d'entrée
+819	Étape 2 : Variables CTM
+820	Campagne
+821	Source
+822	Support
+823	Terme de recherche
+824	Contenu de l'annonce
+825	Étape 3 : Ajouter des coûts/données d'impression
+826	Coût
+827	Impressions
+828	ID de campagne
+829	Source ou ID de campagne
+830	Coût ou impressions
+831	Entrée CTM ajoutée.
+832	Échec de l'entrée CTM.
+833	Effacer
+834	Consulter les données en attente
+835	Entrées CTM en attente
+836	<b>Entrées CTM en attente</b><br>Cet écran affiche les entrées des données d'impression et de coût qui s'inscriront dans la base de données d'Urchin à la prochaine exécution du profil.
+837	Aucune entrée CTM en attente.
+838	Fermer
+839	Échec de l'ajout. Numéro d'enregistrement du profil non valide (1001).
+840	Échec de l'ajout. Échec de l'enregistrement du profil (1002).
+841	Échec de l'ajout. Impossible de créer le fichier d'entrée CTM (1003).
+842	Échec de l'ajout. Impossible d'ouvrir le fichier d'entrée CTM (1004).
+843	Objectif 1
+844	Objectif 2
+845	Objectif 3
+846	Objectif 4
+847	Activer l'objectif
+848	Valeur de l'objectif (chiffre d'affaires)
+849	Étape 1
+850	Étape 2
+851	Étape 3
+852	Objectif
+853	Champ B obligatoire
+854	Utiliser la valeur de l'objectif
+855	Liste des profils disponibles
+856	Nombre de jours
+857	Nom d'utilisateur du serveur distant ou mot de passe manquant.
+858	Nom d'utilisateur du serveur local ou mot de passe manquant.
+859	Échec de la connexion au serveur local
+860	Échec de la connexion au serveur distant.
+861	Étape 4
+862	Étape 5
+863	Étape 6
+864	Étape 7
+865	Étape 8
+866	Étape 9
+867	Étape 10
+868	Accueil
+869	Paramètres du proxy HTTP du site Web (facultatif)
+870	Étape 1 obligatoire
+871	Option 4 (sur demande)
+872	Champs obligatoires
+873	Exemples de filtres
+874	Étapes
+875	Objectifs
+876	<b>Profils : Objectifs</b><p>Pour modifier un objectif, cliquez sur l'onglet correspondant en haut de l'écran. Cliquez ensuite sur <img alt='Analysis Options Button' title='magic wand' src ='/uicons/default/wizard.gif' border=''> en haut à droite pour activer l'assistant de configuration des objectifs. Utilisez le navigateur Web intégré dans l'assistant pour naviguer vers la page à définir comme objectif ou comme étape de l'entonnoir de conversion. Pour sélectionner la page comme étape 1, cliquez sur <b>Définir la page comme étape : 1</b>. Répétez cette opération pour chaque étape de votre entonnoir de conversion. Pour définir la page comme objectif et fermer l'assistant, cliquez sur <b>Définir la page comme objectif</b>. Les pages sélectionnées s'affichent dans les champs d'adresse Web des objectifs et étapes. Notez qu'il n'est pas nécessaire d'indiquer la partie <i>http://www.domaine.fr</i> de l'URL dans les champs "Adresse Web de l'objectif" et "Adresse Web", quelle que soit l'étape concernée. Urchin ignore cette partie de l'URL.<p>IMPORTANT : Avec Urchin, il est possible d'utiliser des expressions régulières dans tous les champs d'adresse Web des objectifs et étapes. Assurez-vous d'insérer une barre oblique inverse (\) avant les métacaractères des expressions régulières situées après la dernière barre oblique, à savoir les signes "?" ou "." dans l'adresse Web, si vous souhaitez qu'Urchin les interprète de façon littérale. <p><b>Paramètres d'objectif</b><br>Urchin répertorie chaque visite de l'URL spécifiée dans le champ <b>Adresse Web de l'objectif</b> comme une conversion par objectif dès lors que l'option <b>Activer l'objectif</b> est activée. Le nom fourni dans le <b>Nom de l'objectif</b> s'affiche dans les rapports d'Urchin. La valeur fournie dans le champ <b>Valeur de l'objectif (chiffre d'affaires)</b> permet de calculer le retour sur investissement et d'autres indices d'évaluation.<p><b>Paramètres de l'entonnoir de conversion vers l'objectif</b><br>Spécifiez dans cette section les étapes menant à l'objectif. Chaque étape correspond à une page du chemin permettant de réaliser la conversion de l'objectif. L'ensemble de ces étapes représente un entonnoir de conversion vers l'objectif. Urchin indique, pour chaque étape, le nombre de visiteurs ayant suivi ou abandonné votre entonnoir de conversion dans le rapport "Optimisation du contenu-->Objectifs et processus de conversion-->Abandon du processus de conversion". Pour chaque étape, fournissez une URL et un nom de page. <p><b>Paramètres avancés de l'objectif</b><br>Lors de la création de rapports de conversion des objectifs et de cheminement, Urchin compare les URL fournies à celles visitées. Lorsque <b>Option de l'adresse Web</b> est associée à la valeur "URL sans requête", Urchin ignore la portion de l'URL contenant la requête dans ces comparaisons. L'association de la valeur "Oui" au paramètre <b>Sensible à la casse</b> permet de distinguer majuscules et minuscules lors des comparaisons. L'association de la valeur "Oui" au paramètre <b>Étape 1 obligatoire</b> indique que seuls les chemins vers une conversion contenant la première étape seront inclus dans les rapports sur l'entonnoir de conversion.
+877	Paramètres
+878	Assistant de configuration des objectifs
+879	Aide de l'assistant de configuration des objectifs
+880	Sélectionnez un objectif
+881	Étape actuelle
+882	Paramètres de localisation internationaux
+883	Rechercher les objectifs et étapes
+884	Adresse
+885	Nom de page
+886	Utiliser cette adresse
+887	Utiliser ce nom
+888	Appliquer
+889	Le filtre de décodage de l'URL est déconseillé. Le décodage de champ est désormais géré automatiquement. Pour décoder un champ particulier, consultez la documentation afin d'obtenir plus d'informations.
+890	Paramètres d'objectif
+891	Adresse Web de l'objectif
+892	Nom de l'objectif
+893	Paramètres de l'entonnoir de conversion vers l'objectif
+894	Paramètres avancés de l'objectif
+895	URL sans requête
+896	URL avec requête
+897	Option de l'adresse Web
+898	Adresse Web
+899	Nom
+900	Site Web de commerce électronique
+901	Données du commerce électronique
+902	Valeur de l'objectif
+903	Définir la page comme étape
+904	Définir la page comme objectif
+905	Accédez à une page de votre site Web. Pour ajouter la page comme étape d'un entonnoir de conversion, cliquez sur <b>Définir la page comme étape...</b>. Répétez cette opération pour chaque étape de votre entonnoir de conversion. Pour définir la page comme objectif et fermer l'assistant, cliquez sur <b>Définir la page comme objectif</b>. Cliquez sur <b>Précédent</b> pour revenir à une étape précédente. Cliquez sur <b>Annuler</b> pour fermer l'assistant sans enregistrer les étapes ou la page d'objectif.
+906	Utilisation de la mémoire de la base de données
+907	Limiter avec un système cache
+908	Tout conserver en mémoire
+909	Groupes
+910	<b>Profils : Groupes</b><br>Utilisez cet écran pour autoriser le groupe à accéder aux rapports de ce profil. <p><b>Attribuer des groupes</b><br>Pour autoriser l'accès d'un groupe donné au profil, sélectionnez le groupe dans la zone de gauche sous "Groupes disponibles", puis cliquez sur la flèche dirigée vers la droite. Pour empêcher qu'un groupe donné puisse accéder au profil, sélectionnez-le dans la zone de droite, puis cliquez sur la flèche vers la gauche. Cliquez sur "Mettre à jour" pour appliquer les modifications. <p><b>Remplacer le tableau de bord</b> (super administrateur uniquement)<br>Cette option permet de modifier la disponibilité des rapports et des tableaux de bord pour chaque groupe. Pour mettre un groupe en surbrillance, cliquez sur celui-ci dans la fenêtre "Accès autorisé". Cliquez ensuite sur le bouton "Remplacer le tableau de bord" pour ouvrir une fenêtre contextuelle dans laquelle vous pouvez activer et désactiver des sections entières de rapports pour le groupe sélectionné et définir le tableau de bord par défaut qui leur est associé. Lorsque vous déplacez un groupe de la fenêtre "Groupes disponibles" vers la fenêtre "Accès autorisé", vous devez cliquer sur "Mettre à jour" pour que cette option soit disponible pour le groupe en question. <p><b>Commandes</b><br><ul><li><b>Ajouter</b><br>Cliquez sur l'icône "Ajouter" pour lancer l'assistant de groupe et ajouter un élément à la liste des utilisateurs disponibles.<li><b>Modifier</b><br>Cliquez sur l'icône "Modifier" pour modifier le groupe mis en surbrillance.<li>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. <li>Les onglets du haut de l'écran permettent d'accéder à tous les paramètres modifiables pour ce profil.
+911	Décalage GMT
+912	Ajouter une nouvelle source de journal
+913	Ajouter des sources de journal
+914	Ajouter une source de journal existante
+915	Page d'erreur
+916	Erreur de l'utilitaire de configuration d'Urchin
+917	Emplacement de l'historique d'exécution
+918	Sélectionnez un enregistrement pour le modifier.
+919	Erreur inconnue.
+920	10001 - Erreur de la base de données : Impossible de se connecter à la base de données de configuration.
+921	10002 - Erreur de la base de données : Impossible de commencer la transaction.
+922	10003 - Erreur de la base de données : Impossible d'appliquer la transaction.
+923	10004 - Erreur de la base de données : Impossible de restaurer la transaction.
+924	11001 - Erreur de conf. : Impossible de lire les paramètres d'entrées de l'utilisateur.
+925	11002 - Erreur de conf. : Enregistrement de la configuration globale non obtenu.
+926	11003 - Erreur de conf. Impossible d'obtenir l'enregistrement de l'utilisateur.
+927	11004 - Erreur de conf. : Impossible d'obtenir les informations relatives à la licence.
+928	11005 - Erreur de conf. : Échec d'obtention de la navigation.
+929	11006 - Erreur de conf. : Impossible d'obtenir l'enregistrement des consultations.
+930	11007 - Erreur de conf. : Impossible d'obtenir l'enregistrement des actions.
+931	12001 - Action : échec de l'ajout d'un enregistrement.
+932	12002 - Action : échec de la suppression de l'enregistrement.
+933	12003 - Action : échec de la mise à jour de l'enregistrement. Raisons possibles : <br><br> * Un enregistrement du même nom existe déjà.<br> * Un autre utilisateur peut avoir mis à jour l'enregistrement depuis son extraction.<br><br>Les dernières données devraient maintenant être affichées. Réglez le conflit de nommage et tentez de nouveau de mettre à jour l'enregistrement.<br><br>
+934	12004 - Action : impossible d'associer des enregistrements.
+935	12005 - Action : échec de l'importation de l'enregistrement.
+936	12006 - Action : échec de suppression des données du rapport. Les données ont peut-être déjà été supprimées ou il existe peut-être des problèmes d'autorisation. Vérifiez et essayez de nouveau.
+937	12007 - Action : échec de l'ajout du profil à la file d'attente du planificateur. Ce profil se trouve déjà dans la file d'attente.
+938	12008 - Action : impossible d'annuler le processus Urchin.
+939	15001 - Autorisation : Licence non fournie ou incorrecte.
+940	15002 - Autorisation : L'utilisateur n'est pas autorisé à accéder à l'affichage.
+941	15003 - Autorisation : L'utilisateur n'est pas autorisé à entreprendre l'action spécifiée.
+942	15004 - Autorisation : Utilisation non autorisée du fichier de dictionnaire.
+943	13001 - Afficher : Impossible de récupérer la liste des enregistrements.
+944	13002 - Afficher : Échec de l'enregistrement.
+945	13003 - Afficher : Échec de la configuration du résumé.
+946	13004 - Afficher : Impossible de récupérer les enregistrements relationnels.
+947	13005 - Afficher : Échec de l'accès à l'historique des tâches.
+948	13006 - Afficher : Directives de configuration de l'assistant non acceptées.
+949	13007 - Afficher : Impossible de récupérer l'enregistrement d'objectif du profil.
+950	13008 - Afficher : Impossible d'obtenir la liste des répertoires.
+951	13009 - Afficher : Impossible d'obtenir la liste FTP.
+952	13010 - Afficher : Impossible d'obtenir la liste des fichiers et répertoires à vérifier.
+953	13011 - Afficher : Échec de l'accès au détail de l'historique des tâches.
+954	13012 - Afficher : Impossible d'afficher le suivi des campagnes.
+955	13013 - Afficher : Échec de configuration des objectifs par le site Web
+956	13014 - Afficher : Impossible d'obtenir les informations relatives à la licence pour affichage.
+957	13015 - Afficher : Impossible d'accéder aux sites Web IIS pour importation.
+958	13016 - Afficher : Impossible d'obtenir la liste des répertoires UNC.
+959	13017 - Afficher : Impossible d'obtenir la liste des comptes.
+960	13018 - Afficher : Impossible d'obtenir la liste des tâches.
+961	Fuseau horaire
+962	GMT-12:00 : Ligne de date internationale
+963	GMT-11:00 : Îles Midway, Samoa
+964	GMT-10:00 : Hawaii
+965	GMT-09:00 : Alaska
+966	GMT-08:00 : Pacifique (États-Unis et Canada), Tijuana
+967	GMT-07:00 : Arizona
+968	GMT-07:00 : Montagnes Rocheuses (États-Unis et Canada)
+969	GMT-06:00 : Heure centrale (États-Unis et Canada)
+970	GMT-05:00 : Indiana (Est)
+971	GMT-05:00 : Heure orientale (États-Unis et Canada)
+972	GMT-04:00 : Atlantique (Canada)
+973	GMT-03:00 : Buenos Aires, Georgetown
+974	GMT-02:00 : Médio-Atlantique
+975	GMT-01:00 : Açores, Île du Cap Vert
+976	GMT-00:00 : Heure du méridien de Greenwich (Londres)
+977	GMT+01:00 : Amsterdam, Berlin, Paris
+978	GMT+02:00 : Athènes, Berirut, Minsk
+979	GMT+03:00 : Moscou, Koweït
+980	GMT+04:00 : Abu Dhabi, Muscat
+981	GMT+05:00 : Ekaterinbourg, Karachi
+982	GMT+06:00 : Astana, Dhaka
+983	GMT+07:00 : Bangkok, Hanoi
+984	GMT+08:00 : Pékin, Hong Kong
+985	GMT+09:00 : Tokyo, Séoul
+986	GMT+10:00 : Sydney, Melbourne, Guam
+987	GMT+11:00 : Île Salomon
+988	GMT+12:00 : Fidji, Île Marshall
+989	GMT+13:00 : Nuku'alofa
+990	Chinois (simplifié)
+991	Chinois (traditionnel)
+992	Néerlandais
+993	Brésil
+994	Pays-Bas
+995	Taiwan
+996	Localisation
+997	Codage de caractères
+998	ASCII/UTF-8 (Aucune conversion de jeu de caractères)
+999	Japonais (EUC-JP, SHIFT-JIS, ISO-2022-JP)
+1000	Latin 1 (ISO-8859-1)
+1001	E-mail
+1002	Tableaux de bord disponibles
+1003	Sections des rapports
+1004	Cadre
+1005	Responsable marketing
+1006	Webmaster
+1007	Optimisation du marketing
+1008	Optimisation du contenu
+1009	Analyse du commerce électronique
+1010	Rapports TI
+1011	Tableaux de bord et sections
+1012	Paramètre par défaut
+1013	Paramètres de tableau de bord de l'utilisateur du profil
+1014	Utiliser les paramètres par défaut du profil
+1015	Veuillez effectuer la mise à jour avant de remplacer le tableau de bord du profil.
+1016	Remplacer le tableau de bord
+1017	Paramètres de tableau de bord du groupe de profils
+1018	Paramètres de tableau de bord du groupe de profils : Aide
+1019	Paramètres de tableau de bord de l'utilisateur du profil : Aide
+1020	13019 - Afficher : Impossible d'obtenir les autorisations individuelles/de groupe.
+1021	Standard
+1022	Avancé
+1023	Voulez-vous vraiment supprimer ce compte ?\n\nATTENTION : tous les profils, sources de journal, filtres, utilisateurs et groupes associés à ce compte seront supprimés.
+1024	(GMT)
+1025	Erreur de mot de passe \n\nLes mots de passe ne correspondent pas ou contiennent moins de 8 caractères.
+1026	facultatif, voir l'aide
+1027	12009 - Action : le profil a été placé en file d'attente d'exécution. Veuillez consulter l'écran "Historique des tâches du profil" pour connaître son état et le déroulement de son exécution.
+1028	Attention ! Planificateur maître désactivé.
+1029	Attention ! Planificateurs maître et esclave désactivés.
+1030	par exemple
+1031	e-mail
+1032	Source de CPC - Historique des téléchargements
+1033	Source de CPC - Détail du téléchargement
+1034	Base de données géographique - Historique des téléchargements
+1035	Base de données géographique - Détail du téléchargement
+1036	Résultat de l'assistant Source de dépenses
+1037	Gestionnaire de sources de CPC
+1038	Nom de la source de CPC
+1039	Type de source de CPC
+1040	<nobr><span class=title1>    <b>Gestionnaire de sources de CPC (Ref. #A-1500)</b></span></nobr><br>Cet écran présente les sources de CPC qui ont été configurées pour cette installation d'Urchin. Il permet d'ajuster les paramètres de chaque source et d'autoriser l'administrateur à ajouter des sources de CPC. Chaque source de CPC peut être appliquée individuellement à des profils.<p><b>Ajouter</b><br>Pour ajouter une source de CPC, cliquez sur le bouton "Ajouter" en haut à droite de l'écran. Cette opération lance l'assistant d'ajout de source de CPC, qui vous expose de façon simplifiée les étapes permettant d'ajouter une source de CPC.<p><b>Modifier</b><br>Dans la liste de sources de CPC, une série de boutons apparaît en regard de chaque source, ce qui vous permet de les contrôler. Le bouton "Modifier" donne accès à tous les paramètres de la source choisie, organisés en onglets.<p><b>Supprimer</b><br>Cliquez sur ce bouton pour supprimer la source de CPC correspondante de la configuration et de tous les profils y faisant référence. <p><b>Télécharger</b><br>Ce bouton est un raccourci permettant d'accéder à l'écran "Télécharger", où vous pouvez choisir soit de télécharger immédiatement des rapports à partir de cette source de CPC, soit de planifier un téléchargement régulier. Aucune donnée CPC n'est disponible tant que le rapport CPC n'est pas téléchargé.<p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant". <p><b>Compte</b> (mode Datacenter uniquement)<br>En mode Datacenter, le menu "Compte" peut filtrer les entrées à afficher.
+1041	Assistant Source de CPC - Paramètres
+1042	<nobr><span class=title1><b>Gestionnaire de sources de CPC : paramètres de CPC (Ref. #A-1501)</b></span></nobr><br>Cet écran vous permet de configurer et d'ajuster les paramètres d'une source de CPC. Pour plus d'informations sur les sources de CPC, consultez le manuel d'utilisation ou notre centre de documentation en ligne.<p><b>Compte facultatif</b> (mode Datacenter uniquement)<br>Pour les nouvelles sources de CPC, ce paramètre vous permet de sélectionner le compte auquel associer la source de CPC. Pour les sources de CPC existantes, le nom du compte auquel la source de CPC appartient s'affiche.<p><b>Nom de la source de CPC</b><br>Saisissez le nom de votre choix dans ce champ obligatoire ; il sera utilisé pour faire référence à cette source de CPC. Il doit s'agir d'un nom unique.<p><b>Type de source de CPC</b><br>Urchin vous permet de créer les sources de CPC suivantes :<p><b>Google AdWords</b><br>Les sources de CPC Google AdWords requièrent les champs suivants : <li><b>E-mail</b> : il s'agit de l'adresse e-mail de l'annonceur ou de l'ID de connexion du Centre multicompte (obligatoire).<li><b>Mot de passe</b> : mot de passe qui permet d'accéder au compte AdWords concerné (obligatoire).<li><b>Jeton de développeur</b> : chaîne permettant d'identifier de façon unique un développeur agréé de l'API AdWords (obligatoire). Urchin est fourni avec un jeton de développeur par défaut qui change chaque mois. Si vous n'indiquez pas de jeton, Urchin utilise le jeton de développeur par défaut. Notez que l'API AdWords facture les frais au jeton de développeur pour tous les appels d'API réalisés par cette source de CPC. Par conséquent, si les utilisateurs ont recours à leurs propres jetons de développeur, les frais seront imputés à leur ID de connexion ou leur Centre multicompte pour toute utilisation de l'API. Pour toutes les applications par défaut, laissez ce champ vide.<li><b>Jeton d'application</b> : jeton d'application qui sera utilisé pour l'accès à l'API AdWords. Si l'utilisateur a fourni le jeton de développeur, il doit également fournir le jeton d'application. Sinon, ce champ ne doit pas être renseigné.<li><b>E-mail du client et Numéro client</b> : si l'utilisateur se sert de l'identifiant de connexion au Centre multicompte au lieu de l'adresse e-mail de l'annonceur, l'un de ces deux champs (mais pas les deux) est obligatoire.<p><b>Yahoo! Search Marketing</b><br>Les sources de CPC Yahoo! Search Marketing requièrent les champs suivants : <li><b>Nom d'utilisateur</b> : nom d'utilisateur permettant d'accéder au compte Yahoo! Search Marketing (obligatoire). Il peut s'agir de l'adresse e-mail de l'annonceur, ou de celle de l'agence accédant au rapport pour le compte de l'annonceur.<li><b>Mot de passe</b> : mot de passe permettant d'accéder au compte Yahoo! Search Marketing concerné (obligatoire).<li><b>Numéro de compte administrateur</b> : identifiant du compte administrateur de l'annonceur (obligatoire).<li><b>Identifiant de compte</b> : identifiant permettant d'accéder au compte Yahoo! Search Marketing (obligatoire).<li><b>Clé de licence</b> : clé de licence de l'utilisateur connecté, annonceur ou agence (obligatoire). <li><b>Pour le compte de (nom d'utilisateur)</b> : nom d'utilisateur pour le compte duquel l'annonceur agit. Il n'est requis que si l'identifiant de connexion est celui d'une agence et non de l'annonceur (facultatif).<li><b>Pour le compte de (mot de passe)</b> : mot de passe de l'utilisateur pour le compte duquel l'annonceur agit (facultatif). <p><b>Téléchargement du rapport de CPC activé</b><br> (visible uniquement lors de l'édition d'une source de CPC) : cette option active et désactive les téléchargements ultérieurs des rapports pour cette source de CPC. <b>Remarque</b> : même si vous choisissez de désactiver les téléchargements ultérieurs des rapports, les profils associés à cette source de CPC continueront d'utiliser les rapports déjà téléchargés.
+1043	Paramètres de la source de CPC
+1044	Google AdWords
+1045	Microsoft adCenter
+1046	Yahoo! Search Marketing
+1047	E-mail
+1048	Mot de passe
+1049	Jeton de développeur
+1050	Jeton d'application
+1051	Informations de connexion à adCenter
+1052	Clé d'accès utilisateur
+1053	Nom d'utilisateur
+1054	Numéro de compte administrateur
+1055	Identifiant de compte
+1056	Clé de licence
+1057	Configuration de la Source de CPC terminée !
+1058	Assistant Source de CPC - Confirmation
+1059	“Pour le compte de” (nom d'utilisateur)
+1060	“Pour le compte de” (mot de passe)
+1061	“Pour le compte de” (confirmer le mot de passe)
+1062	Confirmer le mot de passe
+1063	Mots de passe non renseignés, non valides ou incorrects
+1064	Nombre de sources de CPC
+1065	<nobr><span class=title1><b>Sources de CPC : Profils (Ref. #A-1502)</b></span></nobr><br>Cet écran permet d'appliquer la source de dépenses sélectionnée à un ou plusieurs profils existants.<p><b>Appliquer au profil</b><br>Pour appliquer cette Source de dépenses à un Profil, sélectionnez le nom de ce dernier dans la zone "Profils disponibles", puis cliquez sur la flèche dirigée vers la droite. Pour supprimer cette Source de dépenses d'un profil, sélectionnez le profil souhaité dans la zone "Appliqué à", puis cliquez sur la flèche dirigée vers la gauche. Cliquez sur "Mettre à jour" pour enregistrer les modifications.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets situés en haut de l'écran vous permettent d'accéder à tous les paramètres de cette source de CPC que vous pouvez modifier.
+1066	Téléchargement du rapport de CPC activé
+1067	Tester la source de CPC
+1068	Connexion à la source de CPC réussie
+1069	Échec de la connexion à la source de CPC
+1070	Source(s) de CPC à appliquer
+1071	Source(s) de CPC disponible(s)
+1072	Source(s) de CPC appliquée(s)
+1073	<nobr><span class=title1><b>Profiles : Sources de dépenses (Ref. #A-2106)</b></span></nobr><br>Utilisez cet écran pour déterminer les <b>Sources de dépenses appliquées</b> à partir de la liste <b>Sources de dépenses disponibles</b>. <p><b>Commandes :</b><br><ul><li><b>Ajouter</b><br>Cliquez sur l'icône "Ajouter" pour joindre d'autres Sources de dépenses à la liste des Sources de dépenses disponibles. Vous lancerez ainsi l'assistant d'ajout de filtre qui vous guidera dans la procédure d'ajout d'une Source de dépenses nouvelle ou existante.<li><b>Modifier</b><br>Sélectionnez les Sources de dépenses disponibles que vous souhaitez modifier, puis cliquez sur l'icône "Modifier". <li>Cliquez sur le bouton <b>Mettre à jour</b> pour enregistrer les modifications. <li>Les onglets situés en haut de l'écran vous permettent d'accéder à l'ensemble des paramètres que vous pouvez modifier dans le profil sélectionné.
+1074	Sources de CPC
+1075	Avertissement : Les rapports Google AdWords sont disponibles après un certain délai. Assurez-vous que les sources de CPC sont planifiées à un moment où les rapports sont disponibles. Pour plus d'informations, consultez l'article correspondant dans le <a href="https://secure.urchin.com/helpwiki/en/Help_Center"><b>Centre d'aide en ligne</b></a>.
+1076	Adresse e-mail du client
+1077	Numéro client
+1078	Renseignez le champ “E-mail du client” ou le champ “Identifiant client” (pas les deux).
+1079	<nobr><span class=title1><b>Source de CPC : Planifier (Ref. #A-1503)</b></span></nobr><br>Cet écran vous permet de configurer les options de téléchargement d'une source de CPC.<p><b>Télécharger maintenant</b><br>Pour télécharger immédiatement cette source de CPC, cliquez sur le grand bouton vert "Télécharger maintenant" situé à droite. La tâche CPC à exécuter par le planificateur de CPC Urchin sera placée en file d'attente.<p><b>Planifier - Intervalle de téléchargement</b><br>Le téléchargement des rapports de CPC se déroule en deux phases. La première phase consiste à valider l'identification du CPC, puis à envoyer une demande de rapport au serveur (par exemple, AdWords). Au cours de la seconde phase, la disponibilité du rapport est vérifiée à intervalle régulier, jusqu'à ce que celui-ci soit effectivement disponible. La seconde phase se termine une fois le rapport téléchargé. Vérifier la disponibilité du rapport peut demander de quelques secondes à une demi-heure et chaque appel de l'API pour vérifier la disponibilité du rapport peut être facturé au client (une unité s'il utilise AdWords). C'est pourquoi Urchin ne vérifie la disponibilité du rapport qu'après une période spécifiée entre les deux phases. <br><br>Grâce à cette option, vous pouvez configurer l'intervalle entre la planification du rapport et le moment de la vérification/du téléchargement de cette source de coût.<p><b>Télécharger - Heure du jour</b><br>Cette option vous permet de définir une heure de la journée pour effectuer le téléchargement du rapport mis à jour de cette source de CPC.<p><b>Données de compte - Intervalle de téléchargement</b><br>Cette option vous permet de définir l'intervalle de téléchargement pour la structure de compte AdWords. Vous ne pourrez pas afficher les métadonnées de campagne ou de mot clé, ni utiliser le Générateur de mots clés ou le Gestionnaire de balises AdWords avant d'avoir téléchargé la structure de compte AdWords.
+1080	Planifier
+1081	Paramètres de téléchargement de la source de CPC
+1082	<nobr><span class=title1><b>Paramètres globaux : Mise à jour de la source de CPC (Ref. #A-2705)</b></span></nobr><br>Cet écran permet de spécifier les options globales de téléchargement des sources de CPC.<p><b>Planifier - Intervalle de téléchargement</b><br>Le téléchargement des rapports de CPC se déroule en deux phases. La première phase consiste à valider l'identification du CPC, puis à envoyer une demande de rapport au serveur (par exemple AdWords). Au cours de la seconde phase, la disponibilité du rapport est vérifiée à intervalle régulier, jusqu'à ce que celui-ci soit effectivement disponible. La seconde phase se termine une fois le rapport téléchargé. Vérifier la disponibilité du rapport peut demander de quelques secondes à une demi-heure et chaque appel de l'API pour vérifier la disponibilité du rapport peut être facturé au client (une unité s'il utilise AdWords). C'est pourquoi Urchin ne vérifie la disponibilité du rapport qu'après une période spécifiée entre les deux phases. <br><br>Grâce à cette option, vous pouvez configurer une valeur globale pour l'intervalle entre la planification du rapport et le moment de la vérification/du téléchargement.<p><b>Télécharger - Heure du jour</b><br>Cette option vous permet de définir une heure de la journée pour effectuer les téléchargements du rapport mis à jour de cette source de CPC.<p><b>Données de compte - Intervalle de téléchargement</b><br>Cette option vous permet de définir l'intervalle de téléchargement pour la structure de compte AdWords. Vous ne pourrez pas afficher les métadonnées de campagne ou de mot clé, ni utiliser le Générateur de mots clés ou le Gestionnaire de balises AdWords avant d'avoir téléchargé la structure de compte AdWords.
+1083	Mise à jour de la source de CPC
+1084	Planifier - Intervalle de téléchargement
+1085	Télécharger - Heure du jour
+1086	secondes
+1087	minutes
+1088	Télécharger maintenant
+1089	Historique des téléchargements de base de données géographique
+1090	Historique des téléchargements de CPC
+1091	<nobr><span class=title1><b>Planificateur : Historique des téléchargements de base de données géographique(Ref. #A-2800)</b></span></nobr><br>Cet écran affiche l'historique de tous les téléchargements de bases de données géographiques effectués par le Planificateur de tâches. Chaque téléchargement est associé à un résumé contenant des informations utiles. Vous pouvez cliquer sur le champ "État" pour consulter les détails relatifs à l'exécution d'une tâche de l'historique. Utilisez les flèches situées sous les champs pour modifier l'ordre de tri.<p>Chaque entrée indique le nom de la tâche de téléchargement de base de données géographique, son état, ainsi que le moment où elle a démarré et le moment où elle s'est terminée.<p><b>État</b> (lien hypertexte)<br>L'état de chaque tâche peut être : "Exécution", "Terminé", "Avertissement" ou "Erreur". Les états sont codés par couleur et vous pouvez trier la liste par état en cliquant sur la flèche située sous le mot "État". Cliquez sur l'état codé par couleur à côté d'un téléchargement de base de données géographique pour consulter le détail de son exécution. Une fenêtre distincte s'ouvre avec les détails d'exécution.<p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant".
+1092	Configuration de la Source de dépenses terminée ! La Source de dépenses a été ajoutée. Cliquez sur le bouton "Terminé" pour revenir au système d'administration.
+1093	Aucun <b>Historique des tâches du profil</b> trouvé.
+1094	<nobr><span class=title1><b>Planificateur : Historique des téléchargements de CPC (Ref. #A-2900)</b></span></nobr><br>Cet écran présente l'historique de tous les téléchargements de CPC effectués par le Planificateur de tâches liées au CPC. Les téléchargements de structures de comptes AdWords sont répertoriés séparément dans cette liste. Chaque téléchargement de CPC est associé à un résumé. Vous pouvez cliquer sur le champ "État" pour consulter les détails relatifs à l'exécution d'une tâche de l'historique. Utilisez les flèches situées sous les champs pour modifier l'ordre de tri.<p>Chaque entrée indique le nom de la source de CPC, le type de CPC, l'état de la tâche, le début et la fin de son traitement, le nombre d'unités d'API consommées et l'hôte de traitement.<p><b>État</b> (lien hypertexte)<br>L'état d'une tâche peut être : "En attente", "Exécution", "Terminé, "Annulé" ou "Erreur". Les états sont codés par couleur et vous pouvez trier la liste par état en cliquant sur la flèche située sous le mot "État". Cliquez sur l'état codé par couleur à côté d'une tâche pour consulter le détail de son exécution. Une fenêtre distincte s'ouvre avec les détails d'exécution.<p><b>Commandes</b><br>Utilisez le menu déroulant "Nombre d'éléments à afficher" pour modifier le nombre d'entrées répertoriées simultanément. Pour consulter les entrées page par page, utilisez le bouton "Précédent" ou "Suivant". <p><b>Compte</b>(mode Datacenter uniquement)<br>En mode Datacenter, le menu "Compte" permet de filtrer les entrées à afficher.
+1095	Avertissement ! Planificateur CPC désactivé.
+1096	Aucun <b>Historique des téléchargements de CPC</b> trouvé.
+1097	Type de CPC
+1098	Annulée
+1099	Télécharger
+1100	Unités consommées
+1101	Processus
+1102	Générez un trafic plus important et de meilleure qualité sur votre site grâce à <A href="http://www.google.com/urchin/sign-up65.html#rd=adwords&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>Google AdWords</B></FONT></A>.<br/>Vous disposez déjà d'un compte ? Envisagez d'<A href="http://www.google.com/urchin/sign-up65.html#rd=keygen&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>ajouter des mots clés supplémentaires</B></FONT></A> à votre campagne.
+1103	12010 - Action : la source de CPC a été placée en file d'attente de téléchargement. Veuillez consulter l'écran Historique des téléchargements de CPC pour connaître son état et le déroulement de son exécution.
+1104	12011 - Action : échec de l'ajout de la source de CPC à la file d'attente du planificateur. La source de CPC se trouve déjà dans la file d'attente.
+1105	Action
+1106	Impossible d'annuler la tâche du profil.
+1107	12016 - Action : impossible d'annuler la tâche planifiée. Traitement du profil en cours.
+1108	Annulé
+1109	La création de sauvegarde régulière doit être activée.
+1110	12014 - Action : le traitement du profil sera annulé.
+1111	Annulation
+1112	Durée moyenne de la visite
+1113	Sources de journal
+1114	Filtré
+1115	Visites
+1116	Taux de rebond
+1117	Objectifs réalisés
+1118	Comptes d'annonces
+1119	Ajout impossible. Vous avez atteint le nombre maximal de profils.<p>Mettez votre licence à niveau ou supprimez un profil existant et réessayez.
+1120	Ajout impossible. Vous avez atteint le nombre maximal de sources de journal.<p>Mettez votre licence à niveau ou supprimez une source de journal existante et réessayez.
+1121	Vous avez atteint le nombre maximal de sources de journal par profil.
+1122	Vous avez atteint le nombre maximal de profils.
+1123	Vous utilisez actuellement la licence de démo qui arrivera à expiration le
+1124	Informations
+1125	Licence valide - USP
+1126	(Heure incorrecte)
+1127	La licence USP arrivera à expiration le
+1128	Contactez votre administrateur système pour résoudre le problème.
+1129	Annonceur
+1130	Optimisation de la publicité
+1131	Journaux CPC
+1132	Structure du compte
+1133	Données de compte - Intervalle de téléchargement
+1134	heures
+1135	jours
+1136	Type d'authentification
+1137	12015 - Impossible de vérifier l'identité de l'utilisateur.
+1138	Impossible de vérifier l'identité de l'utilisateur.<p>Les raisons possibles sont les suivantes :<ul><li>Un nom d'utilisateur incorrect a été saisi.</li><li>Il y a un problème de connectivité avec votre service d'authentification externe.</li><li>Le fournisseur d'authentification externe n'a pas été configuré correctement.</li></ul><p>Vérifiez le nom d'utilisateur saisi et essayez de nouveau. Si le problème persiste, vérifiez la configuration du fournisseur d'authentification externe en vous référant aux consignes spécifiques du fournisseur.
+1139	jour
+1140	heure
+1141	minute
+1142	Accès aux outils AdWords
+1143	Origines géographiques/Vitesse de connexion
+1144	Fournisseurs d'accès
+1145	Domaines
+1146	Détail géographique
+1147	Informations géographiques
+1148	Base de données géographique
+1149	<nobr><span class=title1><b>Sources de journal - Profils</b></span></nobr><br>Cet écran permet de d'appliquer la source de journal sélectionnée à un ou plusieurs profils existants.<p><b>Appliquer au profil</b><br>Pour appliquer cette source de journal à un profil, sélectionnez le nom de ce dernier dans la zone "Profils disponibles", puis cliquez sur la flèche dirigée vers la droite. Pour supprimer cette source de journal d'un profil, sélectionnez le profil souhaité dans la zone "Appliqué à", puis cliquez sur la flèche dirigée vers la gauche. Cliquez sur "Mettre à jour" pour enregistrer les modifications.<p><b>Commandes</b><br>Cliquez sur le bouton "Mettre à jour" pour enregistrer les modifications. Les onglets situés en haut de l'écran vous permettent d'accéder à tous les paramètres modifiables de cette source de journal.
+1150	Jour
+1151	Semaine
+1152	Mois
+1153	Année
+1154	Administrateur
+1155	Entreprises
+1156	Standard
+1157	Gérer les segments
+1158	Échec de l'opération
+1159	Vous avez atteint le nombre maximal de segments par utilisateur.
+1160	Interne
+1161	Externe
+1162	Fichier
+1163	Ressources d'aide
+1164	À propos du rapport
+1165	Site Web d'Urchin
+1166	Planifier la mise à jour
+1167	Mettre à jour les paramètres
+1168	Mise à niveau automatique des articles d'aide
+1169	Mise à niveau automatique de la base de données géographique
+1170	Versions
+1171	Urchin
+1172	Articles d'aide
+1173	Base de données géographique
+1174	Composant
+1175	Version actuelle
+1176	Nouvelle version
+1177	Action
+1178	téléchargement en cours
+1179	mise à niveau en cours
+1180	afficher le journal d'erreurs
+1181	vérifier maintenant
+1182	afficher la liste des modifications
+1183	planifier un téléchargement maintenant
+1184	installer maintenant
+1185	annuler
+1186	Mise à jour automatique
+1187	Mises à jour disponibles.
+1188	Afficher maintenant
+1189	Dernière vérification
+1190	Les services Urchin seront désactivés pendant la mise à niveau. Voulez-vous vraiment continuer ?
+1191	Des tâches de traitement actives ont été mises en file d'attente. Veuillez attendre qu'elles soient terminées.
+1192	Composant
+1193	produit
+1194	aide
+1195	données géographiques
+1196	Nom de la machine
+1197	Centre d'aide en ligne Urchin
+1198	Nouveau !
+1199	Consultants agréés Urchin
+1200	Blog Google Analytics et Urchin
+1201	Aide
+1202	contenant
+1203	ne contenant pas
+1204	OK
+1205	Afficher les lignes :
+1206	Accueil Google Analytics
+1207	FAQ
+1208	Règles de confidentialité
+1209	Centre d'aide Urchin
+1210	terminée
+1211	mettre à jour
+1212	mise à jour en cours
+1213	mis à jour
+1214	télécharger
+1215	téléchargement en cours
+1216	téléchargé
+1217	mettre à niveau
+1218	mise à niveau
+1219	annulé
+1220	erreur
+1221	Impression/Affichage
+1222	Affichage standard
+1223	Lien permanent
+1224	Lien permanent (à coller dans l'e-mail ou la messagerie instantanée)
+1225	Produits recommandés
+1226	Les nouveautés
+1227	Bêta
+1228	Alpha
+1229	Nouvelle interface utilisateur de création de rapports
+1230	Segments avancés
+1231	Suivi des événements
+1232	Traitement du profil parallèle
+1233	Liens permanents
+1234	Données géographiques/DNS personnalisables
+1235	Personnaliser l'ordre des filtres
+1236	Google Data API v2
+1237	Mises à jour automatiques
+1238	Centre d'aide local
+1239	Exemple de trafic
+1240	Exemple de segment
+1241	Google Analytics
+1242	Google AdWords
+1243	Optimiseur de Site Google
+1244	Générateur de mots clés Google
+1245	Filtre :
+1246	Logiciel Urchin from Google
+1247	Règles de confidentialité Google
+1248	Règles de confidentialité
+1249	Blog Google Analytics
+1250	Contrat de licence utilisateur final
+1251	Forum utilisateur Urchin
+1252	Task state is not up to date, please refresh the page
+1253	Personnalisé
+1254	Script externe
+1255	Commande
+1256	Ligne de commande
+1257	Paramètres facultatifs

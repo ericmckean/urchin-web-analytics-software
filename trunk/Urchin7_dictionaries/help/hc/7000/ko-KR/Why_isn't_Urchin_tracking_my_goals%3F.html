@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin에서 목표를 추적하지 않는 이유는 무엇입니까?</strong> <p class="line874">보고서에 목표가 추적되지 않은 것으로 나타나는 데에는 여러 가지 이유가 있습니다.가장 일반적인 원인은 다음과 같습니다. <ul><li>목표에 대해 특정 키워드를 사용한 경우 <ul><li style="list-style-type:none"><p class="line891"><tt>http://domain.com/page.html</tt>과 같은 목표에 대해 일치검색을 사용할 경우 후행 공백이 있으면 목표가 무효화될 수 있습니다.^/page.html과 같이 부분검색을 사용하는 경우에는 뒤에 공백이 있어도 문제가 되지 않습니다. 목표를 설정할 때 목표로 URL 스템만 포함하는 것이 좋습니다.예를 들어 목표가 www.domain.com/1/thanks.html인 경우 /1/thanks\.html만 목표로 입력하십시오. <p class="line862">도움말:<tt>http://</tt> 표시가 없는 URL 스템을 입력하면 Urchin에서는 해당 URL을 정규식으로 취급합니다.따라서 역슬래시(\)를 사용하여 마침표 또는 기타 와일드카드를 이스케이프 처리해야 합니다. </li></ul></li><li class="gap">목표 페이지에 UTM태그가 포함되어 있지 않은 경우 <ul><li style="list-style-type:none">목표 페이지에 UTM태그가 포함되어 있지 않은 경우 Urchin에서는 이러한 페이지를 추적하지 않으므로 목표로 인식하지 않습니다. </li></ul></li><li class="gap">목표 페이지가 다운로드 문서인 경우(예:PDF). <ul><li style="list-style-type:none">Urchin은 다운로드 문서를 목표로 직접 추적하지 않습니다.다운로드 링크가 사용된 경우에는 urchinTracker 함수를 호출해야 합니다.urchinTracker의 인수로 지정한 페이지뷰 이름이 목표로 사용될 수 있습니다. </li></ul></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

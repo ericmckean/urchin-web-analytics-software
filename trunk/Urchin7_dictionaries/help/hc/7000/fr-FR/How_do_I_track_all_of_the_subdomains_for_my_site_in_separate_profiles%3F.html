@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Comment puis-je effectuer le suivi des sous-domaines de mon site dans des profils séparés ?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Cet article a été rédigé par</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, un consultant agréé du logiciel Urchin. </em> </li></ul><p class="line874">La procédure à suivre dans Urchin pour effectuer le suivi des sous-domaines dans des profils séparés dépend de la configuration de votre serveur Web. Vous pouvez configurer votre serveur Web de sorte qu'il génère un fichier journal par sous-domaine. Urchin peut alors traiter séparément le fichier journal de chaque sous-domaine. Si vous ne produisez qu'un seul fichier journal et que le journal d'accès Web enregistre le nom d'hôte avec sous-domaine, vous pouvez également créer un filtre Inclure pour chaque profil de sous-domaine.  Par exemple, le filtre d'un profil inclura seulement le trafic de help.example.co.uk, tandis que l'autre inclura uniquement le trafic associé à www.example.co.uk. <p class="line874">Ainsi, pour effectuer le suivi de vos sous-domaines dans des profils séparés, vous devez appliquer un filtre Inclure à chaque profil de sorte qu'il traite un seul nom d'hôte. La première étape consiste à créer un profil pour chaque sous-domaine. Vous pouvez ensuite créer les filtres décrits ci-dessous. <p class="line874">Par exemple, si vous souhaitez effectuer le suivi de sub.example.fr et de www.example.fr dans deux profils séparés, appliquez les filtres suivants : <ul><li style="list-style-type:none">Pour le profil sub.example.fr </li></ul><p class="line867"><pre>    Type de filtre : Inclure UNIQUEMENT la règle
+    Champ de filtrage : utm_request_hostname (AUTO)
+    Règle de filtrage : ^sub\.example\.fr
+</pre><ul><li style="list-style-type:none">Pour le profil www.example.fr </li></ul><p class="line867"><pre>    Type de filtre : Inclure UNIQUEMENT la règle
+    Champ de filtrage : utm_request_hostname (AUTO)
+    Règle de filtrage : ^www\.example\.fr
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,19 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>外部認証または認証バイパスの使用</strong> <p class="line867"><strong>概要</strong> <p class="line874">デフォルトでは、Urchin 認証は、Urchin セッション制御 (session.cgi) が Urchin の bin ディレクトリにある auth バイナリを呼び出したときに実行されます。 このバイナリは設定データベースに問い合わせを行い、入力されたユーザー名とパスワードを設定に保存されているものと照合します。 成功または失敗を示す終了コードはセッション制御に返されます。 認証バイナリの場所は設定変更によって制御できます。 このモジュール設計では、管理者はデフォルトの auth バイナリの代わりに外部認証プログラムを呼び出すことができます。 <p class="line867"><img alt="Using_External_Authentication" src="../images/Using_External_Authentication.jpg" title="Using_External_Authentication" /> <p class="line874">上の図に示すように、この外部認証プログラムでは、LDAP や他のデータベースの呼び出しなど希望の認証機能を実行することができます。 外部認証プログラムが urchinwebd (Urchin の Apache ウェブサーバー) を実行しているユーザーによって実行可能で、入力/出力の要件に従っている場合、異なる形式の認証を使用するよう Urchin を修正することができます。 <p class="line867"><strong>認証ルーチンの指定</strong> <p class="line874">セッション制御が呼び出す認証ルーチンを設定するには、Urchin パッケージの etc/session.conf ファイルを編集します。 このファイルには、どのルーチンが認証を呼び出すかなど、セッション制御の動作を管理する設定可能なパラメータが含まれています。 編集するのは次の行です。 <pre>    AUTHENTICATION: ../bin/auth 
+</pre><p class="line874">「../bin/auth」を使用する認証ルーチンのパスに置き換えます。 認証ルーチンが urchinwebd を実行しているユーザーによって実行可能であることを確認します。 <p class="line867"><strong>入力/出力の要件</strong> <p class="line874">セッション制御が認証ルーチンを呼び出すと、ユーザーのユーザー名、パスワード、リモート IP アドレスがコマンド ラインの引数として次のように渡されます。 <pre>    argv[1] = username
+    argv[2] = password
+    argv[3] = remote_addr 
+</pre><p class="line874">外部認証ルーチンでは、これらのパラメータの一部またはすべてを無視することができますが、 通常の認証ルーチンでは少なくとも最初の 2 つが照合されます。 認証の一部またはすべてを実行した後、認証ルーチンは、成功した場合は「0」、失敗した場合は「-1」のコードを返して終了します。 <pre>    Exit Code
+     0 = successful authentication
+    -1 = authentication failed 
+</pre><p class="line874">上記の認証インターフェースを使用すると、管理者はユーザーのログインを検証する独自のルーチンを簡単にカスタマイズすることができます。 <p class="line867"><strong>認証のバイパス</strong> <p class="line874">上記の技術を使用して、Urchin 認証を意図的にバイパスすることができます。 ホスティング プロバイダでユーザーとグループの管理に Urchin システム全体を使用したいが、認証済みのユーザーのみが Urchin にアクセスするという場合は、認証をバイパスして、二重ログインを回避できます。 Urchin へのアクセスを認証ポータルから制御でき、ユーザー名を不正に変更できないと保証できる場合、ホストは次の技術を使用して認証をバイパスすることができます。 <p class="line874">認証をバイパスするには、常に「0」の値を返して終了するダミーの外部認証ルーチンを作成します。 たとえば perl コードは次のようになります。 <pre>    #!/usr/bin/perl
+    exit(0); 
+</pre><p class="line874">セッション制御がこのダミーの認証ルーチンを指すよう、etc/session.conf ファイルを編集します。 次に、次のようなリンクを指定します。 <pre>    http://hostname:9999/session.cgi?action=login&amp;user=paul 
+</pre><p class="line874">実際のホスト名とポートを指すよう上記のリンクを編集し、希望のユーザー名または変数を指すようユーザーを編集します。 ダミーの認証ルーチンはこのログインを自動承認します。 セキュリティ上の問題が生じないよう、この方法は慎重に使用してください。 <p class="line867"><strong>Windows を使用している場合の注意</strong> <p class="line874">Perl がインストールされていない Windows 環境で同様の機能を提供するには、Urchin サポート ウェブサイトの Helper Scripts にある noauth.exe バイナリを使用することができます。 このバイナリは何も処理せず、呼び出しが行われた場合にのみ成功ステータスを返します。 この方法を導入する際は、この操作によるセキュリティ上の影響を必ず検証してください。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

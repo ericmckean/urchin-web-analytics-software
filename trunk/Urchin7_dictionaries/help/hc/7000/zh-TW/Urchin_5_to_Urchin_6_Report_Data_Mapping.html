@@ -1,0 +1,1648 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 5 與 Urchin 6 之間的報表資料對應</strong> 下列 Urchin 5 設定檔設定和報表無法完整移轉至 Urchin 6： <ul><li>無法移轉透過 Urchin 5 建立的目標。 </li><li>Urchin 6 不支援 "ELF" 記錄格式；移轉期間，此格式的記錄會被忽略。 </li><li>相較於 Urchin 5，Urchin 6 採用不同組合的訪客追蹤方式。 下表摘要說明這些方式在移轉作業完成後的轉換情形。 </li></ul><div><table style="width: 424px"><tbody><tr>  <td class="xl68" style="background-color: #999999; height: 20px; width: 212px"><p class="line891"><strong>Urchin 5 訪客追蹤方式</strong> </td>
+  <td class="xl69" style="background-color: #999999; height: 20px; width: 212px"><p class="line891"><strong>Urchin 6 訪客追蹤方式</strong> </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">IP+User-Agent </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Username </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Session ID </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Urchin Traffic Monitor (UTM) </td>
+  <td class="xl66"><p class="line862">Urchin Traffic Monitor (UTM) </td>
+</tr>
+<tr>  <td class="xl67" style="height: 21px"><p class="line862">IP ONLY </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+</tbody></table></div><p class="line874">以下提供一份 Urchin 5 與 Urchin 6 之間的報表和指標對照表。 <div><table style="width: 1223px"><tbody><tr>  <td class="xl81" style="text-align: center; ; width: 141px; height: 40px; background-color: #999999"><p class="line891"><strong>報表區段</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Urchin 5 報表</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>指標</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Urchin 6 報表</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>指標</strong> </td>
+  <td class="xl87" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>訪客追蹤方式</strong> </td>
+  <td class="xl83" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>附註</strong> </td>
+</tr>
+<tr>  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>流量</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">工作階段圖表 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">行銷最佳化 &gt; 不重複訪客追蹤 &gt; 造訪次數與網頁檢視追蹤 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+  <td class="xl89" colspan="1" rowspan="13" style="text-align: center; ; width: 111px"><p class="line862">"UTM" 和 "IP+User-Agent" </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">網頁檢視圖表 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">行銷最佳化 &gt; 不重複訪客追蹤 &gt; 造訪次數與網頁檢視追蹤 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">點擊數圖表 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">IT 報表 &gt; 點擊數與位元組追蹤 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">位元組圖表 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">IT 報表 &gt; 點擊數與位元組追蹤 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">摘要 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>負載平衡</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">按點擊數細分記錄來源 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">記錄來源 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 負載平衡 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">記錄來源 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按位元組細分記錄來源 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">記錄來源 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 負載平衡 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">記錄來源 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>訪客與工作階段</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="2" style="text-align: center; ; height: 40px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="2" style="text-align: center; ; width: 198px"><p class="line862">按日期細分訪客 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">訪客 </td>
+  <td class="xl66" colspan="1" rowspan="2" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 不重複訪客追蹤 &gt; 每日訪客 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">訪客 </td>
+  <td class="xl89" colspan="1" rowspan="10" style="text-align: center; ; width: 111px"><p class="line862">"UTM" </td>
+  <td class="xl97" colspan="1" rowspan="2" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">新訪客 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">按日期細分工作階段 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">工作階段 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 不重複訪客追蹤 &gt; 造訪次數與網頁檢視追蹤 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">單次造訪平均網頁檢視 (網頁檢視/造訪次數) </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">不重複訪客 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">不重複訪客 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">行銷最佳化 &gt; 不重複訪客追蹤 &gt; 絕對不重複訪客 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">不重複訪客 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">不重複工作階段 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">訪客忠誠度 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">造訪次數 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">行銷最佳化 &gt; 不重複訪客追蹤 &gt; 訪客忠誠度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">工作階段頻率 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">行銷最佳化 &gt; 不重複訪客追蹤 &gt; 造訪次數與網頁檢視追蹤 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">摘要 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>網頁與檔案</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">要求網頁 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">網頁 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 內容成效 &gt; 主要內容 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">內容聯播網 </td>
+  <td class="xl92" colspan="1" rowspan="51" style="text-align: center; ; width: 111px"><p class="line862">"UTM" 和 "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均時間 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離開百分比 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值指標 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">下載 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">下載 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 下載 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">下載 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">網頁查詢字詞 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">網頁查詢字詞 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 內容成效 &gt; 網頁查詢字詞 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁/查詢字詞 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">計數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">計數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">張貼格式 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">張貼格式 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 張貼格式 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">張貼格式 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">狀態與錯誤 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">狀態與錯誤 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 狀態代碼 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">狀態代碼 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>所有檔案</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">按點擊數細分所有檔案 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">檔案 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 熱門檔案 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">檔案 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">此報表無法直接移轉： Urchin 6"「有效的點擊」"欄位會顯示所有點擊數，亦即有效點擊數加上錯誤點擊數的總和。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按位元組細分所有檔案 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">檔案 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 熱門檔案 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">檔案 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">此報表無法直接移轉： Urchin 6"「有效的點擊」"欄位會顯示所有點擊數，亦即有效點擊數加上錯誤點擊數的總和。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="15" style="text-align: center; ; height: 300px; width: 141px"><p class="line891"><strong>目錄深入</strong> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">按網頁細分目錄深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">目錄和網頁 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 內容成效 &gt; 目錄深入 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目錄和網頁 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均時間 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離開百分比 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值指標 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按檔案細分目錄深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">目錄和檔案 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 檔案深入 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目錄和檔案 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按位元組細分目錄深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">目錄和檔案 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 檔案深入 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目錄和檔案 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong> 檔案類型</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">按點擊數細分檔案類型 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">檔案類型 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 檔案類型 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Mime 類型 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按位元組細分檔案類型 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">檔案類型 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 檔案類型 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Mime 類型 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">此報表中的資料在移轉後可能會有些許誤差。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">點擊數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>帳戶巡覽</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">進入點網頁 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">進入點網頁 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 導覽分析 &gt; 進入點跳出率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">主要進入點 </td>
+  <td class="xl89" colspan="1" rowspan="39" style="text-align: center; ; width: 111px"><p class="line862">"UTM" 和 "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">進入點 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">跳出次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">跳出率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">離開網頁 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">離開網頁 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 導覽分析 &gt; 主要離開點 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">主要離開網頁 </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離開數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離開百分比 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">跳出率 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">跳出網頁 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 導覽分析 &gt; 進入點跳出率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">主要進入點 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">跳出次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">跳出次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">進入點 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">進入點 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">跳出率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">跳出率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="6" style="text-align: center; ; height: 120px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 198px"><p class="line862">點擊路徑 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">點擊路徑 </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 導覽分析 &gt; 起始導覽 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">起始路徑 </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 198px"><p class="line862">按一下 [到] 和 [從] </td>
+  <td class="xl66" style="width: 121px"><p class="line862">目錄和檔案 </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 導覽分析 &gt; 所有導覽 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目錄和網頁 </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">上一頁 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">前 10 名點擊來源 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">下一頁 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">前 10 名點擊目標 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">點擊次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">點擊次數百分比 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/點擊次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易轉換/點擊次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均分數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">瀏覽深度 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">網頁 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 內容成效 &gt; 內容深入 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目錄和網頁 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">平均時間 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均時間 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離開百分比 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值指標 </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">工作階段深度 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">內容最佳化 &gt; 內容成效 &gt; 造訪深度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">工作階段深度 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">內容最佳化 &gt; 內容成效 &gt; 深入程度指標 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>推薦連結</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">推薦連結 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">推薦連結 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 行銷廣告活動的結果 &gt; 推薦連結轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">推薦連結 </td>
+  <td class="xl89" colspan="1" rowspan="31" style="text-align: center; ; width: 111px"><p class="line862">"UTM" 和 "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">此報表無法直接移轉： 此 Urchin 6 報表只會納入"「推薦連結」"網頁檢視 ("「隨機」"和"「單次點擊出價」"網頁檢視都會被排除)。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">推薦連結深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">推薦連結 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 行銷廣告活動的結果 &gt; 推薦連結轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">推薦連結 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">此報表無法直接移轉： 此 Urchin 6 報表只會納入"「推薦連結」"網頁檢視 ("「隨機」"和"「單次點擊出價」"網頁檢視都會被排除)。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">搜尋字詞 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">搜尋字詞 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 搜尋引擎行銷 &gt; 整體關鍵字轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">關鍵字/來源[媒介] </td>
+  <td class="xl98" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">如果 Urchin 5 設定檔是透過 "UTM" 訪客追蹤方式進行處理，此報表就無法直接移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">搜尋引擎 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">搜尋引擎 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 搜尋引擎行銷 &gt; 單次點擊出價與隨機轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">來源[媒介]/關鍵字 </td>
+  <td class="xl98" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">如果 Urchin 5 設定檔是透過 "UTM" 訪客追蹤方式進行處理，此報表就不會移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">推薦連結錯誤 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">推薦連結錯誤 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網頁與檔案 &gt; 推薦連結錯誤 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">錯誤代碼/內容/推薦連結 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">移轉至 Urchin 6 時，報表資料中的 "401" 錯誤代碼會被排除。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">錯誤點擊 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line862"> <strong>網域與使用者</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">網域 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">網域 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 訪客區隔成效 &gt; 網域 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網域 </td>
+  <td class="xl89" colspan="1" rowspan="44" style="text-align: center; ; width: 111px"><p class="line862">"UTM" 和 "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">網域深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">網域 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網域與使用者 &gt; 網域深入 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">主要網域/網域 </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">此報表與資料地圖不相容，因此無法移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">國家/地區 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">國家/地區 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 訪客區隔成效 &gt; 地理位置 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">國家/地區/城市 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">此報表與資料地圖不相容，因此無法移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">IP 位址 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">IP 位址 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網域與使用者 &gt; IP 位址 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">IP 位址 </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">此報表與資料地圖不相容，因此無法移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">IP 深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">IP 位址 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網域與使用者 &gt; IP 深入 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">IP 位址 </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">此報表與資料地圖不相容，因此無法移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="15" style="text-align: center; ; height: 300px; width: 141px"><p class="line891"><strong>使用者名稱</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">按點擊數細分使用者名稱 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">使用者名稱 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網域與使用者 &gt; 使用者名稱 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">使用者名稱 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">此報表無法直接移轉： Urchin 6"「有效的點擊」"欄位會顯示所有點擊數，亦即有效點擊數加上錯誤點擊數的總和。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按位元組細分使用者名稱 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">使用者名稱 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 網域與使用者 &gt; 使用者名稱 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">使用者名稱 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">按工作階段細分使用者名稱 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">使用者名稱 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 訪客區隔成效 &gt; 使用者名稱 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">使用者名稱 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>瀏覽器與漫遊器</strong> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>瀏覽器</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">按工作階段細分瀏覽器 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">瀏覽器 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 網頁設計參數 &gt; 瀏覽器版本 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">瀏覽器 </td>
+  <td class="xl89" colspan="1" rowspan="42" style="text-align: center; ; width: 111px"><p class="line862">"UTM" 和 "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按點擊數細分瀏覽器 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">瀏覽器 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 瀏覽器與漫遊器 &gt; 瀏覽器版本 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">瀏覽器 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按位元組細分瀏覽器 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">瀏覽器 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 瀏覽器與漫遊器 &gt; 瀏覽器版本 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">瀏覽器 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>平台</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">按工作階段細分平台 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">平台 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 網頁設計參數 &gt; 平台版本 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平台 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按點擊數細分平台 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">平台 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 瀏覽器與漫遊器 &gt; 平台版本 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平台 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按位元組細分平台 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">平台 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 瀏覽器與漫遊器 &gt; 平台版本 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平台 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>組合</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">按工作階段細分組合 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">瀏覽器 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 網頁設計參數 &gt; 瀏覽器與平台組合 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">瀏覽器 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按點擊數細分組合 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">組合 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 瀏覽器與漫遊器 &gt; 平台組合 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">瀏覽器 - 平台 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">按位元組細分組合 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">組合 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 瀏覽器與漫遊器 &gt; 平台組合 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">瀏覽器 - 平台 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="9" style="text-align: center; ; height: 180px; width: 141px"><p class="line891"><strong>漫遊器</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">按點擊數細分漫遊器 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">漫遊器 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 瀏覽器與漫遊器 &gt; 漫遊器內容 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">漫遊器/User-Agent </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; height: 120px; width: 198px"><p class="line862">按位元組細分漫遊器 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">漫遊器 </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">IT 報表 &gt; 瀏覽器與漫遊器 &gt; 漫遊器 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">漫遊器/User-Agen </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有效的點擊 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">錯誤點擊 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">所有點擊數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">位元組 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">位元組 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>用戶端參數</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">螢幕解析度 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">螢幕解析度 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 網頁設計參數 &gt; 螢幕解析度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">螢幕解析度 </td>
+  <td class="xl89" colspan="1" rowspan="14" style="text-align: center; ; width: 111px"><p class="line862">"UTM" </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">此報表與資料地圖不相容，因此無法移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">螢幕色彩 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">色彩深度 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 網頁設計參數 &gt; 螢幕色彩 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">螢幕色彩 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">此報表與資料地圖不相容，因此無法移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">語言 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">語言 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">內容最佳化 &gt; 網頁設計參數 &gt; 語言 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">語言 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">行銷最佳化 &gt; 訪客區隔成效 &gt; 語言 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 309px"><p class="line862"> </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Java 已啟用 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Java 已啟用 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">內容最佳化 &gt; 網頁設計參數 &gt; Java 已啟用 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Java 已啟用 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">此報表與資料地圖不相容，因此無法移轉。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">時區設定 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Javascript 版本 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>電子商務</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">收益 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">收益 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">電子商務分析 &gt; 商務追蹤 &gt; 收益與交易 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">收益 </td>
+  <td class="xl89" colspan="1" rowspan="54" style="text-align: center; ; width: 111px"><p class="line862">"UTM" 和 "IP+User-Agent"，已啟用"「電子商務網站」" </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">交易次數 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">交易 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">電子商務分析 &gt; 商務追蹤 &gt; 收益與交易 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="6" style="text-align: center; ; height: 200px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 198px"><p class="line862">電子商務摘要 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">總收益 </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">管理人員檢視 &gt; 電子商務摘要 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">收益 </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">總交易次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">平均單次交易收益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">平均每日收益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">平均每日交易次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">平均工作階段收益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="28" style="text-align: center; ; height: 560px; width: 141px"><p class="line891"><strong>產品</strong> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">按收益細分產品 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">產品 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">電子商務分析 &gt; 產品推銷 &gt; 產品成效 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">產品/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">項目 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">收益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">收益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均價格 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均數量 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">按數量細分產品 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">產品 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">電子商務分析 &gt; 產品推銷 &gt; 產品成效 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">產品/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">項目 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">項目 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">收益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均價格 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均數量 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">按收益細分產品深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">區域 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">電子商務分析 &gt; 產品推銷 &gt; 產品成效 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">產品/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">項目 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">收益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">收益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均價格 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均數量 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">按數量細分產品深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">產品 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">電子商務分析 &gt; 產品推銷 &gt; 產品成效 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">產品/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">項目 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">項目 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">收益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均價格 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均數量 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="18" style="text-align: center; ; height: 382px; width: 141px"><p class="line891"><strong>收益來源</strong> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">按區域細分收益深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">區域 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">電子商務分析 &gt; 收益來源 &gt; 國家/地區深入 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">國家/地區/城市 </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">收益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">收益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/交易次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 198px"><p class="line862">按城市細分收益 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">城市 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">電子商務分析 &gt; 收益來源 &gt; 熱門城市 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">國家/地區/城市 </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">收益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">收益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/交易次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl68" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 198px"><p class="line862">按推薦連結細分收益 </td>
+  <td class="xl96"><p class="line862">推薦連結 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">電子商務分析 &gt; 收益來源 &gt; 推薦連結來源 </td>
+  <td class="xl65"><p class="line862">來源[媒介] </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">收益 </td>
+  <td class="xl65"><p class="line862">收益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl65"><p class="line862">交易 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl65"><p class="line862">價值/交易次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">百分比 </td>
+  <td class="xl65"><p class="line862">百分比 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">按搜尋字詞細分收益 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">按搜尋引擎細分收益深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">按網域細分收益深入 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>廣告活動追蹤</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">整體結果 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl89" colspan="1" rowspan="87" style="text-align: center; ; width: 111px"><p class="line862">已啟用"「廣告活動追蹤」"的 "UTM" </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">目標結果 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="14" style="text-align: center; ; height: 280px; width: 141px"><p class="line891"><strong>潛在客戶來源</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">來源 </td>
+  <td class="xl66" colspan="1" rowspan="11" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 行銷廣告活動的結果 &gt; 來源轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">來源 [媒介] </td>
+  <td class="xl97" colspan="1" rowspan="11" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">閱讀量 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">忠誠度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 4/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">費用深入分析 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>關鍵字分析</strong> </td>
+  <td class="xl67" style="width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">來源/關鍵字 </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 搜尋引擎行銷 &gt; 單次點擊出價與隨機轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">來源[媒介]/關鍵字</td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">閱讀量 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">忠誠度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">費用深入分析 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>關鍵字比較</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">關鍵字/來源 </td>
+  <td class="xl66" colspan="1" rowspan="8" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 搜尋引擎行銷 &gt; 整體關鍵字轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">關鍵字/來源[媒介] </td>
+  <td class="xl97" colspan="1" rowspan="8" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">閱讀量 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">忠誠度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">費用深入分析 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>廣告活動比較 &gt;...</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">廣告活動/來源 </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 行銷廣告活動的結果 &gt; 廣告活動轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">廣告活動/來源 </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">閱讀量 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">忠誠度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">費用深入分析 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>媒介比較</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">媒介/來源 </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">行銷最佳化 &gt; 行銷廣告活動的結果 &gt; 媒介轉換 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">媒介/來源 </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">閱讀量 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">忠誠度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">費用深入分析 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>內容 (A/B) 測試 &gt;...</strong> </td>
+  <td class="xl67" style="width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">來源/內容 </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">廣告版本測試 &gt; 特定來源測試 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">來源/內容 </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862">此報表無法直接移轉： 內含"「推薦連結」"來源的記錄將從相關 Urchin 6 報表中移除。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">點擊次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">網頁檢視 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">工作階段 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">閱讀量 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">忠誠度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">網頁檢視/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">目標 1/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易/造訪次數 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">價值/造訪次數 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">費用深入分析 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl72" colspan="1" rowspan="4" style="text-align: center; ; height: 120px; width: 141px"><p class="line891"><strong>潛在要素報表</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">達成目標時間 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">達成目標工作階段數 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl68" style="width: 198px; height: 40px"><p class="line862">交易時間 </td>
+  <td class="xl102" style="width: 121px"><p class="line862">交易次數 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">電子商務分析 &gt; 忠誠度與潛在要素 &gt; 交易時間 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl68" style="width: 198px; height: 40px"><p class="line862">交易工作階段數 </td>
+  <td class="xl102" style="width: 121px"><p class="line862">交易次數 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">電子商務分析 &gt; 忠誠度與潛在要素 &gt; 交易的造訪次數 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">交易 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl79" colspan="1" rowspan="2" style="text-align: center; ; height: 44px; width: 141px"><p class="line891"><strong>時段深入分析</strong> </td>
+  <td class="xl77" style="background-color: #ffcc99; width: 198px"><p class="line862">按小時細分目標轉換 </td>
+  <td class="xl78" style="width: 121px"><p class="line862"> </td>
+  <td class="xl78" style="width: 309px"><p class="line862">- </td>
+  <td class="xl78" style="width: 188px"><p class="line862">- </td>
+  <td class="xl99" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">按小時細分銷售轉換 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl73" colspan="1" rowspan="2" style="text-align: center; ; height: 41px; width: 141px"><p class="line891"><strong>點擊詐欺監測</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">按 IP 細分重複點擊 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl75" style="background-color: #ffcc99; width: 198px"><p class="line862">按來源細分重複點擊 </td>
+  <td class="xl76" style="width: 121px"><p class="line862"> </td>
+  <td class="xl76" style="width: 309px"><p class="line862">- </td>
+  <td class="xl76" style="width: 188px"><p class="line862">- </td>
+  <td class="xl100" style="width: 155px"><p class="line862"> </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>De links naar mijn site bevatten mijn eigen variabelen voor het bijhouden van conversies voor campagnes. Kan ik deze variabelen gebruiken in plaats van die van Urchin?</strong> <p class="line874">Als u uw online links al heeft gecodeerd met uw eigen variabelen, kunt u deze bestaande variabelen indelen als Urchin-variabelen voor het bijhouden van conversies voor campagnes. Uw gecodeerde links moeten ten minste drie variabelen bevatten. Deze verwijzen naar: <ol type="1"><li>utm_source: de bron van uw campagne (bijvoorbeeld Google, Yahoo) </li><li>utm_medium: het medium van uw campagne (cpc, banner, e-mail) </li><li>utm_campaign: de naam van uw campagne (spring_sale) </li></ol><p class="line874">Voor deze instructies gaan we ervan uit dat uw site de volgende URL bevat: <pre>            www.example.com/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>Stap 1.</strong> Pas uw variabelen aan op de variabelen van Urchin. Maak een tabel met een indeling zoals weergegeven in het onderstaande voorbeeld: <pre>               Campaign     Advertentiebron     Advertentietype     Zoekwoord   A/B-inhoud  Master
+Gebruikerscodes=    camp            adver       type        kwd       versie       
+Urchin-codes=  utm_campaign utm_source  utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>Stap 2.</strong> Pas het UTM-bestand aan. <ul><li style="list-style-type:none">Open het bestand 'urchin.js' in een teksteditor. Boven aan het bestand is een gedeelte dat door de gebruiker is gedefinieerd. Dit bevat de volgende utm-variabelen: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">Met de gecodeerde voorbeeldlink hierboven wordt dit gedeelte op de volgende manier gewijzigd: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>Stap 3.</strong> Maak filters voor deze nieuwe variabelen voor het bijhouden van conversies. <ul><li style="list-style-type:none">Dit is de basisfilterconfiguratie die u voor elk filter moet gebruiken: </li></ul><p class="line867"><pre>                Filtertype: Geavanceerd
+                Veld A : utm_campaign_uri (raw)
+                A extraheren: new_variable =([^&amp;]*)
+                Veld B : (Geen)
+                B extraheren: (leeg)
+                Uitvoeren naar : utm _( old_variable )
+                Samenstellen: $A1
+                Veld A verplicht: Ja
+                Veld B verplicht: nee
+                Uitvoerveld negeren: Ja
+                Hoofdlettergevoelig: nee
+</pre><ul><li style="list-style-type:none">old_variable verwijst naar de standaardvariabele van Urchin voor het bijhouden van conversies. new_variable verwijst naar uw eigen variabele voor het bijhouden van conversies. U heeft voor elke aangepaste variabele een filter nodig. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

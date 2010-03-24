@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6.602 Geo-databases</strong> <p class="line874">Urchin 6.602 wird mit zwei Geodatenbanken geliefert: <ul><li><p class="line891"><strong>geo.db</strong> enthält detaillierte Informationen zum Großraum (Land/Region/Stadt), zu Netzwerken (Organisationen) und Domains. Diese Datenbank enthält im Wesentlichen dieselben (jedoch aktualisierten) Informationen wie vorherige Versionen von Urchin 6 (6.400 - 6.601). </li><li class="gap"><p class="line891"><strong>geo.light.db</strong> enthält nur Informationen zum Großraum auf Länderebene, jedoch keine Informationen zu Regionen, Städten, Netzwerken und Organisationen. Diese Datenbank verfügt über einen wesentlich geringeren Speicher-Footprint und eine geringere Ladezeit. Verwenden Sie diese Datenbank, um die Leistung des Protokollverarbeitungsmoduls zu beschleunigen. Die Verwendung dieser Lightweight-Geodatenbank hat Auswirkungen auf die folgenden Berichte. <ul><li style="list-style-type:none">o Die folgenden "Landkarten"-Berichte zeigen nur Großraumdaten auf Länderebene, jedoch keine Informationen zu Regionen und Städten: <ul><li><p class="line862">Leitender Angestellter -&gt; Übersicht für leitende Angestellte (Dashboard) </li><li><p class="line862">Leitender Angestellter -&gt; Landkarten-Overlay </li><li><p class="line862">Vermarkter -&gt; Vermarkter - Übersicht (Dashboard) </li><li><p class="line862">Webmaster -&gt; Übersicht für Webmaster (Dashboard) </li><li><p class="line862">Marketing-Optimierung -&gt; Leistung der Besuchersegmente -&gt; Landkarten-Overlay </li></ul><p class="line862">o Es werden keine Daten im Bericht "Provider der Besucher" (Marketing-Optimierung -&gt; Leistung der Besuchersegmente -&gt; Provider der Besucher) angezeigt. <p class="line862">o Es werden keine Daten im Bericht "Domains" (Marketing-Optimierung -&gt; Leistung der Besuchersegmente -&gt; Domains) angezeigt. </li></ul></li></ul><p class="line874">Standardmäßig wird die Datenbank geo.db verwendet. Heben Sie zum Verwenden der Datenbank geo.light.db die Auskommentierung der entsprechenden Zeile in der Datei urchin.conf auf: <p class="line867"><pre>
+
+# Geodatenbankeinstellungen
+
+# Heben Sie zum Aktivieren der Lightweight-Geodatenbank die Auskommentierung in unten stehende Zeile auf.
+# GeodbLight: EIN
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

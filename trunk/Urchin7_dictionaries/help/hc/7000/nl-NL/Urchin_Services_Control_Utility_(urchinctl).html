@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Hulpprogramma Urchin Services Control Utility (urchinctl)</strong> <p class="line867"><strong>Overzicht</strong> <p class="line874">Met de Urchin Services Control utility, urchinctl, wordt de status van de services Urchin Scheduler en Urchin Webserver gecontroleerd en kunt u de hulpprogramma's starten en stoppen. Op UNIX-systemen wordt urchinctl gewoonlijk aangeroepen via een van de opstartscripts van het systeem om de Urchin-services automatisch te starten of te stoppen. <p class="line874">Met urchinctl kunnen de volgende bewerkingen worden uitgevoerd: <ul><li>De status van de master- en slaveplanner van Urchin6 controleren. </li><li class="gap">De planner of webserver (of beide) starten, stoppen of opnieuw starten. </li><li class="gap">De webserver starten op een alternatieve poort. </li><li class="gap">De webserver met SSL-codering starten. </li></ul><p class="line867"><strong>Gebruik</strong> <p class="line874">urchinctl bevindt zich in de map bin van de Urchin-distributie. <p class="line874">Het hulpprogramma wordt als volgt gebruikt: <p class="line867"><pre>
+  urchinctl -h (drukt gebruiksoverzicht af en sluit af)
+
+  urchinctl -v (drukt versie af en sluit af)
+
+  urchinctl [-e] [-p poort] [[-s] | [-w]] actie
+
+</pre><p class="line874">waarbij het volgende geldt: <p class="line867"><pre>
+  -e activeert codering (SSL) in de webserver
+
+  -p geeft de poort op voor de webserver waarop moet worden geluisterd
+
+  -s voert de actie alleen uit op de Urchin-planner
+
+  -w voert de actie alleen uit op de Urchin-webserver
+
+</pre><p class="line874">en de actie is een van de volgende: <p class="line867"><pre>
+  start (start de service(s))
+
+  stop (stopt de service(s))
+
+  restart (stopt de service(s) om ze vervolgens weer te starten)
+
+  status (geeft de runtimestatus van de webserver/planner weer)
+
+</pre><p class="line874">Standaard wordt de actie op zowel de webserver als de planner uitgevoerd, tenzij de optie "-s" (planner) of "-w" (webserver) wordt opgegeven. Houd er rekening mee dat deze opties elkaar uitsluiten. <p class="line867"><strong>Aandachtspunten</strong> <p class="line874">Op UNIX-systemen moet urchinctl worden uitgevoerd als de gebruiker/gebruikers-id waarvoor Urchin is geïnstalleerd om ervoor te zorgen dat de urchinwebd- en urchind-processen worden gestart als de betreffende gebruikers-id. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

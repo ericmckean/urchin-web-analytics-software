@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Wie kann ich JavaScript-Ereignisse erfassen?</strong> <p class="line862">Verwenden Sie zum Erfassen eines Ereignisses die JavaScript-Funktion urchinTracker, um einen Namen für das Ereignis anzugeben. Beispiel: Durch das Aufrufen von <p class="line867"><pre>    javascript:urchinTracker('/homepage/link1');
+</pre><p class="line874">wird jedes Auftreten des Aufrufereignisses protokolliert, als ob es ein Seitenzugriff für die URL /homepage/link1 wäre. Das Argument muss mit einem Schrägstrich beginnen. Die Ereignisnamen können in jeder gewünschten Art von Verzeichnisstruktur angeordnet werden. <p class="line874">Wenn Sie z. B. Ereignisse nach Seite und Ereignistyp anordnen möchten, können Sie eine Hierarchie nach diesem Schema erstellen: <p class="line867"><pre>    * '/homepage/links/link1'
+    * '/homepage/radiobuttons/button1'
+    * '/contactform/rollovers/image1'
+</pre><p class="line867"><strong>Beispiele für HTML-Code</strong> <p class="line874">Im folgenden Beispiel wird dargestellt, wie ein onClick-Ereignis protokolliert wird: <p class="line867"><pre>    &lt;a href="javascript:void(0);" onClick="javascript:urchinTracker('/folder/file');"&gt;
+</pre><p class="line874">Beispiel für das Protokollieren eines Rollover-Ereignisses: <p class="line867"><pre>    &lt;a href="javascript:void(0);" onMouseOver="javascript:urchinTracker ('/folder/file');"&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

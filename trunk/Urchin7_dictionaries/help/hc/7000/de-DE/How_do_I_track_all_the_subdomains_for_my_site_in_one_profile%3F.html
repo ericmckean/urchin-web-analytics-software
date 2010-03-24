@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Wie kann ich alle Sub-Domains für meine Website in einem Profil erfassen?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dieser Artikel wurde von</em> <a href="ivantageLimited.html">ivantage Limited</a><em> erstellt, einem autorisierten Berater für Urchin-Software.</em> </li></ul><p class="line874">Sie können Sub-Domains in demselben Profil wie die Domain erfassen. Dafür müssen Sie dem Tracking-Code auf jeder Seite der Sub-Domain eine Zeile hinzufügen. Bei der folgenden Anleitung wird vorausgesetzt, dass dieses Profil mit der primären Domain als aufgelistete Website (z. B. "example.co.uk") eingerichtet wurde. <ol type="1"><li>Fügen Sie Ihrem Tracking-Code auf allen Seiten Ihrer Sub-Domain und Ihrer primären Domain folgende Zeile (in Fettschrift) hinzu: </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">Diese Zeile muss sich auf die primäre Domain beziehen (example.co.uk). </li></ul><p class="line874">Obwohl Sie mit dieser Änderung Sub-Domains innerhalb eines Profils erfassen können, wird in Ihren Berichten vermutlich nicht zwischen Seiten aus "www.example.co.uk" und "help.example.co.uk" unterschieden. Beispielsweise können in Ihrem Bericht "Beliebtester Content" Treffer für "www.example.co.uk/index.html" und "help.example.co.uk/more.html" vorliegen, im Bericht wird jedoch Folgendes angezeigt: <pre>   /index.html
+   /more.html
+</pre><p class="line874">Wenn Sie zwischen Ihren Sub-Domains unterscheiden möchten, können Sie für Ihr Profil einen erweiterten Filter mit den folgenden Einstellungen anlegen: <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">Mit diesem Filter werden die zuvor genannten Beispiele mit der angefügten Sub-Domain angezeigt: <pre>   www.example.co.uk/index.html
+   help.example.co.uk/more.html
+</pre><p class="line874">HINWEIS: Dieser Filter basiert darauf, dass der Hostname Ihrer Website, einschließlich der Sub-Domain in Ihre Zugriffsprotokolldatei geschrieben wird. Wenn die Zugriffprotokolldatei den Hostnamen nicht enthält, können  Urchin 6-Berichte keinen Unterschied aufzeichnen, z. B. zwischen den Dateien "index.html" der beiden Domains: <pre> www.example.co.uk/index.html
+ help.example.co.uk/more.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

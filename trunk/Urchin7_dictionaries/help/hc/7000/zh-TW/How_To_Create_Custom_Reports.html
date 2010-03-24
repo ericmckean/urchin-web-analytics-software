@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何製作自訂報表</strong> <p class="line874">若要製作自訂的報表，請按下列步驟操作： <ol type="1"><li><p class="line862">選擇資料地圖表格或定義新的資料地圖表格 (請參閱<a href="Custom_Data_Maps.html">自訂資料地圖</a>)； </li><li><p class="line862">透過複製 &lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample 來建立新的 (「.rs2」) 報表檔案。 </li><li>在報表檔案內新增列，以定義新的報表。 </li></ol><p class="line874">報表檔案格式詳述如下： <ul><li>ID – 獨有報表 ID： <ul><li>C= 類別 </li><li>D= 資料 </li><li>M= 選單 </li><li>R= 報表 </li><li>S= 子報表 </li><li>P= 網頁報表 </li><li>B= 資訊主頁 </li></ul></li><li>RS – 資訊主頁/報表區段： <ul><li>1= 執行人員 </li><li>2= 行銷專員 </li><li>4= 網站管理員 </li></ul></li><li>RR – 報表需求： <ul><li>1= 軟體 </li><li>2= 進階 </li><li>4= 電子商務 </li><li>8=Urchin 流量監視器 </li></ul></li><li>NTITLE – 導覽標題 (目錄項目編號) </li><li>ONCOLOR – 彩色導覽 </li><li>OFFCOLOR – 非彩色導覽 </li><li>HELP – 報表說明 (目錄項目編號) </li><li>NDATA – 資料元素數量 (項目必須緊跟在後) <ul><li>使用此欄位時可以在後方加上額外的 D 類型 (資料) 子報表 </li></ul></li><li>CTITLES – 欄標題 (目錄項目編號) </li><li>CTYPES – 格式設定時使用的欄類型 <ul><li>10= 字串 </li><li>11= 日期/年月 </li><li>12= 日期 </li><li>20= 號碼 </li><li>21= 收益 </li><li>22= 位元組 </li><li>23= 時間比例 </li><li>24= 比例 </li><li>25=百分比 </li><li>26= 時間 </li><li>30=總百分比 </li><li>40= 收益 </li><li>41= 收益/數字 </li><li>42= 數字/收益 </li></ul></li><li>TABLE – 資料表格數量： <ul><li>T= 總計 </li><li>TR= 交易 </li><li>H= 長條圖 </li><li>V= 訪客 </li><li>1-n 表格 </li></ul></li><li>DXFORMAT – 資料擷取格式 </li><li>RF - 必填欄位 </li><li>RT - 報表類型： <ul><li>1= 圖表總計 </li><li>2= 長條圖 </li><li>3= 堆疊圖 </li><li>4= 熱門內容 </li><li>5= 樹狀圖 </li><li>6= 目錄 </li><li>7= 圖表限制 </li><li>8= 點狀圖 </li><li>9= 點閱率 </li><li>10= 已定義的程序 </li><li>11= 首頁重疊廣告 </li><li>12= 訪客分佈圖 </li><li>13= 目標驗證 </li><li>14= 目標路徑 </li><li>20= 主要效能指標日期報表 </li><li>21= 前十大主要效能指標 </li><li>22= 趨勢摘要 </li><li>23= 轉換摘要 </li><li>24= 迷你地圖 </li></ul></li><li>GTYPES – 圖表類型： <ul><li>1= 列 </li><li>2= 行 </li><li>3= 扇形圖 </li><li>4= 橫條圖 </li><li>5= 趣味圖 </li><li>6= 多線圖 </li></ul></li><li>FSEP – 欄位分隔字元 </li><li>SP – 特殊選項 (新增位元地圖編號)： <ul><li>1= 總計 </li><li>2= 平均值 </li><li>4= 日期比較 </li><li>8= 轉換為小寫 </li><li>16= 一段時間內的資料 </li><li>32= 重疊廣告 </li><li>64= 語言查閱 </li><li>128= 區隔 </li><li>256= 生命週期值 </li><li>512= 交易詳情 </li><li>1024= 訪客深入 </li><li>2048= 字詞查閱 </li></ul></li><li>SR – 特殊報表旗幟： <ul><li>1= 關鍵字建議 </li><li>2= 點擊 </li><li>3= 天數部分細目 </li><li>4= 訪客清單 </li><li>5= 訪客分佈圖 </li><li>6= 客戶使用自訂目錄 </li><li>7= 日期比較 </li></ul></li><li>FNT – 篩選器編號篩選器類型： <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF – 篩選器編號欄位 </li><li>FNV – 篩選值 </li><li>FST – 篩選字串類型： <ul><li>1= 排除 </li><li>2= 包含 </li></ul></li><li>FSF – 篩選字串欄位 </li><li>FSX - 正規表示法字串 </li></ul><p class="line874">以下是報表列與其解釋的範例： <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> ID 為 1208 的子報表 </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> 執行回報區段 </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">必須啟用 Urchin 流量監視器 </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> 選單導覽標題 </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      滑鼠移到選單上方的色彩 </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      滑鼠沒有移到選單上方的色彩 </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> 說明項目 </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862"> 沒有資料子報表 </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> 回報表格欄的標籤 </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> 回報表格欄的類型 </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> 資料地圖 ID </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">資料擷取格式 </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 無必填欄位 </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> 報表類型為「熱門內容」 </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  兩種圖表類型： 「扇形圖」與「橫條圖」 </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">並未使用欄位分隔字元 </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> 使用特殊選項： 4 – 日期比較；16 - 一段時間內的資料；128 – 區隔；256 - 生命週期值；1024 – 訪客深入 </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 定期報表 </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 並未使用選項篩選器 </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 並未使用選項篩選器 </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 並未使用選項篩選器 </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 並未使用選項篩選器 </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 並未使用選項篩選器 </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 並未使用選項篩選器 </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

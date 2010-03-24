@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>指向我网站的这些链接已包含我自己的广告系列跟踪变量，我能使用这些变量替代 Urchin 的变量吗？</strong> <p class="line874">如果您已使用自己的跟踪变量标记了在线链接，则可将这些现有变量映射到 Urchin 的广告系列跟踪变量中。您标记的链接需包含至少 3 个变量。这些变量将映射到： <ol type="1"><li>utm_source: 您的广告系列来源（如 Google、Yahoo） </li><li>utm_medium: 您的广告系列媒介（每次点击费用、横幅、电子邮件） </li><li>utm_campaign: 您的广告系列名称（春季特价） </li></ol><p class="line874">在这些说明中，我们假设您的网站包含以下网址： <pre>            www.example.com/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>第 1 步</strong> 将您的变量与 Urchin 的变量进行匹配。创建采用以下示例所示格式的表： <pre>               广告系列     广告来源    广告类型     关键字   A/B 内容  主要
+用户代码=    camp       adver       type        kwd       version      
+Urchin 代码=  utm_campaign utm_source     utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>第 2 步</strong> 修改 UTM 文件。 <ul><li style="list-style-type:none">在文本编辑器中打开 urchin.js 文件。在文件顶部有一个用户定义的部分，其中包括以下 utm 变量： </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">利用上述标记的链接示例，可将此部分编辑如下： </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>第 3 步</strong> 为这些新跟踪变量创建过滤器。 <ul><li style="list-style-type:none">以下是您应用于各过滤器的基本过滤器配置： </li></ul><p class="line867"><pre>                过滤器类型：高级
+                字段 A：utm_campaign_uri (raw)
+                提取 A：new_variable =([^&amp;]*)
+                字段 B：（无）
+                提取 B：（空）
+                输出至：utm _( old_variable )
+                构造器：$A1
+                必填字段 A：是
+                必填字段 B：否
+                覆盖输出字段：是
+                区分大小写：否
+</pre><ul><li style="list-style-type:none">old_variable 指默认的 Urchin 跟踪变量。new_variable 指您自己的跟踪变量。请记住，每个修改的变量都需要有一个过滤器。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

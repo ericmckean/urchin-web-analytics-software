@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>定義自訂的訪客區段</strong> <p class="line874">除了以預先定義的區段類型 (例如地理區域及語言偏好設定) 來區隔使用者，您還可以使用 Urchin 6 定義自訂的區段，並分析每個區段的使用者行為。例如，請訪客在表單上勾選其工作性質 (技術 / 工程師、行銷人員 / 公關等等)，然後根據訪客勾選的工作類別資訊分析訪客的瀏覽及購買行為。 <p class="line862">您可以從 [行銷最佳化] &gt; [訪客區段效能] &gt; [使用者定義] 報告中檢視每個自訂區段的轉換行為。同時，許多其他的報告都可讓您根據訪客區段來跨資料分析。若要跨資料分析，請按一下多數報告任何項目最左邊的分析選項按鈕。選取 [使用者定義] 以檢視您自訂的區段。 <p class="line862">若要設定訪客區段，只要呼叫 JavaScript <tt class="backtick">__</tt> utmSetVar 函數即可。例如，請在網頁 Uuchin 流量監視器下方的任何位置進行下列呼叫： <p class="line867"><pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line874">範例：將訪客歸類到此網頁的「行銷人員 / 公關」區段 <p class="line874">在此範例中，任何造訪此網頁的人都會歸類到「行銷人員 / 公關」區段。 <p class="line867"><pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line874">範例：將訪客歸類到訪客特定區段 <p class="line874">在此範例中，會根據訪客在表單中的選擇將他們歸類到某區段。 <p class="line867"><pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;技術 / 工程師&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;行銷人員 / 公關&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;製造&lt;/option&gt;
+    &lt;option value="General Management"&gt;一般管理&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

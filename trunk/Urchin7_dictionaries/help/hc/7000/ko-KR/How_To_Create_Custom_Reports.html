@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>맞춤 보고서 만들기</strong> <p class="line874">맞춤 보고서를 만드는 방법은 다음과 같습니다. <ol type="1"><li><p class="line862">데이터 지도 테이블을 선택하거나 새 테이블을 정의합니다(<a href="Custom_Data_Maps.html">맞춤 데이터 지도</a> 참조); </li><li><p class="line891">&lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample 파일을 복사하여 ‘.rs2’ 확장자로 새 보고서 파일을 만듭니다. </li><li>보고서 파일에 행을 추가하여 새 보고서를 정의합니다. </li></ol><p class="line874">보고서 파일의 형식은 다음과 같습니다. <ul><li>ID – 보고서 ID: <ul><li>C=카테고리 </li><li>D=데이터 </li><li>M=메뉴 </li><li>R=보고서 </li><li>S=하위 보고서 </li><li>P=페이지 보고서 </li><li>B=대시보드 </li></ul></li><li>RS – 대시보드/보고 섹션: <ul><li>1=실무진 </li><li>2=마케팅 담당자 </li><li>4=웹마스터 </li></ul></li><li>RR - 보고서 요구사항: <ul><li>1=소프트웨어 </li><li>2=고급 </li><li>4=전자상거래 </li><li>8=UTM </li></ul></li><li>NTITLE – 탐색 제목(사전 항목 번호) </li><li>ONCOLOR – 탐색 설정 색상 </li><li>OFFCOLOR – 탐색 해제 색상 </li><li>HELP – 보고서 도움말(사전 항목 번호) </li><li>NDATA – 데이터 요소 개수(바로 다음에 항목이 나와야 함) <ul><li>이 입력란 다음에 D(데이터) 유형의 추가 하위 보고서가 나올 수 있습니다. </li></ul></li><li>CTITLES – 열 제목(사전 항목 번호) </li><li>CTYPES – 형식 지정에 사용된 열 유형 <ul><li>10=문자열 </li><li>11=날짜/연월 </li><li>12=날짜 </li><li>20=번호 </li><li>21=수익 </li><li>22=바이트 </li><li>23=시간비 </li><li>24=비율 </li><li>25=pct </li><li>26=시간 </li><li>30=총 pct </li><li>40=수익 </li><li>41=수익/수 </li><li>42=수/수익 </li></ul></li><li>TABLE – 데이터 테이블 번호: <ul><li>T=합계 </li><li>TR=거래 </li><li>H=히스토그램 </li><li>V=방문자 </li><li>1-n 테이블 </li></ul></li><li>DXFORMAT – 데이터 추출 형식 </li><li>RF – 필수 입력란 </li><li>RT – 보고서 유형: <ul><li>1=전체 그래프 </li><li>2=히스토그램 </li><li>3=스택 </li><li>4=인기 </li><li>5=트리 </li><li>6=디렉토리 </li><li>7=그래프(제한) </li><li>8=점 </li><li>9=클릭률 </li><li>10=정의된 유입경로 </li><li>11=홈페이지 분포 </li><li>12=방문자 분포 </li><li>13=목표 확인 </li><li>14=목표 경로 </li><li>20=KPI 날짜 보고서 </li><li>21=KPI 상위 10개 </li><li>22=동향 요약 </li><li>23=전환 요약 </li><li>24=Mini 지도 </li></ul></li><li>GTYPES – 그래프 유형: <ul><li>1=막대형 </li><li>2=선형 </li><li>3=원형 </li><li>4=세로 막대형 </li><li>5=펀 </li><li>6=다중 선형 </li></ul></li><li>FSEP – 입력란 구분기호 </li><li>SP – 특수 옵션(비트맵 번호 추가): <ul><li>1=합계 </li><li>2=평균 </li><li>4=날짜 비교 </li><li>8=소문자 변환 </li><li>16=시간별 데이터 </li><li>32=오버레이 </li><li>64=언어 검색 </li><li>128=세그먼트 </li><li>256=평생 가치 </li><li>512=거래 내역 </li><li>1024=방문자 드릴다운: </li><li>2048=용어 검색 </li></ul></li><li>SR – 특수 보고서 플래그: <ul><li>1=키워드 제안 </li><li>2=클릭률 </li><li>3= 시간대별 분석 </li><li>4=방문자 목록 </li><li>5=방문자 분포 </li><li>6=맞춤 사용을 위한 맞춤 사전 </li><li>7=날짜 비교 </li></ul></li><li>FNT -필터 번호 필터 유형: <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF -필터 번호 입력란 </li><li>FNV – 필터값 </li><li>FST – 필터 문자열 유형: <ul><li>1=제외 </li><li>2=포함 </li></ul></li><li>FSF - 필터 문자열 입력란 </li><li>FSX – 정규식 문자열 </li></ul><p class="line874">다음은 보고서의 각 행에 대한 예제와 설명입니다. <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> ID가 1208인 하위 보고서 </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> 실무진 보고 섹션 </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">UTM을 활성화해야 함 </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> 메뉴 탐색 제목 </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      메뉴 선택 색상 </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      메뉴 선택 해제 색상 </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> 도움말 항목 </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862">  데이터가 없는 하위 보고서 </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> 보고 테이블의 열 라벨 </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> 보고 테이블의 열 유형 </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> 데이터 지도 ID </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">데이터 추출 형식 </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 필수 입력란 없음 </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> ‘인기’ 보고서 유형 </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  2개의 그래프 유형: ‘원형’ 및 ‘세로 막대형’ </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">입력란 구분기호가 사용되지 않음 </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> 사용된 특수 옵션: 4 – 날짜 비교, 16 - 시간별 데이터, 128 – 세그먼트, 256 – 평생 가치, 1024 - 방문자 드릴다운 </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 일반 보고서 </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 선택 필터가 사용되지 않음 </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 선택 필터가 사용되지 않음 </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 선택 필터가 사용되지 않음 </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 선택 필터가 사용되지 않음 </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 선택 필터가 사용되지 않음 </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 선택 필터가 사용되지 않음 </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

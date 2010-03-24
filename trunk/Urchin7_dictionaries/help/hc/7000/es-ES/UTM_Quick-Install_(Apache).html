@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Instalación rápida del UTM (Apache)</strong> <p class="line867"><em>Autor: </em>  <a href="Panalysis.html">Panalysis</a><em>, un asesor autorizado de Urchin </em> <p class="line874">La siguiente información es pretende guiarle brevemente a través de la instalación del Supervisor de tráfico de Urchin para sitios web alojados en servidores Apache en cualquier plataforma. <p class="line867"><strong>Paso 1: copiar los archivos del Supervisor de tráfico de Urchin (UTM) en la raíz del documento del sitio web.</strong> Los archivos, "urchin.js" y "<tt class="backtick">__</tt>utm.gif" se encuentran en el directorio "util/utm" de la distribución de Urchin. Copie estos dos archivos al directorio principal de contenido de su sitio web. <p class="line867"><strong>Paso 2: hacer referencia al Supervisor de tráfico de Urchin (UTM) en su código HTML.</strong>  Introduzca la línea siguiente en todas sus páginas HTML. Si bien puede ubicarse en cualquier parte de la página, le recomendamos situarlo en la sección de la cabecera (&lt;head&gt;). Si utiliza una plantilla o una inclusión común, introdúzcala aquí. <span class="u">IMPORTANTE</span>: El nombre del archivo GIF empieza con dos guiones bajos. <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line874">Si utiliza un paquete como "HTML Tidy", es posible que desee incluir la línea de Javascript en la cabecera (HEAD) de su página, por ejemplo: <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>Paso 3: habilitar cookies en su registro de Apache.</strong>  Si no están aún habilitadas, puede utilizar el siguiente ejemplo "httpd.conf" para habilitar el registro de cookies: <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\"\"%{User-Agent}i\"\"%{Cookie}i\"" special
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log special
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>Paso 4: establecer un perfil de Urchin para utilizar el Supervisor de tráfico de Urchin (UTM).</strong> En la interfaz de administración de Urchin, edite el perfil en cuestión y haga clic en la pestaña "Informes". Establezca el Método de seguimiento de usuarios para el Supervisor de tráfico de Urchin (UTM). Defina como dominio de este último la dirección de su sitio web sin "www". Cuando finalice, haga clic en el botón "Actualizar". A continuación, haga clic en la pestaña "Configuración del perfil" y elija "Habilitar todo para UTM" en el conjunto predeterminado de informes y, a continuación, haga clic de nuevo en "Actualizar". Eso es todo. Ahora, su sitio web empezará a registrar los datos del Supervisor de tráfico de Urchin (UTM) en el archivo de registro normal que se identificará la próxima vez que ejecute Urchin. <p class="line867"><strong>¿Funciona?</strong> Para comprobar que UTM registra datos en su archivo de registro de forma correcta, compruebe el registro después de instalar el UTM y haber hecho clic en unas cuantas páginas del sitio web. Debería ver una entrada similar a la siguiente al final del archivo: <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line862">Si no puede ver las entradas "<tt class="backtick">__</tt>utma", asegúrese de que las cookies están correctamente habilitadas en el registro. Si el estado del código no es de 200, compruébelo para asegurarse de que los archivos se copiaron correctamente a la raíz de su documento. <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

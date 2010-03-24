@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何在 RedHat 上安装 Urchin 启动脚本？</strong> <p class="line874">安装后会创建一个 Urchin 启动脚本。脚本命名为"urchin_daemons" ，保存在 Urchin util 目录中。"/path/to/urchin/util/" <p class="line874">请将此脚本复制到 /etc/rc.d/init.d/ directory 中。 <ul><li>cd /path/to/urchin/util </li><li>cp urchin_daemons /etc/rc.d/init.d/ </li><li>chmod +x /etc/rc.d/init.d/urchin_daemons </li><li>查看 /etc/inittab 文件，并判断默认的运行级别（通常为 3）。[[参见下文]] </li><li>然后将目录更改为 /etc/rc.d/rcX.d（其中的 X 是运行级别）。 </li><li>cd /etc/rc.d/rc3.d </li><li>创建名为 S95urchin 和 K05urchin 的符号链接，将其指向 /etc/rc.d/init.d/urchin_daemons。 </li><li>ln -s ../init.d/urchin_daemons S95urchin </li><li>ln -s ../init.d/urchin_daemons K05urchin </li></ul><p class="line874">[[ # 默认 runlevel。RHS 使用的 runlevel 为： <ul><li>0 - 暂停（不要将 initdefault 设为此值） </li><li>1 - 单一用户模式 </li><li>2 - 多用户，不采用 NFS（如果没有网络，则此设置与 3 相同） </li><li>3 - 完整多用户模式 </li><li>4 - 未使用 </li><li>5 - X11 </li><li>6 - 重新启动（不要将 initdefault 设为此值） </li></ul><p class="line874">id:3:initdefault: ]] </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

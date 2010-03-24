@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Definieren von benutzerdefinierten Besuchersegmenten</strong> <p class="line874">Neben dem Segmentieren von Benutzern mittels vordefinierter Segmente wie geografische Region und Spracheinstellung ermöglicht Ihnen Urchin 6, benutzerdefinierte Segmente festzulegen und die Funktionsweise jedes Segments zu analysieren. Sie können Besucher beispielsweise bitten, in einem Formular die auf sie zutreffende Berufskategorie auszuwählen (z. B. Technik/Ingenieurwesen, Marketing/PR und andere). Anschließend können Sie auf der Grundlage der ausgewählten Berufskategorie das Such- und Kaufverhalten analysieren. <p class="line862">Sie können die Conversion-Funktionsweise für jedes Ihrer benutzerdefinierten Segmente im Bericht "Marketingoptimierung" &gt; "Leistung des Besuchersegments" &gt; "Benutzerdefiniert" anzeigen. Außerdem können Sie mit vielen weiteren Berichten eine übergreifende Analyse der Daten entsprechend dem Besuchersegment ausführen. Klicken Sie zur Durchführung einer übergreifenden Analyse in den meisten Berichten links neben einem Eintrag auf die Schaltfläche "Analyseoptionen". Wählen Sie "Benutzerdefiniert" aus, um Ihre benutzerdefinierten Segmente anzuzeigen. <p class="line862">Rufen Sie zum Festlegen eines Besuchersegments einfach die JavaScript-Funktion <tt class="backtick">__</tt>utmSetVar auf. Nehmen Sie beispielsweise den folgenden Aufruf an einer beliebigen Stelle auf der Webseite unter dem UTM vor: <p class="line867"><pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line874">Beispiel: Zuweisen von Besuchern einer bestimmten Seite zum Segment "Marketing/PR" <p class="line874">In diesem Beispiel wird jeder Besucher dieser Seite dem Segment "Marketing/PR" zugewiesen. <p class="line867"><pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line874">Beispiel: Zuweisen von Besuchern zu einem Segment anhand ihrer Auswahl <p class="line874">In diesem Beispiel werden Besucher entsprechend ihrer Auswahl in einem Formular einem Segment zugewiesen. <p class="line867"><pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;Technik/Ingenieurwesen&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;Marketing/PR&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;Verarbeitende Industrie&lt;/option&gt;
+    &lt;option value="General Management"&gt;Geschäftsführung&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

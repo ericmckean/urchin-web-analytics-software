@@ -1,0 +1,19 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>使用外部驗證或略過驗證程序</strong> <p class="line867"><strong>總覽</strong> <p class="line874">按照預設設定，當 Urchin 工作階段控制器 (session.cgi) 呼叫位於 Urchin 安裝之 "bin" 目錄下的 "auth" 二進位格式檔時，Urchin 驗證就會執行。此二進位格式檔會查詢組態資料庫，並比較提供的使用者名稱和密碼和儲存在組態中的同類資訊。另有一個表示傳回至工作階段控制器的是成功或失敗狀態的結束代碼。只要對組態進行一項簡單的變更，您就可以控制驗證二進位格式檔的位置。本模組化設定可讓管理員呼叫外部驗證程式，而不呼叫預設的 "auth" 二進位格式檔。 <p class="line867"><img alt="Using_External_Authentication" src="../images/Using_External_Authentication.jpg" title="Using_External_Authentication" /> <p class="line874">上方圖表顯示此外部驗證程式可執行任何您想要進行的驗證功能，其中包含 LDAP 和其他資料庫呼叫。只要程式執行者和執行 "urchinwebd" (也就是 Urchin 的 Apache 網頁伺服器) 的使用者是同一個人，並且與輸入或輸出要求相符，您就可以輕易的修改 Urchin，並使用不同型式的驗證。 <p class="line867"><strong>指定驗證常式</strong> <p class="line874">若要設定「工作階段控制器」呼叫的驗證常式，您可以編輯位在 Urchin 安裝中的 "etc/session.conf" 檔案。這個檔案包含可設定的參數，這些參數控制了「工作階段控制器」的行為 (包含進行驗證時應呼叫的常式種類)。請編輯下列這行程式碼： <pre>    AUTHENTICATION: ../bin/auth 
+</pre><p class="line874">以您的驗證常式路徑取代 "../bin/auth"。請確認驗證常式可由執行 "urchinwebd" 的使用者執行。 <p class="line867"><strong>輸入和輸出要求</strong> <p class="line874">「工作階段控制器」會呼叫驗證常式、並傳遞使用者名稱和密碼，以及使用者的 IP 位址以做為指令行引數，如下所示： <pre>    argv[1] = username
+    argv[2] = password
+    argv[3] = remote_addr 
+</pre><p class="line874">外部驗證常式可選擇忽略這些參數中的任何或所有參數。不過，一般的驗證常式會至少使用前兩個參數。執行任何或所有您想要進行的驗證後，常式結束時的代碼若等於 0，表示驗證成功，代碼若是 -1，則表示失敗。 <pre>    Exit Code
+     0 = successful authentication
+    -1 = authentication failed 
+</pre><p class="line874">上述驗證介面可讓管理員以簡單的方式，自訂用來驗證使用者登入的常式。 <p class="line867"><strong>略過驗證程序</strong> <p class="line874">只要使用上述技術，您就可以以人為方式略過 Urchin 驗證。當代管供應商想要使用整個 Urchin 系統來控制使用者和群組，但又已經在使用者進入 Urchin 時進行了驗證，您可以略過驗證程序功能來避免二次登入的問題。只要主機能確保對 Urchin 系統的存取全部受到驗證入口網站的控制，而且使用者名稱不會受到竄改，主機就可以使用下列技術略過驗證程序。 <p class="line874">若要略過驗證程序，請建立虛設的外部驗證常式，其結束代碼永遠為 0。例如，Perl 程式碼可能如下所示： <pre>    #!/usr/bin/perl
+    exit(0); 
+</pre><p class="line874">編輯 "etc/session.conf" 檔案，並使其指向上述虛設驗證常式，這麼一來就可以指向此常式上的「工作階段控制器」。接下來，您只需提供一個連結，如下列所示： <pre>    http://hostname:9999/session.cgi?action=login&amp;user=paul 
+</pre><p class="line874">修改上述連結並使其指向實際的主機名稱和通訊埠，然後修改您想要使用的使用者名稱或變數上的使用者。虛設驗證常式會自動核準此登入。使用此方法時請務必多加小心，避免發生安全性問題。 <p class="line867"><strong>Windows 使用者請注意</strong> <p class="line874">雖則 Windows 中未安裝 Perl，但為了提供您與此環境類似的功能，您可以使用 Urchin 支援網站「說明物件指令碼」區域中提供的簡易 noauth.exe 二進位格式檔。此二進位格式檔是簡單的 "no-op"，只能在接受呼叫時傳回成功狀態。在使用此解決方案之前，請確保您瞭解其可能的安全性問題。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

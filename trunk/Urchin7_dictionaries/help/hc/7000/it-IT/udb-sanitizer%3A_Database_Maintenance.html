@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Utilità udb-sanitizer per la gestione del database</strong> <p class="line867"><strong>Panoramica</strong> <p class="line874">L'utilità udb-sanitizer per la gestione del database Urchin fornisce uno strumento per verificare i database dei profili di Urchin 6 ed eseguire su di essi diverse operazioni di manutenzione.  <p class="line874">L'utilità udb-sanitizer consente di effettuare le seguenti operazioni:  <ul><li>Ripristinare stati dei database precedentemente salvati </li><li class="gap">Eliminare i dati dei profili di un giorno, più giorni o di un intero mese  </li></ul><p class="line867"><strong>Utilizzo</strong>  <p class="line874">L'utilità udb-sanitizer è ubicata nella directory util della distribuzione di Urchin 6.  <p class="line874">L'utilità può essere utilizzata nei seguenti modi:  <pre>  udb-sanitizer [-h] (consente di stampare il messaggio sull'utilizzo e di uscire)
+
+  udb-sanitizer [-v] (consente di stampare la versione e di uscire)
+
+  udb-sanitizer -p profile [-d AAAAMM[GG]] -bfhprq] [-z [-e GG]] 
+</pre><p class="line874">dove:  <pre>   -b consente di accedere direttamente l'opzione di rollback
+
+   -d consente di specificare anno, mese e facoltativamente il giorno in cui eseguire l'operazione
+
+   -e con le opzioni z e d, consente di azzerare i dati per più giorni (nella sequenza d-&gt;e) dello stesso mese
+
+   -f consente di eseguire un'azione senza conferma
+
+   -h consente di stampare le informazioni di questa guida
+
+   -p consente di specificare il nome del profilo (obbligatorio)
+
+   -a consente di specificare il nome dell'account
+
+   -r consente di accedere direttamente l'opzione di rimozione
+
+   -q modalità silenziosa, consente di eliminare l'output salvo per le principali conferme dell'utente
+
+   -z consente di accedere direttamente all'opzione zero giorni 
+
+</pre><p class="line867"><span class="u">Nota</span>. Quando viene eseguita l'utilità udb-sanitizer con opzioni che non descrivono esaustivamente l'azione da intraprendere, viene visualizzato il testo sull'utilizzo (equivalente all'opzione <tt>-h</tt>). Si fare in modo che un'azione venga eseguita senza l'interazione dell'utente utilizzando una combinazione delle opzioni <tt>–f</tt>e <tt>-q</tt> unitamente all'uso facoltativo delle opzioni <tt>-d</tt>, <tt>-b</tt>, <tt>-r</tt> o <tt>-z</tt>.  <p class="line867"><strong>Funzionamento</strong>  <p class="line874">Normalmente, l'utilità udb-sanitizer viene attivata da un pannello di comando con le opzioni applicabili per il tipo di operazione richiesta.    <p class="line874">Alle opzioni disponibili elencate sopra sono associate le seguenti azioni:  <p class="line874">1. Rollback dei dati (–r) <ul><li style="list-style-type:none">Questa opzione consente agli utenti di ripristinare i dati di un profilo precedentemente archiviati. L'utente sceglie uno degli archivi di backup in formato ZIP dell'elenco che viene visualizzato e i contenuti del file di archivio selezionato sostituiscono il database dei rapporti in uso. Gli archivi in formato ZIP vengono denominati con la seguente convenzione "AAAAMM-backupv6-AAAAMMGGHHMMSS.zip", dove AAAMM rappresenta l'anno e il mese in cui è stato eseguito il backup dei dati (ad es. 200803 rappresenta Marzo 2008), mentre la sequenza AAAAMMGGHHMMSS rappresenta le coordinate temporali del momento in cui è stato creato l'archivio in formato ZIP. Le coordinate temporali sono utili per determinare quale archivio ZIP si desidera ripristinare. </li></ul><p class="line874">2. Eliminazione dei dati mensili (-d) <ul><li style="list-style-type:none">Vengono rimossi tutti i dati di un determinato profilo del mese specificato. Questa opzione è utile per azzerare le statistiche di un mese quando i dati non sono corretti, ad esempio se sono stati applicati filtri errati o elaborati log errati, oppure se sono stati sostituiti alcuni dei parametri avanzati del profilo, quali la profondità del percorso dei clic o il livello del referral, ed è opportuno aggiornare i dati dei rapporti Urchin del mese per riflettere le modifiche. Questa azione può essere eseguita senza l'interazione dell'utente eseguendo l'utilità udb-sanitizer con gli argomenti -f, -r e -q.  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. Azzeramento dei dati di uno o più giorni <ul><li style="list-style-type:none">Questa opzione consente di azzerare i dati di un determinato intervallo di giorni del mese e quindi di elaborare nuovamente i log di Urchin solo per quei giorni (ad es. urchin -p profile -d AAAAMMGG). Questa azione può essere eseguita senza l'interazione dell'utente per azzerare i dati di un solo giorno, tramite l'utilità udb-sanitizer con gli argomenti -f, –q, -z e -d, ad esempio:  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">e per più giorni inserendo anche l'argomento "-e" che consente di specificare una data di fine. Ad esempio:  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">azzera i dati dal 7 al 10 settembre. Tieni presente che l'argomento –e richiede esclusivamente la data di fine. Questa opzione è più efficiente rispetto alla richiesta di più istanze dell'utilità udb-sanitizer per azzerare i dati di singoli giorni, in quanto gli indici e le intestazioni del database vengono verificati una sola volta. L'operazione di verifica degli indici/intestazioni su profili che contengono molti dati può richiedere molto tempo.  </li></ul><p class="line874">4. Se il profilo fa parte di un account, il nome dell'account deve essere specificato con l'argomento -a.   <p class="line867"><span class="u">Importante</span>. Le azioni di cancellazione dei dati giornalieri o mensili non possono essere annullate. Per ripristinare i dati eliminati occorre rielaborare i log del server web relativi a quel periodo per ripopolare i database del profilo. Pertanto queste opzioni vanno utilizzate con grande cautela. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

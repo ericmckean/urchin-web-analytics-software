@@ -1,0 +1,66 @@
+#################################################################################################
+#  Urchin 7 session default dictionary file
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	Not Used
+1	Please login to access your account.
+2	Username
+3	Password
+4	Please login again.
+5	Thank you for using Urchin. Login again?
+6	Session Error - unable to read configuration. (1000) 
+7	Security violation - remote address not set. (1001) 
+8	Security violation - not an approved module. (1002) 
+9	Session Error - ID not in the correct format. (1003) 
+10	Session Error - invalid query to the session controller. (10004)
+11	Session Error - unable to call default routine. (2001)
+12	Session Error - unable to call default routine. (2002)
+13	Session Error - unable to call default routine. (2003)
+14	Session Error - unable to create session. (2004)
+15	Session Error - unable to set env. (2005)
+16	Session Error - missing session id. (3000)
+17	Session Error - unable to get record from db. (3001)
+18	Session Error - ip does not match this session. (3002)
+19	Session Error - invalid session id. (3003)
+20	Session Error - unable to update session record. (3004)
+21	Session has timed out. As a security precaution, you have been automatically logged-out.
+22	Session Error - unable to call application. (4001)
+23	Session Error - unable to call application. (4002)
+24	Session Error - unable to call application. (4003)
+25	Session Error - missing sid. (4004)
+26	Session Error - unable to obtain session record from db. (4005)
+27	Session Error - Sorry, the IP address you are currently using does not match the one used at the initiation of the session.
+28	Session Error - invalid session id. (4007)
+29	Session Error - uable to update session record. (4008)
+30	Session Error - unable to build env. (4009)
+31	Authentication Error - unable to call auth module. (5001)
+32	Authentication Error - unable to call auth module. (5002)
+33	Authentication Error - unable to call auth module. (5003)
+34	Authentication Error - auth failed. (6001)
+35	Authentication Error - # of params not correct. (6002)
+36	Authentication Error - Remote access for users is denied. (6003)
+37	Authentication Error - Remote access for administration is denied. (6004)
+38	Authentication Error - ip missing. (6005)
+39	Authentication Error - can‘t grab global config from db. (6006)
+40	Authentication Failed.
+41	Remote access for users is denied. (6008)
+42	Remote access for administration is denied. (6009)
+43	Login
+44	Welcome to Urchin Software from Google
+45	Analytics Home
+46	FAQs
+47	Privacy Policy
+48	Urchin Help Center
+49	Google Analytics & Urchin Blog
+50	Urchin Software from Google
+51	Google Privacy Policy
+52	Google Analytics & Urchin Blog (in English)
+53	Google Privacy Policy
+54	Home
+55	What‘s new?
+56	Authorized Consultants
+57	<p>Urchin Software from Google analyzes traffic for one or more websites and provides easy-to-understand reports on your visitors - where they come from, how they use your site, what converts them into customers, and much more</p><p>If you have content behind a security firewall or on an intranet or internal network that prevents you from using the Google Analytics service, Urchin Software from Google is for you.</p><p>Urchin Software from Google is supported exclusively through Urchin Software Authorized Consultants</p>
+58	Learn more.
+59	End-User License Agreement
+60	Urchin User Forum

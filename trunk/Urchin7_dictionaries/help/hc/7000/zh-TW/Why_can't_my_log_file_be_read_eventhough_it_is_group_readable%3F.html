@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>為什麼在允許群組讀取的設定下，仍然無法讀取我的記錄檔？</strong> <p class="line874">在允許群組讀取的設定下，若仍無法讀取記錄檔，就會出現錯誤編號「7026-76-*」。這是 urchin 二進位格式 setuid / setgid 功能的已知問題。基於安全理由，urchin 引擎會以二進位檔擁有者的身分執行，即使原本是以根的身分啟動也一樣。在此情況下，應用程式只能辨認確切的群組 ID，而無法辨認群組清單。 <p class="line874">若要修正此問題，需將記錄檔的權限變更為任何人皆可讀取，或將此群組變更為確切的 urchin 使用者群組。這只會影響 UNIX 類型的結構。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,24 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>單次點擊出價資料匯入公用程式 (Urchin 6.5+)</strong> <p class="line874">Urchin 6.5 中添加了用於處理單次點擊出價資料的公用程式。 <p class="line867"><strong>urchincpc</strong> -「Urchin 單次點擊出價資料匯入工具」可透過 Google Ad<tt class="backtick"></tt>Words 和 Yahoo! 奇摩搜尋行銷 API 擷取單次點擊出價資料，以便進一步處理並產生報表。 <ul><li><p class="line891"><strong>請注意：</strong>下載自 Ad<tt class="backtick"></tt>Words 的封存單次點擊出價資料大小不可超過 250 MB (Urchin 6.501+)。 </li></ul><p class="line867"><strong>urchincpcd</strong> -「Urchin 單次點擊出價來源排程器」(簡稱為「單次點擊出價排程器」) 會依使用者定義的時間來安排單次點擊出價下載工作，這一點與「單次點擊出價排程器」類似。 <p class="line874">「單次點擊出價排程器」(urchincpcd) 可在本機電腦上與「Urchin 主排程器」(urchind) 一併執行。只有在「主排程器」已啟動並正在執行的情況下，才能安排下載單次點擊出價來源。「單次點擊出價排程器」會定期檢視佇列中是否有單次點擊出價資料下載工作，並控制這些工作的執行狀況。 <p class="line874">發現有工作安排後，「單次點擊出價匯入工具」(urchincpc) 就會自動啟動。「單次點擊出價排程器」可以啟動內部工作程序，不過，您也可以透過指令行直接呼叫這些工作程序，並開始執行佇列中的任何工作。 <p class="line874">下載完成的單次點擊出價資料會儲存在本機的 /path/to/urchin/data/cpc/ 路徑中，並會在系統處理連結的設定檔時由 Urchin 引擎自動擷取。 <p class="line874">「Urchin 單次點擊出價排程器」是由 urchinctl 公用程式管理。若要單獨使用「單次點擊出價來源排程器」，請使用 "-c" 選項。例如： <p class="line867"><pre>urchinctl -c start/stop/restart
+</pre><p class="line874">這樣可以啟動/中止/重新啟動「單次點擊出價排程器」。 <p class="line867"><img alt="CPC_Data_Import" src="../images/CPC_Data_Import.jpg" title="CPC_Data_Import" /> <p class="line862">若要立即安排下載單次點擊出價資料，請依序選擇 [組態] &gt; [單次點擊出價來源管理工具] &gt; [下載] 或 [編輯] &gt; [時段設定] 分頁以選擇特定單次點擊出價來源，然後按一下 [立即下載] 按鈕。請注意，只有在已經啟動並執行「單次點擊出價排程器」的情況下才能處理此要求。 <p class="line867"><strong>使用方式：單次點擊出價排程器 - urchincpcd</strong> <p class="line874">「單次點擊出價排程器」位在 Urchin 6.5+ 安裝的 [bin] 資料夾中。您可以透過指令行使用下列選項： <ul><li><p class="line891"><strong>-d</strong> 啟動偵錯模式。詳細偵錯資訊均記錄在輸出結果中。對於 Windows 系統，此選項必須與 –console 一起使用，例如： <ul><li style="list-style-type:none"><pre>           urchincpcd.exe -console -d
+    </pre></li></ul></li><li><p class="line891"><strong>-h</strong> 列印說明資訊然後離開 </li></ul><p class="line862">* <strong>-v</strong> 列印版本編號然後離開 在 Windows 系統下，請使用下列其中一項指令做為第一個引數： <ul><li><p class="line891"><strong>-install</strong>       在 Windows 系統下安裝「單次點擊出價排程器」 </li><li><p class="line891"><strong>-remove</strong>     在 Windows 系統下移除「單次點擊出價排程器」 </li><li><p class="line891"><strong>-start</strong>        在 Windows 系統下啟動「單次點擊出價排程器」 </li><li><p class="line891"><strong>-stop</strong>         在 Windows 系統下中止「單次點擊出價排程器」 </li><li><p class="line891"><strong>-console</strong>     以主控台模式啟動「單次點擊出價排程器」 </li></ul><p class="line867"><strong>使用方式：單次點擊出價匯入工具 - urchincpc</strong> <p class="line874">您可以透過指令行使用下列選項： <ul><li><p class="line891"><strong>-c [id]</strong>     下載特定費用來源資料，"id" 是單次點擊出價來源編號 </li><li><p class="line891"><strong>-d</strong>           啟用偵錯模式 </li><li><p class="line891"><strong>-h</strong>           列印說明資訊然後離開 </li><li><p class="line891"><strong>-v</strong>           列印版本編號然後離開 </li></ul><p class="line874">請注意，如果您並未使用參數啟動「單次點擊出價排程器」，或是只使用了 -d 選項，排程器就會在佇列中任意挑選現有工作開始處理，並在所有工作處理完成後自行停止。 <p class="line867"><strong>透過 Proxy  (6.501+) 下載單次點擊出價資料</strong> <p class="line862">若要透過 Proxy 啟用單次點擊出價資料下載，請編輯 urchin.conf 檔案，移除 Web<tt class="backtick"></tt>Service<tt class="backtick"></tt>Proxy<tt class="backtick"></tt>Host、Web<tt class="backtick"></tt>Service<tt class="backtick"></tt>Proxy<tt class="backtick"></tt>Port、Web<tt class="backtick"></tt>Service<tt class="backtick"></tt>Proxy<tt class="backtick"></tt>Username 和 Web<tt class="backtick"></tt>Service<tt class="backtick"></tt>Proxy<tt class="backtick"></tt>Password 項目的註解，並提供您想要使用的值。 <p class="line867"><pre> ######################################################
+# CPC Source Manager Settings
+#...
+# WebServiceProxyHost, WebServiceProxyHost: Host and port of the HTTP/HTTPS
+# proxy CPC Source Manager must use to access external CPC sources.
+# WebServiceProxyUsername, WebServiceProxyPassword: username and password for
+# proxy that enforces authorization.
+######################################################
+#WebServiceProxyHost: &lt;proxy host&gt;
+#WebServiceProxyPort: &lt;proxy port&gt;
+#WebServiceProxyUsername: &lt;username&gt;
+#WebServiceProxyPassword: &lt;password&gt;
+
+</pre><p class="line862">針對 WebServiceProxyHost，您可以直接輸入 IP 位址或完整網域名稱。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

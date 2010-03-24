@@ -1,0 +1,33 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>urchin: Urchin Protokollverarbeitung</strong> <p class="line867"><strong>Übersicht</strong> <p class="line874">Urchin Log Processing Engine, urchin, ist die wichtigste Protokollverarbeitungskomponente von Urchin. Normalerweise wird das Protokollverarbeitungsmodul über den Urchin Scheduler (urchind) aufgerufen, wenn eine Aufgabe ausgeführt wird. Sie können "urchin" jedoch auch direkt über eine Befehls-Shell aufrufen, um ein bestimmtes Profil auszuführen. Dies ist in Umgebungen mit sehr vielen Skripten hilfreich, in denen Urchin-Aufgaben von einer externen Quelle wie dem Windows Task Scheduler oder Cron auf UNIX-Systemen ausgeführt werden. Außerdem ist es unter bestimmten Bedingungen beim Ausführen von Profilen hilfreich, wenn beispielsweise nur Treffer für einen bestimmten Tag verarbeitet werden sollen oder eine Art der Fehlersuche durchgeführt werden soll. <p class="line874">Urchin ist eigentlich kein Dienstprogramm; es wird hier aufgeführt, da es einige eingeschränkte Befehlszeilenfunktionen bietet, die in einigen Umgebungen hilfreich sein können. <p class="line867"><strong>Verwendung</strong> <p class="line874">"urchin" befindet sich im Verzeichnis "bin" der Urchin-Installation. Gehen Sie wie folgt vor: <p class="line867"><pre>
+urchin [options...] (-p &lt;profile name&gt; | -P &lt;profile id&gt;)
+
+</pre><p class="line874">Optionen: <p class="line867"><pre>
+-a &lt;account name&gt;       gibt den Kontonamen für das Profil an. Der Standardkontoname ist "(KEIN)".
+
+-D                      Aktiviert den Fehlersuche-Modus.
+
+-d &lt;YYYYMMDD&gt;           gibt das Datum der erneuten Verarbeitung an.
+
+-H                      Gibt an, dass die Ausgabe der Ausführung in einer Protokolldatei aufgezeichnet wird. Ein neuer Aufgabenprotokolleintrag wird erstellt, wenn -H angegeben ist und -T nicht angegeben ist.
+
+-h                      Druckt Hilfeinformationen und beendet den Vorgang.
+
+-P &lt;profile id&gt;         Gibt die zu verarbeitende Profil-ID an.
+
+-p &lt;profile name&gt;       Gibt den zu verarbeitenden Profilnamen an.
+
+-T &lt;task id&gt;            Gibt den zu aktualisierenden Aufgabenprotokolldatensatz an. Die Verwendung von -T erzwingt die Verwendung von -H.
+
+-t                      Druckt Konfigurationsdaten und beendet den Vorgang.
+
+-v                      Druckt die Versionsnummer und beendet den Vorgang.
+
+</pre><p class="line867"><strong>Hinweise</strong> <ul><li>Auf UNIX-Systemen sollte "urchin" mit der Nutzer/UID der Urchin-Installation ausgeführt werden, um sicherzustellen, dass die Datenbanken für das Profil zu dieser UID gehören. Andernfalls erstellt "urchin" diese, falls sie nicht vorhanden sind. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

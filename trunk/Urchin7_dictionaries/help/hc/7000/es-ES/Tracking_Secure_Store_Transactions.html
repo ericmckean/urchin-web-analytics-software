@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Seguimiento de transacciones seguras en tiendas</strong> <p class="line867"><em>Autor: </em> <a href="ivantageLimited.html">ivantage Limited</a><em>, asesor autorizado del software Urchin </em> <p class="line862">Urchin permite realizar el seguimiento de la información del carrito de la compra del dominio o de otros dominios con tan solo añadir un fragmento de código. Si desea configurar las páginas para informar a Urchin sobre los datos de transacción, consulte <a href="How_do_I_track_e-commerce_transactions%253F.html">¿Cómo se realiza el seguimiento de las transacciones de e-commerce?</a> <p class="line874">Además, si la tienda online se encuentra en un dominio o subdominio distinto del sitio web principal, siga las instrucciones ofrecidas a continuación para configurar las páginas. <p class="line874">Si el proceso de formalización de compra se inicia en un subdominio distinto, por ejemplo, dirija a los usuarios de www.mitienda.es a carritocompra.misitio.es: <ul><li style="list-style-type:none">Añada la siguiente línea (en negrita) al código de seguimiento tanto de las páginas de la tienda online como del carrito de la compra: </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">Si el proceso de formalización de compra se inicia en un sitio distinto, por ejemplo, dirija a los usuarios de www.mitienda.es a www.carritoseguro.es: <ul><li style="list-style-type:none">Añada las siguientes líneas (en negrita) al código de seguimiento tanto de las páginas de la tienda online como del carrito de la compra: </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Cambie los enlaces que dirigen al sitio web principal por enlaces que llevan al sitio web seguro para utilizar <span class="u">utmLinker tal y como se indica a continuación. Si los enlaces actuales son parecidos a estos: </span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;Comprar ahora&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">cámbielos por: </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;Comprar ahora&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;Comprar ahora&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">El código anterior ofrece enlaces tanto para usuarios que tienen habilitada la función de JavaScript como los que no. Tenga en cuenta que es necesario convertir los apóstrofos en caracteres de escape con una barra invertida allí donde aparezcan en el enlace o en el texto del mismo. Importante: si las páginas incluyen la invocación de urchinTracker(), utmLinker(), utmSetTrans() o utmLinkPost(), el código de seguimiento de Analytics debe insertarse en el código HTML encima de dichas invocaciones. En estos casos, se puede colocar el código de seguimiento en cualquier lugar entre la etiqueta &lt;body&gt; de apertura y la invocación de JavaScript. </li></ul><p class="line874">Si envía información al carrito de la compra mediante formularios, utilice la función utmLinkPost() que añade información de la cookie a la URL del formulario facilitado. <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">Funciona incluso en formularios con method="GET". <p class="line891"><strong>Importante:</strong> si las páginas incluyen la invocación de urchinTracker(), utmLinker(), utmSetTrans() o utmLinkPost(), el código de seguimiento de Analytics debe insertarse en el código HTML encima de dichas invocaciones. En estos casos, se puede colocar el código de seguimiento en cualquier lugar entre la etiqueta de &lt;body&gt; apertura y la invocación de JavaScript. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

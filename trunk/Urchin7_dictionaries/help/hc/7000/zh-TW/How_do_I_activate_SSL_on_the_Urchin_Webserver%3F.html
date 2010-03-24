@@ -1,0 +1,22 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何在 Urchin 網頁伺服器上啟用安全資料傳輸層 (SSL)？</strong> <p class="line874">Urchin 隨附的 Urchin 網頁伺服器能夠透過安全資料傳輸層 (SSL) 加密通訊內容。若要啟用 SSL，您需要一份由認證機構簽署的有效憑證或是自我簽署憑證。 <p class="line874">在 Urchin 網頁伺服器上啟用 SSL 的步驟如下： <ol type="1"><li>將 SSL 憑證檔案複製到 Urchin var 目錄，並將其命名為 server.crt </li><li>將 SSL 金鑰檔案複製到 Urchin var 目錄，並將其命名為 server.key </li><li>編輯位於 Urchin var 目錄中的 urchinwebd.conf.template 檔案。 <ol type="1"><li>(如果使用的是 Urchin 6.6+，請略過此步驟) 把通訊埠行標示成註解，並移除 Listen 指令的註解標示。 <pre>          #XXXPortXXX
+          Listen 443
+          </pre></li><li class="gap"><p class="line862">將 ServerName 指令從 localhost 變更為您網頁伺服器的名稱。例如： <pre>          ServerName: www.urchin.com
+          </pre></li><li style="list-style-type:none"><p class="line862">請注意：urchinwebd.conf.template 檔案中的 ServerName 必須與憑證檔案中的伺服器名稱一致。4. 使用 urchinctl 以及 -e 選項啟動或重新啟動網頁伺服器。Urchinctl 位於 Urchin 的 bin 目錄中。-e 選項會指示 urchinctl 啟用網頁伺服器中的 SSL。例如，若要在通訊埠 443 將啟用 SSL 的網頁伺服器重新啟動： </li></ol>Urchin 6.6 之前的版本： <pre>   urchinctl -e -w restart
+   </pre>Urchin 6.6+： <pre>   urchinctl -e -p 443 -w restart
+   </pre><p class="line891"><span class="u">請注意</span>：若要啟動伺服器但不啟用 SSL，請省略 -e 選項。 </li></ol><p class="line862">這樣，您應該就可以透過 <a class="https" href="https://servername.domain.com:port/">https://servername.domain.com:port/</a> 存取啟用 SSL 的伺服器了 <p class="line867"><span class="u">請注意</span>：在 urchinwebd.conf.template 中自訂 SSL 設定可能會導致網頁伺服器無法啟動的問題。 <p class="line867"><strong>Windows 指示</strong> <p class="line874">在 Urchin 網頁伺服器上啟用 SSL 的步驟如下： <ol type="1"><li>將 SSL 憑證檔案複製到 Urchin var 目錄，並將其命名為 server.crt </li><li>將 SSL 金鑰檔案複製到 Urchin var 目錄，並將其命名為 server.key </li><li>編輯位於 Urchin var 目錄中的 urchinwebd.conf.template 檔案。 <ol type="1"><li>(如果使用的是 Urchin 6.6+，請略過此步驟) 把通訊埠行標示成註解，並移除 Listen 指令的註解標示。 <pre>          #XXXPortXXX
+          Listen 443
+          </pre></li><li class="gap">當網頁伺服器啟動時，移除下面這行程式碼的註解以載入 mod_ssl.so： <pre>          LoadModule ssl_module etc/mod_ssl.so
+          </pre></li><li class="gap"><p class="line862">將 ServerName 指令從 localhost 變更為您網頁伺服器的名稱。例如： <pre>          ServerName: www.urchin.com
+          </pre></li><li style="list-style-type:none"><p class="line862">請注意：urchinwebd.conf.template 檔案中的 ServerName 必須與憑證檔案中的伺服器名稱一致。4. 使用 urchinctl 以及 -e 選項移除和安裝網頁伺服器服務。Urchinctl 位於 Urchin 的 bin 目錄中。-e 選項會指示 urchinctl 啟用網頁伺服器中的 SSL。例如，若要在通訊埠 443 移除和安裝已啟用 SSL 的網頁伺服器： </li></ol>Urchin 6.6 之前的版本： <pre>   urchinctl.exe -w remove
+   urchinctl.exe -w -e install
+   </pre>Urchin 6.6+: <pre>   urchinctl.exe -w remove
+   urchinctl.exe -e -p 443 -w install
+   </pre><p class="line891"><span class="u">請注意</span>：若要啟動伺服器但不啟用 SSL，請省略 -e 選項。 </li></ol><p class="line862">這樣，您應該就可以透過 <a class="https" href="https://servername.domain.com:port/">https://servername.domain.com:port/</a> 存取啟用 SSL 的伺服器了 <p class="line867"><span class="u">請注意</span>：在 urchinwebd.conf.template 中自訂 SSL 設定可能會導致網頁伺服器無法啟動的問題。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

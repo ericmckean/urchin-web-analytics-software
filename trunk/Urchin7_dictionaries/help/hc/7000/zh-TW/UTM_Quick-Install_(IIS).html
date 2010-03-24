@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 流量監視器 (UTM) 快速安裝 (IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 軟體授權顧問</em> <a href="EpikOne.html">EpikOne</a><em> 撰寫</em> </li></ul><p class="line874">以下為快速安裝概要，說明如何在任何執行 Microsoft IIS 伺服器的 Windows 平台上安裝網站的 Urchin 流量監視器 (UTM)。 如需更多關於 Urchin 流量監視器 (UTM) 的詳細資訊，請參閱此節標題為《Urchin 流量監視器 (UTM)》的文章。 <p class="line867"><strong>步驟 1：</strong> 將 Urchin 流量監視器 (UTM) 檔案複製到網站的文件根。 urchin.js 和 <tt class="backtick">__</tt>utm.gif 檔案位於 Urchin 分佈的 "utils\utm" 資料夾中。 請將這兩個檔案複製到網站內容的主資料夾中。 重要： GIF 檔是以兩個劃底線的字母開頭。 <p class="line867"><strong>步驟 2：</strong> 您網站 HTML 裡的參照 Urchin 流量監視器 (UTM)。 請將下行複製到您的所有 HTML 網頁中。 因為它可放在網頁中的任何位置，因此我們建議放在 &lt;/body&gt; 關閉標記之前。 如果您使用常見的 [包含] 或範本，可以在此輸入。 <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line874">如果您使用像是 "HTML Tidy" 之類的套件，則可以將 Javascript 指令行放在網頁的 HEAD 區域。例如： <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>步驟 3：</strong> 啟用您 IIS 記錄中的 Cookie。 開啟 IIS 管理員，帶出網站的 [內容] 視窗。 確認記錄已經啟用，且設定為 W3C 延伸格式。 按一下格式旁、位於 [延伸內容] 標籤下的 [內容] 按鈕，勾選 [Cookie] 旁的方塊。 <p class="line867"><strong>步驟 4：</strong> 設定 Urchin 設定檔使用 Urchin 流量監視器 (UTM)。 在 Urchin 管理介面中，編輯該設定檔，然後按一下 [設定] 標籤。 將 [訪客追蹤方式] 設定為 Urchin 流量監視器 (UTM)。 將 Urchin 流量監視器 (UTM) 網域設定為您的網址 (不包含 www)。  然後將 [報告集] 選擇為預設，並按一下 [更新] 按鈕。 <p class="line874">大功告成！ 現在，您的網站會開始將 Urchin 流量監視器 (UTM) 資料記錄到一般記錄檔中，當您下次執行 Urchin 時，就會辨識這些記錄檔。 <p class="line874">有在運作嗎？ 若要查看 Urchin 流量監視器 (UTM) 是否成功將項目記錄到您的記錄檔中，請在安裝 Urchin 流量監視器 (UTM) 並點擊網站的幾個網頁後查看記錄。 您會在記錄檔的結尾看到如下的項目： <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">如果沒有看到 utma 項目，請務必檢查記錄中是否有正確啟用 Cookie。 如果狀態碼不是 200，則請確定檔案已正確複製到您的文件根。<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

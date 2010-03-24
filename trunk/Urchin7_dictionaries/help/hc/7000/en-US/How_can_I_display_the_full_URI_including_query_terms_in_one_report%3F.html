@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>How can I display the full URI including query terms in one report?</strong> <p class="line862">In Urchin 6, query patterns are displayed in a special drill-down 'Content Optimization -&gt; Content Performance -&gt; Page Query Terms.' If you prefer to display the full page and query pattern in the 'Top Content' report, you can use the filter below to change the way this data is displayed. <p class="line867"><strong>Note:</strong> This will increase the processing time for any profile it is applied to. Also, because of the increase in unique page names, your database limit may be exceeded.  <p class="line874">Create a new 'Profile Filter' with the following settings: <ul><li>Filter Type: Advanced </li><li>Filter A: request_stem (AUTO) - Extract A (.*) </li><li>Filter B: request_query (AUTO) - Extract B (.*) </li><li>Output to: request_stem (AUTO) - Constructor $A1/$B1 </li><li>Override Output Field: 'Yes' </li><li>Required Fields: 'Both Fields' </li><li>Case Sensitive: 'No' </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

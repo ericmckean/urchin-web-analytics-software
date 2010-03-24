@@ -1,0 +1,13 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Aggregation of "total" table (SOAP) v1</strong> <ul><li><p class="line891"><a href="Data_API.html">API Table of Contents</a> </li><li><p class="line891"><a href="getData_(SOAP)_v1.1.html">getData (SOAP)</a> </li></ul><p class="line874">The "total" table allows three types of aggregation: monthly, daily, hourly. <p class="line862">The aggregation type is identified by mutually exclusive dimensions; the output format is xsd:dateTime CCYY-MM-DDThh:mm:ssZ: <ul><li>monthly - u:month (e.g. 2009-01-01T00:00:00Z, where day is always 01) </li><li>daily - u:day (e.g. 2009-01-05T00:00:00Z) </li><li>hourly - u:hour (e.g. 2009-01-05T10:00:00Z) </li><li>totals - u:totals: output is "Totals" </li></ul><p class="line874">For example, to retrieve profile data by day, set the following parameters: <p class="line867"><pre>    &lt;dimensions&gt;u:day&lt;/dimensions&gt;
+    &lt;metrics&gt;u:hits,u:bytes&lt;/metrics&gt;
+</pre><p class="line874">To retrieve profile data by hour, set the following parameters: <p class="line867"><pre>    &lt;dimensions&gt;u:hour&lt;/dimensions&gt;
+    &lt;metrics&gt;u:hits,u:bytes&lt;/metrics&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

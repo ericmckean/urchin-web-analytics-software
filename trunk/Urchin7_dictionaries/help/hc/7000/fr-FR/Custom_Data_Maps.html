@@ -1,0 +1,42 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Cartes de données personnalisées</strong> <p class="line874">Les cartes de données désignent un ensemble de tableaux permettant de stocker les données calculées à partir des fichiers journaux. Les tableaux prédéfinis sont les suivants : <ul><li>T Totaux </li><li>TR Transactions </li><li>H Histogramme </li><li>V Visiteurs </li><li>1-n Tableaux globaux prédéfinis décrits dans le fichier de cartes de données </li></ul><p class="line862">L'ensemble de tableaux par défaut est stocké dans le fichier &lt;Urchin&gt;/lib/reporting/profiletypes/Default/datamap.dm2. Le format suivant est utilisé pour les tableaux : <ul><li>Chaque entrée du tableau correspond à une ligne et doit contenir les champs suivants : TABLE AFIELD BFIELD CFIELD DFIELD EFIELD REQUIREMENTS SPECIAL IFIELDS PPFIELDS. </li><li>Les colonnes ne doivent pas contenir d'espace. </li><li>Les colonnes sont séparées par un ou plusieurs espaces. </li><li>Si la valeur est vide, elle doit être remplacée par le signe '-'. </li><li class="gap">TABLE  : identifiant unique du tableau (valeur maximale : 200). </li><li><p class="line862">AFIELD-EFIELD  : champs de chaîne du fichier &lt;Urchin&gt;/lib/reporting/logformats/fieldlist.txt. </li><li>REQUIREMENTS désigne les champs (A-E) devant être présents dans l'appel pour être ensuite inclus dans le tableau. Il s'agit d'une forme de contrainte de clé primaire. </li></ul><p class="line874">Par exemple, supposons que A doive se trouver dans le tableau T1. A représente "Adresse IP" (cfield=4) et l'appel ne contient pas "Adresse IP". Par conséquent, celui-ci est ignoré et ne sera pas inclus dans le tableau T1. Cependant, si un autre tableau T2 fait référence à "Adresse IP", mais que REQUIREMENT ne contient aucun A, l'appel sera inclus dans le tableau T2. <ul><li>SPECIAL  : utilisé pour associer les enregistrements du tableau global aux enregistrements des tableaux internes (sessions, visiteurs, transaction, éléments de transaction, chemins). Il s'agit d'une sorte de clé étrangère. Par exemple, le tableau 1 du fichier de cartes de données par défaut associe la source, le support et la campagne à la session (avec "source" en tant que clé primaire). Le tableau 2 associe la source, le support, le terme et le contenu à la session (avec "source" en tant que clé primaire). Le tableau 12 associe l'extrémité de la requête et le titre de la page aux chemins. Il n'est pas conseillé d'effectuer des modifications dans les tableaux comprenant des indicateurs spéciaux ou d'utiliser ces derniers dans des tableaux personnalisés. En effet, cela risquerait d'effacer les clés étrangères. <ul><li>S1-S11 - lien de session </li><li>P1 - lien de chemin </li><li>PARAM - paramètre spécial </li><li>T1-T2 - lien de transaction </li><li>I0 - I1 - lien d'élément </li><li>IPATH - chemin initial </li><li>GTHRU - objectif de clics </li><li>GPATH - chemin de navigation vers l'objectif </li><li>CTHRU - clics </li></ul></li><li class="gap">IFIELDS  : statistiques. Les tableaux stockent des statistiques prétraitées pour optimiser la vitesse d'extraction des données. Lorsque le moteur traite les journaux, il effectue ainsi tous les calculs nécessaires pour chaque combinaison de critères (ou cfields) pour que cette phase ne se déroule pas lors de l'extraction. Exemple de cfields : Adresse IP, ifields : visites. Lors du traitement, un nouveau tableau est créé pour stocker les visites calculées à l'avance pour chaque adresse IP. Un rapport, conçu dans la partie supérieure du tableau, extrait immédiatement les données sans avoir à effectuer de nombreux calculs supplémentaires. Les valeurs valides de la colonne IFIELDS sont décrites ci-après.  </li><li class="gap">PPFIELDS  : champs de post-traitement (issus de différents champs ifields). Les données des champs post-traités sont définies à partir de l'enregistrement de session et de plusieurs éléments associés (chemin, transaction et enregistrements d'articles). Il n'est pas recommandé d'utiliser ppfields dans un rapport personnalisé. </li></ul><p class="line874">Pour créer une entrée de carte de données personnalisée, suivez les instructions ci-dessus afin de créer une ligne. Pour éviter d'interrompre la carte de données, assurez-vous que chaque nouvelle entrée du tableau utilise un numéro unique. <p class="line874">Exemple de ligne dans le fichier de carte de données : <div><table><tbody><tr>  <td><p class="line891"><strong>TABLE</strong> </td>
+  <td><p class="line862"> <strong>AFIELD</strong> </td>
+  <td><p class="line862"> <strong>BFIELD</strong> </td>
+  <td><p class="line862"> <strong>CFIELD</strong> </td>
+  <td><p class="line862"> <strong>DFIELD</strong> </td>
+  <td><p class="line862"> <strong>EFIELD</strong> </td>
+  <td><p class="line862"> <strong>REQUIREMENTS</strong> </td>
+  <td><p class="line862"> <strong>SPECIAL</strong> </td>
+  <td><p class="line862"> <strong>IFIELDS</strong> </td>
+  <td><p class="line862"> <strong>PPFIELDS</strong></td>
+</tr>
+<tr>  <td><p class="line862">1 </td>
+  <td><p class="line862"> 139 </td>
+  <td><p class="line862"> 138 </td>
+  <td><p class="line862"> 137</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> A</td>
+  <td><p class="line862"> S1 </td>
+  <td><p class="line862">5,11,15,19,24,25,26,27,28,29,30,31 </td>
+  <td><p class="line862"> -</td>
+</tr>
+<tr>  <td><p class="line862">Numéro de tableau </td>
+  <td><p class="line862"> Champ A de l'enregistrement à utiliser </td>
+  <td><p class="line862"> Champ B de l'enregistrement à utiliser </td>
+  <td><p class="line862">Champ C de l'enregistrement à utiliser </td>
+  <td><p class="line862">Le champ D n'est pas utilisé </td>
+  <td><p class="line862"> Le champ E n'est pas utilisé </td>
+  <td><p class="line862"> Seul le champ A doit contenir des données </td>
+  <td><p class="line862"> Lien de session 1 </td>
+  <td><p class="line862"> Champs calculés </td>
+  <td><p class="line862">Aucun champ de post-traitement</td>
+</tr>
+</tbody></table></div><p class="line874">Champs calculés utilisés pour la colonne IFIELDS : <ol type="1"><li>Hits </li><li>Validhits </li><li>Errorhits </li><li>Bytes </li><li>Pages </li><li>Nonpages </li><li>Entrancepages </li><li>Exitpages </li><li>Bouncepages </li><li>Pagetime </li><li>Visits </li><li>Visitors </li><li>Newvisitors </li><li>Priorvisitors </li><li>Transactions </li><li>Customers </li><li>Newcustomers </li><li>Priorcustomers </li><li>Revenue </li><li>Tax </li><li>Shipping </li><li>Items </li><li>Itemrevenue </li><li>Responses </li><li>Impressions </li><li>Clicks </li><li>Cost </li><li>Goals1 </li><li>Goals2 </li><li>Goals3 </li><li>Goals4 </li><li>Goalstarts1 </li><li>Goalstarts2 </li><li>Goalstarts3 </li><li>Goalstarts4 </li><li>Score  </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

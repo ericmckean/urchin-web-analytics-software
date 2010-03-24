@@ -1,0 +1,42 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Mapas de dados personalizados</strong> <p class="line874">Os mapas de dados descrevem um conjunto de tabelas, usadas como armazenamento para dados calculados a partir de arquivos de registro. As tabelas predefinidas são as seguintes: <ul><li>T - totais; </li><li>TR - transações; </li><li>H - histograma; </li><li>V - visitantes; </li><li>1-n - tabelas agregadas predefinidas descritas no arquivo de mapa de dados. </li></ul><p class="line862">O conjunto padrão de tabelas está armazenado no arquivo &lt;Urchin&gt;/lib/reporting/profiletypes/Default/datamap.dm2. Ele usa o seguinte formato para tabelas: <ul><li>Cada entrada da tabela usa uma linha e deve conter os seguintes campos: TABLE AFIELD BFIELD CFIELD DFIELD EFIELD REQUIREMENTS SPECIAL IFIELDS PPFIELDS; </li><li>As colunas não devem conter espaços; </li><li>As colunas são separadas por um ou mais espaços; </li><li>Se o valor estiver vazio, ele deverá ser substituído pelo sinal '-'; </li><li class="gap">TABLE - identificador exclusivo da tabela, valor máximo de 200; </li><li><p class="line862">AFIELD-EFIELD - campos de string de &lt;Urchin&gt;/lib/reporting/logformats/fieldlist.txt; </li><li>REQUIREMENTS descreve quais campos (de A a E) devem estar presentes na ocorrência para este último entrar na tabela, tipo de restrição de chave primária. </li></ul><p class="line874">por exemplo, dado que A é obrigatório na tabela T1, A refere-se a "endereço IP" (cfield=4), e a ocorrência não contém um endereço IP; dessa maneira, toda a ocorrência será ignorada e não chegará a T1. Porém, se outra tabela T2 referir-se a "endereço IP", mas REQUIREMENT não contiver nenhum A, a ocorrência chegará a T2. <ul><li>SPECIAL - usado para vincular registros da tabela de agregados a registros de tabelas internas (sessões, visitantes, transações, itens de transação,caminhos), tipo de chave estrangeira. Por exemplo, a tabela 1 do arquivo do mapa de dados padrão vincula a origem, o meio e a campanha à sessão (com "origem" como chave primária), a tabela 2 vincula origem, meio, prazo e conteúdo à sessão (com "origem" como chave primária), a tabela 12 vincula indicação de solicitação e título da página a caminhos. Não é recomendável fazer uma alteração em tabelas com sinalizadores especiais ou de alguma forma usar sinalizadores em tabelas personalizadas, porque isso pode levar a chaves estrangeiras inválidas. <ul><li>S1-S11 - link da sessão </li><li>P1 - link do caminho </li><li>PARAM - parâmetro especial </li><li>T1-T2 - links de transação </li><li>I0 - I1 - link do item </li><li>IPATH - caminho inicial </li><li>GTHRU - taxa de cliques de meta </li><li>GPATH - caminho de meta da reversão </li><li>CTHRU - taxa de cliques </li></ul></li><li class="gap">IFIELDS - métricas. As tabelas armazenam conjunto pré-processado de métricas para otimizar a velocidade de extração dos dados, ou seja, quando o mecanismo processa registros, ele faz todos os cálculos necessários para cada combinação exclusiva de dimensões (ou cfields) para evitar essa fase durante a extração. Por exemplo, cfields indicados: endereços IP, ifields: visitas. Durante o processamento, uma nova tabela é criada para armazenar visitas pré-calculadas para cada endereço IP. O relatório, criado a partir da tabela, extrai os dados diretamente sem praticamente nenhum esforço de cálculo extra. Os valores válidos para a coluna IFIELDS são descritos abaixo;  </li><li class="gap">PPFIELDS - campos de pós-processamento (do período de ifields), os dados dos campos pós-processados são determinados no registro da sessão e seu caminho associado, transação e registros de item. O uso de ppfields não é recomendável em um relatório personalizado. </li></ul><p class="line874">Para criar entrada de mapa de dados personalizada, siga as instruções acima e crie uma nova linha. Para evitar dividir o mapa de dados, verifique se cada nova entrada da tabela usa um número exclusivo. <p class="line874">Exemplo de linha no arquivo de mapa dos dados: <div><table><tbody><tr>  <td><p class="line891"><strong>TABLE</strong> </td>
+  <td><p class="line862"> <strong>AFIELD</strong> </td>
+  <td><p class="line862"> <strong>BFIELD</strong> </td>
+  <td><p class="line862"> <strong>CFIELD</strong> </td>
+  <td><p class="line862"> <strong>DFIELD</strong> </td>
+  <td><p class="line862"> <strong>EFIELD</strong> </td>
+  <td><p class="line862"> <strong>REQUIREMENTS</strong> </td>
+  <td><p class="line862"> <strong>SPECIAL</strong> </td>
+  <td><p class="line862"> <strong>IFIELDS</strong> </td>
+  <td><p class="line862"> <strong>PPFIELDS</strong></td>
+</tr>
+<tr>  <td><p class="line862">1 </td>
+  <td><p class="line862"> 139 </td>
+  <td><p class="line862"> 138 </td>
+  <td><p class="line862"> 137</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> A</td>
+  <td><p class="line862"> S1 </td>
+  <td><p class="line862">5,11,15,19,24,25,26,27,28,29,30,31 </td>
+  <td><p class="line862"> -</td>
+</tr>
+<tr>  <td><p class="line862">Número da tabela </td>
+  <td><p class="line862"> Campo A do registro a ser usado </td>
+  <td><p class="line862"> Campo B do registro a ser usado </td>
+  <td><p class="line862">Campo C do registro a ser usado </td>
+  <td><p class="line862">Campo D não é usado </td>
+  <td><p class="line862"> Campo E não é usado </td>
+  <td><p class="line862"> Apenas o campo A deve conter dados </td>
+  <td><p class="line862"> Link de sessão 1 </td>
+  <td><p class="line862"> Campos calculados </td>
+  <td><p class="line862">Nenhum campo de pós-processamento</td>
+</tr>
+</tbody></table></div><p class="line874">Campos calculados usados na coluna IFIELDS: <ol type="1"><li>Hits </li><li>Validhits </li><li>Errorhits </li><li>Bytes </li><li>Pages </li><li>Nonpages </li><li>Entrancepages </li><li>Exitpages </li><li>Bouncepages </li><li>Pagetime </li><li>Visits </li><li>Visitors </li><li>Newvisitors </li><li>Priorvisitors </li><li>Transactions </li><li>Customers </li><li>Newcustomers </li><li>Priorcustomers </li><li>Revenue </li><li>Tax </li><li>Shipping </li><li>Items </li><li>Itemrevenue </li><li>Responses </li><li>Impressions </li><li>Clicks </li><li>Cost </li><li>Goals1 </li><li>Goals2 </li><li>Goals3 </li><li>Goals4 </li><li>Goalstarts1 </li><li>Goalstarts2 </li><li>Goalstarts3 </li><li>Goalstarts4 </li><li>Score  </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>전자상거래에서 UTM 사용</strong> <p class="line867"><strong>개요</strong> <p class="line874">UTM의 주요 특징은 방문자 활동을 식별하고 상호연관시킬 수 있는 기능이므로 사이트에서 수익을 발생시키는 방문자 활동을 추적하여 전체적으로 보고할 수 있습니다.장바구니 소프트웨어를 호스트하는 서버에서의 거래를 다른 웹서버의 세션과 상호연관시킬 수 있기 때문에 추천 및 키워드 같은 세션 변수를 이로 인해 발생하는 수익과 함께 보고할 수 있습니다.UTM은 소스에서 구매 또는 목표에 이르기까지 방문자를 추적하는 멀티 세션 추적을 제공합니다.전환율 및 ROI 보고서는 키워드 구입, 이메일 캠페인, 링크 교환 등 온라인 마케팅 노력의 세부적인 결과를 제공합니다. <p class="line867"><strong>동일 도메인 구성</strong> <p class="line874">프런트 엔드 웹사이트와 보안 전자상거래 사이트에서 동일한 도메인을 사용하는 경우에는 UTM을 전자상거래 사이트에 설치하는 것이 다른 유형의 웹사이트에 설치할 때와 차이점이 없습니다.구체적인 설치 정보를 이 섹션의 다른 영역에 있는 UTM 설치 정보를 참조하시기 바랍니다.전자상거래 및 기타 사이트에 맞게 UTM 도메인을 설정하는 방법을 설명하는 부분에서 특별히 유의해야 합니다.설명서의 전자상거래 섹션에 전자상거래 거래 로그 형식에 대한 자세한 정보가 있습니다. <p class="line867"><strong>교차 도메인 구성</strong> <p class="line862">전자상거래 장바구니를 사용하는 웹사이트에서 전자상거래 구성요소를 Amazon, PayPal, Yahoo Stores 등의 다른 조직에 아웃소싱하는 것이 점점 일반화되고 있습니다.이로 인해서 UTM 추적에 문제가 발생할 수 있습니다. 방문자가 기본 웹사이트에서 보안 상점으로 이동할 때 UTM의 도메인이 바뀌기 때문입니다.보안 상점에서 기본 웹사이트와 동일한 UTM 방문자 ID를 사용하기 위해서는 방문자 ID가 보안 상점에 링크로 전달되어야 합니다. UTM에는 링크를 상점에 보내기 전에 링크를 해당 ID와 함께 묶는 utmLinker 기능이 있습니다.상점에 직접 링크를 연결하는 대신 링크를 utmLinker 기능에 전달하기만 하면 됩니다.다음은 utmLinker를 사용할 때의 구체적인 도움말입니다. <ol type="1"><li>두 웹사이트의 문서 루트에서 urchin.js 파일을 수정합니다. _ulink 변수를 1로, _udn 변수를 '없음'으로 설정합니다. </li><li>프로필의 UTM 도메인을 없음(공백)으로 설정합니다. </li><li>다음과 같이 링크를 기본 사이트에서 보안 사이트로 변경합니다. </li></ol><p class="line867"><pre>   &lt;a
+   href='javascript:__utmLinker("https://previous_link?with_parameters");'&gt;
+   link-to-shopping-cart&lt;/a&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,11 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>日志重新处理</strong> <p class="line867"><strong>概述</strong> <p class="line874">在处理过程中，如果发生 DNS 服务器崩溃、应用过滤器错误等特殊情况，则可能需重新处理日志数据。以下文档说明了退出并重新处理网络服务器日志数据所必需的正确操作步骤。 <p class="line874">请注意，重新处理日志需要使用仅在命令行 Shell 环境中提供的 Urchin 实用程序。只从 Urchin 基于网络的管理 GUI 无法完成全部操作步骤。 <p class="line867"><strong>重新处理单日数据</strong> <ul><li>在 Urchin 管理 GUI 中，修改配置文件并关闭"存储/数据库"标签下方的"日志跟踪"。请务必点击"更新"以保存更改。 </li><li>在"日志源"标签下方，确认已正确指定要重新处理的日志文件。日志数据应仅包含您要清除统计信息的当天的点击数。 </li><li>在 Urchin 系统上调用命令 Shell 并 </li></ul><p class="line867"><pre>cd /&lt;URCHIN_DIR&gt;/util
+</pre><ul><li>在 Urchin 发行套装的 'util' directory/folder 中利用以下命令运行 udb-sanitizer 实用程序 </li></ul><p class="line867"><pre>udb-sanitizer -p profile-name -d YYYYMM 
+</pre><ul><li style="list-style-type:none">在此处，YYYYMM 是包含要重新处理的日期的年份与月份 </li></ul><ul><li>选择选项 5，清除一天或数天的数据。实用程序会向您提示正确的日期，并清除该特定日期的统计信息。有关如何使用 udb-sanitizer 的更多示例，请参阅 ["udb-sanitizer：数据库维护")。 </li><li>点击"配置文件"的"运行/日程安排"标签下方的"立即运行"按钮，即可重新处理日志数据。 </li><li>将"日志文件路径"更改回其初始设置，重置日志源 </li><li>在配置文件修改区域的"存储/数据库"标签下方，重新打开"日志跟踪" </li></ul><p class="line867"><strong>重新处理整个月份：</strong> <p class="line862">重新处理整个月份数据的步骤与上述单日数据处理步骤类似，唯一的差别是需要使用不同的 udb-sanitizer 选项。有关示例，请参阅 udb-sanitizer：数据库维护。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

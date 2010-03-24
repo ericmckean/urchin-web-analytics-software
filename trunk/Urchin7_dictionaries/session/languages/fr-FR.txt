@@ -1,0 +1,66 @@
+#################################################################################################
+#  Urchin 7 session default dictionary file
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	Non utilisé
+1	Pour accéder à votre compte, connectez-vous.
+2	Nom d'utilisateur
+3	Mot de passe
+4	Veuillez vous reconnecter.
+5	Merci d'avoir choisi Urchin. Voulez-vous vous reconnecter ?
+6	Erreur de session - Lecture de la configuration impossible. (1000)
+7	Violation de sécurité - Adresse distante non définie. (1001)
+8	Violation de sécurité - Module non approuvé. (1002)
+9	Erreur de session - Format de l'ID incorrect. (1003)
+10	Erreur de session - Requête au contrôleur de session non valide. (10004)
+11	Erreur de session - Appel du programme par défaut impossible. (2001)
+12	Erreur de session - Appel du programme par défaut impossible. (2002)
+13	Erreur de session - Appel du programme par défaut impossible. (2003)
+14	Erreur de session - Création de session impossible. (2004)
+15	Erreur de session - Définition env. impossible. (2005)
+16	Erreur de session - ID de session manquant. (3000)
+17	Erreur de session - Récupération de l'enregistrement dans la base impossible. (3001)
+18	Erreur de session - L'adresse IP ne correspond pas à cette session. (3002)
+19	Erreur de session - ID de session incorrect. (3003)
+20	Erreur de session - Mise à jour de l'enregistrement de session impossible. (3004)
+21	La session est arrivée à expiration. Par mesure de sécurité, la déconnexion a eu lieu automatiquement.
+22	Erreur de session - Appel de l'application impossible. (4001)
+23	Erreur de session - Appel de l'application impossible. (4002)
+24	Erreur de session - Appel de l'application impossible. (4003)
+25	Erreur de session - ID de session introuvable. (4004)
+26	Erreur de session - Accès impossible à l'enregistrement de session dans la base de données. (4005)
+27	Erreur de session - Désolé, l'adresse IP que vous utilisez actuellement ne correspond pas à celle utilisée à l'ouverture de session.
+28	Erreur de session - ID de session incorrect. (4007)
+29	Erreur de session - Mise à jour de l'enregistrement de session impossible. (4008)
+30	Erreur de session - Création env. impossible. (4009)
+31	Erreur d'authentification - Appel du module d'auth. impossible. (5001)
+32	Erreur d'authentification - Appel du module d'auth. impossible. (5002)
+33	Erreur d'authentification - Appel du module d'auth. impossible. (5003)
+34	Erreur d'authentification - Échec auth. (6001)
+35	Erreur d'authentification - Nombre de param. incorrect. (6002)
+36	Erreur d'authentification - Accès à distance des utilisateurs refusé. (6003)
+37	Erreur d'authentification - Accès à distance à l'administration refusé. (6004)
+38	Erreur d'authentification - Adresse IP manquante. (6005)
+39	Erreur d'authentification - Impossible de récupérer la config. globale dans la base de données. (6006)
+40	Échec de l'authentification.
+41	Accès à distance des utilisateurs refusé. (6008)
+42	Accès à distance à l'administration refusé (6009)
+43	Connexion
+44	Bienvenue dans Urchin from Google
+45	Accueil Google Analytics
+46	FAQ
+47	Règles de confidentialité
+48	Centre d'aide Urchin
+49	Blog Google Analytics et Urchin
+50	Logiciel Urchin from Google
+51	Règles de confidentialité Google
+52	Blog Google Analytics et Urchin (en anglais)
+53	Règles de confidentialité Google
+54	Accueil
+55	Nouveautés
+56	Consultants agréés
+57	<p>Le logiciel Urchin from Google analyse le trafic d'un ou de plusieurs sites Web et fournit des rapports clairs sur vos visiteurs : comment ils sont arrivés jusqu'à votre site, comment ils l'utilisent, ce qui les incitent à devenir clients, et bien plus encore.</p><p>Si votre contenu se trouve derrière un pare-feu, sur un intranet ou un réseau interne, et que vous ne puissiez pas utiliser Google Analytics, le logiciel Urchin from Google est fait pour vous.</p><p>L'assistance pour le logiciel Urchin from Google est exclusivement assurée par les consultants Urchin agréés.</p>
+58	En savoir plus
+59	Contrat de licence utilisateur final
+60	Forum utilisateur Urchin

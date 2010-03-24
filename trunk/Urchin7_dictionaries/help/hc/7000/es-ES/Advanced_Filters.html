@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Filtros avanzados</strong> <p class="line867"><strong>Introducción</strong> <p class="line874">La opción "Filtros avanzados" le permite crear campos para ofrecer información de uno o dos campos existentes. Las expresiones regulares POSIX y las variables correspondientes se pueden utilizar para obtener campos completos o parte de ellos y combinar el resultado en el orden deseado. <p class="line867"><strong>Utilización de filtros avanzados</strong> <p class="line867"><img alt="Advanced_Filters" src="../images/Advanced_Filters.jpg" title="Advanced_Filters" /> <p class="line874">En la ilustración anterior, el Filtro avanzado utiliza un máximo de dos campos: "Campo A" y "Campo B" y crea el "Campo de resultados". La creación se produce del siguiente modo: la expresión "Extracto A" se aplica al "Campo A" y la expresión "Extracto B" se aplica al "Campo B". Estas expresiones pueden emplear concordancias de texto tanto parcial como total y también incluir comodines. La siguiente es una lista de los comodines más habituales y sus significados. Las expresiones se rigen por expresiones regulares POSIX. <p class="line867"><pre>.   coincide con cualquier carácter individual
+*   coincide con cero o más elementos anteriores
++   coincide con uno o más elementos anteriores
+?   coincide con cero o uno de los elementos anteriores
+()  recuerda el contenido del paréntesis como elemento
+[]  coincide con un elemento de la lista
+-   crea un intervalo en una lista
+|   o
+^   coincide con el inicio del campo
+$   coincide con el final del campo
+\   usa caracteres de escape con cualquiera de los elementos anteriores
+
+</pre><p class="line874">Emplee el paréntesis () para obtener parte de los campos. Se pueden indicar en el Constructor utilizando la notación $A1, $A2, $B1, $B2. "A" o "B" hace referencia al campo, mientras que el número indica el paréntesis que hay que obtener. En el ejemplo anterior, se obtienen el "Campo A" y el "Campo B" íntegros y se unen para formar el nuevo campo. El campo "Enviar resultados" puede ser un campo distinto o el mismo que el "Campo A" o "Campo B". <p class="line867"><strong>Controles</strong> <p class="line874">El control 'Sobrescribir el campo de resultados' le permite decidir qué hacer si ya existe el campo de resultados. La opción 'El campo x es obligatorio' le permite decidir qué hacer si una de las expresiones no coincide. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

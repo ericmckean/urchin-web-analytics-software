@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>'세션 오류 - 응용 프로그램을 호출할 수 없습니다.(4002)...'는 어떤 의미입니까?</strong> <p class="line874">Urchin 보고서를 보는 경우 브라우저는 사용자가 요청한 데이터 범위 및 보고서 보기와 일치하는 데이터를 Urchin 데이터베이스 파일에서 쿼리합니다.데이터 쿼리에 대한 응답이 기본값인 45초 이내에 수신되지 않으면 시간초과가 발생하고 '세션 오류 - 응용 프로그램을 호출할 수 없습니다. (4002) 다시 로그인하십시오.' 오류가표시됩니다.이 오류가 발생하면 시간초과 값을 알맞게 늘려야 합니다.값을 늘리려면 명령행에서 Urchin 폴더 파일에 액세스해야 합니다.그렇지 않은 경우 보고서를 제공하는 담당자에게 이 문서를 확인하도록 요청하십시오. <p class="line874">응용 프로그램 시간초과 값을 늘리려면 다음을 수행하십시오. <ul><li>명령 쉘을 열고 Urchin 서버로 이동합니다. </li><li>다음 파일을 엽니다. /path/to/urchin/etc/session.conf </li><li><p class="line862">다음 지시문을 찾습니다.APPLICATION_TIMEOUT:45(초) </li><li>값을 알맞게 늘리고 파일을 저장합니다.변경 사항은 즉시 적용됩니다. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

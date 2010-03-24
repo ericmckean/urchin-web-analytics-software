@@ -1,0 +1,1648 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Toewijzing van rapportgegevens van Urchin 5 naar Urchin 6</strong> De profielinstellingen en rapporten met gegevens uit Urchin 5 worden niet ongewijzigd gemigreerd naar Urchin 6: <ul><li>De migratie van doelen die zijn gemaakt in Urchin 5 wordt niet ondersteund. </li><li>De logbestandsindeling "ELF" wordt niet ondersteund in Urchin 6 en logbestanden met deze indeling worden tijdens de migratie overgeslagen. </li><li>Urchin 6 gebruikt een andere reeks methoden voor het bijhouden van bezoekers dan Urchin 5. De onderstaande tabel bevat een overzicht van hoe deze methoden worden omgezet na de migratie. </li></ul><div><table style="width: 424px"><tbody><tr>  <td class="xl68" style="background-color: #999999; height: 20px; width: 212px"><p class="line891"><strong>Methode voor het bijhouden van bezoekers in Urchin 5</strong> </td>
+  <td class="xl69" style="background-color: #999999; height: 20px; width: 212px"><p class="line891"><strong>Methode voor het bijhouden van bezoekers in Urchin 6</strong> </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">IP+User-Agent </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Username </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Session ID </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Urchin Traffic Monitor (UTM) </td>
+  <td class="xl66"><p class="line862">Urchin Traffic Monitor (UTM) </td>
+</tr>
+<tr>  <td class="xl67" style="height: 21px"><p class="line862">IP ONLY </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+</tbody></table></div><p class="line874">De toegewezen statistieken uit de rapporten voor Urchin 5 en Urchin 6 worden vermeld in de onderstaande tabel. <div><table style="width: 1223px"><tbody><tr>  <td class="xl81" style="text-align: center; ; width: 141px; height: 40px; background-color: #999999"><p class="line891"><strong>Rapportgedeelte</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Urchin 5-rapport</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Statistiek</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Urchin 6-rapport</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Statistiek</strong> </td>
+  <td class="xl87" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Methode voor het bijhouden van bezoekers </strong> </td>
+  <td class="xl83" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Opmerkingen</strong> </td>
+</tr>
+<tr>  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Verkeer</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Sessiegrafiek </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketingoptimalisatie&gt;Bijhouden van unieke bezoekers&gt;Bijhouden van bezoeken en paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+  <td class="xl89" colspan="1" rowspan="13" style="text-align: center; ; width: 111px"><p class="line862">"UTM" en "IP+User-Agent" </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Grafiek met paginaweergaves </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketingoptimalisatie&gt;Bijhouden van unieke bezoekers&gt;Bijhouden van bezoeken en paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Paginaweergaves </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Grafiek met treffers </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 309px"><p class="line862">IT-rapporten&gt;Bijhouden treffers en bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Bytes-grafiek </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 309px"><p class="line862">IT-rapporten&gt;Bijhouden treffers en bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Overzicht </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>Load-balancing</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Bron logbestand op treffers </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bron logbestand </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Load-balancing </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bron logbestand </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Bron logbestand op bytes </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bron logbestand </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Load-balancing </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bron logbestand </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Bezoekers en sessies</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="2" style="text-align: center; ; height: 40px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="2" style="text-align: center; ; width: 198px"><p class="line862">Bezoekers per dag </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bezoekers </td>
+  <td class="xl66" colspan="1" rowspan="2" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Bijhouden van unieke bezoekers&gt;Dagelijkse bezoekers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoekers </td>
+  <td class="xl89" colspan="1" rowspan="10" style="text-align: center; ; width: 111px"><p class="line862">"UTM" </td>
+  <td class="xl97" colspan="1" rowspan="2" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Nieuwe bezoekers </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Sessies per dag </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sessies </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Bijhouden van unieke bezoekers&gt;Bijhouden van bezoeken en paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Paginaweergaves </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gemiddelde paginaweergaves per bezoek (P/bezoek) </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Unieke bezoekers </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Unieke bezoekers </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketingoptimalisatie&gt;Bijhouden van unieke bezoekers&gt;Absoluut unieke bezoekers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Unieke bezoekers </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Unieke sessies </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Bezoekersloyaliteit </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bezoeken </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketingoptimalisatie&gt;Bijhouden van unieke bezoekers&gt;Bezoekersloyaliteit </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Sessiefrequentie </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sessie </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketingoptimalisatie&gt;Bijhouden van unieke bezoekers&gt;Bezoekersgeschiedenis </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Overzicht </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Pagina's en bestanden</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Opgevraagde pagina's </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Pagina's </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Inhoudsprestatie&gt;Belangrijkste inhoud </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Inhoud </td>
+  <td class="xl92" colspan="1" rowspan="51" style="text-align: center; ; width: 111px"><p class="line862">"UTM" en "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Paginaweergaves </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. tijd </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Uitstappercentage </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$-index </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Downloads </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Downloads </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Downloads </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Downloads </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Paginazoektermen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Paginazoektermen </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Inhoudsprestatie&gt;Paginazoektermen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Pagina's/Zoektermen </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Telling </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Telling </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Verzonden formulieren </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verzonden formulieren </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Verzonden formulieren </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verzonden formulieren </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Status en fouten </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Status en fouten </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Statuscodes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Statuscodes </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>Alle bestanden</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Alle bestanden op treffers </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bestanden </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Belangrijkste bestanden </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bestanden </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport wordt niet rechtstreeks gemigreerd: het veld "Geldige treffers" in Urchin 6 bevat het totale aantal treffers, dus de geldige en foute treffers samen. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Alle bestanden op bytes </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bestanden </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Belangrijkste bestanden </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bestanden </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport wordt niet rechtstreeks gemigreerd: het veld "Geldige treffers" in Urchin 6 bevat het totale aantal treffers, dus de geldige en foute treffers samen. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="15" style="text-align: center; ; height: 300px; width: 141px"><p class="line891"><strong>Directorydetails</strong> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Directorydetails op pagina's </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Directory op pagina's </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Inhoudsprestatie&gt;Inhoudsdetails </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Directory en pagina's </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Paginaweergaves </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. tijd </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Uitstappercentage </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$-Index </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Directorydetails op bestanden </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Directory en bestanden </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Bestandsdetails </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Directory en bestanden </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Directorydetails op bytes </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Directory en bestanden </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Bestandsdetails </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Directory en bestanden </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong> Bestandstypen</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Bestandstypen op treffers </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bestandstypen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Bestandstypen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Soorten bestandsextensies </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Bestandstypen op bytes </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bestandstypen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Bestandstypen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Soorten bestandsextensies </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">Gegevens kunnen enigszins afwijken na migratie van dit rapport. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Treffers </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Navigatie</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Instappagina's </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Instappagina's </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Navigatieanalyse&gt;Bouncepercentages instappagina's </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Belangrijkste instappagina's </td>
+  <td class="xl89" colspan="1" rowspan="39" style="text-align: center; ; width: 111px"><p class="line862">"UTM" en "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Instappagina's </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bounces </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bouncepercentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Uitstappagina's </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Uitstappagina's </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Navigatieanalyse&gt;Belangrijkste sluitingspagina's </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Belangrijkste uitstappunten </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Uitstappunten </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Paginaweergaves </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Uitstappercentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Bouncepercentage </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bouncepagina's </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Navigatieanalyse&gt;Bouncepercentages instappagina's </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Belangrijkste instappagina's </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bounces </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bounces </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Instappagina's </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Instappagina's </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bouncepercentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bouncepercentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="6" style="text-align: center; ; height: 120px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 198px"><p class="line862">Klikpaden </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Klikpaden </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Navigatieanalyse&gt;Beginnavigatie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Beginpad </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 198px"><p class="line862">Klikken vanaf en naar </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Directory en bestanden </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Navigatieanalyse&gt;Alle navigatie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Directory en pagina's </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Vorige pagina's </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Top 10 van klikken vanaf </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Volgende pagina's </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Top 10 van klikken naar </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klikken </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Klikken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Klikpercentage </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/klikken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T1/klikken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. score </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Lengte van paginaweergave </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Pagina's </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Inhoudsprestatie&gt;Inhoudsdetails </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Directory en pagina's </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Paginaweergaves </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Gemiddelde tijd </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. tijd </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Uitstappercentage </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$-Index </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Diepte van sessie </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Inhoudsprestatie&gt;Diepte van bezoek </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Lengte van sessie </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Inhoudsprestatie&gt;Betrokkenheidsstatistieken </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Verwijzingen</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Verwijzingen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verwijzingen </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Resultaten van marketingcampagne&gt;Verwijzingsconversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verwijzingen </td>
+  <td class="xl89" colspan="1" rowspan="31" style="text-align: center; ; width: 111px"><p class="line862">"UTM" en "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet rechtstreeks worden gemigreerd: alleen paginaweergaves voor "verwijzingen" worden opgenomen in dit Urchin 6-rapport ("organische" en "cpc"-paginaweergaves worden uitgesloten). </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Verwijzingsdetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verwijzingen </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Resultaten van marketingcampagne&gt;Verwijzingsconversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verwijzingen </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet rechtstreeks worden gemigreerd: alleen paginaweergaves voor "verwijzingen" worden opgenomen in dit Urchin 6-rapport ("organische" en "cpc"-paginaweergaves worden uitgesloten). </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Zoekwoorden </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Zoekwoorden </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Zoekmachinemarketing&gt;Algemene zoekwoordconversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Zoekwoord/bron[medium] </td>
+  <td class="xl98" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet rechtstreeks worden gemigreerd als het Urchin 5-profiel wordt verwerkt met de "UTM"-methode voor het bijhouden van bezoekers. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Zoekmachines </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Zoekmachines </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Zoekmachinemarketing&gt;CPC versus organische conversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bron[medium]/zoekwoord </td>
+  <td class="xl98" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet rechtstreeks worden gemigreerd als het Urchin 5-profiel wordt verwerkt met de "UTM"-methode voor het bijhouden van bezoekers. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Verwijzingsfouten </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verwijzingsfouten </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Pagina's en bestanden&gt;Verwijzingsfouten </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Foutcodes/Inhoud/Verwijzing </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">"401"-foutcodes worden uitgesloten van de rapportgegevens bij het migreren naar Urchin 6. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Foute treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line862"> <strong>Domeinen en gebruikers</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Domeinen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Domeinen </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Prestaties van bezoekerssegmenten&gt;Domeinen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Domeinen </td>
+  <td class="xl89" colspan="1" rowspan="44" style="text-align: center; ; width: 111px"><p class="line862">"UTM" en "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Domeindetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Domeinen </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Domeinen en gebruikers&gt;Domeindetails </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Primair domein/domein </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet worden gemigreerd vanwege incompatibiliteit van de gegevensoverzichten. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Landen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Landen </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Prestaties van bezoekerssegmenten&gt;Geografische locatie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Land/Regio/Plaats </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet worden gemigreerd vanwege incompatibiliteit van de gegevensoverzichten. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">IP-adressen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">IP-adressen </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Domeinen en gebruikers&gt;IP-adressen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">IP-adressen </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet worden gemigreerd vanwege incompatibiliteit van de gegevensoverzichten. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">IP-details </td>
+  <td class="xl66" style="width: 121px"><p class="line862">IP-adressen </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Domeinen en gebruikers&gt;IP-details </td>
+  <td class="xl66" style="width: 188px"><p class="line862">IP-adressen </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet worden gemigreerd vanwege incompatibiliteit van de gegevensoverzichten. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="15" style="text-align: center; ; height: 300px; width: 141px"><p class="line891"><strong>Gebruikersnamen</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Gebruikersnamen op treffers </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Gebruikersnamen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Domeinen en gebruikers&gt;Gebruikersnamen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gebruikersnamen </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet rechtstreeks worden gemigreerd: het veld "Geldige treffers" in Urchin 6 bevat het totale aantal treffers, dus de geldige en foute treffers samen. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Gebruikersnamen op bytes </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Gebruikersnamen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Domeinen en gebruikers&gt;Gebruikersnamen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gebruikersnamen </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">Gebruikersnamen op sessies </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Gebruikersnamen </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Prestaties van bezoekerssegmenten&gt;Gebruikersnamen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gebruikersnamen </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Browsers en robots</strong> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>Browsers</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Browsers op sessiedetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Browsers </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Parameters webontwerp&gt;Browserversies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browsers </td>
+  <td class="xl89" colspan="1" rowspan="42" style="text-align: center; ; width: 111px"><p class="line862">"UTM" en "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Browsers op trefferdetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Browsers </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Browsers en robots&gt;Browserversies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browsers </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Browsers op bytedetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Browsers </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Browsers en robots&gt;Browserversies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browsers </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>Platforms</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Platforms op sessiedetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Platforms </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Parameters webontwerp&gt;Platformversies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Platforms </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Platforms op trefferdetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Platforms </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Browsers en robots&gt;Platformversies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Platforms </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Platforms op bytedetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Platforms </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Browsers en robots&gt;Platformversies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Platforms </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>Combinaties</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Combinaties op sessies </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Browsers </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Parameters webontwerp&gt;Browser- en platformcombinaties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browsers </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Combinaties op treffers </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Combinaties </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Browsers en robots&gt;Browser- en platformcombinaties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browsers: platform </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Combinaties op bytes </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Combinaties </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Browsers en robots&gt;Browser- en platformcombinaties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browsers: platform </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="9" style="text-align: center; ; height: 180px; width: 141px"><p class="line891"><strong>Robots</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Robots op trefferdetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Robots </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Browsers en robots&gt;Robotinhoud </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Robots/User-agent </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffers </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; height: 120px; width: 198px"><p class="line862">Robots op bytedetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Robots </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">IT-rapporten&gt;Browsers en robots&gt;Robots </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Robots/User-agent </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geldige treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Foute treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle treffers </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Bytes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bytes </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Clientparameters</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Schermresolutie </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Schermresolutie </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Parameters webontwerp&gt;Schermresoluties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Schermresolutie </td>
+  <td class="xl89" colspan="1" rowspan="14" style="text-align: center; ; width: 111px"><p class="line862">"UTM" </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet worden gemigreerd vanwege incompatibiliteit van de gegevensoverzichten. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Schermkleuren </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Kleurdiepte </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Parameters webontwerp&gt;Schermkleuren </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Schermkleur </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet worden gemigreerd vanwege incompatibiliteit van de gegevensoverzichten. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Talen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Talen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Parameters webontwerp&gt;Talen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Talen </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketingoptimalisatie&gt;Prestaties van bezoekerssegmenten&gt;Taal </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 309px"><p class="line862"> </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Geschikt voor Java </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Geschikt voor Java </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Inhoudsoptimalisatie&gt;Parameters webontwerp&gt;Geschikt voor Java </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Geschikt voor Java </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet worden gemigreerd vanwege incompatibiliteit van de gegevensoverzichten. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Tijdzoneverschil </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line891">JavaScript-versie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>E-commerce</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Opbrengst </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Opbrengst </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Handelsactiviteiten bijhouden&gt;Opbrengst en transacties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Opbrengst </td>
+  <td class="xl89" colspan="1" rowspan="54" style="text-align: center; ; width: 111px"><p class="line862">"UTM" en "IP+User-Agent" met "E-commercewebsite" ingeschakeld </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Aantal transacties </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Transacties </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Analyse van e-commerce&gt;Handelsactiviteiten bijhouden&gt;Opbrengst en transacties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Transacties </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="6" style="text-align: center; ; height: 200px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 198px"><p class="line862">Overzicht e-commerce </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Totale opbrengsten </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">Weergave voor leidinggevenden&gt;Overzicht e-commerce </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Opbrengst </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Totaal aantal transacties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Gemiddelde opbrengst per transactie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gemiddelde </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Gemiddelde opbrengst per dag </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Gemiddeld aantal transacties per dag </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Gemiddelde opbrengst per sessie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="28" style="text-align: center; ; height: 560px; width: 141px"><p class="line891"><strong>Producten</strong> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Producten op opbrengst </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Producten </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Analyse van e-commerce&gt;Productmerchandising&gt;Productprestaties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Producten/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Artikelen </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Opbrengst </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Opbrengst </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. prijs </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. hoev. </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">Producten op hoeveelheid </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Producten </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Analyse van e-commerce&gt;Productmerchandising&gt;Productprestaties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Producten/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Artikelen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Artikelen </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Opbrengst </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. prijs </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. hoev. </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">Producten op opbrengstdetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Regio's </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Analyse van e-commerce&gt;Productmerchandising&gt;Productprestaties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Producten/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Artikelen </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Opbrengst </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Opbrengst </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. prijs </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. hoev. </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">Producten op hoeveelheidsdetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Producten </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Analyse van e-commerce&gt;Productmerchandising&gt;Productprestaties </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Producten/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Artikelen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Artikelen </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Opbrengst </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. prijs </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gem. hoev. </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="18" style="text-align: center; ; height: 382px; width: 141px"><p class="line891"><strong>Opbrengstenbron</strong> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Opbrengst op regiodetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Regio's </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">Analyse van e-commerce&gt;Opbrengstenbronnen&gt;Landdetails </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Land/Regio/Plaats </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Opbrengst </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Opbrengst </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage € </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 198px"><p class="line862">Opbrengst op plaats </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Plaatsen </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">Analyse van e-commerce&gt;Opbrengstenbronnen&gt;Belangrijkste plaatsen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Land/Regio/Plaats </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Opbrengst </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Opbrengst </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Percentage € </td>
+</tr>
+<tr>  <td class="xl68" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 198px"><p class="line862">Opbrengst op verwijzingen </td>
+  <td class="xl96"><p class="line862">Verwijzingen </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">Analyse van e-commerce&gt;Opbrengstenbronnen&gt;Verwijzende bronnen </td>
+  <td class="xl65"><p class="line862">Bron [medium] </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Opbrengst </td>
+  <td class="xl65"><p class="line862"> Opbrengst </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl65"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl65"><p class="line862">€/trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Percentage </td>
+  <td class="xl65"><p class="line862">Percentage € </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Opbrengst op zoekwoorden </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Opbrengst op zoekmachinedetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Opbrengst op domeindetails </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Campagne bijhouden</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Totale resultaten </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl89" colspan="1" rowspan="87" style="text-align: center; ; width: 111px"><p class="line862">"UTM" met "Campagne bijhouden" ingeschakeld </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Doelresultaten </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="14" style="text-align: center; ; height: 280px; width: 141px"><p class="line891"><strong>Bronnen van leads</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Acquisitie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 198px"><p class="line862">Kwaliteit </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bron </td>
+  <td class="xl66" colspan="1" rowspan="11" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Resultaten van marketingcampagne&gt;Bronconversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bron [medium] </td>
+  <td class="xl97" colspan="1" rowspan="11" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klikken </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Diepte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Loyaliteit </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G4/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">Conversie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">Kostenoverzicht </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>Zoekwoordanalyse</strong> </td>
+  <td class="xl67" style="width: 198px"><p class="line862">Acquisitie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">Kwaliteit </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bron/zoekwoord </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Zoekmachinemarketing&gt;CPC versus organische conversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bron[medium]/zoekwoord </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klikken </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Diepte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Loyaliteit </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Conversie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Kostenoverzicht </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>Zoekwoorden vergelijken</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Acquisitie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 198px"><p class="line862">Kwaliteit </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Zoekwoord/bron </td>
+  <td class="xl66" colspan="1" rowspan="8" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Zoekmachinemarketing&gt;Algemene zoekwoordconversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Zoekwoord/bron[medium] </td>
+  <td class="xl97" colspan="1" rowspan="8" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klikken </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Diepte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Loyaliteit </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Conversie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Kostenoverzicht </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>Campagnes vergelijken&gt;...</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Acquisitie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">Kwaliteit </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Campagne/bron </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Resultaten van marketingcampagne&gt;Campagneconversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Campagne/bron </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klikken </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Diepte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Loyaliteit </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Conversie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Kostenoverzicht </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>Medium vergelijken</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Acquisitie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">Kwaliteit </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Medium/bron </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Marketingoptimalisatie&gt;Resultaten van marketingcampagne&gt;Mediumconversie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Medium/bron </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klikken </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Diepte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Loyaliteit </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">Conversie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">Kostenoverzicht </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>Inhoudstests (A/B)&gt;...</strong> </td>
+  <td class="xl67" style="width: 198px"><p class="line862">Acquisitie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">Kwaliteit </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bron/inhoud </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Testen van advertentieversie&gt;Testen op specifieke bron </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bron/inhoud </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862">Dit rapport kan niet rechtstreeks worden gemigreerd: records met "verwijzende" bronnen worden uitgesloten van het bijbehorende Urchin 6-rapport. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klikken </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Paginaweergaves </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sessies </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Diepte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Loyaliteit </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">P/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">D1/bezoek </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/bezoeken </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€/bezoeken </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Conversie </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Kostenoverzicht </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl72" colspan="1" rowspan="4" style="text-align: center; ; height: 120px; width: 141px"><p class="line891"><strong>Latentierapporten</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Tijd voorafgaand aan doel </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Sessies voorafgaand aan doel </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl68" style="width: 198px; height: 40px"><p class="line862">Tijd voorafgaand aan transactie </td>
+  <td class="xl102" style="width: 121px"><p class="line862">Transacties </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Analyse van e-commerce&gt;Loyaliteit en latentie&gt;Tijd voorafgaand aan transactie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl68" style="width: 198px; height: 40px"><p class="line862">Sessies voorafgaand aan transactie </td>
+  <td class="xl102" style="width: 121px"><p class="line862">Transacties </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Analyse van e-commerce&gt;Loyaliteit en latentie&gt;Bezoeken voorafgaand aan transactie </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl79" colspan="1" rowspan="2" style="text-align: center; ; height: 44px; width: 141px"><p class="line891"><strong>Overzicht dagdelen</strong> </td>
+  <td class="xl77" style="background-color: #ffcc99; width: 198px"><p class="line862">Doelconversie per uur </td>
+  <td class="xl78" style="width: 121px"><p class="line862"> </td>
+  <td class="xl78" style="width: 309px"><p class="line862">- </td>
+  <td class="xl78" style="width: 188px"><p class="line862">- </td>
+  <td class="xl99" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Omzetconversie per uur </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl73" colspan="1" rowspan="2" style="text-align: center; ; height: 41px; width: 141px"><p class="line891"><strong>Klikfraudecontrole</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Herhaalde klikken op IP </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl75" style="background-color: #ffcc99; width: 198px"><p class="line862">Herhaalde klikken op bron </td>
+  <td class="xl76" style="width: 121px"><p class="line862"> </td>
+  <td class="xl76" style="width: 309px"><p class="line862">- </td>
+  <td class="xl76" style="width: 188px"><p class="line862">- </td>
+  <td class="xl100" style="width: 155px"><p class="line862"> </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Come faccio a monitorare tutti i sottodomini del mio sito in un unico profilo?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Articolo di</em> <a href="ivantageLimited.html">ivantage Limited</a>,<em>consulente autorizzato del software Urchin </em> </li></ul><p class="line874">È possibile monitorare i sottodomini all'interno dello stesso profilo del dominio. A tal fine, devi aggiungere una riga al codice di monitoraggio su ciascuna pagina del sottodominio. Nelle istruzioni seguenti si presuppone che questo profilo sia stato impostato utilizzando il sito web indicato come dominio principale (es. esempio.it). <ol type="1"><li>Aggiungi la seguente riga (in grassetto) al codice di monitoraggio di tutte le pagine del tuo sottodominio e del tuo dominio principale: </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">Questa riga dovrebbe fare riferimento al dominio principale (esempio.it). </li></ul><p class="line874">Tieni presente che, mentre questa modifica ti consente di monitorare i sottodomini all'interno di un unico profilo, i rapporti potrebbero non fare distinzione tra le pagine provenienti da www.esempio.it e quelle provenienti da guida.esempio.it. Ad esempio, nel rapporto Contenuti principali, potrebbero essere presenti hit di www.esempio.it/indice.html e guida.esempio.it/altro.html, ma nel rapporto verrebbe visualizzato quanto segue: <pre>   /index.html
+   /more.html
+</pre><p class="line874">Se desideri distinguere tra i sottodomini, puoi creare un filtro Avanzato per il tuo profilo con le seguenti impostazioni: <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">Con questo filtro attivato, gli esempi precedenti verrebbero visualizzati con il sottodominio: <pre>   www.esempio.it/indice.html
+   guida.esempio.it/altro.html
+</pre><p class="line874">NOTA. Questo filtro si basa sul nome host del tuo sito web, incluso il sottodominio scritto nel tuo file di log per l'accesso web. Se il tuo file di log per l'accesso web non contiene il nome host, Urchin 6 non sarà in grado di registrare nei rapporti la differenza tra, ad esempio, index.html nei due domini: <pre> www.esempio.it/indice.html
+ guida.esempio.it/altro.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

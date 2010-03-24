@@ -1,0 +1,1241 @@
+#################################################################################################
+#  Copyright (c) 2010 Urchin Software Corporation
+#  Dictionary
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	-
+1	Bezoekers
+2	Bezoeken
+3	Paginaweergaves
+4	Treffers
+5	Bytes
+6	Gem. tijd
+7	Omzet
+8	Trans
+9	Reacties
+10	Nieuwe leads
+11	Doelen
+12	Vertoningen
+13	Klikken
+14	Kosten
+15	Klanten
+16	Periode
+17	P/bezoek
+18	Soorten bezoekers
+19	Landen
+20	Bronnen
+21	Bron/medium
+22	Omzet/Artikelen
+23	Totaal
+24	Conversiepercentage
+25	Rapporten
+26	Periode
+27	$-index
+28	D1
+29	D2
+30	D3
+31	D4
+32	Gebruikersnamen
+33	-
+34	Aangepaste periode
+35	XML
+36	Profielnaam
+37	Rapportnaam
+38	Periode
+39	Weergeven per
+40	Standaard
+41	Per uur
+42	Dagelijks
+43	Maandelijks
+44	Filter
+45	Exporteren
+46	Gescheiden door tabs (tekst)
+47	Word (doc)
+48	Excel (CSV)
+49	Afdrukweergave/standaardweergave
+50	Help-informatie
+51	Periodes vergelijken
+52	Invoerbereik
+53	Bereik toepassen
+54	D1/bezoek
+55	D2/Bezoek
+56	D3/Bezoek
+57	D4/Bezoek
+58	D5/Bezoek
+59	Browsers
+60	Procent
+61	Platforms
+62	Browsers: platform
+63	Schermresolutie
+64	Schermkleur
+65	Taal
+66	Geschikt voor Java
+67	JavaScript-versie
+68	Flash-versie
+69	Verbindingssnelheid
+70	Huidig bereik
+71	Vorige periode
+72	Dagen geleden
+73	Bron [medium]
+74	T/bezoeken
+75	$/bezoeken
+76	Land/Regio/Plaats
+77	Organisatienaam
+78	Door de gebruiker gedefinieerd
+79	Campagne/bron
+80	Medium/Bron
+81	CPA
+82	RPA
+83	ROI
+84	Medium
+85	Inhoud
+86	Bron/inhoud
+87	Zoekwoord/Inhoud
+88	Pagina's
+89	Uitstappercentage
+90	Directory en pagina's
+91	Paginatitels
+92	Pagina's/Zoektermen
+93	Telling
+94	Diepte van bezoek
+95	Bezoekduur (sec)
+96	Instappunten
+97	Bounces
+98	Bouncepercentage
+99	Verwijzingen
+100	Weergeven
+101	Marketingoptimalisatie
+102	Inhoudsoptimalisatie
+103	Analyse van e-commerce
+104	Bezoekersoverzicht
+105	xxxxx
+106	Overzicht e-commerce
+107	xxxxx
+108	Conversieoverzicht
+109	xxxxx
+110	Marketingoverzicht
+111	xxxxx
+112	Verwijzingsconversie
+113	xxxxx
+114	Bezoeken en paginaweergaves
+115	Bezoeken van nieuwe en terugkerende bezoekers
+116	Bezoeken per land
+117	Bezoeken per bron
+118	Parameters webontwerp
+119	Browserversies
+120	xxxxx
+121	Platformversies
+122	xxxxx
+123	Browser- en platformcombinaties
+124	xxxxx
+125	Schermresoluties
+126	xxxxx
+127	Schermkleuren
+128	xxxxx
+129	Talen
+130	xxxxx
+131	Geschikt voor Java
+132	xxxxx
+133	JavaScript-versie
+134	xxxxx
+135	Flash-versie
+136	xxxxx
+137	Verbindingssnelheid
+138	xxxxx
+139	Bezoekers bijhouden
+140	Bezoeken en paginaweergaves
+141	xxxxx
+142	Grafiek Bezoekers
+143	Bezoeken
+144	Paginaweergaves
+145	Omzet en transacties
+146	Opbrengst per nieuwe en terugkerende bezoekers
+147	Omzet per land
+148	Omzet per bron
+149	Doelconversies bijhouden
+150	xxxxx
+151	Dagelijkse bezoekers
+152	xxxxx
+153	Absoluut unieke bezoekers
+154	xxxxx
+155	Bezoekersloyaliteit
+156	xxxxx
+157	Geschiedenis bezoeker
+158	xxxxx
+159	Prestaties van bezoekerssegmenten
+160	Nieuwe versus terugkerende bezoekers
+161	xxxxx
+162	Verwijzingsbron
+163	xxxxx
+164	Geografische locatie
+165	xxxxx
+166	Netwerklocatie
+167	xxxxx
+168	Taal
+169	xxxxx
+170	Door de gebruiker gedefinieerd
+171	xxxxx
+172	Resultaten van marketingcampagne
+173	Campagneconversie
+174	xxxxx
+175	Bronconversie
+176	xxxxx
+177	Mediumconversie
+178	xxxxx
+179	ROI van campagne
+180	xxxxx
+181	ROI van bron
+182	xxxxx
+183	ROI van medium
+184	xxxxx
+185	Marketing van zoekmachine
+186	CPC-programma-analyse
+187	xxxxx
+188	Algemene zoekwoordconversie
+189	xxxxx
+190	CPC versus organische conversie
+191	xxxxx
+192	Inhoudsprestatie
+193	Belangrijkste inhoud
+194	xxxxx
+195	Inhoudsdetails
+196	xxxxx
+197	Inhoud op titels
+198	xxxxx
+199	Paginazoektermen
+200	xxxxx
+201	Diepte van bezoek
+202	xxxxx
+203	Duur van bezoek
+204	xxxxx
+205	Navigatieanalyse
+206	Bouncepercentages instappagina's
+207	xxxxx
+208	Belangrijkste uitstappunten
+209	xxxxx
+210	Hostnamen
+211	xxxxx
+212	Hoofdbeheerder
+213	Accountbeheer
+214	Doelen en trechter
+215	Doelen bijhouden
+216	xxxxx
+217	Doelconversie
+218	xxxxx
+219	Verlaten van gedefinieerde trechter
+220	xxxxx
+221	Navigatie in gedefinieerde trechter
+222	xxxxx
+223	Omgekeerd doelpad
+224	xxxxx
+225	Doelverificatie
+226	xxxxx
+227	Wijzigingspercentage
+228	Bezoekersgrafiek
+229	Percentage nieuwe bezoekers
+230	Aandachtspunten voor zoekwoorden
+231	xxxxx
+232	Berekening maximum bod
+233	Berekening maximum bod: Help
+234	Overzicht dagdelen
+235	xxxxx
+236	Klikken bijhouden
+237	xxxxx
+238	D1-conversie
+239	D2-conversie
+240	D3-conversie
+241	D4-conversie
+242	Handelsactiviteiten bijhouden
+243	Omzet en transacties
+244	xxxxx
+245	Grafiek Conversiepercentage
+246	xxxxx
+247	Gemiddelde bestelwaarde
+248	xxxxx
+249	Transactielijst
+250	xxxxx
+251	Loyaliteit en latentie
+252	Nieuwe versus terugkerende bezoekers
+253	xxxxx
+254	Tijd voorafgaand aan transactie
+255	xxxxx
+256	Bezoeken voorafgaand aan transactie
+257	xxxxx
+258	Omzetbronnen
+259	Verwijzingsbronnen
+260	xxxxx
+261	Talen
+262	xxxxx
+263	Organisaties
+264	xxxxx
+265	Door de gebruiker gedefinieerd
+266	xxxxx
+267	Belangrijkste plaatsen
+268	xxxxx
+269	Landdetails
+270	xxxxx
+271	Partners
+272	xxxxx
+273	Productmerchandising
+274	Productprestatie
+275	xxxxx
+276	Productcategorieën
+277	xxxxx
+278	Samenhang product en koper
+279	xxxxx
+280	Samenhang product en locatie
+281	xxxxx
+282	Samenhang plaats, product en regio
+283	xxxxx
+284	Samenhang product en zoekwoord
+285	xxxxx
+286	Samenhang product en bron
+287	xxxxx
+288	Testen van advertentieversie
+289	Algemene A/B-test advertentie
+290	xxxxx
+291	Testen per bron
+292	xxxxx
+293	Testen op specifiek zoekwoord
+294	xxxxx
+295	Beginnavigatie
+296	xxxxx
+297	Alle navigatie
+298	xxxxx
+299	-
+300	-
+301	zo
+302	ma
+303	di
+304	wo
+305	do
+306	vr
+307	za
+308	Dag
+309	Week
+310	Maand
+311	Jaar
+312	Nieuwe bezoekers
+313	Eerdere bezoekers
+314	Nieuwe bezoekers
+315	Totalen
+316	Gemiddeld
+317	Grafiek
+318	Bron[medium]/zoekwoord
+319	Trans
+320	CTR
+321	CR
+322	CPC
+323	RPC
+324	Zoekwoord/bron[medium]
+325	Bron[medium]/zoekwoord
+326	Zoekwoorden
+327	Zoekwoorden/uur
+328	% Verloren
+329	Maximum bod
+330	Soort bezoeker
+331	D1/R
+332	D2/I
+333	D3/R
+334	D4/R
+335	T/R
+336	Omzet
+337	Transacties
+338	$/trans
+339	Dagen
+340	Sessies
+341	Trans
+342	Plaats/Regio/Land
+343	Partners
+344	Producten/SKU
+345	Artikelen
+346	Omzet
+347	Gem. prijs
+348	Gem. hoev.
+349	Productcategorieën/Naam/SKU
+350	Productcategorieën
+351	Product/Koper
+352	Land
+353	Plaats
+354	Product/zoekwoord
+355	Product/bron
+356	Belangrijkste uitstappunten
+357	Uitstappunten
+358	Belangrijkste instappagina's
+359	Beginpad
+360	jan
+361	feb
+362	mrt
+363	apr
+364	mei
+365	jun
+366	jul
+367	aug
+368	sep
+369	okt
+370	nov
+371	dec
+372	D1 bijhouden
+373	D2 bijhouden
+374	D3 bijhouden
+375	D4 bijhouden
+376	Campagnes
+377	Analyseopties
+378	Gegevens voor een bepaalde periode
+379	Overlay-pagina
+380	Sluiten
+381	Top 5 van bronnen
+382	Top 5 van zoekwoorden
+383	Top 5 van campagnes
+384	Inhoudsoverzicht
+385	xxxxx
+386	Top 5 van instappunten
+387	Top 5 van uitstappunten
+388	Top 5 van inhoud
+389	% Percentage
+390	Doelconversie
+391	Klikken vanaf en naar
+392	Top 10 van klikken vanaf|Top 10 van klikken naar
+393	Klik-overlay
+394	Overlay-pagina
+395	Uitstappunten
+396	Doelpad
+397	Gevonden doelen
+398	Doel selecteren
+399	D1 Verlatingspercentage
+400	D2 Verlatingspercentage
+401	D3 Verlatingspercentage
+402	D4 Verlatingspercentage
+403	Verlatingspercentage
+404	Ophalen webpagina mislukt:
+405	Foutcode:
+406	Belasting
+407	Verzenden
+408	Transactielijst
+409	Gemiddelde paginaweergaves per bezoek
+410	Bezoekersaantal
+411	D1/klikken
+412	D2/klikken
+413	D3/klikken
+414	D4/klikken
+415	T/klikken
+416	Gem. score
+417	Instappunten|verlatingspunten
+418	Aantal bezoeken
+419	Percentage $
+420	Site-overlay
+421	xxxxx
+422	Geografische-kaartoverlay
+423	xxxxx
+424	Locatie
+425	Rijen weergeven:
+426	Vorige pagina 1
+427	Vorige pagina 2
+428	Vorige pagina 3
+429	Segment
+430	Bron[medium]
+431	Campagne
+432	Zoekwoord
+433	Inhoud
+434	Land
+435	Regio
+436	Plaats
+437	Netwerklocatie
+438	Taal
+439	Door de gebruiker gedefinieerd
+440	Browser
+441	Platform
+442	Verbindingssnelheid
+443	Schermresolutie
+444	Kleuren
+445	Java
+446	JavaScript
+447	Flash
+448	Soort bezoeker
+449	Vorige
+450	Conv.perc.
+451	Hostnamen
+452	Item tot op heden
+453	Item tot op heden
+454	Nieuw
+455	Vorige
+456	Absoluut unieke bezoekers
+457	Doel 1
+458	Doel 2
+459	Doel 3
+460	Doel 4
+461	Gemiddelde waarde per bezoeker
+462	Totale e-commerce-inkomsten
+463	Totale aantal transacties
+464	Gemiddelde bestelwaarde
+465	Unieke conversie tot nu
+466	Details voor bezoekersgeschiedenis
+467	Bezoekers-id
+468	Bezoeken op datum
+469	Bezoekersaantal
+470	Ne sessie
+471	Pad paginaweergave
+472	Transactie
+473	CODE
+474	Beschrijving
+475	HOEV
+476	Totaal
+477	xxxxx
+478	Transactiedetail
+479	Bezoekerslijst
+480	xxxxx
+481	Netlocatie
+482	Geografische locatie
+483	Verwijzingsbron
+484	Eerste bezoek
+485	Laatste bezoek
+486	Scherminfo
+487	Browserinstellingen
+488	Lijst met bezoeken en bezoekdetails
+489	Bezoekdetail
+490	Bezoekdatum
+491	Grafiek verbergen/weergeven
+492	Vorige
+493	Volgende
+494	Bezoeker
+495	Startpagina
+496	Configuratie
+497	Voorkeuren
+498	Afmelden
+499	Adres
+500	Gegevenstabel uit-/samenvouwen
+501	xxxxx
+502	xxxxx
+503	Prestaties over meerdere segmenten
+504	xxxxx
+505	Klik op de knop <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0"> uiterst links van een item om de gegevens voor een bepaalde periode of de waarde tot op heden te bekijken, of deze gegevens te vergelijken met andere segmenten.
+506	Klik op de knop <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0"> uiterst links van een item om de gegevens voor een bepaalde periode weer te geven of te vergelijken met gegevens van andere segmenten.
+507	Klik op de knop <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0"> uiterst links van een item om de gegevens voor een bepaalde periode weer te geven.
+508	Klik op de knop <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0"> uiterst links van een item om de gegevens voor een bepaalde periode weer te geven of de site-overlay te bekijken.
+509	Lijst met bezoeken
+510	Eenheidsprijs
+511	Partner
+512	Datum
+513	IT-rapporten
+514	Bijhouden treffers en bytes
+515	xxxxx
+516	Browserversies
+517	xxxxx
+518	Platformversies
+519	xxxxx
+520	Browser- en platformcombinaties
+521	xxxxx
+522	Gebruikersnamen
+523	xxxxx
+524	Belangrijkste bestanden
+525	xxxxx
+526	Bestandsdetails
+527	xxxxx
+528	Bestandstypen
+529	xxxxx
+530	Bestanden
+531	Directory en bestanden
+532	Mime-typen
+533	Downloads
+534	xxxxx
+535	Verzonden formulieren
+536	xxxxx
+537	Downloads
+538	Verzonden formulieren
+539	Statuscodes
+540	xxxxx
+541	Verwijzingsfouten
+542	xxxxx
+543	Statuscodes
+544	Foutcodes/Inhoud/Verwijzing
+545	Niet-geautoriseerde gebruikersnamen
+546	xxxxx
+547	Gebruikersnamen
+548	Robots
+549	xxxxx
+550	Robotinhoud
+551	xxxxx
+552	Robots/User-agent
+553	Robots/User-agent/Bestanden
+554	Geldige treffers
+555	Foute treffers
+556	Alle treffers
+557	Taakverdeling
+558	xxxxx
+559	Bron logbestand
+560	Grafiek met geldige treffers
+561	Bytes-grafiek
+562	Grafiek met foute treffers
+563	IP-details
+564	xxxxx
+565	IP-adres
+566	IP-adressen
+567	xxxxx
+568	Domeindetails
+569	xxxxx
+570	Primair domein/domein
+571	Niet-herkende IP's
+572	xxxxx
+573	Domeinen
+574	xxxxx
+575	Domeinen
+576	Gebruikersnaam
+577	Gebruikersnaam: Help
+578	Pagina's en bestanden
+579	Domeinen en gebruikers
+580	Browsers en robots
+581	Domeinen
+582	Domeinen: Help
+583	DVW
+584	Aangepast
+585	Eerste datum
+586	Tweede datum
+587	Nieuwe bezoeker
+588	Terugkerende bezoeker
+589	af (Afrikaans)
+590	sq (Albanees)
+591	ar-sa (Arabisch Saoedi-Arabië)
+592	ar-iq (Arabisch Irak)
+593	ar-eg (Arabisch Egypte)
+594	ar-ly (Arabisch Libië)
+595	ar-dz (Arabisch Algerije)
+596	ar-ma (Arabisch Marokko)
+597	ar-tn (Arabisch Tunesië)
+598	ar-om (Arabisch Oman)
+599	ar-ye (Arabisch Jemen)
+600	ar-sy (Arabisch Syrië)
+601	ar-jo (Arabisch Jordanië)
+602	ar-lb (Arabisch Libanon)
+603	ar-kw (Arabisch Koeweit)
+604	ar-ae (Arabisch V.A.E.)
+605	ar-bh (Arabisch Bahrein)
+606	ar-qa (Arabisch Qatar)
+607	eu (Baskisch)
+608	bg (Bulgaars)
+609	be (Wit-Russisch)
+610	ca (Catalaans)
+611	zh-tw (Chinees Taiwan)
+612	zh-cn (Chinees VRC)
+613	zh-hk (Chinees Hongkong SAR)
+614	zh-sg (Chinees Singapore)
+615	hr (Kroatisch)
+616	cs (Tsjechisch)
+617	cs-cz (Tsjechisch)
+618	da (Deens)
+619	nl (standaard-Nederlands)
+620	nl-nl (standaard-Nederlands)
+621	nl-be (Nederlands België)
+622	en (Engels)
+623	en-us (Engels Verenigde Staten)
+624	en-gb (Engels Verenigd Koninkrijk)
+625	en-au (Engels Australië)
+626	en-ca (Engels Canada)
+627	en-nz (Engels Nieuw-Zeeland)
+628	en-ie (Engels Ierland)
+629	en-za (Engels Zuid-Afrika)
+630	en-jm (Engels Jamaica)
+631	en (Engels Caribisch gebied)
+632	en-bz (Engels Belize)
+633	en-tt (Engels Trinidad)
+634	et (Estlands)
+635	fo (Faerøers)
+636	fa (Farsi)
+637	fi (Fins)
+638	fr (standaard-Frans)
+639	fr-fr (standaard-Frans)
+640	fr-be (Frans België)
+641	fr-ca (Frans Canada)
+642	fr-ch (Frans Zwitserland)
+643	fr-lu (Frans Luxemburg)
+644	gd (Gaelisch Schotland)
+645	gd-ie (Gaelisch Ierland)
+646	de-de (standaard-Duits)
+647	de (standaard-Duits)
+648	de-ch (Duits Zwitserland)
+649	de-at (Duits Oostenrijk)
+650	de-lu (Duits Luxemburg)
+651	de-li (Duits Liechtenstein)
+652	el (Grieks)
+653	he (Hebreeuws)
+654	hi (Hindi)
+655	hu (Hongaars)
+656	is (IJslands)
+657	id (Indonesisch)
+658	it (standaard-Italiaans)
+659	it-it (standaard-Italiaans)
+660	it-ch (Italiaans Zwitserland)
+661	ja (Japans)
+662	ja-jp (Japans)
+663	ko (Koreaans)
+664	ko (Koreaans Johab)
+665	lv (Lets)
+666	lt (Litouws)
+667	mk (FYRO Macedonisch) ms (Maleis)
+668	mt (Maltees)
+669	no (Noors Bokmål)
+670	no (Noors Nynorsk)
+671	pl (Pools)
+672	pl-pl (Pools)
+673	pt-br (Portugees Brazilië)
+674	pt (Portugees Portugal)
+675	rm (Reto-Romaans)
+676	ro (Roemeens)
+677	ro-mo (Roemeens Moldavië)
+678	ru (Russisch)
+679	ru-ru (Russisch)
+680	ru-mo (Russisch Moldavië)
+681	sz (Sami Laps)
+682	sr (Servisch Cyrillisch)
+683	sr (Servisch Latijns)
+684	sk (Slowaaks)
+685	sl (Sloveens)
+686	sb (Sorbisch)
+687	es (Spaans)
+688	es (Spaans Spanje traditioneel)
+689	es-mx (Spaans Mexico)
+690	es-gt (Spaans Guatemala)
+691	es-cr (Spaans Costa Rica)
+692	es-pa (Spaans Panama)
+693	es-do (Spaanse Dominicaanse Republiek)
+694	es-ve (Spaans Venezuela)
+695	es-co (Spaans Colombia)
+696	es-pe (Spaans Peru)
+697	es-ar (Spaans Argentinië)
+698	es-ec (Spaans Ecuador)
+699	es-cl (Spaans Chili)
+700	es-uy (Spaans Uruguay)
+701	es-py (Spaans Paraguay)
+702	es-bo (Spaans Bolivia)
+703	es-sv (Spaans El Salvador)
+704	es-hn (Spaans Honduras)
+705	es-ni (Spaans Nicaragua)
+706	es-pr (Spaans Porto Rico)
+707	sx (Sutu)
+708	sv (Zweeds)
+709	sv-fi (Zweeds Finland)
+710	th (Thai)
+711	ts (Tsonga)
+712	tn (Tswana)
+713	tr (Turks)
+714	uk (Oekraïens)
+715	ur (Urdu)
+716	ve (Venda)
+717	vi (Vietnamees)
+718	xh (Xhosa)
+719	ji (Jiddish)
+720	zu (Zulu)
+721	Z
+722	M
+723	D
+724	W
+725	D
+726	V
+727	Z
+728	Overzicht van marketeer
+729	Overzicht van webmaster
+730	Overzicht voor leidinggevenden
+731	Leidinggevende
+732	Marketeer
+733	Webmaster
+734	Dashboards
+735	Alle rapporten
+736	ja-jp-mac (Japans)
+737	ja-jp-osaka (Japans)
+738	Uw site ontvangt wellicht verkeer via zoekwoorden die niet in uw Google AdWords-account vermeld staan. Wilt u deze zoekwoorden <a href="http://www.google.com/urchin/sign-up65.html#rd=adwords&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><b>toevoegen aan uw campagne</FONT></b></a>?
+739	Overzichtsrapport
+740	Dimensie
+741	Nog een bron en medium toevoegen om te vergelijken
+742	Campagne
+743	Zoekwoord
+744	Inhoud
+745	De demolicentie verloopt op
+746	Tijd op site
+747	Tijd (uu:mm:ss)
+748	De USP-licentie verloopt op
+749	Neem contact op met uw lokale systeembeheerder om het probleem op te lossen.
+750	Als u de advertentiegroep wijzigt, wordt de lijst met zoekwoorden opnieuw gegenereerd en gaan alle vorige wijzigingen verloren. Wilt u doorgaan?
+751	Selecteer de doeladvertentiegroep in AdWords
+752	Verplicht veld kan niet leeg zijn
+753	U kunt maximaal tien woorden of woordgroepen opgeven
+754	Relevante zoekwoorden voor ingevoerde term(en)
+755	Suggesties voor extra zoekwoorden
+756	in advertentiegroep
+757	Niet genoeg gegevens
+758	Toevoegen als:
+759	Breed
+760	Woordgroep
+761	Exact
+762	Uitsluiten
+763	Er zijn geen wijzigingen
+764	Update is uitgevoerd
+765	Geen advertentiegroep geselecteerd
+766	Kan gegevens niet laden
+767	Het coderen van de advertentiegroep '%1' is <b>geslaagd</b>
+768	Bron
+769	Codering toepassen op:
+770	Hoe wilt u zoekwoordsuggesties genereren?
+771	Beschrijvende woorden of woordgroepen
+772	(bijvoorbeeld groene thee)
+773	Website-inhoud
+774	(bijvoorbeeld www.example.com/product?id=123)
+775	Geef één zoekwoord of woordgroep per regel op:
+776	Voer de URL van een webpagina in:
+777	Probeer het Hulpprogramma voor zoekwoorden van Google AdWords
+778	Andere zoekwoorden in de advertentiegroep
+779	alle zoekwoorden kopiëren
+780	Even geduld...
+781	Concurrentie van adverteerders
+782	Geschat zoekvolume
+783	Geschat gemiddeld zoekvolume
+784	Voorbeeld
+785	Bijwerken
+786	Bijwerken: Voorbeeld
+787	Toegevoegd
+788	Verwijderd
+789	AdWords Tag Manager
+790	Doel coderen
+791	Advertentiegroep:
+792	Advertenties
+793	Beide
+794	URL coderen
+795	Alleen bestaande URL's omzetten (alleen die zoekwoorden of advertenties verwerken waarvoor expliciet een URL is opgegeven)
+796	Reeds gecodeerde URL's overslaan
+797	Deze URL toepassen op alle gecodeerde objecten binnen de advertentiegroep:
+798	UTM-tags
+799	Campagnebron
+800	Campagnemedium
+801	Campagneterm
+802	Campagne-inhoud
+803	(optioneel)
+804	Campagnenaam
+805	Codes toepassen op de advertentiegroep
+806	Bezig met coderen, even geduld...
+807	Campagne '%1' naar AdWords kopiëren
+808	Doelaccount
+809	Campagne
+810	Budget
+811	per dag
+812	Naam advertentiegroep
+813	In dit scherm kunt u de geselecteerde campagne kopiëren naar het AdWords-account. U kunt de hele campagne of een deel ervan kopiëren.
+814	Lijst met zoekwoorden
+815	Lijsten met zoekwoorden kunnen worden gebruikt om prestaties van zoekwoorden te controleren en een zoekwoord te selecteren dat moet worden gekopieerd.
+816	AdWords-campagne maken
+817	Ideeën voor zoekwoorden weergeven
+818	Campagne naar AdWords kopiëren
+819	Pas UTM-tags van Urchin eenvoudig op uw CPC-campagnes van AdWords toe met onze
+820	CPC-structuur
+821	Hulpprogramma's
+822	Hulpprogramma AdWords Optimizer
+823	Optimaliseren
+824	Hulpprogramma voor zoekwoorden
+825	Campagnedetails
+826	Details zoekwoord
+827	Ga naar AdWords
+828	De AdWords-campagne is gemaakt. Het hulpprogramma Campagne kopiëren wordt gesloten.
+829	AdWords-meldingen
+830	Vernieuwen nu plannen
+831	Waarschuwing!
+832	Laatste bijwerktijd: %1 UTC.
+833	AdWords-campagnebudget:
+834	Budgetaanbevelingen van AdWords
+835	Adverteerder
+836	Advertentieoptimalisatie
+837	Status
+838	Kwaliteit
+839	Hulpprogramma Campagne kopiëren
+840	CPC-accountstructuur is in de wachtrij voor downloaden gezet.
+841	De CPC-accountstructuur is niet aan de wachtrij van de planner toegevoegd. De download van de CPC-accountstructuur staat al in de wachtrij.
+842	Annuleren
+843	Term/Account/Campagne/Advertentiegroep/Zoekwoord
+844	UTM-campagne/Account/Campagne/Advertentiegroep/Zoekwoord
+845	xxxxx
+846	Help weergeven/verbergen
+847	xxxxx
+848	xxxxx
+849	(versus %1 nu)
+850	Overige zoekwoorden
+851	Tijd op site
+852	XXXXX
+853	De volgende objecten zijn aangepast:
+854	De advertentiegroep '%1' is al gecodeerd. Er is geen actie uitgevoerd.
+855	Nieuwe AdWords-campagne
+856	Campagnenaam
+857	Alles&nbsp;toevoegen&nbsp;aan&nbsp;AdWords
+858	Hulpprogramma voor zoekwoorden van AdWords
+859	Relevante zoekwoorden voor
+860	Geen gegevens om te exporteren
+861	URL met onjuiste notatie
+862	Het zoektype '%1' is in strijd met het zoektype '%2' dat u heeft geselecteerd om toe te voegen:\n'%1' en '%2' kunnen niet voor hetzelfde zoekwoord worden gebruikt in één advertentiegroep.\nAls u het zoektype '%1' niet verwijdert, ontstaat er een conflict wanneer het zoektype '%2' wordt toegevoegd.\nVerwijder eerst het zoektype '%2' uit de lijst 'Toegevoegd'.
+863	<i>Geen gegevens in de tabel</i>
+864	Statistieken
+865	AdWords Editor
+866	<i>Geen andere zoekwoorden in de advertentiegroep</i>
+867	<i>Geen advertentiegroep gevraagd</i>
+868	xxxxx
+869	xxxxx
+870	Campagneweergave
+871	Zoekwoordweergave
+872	Vergelijking van prestaties
+873	Betrokkenheidsstatistieken
+874	ROI-rapporten
+875	De volgende verplichte velden zijn leeg:
+876	xxxxx
+877	xxxxx
+878	xxxxx
+879	xxxxx
+880	xxxxx
+881	xxxxx
+882	xxxxx
+883	xxxxx
+884	xxxxx
+885	xxxxx
+886	xxxxx
+887	xxxxx
+888	xxxxx
+889	Ongeldige waarde voor budget
+890	Verwijderen als:
+891	Sorteren op:
+892	Alles weergeven
+893	verwijderen
+894	Alle zoekwoorden gebruiken
+895	Vergelijken met:
+896	Permalink
+897	Permalink (plakken in e-mail of IM)
+898	Geavanceerde Urchin-segmenten beheren
+899	Segmentnaam
+900	Acties
+901	Nieuw aangepast segment maken
+902	Dimensie of statistiek
+903	Voorwaarde
+904	Waarde
+905	Actie
+906	komt overeen
+907	komt niet overeen
+908	gelijk aan
+909	minder dan
+910	kleiner dan of gelijk aan
+911	groter dan
+912	groter dan of gelijk aan
+913	'en'-verklaring toevoegen
+914	Opslaan
+915	Annuleren
+916	Nieuw segment
+917	Help
+918	Gebruiker:
+919	Waarschuwing: wijzig eerst de wijzigingen die in behandeling zijn of sla deze op.
+920	Waarschuwing: sommige filters zijn ongeldig.
+921	Weet u zeker dat u deze record wilt verwijderen?
+922	Fout: kan Urchin-server niet bereiken.
+923	Fout: er is een onbekende fout opgetreden; een mogelijke oorzaak is dat er een time-out voor de sessie is opgetreden.
+924	Fout: niet-numerieke voorwaarde is gebruikt met numerieke expressie.
+925	Fout: numerieke voorwaarde is gebruikt met niet-numerieke expressie.
+926	Fout: numerieke waarde verwacht.
+927	Fout: filtertekenreeks mag niet leeg zijn.
+928	Fout: filtertekenreeks bevat ongeldige reguliere expressie.
+929	Mijn aanpassingen
+930	Selecteer een segment voor het filteren van uw rapport
+931	bewerken
+932	verwijderen
+933	toepassen op alle profielen
+934	Weet u zeker dat u dit segment beschikbaar wilt maken in al uw profielen?
+935	Alle bezoeken
+936	Nieuwe bezoekers
+937	Terugkerende bezoekers
+938	Betaald zoekverkeer
+939	Niet-betaald zoekverkeer
+940	Zoekverkeer
+941	Direct verkeer
+942	Verwijzingsverkeer
+943	Bezoeken met conversies
+944	Bezoeken vanaf iPhones
+945	Weergeven:
+946	Bijhouden van gebeurtenissen
+947	xxxxx
+948	Totaal aantal gebeurtenissen
+949	Categorieën
+950	Acties
+951	Labels
+952	Unieke gebeurtenissen
+953	Gem. waarde
+954	Pagina's
+955	Hosts
+956	Trends
+957	Gebeurtenissen per bezoek
+958	Hosts en pagina's
+959	Bezoeken met gebeurtenis
+960	Eindgebruikersovereenkomst
+961	Urchin-gebruikersforum
+962	Bezoeken met gebeurtenissen
+963	Analytics Startpagina
+964	Veelgestelde vragen
+965	Privacybeleid
+966	Helpcentrum van Urchin
+967	Google Analytics- en Urchin-blog
+968	verwijderen
+969	Bèta
+970	Sitegebruik
+971	Doelconversie
+972	Geavanceerde segmenten
+973	Profiel:
+974	Afdrukweergave
+975	Standaardweergave
+976	Help-bronnen
+977	Over dit rapport
+978	met
+979	zonder
+980	Weergaves:
+981	Tabel
+982	Cirkeldiagram
+983	Staafdiagram
+984	Uitvoeren
+985	Vergelijken met vorige
+986	Vorige:
+987	Geen gegevens
+988	Gemiddeld aantal bezoekers per dag
+989	Gemiddeld aantal bezoeken per dag
+990	Gemiddelde paginaweergaves per dag
+991	Siteoverzicht
+992	xxxxx
+993	Bezoekers
+994	Marketing
+995	Totaal aantal bezoekers
+996	Totaal aantal bezoeken
+997	Totaal aantal paginaweergaves
+998	Doelconversie
+999	E-commerce
+1000	Gemiddelde opbrengst per dag
+1001	Gemiddeld aantal transacties per dag
+1002	Gemiddelde opbrengst per transactie
+1003	Gemiddeld aantal treffers per dag
+1004	Gemiddeld aantal bytes per dag
+1005	Verkeer
+1006	Gemiddelde bezoekduur
+1007	Totaal aantal vertoningen
+1008	Totaal aantal klikken
+1009	Totale kosten
+1010	Totale inkomsten
+1011	Totaal aantal transacties
+1012	Totaal aantal treffers
+1013	Totaal aantal bytes
+1014	ROI-overzicht
+1015	Overzicht van conversies
+1016	Bezoekers bijhouden
+1017	Browsermogelijkheden
+1018	Browsers en platforms
+1019	Productnaam
+1020	Product-SKU
+1021	Productcategorie
+1022	Campagne
+1023	Bron
+1024	Medium
+1025	Fout: segmentnaam mag niet leeg zijn.
+1026	Overige
+1027	Over het Hulpprogramma voor zoekwoorden
+1028	Over AdWords Tag Manager
+1029	Over geavanceerde segmenten
+1030	Helpcentrum van Urchin
+1031	Waarde queryparameter (194)
+1032	xxxxx
+1033	xxxxx
+1034	xxxxx
+1035	xxxxx
+1036	xxxxx
+1037	xxxxx
+1038	xxxxx
+1039	xxxxx
+1040	xxxxx
+1041	xxxxx
+1042	xxxxx
+1043	xxxxx
+1044	xxxxx
+1045	xxxxx
+1046	xxxxx
+1047	xxxxx
+1048	xxxxx
+1049	xxxxx
+1050	IIS-datum (1)
+1051	IIS-tijd (2)
+1052	Apache-tijd (3)
+1053	IP (4)
+1054	Gebruikersnaam (5)
+1055	Verzoek (6)
+1056	Methode (7)
+1057	URI-stam (8)
+1058	URI zoekopdracht (9)
+1059	Statuscode (10)
+1060	Bytes (11)
+1061	Host (12)
+1062	User-agent (13)
+1063	Cookie (14)
+1064	Verwijzende URL (15)
+1065	Aangepaste datum (16)
+1066	Aangepaste tijd (17)
+1067	Host (19)
+1068	Poort (20)
+1069	Versie (21)
+1070	Sitenaam (22)
+1071	Computernaam (23)
+1072	IP (24)
+1073	ELF-ordernummer (25)
+1074	ELF winkel (26)
+1075	Sessie-ID voor ELF (27)
+1076	ELF-totaal (28)
+1077	ELF-belasting (29)
+1078	ELF-verzendkosten (30)
+1079	Plaats van factuuradres voor ELF (31)
+1080	Staat van factuuradres voor ELF (32)
+1081	Postcode van factuuradres voor ELF (33)
+1082	Land van factuuradres voor ELF (34)
+1083	ELF-productcode (35)
+1084	ELF-productnaam (36)
+1085	Productvariant voor ELF (37)
+1086	ELF-eenheidsprijs (38)
+1087	ELF-hoeveelheid (39)
+1088	ELF-upsell (40)
+1089	URI UTM-campagne (41)
+1090	Campagnekosten voor UTM (42)
+1091	Campagnevertoningen voor UTM (43)
+1092	Campagneklikken voor UTM (44)
+1093	CPC-account (45)
+1094	CPC-campagne (46)
+1095	CPC van advertentiegroep (47)
+1096	CPC van zoekwoord (48)
+1097	Verwijzingsprotocol (76)
+1098	Verwijzingshost (77)
+1099	Verwijzende poort (79)
+1100	Verwijzende URL (80)
+1101	Verwijzende URI (81)
+1102	Verwijzende stam (82)
+1103	Verwijzende zoekopdracht (83)
+1104	Verwijzend anker (84)
+1105	Verwijzende directory (85)
+1106	Verwijzende bestandsnaam (86)
+1107	Verwijzend MIME-type (87)
+1108	Verwijzende zoekwoorden (88)
+1109	Aanvraagmethode (91)
+1110	Aanvraag URL (92)
+1111	Aanvraag versie (93)
+1112	Verzoekprotocol (94)
+1113	Aanvraaghost (95)
+1114	Aanvraag poort (96)
+1115	Aanvraag URI (97)
+1116	Aanvraag stam (98)
+1117	Aanvraagverzoek (99)
+1118	Aanvraag anker (100)
+1119	Aanvraag directory (101)
+1120	Aanvraag bestandsnaam (102)
+1121	Aanvraag MIME-type (103)
+1122	Aanvraag origineel bestandspad (104)
+1123	Aanvraag origineel MIME-type (105)
+1124	Type browser (108)
+1125	Browserversie (109)
+1126	Besturingssysteem (110)
+1127	Versie besturingssysteem (111)
+1128	Primair domein (112)
+1129	Domein van de provider (113)
+1130	SID (114)
+1131	UTM-ID (154)
+1132	Online campagne (137)
+1133	Medium (138)
+1134	Verkeersbron (139)
+1135	Zoekwoord (140)
+1136	Inhoud (141)
+1137	UTM Cookiea (115)
+1138	UTM Cookieb (116)
+1139	UTM Cookiec (117)
+1140	UTM Cookiez (118)
+1141	Unieke ID voor UTM (122)
+1142	Nieuwe campagne voor UTM (123)
+1143	UTM-pagina (124)
+1144	UTM-verwijzing (125)
+1145	Schermresolutie (126)
+1146	Schermkleuren (129)
+1147	Talen (130)
+1148	Geschikt voor Java (131)
+1149	JavaScript-versie (134)
+1150	Uur van campagne (150)
+1151	Campagnedoel (151)
+1152	Naam bron logbestand (152)
+1153	UTM-type (155)
+1154	Robot-agent (156)
+1155	Host-IP (157)
+1156	Hostnaam (158)
+1157	Gebruikersnaam (159)
+1158	Land (160)
+1159	Regio (161)
+1160	Plaats (162)
+1161	Breedtegraad (163)
+1162	Lengtegraad (164)
+1163	ISP (165)
+1164	Naam van provider (166)
+1165	Verbindingssnelheid (167)
+1166	Flash-versie (168)
+1167	Paginatitel (169)
+1168	Nieuw of terugkerend (170)
+1169	UTM Cookiev (171)
+1170	Door de gebruiker gedefinieerd (172)
+1171	Ordernummer (173)
+1172	Partner (174)
+1173	Totaal (175)
+1174	Belasting (176)
+1175	Verzenden (177)
+1176	Plaats van factuuradres (178)
+1177	Regio van factuuradres (179)
+1178	Land van factuuradres (180)
+1179	Productcode (181)
+1180	Productnaam (182)
+1181	Variant (183)
+1182	Eenheidsprijs (184)
+1183	Hoeveelheid (185)
+1184	Aanvraag hostnaam (186)
+1185	Aanvraag download (187)
+1186	Aanvraagformulier (188)
+1187	Organische bron (189)
+1188	UTM uitgebreid (190)
+1189	Categorie (191)
+1190	Actie (192)
+1191	Label (193)
+1192	Doorklikpagina van (301)
+1193	Doorklikpagina naar (302)
+1194	Instappagina voor doorklikken naar doel (303)
+1195	Uitstappagina voor doorklikken naar doel (304)
+1196	Beginpad pagina 1 (305)
+1197	Beginpad pagina 2 (306)
+1198	Beginpad pagina 3 (307)
+1199	Omgekeerd doelpad (308)
+1200	Omgekeerd doelpad pagina 1 (309)
+1201	Omgekeerd doelpad pagina 2 (310)
+1202	Omgekeerd doelpad pagina 3 (311)
+1203	Totalen (312)
+1204	Jaar (313)
+1205	Maand (314)
+1206	Dag (315)
+1207	Uur (316)
+1208	Bezoekers-id (317)
+1209	Transactie-id (318)
+1210	Session-id (319)
+1211	Sessie-IP (320)
+1212	Starttijd sessie (321)
+1213	Eindtijd sessie (322)
+1214	Aanvraag tijd (323)
+1215	Transactietijd (324)
+1216	Aangepast onbewerkt veld (201)
+1217	Veld met aangepaste berekeningen (226)
+1218	Nieuw!
+1219	Alfa
+1220	Nieuwe gebruikersinterface voor rapportage
+1221	Parallelle profielverwerking
+1222	Permalinks
+1223	Aanpasbare geografische/DNS-gegevens
+1224	Aangepaste volgorde van filters
+1225	Data API v2
+1226	Automatische updates
+1227	Lokaal Helpcentrum
+1228	Verkeerssteekproef
+1229	Segmentsteekproeven
+1230	Filters voor opzoektabellen
+1231	Urchin-software van Google
+1232	Privacybeleid van Google
+1233	Analytics-blog
+1234	none

@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin에서 UNIX 계열 플랫폼으로 실행하는 UID(사용자)는 어떻게 변경합니까?</strong> <p class="line874">Urchin에서 실행 중인 UID/사용자 및/또는 GID/그룹을 변경하는 방법은 비교적 간단합니다.아래 작업을 수행하려면 '루트' 권한이 있어야 합니다. 따라서 대부분의 경우에는 시스템 관리자가 수행해야 합니다. <ol type="1"><li>새 사용자 및 그룹이 시스템에 아직 존재하지 않으면 암호 및 그룹 파일에서 해당 항목을 생성합니다. </li><li>'urchinctl stop'을 사용하여 urchin 서비스를 중지합니다.'urchinctl' 바이너리는 Urchin 폴더의 'bin' 디렉토리에 있습니다. </li><li>Urchin 폴더의 루트 디렉토리에서 'chown -R newuser:newgroup'을 수행합니다.'urchin.conf' 파일에서 'var' 또는 'data' 디렉토리에 대해 다른 위치를 지정한 경우에는 해당 디렉토리에서도 이 'chown' 명령을 수행해야 합니다. </li><li>Urchin 폴더의 'var' 디렉토리에서 'urchinwebd.conf.template' 파일을 수정하고 다음 행을 변경합니다. <ul><li style="list-style-type:none">User newuser Group newgroup </li></ul></li><li>'urchinctl start'를 사용하여 Urchin 서비스를 다시 시작합니다. </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

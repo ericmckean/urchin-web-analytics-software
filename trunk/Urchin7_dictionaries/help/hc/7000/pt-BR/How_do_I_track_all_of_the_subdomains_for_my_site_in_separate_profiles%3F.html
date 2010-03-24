@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como faço para monitorar todos os subdomínios do meu site em perfis separados?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Este artigo foi escrito por</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, consultor autorizado do software Urchin</em> </li></ul><p class="line874">O monitoramento de subdomínios em perfis individuais com o Urchin é uma tarefa que depende da configuração do seu servidor da web.É possível configurar o seu servidor da web para registrar arquivos de registro separados para cada subdomínio. Dessa forma, o Urchin poderá processar cada arquivo de registro de subdomínio separadamente.Como alternativa, se apenas um arquivo de registro for gerado e o registro de acesso à web estiver definido para registrar o nome do host, incluindo o subdomínio, um filtro Incluir poderrá ser construído para o perfil de cada subdomínio.Por exemplo, o filtro em um perfil incluiria exclusivamente o tráfego para ajuda.example.com.br, enquanto outro filtro Incluir incluiria apenas o tráfego para www.example.com.br. <p class="line874">Desse modo, para monitorar seus subdomínios em perfis separados, você pode aplicar um filtro Incluir a cada perfil, para incluir somente um nome de host específico.A primeira etapa é criar um perfil para cada subdomínio.Feito isso, você pode criar os filtros descritos a seguir. <p class="line874">Por exemplo, se deseja monitorar sub.example.com.br e www.example.com.br em dois perfis separados, aplique os filtros a seguir: <ul><li style="list-style-type:none">Para o perfil do sub.example.com.br </li></ul><p class="line867"><pre>    Tipo de filtro:SOMENTE padrão Incluir
+    Campo de filtragem:utm_nomehost_solicitação (AUTO)
+    Termo de filtragem:^sub\.example\.com.br
+</pre><ul><li style="list-style-type:none">Para o perfil do www.example.com.br </li></ul><p class="line867"><pre>    Tipo de filtro:SOMENTE padrão Incluir 
+    Campo de filtragem:utm_solicitação_nomedehost (AUTO)
+    Termo de filtragem:^www\.example\.com.br
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

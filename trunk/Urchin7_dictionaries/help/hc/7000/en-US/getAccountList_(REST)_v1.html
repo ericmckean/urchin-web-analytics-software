@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>getAccountList (REST) v1</strong> <ul><li><p class="line891"><a href="Data_API.html">API Table of Contents</a> </li><li><p class="line891"><a href="Admin_service_(REST)_v1.1.html">AdminService (REST)</a> </li></ul><p class="line862">Method: <strong>getAccountList</strong> <p class="line874">This method retrieves the list of accounts for an authenticated user. <p class="line874">REST URL: <p class="line867"><pre>http://server_name[:port]/services/vN/adminservice/accounts/?login=$login&amp;password=$password
+</pre><p class="line874">Request arguments: <ul><li><p class="line891"><strong>login</strong>  - user name login </li><li><p class="line891"><strong>password</strong> - user password </li></ul><p class="line874">Response: <ul><li><p class="line891"><strong>Account[]</strong> - List of available accounts for an authenticated user. </li></ul><p class="line867"><strong>Sample REST request</strong> <p class="line867"><pre>    http://urchin.com:9999/services/v1/adminservice/accounts/?login=super_admin&amp;password=password
+</pre><p class="line867"><strong>Sample REST response</strong> <p class="line867"><pre>          &lt;tns:getAccountListResponse xmlns:tns="https://urchin.com/api/urchin/v1/"&gt;
+             &lt;account&gt;
+                &lt;accountId&gt;1&lt;/accountId&gt;
+                &lt;accountName&gt;(NONE)&lt;/accountName&gt;
+             &lt;/account&gt;
+             &lt;account&gt;
+                &lt;accountId&gt;2&lt;/accountId&gt;
+                &lt;accountName&gt;account_soap&lt;/accountName&gt;
+                &lt;contactName&gt;SOAP Administrator Account&lt;/contactName&gt;
+                &lt;emailAddress&gt;administrator@urchin.com&lt;/emailAddress&gt;
+             &lt;/account&gt;
+                &lt;accountId&gt;3&lt;/accountId&gt;
+                &lt;accountName&gt;PM_account&lt;/accountName&gt;
+                &lt;contactName&gt;Simple account&lt;/contactName&gt;
+             &lt;/account&gt;
+          &lt;/tns:getAccountListResponse&gt;
+</pre><p class="line867"><strong>Java and .Net C# samples</strong> <ul><li><p class="line891"><a href="Samples_for_Java_(REST)_v1.html">Samples for Java (REST) v1</a> </li><li><p class="line891"><a href="Samples_for_.NET_(REST)_v1.html">Samples for .NET (REST) v1</a> </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

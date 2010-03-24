@@ -1,0 +1,32 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>REST .NET Example 1: Retrieving the list of accounts for an authenticated user</strong> <p class="line862">(Return to main article: <a href="Samples_for_.NET_(REST)_v1.html">Samples for .NET (REST) v1</a>) <p class="line874">1. Specify service URL: <pre>private const string serviceURL = "http://server[:port]/services/v1/adminservice/accounts/";
+</pre><p class="line874">2. Provide login information: <pre>private const string login = "YOUR_LOGIN";
+private const string password = "YOUR_PASSWORD";
+</pre><p class="line874">3. Compose the REST URL: <pre>string url = serviceURL + "?login=" + login + "&amp;password=" + password;
+</pre><p class="line874">4. Retrieve account list: <pre>XPathDocument xPathDocument = new XPathDocument(url);
+</pre><p class="line874">5. Parse response: <pre>XPathNavigator xPathNavigator = xPathDocument.CreateNavigator();
+XmlNameTable xmlNameTable = new NameTable();
+XmlNamespaceManager xmlNamespaceManager = new XmlNamespaceManager(xmlNameTable);
+xmlNamespaceManager.AddNamespace("tns", "https://urchin.com/api/urchin/v1/");
+XPathNodeIterator accountXPathNodeIterator = xPathNavigator.Select("/tns:getAccountListResponse/account", xmlNamespaceManager);
+</pre><p class="line874">6. Display the information about retrieved accounts: <pre>while (accountXPathNodeIterator.MoveNext())
+        DisplayAccount(accountXPathNodeIterator.Current); 
+...
+// Function to display account info.
+
+private static void DisplayAccount(XPathNavigator accountXPathNavigator)
+{
+        Console.Write("Account id is \"" + accountXPathNavigator.SelectSingleNode("accountId/text()") + "\", ");
+        Console.Write("name is \"" + accountXPathNavigator.SelectSingleNode("accountName/text()") + "\", ");
+        Console.Write("contact name is \"" + accountXPathNavigator.SelectSingleNode("contactName/text()") + "\", ");
+        Console.Write("e-mail is \"" + accountXPathNavigator.SelectSingleNode("emailAddress/text()") + "\" ");
+        Console.WriteLine("and phone number is \"" + accountXPathNavigator.SelectSingleNode("phoneNumber/text()") + "\".");
+}
+</pre><p class="line874">Complete sample code for this example is available in the AdminServiceGetAccountListREST.cs file.  <p class="line862">(Return to main article: <a href="Samples_for_.NET_(REST)_v1.html">Samples for .NET (REST) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

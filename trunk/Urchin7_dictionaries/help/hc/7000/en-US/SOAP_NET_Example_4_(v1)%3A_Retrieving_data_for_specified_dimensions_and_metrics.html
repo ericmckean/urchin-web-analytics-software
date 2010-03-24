@@ -1,0 +1,154 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>SOAP .NET Example 4: Retrieving data for specified dimensions and metrics</strong> <p class="line862">(Return to main article: <a href="Samples_for_.NET_(SOAP)_v1.html">Samples for .NET (SOAP) v1</a>) <p class="line862">1. Include namespace to client application to use the types from generated class for ReportService API without specifying the namespace: <p class="line867"><pre>using SampleCode.com.google.DataAPI.ReportService;
+</pre><p class="line874">2. Set up date format <p class="line867"><pre>private const string DATE_FORMAT = "yyyy-MM-dd";
+</pre><p class="line874">3. Provide login and profile information: <p class="line867"><pre>private const string login = "YOUR_LOGIN";
+private const string password = "YOUR_PASSWORD";
+private const int profileId = 16;
+private const string startDate = "2000-01-01";
+private const string endDate = "2009-01-01";
+private const string dimensions = "u:visitor_id";
+private const string metrics = "u:pages,u:visits";
+private const int maxResults = 5;
+</pre><p class="line862">4. Define a service connection for ReportService API: <p class="line867"><pre>reportservice reportService = new reportservice();
+</pre><p class="line874">5. Retrieve and display data <ul><li>(implicit table id): </li></ul><p class="line867"><pre>Data[] data = reportService.getData(
+                login,
+                password,
+                profileId.ToString(),
+                0,
+                false,
+                0,
+                false,
+                DateTime.ParseExact(startDate, DATE_FORMAT, null),
+                DateTime.ParseExact(endDate, DATE_FORMAT, null),
+                dimensions,
+                metrics,
+                null,
+                null,
+                0,
+                false);
+Console.WriteLine("Data retrieved with implicit table id for specific date range:");
+foreach (Data item in data)
+{
+        Console.WriteLine("Record id is \"" + item.recordId + "\", ");
+        // Display data dimensions.
+        Console.WriteLine("dimensions are:");
+        foreach (DataDimension dataDimension in item.dimensions)
+            Console.WriteLine(" \tname: \"" + dataDimension.name + "\", string: " + dataDimension.Value);
+        // Display data metrics (Hits, Bytes).
+        Console.WriteLine("metrics are:");
+        Console.WriteLine("\tpages: " + item.metrics.pages + ", visits: " + item.metrics.visits);
+}
+</pre><ul><li>(explicit table id) </li></ul><p class="line867"><pre>Data[] data = reportService.getData(
+                login,
+                password,
+                profileId.ToString(),
+                0,
+                false,
+                0,
+                false,
+                DateTime.ParseExact(startDate, DATE_FORMAT, null),
+                DateTime.ParseExact(endDate, DATE_FORMAT, null),
+                dimensions,
+                null,
+                null,
+                null,
+                258,
+                true);
+Console.WriteLine("Data retrieved with explicit table id for specific date range w/o metrics:");
+foreach (Data item in data)
+{
+        Console.WriteLine("Record id is \"" + item.recordId + "\", ");
+        // Display data dimensions.
+        Console.WriteLine("dimensions are:");
+        foreach (DataDimension dataDimension in item.dimensions)
+           Console.WriteLine(" \tname: \"" + dataDimension.name + "\", string: " + dataDimension.Value);
+}
+</pre><ul><li>(limited list) </li></ul><p class="line867"><pre>Data[] data = reportService.getData(
+                login,
+                password,
+                profileId.ToString(),
+                0,
+                false,
+                maxResults,
+                true,
+                DateTime.ParseExact(startDate, DATE_FORMAT, null),
+                DateTime.ParseExact(endDate, DATE_FORMAT, null),
+                dimensions,
+                null,
+                null,
+                null,
+                0,
+                false);
+Console.WriteLine("Visitor list limited with max-records (" + maxResults + "):");
+foreach (Data item in data)
+{
+        Console.WriteLine("Record id is \"" + item.recordId + "\", ");
+        // Display data dimensions.
+        Console.WriteLine("dimensions are:");
+        foreach (DataDimension dataDimension in item.dimensions)
+                Console.WriteLine(" \tname: \"" + dataDimension.name + "\", string: " + dataDimension.Value);
+}
+</pre><ul><li>(sorted) </li></ul><p class="line867"><pre>Data[] data = reportService.getData(
+                login,
+                password,
+                profileId.ToString(),
+                0,
+                false,
+                0,
+                false,
+                DateTime.ParseExact(startDate, DATE_FORMAT, null),
+                DateTime.ParseExact(endDate, DATE_FORMAT, null),
+                "u:transaction_id",
+                "u:transactions,u:revenue",
+                "-u:transactions",
+                null,
+                258,
+                true);
+Console.WriteLine("Transaction list sorted by Id desc:");
+foreach (Data item in data)
+{
+        Console.WriteLine("Record id is \"" + item.recordId + "\", ");
+        // Display data dimensions.
+        Console.WriteLine("dimensions are:");
+        foreach (DataDimension dataDimension in item.dimensions)
+                Console.WriteLine(" \tname: \"" + dataDimension.name + "\", string: " + dataDimension.Value);
+        // Display data metrics (Ttransactions, Revenue).
+        Console.WriteLine("metrics are:");
+        Console.WriteLine("\ttransactions: " + item.metrics.transactions + ", revenue: " + item.metrics.revenue);
+}
+</pre><ul><li>(Aggregated) </li></ul><p class="line867"><pre>Data[] data = reportService.getData(
+                login,
+                password,
+                profileId.ToString(),
+                0,
+                false,
+                maxResults,
+                true,
+                DateTime.ParseExact(startDate, DATE_FORMAT, null),
+                DateTime.ParseExact(endDate, DATE_FORMAT, null),
+                "u:month",
+                "u:hits,u:bytes",
+                "u:hits",
+                null,
+                258,
+                true);
+Console.WriteLine("Totals aggregated by month for specific date range sorted by one metric, limited with max-records (" + maxResults + "):");
+foreach (Data item in data)
+{
+        Console.WriteLine("Record id is \"" + item.recordId + "\", ");
+        // Display data dimensions.
+        Console.WriteLine("dimensions are:");
+        foreach (DataDimension dataDimension in item.dimensions)
+                Console.WriteLine(" \tname: \"" + dataDimension.name + "\", string: " + dataDimension.Value);
+        // Display data metrics (Hits, Bytes).
+        Console.WriteLine("metrics are:");
+        Console.WriteLine("\thits: " + item.metrics.hits + ", bytes: " + item.metrics.bytes);
+}
+</pre><p class="line874">Complete sample code for this example is available in the ReportServiceGetDataSOAP.cs file. <p class="line862">(Return to main article: <a href="Samples_for_.NET_(SOAP)_v1.html">Samples for .NET (SOAP) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

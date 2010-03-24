@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>How can I configure Urchin to treat certain keywords or URLs as direct referrals instead of keywords?</strong> <p class="line874">You may wish to treat certain keywords or URLs as direct referrals rather than keywords. To do so, you can configure your urchin.js file so that Urchin will report them as direct referrals in your reports. <ol type="1"><li>Use any text editor to open your urchin.js file </li><li>Scroll down to the following heading: </li></ol><p class="line867"><pre>          //-- Auto/Organic Keywords to Ignore
+</pre><ol type="3"><li>Add a new organic keyword to ignore at the end of the list in the form: </li></ol><p class="line867"><pre>          _uOno[#]="keyword";
+</pre><ul><li style="list-style-type:none">..as shown in the following example: </li></ul><p class="line867"><pre>        //-- Auto/Organic Keywords to Ignore
+        var _uOno=new Array();
+        _uOno[0]="urchin";
+        _uOno[1]="urchin.com";
+        _uOno[2]="www.urchin.com";
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

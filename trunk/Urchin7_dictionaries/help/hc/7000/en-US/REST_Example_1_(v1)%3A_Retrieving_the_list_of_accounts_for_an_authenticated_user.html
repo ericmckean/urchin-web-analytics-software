@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line862">(Return to main article: <a href="Samples_for_Java_(REST)_v1.html">Samples for Java (REST) v1</a>) <p class="line874">1. Specify service URL: <p class="line867"><pre>private static final String serviceURL = "http://URCHINHOST:URCHINPORT/services/v1/adminservice/";
+</pre><p class="line874">2. Provide login information: <p class="line867"><pre>private static final String login = "URCHIN_LOGIN";
+private static final String password = "URCHIN_PASSWORD";
+</pre><p class="line874">3. Compose the REST URL: <p class="line867"><pre>URL service = new URL(serviceURL + "accounts/" + "?login=" + login + "&amp;password=" + password);
+</pre><p class="line874">4. Create the buffering character-input stream for retrieving the account list: <p class="line867"><pre>BufferedReader in = new BufferedReader(new InputStreamReader(service.openStream()));
+</pre><p class="line874">5. Define namespace context implementation for data parsing: <p class="line867"><pre>class UrchinNamespaceContext implements NamespaceContext {
+  public String getNamespaceURI(String prefix) {
+    if (prefix == null) throw new NullPointerException("Null prefix");
+    if (prefix.equals("tns")) return "https://urchin.com/api/urchin/v1/";
+    else if ("xml".equals(prefix)) return XMLConstants.XML_NS_URI;
+    return XMLConstants.NULL_NS_URI;
+  }
+  public String getPrefix(String namespaceURI) {
+    throw new UnsupportedOperationException();
+  }
+  public Iterator getPrefixes(String namespaceURI) {
+    throw new UnsupportedOperationException();
+  }
+}
+</pre><p class="line874">6. Execute the request: <p class="line867"><pre>    XPathFactory fact = XPathFactory.newInstance();
+    XPath xp = fact.newXPath();
+    InputSource is = new InputSource(in);
+    // set namespace context
+    xp.setNamespaceContext(new UrchinNamespaceContext());
+    // retrieve list of accounts
+    NodeList accounts = (NodeList)xp.evaluate("/tns:getAccountListResponse/account", is, XPathConstants.NODESET);
+ </pre><p class="line874">7. Display the response: <p class="line867"><pre>    System.out.println("adminservice/accounts/");
+    for(int i = 0; i &lt; accounts.getLength(); i++){
+      System.out.print("account id: \"" + xp.evaluate("accountId/text()", accounts.item(i)) + "\", ");
+      System.out.print("account name: \"" + xp.evaluate("accountName/text()", accounts.item(i)) + "\", ");
+      System.out.print("contact name: \"" + xp.evaluate("contactName/text()", accounts.item(i)) + "\", ");
+      System.out.print("e-mail: \"" + xp.evaluate("emailAddress/text()", accounts.item(i)) + "\", ");
+      System.out.println("phone number: \"" + xp.evaluate("phoneNumber/text()", accounts.item(i)) + "\"");
+    }
+    in.close();
+</pre><p class="line862">Complete sample code for this example can be found in the AdminService.java file. <p class="line862">(Return to main article: <a href="Samples_for_Java_(REST)_v1.html">Samples for Java (REST) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

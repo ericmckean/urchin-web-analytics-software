@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>「urchin.cgi の実行がタイムアウトしました」と表示される</strong> <p class="line874">このエラーは、Urchin のレポートの直接リンク機能が使用され、Urchin のセッション制御がバイパスされている場合にのみ表示されます。 これは、Urchin レポートを表示しているときに使用されている URL で見分けることができます。 レポートの直接リンク機能が使用されている場合は、URL に「report.cgi」が含まれ、Urchin の標準セッション制御が使用されている場合は、URL に「session.cgi」が含まれます。 <p class="line874">レポートの直接リンク機能で Urchin レポートを表示する場合、ブラウザでは report.cgi アプリケーションによって、リクエストされた期間とレポート ビューに一致するデータについて、Urchin データベース ファイルに問い合わせを行います。 データの問い合わせに 60 秒以内 (デフォルト) に応答しない場合、CGI アプリケーションはタイムアウトし、ブラウザに「urchin.cgi の実行がタイムアウトしました」というエラー メッセージが表示されます。 この場合は、CGI アプリケーションのタイムアウト値を増やす必要があります。 このタイムアウト値を変更するには、コマンド ラインを使用して Urchin にアクセスできる必要があります。 <p class="line874">レポートの直接リンクのアプリケーション タイムアウトを増やす方法は次のとおりです。 <ul><li>コマンド シェルを開いて Urchin サーバーにアクセスします。 </li><li>「/path/to/urchin/htdocs/.report.conf」ファイルを編集します。このファイルが存在しない場合は、「.report.conf.sample」ファイルをコピーして「.report.conf」を作成します。 </li><li>「#Timeout = 60」行を探します。 </li><li>「#」文字を削除してこの行のコメントを外します。 </li><li>デフォルトの 60 秒の値を適切な数字に増やします。 </li><li>ファイルを保存します。 変更はただちに反映されます。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

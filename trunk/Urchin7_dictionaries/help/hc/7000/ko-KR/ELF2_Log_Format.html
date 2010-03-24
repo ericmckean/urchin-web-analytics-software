@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>ELF2로그 형식</strong> <ul><li style="list-style-type:none"><p class="line891"><em>이 문서는 Urchin 소프트웨어 공인 컨설턴트인</em> <a href="ivantageLimited.html">ivantage Limited</a><em>에서 작성했습니다.</em> </li></ul><p class="line867"><strong>참고</strong> <p class="line874">이전 버전의 Urchin은 IP 전용 추적에 대해 ELF 형식을 지원했습니다.Urchin 6은 IP 전용 추적을 제공하지 않으므로 더 이상 ELF 형식을 지원하지 않습니다. <p class="line867"><strong>개요</strong> <p class="line874">전자상거래 로그 형식 2(ELF2)는 온라인 쇼핑 사이트에서 고객 거래에 대한 정보를 기록하도록 설계되었습니다.그러나 Urchin 6은 더 이상 이러한 메커니즘으로 전자상거래를 기록하지 않습니다.대신 Urchin 6은 전자상거래에 필요한 고객 데이터 수집 기술을 제공합니다.영수증 페이지에 간단한 데이터를 추가하면 Urchin 6이 자동으로 거래를 탐지하고 기록하여 정보를 산출합니다.필요한 정보는 숨겨진 양식으로 배치되며, 거래 및 제품정보에 대한 분석과정을 거치게 됩니다.대부분의 템플릿 중심 전자상거래 시스템은 영수증에 숨겨진 정보를 포함하도록 설정할 수 있습니다. <p class="line862">Urchin의 경우 코드를 몇 개 추가하면 귀하의 도메인뿐만 아니라 다른 도메인에서 쇼핑 바구니의 데이터를 추적할 수 있습니다.페이지에서 Urchin으로 거래 데이터를 보고하도록 설정하려면 '전자상거래는 어떻게 추적합니까?'를 참조하십시오.또한 상점 사이트가 귀하의 기본 사이트와 다른 하위 도메인이나 도메인에 있는 경우 <a href="Tracking_Secure_Store_Transactions.html">안전한 상점 거래 추적'</a>을 참조하시기 바랍니다. <p class="line874">본 문서에서는 쇼핑 바구니 소프트웨어에 의해 생성되는 ELF2 로그 파일의 형식에 대해 설명하고 전자상거래 로그를 처리하도록 Urchin을 구성하는 방법에 대해 설명합니다. <p class="line867"><strong>ELF2 로그 파일을 사용하도록 Urchin 구성</strong> <p class="line874">ELF2 로그 유형을 설정하는 동안 다음과 같은 구성 매개변수를 따라야 합니다. <ul><li>Admin UI에 관리자로 로그인합니다. </li><li>'구성 화면'으로 이동합니다. </li><li><p class="line862">'로그 소스 편집'-&gt;'로그 설정' 화면에서 '로그 형식'을 'elf2' 또는 '자동'으로 설정합니다. </li><li><p class="line862">'프로필 편집'-&gt;'설정' 화면에서 '전자상거래 웹사이트' 입력란을 'YES'로 설정합니다. </li></ul><p class="line874">전자상거래 보고를 처리하기 위해 전자상거래 로그는 생성된 프로필에서 기본 웹사이트 로그와 함께 두 번째 로그 소스로 나열되어야 합니다.로그는 Urchin에서 순차적으로 처리됩니다. <p class="line867"><strong>ELF2로그 형식 설명</strong> <p class="line874">ELF2는 탭으로 구분되는 여러 행 로그 형식입니다.첫 행은 '!' 느낌표로 시작되며 구매에 대한 전체 정보를 포함합니다.이후의 행에는 구매한 품목에 대한 세부적인 정보가 포함되어 있습니다.첫 행은 거래를 나타내고 이후의 행은 품목을 나타냅니다.빈 입력란에는 '-' 문자가 포함되어 있어야 합니다.탭은 입력란을 구분하는 데 사용되므로 입력란 내에서 탭 문자를 사용할 수는 없습니다. <p class="line874">일반적인 ELF2 로그 파일의 전형적인 형식은 다음과 같습니다. <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>ELF2거래 행</strong> <p class="line874">ELF2 거래 행은 '!' 느낌표로 시작되며 다음과 같은 탭으로 구분된 입력란을 포함합니다(빈 입력란에는 '-' 문자가 포함되어야 함). <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">여기서 각 옵션은 다음과 같은 의미가 있습니다. <pre>    * %{ORDERID}는 주문 번호입니다.
+    * %{REMOTE_HOST}는 원격 컴퓨터의 호스트 이름/IP 주소입니다.
+    * %{DATE/TIME}은 공통 로그 형식으로 된 시간입니다[dd/mmm/yyyy:HH:MM:SS +/-ZZZZ].
+    * %{STORE}는 상점의 이름/ID입니다.
+    * %{SESSIONID}는 고객의 고유한 세션 식별자입니다.
+    * %{TOTAL}은 세금 및 배송 비용을 포함한 거래 합계입니다(십진법만, '$' 문자 없음)
+    * %{TAX}는 소계에 부과되는 세액입니다.
+    * %{SHIPPING}은 배송 수수료 금액입니다.
+    * %{BILL_CITY}는 고객의 청구주소(시)입니다.
+    * %{BILL_STATE}는 고객의 청구주소(주/도)입니다.
+    * %{BILL_ZIP}은 고객의 청구주소 우편번호입니다.
+    * %{BILL_COUNTRY}는 고객의 청구주소 국가입니다.
+    * %{USER_AGENT}는 고객 브라우저의 사용자 에이전트입니다.
+    * %{COOKIES}는 고객 브라우저에서 가져온 헤더에 포함된 수신 쿠키입니다.
+</pre><p class="line867"><strong>ELF2 품목 행</strong> <p class="line874">ELF2 품목 행은 다음과 같은 탭으로 구분된 입력란을 포함합니다(빈 입력란에는 '-' 문자가 포함되어야 함). <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">여기서 각 옵션은 다음과 같은 의미가 있습니다. <pre>    * %{ORDERID}는 주문 번호입니다.
+    * %{REMOTE_HOST}는 원격 컴퓨터의 호스트 이름/IP 주소입니다.
+    * %{DATE/TIME}은 공통 로그 형식으로 된 시간입니다[dd/mm/yyyy:HH:MM:SS +/-ZZZZ].
+    * %{PRODUCT_CODE}는 제품의 식별자입니다.
+    * %{PRODUCT_NAME}은 제품의 이름입니다.
+    * %{VARIATION}은 색상, 크기 등 제품에 대해 선택 가능한 옵션입니다.
+    * %{PRICE}는 제품의 단가입니다(십진법만, '$' 기호 없음)
+    * %{QUANTITY}는 이 제품에 대한 주문 수량입니다.
+    * %{UPSOLD}는 제품이 세일 중이었는지를 나타내는 부울(0|1)입니다.
+    * %{USER_AGENT}는 고객 브라우저의 사용자 에이전트입니다.
+    * %{COOKIES}는 고객 브라우저에서 가져온 헤더에 포함된 수신 쿠키입니다.
+</pre><p class="line867"><strong>ELF2 로그 파일 예제</strong> <p class="line874">다음의 두 행은 거래 그리고 ELF2 로그에서 이에 해당하는 품목 항목을 보여줍니다. <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

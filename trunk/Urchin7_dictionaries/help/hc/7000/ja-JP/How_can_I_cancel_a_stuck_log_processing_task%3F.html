@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>途中で停止しているログ処理タスクをキャンセルする</strong> <p class="line867"><strong>シナリオ 1:  タスクで時間がかかりすぎている</strong> <p class="line874">時間がかかりすぎているためタスクをキャンセルする場合、ログ処理エンジンを中断する必要がございます。 Unix では "urchin" 処理を中断し、Windows ではプロセス マネージャを使用します。 <p class="line874">注:  単にプロファイルを削除して再び作成することはしないでください。 スケジューラ ページには表示されませんが、タスクは途中で停止したままになり、スケジューラはブロックされます。 <p class="line867"><strong>シナリオ 2:  システムが予期せずにクラッシュ/再起動した</strong> <p class="line874">このシナリオでは、タスクは正常に実行されていましたが、ログ処理エンジンとスケジューラに適切な終了シグナルが送信されずにシステムが再起動またはクラッシュしました。 これにより、タスクのデータベース エントリに矛盾が生じます。 システムを起動すると、スケジューラとログ処理エンジンはそのプロファイルを取得せず、管理インターフェースではプロファイルが実行中であることを間違って表示します。 同じプロファイルを再度スケジュールしようとすると、タスクはすでにキュー/実行されているとのメッセージが表示されます。  <p class="line874">この場合、解決策として 30 分待つことができます。 マスター スケジューラは、30 分間更新されないすべてのタスクをデータベースから削除します。 タスクが削除されると、管理スケジュール ページでタスク ステータスが「エラー」として表示され、プロファイルを再スケジュールできるようになります。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

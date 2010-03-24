@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Sperren bei NFS erforderlich</strong> <p class="line874">Von der Urchin-Konfiguration, die Datendateien im Ordner "data/conf" der Konfiguration verwendet, werden bei der Einrichtung und Verwaltung Lese- und Schreibsperren festgelegt. Wenn der Ordner "data/conf" mit NFS bereitgestellt wird, muss der NFS-Server die entsprechenden Locking Daemons zur Remote-Sperrung ausführen. <p class="line874">Funktioniert die Sperrung nicht ordnungsgemäß, ist die Urchin-Installation möglicherweise auf unbestimmte Zeit blockiert. <p class="line867"><strong>Technische Anmerkungen</strong>  <p class="line874">Urchin führt mithilfe der Funktion fcntl() von UNIX wahlfreie (advisory) und exlusive (exclusive) Sperren aus (Schreiben/Lesen). Einige ältere Systeme unterstützen möglicherweise nicht alle rpc-Sperranforderungen der verschiedenen Plattformen. Führen Sie am besten die neueste Version Ihres OS mit den aktuellsten Patches aus. Stellen Sie sicher, dass der NFS-Server "statd" und "lockd" oder entsprechende Prozesse ausführt. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

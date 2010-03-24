@@ -1,0 +1,546 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+    
+    .writely-callout-data {
+      display: none;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>IT Reports</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<h1>
+  IT Reports Overview
+</h1>
+<br>
+<p style="MARGIN:0pt 0pt 9.6pt;TEXT-ALIGN:justify">
+  <font size=2><font color=#000000>Urchin has assembled a comprehensive list of IT special reports useful for server/site administrators.&nbsp; Different IT/network metrics like Hits, Bytes, Load Balancing, Downloads and many others help&nbsp; to make IT networking decisions and improve site performance.</font></font>
+</p>
+<p style=FONT-FAMILY:Verdana;TEXT-ALIGN:justify>
+  <font size=2>The IT section contains the following reports:</font>
+</p>
+<p style=FONT-FAMILY:Verdana;TEXT-ALIGN:justify>
+  <font size=2><br>
+  </font>
+</p>
+<ul>
+  <li>
+    <font size=2><font color=#000000><b>Hits &amp; Bytes Tracking</b>: How many successful connections and how much bandwidth have your webservers served? The Valid Hits and Error Hits graphs show the number of successes and failures by users accessing your site. Valid Hits describe the number of successful connections to your webservers. The Error Hits Graph will show the number of unsuccessful attempts to connect to your webservers. All successful hits and errors are determined by the http status codes within your logs. For a list of user status by type, select the Status Codes report on the left under IT Reports.</font></font>
+  </li>
+  <li>
+    <font size=2><b>Load Balancing</b>: <font color=#000000>How many successful connections have been served between all webservers? The Load Balancing graph compares data between all log sources entered through your profile Log Manager configuration.</font></font>
+  </li>
+</ul>
+<h6 style=FONT-FAMILY:Verdana;TEXT-ALIGN:justify>
+  <font size=3><b><font color=#000000>Pages &amp; Files</font></b></font>
+</h6>
+<ul>
+  <li>
+    <font size=2><b><font color=#000000>Top Files</font></b><span class=apple-converted-space><font color=#000000>:</font></span><font color=#000000> The Top Files chart shows the top files requested from your webserver over the time designated in the Date Range calendar.</font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>File Drilldown</b>: The File Drilldown chart and table shows the most requested files and directories by Valid Hits and by byte size. </font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Downloads</b>: The downloads page shows the top requested downloaded files by Valid Hits and by Bytes size. Files included in this report can be configured from the Reporting tab in Profile Settings.</font><span class=apple-converted-space>&nbsp;</span></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Posted Forms</b>: The Posted Forms report shows the amount of successful posts through a form in your website. The Valid Hits column represents the number of successful post requests from the corresponding Posted Form.</font><span class=apple-converted-space>&nbsp;</span></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>File Types</b>: The File Types report displays the Mime types of all files served from your webservers by successful hit and file size. Mime types included in this report can be configured under the Reporting tab of Profile Settings.</font><span class=apple-converted-space>&nbsp;</span></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Status Codes</b>: The Status Codes report reflects the status of user visitors as defined within the http protocol. For a complete list of http defined status codes, conduct a Google search for</font><span class=apple-converted-space>&nbsp;</span><font color=#000000>http status code definitions.</font><span class=apple-converted-space>&nbsp;</span></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Referral Errors</b>: How can you track which sites have old or broken links to you? The Referral Errors report shows the errors reported in your logs and shows the number of errored request attempts. </font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Unauthorized Usernames</b>: If your site access is restricted by user login, the Unauthorized Usernames report will display attempted usernames by the amount of failed login attempts.</font></font>
+  </li>
+</ul>
+<h6 class=MsoListParagraphCxSpMiddle style=FONT-FAMILY:Verdana;TEXT-ALIGN:justify>
+  <font size=3><b><font color=#000000>Domains &amp; Users</font></b></font>
+</h6>
+<ul>
+  <li>
+    <font size=2><font color=#000000><b>Domains</b>: </font><font color=#000000>The Domains report displays visitors by their ISP provider's top level domain name determined by user IP address.</font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Domain Drilldown</b>: </font><font color=#000000>The Domains report displays visitors by their internet provider's top level domain extension. You can filter visitors by top level domain name by clicking on </font></font><font size=2><font color=#000000>the</font> <img height=18 src="images/ddjk3d43_16tqfrxvhf_b.jpg" width=18> </font><font size=2>button. Data in the Domain Drilldown report is determined by user IP address. </font>
+  </li>
+</ul>
+<ul>
+  <li>
+    <font size=2><font color=#000000><b>IP Addresses</b>: </font><font color=#000000>The IP Addresses report displays users by IP address by the number of successful hits and the amount of data transfer by bytes.</font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>IP Drilldown</b>: </font><font color=#000000>The IP Drilldown report allows you to drilldown by IP to isolate specific IP blocks. </font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Unresolved IPs</b>: </font><font color=#000000>The Unresolved IPs report lists all visitors with IPs that do not have ownership data, such as geographical location or domain host. Those IPs included in the Unresolved IPs report are unable to be tracked in related Urchin geographical location or domain reports.</font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Usernames</b>: </font><font color=#000000>If your site requires user login, the Usernames report will display all visitors to your site by username, the amount of successful hits, and the amount of bytes transferred.</font></font>
+  </li>
+</ul>
+<h6 class=MsoListParagraphCxSpMiddle style=FONT-FAMILY:Verdana;MARGIN-RIGHT:0pt;TEXT-ALIGN:justify>
+  <font size=3><b>&nbsp;Browsers &amp; Robots</b></font>
+</h6>
+<ul>
+  <li>
+    <font size=2><font color=#000000><b>Browser Versions</b>: </font><font color=#000000>How should you optimize your site for browser? The Browsers &amp; Robots report shows all users by browser name as determined by the User Agent field in web server logs.</font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Platform Versions</b>: </font><font color=#000000>How should you optimize your site for operating system? The Platform Versions report shows all users by browser name as determined by the User Agent field in web server logs.</font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Browser &amp; Platform Combos</b>: </font><font color=#000000>How should you optimize your site for browser and operating system? The Browsers &amp; Robots report shows all users by browser name and operating system as determined by the User Agent field in web server logs.</font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Robots</b>: </font><font color=#000000>When was your site spidered last and by whom? The Robots report shows all hits that have behavior that is typically generated by automatic web-crawling scripts, commonly referred to as robots. Some common uses for robots are by search engines crawling web sites for information to include in their search index. The Robots report shows robots who have accessed your site and the User-Agent used to identify themselves.</font></font>
+  </li>
+  <li>
+    <font size=2><font color=#000000><b>Robot Content</b>: </font><font color=#000000>Which of your sites were seen by robots? The Robot Content report displays the sites Robots downloaded while visiting your site.</font></font>
+  </li>
+  <li>
+    <font size=2><font face=verdana><font color=#000000><b>Connection Speed</b>: For which connection speeds should you optimize your site and content?</font></font></font>
+  </li>
+</ul>
+<br></body>
+</html></body></html>

@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin のブランド設定</strong> <p class="line867"><strong>概要</strong> <p class="line874">Urchin では、管理インターフェース、レポート インターフェース、ログイン画面のブランド設定に対応しています。 インターフェースの上部に HTML を含めることができる編集可能なファイルが 3 つあります。 ポータルの統合が完了すると、Urchin レポートはアプリケーション サーバーによってフレームセット内または表内に表示されます。  <p class="line867"><strong>ブランド設定の手順</strong> <p class="line874">インターフェースをブランド設定するには、Urchin パッケージの次のファイルを編集する必要があります。 <pre>     [urchin install dir]/lib/custom/cobrands/cobrand_admin.tpl.sample
+     [urchin install dir]/lib/custom/cobrands/cobrand_report.tpl.sample
+     [urchin install dir]/lib/custom/cobrands/cobrand_session.tpl.sample
+</pre><ul><li>「.sample」の部分を削除してファイル名を変更します (ファイル名は cobrand_admin.tpl などのようにする必要があります)。 </li><li>必要に応じて HTML コンテンツを追加し、ブランド要素を含めます。 </li></ul><p class="line874">1 つ目のファイルは管理インターフェース、2 つ目のファイルはレポート インターフェース、 3 つ目のファイルはログイン画面のブランド設定を管理します。 これらのファイルで提供される HTML は、Urchin インターフェスの上部に配置されます。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

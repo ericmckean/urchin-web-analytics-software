@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer: Dienstprogramm für die Datenbankverwaltung</strong> <p class="line867"><strong>Übersicht</strong>  <p class="line874">Mit dem Urchin-Dienstprogramm für die Datenbankverwaltung, udb-sanitizer, können Sie die Urchin 6-Profildatenbanken prüfen und daran verschiedene Verwaltungsvorgänge durchführen.  <p class="line874">Sie können mit udb-sanitizer folgende Schritte ausführen:  <ul><li>Ausführen eines Rollbacks von Datenbanken auf einen vorher gespeicherten Sicherungsstatus </li><li class="gap">Löschen von Profildaten für einen Tag, mehrere Tage oder einen gesamten Monat  </li></ul><p class="line867"><strong>Verwendung</strong>  <p class="line874">udb-sanitizer befindet sich bei der Urchin 6-Installation im Verzeichnis "util".  <p class="line874">Verwenden Sie das Dienstprogramm wie folgt:  <pre>  udb-sanitizer [-h] (druckt die Verwendungsmeldung und beendet den Vorgang)
+
+  udb-sanitizer [-v] (druckt die Version und beendet den Vorgang)
+
+  udb-sanitizer -p profile [-d JJJJMM[TT]] -bfhprq] [-z [-e TT]] 
+</pre><p class="line874">Dabei gilt Folgendes:  <pre>   -b  Direkter Zugriff auf die Rollback-Option.
+
+   -d  Gibt Jahr und Monat sowie optional den Tag an, auf das bzw. den der Befehl angewendet werden soll.
+
+   -e  Mit den Optionen "z" und "d", Setzen mehrerer Tage (Bereich d-&gt;e) eines Monats auf Null.
+
+   -f  Erzwingt eine Aktion ohne Bestätigung.
+
+   -h  Druckt diese Hilfeinformationen.
+
+   -p  Gibt den Namen des Profils an (erforderlich).
+
+   -a  Gibt den Namen des Kontos an.
+
+   -r  Direkter Zugriff auf die Option zum Entfernen.
+
+   -q  Hintergrundmodus, Ausgabe wird bis auf wichtige Bestätigungsmeldungen unterdrückt.
+
+   -z  Direkter Zugriff auf die Option zum Setzen von Tagen auf Null. 
+
+</pre><p class="line867"><span class="u">Hinweis</span>: Wird udb-sanitizer mit Optionen aufgerufen, die nicht vollständig beschreiben, welche Aktion auszuführen ist, wird der Verwendungstext angezeigt (entspricht der Option "<tt>-h</tt>").  Sie können eine Aktion ohne jegliche Nutzerinteraktion ausführen lassen, indem Sie eine Kombination der Optionen "<tt>–f</tt>" und "<tt>-q</tt>" je nach Bedarf in Verbindung mit den Optionen "<tt>-d</tt>", "<tt>-b</tt>", "<tt>-r</tt>" oder "<tt>-z</tt>" verwenden.  <p class="line867"><strong>Arbeitsweise</strong>  <p class="line874">Normalerweise wird udb-sanitizer über eine Befehls-Shell aufgerufen. Dabei werden die jeweils gewünschten Optionen angegeben.    <p class="line874">Folgende Aktionen sind in Verbindung mit den oben beschriebenen Optionen verfügbar:  <p class="line874">1. Daten-Rollback (–r) <ul><li style="list-style-type:none">Mit dieser Option können Nutzer bereits archivierte Daten für ein Profil wiederherstellen. Nutzer können aus einer Liste der gesicherten ZIP-Archive wählen. Der Inhalt der gewählten Archivdatei ersetzt dann die vorhandene Berichtdatenbank. Für die ZIP-Archive wird die folgende Namenskonvention verwendet: "JJJJMM-backupv6-JJJJMMTTHHMMSS.zip". Dabei steht JJJJMM für den Monat, in dem die Daten gesichert wurden (z. B. 200803 für März 2008), und der Teil JJJJMMTTHHMMSS ist der Zeitstempel für den Zeitpunkt, zu dem das ZIP-Archiv erstellt wurde. Der Zeitstempel ist hilfreich bei der Ermittlung, welches ZIP-Archiv Sie wiederherstellen möchten. </li></ul><p class="line874">2. Löschen von Monatsdaten (-d) <ul><li style="list-style-type:none">Bei dieser Option werden für ein bestimmtes Profil alle Daten des angegebenen Monats entfernt. Mithilfe dieser Option können Sie die Statistikdaten für einen Monat auf Null setzen, falls die Daten fehlerhaft sind. Beispielsweise können die falschen Filter angewendet oder die falschen Protokolle verarbeitet worden sein. Es kann auch sein, dass einige erweiterte Profilparameter geändert wurden, z. B. die Klickwegtiefe oder die Verweisebene, sodass die Urchin-Berichtdaten für den jeweiligen Monat aktualisiert werden müssen, um die Änderung widerzuspiegeln. Diese Aktion kann auch ohne Nutzerinteraktion durchgeführt werden, indem udb-sanitizer mit den Argumenten "-f", "-r" und "-q" aufgerufen wird.  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. Setzen von Daten auf Null für einen oder mehrere Tage <ul><li style="list-style-type:none">Mit dieser Option können Sie die Daten eines gewählten Bereichs von Tagen innerhalb eines Monats auf Null setzen und es Urchin ermöglichen, die Verarbeitung nur für diese Tage noch einmal durchzuführen (z. B. urchin -p profile -d JJJJMMTT). Diese Aktion kann auch ohne Nutzerinteraktion durchgeführt werden, um nur einen einzelnen Tag auf Null zu setzen, indem udb-sanitizer mit den Argumenten "-f", "–q", "-z" und "-d" aufgerufen wird. Beispiel:  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">Bei mehreren Tagen können Sie das Argument "-e" verwenden, um ein Enddatum anzugeben. Beispiel:  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">Dieser Befehl setzt die Daten für den Zeitraum 7. bis 10. September auf Null. Beachten Sie, dass Sie für das Argument "–e" nur den letzten Tag angeben müssen. Dieses Verfahren ist effizienter als das Aufrufen mehrerer Instanzen von udb-sanitizer, um jeweils einen Tag auf Null zu setzen, da die Datenbankindizes und -header nur einmal geprüft werden. Das Prüfen der Indizes und Header kann sehr lange dauern, wenn Profile große Datenmengen enthalten.  </li></ul><p class="line874">4. Ist das Profil Teil eines Kontos, sollten Sie den Kontonamen mithilfe des Arguments "-a" angeben.   <p class="line867"><span class="u">Wichtig</span>: Aktionen, bei denen die Daten für Tage oder Monate gelöscht werden, können nicht rückgängig gemacht werden! Die einzige Möglichkeit ist eine erneute Verarbeitung der Webserver-Protokolle für den jeweiligen Zeitraum, um die Profildatenbanken wieder aufzufüllen. Verwenden Sie diese Optionen daher mit Bedacht. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

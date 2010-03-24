@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Tracking von Transaktionen eines sicheren Shops</strong> <p class="line867"><em>Dieser Artikel wurde von</em> <a href="ivantageLimited.html">ivantage Limited</a><em> erstellt, einem autorisierten Berater für Urchin-Software. </em> <p class="line862">Urchin kann Daten aus einem Warenkorb in Ihrer eigenen Domain erfassen sowie - durch Hinzufügen von Code - auch in anderen Domains. Informationen dazu, wie Sie Ihre Seiten einrichten, um Transaktionsdaten an Urchin berichten zu können, erhalten sie unter <a href="How_do_I_track_e-commerce_transactions%253F.html">Wie kann ich E-Commerce-Transaktionen erfassen?</a> <p class="line874">Befindet sich Ihr Online-Shop auf einer anderen Sub-Domain oder Domain als Ihre Hauptwebsite, befolgen Sie bitte zum Konfigurieren Ihrer Seiten die unten aufgeführten Anleitungen. <p class="line874">Wenn Ihre Website einen Kaufvorgang auf einer anderen Sub-Domain auslöst (z. B. wenn Sie Kunden von www.meinshop.de zu warenkorb.de senden), gehen Sie wie folgt vor: <ul><li style="list-style-type:none">Fügen Sie Ihrem Tracking-Code auf beiden Seiten, d. h. auf der Online-Shop-Seite und Ihrer Warenkorb-Seite, die folgenden Zeilen (in Fettschrift) hinzu: </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">Wenn Ihre Website einen Kaufvorgang auf einer separaten Online-Shop-Website auslöst (z. B. wenn Sie Kunden von www.meinshop.de an www.sichererwarenkorb.de weiterleiten), gehen Sie wie folgt vor: <ul><li style="list-style-type:none">Fügen Sie Ihrem Tracking-Code auf beiden Seiten, d. h. auf der Online-Shop-Seite und Ihrer Warenkorb-Seite, die folgenden Zeilen (in Fettschrift) hinzu: </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Soll <span class="u">utmLinker verwendet werden, gehen Sie beim Ändern der Links von der Hauptwebsite zur gesicherten Website folgendermaßen vor. Wenn Ihre aktuellen Links wie folgt aussehen: </span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;Jetzt kaufen&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">ändern Sie diese wie folgt: </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;Jetzt kaufen&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;Jetzt kaufen&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Der oben angegebene Code bietet Links für Nutzer mit aktiviertem oder deaktiviertem JavaScript. Beachten Sie, dass einem Apostroph im Link oder im Linktext ein umgekehrter Schrägstrich vorangestellt werden muss. Wichtig: Enthalten Ihre Seiten einen Aufruf an urchinTracker(), utmLinker(), utmSetTrans() oder utmLinkPost(), muss der Analytics-Tracking-Code in Ihrem HTML-Code über diesen Aufrufen platziert werden. In diesen Fällen kann der Tracking-Code an beliebiger Stelle zwischen dem öffnenden Tag &lt;body&gt; und dem JavaScript-Aufruf platziert werden. </li></ul><p class="line874">Wenn Sie mithilfe von Formularen Informationen an Ihren Warenkorb senden, verwenden Sie die Funktion utmLinkPost(). Mithilfe dieser Funktion werden Cookiedaten an die URL des bereitgestellten Formulars angehängt. <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">Dies funktioniert sogar bei Formularen mit method="GET" <p class="line891"><strong>Achtung:</strong> Enthalten Ihre Seiten einen Aufruf an urchinTracker(), utmLinker(), utmSetTrans() oder utmLinkPost(), muss der Analytics-Tracking-Code in Ihrem HTML-Code über diesen Aufrufen platziert werden. In diesen Fällen kann der Tracking-Code an beliebiger Stelle zwischen dem öffnenden Tag &lt;body&gt; und dem JavaScript-Aufruf platziert werden. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

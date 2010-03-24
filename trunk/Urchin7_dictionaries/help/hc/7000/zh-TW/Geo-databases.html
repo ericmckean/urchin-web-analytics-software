@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6.602 Geo-databases</strong> <p class="line874">Urchin 6.602 內建兩個 geo databases： <ul><li><p class="line891"><strong>geo.db</strong> - 包含詳細的都會區 (country/region/city)，聯播網 (組織) 和網域資訊。 提供的資訊層級與舊版 urchin 6 (6.400 - 6.601) 相同，但內容較新。 </li><li class="gap"><p class="line891"><strong>geo.light.db</strong> - 只包含國家/地區層級的都會區資訊，不含區域、城市、聯播網和組織資訊。 此資料庫對記憶體的需求量較少，載入時間也較短，因此特別適用於記錄處理引擎成效的情況下。 使用 geo database 輕量版會對下列報表造成影響。 <ul><li style="list-style-type:none">o 下列"Geo Map"報表最多只能顯示國家/地區層級的都會區資料 (不含區域和城市資訊)： <ul><li><p class="line862">管理人員檢視 &gt; 管理人員總覽 (資訊主頁) </li><li><p class="line862">管理人員檢視 &gt; 全球訪客分佈圖 </li><li><p class="line862">行銷專員檢視 &gt; 行銷專員總覽 (資訊主頁) </li><li><p class="line862">網站管理員檢視 &gt; 網站管理員總覽 (資訊主頁) </li><li><p class="line862">行銷最佳化 &gt; 訪客區隔區隔成效 &gt; 全球訪客分佈圖 </li></ul><p class="line862">o "「網路位置」"報表 (行銷最佳化 &gt; 訪客區隔成效 &gt; 網路位置) 不會顯示任何資料 <p class="line862">o "「網域」"報表 (行銷最佳化 &gt; 訪客區隔成效 &gt; 網域) 不會顯示任何資料 </li></ul></li></ul><p class="line874">預設會使用 geo.db。 若要切換為 geo.light.db 資料庫，請在 urchin.conf 檔案中取消相應程式行的註解： <p class="line867"><pre>
+
+# Geo Database 設定
+
+# 取消下列程式行的備註標記，即可啟用輕量版 geo-database
+# GeodbLight: ON
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

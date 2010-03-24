@@ -1,0 +1,10 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><hr class="hr1" /><p class="line874"> 本文由 Urchin 软件授权顾问<a href="%2522FriedrichsoftwareResources%2522.html">"FriedrichsoftwareResources"</a>编写 <hr class="hr1" /><p class="line874"> <strong>如何从"Unable to open database for writing since it has been archived"（无法打开要写入的数据库，此数据库已被存档）的错误中恢复？</strong> <p class="line874">在 Urchin 6 中尝试运行配置文件时，您收到这一错误消息： <p class="line867"><pre>WARNING: (7063-54-63) Unable to open database for writing since it has been archived
+</pre><p class="line874">之所以发生这一错误，是因为 Urchin 的日志跟踪数据库是按月存储数据。在处理过程中，Urchin 会读取日志文件的前两行，判断日志文件来自哪个月份，并尝试打开此月份的数据库。由于这个月的数据库已存档，而 Urchin 不允许对已存档的数据库进行读/写，因此会返回错误。我们提供两个解决方法： <ol type="1"><li>关闭存档功能，解压缩所有受影响的配置文件的 *-archive.zip 文件，并删除 *-archive.zip 文件。 </li><li>更改日志通配符，包含日期匹配字符串（例如，也许可以使用 YY* 或 YYYY* 只标识出当年的文件）。 </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>ELF2-logbestandsindeling</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dit artikel is geschreven door </em> <a href="ivantageLimited.html">ivantage Limited</a><em>, een geautoriseerde softwareconsultant voor Urchin </em> </li></ul><p class="line867"><strong>OPMERKING</strong> <p class="line874">Eerdere versies van Urchin ondersteunden de ELF-indeling voor het bijhouden van IP-Only. Aangezien Urchin 6 geen functie voor het bijhouden van IP-Only heeft, wordt de ELF-indeling niet langer ondersteund.  <p class="line867"><strong>Overzicht</strong> <p class="line874">ELF2 (E-commerce Log Formats 2) is ontworpen om informatie vast te leggen over klantentransacties op online winkelsites. Urchin 6 ondersteunt dit mechanisme voor het vastleggen van E-commercetransacties echter niet langer. In plaats daarvan ondersteunt Urchin 6 een techniek voor gegevensverzameling bij de client waarmee e-commercetransacties kunnen worden vastgelegd. Met een aantal eenvoudige toevoegingen aan uw ontvangstpagina kan Urchin 6 automatisch transactie- en productgegevens detecteren en vastleggen. De benodigde informatie wordt in een verborgen formulier geplaatst, dat wordt geparseerd voor het verkrijgen van transactie- en productgegevens. De meeste e-commercesystemen die met sjablonen werken, kunnen worden aangepast om de gegevens op te nemen die zijn verborgen op de ontvangstpagina. <p class="line862">Met Urchin kunt u gegevens bijhouden voor winkelwagentjes in uw eigen domein of in andere domeinen door enkele regels code toe te voegen. Als u pagina's wilt instellen voor het rapporteren van transactiegegevens naar Urchin, leest u 'Hoe houd ik e-commercetransacties bij?'. Als uw winkelsite zich in een ander subdomein of domein bevindt dan uw hoofdsite, leest u bovendien <a href="Tracking_Secure_Store_Transactions.html">Beveiligde winkeltransacties bijhouden</a>. <p class="line874">In dit document wordt de indeling van de ELF2-logbestanden beschreven die worden gemaakt door de winkelwagentjessoftware en wordt uitgelegd hoe u Urchin kunt configureren voor het verwerken van e-commercelogbestanden. <p class="line867"><strong>Urchin configureren voor ELF2-logbestanden</strong> <p class="line874">U moet deze configuratieparameters volgen wanneer u het ELF2-logbestandstype instelt. <ul><li>Meld u aan bij de beheerinterface als beheerder. </li><li>Ga naar het scherm 'Configuratie'. </li><li><p class="line862">Stel 'Indeling logbestand' in het bewerkingsscherm 'Bron logbestand'-&gt;'Logboekinstellingen' in op 'elf2' of 'auto'. </li><li><p class="line862">Stel in het bewerkingsscherm 'Profiel'-&gt;'Instellingen' het veld 'E-Commercewebsite' in op 'YES'. </li></ul><p class="line874">Het e-commercelogbestand moet worden vermeld als tweede logbestandsbron samen met het logbestand van uw hoofdwebsite in het profiel dat wordt gemaakt om uw e-commercerapportage af te handelen. De logbestanden worden op volgorde verwerkt door Urchin. <p class="line867"><strong>Beschrijving van de ELF2-logbestandsindeling</strong> <p class="line874">ELF2 is een door tabs gescheiden logbestandsindeling met meerdere regels. De eerste regel begint met een uitroepteken '!' en bevat algemene informatie over de aankoop. Daaropvolgende regels bevatten gedetailleerde informatie over de items die zijn aangeschaft. De eerst regel wordt de transactie genoemd en de daaropvolgende regels de items. Lege velden moeten het teken '-' bevatten. Aangezien tabs worden gebruikt om velden te scheiden, mag het tabteken niet worden gebruikt in velden. <p class="line874">Een gewoon ELF2-logbestand heeft de volgende algemene vorm: <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>ELF2-transactieregel</strong> <p class="line874">De ELF2-transactieregel begint met een uitroepteken '!' en bevat de volgende, door tabs gescheiden velden (lege velden moeten het teken '-' bevatten): <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">waarbij het volgende geldt: <pre>    * %{ORDERID} is het ordernummer
+    * %{REMOTE_HOST} is de hostnaam/het IP-adres van de externe computer
+    * %{DATE/TIME} is de tijd in de normale logbestandsnotatie [dd-mmm-jjjj:UU:MM:SS +/-ZZZZ]
+    * %{STORE} is de naam/id van de winkel
+    * %{SESSIONID} is de unieke sessie-id van de klant
+    * %{TOTAL} is het transactietotaal, inclusief belasting  en verzendkosten (alleen decimalen, geen '$'-tekens)
+    * %{TAX} is het bedrag aan belasting dat wordt opgeteld bij het subtotaal
+    * %{SHIPPING} is het bedrag voor de verzendkosten
+    * %{BILL_CITY} is de plaats van het factuuradres van de klant
+    * %{BILL_STATE} is de staat van het factuuradres van de klant
+    * %{BILL_ZIP} is de postcode van het factuuradres van de klant
+    * %{BILL_COUNTRY} is het land van het factuuradres van de klant
+    * %{USER_AGENT} is de useragent van de browser van de klant
+    * %{COOKIES} zijn de inkomende cookies in de headers van de browser van de klant 
+</pre><p class="line867"><strong>ELF2-itemregel</strong> <p class="line874">De ELF2-itemregel bevat de volgende, door tabs gescheiden velden (lege velden moeten het teken '-' bevatten): <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">waarbij het volgende geldt: <pre>    * %{ORDERID} is het ordernummer
+    * %{REMOTE_HOST} is de hostnaam/het IP-adres van de externe computer
+    * %{DATE/TIME} is de tijd in de normale logbestandsnotatie [dd-mm-jjjj:UU:MM:SS +/-ZZZZ]
+    * %{PRODUCT_CODE} is de id van het product
+    * %{PRODUCT_NAME} is de naam van het product
+    * %{VARIATION} is een optionele variant van het product voor kleuren, afmetingen, enzovoort
+    * %{PRICE} is de eenheidsprijs van het product (alleen decimalen, geen '$'-tekens)
+    * %{QUANTITY} is het aantal dat van dit product is besteld
+    * %{UPSOLD} is een booleaanse waarde (0|1) als het product in de uitverkoop was
+    * %{USER_AGENT} is de useragent van de browser van de klant
+    * %{COOKIES} zijn de inkomende cookies in de headers van de browser van de klant 
+</pre><p class="line867"><strong>Voorbeeld van een ELF2-logbestand</strong> <p class="line874">De volgende twee regels laten een transactie en bijbehorend item in een ELF2-logbestand zien: <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

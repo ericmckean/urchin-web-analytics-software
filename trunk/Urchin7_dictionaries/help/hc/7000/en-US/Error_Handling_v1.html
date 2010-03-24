@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Error Handling</strong> <em>--Beta Release--</em> <p class="line867"><a href="Data_API.html">API Table of Contents</a> <p class="line874">When an error occurs during request processing, the API will return the following: <ul><li>faultCode - error code </li><li>faultString - short description of error </li><li>faultDetail - detailed description of error </li></ul><p class="line874">The following faultCode ranges apply to the Urchin Data API Services: <div><table><tbody><tr>  <td><p class="line891"><strong>faultCode</strong> </td>
+  <td><p class="line862">    <strong>faultString</strong> </td>
+</tr>
+<tr>  <td><p class="line862">10001 </td>
+  <td><p class="line862"> Internal server error </td>
+</tr>
+<tr>  <td><p class="line862">10002 </td>
+  <td><p class="line862"> Invalid request/Unknown SOAP action </td>
+</tr>
+<tr>  <td><p class="line862">10003 </td>
+  <td><p class="line862"> Required field is missing </td>
+</tr>
+<tr>  <td><p class="line862">10004 </td>
+  <td><p class="line862"> Malformed field </td>
+</tr>
+<tr>  <td><p class="line862">10005 </td>
+  <td><p class="line862"> Service business logic error </td>
+</tr>
+</tbody></table></div><p class="line867"><strong>Data API Logging</strong> <p class="line874">Urchin allows logging of all Data API events. Events are logged (depending upon the log level value) and stored in the following file: <p class="line867"><pre>    &lt;urchin_home&gt;/var/api.log
+</pre><p class="line862">To set the Data API log level, edit the Axis2LogLevel value in the urchinwebd.conf.template file. <ul><li><p class="line891"><strong>crit</strong> - Log critical errors only </li><li><p class="line891"><strong>error</strong> - Log errors and above </li><li><p class="line891"><strong>warn</strong> - Log warnings and above </li><li><p class="line891"><strong>info</strong> - Log info and above </li><li><p class="line891"><strong>debug</strong> - Log debug and above </li><li><p class="line891"><strong>trace</strong> - Log trace messages </li></ul><p class="line874">Note: Restart the Urchin Web Server after changing the log level value. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

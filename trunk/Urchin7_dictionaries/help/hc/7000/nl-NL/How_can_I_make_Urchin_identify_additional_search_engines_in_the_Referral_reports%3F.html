@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Hoe zorg ik ervoor dat Urchin meer zoekmachines kan identificeren in de verwijzingsrapporten?</strong> <p class="line874">Standaard houdt Urchin verwijzingen van twintig zoekmachines bij, zoals wordt weergegeven in uw UTM-bestand. U kunt Urchin echter zodanig configureren dat ook de verwijzingen van andere zoekmachines kunnen worden vastgesteld. Bewerk hiervoor het UTM-bestand als volgt: <ol type="1"><li>Open het bestand urchin.js in een teksteditor. </li><li>Blader omlaag en doe het volgende: </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>U ziet vermeldingen voor zoekmachines met de nummers 0-19. Deze zoekmachines worden standaard bijgehouden in Urchin. U kunt nog een andere zoekmachine aan de lijst toevoegen door een nieuw item toe te voegen met dezelfde indeling als de andere vermeldingen. Zo kunt u een item toevoegen voor een zoekmachine met de naam 'nieuw': </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">De waarde voor _uOsr moet de naam van de zoekmachine zijn en de waarde voor _uOkw moet de zoekopdrachtvariabele zijn waarin het zoekwoord is opgeslagen. Als iemand bijvoorbeeld een zoekopdracht uitvoert naar 'motor' met de volgende URL voor de zoekresultaten: </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">is 'q' de waarde voor _uOkw. is 'google' de waarde voor _uOsr. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

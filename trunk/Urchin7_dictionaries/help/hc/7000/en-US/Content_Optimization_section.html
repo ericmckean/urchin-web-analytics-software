@@ -1,0 +1,625 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+    
+    .writely-callout-data {
+      display: none;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>Content Optimization</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<h1>
+  Content Optimization section
+</h1>
+<p>
+</p>
+<p>
+  <font size=2>&nbsp;&nbsp;&nbsp; Reports from Content Optimization section highlight all strong areas of your website&nbsp; and areas that need to be immediately addressed. &nbsp;This section analyzes navigation and content performance. Weak design might confuse your customers and they might even close the site without looking at your offerings. Analyzing e.g. which pages are the most popular, from which pages do visitors commonly exit your website, do visitors continue their visit after viewing their first page or do they immediately leave your website, you can optimize website content to attract new and return old visitors. You can take occasion to goal to analyze definite content, how many visitors don’t reach the goal and make a decision is this content an affective.</font>
+</p>
+<p>
+  <font size=2>&nbsp;&nbsp; &nbsp;Likewise, you can optimize your website and content according to information about Web Design Parameters of your website visitors.</font>
+</p>
+<p>
+  <font size=2>Also, Content Optimization reports&nbsp; demonstrate which versions of your ads (within the bounds of ads, sources and paid keywords) drive the highest quality visitors to your site. Therefore, it’s very important if similarly good and relevant content of ad shows people what they are looking for and offers a better ROI.</font><br>
+</p>
+<br>
+<br>
+<font size=2>Content Optimization</font> section contains the following reports:<br>
+<h6>
+  <font size=3>Ad Version Testing</font>
+</h6>
+<ul>
+  <li style=FONT-FAMILY:Verdana>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Overall Ad A/B Testing:</b></span></font></span> The <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>Overall Ad A/B Testing</span></font></span></font> report shows </font><font size=2>which specific ad versions drive the highest quality traffic. This report compares the performance of each ad, and version of ad (according to the utm_content tag you used to tag specific links), with respect to number of visits referred, pageviews per visit, conversion rates, and average visit value.</font>
+  </li>
+  <li style=FONT-FAMILY:Verdana>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Source Specific Testing:</b></span></font></span></span></span> The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>Source Specific Testing</span></font></span></span></span></span></span></span></span></font> report displays which versions of your ads for each source (search engine, newsletter, referral) drive the highest quality visitors to your site. For each of your referral sources, this report compares the performance of ad versions (according to the utm_content tag you used to tag specific links) with respect to number of visits referred, pageviews per visit, conversion rates, and average visit value.</span></font></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p style=FONT-FAMILY:verdana,arial,helvetica>
+      <span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><font face=verdana size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Keyword Specific Testing</b></span></font></span></span></span></span></span><b>:</b> The <span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><font face=verdana size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>Keyword Specific Testing</span></font></span></span></span></span></span></font></span></span></span></span></span></span> report shows which ve</font><font size=2>rsions of your ads for each paid keyword drive the highest quality visitors to your site. This report compares the performance of different versions of ads (according to the utm_content tag you used to tag specific links) for each keyword.</font></font></span></font></span></span></span></span></span>
+    </p>
+  </li>
+</ul>
+<h6>
+  <font size=3>Content Performance</font>
+</h6>
+<ul style=FONT-FAMILY:Verdana>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Top Content:</b></span></font></span> Which pages are the most popular and how important are these pages to your business? This report shows how many visits and pageviews each page on your site received, the average amount of time that visitors spent on the page, how frequently visitors left your site after viewing the page, and the $Index. Pages with the highest $Index are those pages which were commonly visited prior to high-value conversions during the same visit. This report is useful for finding the key content that should be a part of the main flow of the site.</font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Content Drilldown:</b></span></font></span></span></span> How popular is each page on your site and how important is the page to your business? This report shows how many visits and pageviews each page on your site received, the average amount of time that visitors spent on the page, how frequently visitors left your site after viewing the page, and the $Index. Pages with the highest $Index are those pages which were commonly visited prior to high-value conversions during the same visit.</font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Content by Titles:</b></span></font></span></span></span></span></span> Which HTML title tags are used on the most popular pages? This report compares pages by HTML title tag, aggregating as a single page those pages which have the same HTML title. Pages are compared in terms of the number of visits, number of pageviews, the average time spent on the page(s), the percentage of time the page(s) is an exit page, and the $Index. The highest $Index indicate pages that were commonly visited prior to high-value conversions during the same visit.</font>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Page Query Terms: </b></span></font></span></span></span></span></span></span></span>Which parameter names and values were used in requests to dynamic content? This report analyzes internal search and dynamic content, listing all the pages whose URL contained query parameters (generally after the ? query token).</span></font></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Depth of Visit:</b></span></font></span></span></span></span></span></span></span></span></span> The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>Depth of Visit</span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font> report displays how many pages are viewed during a visit to your website? Visits of a single page appear on the left of the graph; visits of twenty pages or more appear on the right side of the graph.</span></font></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Engagement Metrics: </b><br>
+    </span></font></span></span></span></span></span></span></span></span></span></span></span></font>
+  </li>
+  <ul>
+    <li>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Length of Visit:</b></span></font></span></span></span></span></span></span></span></span></span></span></span> </font>How much time do visitors spend on your website? Visits of less than ten seconds appear to the left of the graph; visits of more than 1801 seconds appear on the right side of the graph.
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <font size=2><b>Time on Site:</b> </font>Time on site is one way of measuring visit quality. If visitors spend a long time visiting your site, they may be interacting extensively with it. However, Time on site can be misleading because visitors often leave browser windows open when they are not actually viewing or using your site.
+    </li>
+  </ul>
+</ul>
+<h6>
+  <font size=3>Navigational Analysis</font>
+</h6>
+<ul style=FONT-FAMILY:Verdana>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Entrance Bounce Rates:</b></span></font></span> Do visitors continue their visit after viewing their first page or do they immediately leave your site (Bounces)? This report lists the top entrance pages on which visitors land and their respective number of Bounces and Bounce Rates. A Bounce is counted each time a visitor immediately exits the site from the entrance page.</span></font></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Top Exit Points:</b></span></font></span></span></span> From which pages do visitors commonly exit your site? This report shows the number of exits and number of pageviews for the top exit pages on your site.</span></font></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Initial Navigation:</b></span></font></span></span></span></span></span> Which navigation paths resulted in conversions during the visit? For each navigation path, this report shows conversion rates and per visit value.</span></font></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>All Navigation:</b></span></font></span></span></span></span></span></span></span> How do visitors get to each page on your site and where do they go afterwards? Select a page to analyze from the left hand side of the report. The number of clicks, the conversion rates, and the average score are displayed for each Click From and Click To page. Pages with the highest average score are those pages most commonly visited prior to high-value conversions.</span></font></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+</ul>
+<h6>
+  <font size=3>Goals &amp; Funnel Process</font>
+</h6>
+<ul style=FONT-FAMILY:Verdana>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Goal Tracking:</b></span></font></span>For each of your goals, how many goal conversions were there over time? This report shows a graph (one for each goal) indicating the number of goal conversions over time. To see the conversion rates over time for each goal, see the Goal Conversion report.</span></font></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Goal Conversion:</b></span></font></span></span></span> How do conversion rates change over time for each of your goals? This report shows a graph (one for each goal) indicating the conversion rates over time. To see the number of conversions for each goal over time, see the Goal Tracking report.</span></font></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Defined Funnel Navigation:</b></span></font></span></span></span></span></span> At what point do visitors who begin a defined funnel process abandon it? The centermost column of boxes represent the steps in one of your defined goal funnels (Select a goal funnel from the drop down menu at upper left). Shown within each box is the percentage of visitors still in the defined funnel at each step. Shown at right, under Abandonment Points, are the visitors who abandoned the funnel and where they went. Shown at left are the Entrance Points, points from which visitors arrive to the funnel.</span></font></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Defined Funnel Abandonment:</b></span></font></span></span></span></span></span></span></span> What percentage of visitors who begin a defined funnel process abandon it? This report graphs funnel abandonment rates over time for each goal for which you have defined a funnel.</span></font></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Reverse Goal Path:</b></span></font></span></span></span></span></span></span></span></span></span> How do visitors actually arrive at your goals? This report lists the navigation paths to the selected goal (Select your goal from the pull down menu at upper left) and shows the number of conversions that each path represents. This report is different from the defined funnel reports in that it shows the different navigation paths that were used to reach a goal, rather than tracking entrances to and exits from funnels you have defined. Useful for sites that are heavily cross linked, this report allows you to gain insight into "required" content that visitors need to see before they are comfortable with converting. This information can be used to improve the overall navigation of the site.</span></font></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Goal Verification:</b></span></font></span></span></span></span></span></span></span></span></span></span></span> For each of your goals (select a goal from the pulldown menu on toolbar at the top of this report) this report shows the pages that count towards the goal and the number of times each of these pages was viewed. This report is useful for verifying the specific goal pages that were logged, since a goal may be defined as a collection of pages.</span></font></span></span></span></span></span></span></span></span></span></span></span></font>
+    </p>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>If, for example, you have defined a goal as a directory, each of the pages within that directory count towards the goal. In this case, this report would show each of those pages, the number of visits to the page, and the percentage of the total goal conversions that each page represents.</span></font></span></span></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+</ul>
+<h6>
+  <font size=3>Web Design Parameters</font>
+</h6>
+<ul>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Browser Versions</b></font></span></font></span><b>:</b> The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>Browser Versions</font></span></font></span></span></span></font> report shows for which browsers you should optimize your site and content.</font></span></font></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Platform Versions</b></font></span></font></span><b>:</b> The <span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>Platform Versions</font></span></font></span></span></span></font> report displays for which platforms you should optimize your site and content.</font></span></font></span></font></span></font></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Browser Platform Combos</b></font></span></font></span><b>:</b> <span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>Browser Platform Combos</font></span></font></span></span></span></span></span></font> report shows for which browser/platform combinations you should optimize your site and content.</font></span></font></span></font></span></font></span></span></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Screen Resolutions</b></font></span></font></span><b>:</b> The <span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>Screen Resolutions</font></span></font></span></span></span></span></span></span></span></font> report displays for which screen resolutions <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>you </font></span></font></span></span></span></span></span></span></span></font>should optimize your site and content.</font></span></font></span></font></span></font></span></span></span></span></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Screen Colors</b></font></span></font></span><b>:</b> <span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>Screen Colors</font></span></font></span></span></span></span></span></span></span></span></span></font> report shows for which color resolutions <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>you </font></span></font></span></span></span></span></span></span></span></span></span></font>should optimize your site and content.</font></span></font></span></font></span></font></span></span></span></span></span></span></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Languages:</b> The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>Languages</font></span></font></span></span></span></span></span></span></span></span></span></span></span></font> report displays which languages are preferred by your visitors.</font></span></font></span></span></span></span></span></span></span></span></span></span></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Java Enabled</b></font></span></font></span><b>:</b> <span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>Java Enabled</font></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></font> report shows what percentage of your visitors <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>Java enabled</font></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></font> have on their browsers.</font></span></font></span></font></span></font></span></span></span></span></span></span></span></span></span></span></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Flash Version</b></font></span></font></span>: <span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>The Flash Version report displays for which versions of Flash <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>you </font></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font>should optimize your Flash content.</font></span></font></span></font></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Connection Speed</b></font></span></font></span><b>:</b> <span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>The Connetion Speed report shows for which connection speeds <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>you&nbsp;</font></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font>should optimize your site and content.</font></span></font></span></font></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Hostnames</b></font></span></font></span><b>:</b> <span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>The Hostnames report displays <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica>which domains visitors visit</font></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font> if you have multiple domains with the same website content. This report shows the total number of pageviews that each domain received. If a domain appears on this report that is not one of your domains, the domain in question points to a website that has your UTM (and possibly other content owned by you).</font></span></font></span><br>
+    </font></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font>
+  </li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br></body>
+</html></body></html>

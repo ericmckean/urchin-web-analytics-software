@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer： 数据库维护实用程序</strong> <p class="line867"><strong>概述</strong>  <p class="line874">Urchin 数据库维护实用程序 udb-sanitizer 可用于检查 Urchin 6 配置文件数据库以及对这些数据库执行各种维护操作。  <p class="line874">udb-sanitizer 可执行的操作类型有：  <ul><li>将数据库回滚到以前保存的备份状态 </li><li class="gap">删除某天、数天或整月的配置文件数据  </li></ul><p class="line867"><strong>用法</strong>  <p class="line874">udb-sanitizer 位于 Urchin 6 发行套装的 util 目录下。  <p class="line874">该实用程序的用法如下：  <pre>  udb-sanitizer [-h] （显示用法消息并退出）
+
+  udb-sanitizer [-v] （显示版本并退出）
+
+  udb-sanitizer -p profile [-d YYYYMM[DD]] -bfhprq] [-z [-e DD]] 
+</pre><p class="line874">其中，  <pre>   -b  直接转到回滚选项
+
+   -d  指定操作的年份和月份以及日期（可选）
+
+   -e  使用 z 和 d 选项，将同一月中的数天（范围 d-&gt;e）清零
+
+   -f  强制进行操作而无需确认
+
+   -h  显示此帮助信息
+
+   -p  指定配置文件的名称（必需）
+
+   -a  指定帐户名称
+
+   -r  直接转到删除选项
+
+   -q  静止模式，除非有重要用户确认，否则不得输出
+
+   -z  直接转到零天选项 
+
+</pre><p class="line867"><span class="u">请注意</span>： 如果调用 udb-sanitizer 时使用的选项没有完全说明要执行的操作，则会显示用法文本（等同于 <tt>-h</tt> 选项）。  通过使用 <tt>–f</tt> 和 <tt>-q</tt> 的选项组合以及适用的 <tt>-d</tt>、<tt>-b</tt>、<tt>-r</tt> 或 <tt>-z</tt> 选项，您可以在没有任何用户互动的情况下促使执行操作。  <p class="line867"><strong>操作</strong>  <p class="line874">常规操作中，从提供适用于计划类型操作的选项的命令解释程序调用 udb-sanitizer。    <p class="line874">与以上列出的可用选项相关的操作包括：  <p class="line874">1. 数据回滚 (–r) <ul><li style="list-style-type:none">此选项允许用户恢复配置文件已经存档的数据。 系统会向用户展示压缩 (ZIP) 存档备份列表以供选择，所选的存档文件的内容将替换现有报告数据库的内容。 按照惯例，压缩存档通常命名为“YYYYMM-backupv6-YYYYMMDDHHMMSS.zip”，其中开头的 YYYYMM 指备份数据的月份（如：200803 指 2008 年 3 月），而 YYYYMMDDHHMMSS 部分是创建压缩存档时的时间戳。 此时间戳有助于确定要回滚到的压缩存档。 </li></ul><p class="line874">2. 删除月数据 (-d) <ul><li style="list-style-type:none">删除指定月的特定配置文件的所有数据。 如果某个月的数据不正确（如应用了错误的过滤器或处理了错误的日志），此选项可用于清除该月的统计数据。此外，如果更改了一些高级配置文件参数（如点击路径深度或推介链接级别），这样就需要更新此月的 Urchin 报告数据以反映此更改。 可以在没有用户互动的情况下，通过调用 udb-sanitizer 以及 -f、-r 和 -q 参数来执行此操作。  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. 将一天或数天的数据清零 <ul><li style="list-style-type:none">此选项可以将某月中选定日期范围内的数据清零，从而使 Urchin 日志处理仅针对这段时间重新运行（如 urchin -p profile -d YYYYMMDD）。 可以在没有用户互动的情况下，通过调用 udb-sanitizer 以及 -f、–q、-z 和 -d 参数来将某一天的数据清零。例如：  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">对于数天的情况，加上“-e”参数并指定结束日期即可，例如：  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">这样，会将 9 月 7 号至 10 号的数据清零。 请注意，–e 参数仅提供结束日期。 由于只需对数据库索引和标题检查一次，因此，与调用多个 udb-sanitizer 实例以一次仅对某一天进行清零相比，这样更为有效。 索引/标题检查操作要求对包含大量数据的配置文件投入相当长的时间。  </li></ul><p class="line874">4. 如果配置文件是帐户的一部分，则应使用 -a 参数指定帐户名称。   <p class="line867"><span class="u">重要提示</span>： 一旦执行删除每日或每月数据操作，便无法撤消！ 唯一的解决方法是重新处理相应时间段的网络服务器日志以重新放入配置文件数据库。 请谨慎使用这些选项。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

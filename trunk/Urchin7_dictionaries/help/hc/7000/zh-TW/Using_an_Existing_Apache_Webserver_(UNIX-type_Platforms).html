@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>使用現有的 Apache 網頁伺服器 (UNIX 平台)</strong> <p class="line874">根據預設，Urchin 管理與報告是使用 Urchin 產品隨附的獨立 Apache 伺服器來完成。在絕大多數的 Urchin 安裝中，這是提供 Urchin 管理和報告介面的偏好方式。然而，在少數情況下，您可能需要使用現有的 Apache 安裝。這可能是基於網站需求，整個組織必須使用本地化版本的 Apache，或必須透過單一 Apache 組態來管理所有的網頁服務。下列資訊說明可以用來符合這些需求的兩種模式。 <p class="line867"><strong>免責聲明：</strong> 請注意，我們「不支援」這些針對 Urchin 安裝的修改。 <p class="line867"><strong>選項 1：</strong> 利用現有的網站特定 Apache httpd 二進位格式檔來獨立執行 Urchin 服務 <p class="line867"><strong>副作用</strong> <ul><li>Urchin 升級有時需使用附加功能和 / 或對隨附的 Apache 進行組態變更，如果現有的 Apache 二進位格式檔不支援這些變更 / 功能，則可能無法正確升級。 </li></ul><p class="line867"><strong>組態變更</strong> <ul><li>請確定您的 httpd 支援下列模組： <ul><li style="list-style-type:none">mod_access mod_cgi mod_dir mod_mime </li></ul></li><li>以正常的方式安裝 Urchin，並選擇執行 Urchin 的管理和報告介面所需的通訊埠。 </li><li>Urchin 安裝完成後，請執行下列指令碼： </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin ./urchinctl stop
+                  mv urchinwebd urchinwebd.orig
+                  ln -s /path/to/your/httpd urchinwebd
+                  ./urchinctl start
+</pre><ul><li style="list-style-type:none">這會使用您的 Apache 二進位格式檔啟動另一個 Apache，但在您的標準網頁服務外獨立執行。 </li></ul><p class="line867"><strong>選項 2:</strong> 透過現有的 Apache 組態執行 Urchin 服務 <p class="line867"><strong>副作用</strong> <ul><li>整個 Urchin 分佈必須由執行 httpd 的 UID 所擁有。 </li><li>不能使用管理 GUI 來變更執行 Urchin 的通訊埠。 </li><li>不能使用 bin/wrapper 工具來啟動 Urchin 服務，因為此工具會嘗試執行 Urchin 特定的 httpd。bin/urchindctl.sh 指令碼只能用來啟動 / 停止 Urchin 排程器 (urchind)。 </li></ul><p class="line867"><strong>組態變更</strong> <ul><li>請將下列程式行新增到您現有的 httpd.conf 檔案中。您將必須提供伺服器的 IP 位址、Urchin 使用的通訊埠號，以及 Urchin 的安裝路徑。 </li></ul><p class="line867"><pre>            ## Support for Urchin administration and reporting services
+            Listen [port#]
+            &lt;VirtualHost [server-ip]:[port#]&gt;
+            ErrorLog /path/to/urchin-distribution/var/error.log
+            DocumentRoot /path/to/urchin-distribution/htdocs/
+            &lt;Directory /path/to/urchin-distribution/htdocs/&gt;
+                  AddHandler cgi-script .cgi
+                  Options ExecCGI
+                  DirectoryIndex session.cgi
+                  AllowOverride None
+                  Order allow,deny
+                  Allow from all
+            &lt;/Directory&gt;
+            &lt;/VirtualHost&gt; 
+</pre><ul><li style="list-style-type:none">完成這些組態變更後，請執行下列工作： </li><li class="gap">將 Urchin 分佈的擁有權變更為您 Apache 網頁伺服器的執行 UID： </li></ul><p class="line867"><pre>                  chown -R apache-user /path/to/urchin/bin
+</pre><ul><li>確認已停止 Urchin 隨附的 Apache： </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin
+                  ./urchinctl -w stop
+</pre><ul><li>重新啟動您的 Apache 伺服器以啟用 Urchin 報告和管理 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

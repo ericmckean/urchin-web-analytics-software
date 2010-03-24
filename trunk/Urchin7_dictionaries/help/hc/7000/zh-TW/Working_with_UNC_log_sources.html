@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>UNC 記錄來源使用說明</strong> <p class="line874">在建立 UNC 記錄來源時，Urchin 會指定下列參數： Server Name/IP、Remote Server Login、Local Server Login、Remote Log Source File。 <p class="line874">Urchin 從 UNC 來源取得記錄的流程如下： - Urchin 會嘗試瀏覽 "Remote Log Source File" 中指定的檔案。 - 如果瀏覽失敗，Urchin 會嘗試與 "Server Name/IP" 欄位中指定的 UNC 備份建立連線。 - 如果連線失敗，Urchin 會假設目前登入的使用者帳戶 (像是「本機系統」帳戶) 沒有網路存取權。 在此情況下，它會替 "Local Server Login" 中指定的使用者帳戶建立登入工作階段，然後改用此帳戶，也就是說，Urchin 會開始使用此帳戶來執行所有程序。 如果"「相同的本機與遠端登入」"選項已設為 "Yes"，系統就會從 "Remote Server Login" 取得模擬帳戶的憑證。 - 模擬成功後，Urchin 會再次嘗試與網路備份建立 UNC 連線，並再次嘗試瀏覽檔案。 - 取得記錄來源後，Urchin 會關閉 UNC 連線並中止模擬作業，也就是說，Urchin 會改回使用執行模擬作業之前的帳戶來執行所有程序。  <p class="line874">模擬帳戶有下列缺點： - 模擬期間，系統是以不同的帳戶執行 Urchin 程序，然而，此帳戶可能沒有 Urchin 資料目錄的存取權，導致無法建立任何報表資料庫。 - 模擬結束後，Urchin 程序可能無法存取模擬期間所建立的報表資料庫。 - 此作業會降低成效，尤其是當設定檔內含多個 UNC 記錄檔案時，Urchin 必須開始/中止每個檔案的模擬作業，因此對成效會有顯著的影響。 <p class="line874">以下提供幾個在 Urchin 中使用 UNC 備份檔案的最佳實務： - 使用具有網路存取權的帳戶執行 Urchin。 這樣就不需要執行模擬作業 - 將 UNC 記錄備份的存取權授與執行 Urchin 的使用者帳戶。 這樣應該就不需要建立 UNC 連線與執行模擬作業了。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

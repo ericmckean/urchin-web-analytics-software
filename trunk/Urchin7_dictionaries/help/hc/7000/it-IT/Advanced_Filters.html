@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Filtri avanzati</strong> <p class="line867"><strong>Introduzione</strong> <p class="line874">L'opzione Filtri avanzati ti consente di creare dei campi in cui è possibile inserire dati di rapporto di uno o due campi esistenti. È possibile utilizzare espressioni regolari POSIX e variabili corrispondenti per acquisire in tutto o in parte il contenuto dei campi e combinare il risultato nell'ordine desiderato. <p class="line867"><strong>Utilizzo dei filtri avanzati</strong> <p class="line867"><img alt="Advanced_Filters" src="../images/Advanced_Filters.jpg" title="Advanced_Filters" /> <p class="line874">Il filtro avanzato illustrato nella figura include fino a due campi, il campo A e il campo B, e genera il campo di output. La creazione avviene nel modo seguente. L'espressione Estrai A viene applicata al campo A e l'espressione Estrai B viene applicata al campo B. Tali espressioni possono utilizzare il riconoscimento del testo completo o parziale e prevedere caratteri jolly. Di seguito è riportato un elenco dei caratteri jolly più comuni e del relativo significato. Le espressioni rispettano le regole delle espressioni regolari POSIX. <p class="line867"><pre>.   corrispondenza con tutti i caratteri
+*   corrispondenza con zero o più caratteri dell'elemento precedente
++   corrispondenza con uno o più caratteri dell'elemento precedente
+?   corrispondenza con zero o un carattere dell'elemento precedente
+()  memorizzazione dei contenuti in parentesi come elemento
+[]  corrispondenza con un elemento dell'elenco
+-   creazione di un intervallo in un elencot
+|   o
+^   corrispondenza con la parte iniziale del campo
+$   corrispondenza con la parte finale del campo
+\   conversione in caratteri escape degli elementi precedenti
+
+</pre><p class="line874">Utilizza le parentesi () per catturare parti dei campi. Per indicare questi elementi nel Constructor è possibile utilizzare la notazione $A1, $A2, $B1, $B2. A|B si riferisce al campo, mentre il numero indica la parentesi da acquisire. Nell'esempio illustrato in precedenza, tutto il campo A e tutto il campo B vengono acquisiti e assemblati per creare il nuovo campo. Il campo di output può essere costituito da un campo distinto o dallo stesso campo A o B. <p class="line867"><strong>Comandi</strong> <p class="line874">Il comando 'Sostituisci campo di output' ti consente di decidere che cosa fare se il campo di output esiste già. 'Campo obbligatorio' ti consente di decidere che cosa fare se una delle espressioni non corrisponde. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Utilidad de control de servicios de Urchin (urchinctl)</strong> <p class="line867"><strong>Visión general</strong> <p class="line874">La Urchin Services Control utility, urchinctl, verifica el estado de los servicios del Urchin Scheduler y del Urchin Webserver, y permite iniciarlos y detenerlos. En sistemas de tipo UNIX, urchinctl se invoca normalmente mediante una secuencia de arranque para iniciar o cerrar de forma automática los servicios de Urchin. <p class="line874">Tipos de operaciones que urchinctl lleva a cabo: <ul><li>verificar el estado del programador principal y secundario de Urchin6, </li><li class="gap">iniciar, detener o reiniciar el programador o servidor web (o ambos), </li><li class="gap">iniciar el servidor web en un puerto alternativo, </li><li class="gap">iniciar el servidor web con encriptación SSL. </li></ul><p class="line867"><strong>Utilización</strong> <p class="line874">urchinctl se encuentra en el directorio bin de la distribución de Urchin. <p class="line874">Funciones de la utilidad: <p class="line867"><pre>
+  urchinctl -h (imprime un mensaje de uso y sale del programa),
+
+  urchinctl -v (imprime la versión y sale del programa),
+
+  urchinctl [-e] [-p puerto] [[-s] | [-w]] acción,
+
+</pre><p class="line874">donde: <p class="line867"><pre>
+  -e activa la encriptación (SSL) en el servidor web,
+
+  -p especifica el puerto de escucha del servidor,
+
+  -s realiza la acción SÓLO en el programador de Urchin,
+
+  -w realiza la acción SÓLO en el servidor web de Urchin,
+
+</pre><p class="line874">y las acciones pueden ser: <p class="line867"><pre>
+  start (iniciar los servicios),
+
+  stop (detener los servicios),
+
+  restart (detener y luego iniciar los servicios),
+
+  status (mostrar el estado del tiempo de ejecución del servidor web y del programador).
+
+</pre><p class="line874">De manera predeterminada, la acción se realiza tanto en el servidor web como en el programador, a menos que se especifiquen las opciones "-s" (programador) o "-w" (servidor web). Tenga en cuenta que estas opciones se excluyen mutuamente. <p class="line867"><strong>Nota importante</strong> <p class="line874">En los sistemas de tipo UNIX, urchinctl debe ejecutarse como el usuario/UID en el que Urchin se encuentra instalado para asegurarse de que los procesos urchinwebd y urchind se inician como dicho UID. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

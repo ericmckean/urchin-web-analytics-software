@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como monitorar transações de loja seguras</strong> <p class="line867"><em>Este artigo foi escrito por</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, consultor autorizado do software Urchin</em> <p class="line862">O Urchin pode monitorar dados de um carrinho de compras no seu próprio domínio ou em outros domínios com a adição de algumas linhas de código.Para configurar suas páginas de forma a comunicar dados de transações ao Urchin, leia <a href="How_do_I_track_e-commerce_transactions%253F.html">Como posso monitorar transações de e-commerce?</a>. <p class="line874">Além disso, se o seu site de loja estiver em um subdomínio ou domínio diferente do que o seu site principal, siga as instruções abaixo para configurar as suas páginas. <p class="line874">Se seu site iniciar um processo de pagamento de compras em um subdomínio diferente (por exemplo, se você enviar clientes de www.minhaloja.com.br para carrinho.minhaloja.com.br): <ul><li style="list-style-type:none">Adicione a linha a seguir (em negrito) ao seu código de monitoramento, tanto no site da loja quanto nas páginas do carrinho de compras: </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">Se o seu site iniciar um processo de pagamento de compras em um site de loja separado (por exemplo, se você enviar os clientes de www.minhaloja.com.br para www.carrinhoseguro.com.br): <ul><li style="list-style-type:none">Adicione as linhas a seguir (em negrito) ao seu código de monitoramento, tanto no site da loja quanto nas páginas do carrinho de compras: </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Altere os links do site principal para o site seguro, de forma a usar <span class="u">utmLinker da seguinte maneira.Se os seus links atuais forem semelhantes a:</span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;Comprar agora&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">mude-os para: </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;Comprar agora&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;Comprar agora&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">O código acima fornece links para usuários com ou sem JavaScript ativado.Lembre-se de que os apóstrofos precisam ser seguidos de uma barra invertida no lugar em que aparecem no link ou no texto do link. Importante:se as suas páginas incluírem uma chamada para urchinTracker(), utmLinker(), utmSetTrans() ou utmLinkPost(), o código de monitoramento do Analytics deverá ser inserido no código HTML, acima de todas essas chamadas.Nesses casos, o código de monitoramento pode ser inserido em qualquer lugar entre a tag &lt;body&gt; de abertura e a chamada JavaScript. </li></ul><p class="line874">Se você enviar informações ao carrinho de compras usando formulários, use a função utmLinkPost().Essa função acrescenta dados de cookies ao URL do formulário fornecido. <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">Isso funcionará mesmo para formulários em que method="GET" <p class="line891"><strong>Importante:</strong>se as suas páginas incluírem uma chamada para urchinTracker(), utmLinker(), utmSetTrans() ou utmLinkPost(), o código de monitoramento do Analytics deverá ser inserido no código HTML, acima de todas essas chamadas.Nesses casos, o código de monitoramento pode ser inserido em qualquer lugar entre a tag &lt;body&gt; de abertura e a chamada JavaScript. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

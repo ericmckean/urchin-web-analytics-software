@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>「セッション エラー - アプリケーションを呼び出せません。(4002)...」と表示される</strong> <p class="line874">Urchin レポートを表示する場合、ブラウザではリクエストされた期間とレポート ビューに一致するデータについて、Urchin データベース ファイルに問い合わせを行います。 データの問い合わせに 45 秒以内 (デフォルト) に応答しない場合、タイムアウトが発生し、「セッション エラー - アプリケーションを呼び出せません。(4002) もう一度ログインしてください。」というエラー メッセージが表示されます。 このエラーが発生した場合、タイムアウト値を増やす必要があります。 タイムアウト値を増やすには、コマンド ラインを使用して Urchin パッケージのファイルにアクセスできる必要があります。 アクセス権がない場合は、レポートの提供者に問い合わせ、この記事を参照するよう依頼してください。 <p class="line874">アプリケーションのタイムアウト値を増やす方法は次のとおりです。 <ul><li>コマンド シェルを開いて Urchin サーバーにアクセスします。 </li><li>ファイル /path/to/urchin/etc/session.conf を開きます。 </li><li><p class="line862">「APPLICATION_TIMEOUT:45」という名前のディレクティブを探します (値は秒単位です)。 </li><li>値を増やして、ファイルを保存します。 変更はただちに反映されます。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

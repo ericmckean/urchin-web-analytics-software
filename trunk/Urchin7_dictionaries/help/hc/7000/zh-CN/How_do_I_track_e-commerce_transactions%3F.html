@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何跟踪电子商务交易？</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 软件授权顾问 </em> <a href="ivantageLimited.html">ivantage Limited</a><em> 编写</em> </li></ul><p class="line874">Urchin 支持客户端数据收集技术，以此捕获电子商务交易。通过在您的收据页面加入某些简单功能，Urchin 可自动检测并记录交易和产品信息。所需信息会被置入隐藏表单，该表单会被解析为交易和产品信息。大多数由模板驱动的电子商务系统都可以通过修改而加入隐藏在收据中的信息。 <p class="line867"><strong>启用电子商务跟踪</strong> <p class="line874">跟踪电子商务交易的第一步是启用所选配置文件的电子商务报告。要启用电子商务报告，请按下列步骤操作： <ol type="1"><li>登录到 Urchin。 </li><li>点击要启用的配置文件旁的"修改"。 </li><li>在"网站配置文件设置"页上，点击"主要网站配置信息"旁的"修改"。 </li><li>将"电子商务网站"单选按钮从"否"改为"是"。 </li></ol><p class="line867"><strong>收据页面格式</strong> <p class="line874">第二步，确保以标准格式在收据页面中加入跟踪代码。可以使用服务器端包含功能或其他模板驱动程序完成此操作，也可直接手动输入 HTML 代码： <pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+</pre><p class="line874">接下来，在收据中跟踪代码下方的某个位置，用您的引擎写入以下行。括号中的所有内容都应使用实际值取代，如下述参数资料中所述。 <pre>   &lt;form style="display:none;" name="utmform"&gt;
+   &lt;textarea id="utmtrans"&gt;UTM:T|[order-id]|[affiliation]|
+   [total]|[tax]| [shipping]|[city]|[state]|[country] UTM:I|[order-id]|[sku/code]|[productname]|[category]|[price]|
+   [quantity] &lt;/textarea&gt;
+   &lt;/form&gt;
+</pre><p class="line862">最后，请务必在表单提交后调用 utmSetTrans 函数，以记录相应交易。最简单的方法是通过开始 &lt;body&gt; 标记内的 body onLoad 事件来实现这一操作： <pre>   &lt;body onLoad="javascript:__utmSetTrans()"&gt;
+</pre><p class="line862">如果您无法修改 &lt;body&gt; 标记，可以在单独的脚本标记内调用 utmSetTrans 函数，但前提是确保在表单之后调用这一函数： <pre>   &lt;script type="text/javascript"&gt;
+   __utmSetTrans();
+   &lt;/script&gt;
+</pre><p class="line874">请注意：在为表单设定值时，请不要包含方括号。此外，不要用逗号分隔总计、税款和运费字段中的千位，逗号后的数字将被忽略。 <p class="line867"><strong>示例</strong> <pre>UTM:T|34535|Main Store|111108.06|8467.06|10.00|San Diego|CA|USA
+UTM:I|34535|XF-1024|Urchin T-Shirt|Shirts|11399.00|9
+UTM:I|34535|CU-3424|Urchin Drink Holder|Accessories|20.00|2
+</pre><p class="line874">在隐藏表单内有两种类型的行："交易"行和"项目"行。对于每笔交易，只应有一个交易行，它由"UTM:"后紧跟的"T"表示。此行指定交易总额，包括所有税款或运费及其他信息。对于收据中的每个项目，请创建一个由 "I" 表示的项目行。该项目行可以包括产品名称、代码、单价和数量。每笔交易的项目行数没有限制。 <p class="line867"><strong>参数资料</strong> <p class="line867"><strong>交易行变量</strong> <pre>[order-id]      您内部的唯一订单 ID 号
+[affiliation]   可选合作伙伴或商店联属机构
+[total]         交易的总金额（以美元表示）
+[tax]   交易的税额
+[shipping]      交易的运费
+[city]  与交易相关联的城市
+[state/region]  州/省
+[country]       国家/地区
+</pre><p class="line867"><strong>项目行变量</strong> <pre>[order-id]      您内部的唯一订单 ID 号（应与交易行相同）
+[sku/code]      产品 SKU 码
+[product name]  产品名称或说明
+[category]      产品或类似产品的类别
+[price]         产品单价
+[quantity]      预订数量
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

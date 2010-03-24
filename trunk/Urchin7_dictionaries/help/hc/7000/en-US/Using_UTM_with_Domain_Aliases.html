@@ -1,0 +1,25 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<ul><li style="list-style-type:none"><p class="line891"><strong>Using UTM with Domain Aliases</strong> </li><li style="list-style-type:none"></li></ul><p class="line867"><strong>Background</strong> <p class="line874">Because cookies are domain based objects, there are some important considerations when a site has multiple domains. A cookie that is set under a domain, "mysite.com", will be passed to all subdomains such as "www.mysite.com". However, this cookie will not be passed to "mysite.net" or any other different root domains. <p class="line874">If your website only has one domain responding to "mysite.com" and "www.mysite.com", you can follow the standard UTM installation. However, If you have a website with one or many aliases, it is recommended to redirect traffic from the aliases to the primary site. This will ensure that the UTM visitor tracking is getting set under the primary domain and that all visitors are tracked consistently. <p class="line874">If we don't do this, then a visitor may appear as two visitors if they access the same site through two separate domains. The following instructions provides an example of how to redirect aliased domains to the primary domain in Apache and IIS servers. <p class="line867"><strong>Redirecting Aliases in Apache</strong> <p class="line862">If you are using an Apache webserver, the configuration can be easily modified to redirect all traffic originating under one of the aliases to the primary site. One way to do this is to create two VirtualHost entries. The first will be the primary domain which will include your normal configuration; and the second VirtualHost will be for all the aliases and will redirect to the primary. Example: <p class="line867"><pre>#---primary virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername www.mysite.com
+Serveralias mysite.com
+...
+&lt;/VirtualHost&gt;
+#---second virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername mysite.org
+Serveralias www.mysite.org mysite.net www.mysite.net
+RewriteEngine on
+RewriteRule ^(.*)       http://www.mysite.com$1     [R=301]
+&lt;/VirtualHost&gt;
+</pre><p class="line862">The second VirtualHost uses a rewrite rule with a 301 (Moved Permanently) redirect code to forward all traffic to the original site. A single 301 hit will still be recorded in the log file which is nice for tracking which domains people are entering on, but all remaining traffic will be forced under the one domain. At this point, as far as the UTM is concerned, the site appears to be a one domain site and is ready for normal UTM installation. <p class="line874">Note: please be advised that you should work with your administrator and reference the apache.org site on configuration parameters. <p class="line867"><strong>Redirecting Aliases in IIS</strong> <p class="line874">If you are using a Microsoft IIS webserver, the configuration can be easily modified to redirect all traffic originating under one of the aliases to the primary site. One way to do this is to create two websites in the IIS configuration. The first will be the primary domain (www.mysite.com) which will include your normal configuration; and the second will be for all the aliases (mysite.net, mysite.org, etc) and will redirect to the primary. <p class="line874">In the IIS Manager, right click on one of the websites and bring up the properties dialog. On the "Web Site", click the "Edit Bindings". This brings up the window where bindings can be assigned to the website using the "Host Name" field. Set the website name to be redirected from. <p class="line874">Once the second website housing all of the aliases is configured and enabled, create a blank homepage with the following redirect code: <p class="line867"><pre>&lt;head&gt;
+&lt;META HTTP-EQUIV=Refresh CONTENT="0; URL=http://www.mysite.com/"&gt;
+&lt;/head&gt;
+</pre><p class="line874">This will instruct the visitor's browser to immediately redirect to the primary URL. At this point, the primary website appears to be a simple one-domain configuration, and normal UTM installation can proceed with default settings. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

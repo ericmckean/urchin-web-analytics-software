@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>使用 NFS 需要锁定</strong> <p class="line874">Urchin 配置采用安装目录 data/conf 文件夹中的数据文件，将在安装和管理过程中设置读写锁定。如果此 data/conf 文件夹是通过 NFS 安装的，则要求 NFS 服务器运行合适的锁定后台程序来处理远程锁定。 <p class="line874">如果该锁定没有正常运作，则 Urchin 安装可能会无限期地挂起。 <p class="line867"><strong>技术注意事项</strong>  <p class="line874">Urchin 在 UNIX 中使用 fcntl() 函数执行建议和独占（读/写）锁定。有些旧版的系统可能不支持不同平台的所有 rpc 锁定请求。请确保您运行的是包含最新补丁程序的最新版本的 OS。确保 NFS 服务器正在运行 'statd' 和 'lockd'（或等同项目）。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,102 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line862">(Return to main article: <a href="Samples_for_Java_(REST)_v1.html">Samples for Java (REST) v1</a>) <p class="line874">1. Specify Service URL: <p class="line867"><pre>private static final String serviceURL =  "http://server[:port]/services/v1/reportservice/tables/";
+</pre><p class="line874">2. Provide login and account information: <p class="line867"><pre>private static final String login = "INSERT_LOGIN_HERE";
+private static final String password = "INSERT_PASSWORD_HERE";
+private static final int profileId = INSERT_PROFILE_ID_HERE;
+</pre><p class="line874">3. Compose REST URL: <ul><li>(implicit table) </li></ul><p class="line867"><pre>      String url = serviceURL + "data" +
+                   "?login=" + login +
+                   "&amp;password=" + password +
+                   "&amp;ids=" + profileId +
+                   "&amp;start-date=" + startDate +
+                   "&amp;end-date=" + endDate +
+                   "&amp;dimensions=u:visitor_id" +
+                   "&amp;metrics=u:pages,u:visits" +
+                   "&amp;max-results=5";
+      URL service = new URL(url);
+</pre><ul><li>(explicit table) </li></ul><p class="line867"><pre>      String url = serviceURL + "data" +
+                   "?login=" + login +
+                   "&amp;password=" + password +
+                   "&amp;ids=" + profileId +
+                   "&amp;start-date=" + startDate +
+                   "&amp;end-date=" + endDate +
+                   "&amp;dimensions=u:utm_source,u:utm_medium,u:utm_campaign" +
+                   "&amp;metrics=u:pages,u:visits,u:transactions" +
+                   "&amp;filters=u:utm_source%3D~direct,u:pages%3E0" +
+                   "&amp;max-results=5";
+      URL service = new URL(url);
+</pre><ul><li>(retrieve data from transactions table and apply sort) </li></ul><p class="line867"><pre>      String url = serviceURL + "data" +
+                   "?login=" + login +
+                   "&amp;password=" + password +
+                   "&amp;ids=" + profileId +
+                   "&amp;start-date=" + startDate +
+                   "&amp;end-date=" + endDate +
+                   "&amp;dimensions=u:transaction_id" +
+                   "&amp;metrics=u:transactions,u:revenue" +
+                   "&amp;sort=-u:transactions" +
+                   "&amp;max-results=5";
+      URL service = new URL(url);
+</pre><ul><li>(Retrieve data from transactions table and apply sort) </li></ul><p class="line867"><pre>  public static void GetDataAggregated() throws Exception {
+    try {
+      // compose REST URL
+      String url = serviceURL + "data" +
+                   "?login=" + login +
+                   "&amp;password=" + password +
+                   "&amp;ids=" + profileId +
+                   "&amp;start-date=" + startDate +
+                   "&amp;end-date=" + endDate +
+                   "&amp;dimensions=u:month" +
+                   "&amp;metrics=u:hits,u:bytes" +
+                   "&amp;sort=u:hits" +
+                   "&amp;max-results=5";
+      URL service = new URL(url);
+</pre><p class="line874">4. Create the buffering character-input stream for retrieving account list: <p class="line867"><pre>BufferedReader in = new BufferedReader(new InputStreamReader(service.openStream()));
+</pre><p class="line874">5. Define namespace context implementation for data parsing: <p class="line867"><pre>class UrchinNamespaceContext implements NamespaceContext {
+  public String getNamespaceURI(String prefix) {
+    if (prefix == null) throw new NullPointerException("Null prefix");
+    if (prefix.equals("tns")) return "https://urchin.com/api/urchin/v1/";
+    else if ("xml".equals(prefix)) return XMLConstants.XML_NS_URI;
+    return XMLConstants.NULL_NS_URI;
+  }
+  public String getPrefix(String namespaceURI) {
+    throw new UnsupportedOperationException();
+  }
+  public Iterator getPrefixes(String namespaceURI) {
+    throw new UnsupportedOperationException();
+  }
+}
+</pre><p class="line874">6. Execute request: <p class="line867"><pre>      XPathFactory fact = XPathFactory.newInstance();
+      XPath xp = fact.newXPath();
+      InputSource is = new InputSource(in);
+
+      // set namespace context
+      xp.setNamespaceContext(new UrchinNamespaceContext());
+      // retrieve list of profiles
+      NodeList records = (NodeList)xp.evaluate("/tns:getDataResponse/record", is, XPathConstants.NODESET);
+</pre><p class="line874">7. Parse and display response: <p class="line867"><pre>      // dump each record
+      for(int i = 0; i &lt; records.getLength(); i++){
+        System.out.println("record: ");
+
+        //retrieve record id
+        System.out.println("\trecord id: " + xp.evaluate("recordId/text()", records.item(i)));
+
+        // retrieve dimensions
+        NodeList dimensions = (NodeList)xp.evaluate("dimensions/dimension", records.item(i), XPathConstants.NODESET);
+        for(int j = 0; j &lt; dimensions.getLength(); j++){
+          System.out.println("\tdimension: name: " + xp.evaluate("@name", dimensions.item(j)) + " value: " + xp.evaluate("text()", dimensions.item(j)));
+        }
+
+        // retrieve metrics
+        NodeList metrics = (NodeList)xp.evaluate("metrics/*", records.item(i), XPathConstants.NODESET);
+        for(int j = 0; j &lt; metrics.getLength(); j++){
+          System.out.println("\tmetric: name: " + metrics.item(j).getLocalName() + " value: " + xp.evaluate("text()", metrics.item(j)));
+        }
+      }
+      in.close();
+</pre><p class="line862">Complete sample code for this example can be found in the ReportService.java file. <p class="line862">(Return to main article: <a href="Samples_for_Java_(REST)_v1.html">Samples for Java (REST) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Comment effectuer le suivi des sous-domaines de mon site dans un même profil ?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Cet article a été rédigé par</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, un consultant agréé du logiciel Urchin. </em> </li></ul><p class="line874">Vous pouvez effectuer le suivi des sous-domaines dans le même profil que le domaine. Pour cela, vous devez ajouter une ligne au code de suivi sur chaque page du sous-domaine. Les instructions ci-dessous supposent que ce profil a été configuré sur le domaine principal de la même manière que le site Web répertorié (par exemple, example.co.uk). <ol type="1"><li>Ajoutez la ligne suivante (en gras) au code de suivi sur toutes les pages de votre sous-domaine et de votre domaine principal : </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">Cette ligne doit faire référence au domaine principal (example.co.uk). </li></ul><p class="line874">Notez que même si cette modification vous permet d'assurer le suivi de vos sous-domaines dans un seul profil, vos rapports risquent de ne pas distinguer les pages provenant de www.example.co.uk de celles provenant de help.example.co.uk. Par exemple, votre rapport Pages les plus consultées peut contenir des correspondances pour www.example.co.uk/index.html et help.example.co.uk/more.html, mais ce rapport affichera les informations suivantes : <pre>   /index.html
+   /more.html
+</pre><p class="line874">Si vous souhaitez différencier vos sous-domaines, vous pouvez appliquer un filtre "Avancé" à votre profil avec les paramètres suivants : <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">Une fois ce filtre appliqué, les exemples précédents apparaîtront avec le sous-domaine associé : <pre>   www.example.co.uk/index.html
+   help.example.co.uk/more.html
+</pre><p class="line874">REMARQUE : Ce filtre s'appuie sur le nom d'hôte de votre site Web avec sous-domaine inscrit dans votre journal d'accès Web. Si votre journal d'accès Web ne comprend pas de nom d'hôte, les rapports Urchin 6 ne seront pas en mesure de distinguer les fichiers index.html situés, par exemple, sur les deux domaines : <pre> www.example.co.uk/index.html
+ help.example.co.uk/more.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

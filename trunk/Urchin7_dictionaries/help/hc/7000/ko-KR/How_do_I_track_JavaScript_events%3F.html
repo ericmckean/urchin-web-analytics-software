@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>자바스크립트 이벤트는 어떻게 추적합니까?</strong> <p class="line874">이벤트를 추적하려면 이벤트에 대해 이름을 지정하는 urchinTracker 자바스크립트 함수를 사용하십시오.예를 들어 다음을 호출하실 수 있습니다. <pre>    javascript:urchinTracker('/homepage/link1');
+</pre><p class="line874">이 경우 호출 이벤트가 발생할 때마다 URL /homepage/link1에 대해 페이지뷰가 기록됩니다.인수는 슬래쉬로 시작해야 합니다.원하는 디렉토리 스타일 구조로 이벤트 이름을 구성할 수 있습니다. <p class="line862">예를 들어 페이지 &gt; 이벤트 유형별로 이벤트를 구성하려는 경우 다음 행과 함께 계층을 구성할 수 있습니다. <pre>    * '/homepage/links/link1'
+    * '/homepage/radiobuttons/button1'
+    * '/contactform/rollovers/image1'
+</pre><p class="line867"><strong>HTML 코드 예</strong> <p class="line874">다음은 onClick 이벤트의 기록 방법을 보여줍니다. <pre>    &lt;a href="javascript:void(0);" onClick="javascript:urchinTracker('/folder/file');"&gt;
+</pre><p class="line874">또는 다음과 같이 롤오버(rollover) 이벤트를 기록할 수 있습니다. <pre>    &lt;a href="javascript:void(0);" onMouseOver="javascript:urchinTracker ('/folder/file');"&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

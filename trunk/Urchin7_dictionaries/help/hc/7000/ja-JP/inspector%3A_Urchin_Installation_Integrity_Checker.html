@@ -1,0 +1,18 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>インスペクタ: Urchin インストール有効性チェッカー</strong> <p class="line867"><strong>概要</strong> <p class="line874">Urchin インストール有効性チェッカー「インスペクタ」は、Urchin の確認と下記のレポートの作成を行ないます <ul><li>Urchin 6 サーバー (ウェブサーバーとスケジューラ) のステータス </li><li class="gap">ライセンスとアクセス権限  </li><li class="gap">見つからないファイル </li><li class="gap">一般的な設定に関する問題   </li></ul><p class="line874">デフォルトでは、Urchin インストールとインストールされるプラットフォームのタイプについての情報の概要が表示されます。 <p class="line874">インスペクタは下記の処理を行います。 <ul><li>ファイルの存在と必要なアクセス権限の確認を含む Urchin サニティ チェック </li><li class="gap">ウェブサーバー ポート (Urchin ウェブサーバー) が使用できるかの確認 </li><li class="gap">Urchin で必要なアクセス権の変更 </li></ul><p class="line867"><strong>利用状況</strong> <p class="line874">インスペクタは Urchin 6 の util ディレクトリにございます。 <p class="line874">このユーティリティの使用方法は下記のようになります。 <p class="line867"><pre>
+  インスペクタ [-h] (使用方法を出力して終了します)
+
+  インスペクタ [-v]  インスペクタのバージョンを出力します
+
+  インスペクタ [-p]  指定されたポートが利用できるかを確認します
+
+  インスペクタ [-r]  配布ファイルのアクセス権修正を指定します
+
+</pre><p class="line874">コマンド ラインの引数なしでインスペクタを呼び出した場合、Urchin インストールの有効性を確認するための様々なサニティ チェックが行なわれます。 具体的には、下記の処理が行なわれます。 <ol type="1"><li>Urchin のバージョンと、オペレーション システムのバージョン、ホスト名などのサーバー情報の出力 </li><li class="gap">必要なすべての Urchin バイナリとユーティリティが導入されているか、また、正しいバージョンが使用されているかの確認。 UNIX タイプのプラットフォームの場合、Urchin のバイナリとファイルの権限の違いが示されます。 </li><li class="gap">Urchin Apache ウェブサーバー (urchinwebd) のステータスの確認、レポート </li><li class="gap">Urchin スケジューラ (urchind) のステータスの確認、レポート </li><li class="gap">Urchin の設定の確認、合計レコード数とライセンス情報の概要のレポート </li><li class="gap">Urchin 6 の設定情報 (シリアル番号、ライセンスのステータス、ライセンスのバージョン) </li></ol><p class="line874">引数 "-p" を使用してインスペクタを呼び出した場合、指定されたポートで Urchin6 ウェブサーバーが使用できるかを確認します。  <p class="line874">"-r" (修復) オプションを使用した場合、Urchin のファイルのうち、インストール時と異なるものについて、ユーティリティにより権限が修復されます。 通常、これは UNIX タイプのプラットフォームでのみ有用で、ほとんどの場合、"ルート"ユーザーとしてユーティリティを実行する必要がございます。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

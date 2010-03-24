@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Perché il mio file di log non può essere letto anche se è leggibile dai gruppi?</strong> <p class="line874">Il numero di errore "7026-76-*" che genera un file di log che non può essere letto pur essendo leggibile dai gruppi è un problema noto relativo alla funzionalità setuid/setgid del file binario urchin. Per motivi di sicurezza, il motore di urchin viene eseguito come proprietario del file binario anche se viene avviato come root. In queste condizioni, l'applicazione vede solo l'esatto ID del gruppo e non l'elenco di gruppi. <p class="line874">Per risolvere il problema potrebbe essere necessario modificare le autorizzazioni del file di log impostandole su leggibile da tutti, oppure modificare il gruppo in modo che corrisponda esattamente al gruppo dell'utente urchin. Questo problema riguarda solo le architetture di tipo UNIX. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

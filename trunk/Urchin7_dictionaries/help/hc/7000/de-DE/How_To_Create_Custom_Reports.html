@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Erstellen von benutzerdefinierten Berichten</strong> <p class="line874">So erstellen Sie einen benutzerdefinierten Bericht: <ol type="1"><li><p class="line862">Wählen Sie eine Datenzuordnungstabelle aus oder definieren Sie eine neue. Informationen hierzu erhalten Sie unter <a href="Custom_Data_Maps.html">Benutzerdefinierte Datenzuordnungen</a>. </li><li><p class="line862">Kopieren Sie &lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample, um eine neue Berichtdatei zu erstellen (".rs2"). </li><li>Definieren Sie einen neuen Bericht, indem Sie der Berichtdatei eine neue Zeile hinzufügen. </li></ol><p class="line874">Die Berichtdatei hat folgendes Format: <ul><li>ID - eindeutige ID des Berichts: <ul><li>C = Kategorie </li><li>D = Daten </li><li>M = Menü </li><li>R = Bericht </li><li>S = Unterbericht </li><li>P = Seitenbericht </li><li>B = Dashboard </li></ul></li><li>RS - Dashboard/Berichtabschnitte: <ul><li>1 = Geschäftsführung </li><li>2 = Vermarkter </li><li>4 = Webmaster </li></ul></li><li>RR - Berichtanforderungen: <ul><li>1 = Software </li><li>2 = Erweitert </li><li>4 = E-Commerce </li><li>8 = UTM </li></ul></li><li>NTITLE - Navigationstitel (Wörterbucheintragsnummer) </li><li>ONCOLOR - Farbe bei Aktivierung </li><li>OFFCOLOR - Farbe bei Deaktivierung </li><li>HELP - Hilfebericht (Wörterbucheintragsnummer) </li><li>NDATA - Anzahl der Datenelemente. Die Einträge müssen sofort nachfolgen. <ul><li>Auf dieses Feld folgen möglicherweise zusätzliche Unterberichte mit Typ D (Daten). </li></ul></li><li>CTITLES - Spaltenüberschriften (Wörterbucheintragsnummer) </li><li>CTYPES - Spaltentyp zu Formatierungszwecken <ul><li>10 = Zeichenfolge </li><li>11 = Datum/Jahr/Monat </li><li>12 = Datum </li><li>20 = Nummer </li><li>21 = Umsatz </li><li>22 = Byte </li><li>23 = Zeitverhältnis </li><li>24 = Verhältnis </li><li>25 = Prozent </li><li>26 = Zeit </li><li>30 = Prozent insgesamt </li><li>40 = Umsatz </li><li>41 = Umsatz/Anzahl </li><li>42 = Anzahl/Umsatz </li></ul></li><li>TABLE - Datentabellennummer: <ul><li>T = Gesamt </li><li>TR = Transaktion </li><li>H = Histogramm </li><li>V = Besucher </li><li>1-n-Tabelle </li></ul></li><li>DXFORMAT - Datenextraktionsformat </li><li>RF - Erforderliches Feld </li><li>RT - Berichtart: <ul><li>1 = Gesamt - Grafik </li><li>2 = Histogramm </li><li>3 = Stapel </li><li>4 = Beliebteste </li><li>5 = Struktur </li><li>6 = Verzeichnis </li><li>7 = Eingeschränkt - Grafik </li><li>8 = Punkt </li><li>9 = Klickrate </li><li>10 = Definierter Trichter </li><li>11 = Als Startseite festlegen </li><li>12 = Karten-Overlay </li><li>13 = Zielüberprüfung </li><li>14 = Zielpfad </li><li>20 = KPI-Datumbericht </li><li>21 = Top-Ten-KPIs </li><li>22 = Zusammenfassung der Trends </li><li>23 = Conversion-Zusammenfassung </li><li>24 = Dashboard-Übersicht </li></ul></li><li>GTYPES - Typen von Grafiken: <ul><li>1 = Stab </li><li>2 = Linie </li><li>3 = Kreis </li><li>4 = Stab - horizontal </li><li>5 = Trichter </li><li>6 = Kurven </li></ul></li><li>FSEP - Feldtrennzeichen </li><li>SP - Besondere Optionen (Bitmapnummern hinzufügen): <ul><li>1 = Gesamt </li><li>2 = Durchschnittswerte </li><li>4 = Zeitraum vergleichen </li><li>8 = In Kleinbuchstaben </li><li>16 = Daten im Laufe der Zeit </li><li>32 = Overlay </li><li>64 = Sprache suchen </li><li>128 = Segment </li><li>256 = Lifetime-Wert </li><li>512 = Transaktionsdetail </li><li>1024 = Analysen zu Besuchern </li><li>2048 = Begriff suchen </li></ul></li><li>SR - Kennzeichnung spezieller Berichte: <ul><li>1 = Auswahl von Keywords </li><li>2 = Klickrate </li><li>3 = Aufschlüsselung nach Tagesabschnitten </li><li>4 = Besucherliste </li><li>5 = Karten-Overlay </li><li>6 = Benutzerdefiniertes Wörterbuch </li><li>7 = Datumsvergleich </li></ul></li><li>FNT - Filterartnummern-Filter: <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF - Nummernfeldfilter </li><li>FNV - Wertfilter </li><li>FST - Zeichenfolgenart-Filter <ul><li>1 = Ausschließen </li><li>2 = Einschließen </li></ul></li><li>FSF - Zeichenfolgenfeld-Filter </li><li>FSX - Reguläre Ausdruckszeichenfolge </li></ul><p class="line874">Unten folgt ein Beispiel für eine Berichtzeile mit Erläuterungen: <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> Unterbericht mit ID 1208 </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> Berichtabschnitt: Geschäftsführung </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">UTM-Aktivierung erforderlich </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> Menünavigationstitel </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      Farbe (des Menüs) bei Aktivierung </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      Farbe (des Menüs) bei Deaktivierung </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> Hilfethema </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862"> Keine Datenunterberichte </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> Spaltenüberschriften für die Berichttabelle </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> Spaltentypen für die Berichttabelle </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> Datenzuordnungs-ID </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">Datenextraktionsformat </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Keine erforderlichen Felder </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> Berichtart lautet "Beliebteste". </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  Zwei Typen von Grafiken: "Kreis" und "Stab - horizontal" </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">Kein Feldtrennzeichen verwendet </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> Verwendete besondere Optionen: 4 - Zeitraum vergleichen; 16 - Daten im Laufe der Zeit; 128 - Segment; 256 - Lifetime-Wert; 1024 - Analysen zu Besuchern </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Normaler Bericht </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optionaler Filter wird nicht verwendet. </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optionaler Filter wird nicht verwendet. </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optionaler Filter wird nicht verwendet. </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optionaler Filter wird nicht verwendet. </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optionaler Filter wird nicht verwendet. </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optionaler Filter wird nicht verwendet. </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

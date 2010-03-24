@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>ELF2 Log Format</strong> <ul><li style="list-style-type:none"><p class="line891"><em>This article authored by</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, an Urchin Software Authorized Consultant </em> </li></ul><p class="line867"><strong>NOTE</strong> <p class="line874">Previous versions of Urchin used to support ELF format for IP-only tracking. As Urchin 6 doesn't provides IP-only tracking, so it no longer supports ELF format.  <p class="line867"><strong>Overview</strong> <p class="line874">The E-commerce log formats 2 (ELF2) was designed to record information about customer transactions from online shopping sites. However, Urchin 6 no longer supports this mechanism for recording E-commerce transactions. Instead, Urchin 6 supports a client-side data collection technique for capturing e-commerce transactions. With some simple additions to your receipt page, Urchin 6 can automatically detect and record transaction and product information. The required information is placed in a hidden form, which is parsed for transaction and product information. Most template-driven e-commerce systems can be modified to include the information hidden in the receipt. <p class="line862">Urchin can track data from a shopping trolley on your own domain or on other domains with the addition of some code. To set up your pages to report transaction data to Urchin, please read How do I track e-commerce transactions? In addition, if your store site is on a different subdomain or domain to your main site, please read <a href="Tracking_Secure_Store_Transactions.html">Tracking Secure Store Transactions</a>. <p class="line874">This document describes the format of the ELF2 log file that are created by the shopping cart software and explains how to configure Urchin for processing of e- commerce logs. <p class="line867"><strong>Configuring Urchin for ELF2 Log Files</strong> <p class="line874">You must follow these configuration parameters while setting ELF2 log type. <ul><li>Login into Admin UI as an administrator </li><li>Go to Configuration screen </li><li><p class="line862">In the edit Log Source-&gt;Log Settings screen and set the Log Format to either elf2 or auto </li><li><p class="line862">In the edit Profile-&gt;Settings screen set the E-Commerce Website field to YES </li></ul><p class="line874">Your e-commerce log should be listed as a second log source along with your main website log in the profile that is created to handle your e-commerce reporting. The logs are processed sequentially by Urchin. <p class="line867"><strong>ELF2 Log Format Description</strong> <p class="line874">ELF2 is tab-separated multi-line log format. The first line begins with an '!' exclamation character and contains overall information about the purchase. Subsequent lines contain detailed information about the items purchased. The first line is referred to as the transaction and the subsequent lines are referred to as items. Blank fields should contain a '-' character. Since tabs are used to separate fields, the tab character is not allowed to be used within a field. <p class="line874">A typical ELF2 log file will have the following general form: <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>ELF2 Transaction Line</strong> <p class="line874">The ELF2 transaction line begins with an '!' exclamation and contains the following tab separated fields (empty fields should contain a '-' character): <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">where: <pre>    * %{ORDERID} is the order number
+    * %{REMOTE_HOST} is the hostname/ip address of the remote machine
+    * %{DATE/TIME} is the time in the common log format [dd/mmm/yyyy:HH:MM:SS +/-ZZZZ]
+    * %{STORE} is the name/id of the storefront
+    * %{SESSIONID} is the unique session identifier of the customer
+    * %{TOTAL} is the transaction total including tax and shipping (decimal only, no '$' characters)
+    * %{TAX} is the amount of tax charged to the subtotal
+    * %{SHIPPING} is the amount of shipping charges
+    * %{BILL_CITY} is the billing city of the customer
+    * %{BILL_STATE} is the billing state of the customer
+    * %{BILL_ZIP} is the billing zip code of the customer
+    * %{BILL_COUNTRY} is the billing country of the customer
+    * %{USER_AGENT} is the user agent of the customers browser
+    * %{COOKIES} are the incoming cookies contained in the headers from the customers browser 
+</pre><p class="line867"><strong>ELF2 Item Line</strong> <p class="line874">The ELF2 item line contains the following tab separated fields (empty fields should contain a '-' character): <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">where: <pre>    * %{ORDERID} is the order number
+    * %{REMOTE_HOST} is the hostname/ip address of the remote machine
+    * %{DATE/TIME} is the time in the common log format [dd/mm/yyyy:HH:MM:SS +/-ZZZZ]
+    * %{PRODUCT_CODE} is the identifier of the product
+    * %{PRODUCT_NAME} is the name of the product
+    * %{VARIATION} is an optional variation of the product for colors, sizes, etc
+    * %{PRICE} is the unit price of the product (decimal only, no '$' signs)
+    * %{QUANTITY} is the quantity ordered of this product
+    * %{UPSOLD} is a boolean (0|1) if the product was on sale
+    * %{USER_AGENT} is the user agent of the customers browser
+    * %{COOKIES} are the incoming cookies contained in the headers from the customers browser 
+</pre><p class="line867"><strong>ELF2 Log File Example</strong> <p class="line874">The following 2 lines demonstrate a transaction and corresponding item entry in an ELF2 log: <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

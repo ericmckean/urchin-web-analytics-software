@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>RedHat に Urchin の起動スクリプトをインストールする</strong> <p class="line874">Urchin の起動スクリプトは、インストール時に作成され、 Urchin の util ディレクトリである /path/to/urchin/util/ に urchin_daemons という名前で保存されます。 <p class="line874">このスクリプトを /etc/rc.d/init.d/ ディレクトリにコピーします。 <ul><li>cd /path/to/urchin/util </li><li>cp urchin_daemons /etc/rc.d/init.d/ </li><li>chmod +x /etc/rc.d/init.d/urchin_daemons </li><li>/etc/inittab ファイルを参照してデフォルトのランレベルを確認します (通常は「3」に設定されています)。 [[下記を参照]] </li><li>/etc/rc.d/rcX.d に移動します (X にはランレベルが入ります)。 </li><li>cd /etc/rc.d/rc3.d </li><li>S95urchin と K05urchin という名前で、/etc/rc.d/init.d/urchin_daemons へのシンボリック リンクを作成します。 </li><li>ln -s ../init.d/urchin_daemons S95urchin </li><li>ln -s ../init.d/urchin_daemons K05urchin </li></ul><p class="line874">[[ # デフォルトのランレベルです。RHS で使用するランレベルは次のとおりです。 <ul><li>0 - 休止 (初期値にこのランレベルを設定しないでください) </li><li>1 - シングル ユーザー モード </li><li>2 - NFS なしのマルチユーザー (ネットワークを使用しない場合は 3 と同じになります) </li><li>3 - フル マルチユーザー モード </li><li>4 - 未使用 </li><li>5 - X11 </li><li>6 - 再起動 (初期値にこのランレベルを設定しないでください) </li></ul><p class="line874">id:3:初期値: ]] </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

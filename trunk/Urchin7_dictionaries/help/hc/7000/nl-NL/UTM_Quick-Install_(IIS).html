@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Snelle installatie van de UTM (IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dit artikel is geschreven door</em> <a href="EpikOne.html">EpikOne</a><em>, een geautoriseerde softwareconsultant voor Urchin </em> </li></ul><p class="line874">De volgende tekst is bedoeld als een korte beschrijving van de installatie van de UTM voor websites die worden uitgevoerd op een Microsoft IIS-server op een willekeurig Windows-platform. Raadpleeg het artikel "Urchin Traffic Monitor (UTM)" in deze sectie voor meer informatie over de UTM. <p class="line867"><strong>Stap 1:</strong> Kopieer de UTM-bestanden naar de hoofdmap van de website. De bestanden urchin.js en <tt class="backtick">__</tt>utm.gif bevinden zich in de map "utils\utm" in de Urchin-distributie. Kopieer deze twee bestanden naar de hoofdmap van uw website-inhoud. Belangrijk: het GIF-bestand begint met twee onderstrepingstekens. <p class="line867"><strong>Stap 2:</strong> Maak een verwijzing naar de UTM in de HTML van uw website. Geef de volgende regel op in al uw HTML-pagina's. Hoewel u de regel overal op de pagina's kunt plaatsen, kunt u deze het beste direct voor de afsluitende &lt;/body&gt;-tag plaatsen. Als u een opnamebestand of sjabloon gebruikt, kunt u de regel daar opgeven. <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line862">Als u een pakket als "HTML Tidy" gebruikt, kunt u de JavaScript-regel bijvoorbeeld toevoegen aan het HEAD-gedeelte van uw pagina: <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>Stap 3:</strong> Schakel cookies in voor de IIS-logboekregistratie. Open IIS Manager en geef het eigenschappenvenster voor uw website weer. Zorg ervoor dat logboekregistratie is ingeschakeld en ingesteld op de uitgebreide W3C-indeling. Klik op de knop Eigenschappen naast de indeling op het tabblad Uitgebreide eigenschappen en vink het selectievakje naast Cookie aan. <p class="line867"><strong>Stap 4:</strong> Stel het Urchin-profiel zodanig in dat de Urchin Traffic Monitor (UTM) wordt gebruikt. Bewerk het betreffende profiel in de beheerinterface van Urchin en klik op het tabblad Instellingen. Stel de methode voor het bijhouden van bezoekers in op Urchin Traffic Monitor (UTM). Stel het UTM-domein in op het adres van uw website, zonder het voorvoegsel 'www'. Kies vervolgens de standaardoptie voor Rapportreeks en klik op Bijwerken. <p class="line874">Dat is alles. Uw website zal de UTM-gegevens nu opslaan in uw normale logbestand, dat de volgende keer dat u Urchin uitvoert, wordt herkend. <p class="line874">Werkt het? Als u wilt controleren of de UTM-gegevens worden opgenomen in het logbestand, bekijkt u het logbestand nadat u de UTM heeft geïnstalleerd en op een aantal pagina's op uw site heeft geklikt. Er moet een item aan het eind van het logbestand staan dat er ongeveer zo uitziet: <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">Als u geen utma-items ziet, controleert u of cookies correct zijn ingeschakeld voor de logboekregistratie. Als de statuscode niet 200 is, controleert u of de bestanden correct zijn gekopieerd naar de hoofdmap.<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

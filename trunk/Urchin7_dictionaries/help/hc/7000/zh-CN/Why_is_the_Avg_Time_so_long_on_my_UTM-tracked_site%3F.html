@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>为什么我采用 UTM 进行跟踪的网站上的"平均时间"这么长？</strong> <p class="line867"><strong>概述</strong> <p class="line874">如果在拥有大量回访者的热门网站上使用 Urchin 点击量监控器 (UTM)，则 Urchin 报告可能会显示时间较长的"平均时间"统计信息。此外，在"内容优化：内容性能"部分中的"访问时长"柱状图也会显示时长超过 30 分钟（1,801 秒以上）范围内的大量会话。 <p class="line874">潜在的原因是 UTM 使用会话 Cookie 跟踪访问者会话，而共享同一会话 Cookie 的任何点击都会被视为位于同一会话中。不过，除非访问者退出网络浏览器或明确删除 Cookie，否则会话 Cookie 不会被删除。因此，UTM 跟踪的会话可能长达数天之久，即使访问者的点击已过去了很长一段时间也是如此。 <p class="line867"><strong>详细说明与示范</strong> <p class="line874">假设 UTM 安装在资讯门户网站或股票报价网站等用户经常回访的忙碌的网站上。这类网站典型的访问者行为可能是：打开浏览器，浏览到网站，花了 10 到 15 分钟浏览感兴趣的链接；然后继续访问其他网站，不过没有退出网络浏览器。第二天，同一访问者又返回 UTM 跟踪的该网站。由于浏览器从上次访问后一直未关闭，会话 Cookie 仍与前一天相同，因此从 Urchin 的观点看它仍是同一会话（虽然有很长的闲置期间）。如果网站的大部分访问者都有此类似行为，就会明显影响到"平均时间"的计算，并在"访问时长"报告中增加长于 30 分钟（1,801 秒以上）的图表部分。此外，这可能会造成这一时段的总访问者计数偏低。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

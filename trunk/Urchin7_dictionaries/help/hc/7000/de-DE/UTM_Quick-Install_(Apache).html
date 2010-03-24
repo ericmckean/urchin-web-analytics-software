@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Schnellinstallation für UTM (Apache)</strong> <p class="line867"><em>Dieser Artikel wurde von </em><a href="Panalysis.html">Panalysis</a><em> erstellt, einem autorisierten Berater für Urchin-Software.</em> <p class="line874">Dieser Text ist eine Kurzanleitung zur UTM-Installation für Websites, die auf einem Apache-Server und einer beliebigen Plattform ausgeführt werden. <p class="line867"><strong>Schritt 1: Kopieren Sie die UTM-Dateien in das Dokumentstammverzeichnis der Website.</strong> Die Dateien "urchin.js" und "<tt class="backtick">__</tt>utm.gif" befinden sich im Verzeichnis "util/utm" der Urchin-Installation. Kopieren Sie diese beiden Dateien in das Hauptverzeichnis mit dem Inhalt der Website. <p class="line867"><strong>Schritt 2: Verweisen Sie im HTML-Code auf UTM.</strong> Geben Sie auf allen HTML-Seiten die folgende Zeile ein. Die Zeile kann auf den Seiten zwar an einer beliebigen Stelle stehen, aber wir empfehlen Ihnen, die Zeile in den Bereich "&lt;head&gt;" einzufügen. Falls Sie eine allgemeine Einfügung oder Vorlage verwenden, können Sie diese hier angeben. <span class="u">WICHTIG</span>: Der Name der GIF-Datei beginnt mit zwei Unterstrichen. <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line862">Falls Sie ein Paket wie "HTML Tidy" verwenden, sollten Sie die JavaScript-Zeile im Bereich "HEAD" der Seite einfügen. Beispiel: <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>Schritt 3: Aktivieren Sie für die Apache-Protokollierung die Cookies.</strong> Sie können das folgende httpd.conf-Beispiel verwenden, um die Cookie-Protokollierung zu aktivieren, falls dies nicht bereits eingerichtet ist: <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\"\"%{User-Agent}i\"\"%{Cookie}i\"" special
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log special
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>Schritt 4: Richten Sie für das Urchin-Profil die Verwendung von UTM ein.</strong> Bearbeiten Sie auf der Urchin-Verwaltungsoberfläche das entsprechende Profil und klicken Sie auf die Registerkarte "Berichterstellung". Setzen Sie die Option "Besucher-Tracking-Methode" auf "UTM". Geben Sie für die Option "UTM-Domain" die Adresse Ihrer Website ohne "www." ein. Klicken Sie auf die Schaltfläche "Aktualisieren", wenn Sie fertig sind. Klicken Sie anschließend auf die Registerkarte "Profileinstellungen" und wählen Sie für die Option "Standardberichtset" die Einstellung "UTM aktivieren". Klicken Sie dann erneut auf "Aktualisieren". Das war schon alles! Ihre Website protokolliert jetzt UTM-Daten in Ihrer üblichen Protokolldatei, die bei der nächsten Ausführung von Urchin identifiziert wird. <p class="line867"><strong>Funktioniert alles?</strong> Prüfen Sie, ob UTM korrekt Einträge in Ihre Protokolldatei vornimmt, indem Sie das Protokoll anzeigen, nachdem Sie UTM installiert und auf einige Seiten der Website geklickt haben. Am Ende der Protokolldatei muss ein Eintrag vorhanden sein, der folgender Zeile ähnelt: <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line862">Falls die Einträge vom Typ "<tt class="backtick">__</tt>utma" nicht angezeigt werden, sollten Sie prüfen, ob die Cookies für die Protokollierung korrekt eingerichtet wurden. Lautet der Statuscode nicht 200, sollten Sie sich vergewissern, ob die Dateien richtig in das Stammverzeichnis für Dokumente kopiert wurden. <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

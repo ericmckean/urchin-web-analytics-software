@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Comment dois-je procéder pour qu'Urchin identifie d'autres moteurs de recherche dans les rapports relatifs aux sites référents ?</strong> <p class="line874">Par défaut, Urchin effectue le suivi des visites générées par 20 moteurs de recherche répertoriés dans votre fichier UTM. Toutefois, vous pouvez configurer Urchin de sorte qu'il identifie d'autres moteurs de recherche référents en modifiant le fichier UTM comme suit : <ol type="1"><li>Ouvrez votre fichier urchin.js dans un éditeur de texte. </li><li>Faites-le défiler jusqu'à la section suivante : </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>Vous y trouverez des entrées numérotées de 0 à 19 destinées aux moteurs de recherche. Il s'agit des moteurs de recherche dont Urchin effectue le suivi par défaut. Pour ajouter un moteur de recherche à cette liste, il suffit d'ajouter une entrée en respectant le format des entrées précédentes. Par exemple, voici l'entrée que vous devez saisir pour ajouter un moteur de recherche nommé "new" : </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">La valeur de _uOsr doit correspondre au nom du moteur de recherche et la valeur de _uOkw à la variable qui stocke le mot clé. Par exemple, si quelqu'un recherche le mot clé "motorcycle" et que l'URL de résultat de la recherche soit la suivante : </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">la valeur de _uOkw sera "q" ; la valeur de _uOsr sera "google". </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

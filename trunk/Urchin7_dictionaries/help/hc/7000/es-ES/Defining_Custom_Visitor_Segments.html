@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Definición de segmentos de usuario personalizados</strong> <p class="line874">Además de la segmentación de usuarios de acuerdo a segmentos predefinidos, como la región geográfica y la preferencia de idioma, Urchin 6 le permite definir segmentos personalizados y analizar el comportamiento de cada uno de ellos. Por ejemplo, puede solicitar a los usuarios que marquen la categoría laboral a la que pertenecen (como Técnico/Ingeniería, Marketing/RR.PP.) en un formulario. De ser así, podría analizar los comportamientos de navegación y de compra online según la información sobre categorías laborales que los usuarios indiquen. <p class="line862">Puede consultar el comportamiento de las conversiones relativo a cada uno de los segmentos personalizados en el informe Optimización de marketing &gt; Rendimiento del segmento de usuarios &gt; Definido por el usuario. Asimismo, muchos otros informes le permiten realizar un análisis cruzado de los datos de acuerdo con el segmento de usuario. Para realizar el análisis cruzado, haga clic en el botón Opciones de análisis a la izquierda de una entrada en la mayoría de los informes. Seleccione "Definido por el usuario" para ver los segmentos personalizados. <p class="line862">Para configurar un segmento de usuario, basta con que simplemente active la función javascript <tt class="backtick">__</tt>utmSetVar. Por ejemplo, active lo siguiente en cualquier punto de la página web que esté por debajo de UTM: <pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line874">Ejemplo: Asignar usuarios a esta página al segmento "Marketing/RR.PP." <p class="line874">En este ejemplo, todos los usuarios que visiten la página se asignan al segmento "Marketing/RR.PP.". <pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line874">Ejemplo: Asignar usuarios al segmento seleccionado por el usuario <p class="line874">En este ejemplo, los usuarios se asignan a un segmento en función de sus selecciones en un formulario. <pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;Técnico/Ingeniería&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;Marketing/RR.PP.&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;Fabricación&lt;/option&gt;
+    &lt;option value="General Management"&gt;Administración general&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

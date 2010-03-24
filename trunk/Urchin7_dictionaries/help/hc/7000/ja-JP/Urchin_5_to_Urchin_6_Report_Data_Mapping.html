@@ -1,0 +1,1648 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 5 から Urchin 6 へのレポート データ マッピング</strong> Urchin 5 のプロファイル設定とデータのあるレポートは、完全には Urchin 6 に移行されず、次のようになります。 <ul><li>Urchin 5 で作成された目標は移行されません。 </li><li>"ELF" ログ形式は Urchin 6 でサポートされていません。この形式のログは移行処理で省略されます。 </li><li>Urchin 6 のユーザーのトラッキング方法は Urchin 5 とは異なります。 移行によるトラッキング方法の変換については下記の表をご覧ください。 </li></ul><div><table style="width: 424px"><tbody><tr>  <td class="xl68" style="background-color: #999999; height: 20px; width: 212px"><p class="line891"><strong>Urchin 5 のユーザーのトラッキング方法</strong> </td>
+  <td class="xl69" style="background-color: #999999; height: 20px; width: 212px"><p class="line891"><strong>Urchin 6 のユーザーのトラッキング方法</strong> </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">IP+User-Agent </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Username </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Session ID </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Urchin Traffic Monitor (UTM) </td>
+  <td class="xl66"><p class="line862">Urchin Traffic Monitor (UTM) </td>
+</tr>
+<tr>  <td class="xl67" style="height: 21px"><p class="line862">IP ONLY </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+</tbody></table></div><p class="line874">Urchin 5 と Urchin 6 の統計情報レポートのマッピングは下記の表のとおりです。 <div><table style="width: 1223px"><tbody><tr>  <td class="xl81" style="text-align: center; ; width: 141px; height: 40px; background-color: #999999"><p class="line891"><strong>レポート セクション</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Urchin 5 レポート</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>統計情報</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Urchin 6 レポート</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>統計情報</strong> </td>
+  <td class="xl87" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>ユーザーのトラッキング方法</strong> </td>
+  <td class="xl83" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>コメント</strong> </td>
+</tr>
+<tr>  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>トラフィック</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">セッション グラフ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">セッション数</td>
+  <td class="xl66" style="width: 309px"><p class="line862">マーケティングの最適化 &gt; ユニーク ユーザーのトラッキング &gt; セッション数とページビュー数のトラッキング </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+  <td class="xl89" colspan="1" rowspan="13" style="text-align: center; ; width: 111px"><p class="line862">"UTM" と "IP+User-Agent" </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">ページビュー数グラフ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">マーケティングの最適化 &gt; ユニーク ユーザーのトラッキング &gt; セッション数とページビュー数のトラッキング</td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">ヒット数グラフ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">IT レポート &gt; ヒット数とバイト数のトラッキング </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">バイト数グラフ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">IT レポート &gt; ヒット数とバイト数のトラッキング </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">概要 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>ロード バランシング</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">ヒット順のログ ソース </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ログ ソース </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ロード バランシング </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ログ ソース </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">バイト順のログ ソース </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ログ ソース </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ロード バランシング </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ログ ソース </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>ユーザーとセッション</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="2" style="text-align: center; ; height: 40px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="2" style="text-align: center; ; width: 198px"><p class="line862">1 日あたりのユーザー数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ユーザー数 </td>
+  <td class="xl66" colspan="1" rowspan="2" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; ユニーク ユーザーのトラッキング &gt; 1 日のユーザー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ユーザー数 </td>
+  <td class="xl89" colspan="1" rowspan="10" style="text-align: center; ; width: 111px"><p class="line862">"UTM" </td>
+  <td class="xl97" colspan="1" rowspan="2" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">新規ユーザー </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">1 日あたりのセッション数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">セッション数 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; ユニーク ユーザーのトラッキング &gt; セッション数とページビュー数のトラッキング </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">1 回のセッションあたりの平均ページビュー数 </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">ユニーク ユーザー数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ユニーク ユーザー数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">マーケティングの最適化 &gt; ユニーク ユーザーのトラッキング &gt; ユニーク ユーザー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ユニーク ユーザー数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">ユニーク セッション数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">リピート セッション数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">セッション数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">マーケティングの最適化 &gt; ユニーク ユーザーのトラッキング &gt; リピート セッション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">セッション頻度 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">セッション数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">マーケティングの最適化 &gt; ユニーク ユーザーのトラッキング &gt; セッション頻度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">概要 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>ページとファイル</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">要求されたページ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ページ数 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; コンテンツのパフォーマンス &gt; 上位のコンテンツ </td>
+  <td class="xl66" style="width: 188px"><p class="line862">コンテンツ </td>
+  <td class="xl92" colspan="1" rowspan="51" style="text-align: center; ; width: 111px"><p class="line862">"UTM" と "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均閲覧時間 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離脱率 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$ インデックス </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">ダウンロード </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ダウンロード </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; ダウンロード </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ダウンロード </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">ページ クエリ パラメータ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ページ クエリ パラメータ </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; コンテンツのパフォーマンス &gt; ページ クエリ パラメータ </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページ/クエリ パラメータ </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">カウント </td>
+  <td class="xl66" style="width: 188px"><p class="line862">カウント </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">送信されたフォーム </td>
+  <td class="xl66" style="width: 121px"><p class="line862">送信されたフォーム </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; 送信されたフォーム </td>
+  <td class="xl66" style="width: 188px"><p class="line862">送信されたフォーム </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">ステータスとエラー </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ステータスとエラー </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; ステータス コード </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ステータス コード </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>すべてのファイル</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">バイト順のすべてのファイル </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ファイル </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; 上位のファイル </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ファイル</td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">このレポートは直接移行されません。 Urchin 6 の "有効ヒット数" フィールドには、有効ヒット数＋エラー ヒット数など、ヒット数の合計が含まれます。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">バイト順のすべてのファイル </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ファイル </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; 上位のファイル </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ファイル</td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">このレポートは直接移行されません。 Urchin 6 の "有効ヒット数" フィールドには、有効ヒット数＋エラー ヒット数など、ヒット数の合計が含まれます。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="15" style="text-align: center; ; height: 300px; width: 141px"><p class="line891"><strong>ディレクトリの詳細</strong> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">ページ順のディレクトリの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ディレクトリとページ </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; コンテンツのパフォーマンス &gt; コンテンツの詳細 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ディレクトリとページ </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均閲覧時間 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離脱率 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$ インデックス </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">ファイル順のディレクトリの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ディレクトリとファイル </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; ファイルの詳細 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ディレクトリとファイル </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">バイト順のディレクトリの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ディレクトリとファイル </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; ファイルの詳細 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ディレクトリとファイル </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>ファイル形式</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">ヒット順のファイル形式 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ファイル形式 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; ファイル形式 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">MIME 形式 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">バイト順のファイル形式 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ファイル形式 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; ファイル形式 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">MIME 形式 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">このレポートを移行すると、データに少々の誤差が生じる場合があります。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ヒット数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>ナビゲーション</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">閲覧開始ページ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">閲覧開始ページ </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">Cコンテンツの最適化 &gt; ナビゲーションの分析 &gt; 直帰率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">上位の閲覧開始ページ </td>
+  <td class="xl89" colspan="1" rowspan="39" style="text-align: center; ; width: 111px"><p class="line862">"UTM" と "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">閲覧開始数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">直帰数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">直帰率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">離脱ページ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">離脱ページ </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ナビゲーションの分析 &gt; 上位の離脱ページ </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離脱ページ </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離脱数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離脱率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">直帰率 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">バウンス ページ </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ナビゲーションの分析 &gt; 閲覧開始ページの直帰率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">上位の閲覧開始ページ </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">直帰数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">直帰数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">閲覧開始数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">閲覧開始数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">直帰率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">直帰率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="6" style="text-align: center; ; height: 120px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 198px"><p class="line862">クリック パス </td>
+  <td class="xl66" style="width: 121px"><p class="line862">クリック パス </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ナビゲーションの分析 &gt; ナビゲーション開始位置 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">開始パス </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 198px"><p class="line862">移動先ページと移動元ページ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ディレクトリとファイル </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ナビゲーションの分析 &gt; すべてのナビゲーション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ディレクトリとページ </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">前のページ </td>
+  <td class="xl66" style="width: 188px"><p class="line862">上位 10 の移動元ページ </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">次のページ </td>
+  <td class="xl66" style="width: 188px"><p class="line862">上位 10 の移動先ページ </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">クリック数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">クリック数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">クリック数の割合 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/クリック数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/クリック数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均スコア </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">ページビューの長さ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ページ数 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; コンテンツのパフォーマンス &gt; コンテンツの詳細 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ディレクトリとページ </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">平均閲覧時間 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均閲覧時間 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">離脱率 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$ インデックス </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">セッション中のページビュー数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 309px"><p class="line862">コンテンツの最適化 &gt; コンテンツのパフォーマンス &gt; セッション中のページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">滞在時間 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 309px"><p class="line862">コンテンツの最適化 &gt; コンテンツのパフォーマンス &gt; 滞在情報 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>参照</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">参照数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">参照数 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; マーケティング キャンペーンの結果 &gt; 参照元のコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">参照数 </td>
+  <td class="xl89" colspan="1" rowspan="31" style="text-align: center; ; width: 111px"><p class="line862">"UTM" と "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">このレポートは直接移行できません。 この Urchin 6 レポートには、"参照" のページビュー数のみが記載されます（"オーガニック" と "cpc" のページビュー数は除外されます）。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">参照の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">参照数 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; マーケティング キャンペーンの結果 &gt; 参照元のコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">参照数 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">このレポートは直接移行できません。 この Urchin 6 レポートには、"参照" のページビュー数のみが記載されます（"オーガニック" と "cpc" のページビュー数は除外されます）。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">検索クエリ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">検索クエリ </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; 検索エンジン マーケティング &gt; キーワード全体のコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">キーワード/ソース [メディア] </td>
+  <td class="xl98" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Urchin 5 プロファイルを "UTM" によるユーザーのトラッキング方法で処理している場合、このレポートは直接移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">検索エンジン </td>
+  <td class="xl66" style="width: 121px"><p class="line862">検索エンジン </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; 検索エンジン マーケティング &gt; CPC 広告と検索結果のコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ソース [メディア]/キーワード </td>
+  <td class="xl98" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Urchin 5 プロファイルを "UTM" によるユーザーのトラッキング方法で処理している場合、このレポートは直接移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">参照エラー </td>
+  <td class="xl66" style="width: 121px"><p class="line862">参照エラー </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ページとファイル &gt; 参照エラー </td>
+  <td class="xl66" style="width: 188px"><p class="line862">エラー コード/コンテンツ/参照 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">エラー コード "401" は Urchin 6 への移行中にレポート データから除外されます。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">エラー ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line862"> <strong>ドメイン数とユーザー数</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">ドメイン </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ドメイン </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; ユーザー セグメントのパフォーマンス &gt; ドメイン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ドメイン </td>
+  <td class="xl89" colspan="1" rowspan="44" style="text-align: center; ; width: 111px"><p class="line862">"UTM" と "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">ドメインの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ドメイン </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ドメイン数とユーザー数 &gt; ドメインの詳細 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">主要なドメイン/ドメイン </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">このレポートは、データマップに互換性がないため移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">国 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">国 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; ユーザー セグメントのパフォーマンス &gt; 地域 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">国/地域/都市 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">このレポートは、データマップに互換性がないため移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">IP アドレス </td>
+  <td class="xl66" style="width: 121px"><p class="line862">IP アドレス </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ドメイン数とユーザー数 &gt; IP アドレス </td>
+  <td class="xl66" style="width: 188px"><p class="line862">IP アドレス </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">このレポートは、データマップに互換性がないため移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">IP の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">IP アドレス </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ドメイン数とユーザー数 &gt; IP の詳細 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">IP アドレス </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">このレポートは、データマップに互換性がないため移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="15" style="text-align: center; ; height: 300px; width: 141px"><p class="line891"><strong>ユーザー名</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">ヒット順のユーザー名 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ユーザー名 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ドメイン数とユーザー数 &gt; ユーザー名 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ユーザー名 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">このレポートは直接移行できません。 Urchin 6 の "有効ヒット数" フィールドには、有効ヒット数＋エラー ヒット数など、ヒット数の合計が含まれます。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">バイト順のユーザー名 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ユーザー名 </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ドメイン数とユーザー数 &gt; ユーザー名 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ユーザー名 </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">セッション順のユーザー名 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ユーザー名 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; ユーザー セグメントのパフォーマンス &gt; ユーザー名 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ユーザー名 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>ブラウザとロボット</strong> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>ブラウザ</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">セッション順のブラウザの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ブラウザ </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ウェブ デザインの情報 &gt; ブラウザのバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ブラウザ </td>
+  <td class="xl89" colspan="1" rowspan="42" style="text-align: center; ; width: 111px"><p class="line862">"UTM" と "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">ヒット順のブラウザの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ブラウザ </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ブラウザとロボット &gt; ブラウザのバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ブラウザ </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">バイト順のブラウザの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ブラウザ </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ブラウザとロボット &gt; ブラウザのバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ブラウザ </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>プラットフォーム</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">セッション順のプラットフォームの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">プラットフォーム </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ウェブ デザインの情報 &gt; プラットフォームのバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">プラットフォーム </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">ヒット順のプラットフォームの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">プラットフォーム </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ブラウザとロボット &gt; プラットフォームのバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">プラットフォーム </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">バイト順のプラットフォームの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">プラットフォーム </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ブラウザとロボット &gt; プラットフォームのバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">プラットフォーム </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>組み合わせ</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">セッション順の組み合わせ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ブラウザ </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ウェブ デザインの情報 &gt; ブラウザとプラットフォーム </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ブラウザ </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">ヒット順の組み合わせ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">組み合わせ </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ブラウザとロボット &gt; ブラウザとプラットフォーム </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ブラウザ - プラットフォーム </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">バイト順の組み合わせ </td>
+  <td class="xl66" style="width: 121px"><p class="line862">組み合わせ </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ブラウザとロボット &gt; ブラウザとプラットフォーム </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ブラウザ - プラットフォーム </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="9" style="text-align: center; ; height: 180px; width: 141px"><p class="line891"><strong>ロボット</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">ヒット順のロボットの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ロボット </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ブラウザとロボット &gt; ロボット コンテンツ </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ロボット/ユーザー エージェント </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ヒット数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; height: 120px; width: 198px"><p class="line862">バイト順のロボットの詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ロボット </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">IT レポート &gt; ブラウザとロボット &gt; ロボット </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ロボット/ユーザー エージェント </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">有効ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">エラー ヒット数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">すべてのヒット </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">バイト数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">バイト数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>クライアント パラメータ</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">画面の解像度 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">画面の解像度 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ウェブ デザインの情報 &gt; 画面の解像度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">画面の解像度 </td>
+  <td class="xl89" colspan="1" rowspan="14" style="text-align: center; ; width: 111px"><p class="line862">"UTM" </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">このレポートは、データマップに互換性がないため移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">画面の色 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">色深度 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ウェブ デザインの情報 &gt; 画面の色 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">画面の色 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">このレポートは、データマップに互換性がないため移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">言語 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">言語 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">コンテンツの最適化 &gt; ウェブ デザインの情報 &gt; 言語 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">言語 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 309px"><p class="line862">マーケティングの最適化 &gt; ユーザー セグメントのパフォーマンス &gt; 言語 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 309px"><p class="line862"> </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Java 有効率 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Java 有効率 </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">コンテンツの最適化 &gt; ウェブ デザインの情報 &gt; Java 有効率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Java 有効率 </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">このレポートは、データマップに互換性がないため移行できません。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">比率 </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">タイムゾーン オフセット </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Javascript のバージョン </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>e コマース</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">収益 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">収益 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">e コマース分析 &gt; コマースのトラッキング &gt; 収益とトランザクション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益 </td>
+  <td class="xl89" colspan="1" rowspan="54" style="text-align: center; ; width: 111px"><p class="line862">"UTM" と "IP+User-Agent"、"e コマース ウェブサイト" は有効であること </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">トランザクション数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">トランザクション数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">e コマース分析 &gt; コマースのトラッキング &gt; 収益とトランザクション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="6" style="text-align: center; ; height: 200px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 198px"><p class="line862">e コマースの概要 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">合計収益 </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">経営層向けの表示 &gt; e コマースの概要 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益 </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">合計トランザクション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">合計トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">1 回のトランザクションあたりの平均収益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">1 日あたりの平均収益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">1 日あたりの平均トランザクション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">1 回のセッションあたりの平均収益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="28" style="text-align: center; ; height: 560px; width: 141px"><p class="line891"><strong>商品</strong> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">収益順の商品 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">商品 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">e コマース分析 &gt; 商品のマーケティング &gt; 商品のパフォーマンス </td>
+  <td class="xl66" style="width: 188px"><p class="line862">商品/在庫管理単位 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">商品数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">収益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均価格 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均数量 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">数量順の商品 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">商品 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">e コマース分析 &gt; 商品のマーケティング &gt; 商品のパフォーマンス </td>
+  <td class="xl66" style="width: 188px"><p class="line862">商品/在庫管理単位 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">商品数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">商品数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均価格 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均数量 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">収益順の商品の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">地域 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">e コマース分析 &gt; 商品のマーケティング &gt; 商品のパフォーマンス </td>
+  <td class="xl66" style="width: 188px"><p class="line862">商品/在庫管理単位 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">商品数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">収益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均価格 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均数量 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">数量順の商品の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">商品 </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">e コマース分析 &gt; 商品のマーケティング &gt; 商品のパフォーマンス </td>
+  <td class="xl66" style="width: 188px"><p class="line862">商品/在庫管理単位 </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">商品数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">商品数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均価格 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">平均数量 </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="18" style="text-align: center; ; height: 382px; width: 141px"><p class="line891"><strong>収益ソース</strong> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">地域順の収益の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">地域 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">e コマース分析 &gt; 収益ソース &gt; 国の詳細 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">国/地域/都市 </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">収益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益の比率 </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 198px"><p class="line862">都市順の収益 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">都市 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">e コマース分析 &gt; 収益ソース &gt; 上位の都市 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">国/地域/都市 </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">収益 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">収益の比率 </td>
+</tr>
+<tr>  <td class="xl68" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 198px"><p class="line862">参照順の収益 </td>
+  <td class="xl96"><p class="line862">参照 </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">e コマース分析 &gt; 収益ソース &gt; 参照ソース </td>
+  <td class="xl65"><p class="line862">ソース [メディア] </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">収益 </td>
+  <td class="xl65"><p class="line862">収益 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl65"><p class="line862">トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl65"><p class="line862">$/トランザクション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">比率 </td>
+  <td class="xl65"><p class="line862">収益の比率 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">検索クエリ順の収益 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">検索エンジン順の収益の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">ドメイン順の収益の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>キャンペーンのトラッキング</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">総合的な結果 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl89" colspan="1" rowspan="87" style="text-align: center; ; width: 111px"><p class="line862">"キャンペーンのトラッキング" を有効にした状態で "UTM" </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">目標の結果 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="14" style="text-align: center; ; height: 280px; width: 141px"><p class="line891"><strong>リード ソース</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">獲得 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ソース </td>
+  <td class="xl66" colspan="1" rowspan="11" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; マーケティング キャンペーンの結果 &gt; ソースのコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ソース [メディア] </td>
+  <td class="xl97" colspan="1" rowspan="11" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">クリック数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">深度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">リピート セッション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G4/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">コンバージョン </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">費用の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>キーワード分析</strong> </td>
+  <td class="xl67" style="width: 198px"><p class="line862">獲得 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ソース/キーワード </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; 検索エンジン マーケティング &gt; CPC 広告と検索結果のコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ソース [メディア]/キーワード </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">クリック数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">深度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">リピート セッション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">コンバージョン </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">費用の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>キーワードの比較</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">獲得 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">キーワード/ソース </td>
+  <td class="xl66" colspan="1" rowspan="8" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; 検索エンジン マーケティング &gt; キーワード全体のコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">キーワード/ソース[メディア] </td>
+  <td class="xl97" colspan="1" rowspan="8" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">クリック数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">深度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">リピート セッション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">コンバージョン </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">費用の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>キャンペーンの比較 &gt;...</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">獲得 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">キャンペーン/ソース </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; マーケティング キャンペーンの結果 &gt; キャンペーンのコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">キャンペーン/ソース </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">クリック数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">深度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">リピート セッション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">コンバージョン </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">費用の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>メディアの比較</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">獲得 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">メディア/ソース </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">マーケティングの最適化 &gt; マーケティング キャンペーンの結果 &gt; メディアのコンバージョン </td>
+  <td class="xl66" style="width: 188px"><p class="line862">メディア/ソース </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">クリック数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">深度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">リピート セッション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">コンバージョン </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">費用の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>コンテンツ（A/B）テスト &gt;...</strong> </td>
+  <td class="xl67" style="width: 198px"><p class="line862">獲得 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">品質 </td>
+  <td class="xl66" style="width: 121px"><p class="line862">ソース/コンテンツ </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">広告の分析 &gt; ソースのテスト </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ソース/コンテンツ </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862">このレポートは直接移行できません。 "参照" ソースを持っているレコードは、対応する Urchin 6 レポートから除外されます。 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">クリック数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">ページビュー数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">セッション </td>
+  <td class="xl66" style="width: 188px"><p class="line862">セッション数</td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">深度 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">リピート セッション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">ページビュー数/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/セッション数 </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/セッション数 </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">コンバージョン </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">費用の詳細 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl72" colspan="1" rowspan="4" style="text-align: center; ; height: 120px; width: 141px"><p class="line891"><strong>経過時間レポート</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">目標までの時間 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">目標までのセッション数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl68" style="width: 198px; height: 40px"><p class="line862">トランザクションまでの期間 </td>
+  <td class="xl102" style="width: 121px"><p class="line862">トランザクション数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">e コマース分析 &gt; リピート セッションと経過時間 &gt; トランザクションまでの期間 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl68" style="width: 198px; height: 40px"><p class="line862">トランザクションまでのセッション </td>
+  <td class="xl102" style="width: 121px"><p class="line862">トランザクション数 </td>
+  <td class="xl66" style="width: 309px"><p class="line862">e コマース分析 &gt; リピート セッションと経過時間 &gt; トランザクションまでのセッション数 </td>
+  <td class="xl66" style="width: 188px"><p class="line862">トランザクション数 </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl79" colspan="1" rowspan="2" style="text-align: center; ; height: 44px; width: 141px"><p class="line891"><strong>時間別の詳細</strong> </td>
+  <td class="xl77" style="background-color: #ffcc99; width: 198px"><p class="line862">時間別の目標のコンバージョン数 </td>
+  <td class="xl78" style="width: 121px"><p class="line862"> </td>
+  <td class="xl78" style="width: 309px"><p class="line862">- </td>
+  <td class="xl78" style="width: 188px"><p class="line862">- </td>
+  <td class="xl99" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">時間別の売り上げのコンバージョン数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl73" colspan="1" rowspan="2" style="text-align: center; ; height: 41px; width: 141px"><p class="line891"><strong>不正なクリックの監視</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">IP 別の繰り返しクリック数 </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl75" style="background-color: #ffcc99; width: 198px"><p class="line862">ソース別の繰り返しクリック数 </td>
+  <td class="xl76" style="width: 121px"><p class="line862"> </td>
+  <td class="xl76" style="width: 309px"><p class="line862">- </td>
+  <td class="xl76" style="width: 188px"><p class="line862">- </td>
+  <td class="xl100" style="width: 155px"><p class="line862"> </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

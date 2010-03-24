@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Instalación rápida del Supervisor de tráfico de Urchin (UTM) (IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Autor: </em> <a href="EpikOne.html">EpikOne</a><em>, asesor autorizado del software Urchin</em> </li></ul><p class="line874">La siguiente información pretende guiarle brevemente a través de la instalación del Supervisor de tráfico de Urchin (UTM) para sitios web alojados en servidores Microsoft IIS en cualquier plataforma Windows. Para obtener información detallada sobre el UTM, consulte el artículo titulado "Supervisor de tráfico de Urchin (UTM)" en esta sección. <p class="line867"><strong>Paso 1:</strong> copie los archivos UTM en la raíz del documento del sitio web. Los archivos, urchin.js y <tt class="backtick">__</tt>utm.gif se encuentran en la carpeta "utils\utm" de la distribución de Urchin. Copie estos dos archivos en la carpeta principal del contenido de su sitio web. IMPORTANTE: el nombre del archivo GIF empieza con dos guiones bajos. <p class="line867"><strong>Paso 2:</strong> inserte una referencia al UTM en el código HTML del sitio web. Introduzca la línea siguiente en todas las páginas HTML. Si bien puede ubicarse en cualquier parte de la página, le recomendamos situarlo justo antes de la etiqueta &lt;/body&gt; de cierre. Si utiliza una plantilla o una inclusión común, introdúzcala aquí. <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line862">Si utiliza un paquete como "HTML Tidy", le recomendamos que incluya la línea JavaScript en el área HEAD de la página, por ejemplo: <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>Paso 3:</strong> habilite las cookies en el registro de datos IIS. Abra IIS Manager y acceda a la ventana “Propiedades” del sitio web. Asegúrese de que el registro esté habilitado y configurado en el formato extendido W3C. Haga clic en el botón Propiedades junto al formato y, en la pestaña “Propiedades extendidas”, marque la casilla junto a “Cookie”. <p class="line867"><strong>Paso 4:</strong> configure el perfil Urchin para que utilice el UTM. En la interfaz de administración de Urchin, edite el perfil en cuestión y haga clic en la pestaña “Configuración”. Establezca el método de seguimiento de usuarios en Supervisor de tráfico de Urchin (UTM). Defina como dominio de este último la dirección de su sitio web sin www. A continuación, elija el valor predeterminado para el conjunto de informes y haga clic en el botón “Actualizar”. <p class="line874">Eso es todo. Ahora, su sitio web empezará a registrar los datos del UTM en el archivo de registro normal, que el sistema identificará la próxima vez que ejecute Urchin. <p class="line874">¿Funciona? Para comprobar que el UTM registra datos en el archivo de registro de forma correcta, compruebe el registro después de instalar el UTM y de haber hecho clic en varias páginas del sitio web. Debería ver una entrada similar a la siguiente al final del archivo: <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">Si no puede ver las entradas utma, asegúrese de que las cookies estén correctamente habilitadas en el registro. Si el estado del código no es 200, compruebe que los archivos se copiaron correctamente en la raíz del documento.<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

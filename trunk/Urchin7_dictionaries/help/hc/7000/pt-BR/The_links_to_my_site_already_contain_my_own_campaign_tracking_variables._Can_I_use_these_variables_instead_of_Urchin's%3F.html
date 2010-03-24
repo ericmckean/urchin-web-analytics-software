@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Os links para o meu site já contêm minhas próprias variáveis de monitoramento de campanhas.Posso utilizar essas variáveis em vez das do Urchin?</strong> <p class="line874">Se você já codificou seus links on-line com as suas próprias variáveis de monitoramento, será possível mapear essas variáveis existentes para as variáveis de monitoramento de campanhas do Urchin.Seus links codificados devem conter pelo menos três variáveis.Essas variáveis vão ser mapeadas para: <ol type="1"><li>utm_source: a origem da sua campanha (por exemplo, Google, Yahoo) </li><li>utm_medium: a mídia da sua campanha (cpc, banner, e-mail) </li><li>utm_campaign: o nome da sua campanha (promoção_de_primavera) </li></ol><p class="line874">Seguindo essas instruções, vamos presumir que o seu site contenha o seguinte URL: <pre>            www.example.com.br/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>Etapa 1.</strong> Faça uma correspondência entre as suas variáveis e as variáveis do Urchin.Crie uma tabela com o formato mostrado no exemplo abaixo: <pre>               Campanha     Ad Source   Tipo de anúncio     Palavra-chave   Conteúdo A/B  Master
+Códigos do usuário=    camp         adver       type        kwd       version      
+Códigos do Urchin =  utm_campaign utm_source    utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>Etapa 2.</strong> Modifique o arquivo do UTM. <ul><li style="list-style-type:none">Abra o arquivo urchin.js em um editor de texto.No início do arquivo, há uma seção definida pelo usuário que contém as variáveis utm: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">Utilizando o exemplo do link codificado citado anteriormente, esta seção seria editada assim: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>Etapa 3.</strong> Crie filtros para essas novas variáveis de monitoramento. <ul><li style="list-style-type:none">Esta é a configuração básica que deve ser utilizada para cada filtro: </li></ul><p class="line867"><pre>                Tipo de filtro:Avançado
+                Campo A :utm_campaign_uri (raw)
+                Trecho A:new_variable =([^&amp;]*)
+                Campo B:(Nenhum)
+                Trecho B:(vazio)
+                Destino dos dados de saída:utm _( old_variable )
+                Construtor:$A1
+                Campo A obrigatório:sim
+                Campo B obrigatório:não
+                Substituir campo de saída:sim
+                Diferenciar maiúsculas de minúsculas:não
+</pre><ul><li style="list-style-type:none">old_variable refere-se à variável de monitoramento padrão do Urchin, enquanto new_variable refere-se à sua própria variável de monitoramento.Lembre-se de que você precisará de um filtro para cada variável modificada. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

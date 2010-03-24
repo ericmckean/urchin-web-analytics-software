@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>「警告 タスク スケジューラー 無効」とはどういう意味ですか。</strong> <p class="line874">Urchin タスク スケジューラとは、Urchin 処理の実行ファイルを実行するためのサービスです。 タスク スケジューラが無効になっていると、Urchin はジョブを実行することができません。 エラー: 「警告 タスク スケジューラー 無効」" に共通の原因: <ul><li>urchind サービスを実行していない場合。 これは、サーバーの再起動中に、Urchin がシステム起動時のスクリプトに含まれていない場合に起こります。 </li><li class="gap">(Unix のみ) 実行中の Urchind サービスが、Urchin の所有者ではない別のユーザーにより所有されている場合。 </li></ul><p class="line874">スケジューラが実行中かどうかを確認するには、下記のタスクを行なって下さい: <ul><li>コマンド シェルを起動し、/path/to/urchin/bin/ ディレクトリに移動します。 </li><li class="gap">下記のように入力します: urchinctl status (Unix の場合、./urchinctl status を入力) </li></ul><p class="line874">スケジューラ サービスが実行中でない場合、コマンド ラインから下記のタスクを行って開始します: <ul><li>コマンド シェルを起動し、/path/to/urchin/bin/ ディレクトリに移動します。 </li><li class="gap">下記のように入力します: urchinctl -s start (Unix の場合、./urchinctl -s start と入力) </li><li class="gap">サービスが両方とも実行中でない場合、下記のように入力します: urchinctl start </li></ul><p class="line874">サービスが実行中の場合、Urchin 処理の所有者を特定するため、下記のようにサーバー上で実行プロセスを確認します: ps -ef | grep urchind <p class="line874">出力された結果で、処理を所有する "ユーザー名" を確認します: <p class="line867"><pre>
+ユーザー名33597 0.0 0.2 352 204 ?? Ss 27Feb08 17:42.18 /usr/local/urchin6/bin/urchind
+
+</pre><p class="line874">処理を所有するユーザーが Urchin の所有者と異なる場合、サービスて停止し、正しいユーザーで再開する必要がございます。 これは、urchind 処理を所有するユーザーに"ユーザーを切り替え"、urchinctl を停止することで行なえます。 上記と同様の手順で "-s" 切り替え機能を使用してください。 下記に、再び Urchin ユーザーに切り替え、再度 "-s" 切り替え機能を使用して urchinctl を開始してください。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

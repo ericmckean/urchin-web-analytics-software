@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>상위 파일 보고서에 다운로드 보고서보다 더 많은 조회수가 표시되는 이유는 무엇입니까?</strong> <p class="line874">일반적으로 상위 파일 보고서에는 같은 파일에 대한 다운로드 보고서보다 더 많은 조회수가 표시됩니다.그 이유는 다음과 같습니다. PDF 파일의 경우 대부분의 브라우저에는 PDF 파일을 한 번에 한 페이지씩 표시하는 플러그인이 포함되어 있습니다.최초 페이지 요청 시 웹서버로부터 200 상태 코드가 발생하며이후 모든 페이지에 대해서는 브라우저 플러그인이 전체 문서가 아닌 현재 표시되는 페이지만 다운로드하므로 206(부분 다운로드) 상태 코드가 발생합니다.따라서 같은 PDF 문서에서 5개의 페이지를 보는 경우 웹서버는 1회 조회에 대해 200 상태 코드를, 4회 조회에 대해 206 상태 코드를 기록합니다. 조회는 모두 동일한 PDF 문서에 대한 것으로 기록됩니다. <p class="line874">Urchin에서 이 정보를 표시하는 방법 다음과 같습니다. <p class="line874">다운로드:다운로드 조회를 위해서는 200, 302 또는 304 상태 코드가 필요하므로 보고서는 이 PDF 파일에 대해 1회의 다운로드만 표시합니다(예: 1회 조회에 대한 200 상태 코드). <p class="line874">상위 파일 보고서는 상태 코드가 2XX, 302 또는 304인 동시에 파일이 페이지뷰로 간주되기에 적합한 MIME 유형인 경우 성공한 모든 파일 요청을 보여줍니다.기본적으로 Urchin은gif,jpg,jpeg,png,js,css,cur,ico,ida 등의 접미사를 가진 파일을 제외한 모든 MIME 유형을 페이지뷰로 처리합니다. <p class="line874">따라서 위의 예에 나타난 5회의 PDF 요청은 각 조회마다 200 또는 206 상태 코드를 포함하므로 모두 상위 파일 보고서에 이 문서에 대한 조회로 표시됩니다. <p class="line874">각각의 부분 다운로드 조회(206 상태 코드)는 각 조회가 여러 페이지로 구성된 PDF 문서의 단일 페이지에 해당하므로 별도의 페이지뷰로 표시됩니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

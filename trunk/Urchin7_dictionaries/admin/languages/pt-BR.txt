@@ -1,0 +1,1263 @@
+######################################################
+#  Urchin 7 admin default dictionary file
+#  NOTE:  Don't edit this file!  Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+######################################################
+0	Não utilizado
+1	Configuração
+2	Visualizar relatórios
+3	Preferências
+4	2999803979
+5	Contabilidade
+6	Atualização do banco de dados DNS
+7	Usuários e grupos
+8	Contas
+9	Usuários
+10	Grupos
+11	Perfis do Urchin
+12	Perfis
+13	Configurações
+14	Configurações do processo
+15	Configurações globais
+16	Informações de ajuda
+17	Guia de administração
+18	Glossário de termos
+19	Sobre o Urchin
+20	Guia do usuário do Urchin
+21	Programador
+22	Anterior
+23	Próximo
+24	Guia de início rápido
+25	Assistente da conta: informações básicas
+26	Assistente da conta: concluir
+27	Assistente da conta: confirmação
+28	Histórico de tarefas de perfil
+29	Nome
+30	Central de documentação
+31	Correspondência entre palavras-chave orgânicas
+32	Correspondência de parâmetros da página
+33	Correspondência de mimes da exibição de página
+34	incluir
+35	excluir
+36	Processar visitantes e sessões
+37	Mapa de dados
+38	Conjunto de relatórios
+39	Configurações do processo
+40	Adicionar
+41	Nome da conta
+42	Endereço IP
+43	Editar
+44	Excluir
+45	Executar
+46	Informações da conta
+47	Destino do registro
+48	Resumo da conta
+49	excluir
+50	Configurações do painel de controle do administrador
+51	Consulta DNS
+52	em
+53	desativada
+54	IP do resolvedor
+55	Loops de DNS
+56	Porcentagem da meta de resolução
+57	associado às configurações válidas de consultas DNS
+58	Limite por tabela de banco de dados
+59	Modo Datacenter
+60	Alterar o GMT
+61	Ajuste de horário
+62	Informações sobre a ajuda do Urchin
+63	Tempo limite da sessão
+64	Não tocar
+65	Arquivar - compactar
+66	Excluir
+67	Aplicar data
+68	Substituição do curinga data/hora no nome do arquivo de registro
+69	Substituir hora por
+70	Pesquisar e substituir
+71	Dom
+72	S
+73	Ter
+74	Q
+75	Qui
+76	S
+77	Sáb
+78	Jan
+79	Fev
+80	Mar
+81	Abr
+82	Maio
+83	Jun
+84	Jul
+85	Ago
+86	Set
+87	Out
+88	Nov
+89	Dez
+90	Atualizar
+91	Conta
+92	Visualização rápida
+93	Nº mostrado
+94	Privilégios administrativos
+95	Opção 1 (Usuário, Grupos, Programador de tarefas de perfil, Histórico de tarefas de perfil)
+96	Consulta DNS
+97	Configurações do banco de dados do relatório
+98	Ajuste de horário
+99	Opções de acompanhamento de visitantes
+100	Contato
+101	Informações da conta
+102	Falha na adição - Limite de licença atingido para o perfil.<p> Atualize sua licença ou exclua<br> um perfil existente e tente novamente.
+103	Falha ao adicionar
+104	Falha na exclusão
+105	Falha
+106	Falha na atualização
+107	E-mail de contato
+108	Usuários
+109	Nome de usuário
+110	Perfis
+111	Nome completo
+112	Informações do usuário
+113	Opção 2 (Opção 1 + Filtros)
+114	Senha
+115	Conta opcional
+116	Todos
+117	Opção 3 (Opção 2 + Perfis, Origens do registro)
+118	Nível de administrador
+119	Preferências do usuário
+120	Idioma do relatório
+121	Idioma do Administrador
+122	Grupos
+123	Nome do grupo
+124	Informações do grupo
+125	Usuários atribuídos ao grupo
+126	Copiar
+127	Usuários do grupo
+128	Backups e limpeza do banco de dados
+129	Criar backups
+130	Limpar backups
+131	Número de backups a serem mantidos
+132	Avançado
+133	Local
+134	GMT
+135	Horas
+136	Domínios de site
+137	Decodificar URL
+138	Pesquisar string
+139	Substituir string
+140	Acesso concedido
+141	Origens do registro para processar
+142	Origens do registro para processar
+143	Selecione um perfil acima
+144	Gerenciador de registro
+145	Gerenciador de filtro
+146	Gerenciador de registro
+147	Gerenciador de filtro
+148	Nome da origem do registro
+149	Nome do filtro
+150	Cancelar tarefa
+151	Informações sobre a origem do registro
+152	Caminho do arquivo de registro
+153	Formato do registro
+154	Configuração do usuário: configurar conjunto de relatórios
+155	Informações sobre o filtro
+156	Tipo de filtro
+157	Filtrar campo
+158	Incluir SOMENTE padrão
+159	Excluir padrão
+160	URL dinâmico
+161	Filtro(s) a ser(em) aplicado(s)
+162	Filtros disponíveis
+163	Filtros aplicados
+164	Campo A
+165	Campo B
+166	Destino dos dados de saída
+167	Extrair A
+168	Extrair B
+169	Construtor
+170	Substituir campo de saída
+171	Campo "A" obrigatório
+172	Sim
+173	Não
+174	Somente A obrigatório
+175	Somente B obrigatório
+176	Ambos os campos
+177	Qualquer campo
+178	Nenhum dos campos
+179	Selecionar conjunto de relatórios
+180	Conjuntos de relatórios
+181	Substituir conjunto de relatórios do perfil
+182	Dados geográficos
+183	Backup e limpeza do banco de dados do Urchin
+184	<nobr><span class=title1><b>Configurações globais: atualização automática (Ref. #A-2704)</b></span></nobr><p><b>Versões<br></b>A funcionalidade Atualização automática permite atualizar de forma independente os seguintes componentes do Urchin:<ul><li>Urchin - contém todos os componentes, menos os bancos de dados geográficos (aproximadamente 50 MB)</li><li>Artigos de ajuda - contém os a ajuda incorporada e os artigos da Central de Ajuda (aproximadamente 5 MB por idioma)</li><li>Bancos de dados geográficos - contém todos os bancos de dados geográficos (aproximadamente 200 MB)</li></ul>Ações disponíveis:<ul><li>verificar agora - verificar se há atualizações</li><li>visualizar lista de alterações - visualizar a lista de alterações de uma nova versão</li><li>programar download agora - iniciar o download de uma nova versão</li><li>cancelar - cancelar o download</li><li>instalar agora - iniciar o processo de instalação</li><li>visualizar registro de erros - visualizar erros</li></ul></p><p><b>Programar atualização<br></b>Use esses controles para determinar se, e quando, os componentes serão atualizados. Por padrão, os componentes são atualizados diariamente. Se esse componente estiver ativado, o Urchin fará download automaticamente das atualizações todos os dias no horário configurado. As atualizações do banco de dados geográficos são relativamente grandes (aproximadamente 200 MB). Desse modo, o download pode causar um impacto na largura de banda da rede.</p><p><b>Configurações de proxy HTTP (opcional)<br></b>Se o acesso externo ao servidor de downloads do Google que hospeda as atualizações dos dados geográficos requer o uso de um proxy, use esses campos para especificar o nome e a porta, além do nome de usuário e da senha, do servidor proxy.</p><p><b>Configurações de atualização<br></b>Se estiverem ativados, os artigos de ajuda ou os bancos de dados geográficos serão atualizados de acordo com o horário configurado em segundo plano, sem a interferência de usuários.</p>
+185	<nobr><span class=title1><b>Perfis: armazenamento/banco de dados (Ref. #A-2108)</b></span></nobr><br>Essa tela permite definir opções de gerenciamento de dados. Para as operações tolerantes a falhas, o Urchin fornece as opções automáticas de backup e recuperação. Use essas opções para garantir uma operação segura. O Urchin também fornece uma opção de arquivamento automático, que pode compactar automaticamente os dados antigos. <p><b>Uso da memória do banco de dados</b><br>Em operação normal, o Urchin usa um sistema de cache para limitar a quantidade de memória RAM que será usada pelo mecanismo de processamento. Pode haver um aumento no desempenho para a execução do processo inteiro na memória, mas isso deve ser usado somente em sistemas Urchin dedicados. Além disso, o processo pode consumir toda a memória RAM disponível no sistema. Para a maioria das operações, deixe esse recurso definido como “Limitar com sistema de cache”.<p><b>Limite por tabela do banco de dados</b><br>Para manter o volume de dados e o desempenho relacionado do Urchin controlado em sites grandes, essa configuração limitará toda tabela do banco de dados do Urchin conforme o número de registros listados. A opção padrão é apropriada para a maior parte das instalações. Em determinado mês, se esse limite for atingido, as entradas adicionais serão agrupadas em uma entrada denominada “Outros”. Para obter um desempenho ideal, use valores menores ou iguais a 100.000. <p><b>Manter dados de acompanhamento brutos</b><br>Essa opção, quando desativada, exclui os visitantes brutos e informações da sessão após o processamento. Isso pode melhorar significativamente o desempenho do processamento de registros e reduzir o volume de dados armazenados em sites grandes. Depois que os dados da sessão bruta forem excluídos, todos os acessos adicionais àquela sessão serão tratados como uma nova sessão, o que pode causar um efeito pequeno de margem no relatório. <p><b>Acompanhamento do registro</b><br>O Urchin está equipado com um recurso de controle do registro “inteligente” que permite determinar se um determinado arquivo de registro já foi processado ou não. Isso permite que você faça uma rotação dos registros sempre que for conveniente, e não de acordo com uma programação rígida. Também permite que você aponte o Urchin para um diretório de arquivos de registro sem se preocupar se alguns arquivos já foram processados. OBSERVAÇÃO IMPORTANTE: Se o Urchin não estiver instalado no sistema que armazena os arquivos de registro, ele copiará todos os registros para o sistema local do Urchin antes de determinar se os registros já foram processados. Isso causará uma sobrecarga significativa da rede, se houver arquivos de registro grandes sendo analisados.<p><b>Banco de dados de repetição automática</b><br>Quando está ativada, essa opção pode reparar os dados automaticamente, se o processamento for interrompido ou encerrado. O Urchin detectará automaticamente essa condição e repetirá os dados para o backup mais recente (presumindo que há um) antes de continuar.<p><b>Criar backups</b><br>Essa opção permite a criação automática de backups após o processamento. Os backups são compactados para o armazenamento.<p><b>Limpar backups</b><br> Essa opção permite a limpeza automática de backups antigos de acordo com o número desejado de backups que deve ser mantido na próxima opção. Se ela estiver ativada, o Urchin excluirá automaticamente os backups antigos, mantendo o armazenamento controlado. <p><b>Número de backups</b><br> Essa opção especifica quantos backups por mês devem ser mantidos para a função de limpeza mencionada acima.<p><b>Arquivar banco de dados</b><br> Essa opção permite o arquivamento automático dos dados mensais antigos. Os dados antigos são compactados automaticamente em um único arquivo, os backups são removidos e os dados são bloqueados. Os relatórios ainda podem exibir os dados arquivados, mas nenhum acesso daqueles meses que foram arquivados pode ser processado.<p><b>Arquivar banco de dados mais tarde</b><br>Essa opção especifica há quantos meses os dados antigos foram criados antes do arquivamento automático.<p><b>Excluir TODOS os dados do perfil</b><br>Use essa ação para excluir permanentemente TODOS os dados desse perfil, incluindo TODOS os backups e os arquivos. Será necessário reprocessar todos os arquivos de registro desse perfil. <b>Aviso</b>: Verifique se você tem todos os arquivos de registro antes de excluir esses dados.
+186	Personalizar
+187	Configurações do perfil
+188	Nome do perfil
+189	Domínio
+190	Informações sobre o perfil
+191	Bem-vindo ao Assistente configuração do Urchin. <p>O Assistente configuração é uma série simplificada de etapas de configuração. Com ele, você não perderá tempo. Se quiser fazer alterações posteriormente, você terá acesso total a todas as configurações na seção "Configuração" da interface administrativa.<p> Clique em "Continuar" para começar.
+192	<nobr><span class=title1><b>Programador: progresso da tarefa (Ref. #A-2664)</b></span></nobr><br>Essa tela mostra o progresso da tarefa que está em execução no momento. Ela também fornece controles para cancelar a tarefa em execução. Uma barra de progresso é exibida na parte superior da janela e mostra a porcentagem aproximada de processamento concluído. Use o botão “Cancelar tarefa” para interromper a tarefa em execução e restabelecer o perfil. Há um link clicável para o relatório do perfil acima da barra de progresso. A saída do tempo de execução do mecanismo de processamento do registro é exibida na janela “Detalhe do processo da tarefa”. <p>Observação: Se um arquivo de registro remoto grande estiver sendo processado, poderá levar muito tempo para copiar os dados. Durante esse tempo, a barra de progresso não se moverá. Depois que o arquivo for copiado para o computador que estiver executando o Urchin, a barra de progresso deverá ser atualizada de forma mais ou menos contínua.
+193	<nobr><span class=title1><b>Programador: detalhe do histórico (Ref. #A-2563)</b></span></nobr><br>O objetivo dessa tela é mostrar o detalhe da execução de uma tarefa, geralmente para fins de avaliação de depuração e desempenho. Se houver um erro, essa tela vai fornecer a indicação de uma solução. <p><b>Problemas comuns</b><br>Os problemas comuns incluem erros de “arquivo de registro não encontrado”, que geralmente podem ser solucionados facilmente através da correção de um caminho ou nome de arquivo. Se o FTP estiver sendo utilizado para mover os arquivos de registro pela rede, verifique se o nome de usuário e senha estão corretos, fazendo login no servidor com um programa de FTP dedicado. Se o tempo de “data proc” (processamento de dados) for apenas uma pequena fração do tempo de execução total, provavelmente há um problema com a cópia do arquivo de registro pela rede. Convém instalar o Urchin diretamente no servidor.
+194	<nobr><span class=title1><b>Navegador de arquivos (Ref. #A-5000)</b></span></nobr><br>Essa tela permite que você navegue pelo sistema de arquivos local para localizar a Origem do registro que você está procurando. Isso será especialmente útil se você não souber ao certo o nome do arquivo do registro. A caixa “Ir para o diretório” (lado esquerdo) é utilizada para selecionar um diretório para navegação. Os arquivos do diretório serão exibidos na caixa “Selecionar arquivo” (lado direito). Quando encontrar o arquivo de registro que deseja, clique nele na caixa “Selecionar arquivo” e, em seguida, clique em OK.<p><b>Diretório atual</b><br>O campo “Diretório atual”, na parte superior da janela, pode ser editado diretamente. Pressione “Voltar” para exibir o conteúdo desse diretório após a edição.<p><b>Diretório um nível acima</b><br>O ícone “Diretório um nível acima” na parte superior direita (ícone de pasta com seta), quando clicado, moverá o Diretório atual para cima para seu diretório-pai. O conteúdo do novo diretório será exibido.<p><b>Ir para o diretório</b><br>A janela à esquerda permite que você selecione um diretório dentro do diretório atual. Clique uma vez em um diretório relacionado na janela “Ir para diretório” para alterar os diretórios para esse diretório.<p><b>Selecionar arquivo</b><br>A janela “Selecionar arquivo” à direita permite que você selecione um arquivo. Clique uma vez no arquivo desejado e o nome dele será inserido no campo “Nome do arquivo”. Clique em OK ao concluir a seleção do arquivo.<p><b>OK/verificar/cancelar</b><br>O botão “OK” fecha a janela e preenche o campo do caminho da janela anterior com sua seleção. O botão “Cancelar” fecha a janela. O botão “Verificar” abre uma nova janela que lhe permite verificar as permissões e o tamanho de um único arquivo ou de vários arquivos, se for usado um curinga no nome do arquivo.
+195	<nobr><span class=title1><b>Navegador de registro remoto (Ref. #A-5001)</b></span></nobr><br>Essa tela permite que você navegue pelo sistema do arquivo remoto (usando o FTP) para localizar a origem do registro que está procurando. Isso é útil principalmente se você não tiver certeza do nome do arquivo de registro ou se quiser testar as definições do FTP configuradas no sistema do Urchin. A caixa “Ir para diretório” (lado esquerdo) é utilizada para selecionar um diretório para navegação. Os arquivos do diretório serão exibidos na caixa “Selecionar arquivo” (lado direito). Depois de encontrar o arquivo de registro que você quer, clique nele na caixa “Selecionar arquivo” e em “OK”.<p><b>Diretório atual</b><br>O campo “Diretório atual” na parte superior da janela pode ser editado diretamente. Pressione “Voltar” para exibir o conteúdo daquele diretório após a edição.<p><b>Diretório um nível acima</b><br>Quando clicado, o ícone “Diretório um nível acima” na parte superior direita (ícone de pasta com seta) moverá o diretório atual um nível cima para um diretório-pai. O conteúdo do novo diretório será exibido.<p><b>Ir para o diretório</b><br>A janela esquerda permite que você selecione um diretório dentro do diretório atual. Clique uma vez em um diretório relacionado na janela “Ir para o diretório” para alterar os diretórios.<p><b>Selecionar arquivo</b><br>A janela “Selecionar arquivo” à direita permite que você selecione um arquivo. Clique uma vez no arquivo desejado e seu nome será inserido no campo “Nome do arquivo”. Clique em “OK” ao concluir a seleção do arquivo.<p><b>OK/cancelar</b><br>O botão “OK” fecha a janela e preenche o campo do caminho da janela anterior com sua seleção. O botão “Cancelar” fecha a janela.
+196	<nobr><span class=title1><b>Navegador do diretório (Ref. #A-5002)</b></span></nobr><br>Essa tela permite navegar no sistema de arquivos locais do Urchin para selecionar um diretório para o parâmetro que está editando.<p><b>Diretório atual</b><br>O campo “diretório atual”, na parte superior da janela, pode ser editado diretamente. Pressione “Voltar” para exibir o conteúdo desse diretório após a edição.<p><b>Diretório um nível acima</b><br>Quando clicado, o ícone “Diretório um nível acima” na parte superior direita (ícone da pasta com seta) moverá o diretório atual um nível cima para um diretório-pai. O conteúdo do novo diretório será exibido.<p><b>Selecionar diretório</b><br>Use a janela “Selecionar diretório” selecionar ou ir para o diretório que você está procurando. Clique uma vez em um diretório relacionado para alterar seus diretórios. Quando o diretório atual exibir o diretório que você deseja, clique no botão “OK”.<p><b>OK/cancelar</b><br>O botão “OK” fechará a janela e preencherá o campo do caminho da janela anterior com sua seleção. O botão “Cancelar” fecha a janela.
+197	Superadministrador
+198	Usuário
+199	Administrador da conta
+200	Chinês
+201	Inglês
+202	Francês
+203	Alemão
+204	Italiano
+205	Japonês
+206	Coreano
+207	Português (Brasil)
+208	Espanhol
+209	Sueco
+210	Registro adicionado
+211	Registro atualizado
+212	Programar atualização do banco de dados geográficos
+213	Programar backup/limpeza do banco de dados do Urchin
+214	Banco de dados de repetição automática
+215	Manter dados brutos de acompanhamento
+216	Opções de relatório
+217	Selecione para editar.
+218	Padrão global
+219	Permissões de relatório
+220	Perfis disponíveis
+221	Acesso concedido
+222	Armazenamento/banco de dados
+223	Relatórios
+224	Grupos atribuídos ao grupo
+225	Origem do URI em letras minúsculas
+226	Grupos em grupo
+227	Configurações do relatório
+228	Conjunto de relatórios
+229	Conjunto de relatórios padrão do perfil
+230	Opções de armazenamento de dados
+231	Usuários disponíveis
+232	Grupos disponíveis
+233	Domínio UTM
+234	Grupos atribuídos a
+235	Membro destes grupos
+236	Configurações do registro
+237	Configurações do filtro
+238	Origens do registro disponíveis
+239	Aplicado a
+240	Origens do registro aplicadas a
+241	Visualização rápida do perfil
+242	Usuários atribuídos ao perfil
+243	Arquivar opções do banco de dados
+244	Arquivar banco de dados
+245	Arquivar banco de dados mais tarde
+246	Meses
+247	Tipo de perfil
+248	Assistente de perfis: configurações gerais
+249	<nobr><span class=title1><b>Assistente de perfis: configurações gerais (Ref. #A-249)</b></span></nobr><br>Use essa tela para definir diversos parâmetros que controlam como os dados desse perfil são processados.<p><b>URL do website</b><br>Essa configuração é usada para criar links de referência para seu website. Esse link deve ser o nome completo do domínio do site, incluindo http://. <p><b>Domínios do site</b><br>Essa configuração deve relacionar todos os domínios possíveis de seu site, com e sem www. Este campo é usado para determinar se uma referência é externa ao site (referências internas não são utilizadas no relatório de referência). Use vírgulas para separar cada entrada de domínio.<p><b>Página padrão</b><br>Use para inserir a página padrão do site. Frequentemente, a mesma página pode ser acessada por www.site.com/ e www.site.com/index.html ou default.html. O Urchin precisa saber qual é o nome dessa página para combinar as entradas internamente se visualizar ambos os estilos.<p><b>Processamento de registro paralelo</b><p>Ative essa opção para aumentar a eficiência de processamento de registros com registros de equilíbrio de carga. Isso requer a configuração de uma origem de registro separada para cada arquivo de registro de servidor com equilíbrio de carga.
+250	Erro na porta do servidor. \n\nVerifique se a porta está no intervalo correto.
+251	Privilégios do usuário
+252	Alterar senha
+253	Alterar idioma do relatório
+254	Recursos adicionais
+255	Módulos instalados
+256	Pacote do idioma
+257	Comércio eletrônico (Processamento ELF)
+258	Acompanhamento de campanha
+259	Limite de licença da origem do registro atingido. \n\nVerifique a tela de licença para obter informações sobre como atualizar a licença. \n\nConfigurações->Licença
+260	Codificação em Latim-1 (UTF-8)
+261	Usuário - Sem atualização
+262	Configurações da conta
+263	Localização de dados do relatório
+264	Localização de navegação do diretório
+265	Contabilidade
+266	Resumo da configuração do Urchin
+267	Número de contas
+268	Número de grupos
+269	Número de usuários
+270	Número de perfis
+271	UTM instalado
+272	Número de conjuntos de dados
+273	Número de origens do registro
+274	Número de formatos do registro
+275	Número de filtros do registro
+276	Número do esquema
+277	Número de campos do banco de dados
+278	Número de máquinas
+279	Número de tarefas programadas
+280	Resumo das contas
+281	Programador de tarefas de perfil
+282	Aplicativo
+283	Nome da tarefa
+284	Programar informações
+285	Programar configuração
+286	Número de processos
+287	Aplicativo a ser executado
+288	Configurações da tarefa
+289	Frequência
+290	Diariamente
+291	Semanal
+292	Mensalmente
+293	Uma vez
+294	Hora de início
+295	Hora
+296	Minuto
+297	Licença básica
+298	Programar tarefa diariamente
+299	Cada número de dias
+300	Programar tarefa semanalmente
+301	Cada número de semanas
+302	Dia da semana
+303	Seg
+304	Ter
+305	Qua
+306	Qui
+307	Sex
+308	Sáb
+309	Dom
+310	Programar tarefa mensalmente
+311	Dia do mês
+312	Programar tarefa uma vez
+313	Data
+314	Por hora
+315	Programar tarefa por hora
+316	Hora do dia
+317	Minuto da hora
+318	Todos
+319	(Nenhum)
+320	Selecionar
+321	Codificação de japonês (UTF-8)
+322	Processo
+323	Nome
+324	Hora inicial
+325	Horário de término
+326	Status
+327	Adicionar ajuda do perfil 2 do assistente
+328	Visitantes
+329	Exibições de página
+330	Acessos
+331	Bytes
+332	Campos personalizados
+333	Separador personalizado
+334	Totais
+335	Programar agora
+336	Programar posteriormente
+337	Visualizar
+338	Assistente de perfis: copiar confirmação
+339	Duplicação do perfil efetuada. Agora, você pode fazer as alterações no perfil clicando em “Mais opções”. Se quiser executar outras operações, clique em “Concluído”.
+340	Programador de tarefas de perfil
+341	Ir para o relatório
+342	Nenhum relatório para visualizar
+343	Preferências
+344	Essa tela mostra um resumo do perfil copiado. Se as configurações estiverem corretas, clique em "Concluir" para concluir a duplicação. Se quiser fazer alterações, clique no botão "Voltar".
+345	Registros (consulte a ajuda para obter detalhes)
+346	Hora local
+347	Assistente de perfis: copiar "Finalizar"
+348	Minutos
+349	<nobr><span class=title1><b>Assistente de perfis: copiar (Ref. #A-349)</b></span></nobr><br>Essa tela permite que você copie um perfil existente. O perfil criado será idêntico, a não ser que você especifique o nome, o URL primário (nome do domínio) e todos os URLs adicionais que apontam para esse site.<p><b>Conta opcional</b> (modo Datacenter)<br>No modo Datacenter, a configuração da conta pode ser usada para associar esse perfil a uma conta que pode ser usada para controlar o acesso e a administração no nível da conta.<p><b>Nome do perfil</b><br>Esse campo obrigatório define o nome associado a esse perfil. Esse nome exclusivo pode ser arbitrário ou pode ser o nome do site. Se for inserido um nome de site como www.urchin.com, os outros dois campos serão preenchidos, automaticamente, por conveniência.<p><b>URL do website</b><br>Esta configuração é utilizada para criar links de referência de volta a seu site. Deve ser o nome completo do domínio do site, incluindo http://. <p><b>Domínios do site</b><br>Essa configuração deve relacionar todos os domínios possíveis de seu website, com e sem www. Esse campo é utilizado para determinar se uma referência é externa a seu site. Use vírgulas para separar cada entrada de domínio.<p><b>Domínio UTM Domain</b> (para perfis acompanhados pelo UTM)<br>Deixe esse campo em branco em condições normais. O UTM detecta automaticamente o domínio do site. O recurso “Domínio UTM” é usado somente quando você tem sobreposição de domínios que precisam ser acompanhados separadamente.
+350	Prioridade de execução do Urchin
+351	Baixo
+352	Normal
+353	Alto
+354	Configurações de acesso
+355	Informações sobre a licença
+356	Código da licença
+357	Número de série
+358	Configurações de acesso remoto
+359	Assistente de perfis: copiar
+360	Acesso aos relatórios na web
+361	Administração na web
+362	Configurações do servidor de relatórios
+363	Número da porta do servidor
+364	Assistente de configuração do Urchin: Bem-vindo
+365	Assistente de configuração: configurações administrativas
+366	Assistente de configuração: usuário administrativo
+367	Assistente de configuração: consulta DNS
+368	<nobr><span class=title1><b>Assistente de origem do registro: registros disponíveis (Ref. #A-368)</b></span></nobr><br>Essa tela mostra a lista de origens do registro disponíveis e permite que você as adicione ao perfil.<p><b>Adicionar origem do registro</b><br>Para adicionar uma origem do registro a esse perfil, selecione-a na janela à esquerda e clique na seta voltada para a direita. Para remover uma origem de registro desse perfil, selecione-a na janela à direita e clique na seta voltada para a esquerda. Clique em "Concluir" para aplicar as alterações.
+369	<nobr><span class=title1><b>Assistente de filtros: filtros disponíveis (Ref. #A-369)</b></span></nobr><br>Essa tela mostra a lista de Filtros que foram configurados anteriormente e permite que você aplique-os a este Perfil/Origem do registro.<p><b>Aplicar filtro</b><br>Para aplicar um filtro existente a esse perfil/origem do registro, clique no filtro na caixa à esquerda, em seguida, na seta voltada para a direita. Você pode aplicar mais de um filtro a qualquer perfil ou origem do registro. Para remover um filtro, clique nele na caixa à direita e na seta voltada para a esquerda. Clique em "Finalizar" para aplicar as alterações.
+370	UNC
+371	Próxima
+372	Voltar
+373	Concluir
+374	Continuar
+375	<nobr><span class=title1><b>Assistente de configuração: configurações administrativas (Ref. #A-375)</b></span></nobr><br>Use essas configurações para controlar o acesso ao sistema do Urchin.<p><b>Acesso a relatórios com base na web</b><br>Esta configuração permite que você controle se os relatórios podem ser visualizados em computadores diferentes daquele onde o Urchin está sendo executado. Para permitir o acesso remoto aos relatórios, selecione “ativar”. <p><b>Administração com base na web</b><br>Essa configuração ativa ou desativa o acesso à administração com base na web para a configuração do Urchin. Se desejar controlar a operação do Urchin de um computador diferente daquele em que o Urchin está instalado, selecione “ativar”. OBSERVAÇÃO IMPORTANTE: Se estiver realizando essa configuração de um computador diferente daquele em que o Urchin está realmente em execução e não ativar a administração com base na web, você poderá acessar somente o sistema administrativo a partir do console do computador do Urchin. <p><b>Modo Datacenter</b><br>Essa opção ativa contas e subadministradores na configuração. Esses controles adicionais permitem que os datacenters gerenciem clientes complexos e forneçam recursos administrativos limitados a esses clientes. Ao agrupar perfis, arquivos de registro e usuários em uma conta, o datacenter pode controlar a localização dos dados e os privilégios administrativos do cliente.
+376	<nobr><span class=title1><b>Assistente de configuração: usuário administrativo (Ref. #A-376)</b></span></nobr><br>Use essa tela para definir a senha administrativa para o sistema do Urchin. Como todas as distribuições do Urchin são enviadas com a mesma senha padrão, é importante alterá-la durante a configuração.<p><b>Senha do administrador</b><br>Essa tela permite que você altere a senha do usuário administrador dessa instalação do Urchin. É recomendado selecionar uma senha exclusiva que manterá o sistema seguro. Não esqueça a senha, pois ela será solicitada para alterar a configuração do Urchin.<p>Se o Acesso ao administrador remoto foi desativado na etapa anterior, será necessário acessar o Urchin diretamente na máquina onde ele está sendo executado. Nesse caso, o Urchin não solicitará a senha.<p>Para configurar a sua instalação do Urchin para utilizar SSL como uma medida de segurança adicional, consulte a Central de documentação para obter as informações mais recentes.
+377	<nobr><span class=title1><b>Verificação do registro (Ref. #A-5003)</b></span></nobr><br>Essa tela permite que você examine o arquivo de registro selecionado e verifique se ele é a origem do registro correta. Para obter informações sobre o registro, clique em seu nome na caixa à esquerda e observe o texto que aparece na caixa inferior. Serão exibidos local (caminho), tamanho, data de modificação e permissões associadas àquele registro. Para alterar os parâmetros da seleção do registro, altere o texto no campo superior. Você pode usar expressões regulares, como um asterisco (por exemplo: access_log*, que selecionará todos os registros com 'access_log') ou uma expressão de data (por exemplo: access_logDDMMAAAA). Para visualizar os resultados da correspondência padrão, pressione a tecla Enter. Clique em "OK" para continuar.<p><b>Arquivo(s) de registro</b><br>O campo "Arquivo(s) de registro", na parte superior da janela, pode ser editado diretamente. Pressione "Voltar" para exibir os resultados dessa entrada.<p><b>Arquivos selecionados</b><br>Clique em um arquivo na janela "Arquivos selecionados" para visualizar as informações desse arquivo específico. As informações são apresentadas na parte inferior da janela.<p><b>Outros arquivos no diretório</b><br>Clique em um arquivo dessa janela para visualizar as informações desse arquivo específico. As informações são apresentadas na parte inferior da janela.<p><b>OK/cancelar</b><br>O botão "OK fecha a janela e preenche o campo do caminho da janela anterior com sua seleção. O botão "Cancelar" fecha a janela.
+378	<nobr><span class=title1><b>Assistente de configuração: consulta DNS (Ref. #A-378)</b></span></nobr><br>Essa tela permite que você defina os parâmetros da Consulta DNS para essa instalação do Urchin. Em suma, a consulta DNS é a conversão do endereço IP numérico, como 63.212.171.4, em nomes de domínio, como www.urchin.com. Em geral, convém ativar a Consulta DNS para que você obtenha informações valiosas de domínio em seus relatórios. <p><b>Consulta DNS</b><br>Selecione o botão "ativar" para ativar esse recurso.<p><b>IP do resolvedor</b><br>Use esse campo para inserir o endereço IP de um servidor DNS válido, seu próprio ou o do provedor, no campo "IP do resolvedor". Se não souber o IP, peça ao administrador do sistema ou ao provedor de acesso à internet. O servidor DNS deve ser local para sua rede para funcionar corretamente.
+379	(recomendado)
+380	Página padrão
+381	Perfis atribuídos a
+382	Nenhum <b>perfil</b> na configuração. Clique no botão “Adicionar”<br> no canto superior direito para adicionar um novo <b>perfil</b>.
+383	Nenhuma <b>origem do registro</b> na configuração. Clique no botão “Adicionar”<br> no canto superior direito para adicionar uma nova <b>origem do registro</b>.
+384	Nenhum <b>Filtro</b> na configuração. Clique no botão “Adicionar”<br> no canto superior direito para adicionar um novo <b>Filtro</b>.
+385	Nenhum <b>Usuário</b> na Configuração. Clique no botão "Adicionar"<br> no canto superior direito para adicionar um novo <b>Usuário</b>.
+386	Assistente de perfis: configurações do perfil
+387	Nenhum <b>grupo</b> na configuração. Clique no botão “Adicionar”<br> no canto superior direito para adicionar um novo <b>grupo</b>.
+388	Assistente de perfis: configurações do registro
+389	Nenhuma <b>Tarefa</b> na Configuração. Inclua<br> um perfil para adicionar a tarefa associada.
+390	Ativar tarefa
+391	<nobr><b>Assistente de perfis: informações do perfil</b></span></nobr><br>Use essa tela para definir o nome e o tipo de perfil que está sendo adicionado. <p><b>Conta opcional</b> (modo Datacenter)<br>No modo Datacenter, a configuração da conta pode ser usada para ligar esse perfil a uma conta. As contas podem ter seus próprios administradores, que podem controlar e modificar configurações em suas contas.<p><b>Nome do perfil</b><br>Esse campo obrigatório define o nome associado a esse perfil. Tal nome exclusivo pode ser arbitrário ou o nome de um website ou service.<p><b>Tipo de perfil</b><br>Geralmente, essa configuração não precisa ser ajustada, a menos que você tenha mapas de dados personalizados configurados. Se tiver tais mapas, use essa configuração para controlar qual mapa de dados se aplica a esse perfil.<p><b>Website de comércio eletrônico</b><br>Se estiver planejando processar dados de comércio eletrônico em conjunto com esse perfil, defina essa configuração como “Sim”. Caso contrário, defina-a como “Não”. Quando o comércio eletrônico estiver desativado, você poderá definir um valor em dólares para uma meta para fornecer informações de ROI gerais.<p><b>Método de acompanhamento de visitantes</b><br>O Urchin possui duas maneiras de identificar os visitantes. A mais precisa é usar a codificação javascript do UTM. Se você tiver o UTM instalado, selecione-o. Se não tiver, selecione o método IP + User-Agent. Alguns relatórios não serão preenchidos, a menos que você esteja usando o UTM.<p><b>Domínio do UTM</b><br>Deixe em branco em condições normais. O UTM detectará automaticamente o domínio do site. O recurso Domínio do UTM será usado somente quando houver domínios sobrepostos que precisem ser acompanhados separadamente.
+392	<nobr><span class=title1><b>Assistente de perfis: configurações do registro (Ref. #A-391)</b></span></nobr><br>Essa tela relaciona todas as “Origens do registro” que devem ser processadas para esse perfil. Use o botão “Adicionar” na parte superior direita para iniciar o Assistente de origem do registro e incluir uma origem do registro adicional. Sites de equilíbrio de carga com diversas origens do registro precisam de licenciamento adicional. Quando o processo for concluído, você voltará para esta tela. Clique em “Concluir” para fechar o assistente.<p><b>Opções de equilíbrio de carga</b><br>Essa opção estará disponível se você tiver adquirido uma Licença de equilíbrio de carga. Quando o Processamento de registro paralelo é ativado, o Urchin abre todos os arquivos de registro de uma só vez e os lê de forma rotativa, uma seção de cada vez, sendo que cada seção corresponde a 15 minutos de atividade de registro. A ativação dessa opção aumenta significativamente o desempenho nos sites com equilíbrio de carga.<br><p><b>Add</b><br>Clique no botão “Adicionar”, no canto superior direito, para adicionar uma origem do registro a esse perfil. Depois que o Limite de licença for atingido, o botão “Adicionar” será desativado.
+393	Essa tela mostra um resumo do perfil configurado. Se as configurações estiverem corretas, clique em "Concluir" para concluir a configuração. Se quiser fazer alterações, clique no botão "Voltar".
+394	Assistente de origem do registro: origens do registro disponíveis
+395	Assistente de origem do registro: opções
+396	Assistente de origem do registro: concluir
+397	Configurações da origem do registro
+398	Nenhum <b>Histórico de tarefas de perfil</b> encontrado.
+399	Grupo adicionado. Agora, esse grupo será disponibilizado para organização de usuários e de outros grupos em unidades fáceis de gerenciar. Clique em "Mais opções" para editar os usuários e o acesso aos relatórios desse grupo. Clique em "Concluído" para sair dessa tela.
+400	O perfil foi configurado. Para adicionar uma origem do registro existente, clique em "Adicionar origem do registro existente". Para criar uma nova origem do registro e anexá-la a este perfil, clique em "Adicionar nova origem do registro", na parte inferior dessa tela. Para configurar opções adicionais do perfil, clique em "Opções de relatório". Para programar a execução desse perfil agora ou no futuro, selecione "Programar agora'.
+401	Assistente de perfis: concluir
+402	Assistente de perfis: confirmação
+403	Assistente de origem do registro: localização do registro remoto
+404	Concluído
+405	Usuário adicionado. Agora, esse usuário poderá acessar um ou mais relatórios do perfil. Para conceder acesso ou ajustar as permissões do grupo, clique no link “Mais opções”. Clique em “Concluído” para sair dessa tela.
+406	Falha na adição do registro. <p> Já existe outro registro com o mesmo nome. <br>Volte e corrija o erro.
+407	Resultado do Assistente de perfis.
+408	Assistente de origem do registro: concluir
+409	Resultado do Assistente de filtros.
+410	Assistente de origem do registro: confirmação
+411	Resultado do assistente de origem do registro.
+412	Assistente de filtros: opções
+413	Assistente de filtros: configurações
+414	Assistente de filtros: concluir
+415	Assistente de filtros: confirmação
+416	<nobr><span class=title1><b>Assistente de filtros: opções (Ref. #A-416)</b></span></nobr><br>Essa tela permite usar um filtro criado anteriormente ou criar um novo. Assim, você pode criar um tipo de filtro uma vez e usá-lo quantas vezes quiser.<p><b>Adicionar novo filtro</b><br>Selecione essa opção para criar um novo filtro e aplicá-lo a esse perfil/origem do registro.<p><b>Filtro pré-configurado</b><br>Selecione essa opção para aplicar um filtro que já esteja no sistema do Urchin a esse perfil/origem do registro.
+417	Pronto. Você está pronto para começar a usar o Urchin. <br>Clique em "Concluído" para começar a adicionar seu primeiro perfil.
+418	Essa tela mostra um resumo do filtro configurado. Se as configurações estiverem corretas, clique em "Concluir" para concluir a configuração. Se quiser fazer alterações, clique no botão "Voltar".
+419	A configuração do filtro foi concluída. Para aplicar esse filtro a um ou mais perfis ou às origens do registro, clique no link "Mais opções". O único motivo de se aplicar um filtro a uma origem do registro, e não a um perfil, é se mais de um perfil utilizar a mesma origem do registro. Clique em "Concluído" para sair dessa tela.
+420	Cancelar
+421	Assistente do usuário: informações básicas
+422	Assistente do usuário: configurações do usuário
+423	Assistente de usuários: grupos
+424	Assistente do usuário: acesso ao relatório
+425	Assistente do usuário: concluir
+426	Assistente do usuário: confirmação
+427	<nobr><span class=title1><b>Assistente do usuário: informações básicas (Ref. #A-427)</b></span></nobr><br>Use essa tela para definir o nome de usuário e a senha do novo usuário.<p><b>Conta opcional</b> (modo Datacenter)<br>No modo Datacenter, a configuração da conta pode ser usada para ligar esse usuário a uma conta. Elas podem ter seus próprios administradores, que podem controlar e modificar as configurações em suas próprias contas.<p><b>Nome de usuário</b><br>Cada usuário deverá fazer login com seu nome de usuário e sua senha. Use esse campo para especificar um nome de usuário exclusivo para cada usuário. Eles não podem conter espaços.<p><b>Senha</b><br>Insira a senha nos campos" Senha" e "Confirmar senha" desse usuário. Ele poderá alterá-la na área "Preferências".<p><b>Tipo de autenticação</b><br>Na caixa de listagem "Tipo de autenticação", escolha o método a ser usado para autenticar os usuários, como Native/LDAP/MSAD. “Native”é a autenticação nativa do Urchin. Outros valores de tipo de autenticação se referem a métodos de personalização alternativos que podem ser configurados em sua instância do Urchin por um administrador. Se o valor da caixa de listagem "Tipo de autenticação" não for "Native", os campos "Senha" e "Confirmar senha" serão desativados. A caixa de listagem "Tipo de autenticação" é exibida somente quando pelo menos um provedor de autenticação personalizada estiver configurado por um administrador em sua instância do Urchin.<p><b>Nome completo</b><br>Use esse campo para especificar o nome e o sobrenome do usuário.
+428	<nobr><span class=title1><b>Assistente do usuário: configurações do usuário (Ref. #A-428)</b></span></nobr><br>Essa tela permite que você defina os privilégios administrativos (se houver) e as configurações de localização padrão do usuário.<p><b>Nível de administrador</b><br>Essa opção controla se esse usuário tem privilégios administrativos. A configuração “Usuário” indica a capacidade de visualizar relatórios e de alterar a senha pessoal e a localidade. Por outro lado, ela não controla a configuração. A configuração “Usuário - Sem atualização” indica a capacidade de visualizar relatórios sem capacidade de alterar preferências pessoais. O “Administrador da conta” tem capacidades administrativas limitadas, como a de adicionar usuários e de configurar metas. O “superadministrador” tem controle completo sobre o sistema. Somente um superadministrador existente pode criar um novo usuário superadministrador. <p><b>Idioma do relatório</b><br>Essa opção permite que você escolha um idioma no qual esse usuário visualizará os relatórios. O usuário poderá alterar o idioma na guia “Preferências”.<p><b>Região</b><br>Use a configuração de região para controlar o estilo de localização da visualização de relatórios desse usuário. Essa configuração controla o formato de datas, horários e números, que podem ser exibidos de forma diferente em várias localidades. Se você não visualizar o país do usuário na lista, selecione uma região que use os mesmos formatos de data/número.<p><b>Acesso às ferramentas do Google AdWords</b><br/>Essa opção controla o acesso do usuário às “Ferramentas do Google AdWords” na interface de geração de relatórios. Se você ativar essa opção, as ferramentas do Google AdWords serão disponibilizadas em TODOS os perfis com dados de CPC aos quais o usuário tem acesso. Se você desativar essa opção, os relatórios relacionados ao CPC se tornarão somente leitura (por exemplo, oculta todas as ferramentas do Google AdWords).</p><p>Clique em “Concluir” para fechar o assistente.
+429	Essa tela permite associar um ou mais grupos ao usuário em questão. Isso permitirá que você forneça ao usuário acesso a dois sites diferentes, por exemplo. Para atribuir um grupo a esse usuário, destaque o grupo na caixa à esquerda e clique na seta voltada para a direita. Para remover esse usuário de um grupo, selecione o grupo na caixa à direita e clique na seta voltada para a esquerda. Ao concluir essa etapa, clique em "Avançar" para prosseguir.
+430	Essa tela permite que você associe um ou mais relatórios ao usuário em questão. Para adicionar o acesso aos relatórios a um usuário, destaque o relatório na caixa à esquerda e clique na seta voltada para a direita. Para remover o acesso aos relatórios de um usuário, selecione o relatório na caixa à direita e clique na seta que voltada para a esquerda. Ao concluir essa etapa, clique em "Avançar" para prosseguir.
+431	Essa tela mostra um resumo do usuário configurado. Se as configurações estiverem corretas, clique em "Concluir" para concluir a configuração. Se quiser fazer alterações, clique no botão "Voltar".
+432	Resultado do Assistente do usuário.
+433	Assistente de grupos: informações básicas
+434	Assistente de grupos: configurações
+435	Assistente do grupo: grupos dentro do grupo
+436	Assistente de grupos: acesso ao relatório
+437	Assistente do grupo: concluir
+438	Assistente do grupo: confirmação
+439	<nobr><span class=title1><b>Assistente do grupo: informações básicas (Ref. #A-439)</b></span></nobr><br>Use essa tela para definir as configurações básicas necessárias para a criação de um grupo. Os grupos podem ser utilizados para conceder acesso aos relatórios a vários usuários de uma só vez.<p><b>Conta opcional</b> (modo Datacenter)<br>No modo Datacenter, a conta pode ser usada para vincular esse grupo a uma conta específica que é utilizada para gerenciar os clientes complexos. As contas podem ser consideradas como "supergrupos", e cada uma delas pode ter seu próprio administrador. <p><b>Nome do grupo</b><br>Use esse campo para especificar o nome do grupo. Use qualquer nome descritivo. Os nomes dos grupos devem ser exclusivos.<p><b>Descrição do grupo</b> (opcional) <br>Esse campo é usado para fornecer uma descrição do grupo. É útil para acompanhar o objetivo dos diversos grupos. Use qualquer nome descritivo. Clique em "Concluir" para fechar o assistente.
+440	Essa tela permite que você selecione os usuários disponíveis que foram definidos na configuração do Urchin, se houver, e adicione-os ao grupo em questão. Para adicionar um usuário a um grupo, destaque-o na caixa esquerda e clique na seta que aponta para a direita. Para remover um usuário de um grupo, selecione-o em "Usuários" na caixa "Grupo" e clique na seta que aponta para a esquerda. Quando concluir essa etapa, clique em "Avançar" para continuar.
+441	Essa tela permite selecionar os grupos disponíveis que foram definidos na configuração do Urchin, se houver, e adicioná-los ao grupo em questão. Esse recurso é útil para organizar hierarquicamente os vários grupos de seu sistema. Para adicionar um grupo a outro, destaque-o na caixa à esquerda e clique na seta que aponta para a direita. Para remover um grupo de outro, selecione-o da caixa à direita e clique na seta que aponta para a esquerda. Ao concluir essa etapa, clique em "Avançar" para prosseguir.
+442	Essa tela permite que você selecione relatórios disponíveis definidos na configuração do Urchin, se houver, e que o grupo em questão possa visualizá-los. Para adicionar a permissão de visualização do relatório a um grupo, destaque o relatório na caixa à esquerda e clique na seta voltada para a direita. Para remover a permissão de visualização do relatório de um grupo, selecione o relatório na caixa à direita e clique na seta que voltada para a esquerda. Quando concluir esta etapa, clique em "Avançar" para prosseguir.
+443	Essa tela mostra um resumo do grupo configurado. Se as configurações estiverem corretas, clique em "Concluir" para concluir a configuração. Se quiser fazer alterações, clique no botão "Voltar".
+444	Resultado do assistente do grupo.
+445	Assistente de tarefas: informações básicas
+446	Assistente de filtros: filtros disponíveis
+447	Assistente de filtros: concluir
+448	<nobr><span class=title1><b>Gerenciador de filtro: configurações de filtro (Ref. #A-1701)</b></span></nobr><br>Essa tela permite definir e ajustar as configurações de um filtro. Para obter mais informações sobre filtragem, consulte o manual ou a Central de documentação on-line.<p><b>Exemplos</b><br>Ao adicionar um novo filtro, uma lista de filtros de exemplo será fornecida para sua conveniência. Se você selecionar um filtro de exemplo, as configurações do filtro serão preenchidas automaticamente que, em seguida, devem ser editadas para fins específicos. Essa pode ser uma maneira fácil de ver como as configurações são criadas para vários filtros comuns.<p><b>Conta opcional</b> (somente modo Datacenter)<br>Para novos filtros, permite selecionar a conta à qual o filtro deve ser associado. Para os filtros existentes, o nome da conta à qual o filtro pertence é exibido.<p><b>Nome do filtro</b><br>Esse campo obrigatório é um nome arbitrário que é utilizado por conveniência ao fazer referência a esse filtro. Insira algum dado que seja exclusivo do filtro.<p><b>Tipo de filtro</b><br>Selecione um dos tipos de Filtro, de acordo com a função que você quer que o filtro faça: <li><b>Excluir padrão</b>: Esse tipo de filtro excluirá <i>somente</i> as linhas do arquivo de registro (acessos) que correspondem ao Termo de filtragem. As linhas que não correspondem ao padrão serão completamente ignoradas. Desse modo, um filtro que exclui o Netscape, por exemplo, fará com que o Urchin exclua todas as outras informações daquela linha do registro, como visitante, caminho, referência e informações sobre o domínio. <li><b>Incluir padrão</b>: Esse tipo de filtro incluirá <i>somente</i> as linhas do arquivo do registro (acessos) que correspondem ao Termo de filtragem -- todas as outras serão ignoradas. Conforme o exemplo acima, todos os acessos que são ignorados tornam-se completamente indisponíveis para o sistema do Urchin do ponto de vista do relatório. <li><b>Pesquisar e substituir</b>: Esse é um filtro simples que pode ser utilizado para pesquisar um padrão dentro de um campo e substituir o padrão encontrado por uma forma alternativa. Se o padrão ocorrer mais de uma vez no campo, somente a última ocorrência será substituída. O caractere “^” pode ser utilizado para corresponder o início do campo e o caractere $ pode ser utilizado para vincular a correspondência ao final do campo. <li><b>Tabela de consulta</b>: A escolha desse filtro permite que você selecione um nome da tabela de consulta que pode ser usada para mapear os códigos para marcadores compreensíveis. Um arquivo de tabela de consulta correspondente deve ser criado e instalado no diretório lib/custom/lookuptables da distribuição do Urchin. As tabelas de consulta existentes podem ser selecionadas no campo "Nome da tabela".<li><b>Avançado</b>: Esse tipo de filtro permite que você crie um campo usando um ou dois outros campos. O mecanismo de filtragem aplicará as expressões dos dois campos "Extrair" nos campos especificados e, em seguida, construirá um campo utilizando a expressão “Construtor”. A técnica segue o uso da expressão regular POSIX. <p><b>Filtrar campo</b><br>Utilize o menu suspenso para selecionar o campo "Origem do registro" ao qual o filtro será aplicado. Os campos marcados como "BRUTO" representam o conteúdo real do arquivo de registro sem nenhum processamento. Os campos marcados como "AUTOMÁTICO" são campos calculados automaticamente que são determinados com base nos campos "BRUTO" e "AUTOMÁTICO". Para obter uma lista de como todos os campos são utilizados, consulte a seção da "Central de documentação on-line. <p><b>Padrão de filtro</b><br>Defina essa opção para o padrão ao qual o filtro deve corresponder. O padrão pode utilizar curingas que são definidos pela expressão regular padrão POSIX.<p><b>String de pesquisa</b><br>Para os filtros Pesquisar e substituir, a String de pesquisa é utilizada como o padrão para corresponder ao campo.<p><b>String de substituição</b><br>Para os filtros Pesquisar e substituir, a “String de substituição” é utilizada como a substituição da String de pesquisa.<p><b>Nome da tabela</b> (somente Tabela de consulta)<br>Esse campo, que fica visível quando você seleciona a Tabela de consulta como o tipo de filtro, permite a seleção da tabela que mapeia os códigos para nomes que podem ser compreendidos pelo ser humano. A tabela de modelos de telefone mapeia os identificadores da plataforma do telefone abreviada para o modelo e os nomes do fabricante dos navegadores on-line de telefone. Você pode criar suas próprias tabelas de consulta para mapear os códigos para campanhas (para o Módulo de acompanhamento de campanhas) ou para mapear variáveis em um URL para os nomes de página. Qualquer arquivo que você criar com uma extensão de arquivo .lt no diretório lib/custom/lookuptables da distribuição do Urchin aparecerá nesse menu suspenso.<p><b>Nome do arquivo</b> (Somente Tabela de consulta externa)<br>Esse campo, visível quando você seleciona a Tabela de consulta como o tipo de filtro, permite a seleção de um arquivo de Tabela de consulta externa, que mapeia os códigos para nomes que podem ser compreendidos pelo ser humano. Você pode criar suas próprias tabelas de consulta para mapear os códigos para campanhas (para o Módulo de acompanhamento de campanhas) ou para mapear variáveis em um URL para os nomes de página.<p><b>Nome de usuário/senha</b> (Windows, somente Tabela de consulta externa)<br>Esses campos são usados para especificar as credenciais do usuário para o compartilhamento UNC no qual a Tabela de consulta externa está localizada.<p><b>Controles</b><br>Clique no botão "Concluir" (para um novo filtro) ou no botão "Atualizar" (para um filtro existente) para salvar as alterações. Para filtros existentes, as guias na parte superior da tela permitem acessar todas as configurações editáveis desse filtro.
+449	<nobr><span class=title1><b>Filtros: perfis (Ref. #A-1702)</b></span></nobr><br>Essa tela é usada para aplicar esse filtro a um ou mais perfis existentes. Depois que um filtro for aplicado a um perfil, todas as origens de registro associadas ao perfil serão filtradas durante seu processamento.<p><b>Aplicar ao perfil</b><br>Para aplicar esse filtro a um perfil, selecione o nome do perfil na caixa "Perfis disponíveis" e clique na seta voltada para a direita. Para remover esse filtro de um perfil, selecione o perfil na caixa "Aplicar a" e clique na seta voltada para a esquerda. Clique em "Atualizar" para aplicar as alterações.<p><b>Controls</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse filtro.
+450	<nobr><span class=title1><b>Filtros: origens do registro (Ref. #A-1703)</b></span></nobr><br>Essa tela é usada para aplicar esse filtro a uma ou mais origens do registro existentes. Quando esse filtro é aplicado a uma origem do registro, todo o processamento dela usa o filtro, independentemente do perfil que está sendo executado.<p><b>Aplicar à origem do registro</b><br>Para aplicar esse filtro a uma origem do registro, selecione seu nome na caixa "Origens do registro disponíveis" e clique na seta voltada para a direita. Para remover esse filtro de uma origem do registro, selecione-a na caixa "Aplicado a" e clique na seta voltada para a esquerda. Clique em "Atualizar" para aplicar as alterações.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acesso a todas as configurações editáveis desse filtro.
+451	<nobr><span class=title1><b>Gerenciador de: resumo (Ref. #A-1704)</b></span></nobr><br>Essa tela mostra o conjunto completo de parâmetros desse filtro. Examine essas configurações cuidadosamente antes de processar qualquer perfil para garantir que esteja tudo correto. Se precisar fazer qualquer ajuste, clique na guia apropriada e atualize as configurações conforme necessário. <p><b>Controles</b><br>As guias na parte superior da tela permitem acessar todas as configurações editáveis desse filtro.
+452	<nobr><span class=title1> <b>Usuários: informações do usuário (Ref. #A-1301)</b></span></nobr><br>Essa tela permite editar as diversas configurações desse usuário. <p><b>Conta opcional</b> (somente modo Datacenter)<br>Exibe a conta à qual o usuário está associado.<p><b>Nome de usuário</b><br>Use esse campo para especificar um nome de usuário exclusivo para esse usuário. Os nomes de usuário não podem conter espaços.<p><b>Tipo de autenticação</b><br>Na caixa de listagem "Tipo de autenticação", escolha o método a ser usado para autenticar usuários, como Native/LDAP/MSAD. "Native" é a autenticação nativa do Urchin. Outros valores de tipo de autenticação se referem a métodos de personalização alternativos que podem ser configurados em sua instância do Urchin por um administrador. Se o valor da caixa de listagem "Tipo de autenticação" não for "Native", os campos "Senha" e "Confirmar senha" serão desativados. A caixa de listagem "Tipo de autenticação" é exibida somente quando pelo menos um provedor de autenticação personalizada estiver configurado por um administrador em sua instância do Urchin.<p><b>Senha</b><br>As senhas devem ter pelo menos oito caracteres e não podem conter espaços. As senhas fazem distinção entre maiúsculas e minúsculas. Desse modo, "senha" é diferente de "Senha". Para alterar a senha, insira-a nos campos "Senha" e "Confirmar senha". Se tiver feito alterações, clique no botão "Atualizar". <p><b>Nome completo</b><br>Use esse campo para especificar o nome completo da pessoa que fará login como usuário.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse usuário.
+453	<nobr><span class=title1>    <b>Usuários: preferências (Ref. #A-1302)</b></span></nobr><br>Essa tela permite editar diversas configurações desse usuário, incluindo o nível administrativo e o idioma padrão. <p><b>Nível de administrador</b><br>Essa opção controla se esse usuário tem privilégios administrativos. A configuração "Usuário" indica a capacidade de visualizar relatórios e de alterar as preferências, mas não controla a configuração. "Usuário - Sem atualização" não tem capacidade de edição e pode apenas visualizar os relatórios. "Administrador da conta" tem capacidade administrativa limitada dentro do grupo da conta (utilizado no modo Datacenter). "Superadministrador" tem controle completo sobre o sistema. Somente um superadministrador existente pode definir o Nível de administrador como Superadministrador.<p><b>Idioma do relatório</b><br>Essa opção permite que você escolha um idioma no qual esse usuário visualizará os relatórios. O usuário poderá alterar o idioma na guia "Preferências".<p><b>Região</b><br>Use a configuração de região para controlar o estilo de localização da visualização de relatórios desse usuário. Essa configuração controla o formato de datas, horários e números, que podem ser exibidos de forma diferente em várias localidades. Se você não visualizar o país do usuário na lista, selecione uma região que use os mesmos formatos de data/número. <p><b>Acesso às ferramentas do Google AdWords</b><br>Essa opção controla o acesso do usuário às "Ferramentas do Google AdWords" na interface de geração de relatórios. Se você ativar essa opção, as ferramentas do Google AdWords serão disponibilizadas em TODOS os perfis com dados de CPC aos quais o usuário tem acesso. Se você desativar essa opção, os relatórios relacionados ao CPC se tornarão somente leitura (por exemplo, oculta todas as ferramentas do Google AdWords).</p><p><b>Controles</b><br>Depois de ajustar a configuração, clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse usuário.
+454	<nobr><span class=title1><b>Usuários: grupos (Ref. #A-1303)</b></span></nobr><br>Essa tela é usada para selecionar os grupos aos quais esse usuário pertence (se houver). As permissões para visualizar relatórios podem ser concedidas no nível do grupo. Os usuários poderão visualizar todos os relatórios aos quais seu grupo tem acesso.<p><b>Adicionar ao grupo</b><br>Para tornar esse usuário membro de um grupo, selecione o nome do grupo na caixa "Grupos disponíveis" e clique na seta voltada para a direita. Para remover esse usuário de um grupo, selecione o grupo na caixa "Membro destes grupos" e clique na seta voltada para a esquerda. Clique em "Atualizar" para aplicar as alterações.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse usuário.
+455	<nobr><span class=title1><b>Usuários: acesso aos relatórios (Ref. #A-1304)</b></span></nobr><br>Essa tela é usada para conceder permissão a esse usuário para visualizar os relatórios de um ou mais perfis existentes. Além das permissões ao grupo, o usuário pode ter acesso individualmente aos relatórios, conforme definido nessa tela.<p><b>Conceder acesso</b><br>Para conceder acesso a um usuário aos relatórios do perfil, selecione o nome do perfil da caixa "Perfis disponíveis" e clique na seta voltada para a direita. Para negar acesso, selecione o perfil na caixa "Acesso concedido" e clique na seta virada para a esquerda. Clique em "Atualizar" para aplicar as alterações.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse usuário.
+456	<nobr><span class=title1><b>Usuários: resumo (Ref. #A-1305)</b></span></nobr><br>Essa tela mostra o conjunto completo de parâmetros desse usuário. Se algo precisar de ajustes, clique na guia apropriada e atualize as configurações conforme necessário. <p><b>Controles</b><br>As guias na parte superior da tela permitem acessar todas as configurações editáveis desse usuário.
+457	Perfil a ser executado
+458	Navegador do arquivo
+459	Diretório atual
+460	Ir para o diretório
+461	Selecionar arquivo
+462	Nome do arquivo
+463	OK
+464	Procurar
+465	Assistente de origem do registro: localização do registro local
+466	Visualização rápida da origem do registro
+467	Assistente de origem do registro: configurações remotas
+468	Nome de usuário e senha
+469	Assistente de origem do registro: configurações
+470	<nobr><span class=title1><b>Assistente de origem do registro: Opções (Ref. #A-470)</b></span></nobr><br>Essa tela permite que você especifique uma origem do registro local (por exemplo, no computador em que o Urchin está instalado) ou uma origem do registro remota (por exemplo, em outro computador). Clique em “Avançar” para continuar.<p><b>Origem do registro local</b><br>Qualquer arquivo de registro que resida no sistema de arquivos local do computador em que o Urchin está sendo executado (incluindo sistemas de arquivos montados no NFS) é considerado local. Selecione essa opção se seu arquivo de registro for local para o sistema do Urchin.<p><b>Origem do registro remota</b><br>O Urchin tem a capacidade de transferir registros remotos para o sistema do Urchin antes do processamento usando protocolos FTP, HTTP ou HTTPS. Nos sistemas Windows, o Urchin também pode acessar os nomes de caminho UNC. Se seu arquivo de registro for remoto e precisar ser transferido ou acessado através do UNC, selecione essa opção.
+471	<nobr><span class=title1><b>Assistente da origem do registro: configurações remotas (Ref. #A-471)</b></span></nobr><br>Essa tela permite especificar a forma de recuperar ou acessar o arquivo de registro remoto dessa origem de registro.<p><b>Protocolo de servidor</b><br>O Urchin pode gerenciar quatro tipos de arquivos de registro remoto: HTTP (www), HTTPS, FTP e UNC (somente Windows). Se seu arquivo de registro puder ser acessado através de um navegador da web, use HTTP. Se não for necessário utilizar senha, deixe os campos “nome de usuário” e “senha” em branco. O FTP pode ser usado com um nome de usuário e uma senha (geralmente os mesmos usados para enviar conteúdo para seu site). O UNC, que está disponível apenas nos sistemas Windows, exige um nome de usuário e uma senha para acessar o compartilhamento UNC.<p><b>Nome do servidor/IP</b><br>Insira o nome do servidor (por exemplo, www.urchin.com) ou o endereço IP (por exemplo, 63.212.171.4) em que se encontra o arquivo de registro. Para o UNC, use a notação \\server\share.<p><b>Porta do servidor</b><br>A porta do servidor será preenchida automaticamente. No entanto, se você estiver usando uma porta que não seja a padrão, poderá editar esse campo manualmente.<p><b>Mesmo login local e remoto</b> (somente UNC)<br>Essa opção ficará visível se o UNC tiver sido selecionado como Protocolo do servidor (somente Windows). Selecione “Sim” se os mesmos login e senha puderem ser usados para os servidores remoto e local. Selecione “Não” se o servidor remoto exigir login ou senha diferentes daqueles usados no servidor local. Se você selecionar “Não”, outros campos do login do servidor local ficarão visíveis.<p><b>Nome de usuário/senha</b><br>Esses campos podem ser deixados em branco para HTTP não autenticado e conexões de FTP anônimas. Para usar uma conexão HTTP/FTP autenticada, insira o nome de usuário e senha aqui. O UNC exige um nome de usuário e uma senha para acessar o compartilhamento. <p><b>Domínio</b> (somente UNC)<br>Se o compartilhamento UNC fizer parte de um domínio, insira as informações de rede do domínio aqui. <p><b>Modo FTP</b> (somente FTP)<br>Essa opção ficará visível se o FTP tiver sido selecionado como Protocolo de servidor. Selecione “Passivo” para o método de transferência passiva (PASV). Selecione “Ativo” para o método de transferência direta (PORT).
+472	<nobr><span class=title1><b>Assistente de origem do registro: local/Remota (Ref. #A-472)</b></span></nobr><br>Use essa tela para especificar o local/destino e o nome da origem do registro.<p><b>Caminho ao arquivo de registro</b> (somente local)<br>Use esse campo para inserir o nome do arquivo e o caminho completo para o arquivo de registro (por exemplo, /var/logs/access-log). Para sua conveniência, é fornecido o botão “Procurar”. O nome do arquivo pode conter curingas, como um asterisco.<p><b>Arquivo de origem do registro remota</b> (somente remota)<br>Use esse campo para especificar o caminho remoto para o arquivo de registro. Trata-se do caminho completo sem as informações de domínio. Os curingas não são suportados para nomes de origem do registro remota com base em HTTP. Para conexões FTP e UNC, é fornecido o botão “Procurar”.<p><b>Destino do registro</b> (somente remota)<br>Antes do processamento, os arquivos de registro remoto são transferidos para o sistema local. Selecione um diretório local para armazenar o arquivo de registro. É fornecido o botão “Procurar”.<p><b>Conta opcional</b> (somente modo Datacenter)<br>No modo Datacenter, esse campo opcional pode ser usado para ligar essa origem do registro a uma conta, o que a tornará disponível somente para essa conta.<p><b>Nome da origem do registro</b><br>Esse campo obrigatório é um nome arbitrário usado para facilitar ao fazer referência a essa origem do registro. Insira algum dado que seja exclusivo dessa origem do registro.
+473	<nobr><span class=title1><b>Assistente de origem do registro: configurações (Ref. #A-473)</b></span></nobr><br>Essa tela permite especificar o formato ao arquivo de registro que está sendo processado. O tipo de formato de registro <i>automático</i> deve ser escolhido para a maioria dos servidores da web. Outros tipos de formato de registro de servidor da web são fornecidos para compatibilidade com versões anteriores do Urchin, mas normalmente não são necessários. Formatos de registro personalizados podem ser criados com os modelos do diretório lib/custom/logformats da distribuição do Urchin.<p><b>Formato do registro</b><br>Use a opção de formato do registro para especificar o formato dessa origem do registro. <ul><li><b>Automático:</b> Esse formato detectará automaticamente a maioria dos formatos de servidor da web, incluindo Apache, W3C (Microsoft IIS), NCSA, Netscape e iPlanet. <li><b>Campanha:</b> Use esse formato para dados de custo da campanha especificamente formatados para uso do Urchin. Consulte a documentação on-line para obter detalhes. O formato do registro da campanha não pode ser detectado automaticamente.<li><b>Elf2:</b> Use esse formato para registros de comércio eletrônico no formato ELF2. O formato de registro de comércio eletrônico não pode ser detectado automaticamente.<li><b>Google:</b> Use esse formato para registros que contêm os dados de gastos de custo por clique do Google. O formato de registro do Google não pode ser detectado automaticamente.<li><b>NCSA:</b> Esse formato geralmente pode ser detectado automaticamente e normalmente é usado por servidores da web Apache. Para geração de relatórios completa, deve ser usado um registro “Combinado estendido”, que não é o comportamento padrão do Apache na maioria dos casos. <li><b>Netscape:</b> Os servidores Netscape legados (não iPlanet) usam esse formato por padrão.<li><b>Overture:</b> Use esse formato para registros que contêm dados de gastos de custo por clique do Overture. O formato do registro do Overture não pode ser detectado automaticamente.<li><b>W3C:</b> Esse formato pode ser detectado automaticamente, e é usado para servidores da web que fazem login no formato W3C padrão, como servidores Microsoft IIS.</ul>
+474	Essa tela mostra um resumo da origem do registro configurada. Se as configurações estiverem corretas, clique em "Concluir" para concluir a instalação. Se quiser fazer alterações, clique no botão "Voltar".
+475	Localização do arquivo de registro
+476	Local
+477	Remoto
+478	Configurações do servidor remoto
+479	FTP
+480	HTTP
+481	Protocolo do servidor
+482	Nome do servidor/IP
+483	Porta do servidor
+484	Configuração do registro efetuada. A origem do registro adicionada já está disponível para processamento por qualquer perfil configurado no sistema. Clique no botão “Concluído” para voltar ao sistema do administrador ou em "Mais opções" para definir parâmetros adicionais.
+485	Login do servidor remoto
+486	Nome de usuário
+487	Senha
+488	Configuração do registro efetuada. As origens do registro selecionadas já estão adicionadas ao perfil. Clique no botão “Concluído” para voltar ao sistema do administrador.
+489	Configuração do filtro concluída. Os filtros selecionados serão adicionados ao perfil. Clique no botão “Concluído” para voltar ao sistema do administrador.
+490	Localização do arquivo de registro
+491	Arquivo de origem do registro remoto
+492	Navegador do registro remoto
+493	https
+494	Navegador do diretório
+495	Selecionar diretório
+496	Local de registro remoto
+497	Assistente de configuração: confirmação
+498	<p><b>Iniciantes - Leia - Conceitos e terminologia</b><br><ul><li>Perfil é o termo utilizado para um conjunto de relatórios de um site e para as definições de configuração necessárias para criar tais relatórios. <li>É necessário que o Urchin processe os arquivos de registro criados pelo servidor do website, antes de os relatórios serem visualizados. Esses arquivos de registro são referidos como "Origens do registro".<li>Depois de determinar o local das origens do registro, o Urchin pode processar os registros imediatamente ou ser programado para processá-los periodicamente, conforme eles forem criados. <li>São fornecidas informações de ajuda para cada tela de configuração. Para visualizá-las, clique no sinal de interrogação na parte inferior da tela.
+499	Configurar perfis
+500	Sair
+501	Importar perfis
+502	Selecionar para importar
+503	Importar perfis
+504	Importar
+505	Assistente de configuração
+506	<nobr><span class=title1><b>Assistente de origem do registro: opções (Ref. #A-506)</b></span></nobr><br>Essa tela permite especificar uma origem do registro local (por exemplo, no computador em que o Urchin está instalado) ou uma origem do registro remota (por exemplo, em outro computador). Clique em "Avançar" para continuar.<p><b>Origem do registro local</b><br>Qualquer arquivo de registro que resida na máquina em que o Urchin está sendo executado ou em uma unidade montada é considerado local. Selecione essa opção se seu arquivo de registro for local para o sistema do Urchin.<p><b>Origem do registro remota</b><br>O Urchin pode transferir registros remotos para o sistema do Urchin antes do processamento usando os protocolos FTP ou HTTPs. Além disso, nas plataformas Windows, o Urchin pode acessar arquivos de registro em compartilhamentos UNC. Se seu arquivo de registro for remoto e precisar ser transferido ou acessado em um compartilhamento, selecione essa opção.<p><b>Origem de registro pré-configurada</b><br>Selecione essa opção para atribuir uma origem do registro que já tenha sido inserida no sistema do Urchin.
+507	Configuração do registro efetuada. A origem do registro adicionada já está disponível para processamento por qualquer perfil configurado no sistema. Clique no botão “Concluído” para voltar ao sistema do administrador.
+508	Configuração do filtro concluída. O Filtro foi adicionado. Clique no botão “Concluído” para voltar ao sistema do administrador.
+509	Status
+510	% concluído
+511	Na fila
+512	Último tempo de execução
+513	Frequência
+514	Nunca
+515	Tempo real
+516	Executar/programar
+517	Não programado
+518	Não programado
+519	Programado
+520	Em exibição
+521	Concluída
+522	Erro
+523	Configurações remotas
+524	Executar agora
+525	Nenhuma <b>conta</b> na configuração. Clique no botão "Adicionar"<br> no canto superior direito para adicionar uma nova <b>conta</b>.
+526	Nome do servidor ausente
+527	Não foi possível resolver o nome do host
+528	Não foi possível conectar-se ao servidor
+529	Acesso negado
+530	Senha ou nome de usuário incorreto
+531	Esvaziar lista
+532	Histórico de tarefas de perfil
+533	Sucesso
+534	Aviso
+535	Erro
+536	<nobr><span class=title1><b>Contas: resumo (Ref. #A-1202)</b></span></nobr><br>Essa tela mostra o conjunto completo de parâmetros dessa conta. Se algo precisar de ajustes, clique na guia apropriada e atualize as configurações conforme necessário. <p><b>Controles</b><br>As guias na parte superior da tela permitem acessar todas as configurações editáveis dessa conta.
+537	Ano/mês
+538	<nobr><span class=title1><b>Assistente da conta: informações básicas (Ref. #A-538)</b></span></nobr><br>Use essa tela para definir os parâmetros da nova conta. As contas podem ser usadas para agrupar todos os perfis, usuários, origens do registro etc. de um único cliente em uma conta.<p><b>Nome da conta</b><br>Cada conta requer um nome exclusivo. Tal nome pode ser arbitrário ou ter como base o nome ou o website do cliente.<p><b>Contato e e-mail de contato</b><br>As informações de contato são opcionais e fornecidas como uma forma conveniente de acompanhar seus clientes.<p><b>Local dos dados do relatório</b><br>Essa configuração opcional especifica o caminho do diretório para armazenar os dados do relatório de todos os perfis que pertencem a essa conta. O local padrão é no diretório data/reports/<i>account_name</i> na distribuição do Urchin. O diretório de dados inteiro pode ser movido por todo o sistema. Para isso, edite o arquivo urchin.conf no diretório etc. Para sua conveniência, é fornecido o botão "Procurar".<p><b>Local do histórico de execução</b><br>Essa configuração opcional especifica o caminho do diretório para armazenar os dados do histórico do tempo de execução de todos os perfis que pertencem a essa conta. O local padrão é no diretório data/history/<i>account_name</i> na distribuição do Urchin. Para sua conveniência, é fornecido o botão "Procurar".<p><b>Local de navegação no diretório</b><br>Essa configuração opcional é fornecida como uma medida de segurança ao conceder acesso para criar perfis ao administrador da conta. Um caminho de diretório inserido nesse campo limita a capacidade do administrador da conta de procurar arquivos de registro a esse diretório. Por padrão, não há nenhuma restrição de navegação. Isso pode ser alterado em todo o sistema modificando o arquivo urchin.conf no diretório etc. Para sua conveniência, é fornecido o botão "Procurar".
+539	<nobr><span class=title1><b>Configurações: configurações globais (Ref. #A-2701)</b></span></nobr><br>Essa tela permite que você defina as configurações de acesso para essa instalação do Urchin. Essas configurações variam, dependendo de você estar instalando o Urchin em um servidor ou em um computadorT.<p><b>Acesso a relatórios com base na web</b><br>Para permitir que os usuários façam login e visualizem os relatórios remotamente usando um navegador, selecione “ativar”. Para visualizar relatórios somente quando estiver no console do sistema onde o Urchin está instalado, selecione “desativar”.<p><b>Administração com base na web</b><br>Para permitir que o usuário “admin” faça login e modifique a configuração remotamente, usando um navegador, selecione “ativar”. Para modificar a configuração somente quando estiver no console do sistema onde o Urchin está instalado, selecione “desativar”.<p>Em geral, ambas as configurações são definidas como “ativadas” para as instalações do servidor. Além disso, pelo menos a administração com base na web é “desativada” para operações nos computadores.<p>Ela pode ser substituída pela opção ALLOW_AUTO_LOGIN no arquivo etc/session.conf file.<p><b>Vinculação direta ao relatório</b><br>OBSERVAÇÃO IMPORTANTE SOBRE SEGURANÇA: Ativar esse recurso desativa os controles de segurança com base na sessão e permite que você crie links diretamente para os relatórios. Isso pode ser útil para sistemas que já são protegidos por senha ou rede. Depois que este recurso estiver ativado, será possível vincular os relatórios diretamente utilizando o formato:<p>&nbsp;&nbsp;(baseurl)/report.cgi?profile=(profilename)&user=(username)<p>em que (baseurl) refere-se a tudo que vem antes de session.cgi no URL atual, (profilename) refere-se ao nome do escape URI do perfil e (username) refere-se ao usuário que tem acesso ao relatório. A configuração user= é opcional e controla o idioma e as preferências de localização; se não especificada, é assumido o usuário admin. Consulte o arquivo .report.conf no diretório htdocs da distribuição do Urchin para obter opções adicionais de configuração e controle de acesso.<p><b>Número da porta do servidor</b><br>Essa opção especifica em qual número de porta o serviço da web do Urchin será executado. Depois de alterar essa opção, será necessário reiniciar os serviços do Urchin usando o aplicativo “urchinctl” no diretório bin do produto. Consulte a documentação de instalação para obter mais detalhes. Por padrão, o Urchin é executado na porta 9999, embora isso possa ser alterado durante a instalação.<p><b>Controles</b><br>Clique no botão “Atualizar” para salvar as alterações. As guias na parte superior da tela permitem acessar outras configurações.
+540	<nobr><span class=title1><b>Configurações: configurações do servidor (Ref. #A-2702)</b></span></nobr><br>Essa tela permite alterar a porta do servidor que é usada pela administração do Urchin e pelos sistemas de geração de relatórios. <p><b>Número da porta do servidor</b><br>A visualização do relatório e a administração com base na web são executadas na porta especificada do servidor na qual o Urchin está instalado. Por padrão, está definida como porta 9999. Observação importante: Não altere esse número para uma porta que está sendo usada por outro serviço, como HTTP padrão (porta 80) ou envio de e-mails (porta 25). Recomendamos que você discuta esse problema com o administrador do sistema, caso pretenda alterar a porta para outra que não seja a 9999. Depois de alterar esse valor, será necessário reiniciar os Serviços do Urchin para que as alterações entrem em vigor. O dois Serviços do Urchin são o Programador ("urchind") e o Servidor ("urchinwebd"). Para reiniciar esses serviços em plataformas Windows, use as opções "Desativar" e "Ativar" no menu "Iniciar"->"Programas"->"Urchin". Nas plataformas do tipo UNIX, execute "bin/urchinctl restart" no diretório do Urchin.
+541	<b>Visualizar relatórios</b><br>Essa tela relaciona todos os perfis disponíveis aos quais você tem acesso. Ela permite examinar as métricas de desempenho de vários perfis em uma única tela.<p><b>O calendário limitado</b><br>O calendário limitado, no canto superior direito, permite escolher um período (dia, semana, mês ou ano).<p><b>Ir para o relatório</b><br>Clique no nome do perfil para ativar a janela de relatórios desse perfil. A janela de relatórios permite a visualização de todos os relatórios disponíveis do perfil.<p><b>Editar</b> (somente superadministrador)<br>O botão "Editar" fornece acesso a todas as configurações do perfil, organizadas em um formato de guias.<p><b>Status</b> (com hiperlink, somente superadministrador)<br>O status de cada tarefa é "Não programada", "Pendente", "Em fila", "Em exibição", "Em cancelamento", "Concluída", "Cancelada", "Aviso" ou "Erro". Eles são codificados por cor. Para classificar a lista por status, clique na seta abaixo da palavra "Status". Para visualizar detalhes do tempo de execução de uma tarefa, clique na entrada de status codificado por cor ao lado dessa tarefa. É aberta uma nova janela com os detalhes do tempo de execução. <p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar a quantidade de entradas relacionadas por vez. Use os botões "Anterior" e "Próxima" para percorrer as entradas das páginas. Para clicar no site real, clique no link ao lado do nome do perfil.<p><b>Conta</b> (somente modo Datacenter)<br>No modo Datacenter, o menu "Conta" pode filtrar as entradas.<p><b>Visualizar</b><br>Use o menu suspenso "Visualizar" para selecionar a visualização "Administrador", "Empresa" ou "Básica" das páginas de visão geral.
+542	<nobr><span class=title1><b>Preferências (Ref. #A-1001)</b></span></nobr><br>Essa tela permite definir/alterar sua senha e controlar o idioma padrão e as configurações de localização dos relatórios do Urchin. Clique em "Atualizar" para aplicar as alterações. Algumas configurações podem não ser editáveis, se as permissões forem reservadas ao administrador.<p><b>Senha</b><br>Para alterar sua senha, digite a nova senha nos campos “Senha” e “Confirmar senha” e clique no botão “Atualizar”. Sua nova senha será utilizada na próxima vez que você fizer login. As senhas não podem conter espaços ou outros caracteres reservados. <b>Observação para os administradores:</b> Memorize a senha administrativa. <p><b>Idioma do relatório</b><br>Use esse menu para selecionar o idioma no qual deseja visualizar os relatórios. Todas as informações de navegação e de ajuda simples da interface de relatórios serão exibidas no idioma selecionado. Clique em "Atualizar" depois de fazer as alterações.<p><b>Região</b><br>Use a configuração de região para controlar o estilo de localização da visualização de relatórios. Essa configuração controla o formato de datas, horários e números que podem ser exibidos de forma diferente em várias localidades. Se você não visualizar seu país na lista, selecione uma região que use os mesmos formatos de data/número que seu país. Clique no botão "Atualizar" para salvar as alterações.
+543	<nobr><span class=title1><b>Configurações do processo: configurações DNS (Ref. #A-2301)</b></span></nobr><br>Essa tela permite configurar a funcionalidade de Consulta DNS do Urchin, que converte os endereços IP em nomes de domínio (por exemplo, 63.212.171.4 -> urchin.com). Isso permite que o Urchin informe os nomes de domínio, redes e países. Para configurar o DNS, é necessário o endereço IP de um servidor de nomes local. Consulte o administrador para obter detalhes.<p><b>Consulta DNS</b><br>Selecione o botão "ativada" para ativar as Consultas DNS.<p><b>IP do resolvedor</b><br>Insira o endereço IP de um servidor de nomes DNS local que o Urchin possa consultar para converter IPs em nomes de domínio.<p><b>Loops de DNS</b><br>Essa configuração controla o número de tentativas de resolução feitas pelo Urchin antes de desistir. A configuração padrão "5" serve para a maioria das instalações.<p><b>Meta de resolução</b><br>Depois que o Urchin atingir a Meta de resolução, o processamento do DNS será interrompido. O padrão de 80% proporciona um bom equilíbrio entre a velocidade de processamento e a resolução. Se você aumentar esse número, a operação ficará mais lenta.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar outras configurações.
+544	<nobr><span class=title1><b>Configurações globais: configurações do banco de dados (Ref. #A-2302)</b></span></nobr><br>Essa tela permite que você defina alguns parâmetros básicos para controle de desempenho x uso do recurso. Os valores padrão geralmente são o melhor compromisso de velocidade x processador e uso do disco. No entanto, se você precisar agilizar o Urchin ou diminuir seu impacto no computador que ele está sendo executado, ajuste essas configurações adequadamente. <p><b>Limite por tabela de banco de dados</b><br>Para manter o volume do banco de dados do Urchin controlado em sites grandes, use essa configuração para limitar todas as tabelas conforme o número de registros listados. A opção padrão é apropriada para a maioria das instalações. Em determinado mês, se esse limite for atingido, as entradas adicionais serão agrupadas em uma entrada denominada “Outros”. Dessa forma, se seus relatórios estiverem apresentando alta proporção de entradas “Outros”, aumente essa configuração. Para obter um desempenho ideal, use valores menores ou iguais a 100.000<p><b>Meta de uso da memória</b><br>Essa configuração fornece uma orientação para o processo do Urchin em relação à quantidade de memória que deve ser usada durante o tempo de execução. Para sites maiores, um espaço maior de memória pode melhorar o desempenho, pois o sistema diminui o cache de disco. A configuração padrão é conservadora e é recomendado aumentar a meta para no mínimo 512 MB nos sistemas com memória física suficiente.<p><b>Detalhe geográfico</b><br><p><b>Informações geográficas</b><br>Essa configuração controla quais informações geográficas serão incluídas nos relatórios do perfil. Selecionar outras opções aumenta o espaço da memória do mecanismo de processamento de registros (aproximadamente 350 MB para redes, 100 MB para domínios e de 20 a 150 MB para países, dependendo do banco de dados geográficos escolhido). O Urchin é fornecido com diversos bancos de dados geográficos, que variam no nível de detalhes de país/região fornecidos. Selecione banco de dados geográficos mais adequado a suas necessidades no menu suspenso.<p><b>Banco de dados geográficos</b><br>O Urchin é fornecido com diversos bancos de dados geográficos. Cada um deles fornece níveis diferentes de informações sobre os países:<br>- Mundial (contém informações detalhadas sobre países/regiões/cidades de todo o mundo)<br>- Mundial leve (contém informações somente no nível do país para todo o mundo)<br>- Bancos de dados regionais, como Estados Unidos, União Europeia e Japão, que contêm informações detalhadas de regiões correspondentes e no nível do país para o resto do mundo. <br><br>As configurações do banco de dados geográficos podem ser definidas globalmente ou no nível do perfil.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar outras configurações.
+545	<nobr><span class=title1><b>Configurações do processo: uso da memória (Ref. #A-2303)</b></span></nobr><br>Essa tela permite que você ajuste o uso da memória aproximado do mecanismo de processamento de registro do Urchin. Recomendamos que a configuração padrão seja utilizada, a menos que você tenha arquivos de registro muito grandes. Para registros grandes, a velocidade so Urchin pode ser aumentada. Para isso, aumente o uso da memória para aproveitar os recursos disponíveis. Definir a memória como muito alta pode causar falhas em sua alocação ou tornar o sistema lento devido à permutação.<p><b>Meta de uso da memória</b><br>Use o menu suspenso para selecionar a quantidade de memória que o Urchin vai utilizar durante o processamento. O Urchin pode utilizar um pouco mais ou menos que o número selecionado, dependendo dos dados. A opção "Personalizar" deve ser utilizada somente em casos especializados por administradores experientes do Urchin.<p><b>Configurações personalizadas de uso da memória</b><br>Quando a configuração personalizada da memória é escolhida, aparecem as opções adicionais para permitir a configuração de cada um dos buffers primários do Urchin manualmente. A configuração desses valores em megabytes altera o tamanho do buffer e, consequentemente, o desempenho geral. Não é recomendado ajustar esses valores.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar outras configurações.
+546	<nobr><span class=title1><b>Configurações: contabilidade (Ref. #A-3000)</b></span></nobr><br>Essa tela fornece uma visão geral do status básico dessa instalação do Urchin do ponto de vista dos usuários/grupos e do licenciamento. Os parâmetros são:<ul><li>Contas (somente modo Datacenter): O número de clientes ou supergrupos do sistema. As contas são usadas para agrupar vários perfis e usuários. Elas podem ter privilégios administrativos separados.<li>Usuários: o número de usuários distintos que têm acesso aos relatórios e/ou ao sistema da administração.<li>Grupos: o número de grupos de usuários que foram configurados.<li>Perfis: o número de perfis que foram configurados. <li>Origens do registro: o número de origens do registro que foram configuradas. <li>Filtros do registro: o número de filtros do registro que foram configurados. <li>Origens de CPC: o número de origens de CPC que foram configuradas. </ul>
+547	<nobr><span class=title1>    <b>Perfis (Ref. #A-2100)</b></span></nobr><br>A finalidade dessa tela é exibir os perfis que foram configurados para essa instalação do Urchin, permitir o ajuste dos parâmetros de cada um deles e permitir que o Administrador adicione perfis. Cada website para o qual você desejar criar relatórios precisará de um perfil de configuração.<p><b>Adicionar</b> (somente superadministrador)<br>Para adicionar um perfil, clique no botão "Adicionar" na parte superior direita da tela. Isso abrirá o Assistente para adicionar perfis", que orientará você nas etapas simples para adicionar um perfil.<p><b>Editar</b><br>Ao lado de cada perfil da lista há uma série de botões que permitem que você controle cada perfil. O botão "Editar" permite acessar todas as configurações desse perfil, organizadas em formato de tabela.<p><b>Excluir</b> (somente superadministrador)<br>Clique no botão "Excluir" ao lado de um perfil para removê-lo da configuração. Isso removerá permanentemente todos os dados e a configuração desse perfil. O histórico de processamento desse perfil também será excluído.<p><b>Copiar</b> (somente superadministrador)<br>O botão "Copiar" permite que você crie um novo perfil facilmente com configurações similares a um existente. Clique nesse botão para abrir o assistente "Copiar", que solicitará um novo nome de perfil. <p><b>Executar</b> (somente superadministrador)<br>O botão "Executar" oferece um atalho para a tela "Executar/programar" em que você pode optar por executar esse perfil imediatamente ou programá-lo para execução regularmente. Nenhum dado de relatório ficará disponível até que o perfil seja executado.<p><b>Visualizar</b><br>O botão "Visualizar" oferece um atalho para abrir a janela de relatórios para cada perfil.<p><b>Controles</b><br>Use o menu suspenso "N° exibido" para alterar quantas entradas são relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use o botão "Anterior" ou "Próxima". <p><b>Conta</b> (somente modo Datacenter")<br>Na operação do modo Datacenter, o menu "Conta" pode filtrar quais entradas são relacionadas.
+548	<nobr><span class=title1>    <b>Gerenciador de registro (Ref. #A-1600)</b></span></nobr><br>O objetivo dessa tela é exibir as origens do registro que foram configuradas para essa instalação do Urchin, permitir ajustes nos parâmetros de cada uma e permitir que o administrador adicione as origens do registro.<p><b>Adicionar</b><br>Para adicionar uma origem do registro, clique no botão "Adicionar" na parte superior direita da tela. Isso ativará o Assistente para adicionar origem do registro, que orientará você nas etapas simples para adicionar uma origem do registro.<p><b>Editar</b><br>Ao lado de cada origem do registro da lista há uma série de botões que permitem controlar cada origem do registro. O botão "Editar" permite acessar todas as configurações dessa origem do registro, organizadas em formato de guias.<p><b>Excluir</b><br>Clique no botão "Excluir" ao lado de uma origem do registro para removê-la da configuração e de todos os perfis que fazem referência a ela. Isso não excluirá o arquivo de registro em si nem os dados de um perfil.<p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar o número de entradas relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior" ou "Próxima". <p><b>Conta</b> (somente modo Datacenter)<br>Na operação do modo Datacenter, o menu "Conta" pode filtrar as entradas relacionadas.
+549	<nobr><span class=title1>    <b>Gerenciador de filtros (Ref. #A-1700)</b></span></nobr><br>Essa tela exibe os filtros que foram configurados para essa instalação do Urchin, permite que sejam feitos ajustes nos parâmetros de cada um e que o administrador adicione filtros. Os filtros podem ser aplicados individualmente aos perfis ou origens do registro. Eles podem ser criados para excluir acessos correspondentes, incluir somente acessos correspondentes ou reconstruir um URL dinâmico para que seja mais significativo quando exibido nos relatórios. Observação: O filtro “Decodificar palavras-chave”, que formata adequadamente palavras-chave/termos de pesquisa, está ativado por padrão e não deve ser excluído.<p><b>Adicionar</b><br>Para adicionar um filtro, clique no botão "Adicionar" na parte superior direita da tela. Isso ativará o Assistente para adicionar filtros, que orientará você nas etapas simples para adicionar um filtro.<p><b>Editar</b><br>Ao lado de cada filtro da lista há uma série de botões que permitem controlar cada filtro. O botão "Editar" permite acessar todas as configurações desse filtro, organizadas em formato de guias.<p><b>Excluir</b><br>Clique no botão "Excluir" ao lado de um filtro para removê-lo da configuração e de todos os perfis e origens do registro que fazem referência a ele. <p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar o número de entradas que são relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior" ou "Próxima". <p><b>Conta</b> (somente modo Datacenter)<br>Na operação do modo Datacenter, o menu "Conta" pode filtrar as entradas relacionadas.
+550	<nobr><span class=title1><b>Configurações: licença (Ref. #A-6001)</b></span></nobr><br>Essa tela indica o status da licença atual desta instalação e fornece acesso a várias ações, dependendo de como a página “Licença” foi chamada: por meio da obtenção de uma licença de demonstração, da ativação de uma demonstração existente ou do código de série permanente ou da reativação de uma licença existente. As informações de status da licença incluem o tipo de licença existente e a data de vencimento das licenças de demonstração, o código de série usado para ativar a licença e a versão da licença.<p><b>Obter licença de demonstração</b><br>Clique no link “Obter licença de demonstração” para obter uma licença de demonstração por um período limitado. Você irá automaticamente para a página segura de registro de licenciamento do Urchin. Após preencher as informações de contato opcionais e aceitar o Contrato de licença, será exibido um link para instalar automaticamente a licença de demonstração.<p><b>Ativar licença</b><br>Se você tiver obtido uma demonstração ou um código de série permanente com um distribuidor ou revendedor autorizado do Urchin, clique neste link. Você irá automaticamente para a página de registro seguro e ativação da licença do Urchin. Insira o código de série fornecido. Depois de preencher as informações de contato opcionais e aceitar o Contrato de licença, será exibido um link para ativar automaticamente o código de série e instalar a licença correspondente em sua configuração do Urchin.<p><b>Reativar licença</b><br>Ao mover ou restaurar sua instalação do Urchin, você deve reativar sua licença. Clique no link “Reativar licença” para reativar sua instalação. Você irá automaticamente para a página segura de registro do Urchin. Após concordar com as condições do Contrato de licença, será exibido um link para reativar sua licença.
+551	<nobr><span class=title1>    <b>Grupos (Ref. #A-1400)</b></span></nobr><br>A finalidade dessa tela é exibir os grupos configurados para essa instalação do Urchin, permitir ajustes nos parâmetros de cada um deles e permitir que o Administrador adicione grupos. Os grupos podem ser usados para controlar as permissões de acesso para visualizar relatórios de um grupo de usuários.<p><b>Adicionar</b><br>Para adicionar um grupo, clique no botão "Adicionar" na parte superior direita da tela. Isso iniciará o Assistente para adicionar grupos, que orientará você nas etapas simples para adicionar um grupo.<p><b>Editar</b><br>Ao lado de cada grupo da lista há uma série de botões que permitem controlar cada um deles. O botão "Editar" permite acessar todas as configurações desse grupo, organizadas em formato de guias.<p><b>Excluir</b><br>Clique no botão "Excluir" ao lado de um grupo para removê-lo da configuração. <p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar quantas entradas são relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior ou "Próxima".<p><b>Conta</b> (somente modo Datacenter)<br>Na operação do modo Datacenter, o menu "Conta" pode filtrar quais entradas são relacionadas.
+552	<nobr><span class=title1>    <b>Usuários (Ref. #A-1300)</b></span></nobr><br>A finalidade dessa tela é exibir os usuários que foram configurados para esta instalação do Urchin, permitir o ajuste dos parâmetros de cada um deles e permitir que o Administrador adicione usuários. Casa usuário terá um nome de usuário e uma senha. A permissão de visualização do relatório é controlada através da configuração do usuário.<p><b>Adicionar</b><br>Para adicionar um usuário, clique no botão "Adicionar" na parte superior direita da tela. Isso iniciará o Assistente para adicionar usuários, que orientará você nas etapas simples para adicionar um usuário.<p><b>Editar</b><br>Ao lado de cada usuário da lista há uma série de botões que permitem controlar cada um deles. O botão "Editar" permite acessar todas as configurações desse usuário, organizadas em formato de guias.<p><b>Excluir</b><br>Clique no botão "Excluir", ao lado de um usuário, para removê-lo da configuração. <p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar a quantidade de entradas relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior" ou "Próxima".<p><b>Conta</b> (somente modo Datacenter)<br>Na operação do modo Datacenter, o menu "Conta" pode filtrar quais entradas são relacionadas.
+553	<nobr><span class=title1><b>Programador (Ref. #A-2600)</b></span></nobr><br>A finalidade dessa tela é exibir as tarefas programadas para execução em cada perfil da configuração. Vários detalhes são mostrados para cada perfil, inclusive o nome do perfil, a frequência de execução, o status da execução (Não programada, Pendente, Em fila, Em execução, Em cancelamento). Além disso, para tarefas em execução, o percentual de conclusão, as ações disponíveis e a hora de início da tarefa. Clique nas setas abaixo de cada campo para classificar a lista de acordo com esse campo. OBSERVAÇÃO: A "atualização geográfica" é uma tarefa interna para a atualização do banco de dados geográficos usado no processamento das informações geográficas dos visitantes.<p><b>Nome do perfil</b><br>Todos os perfis configurados são exibidos.<p><b>Frequência</b><br>Exibe a frequência do tempo de execução do perfil<p><b>Status</b><br>Os estados da tarefa são "Não programada", "Pendente" (aguardando o próximo tempo de execução programado), "Em fila" (a tarefa existe na fila de execução do Programador de tarefas do perfil), "Em execução" ou "Em cancelamento" (a tarefa será cancelada assim que possível). Para tarefas que estejam em execução ou em cancelamento, a entrada "Status" é vinculada à janela "Progresso", que pode ser usada para exibir os detalhes do tempo de execução da tarefa. Clique no status de uma tarefa para abrir essa janela.<p><b>Ação</b><br>Este campo mostra ações para tarefas programadas. O campo "Ação" tem a ação "Cancelar" para as Tarefas que estão em execução.<p><b>Percentual de conclusão</b><br>Para tarefas em execução, esse campo mostra uma barra de progresso que indica um percentual aproximado de conclusão do processamento da tarefa.<p><b>Horário de início</b><br>Para tarefas em execução, exibe o horário de início da tarefa em GMT.<p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar a forma como as entradas são relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior" ou "Próxima". <p><b>Conta</b> (somente Modo Datacenter)<br>Na operação do modo Datacenter, o menu "Conta" pode ser usado para filtrar quais entradas são relacionadas.
+554	<nobr><span class=title1><b>Programador: histórico de tarefas de perfil (Ref. #A-2500)</b></span></nobr><br>A finalidade dessa tela é relacionar o histórico de todas as tarefas executadas por meio do programador de tarefas do perfil ou do botão "Executar agora". Um resumo das tarefas é relacionado, fornecendo informações importantes sobre cada uma delas. Clique no campo "Status" para exibir os detalhes de tempo de execução dessa tarefa do histórico. Use as setas abaixo de cada campo para classificar por esse campo.<p>Cada entrada mostra o Nome da tarefa (perfil), o ID e o host de processamento, o status da tarefa, quando a tarefa começou, quando terminou e a quantidade de dados processados.<p><b>Status</b> (com hiperlink)<br>O status de cada Tarefa é "Concluída", "Cancelada", "Aviso" ou "Erro". Eles são codificados por cores e a lista pode ser classificada por status clicando na seta abaixo da palavra "Status". Para exibir o detalhe do tempo de execução de determinada tarefa, clique na entrada do status codificado por cor ao lado dessa tarefa. Isso abrirá uma janela separada para exibir o detalhe do tempo de execução.<p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar o número de entradas relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior" ou "Próxima". <p><b>Conta</b> (somente Modo Datacenter)<br>Na operação do modo Datacenter, o menu "Conta" pode ser usado para filtrar as entradas relacionadas.
+555	<nobr><span class=title1><b>Importar configuração IIS (Ref. #A-5004)</b></span></nobr><br>Essa tela permite que você importe as configurações do site existentes da configuração de um servidor da web IIS da Microsoft e converta esses sites em perfis do Urchin. Com isso, pode haver uma economia de tempo significativa. Além disso, esse é o método recomendado para configuração rápida nos sistemas IIS. Marque a caixa ao lado de cada site detectado para selecionar aqueles que você deseja importar e clique no botão "Importar perfis".<p><b>Selecionar para importar</b><br>Esse módulo detecta automaticamente os websites IIS locais. Marque a caixa de seleção à direita de cada site detectado para importá-lo. Se houver uma marca de seleção fixa em vez de uma caixa, significa que o site já foi importado. Clique no botão "Importar perfis" para concluir a etapa de importação. <p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar a quantidade de entradas relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior" ou "Próxima".
+556	Essa tela mostra um resumo da conta configurada. Se as configurações estiverem corretas, clique em "Concluir" para concluir a configuração. Se quiser fazer alterações, clique no botão "Voltar".
+557	Conta adicionada. Agora, essa conta agora estará disponível para organizar perfis, usuários, origens do registro etc.
+558	<nobr><span class=title1><b>Perfis: configurações (Ref. #A-2101)</b></span></nobr><br>Use essa tela para controlar o tipo de Perfil, o método de acompanhamento e os relatórios disponíveis.<p><b>Conta opcional</b> (somente modo Datacenter)<br>Exibe a conta à qual o perfil está associado.<p><b>Nome do perfil</b><br>É o nome do perfil, geralmente o endereço do website, como "www.urchin.com". No entanto, para vários perfis do mesmo site, é comum atribuir a eles nomes que destaquem a diferença, como "www.urchin.com - filtrado"<p><b>Tipo de perfil</b><br>Essa configuração geralmente não precisa ser ajustada, a não ser que existam mapas de dados personalizados configurados. Se você tiver mapas de dados personalizados, use essa configuração para controlar qual mapa de dados se aplica a esse perfil.<p><b>Website de comércio eletrônico</b><br>Se você pretende processar os dados de comércio eletrônico junto com esse perfil, defina-o como "Sim". Caso contrário, defina-o como "Não". Quando a opção “Comércio eletrônico” estiver desativada, você poderá definir um valor em dólar para uma meta para fornecer informações gerais de ROI.<p><b>Método de acompanhamento de visitantes</b><br>O Urchin oferece duas formas de identificar os visitantes. O método mais preciso é usar as tags javascript do UTM. Se o UTM estiver instalado, selecione essa opção. Se o UTM não estiver instalado, selecione o método "IP+User-Agent". Há alguns relatórios que não serão preenchidos, a menos que você esteja usando o UTM.<p><b>Domínio UTM</b><br>Em condições normais, deixe essa configuração em branco. O UTM detecta automaticamente o domínio do site. O recurso Domínio UTM só será usado quando você tiver sobreposição de domínios que precisam ser acompanhados separadamente. <p><b>Conjunto de relatórios</b><br>Essa configuração geralmente não precisa ser ajustada, a menos que você tenha conjuntos de relatórios personalizados configurados. Se você tiver conjuntos de relatórios personalizados, use essa configuração para controlar quais deles são usados para esse perfil.<p><b>Painéis disponíveis</b><br>O conjunto de relatórios padrão inclui quatro painéis. Essa configuração permite que você controle qual painel está disponível no relatório e qual deve ser mostrado primeiro como padrão.<p><b>Seções do relatório</b><br>Além dos painéis, há quatro seções principais no relatório. Essas seções podem ser desativadas no relatório desmarcando as caixas correspondentes. Para limitar o acesso aos relatórios por usuário, clique na guia "Usuários" e use a função "Substituir painel de controle". Clique no botão "Atualizar" para salvar as alterações.
+559	Resultado do assistente da conta
+560	<nobr><span class=title1>    <b>Contas (Ref. #A-1200)</b></span></nobr><br>A finalidade dessa tela é exibir as contas que foram configuradas para essa instalação do Urchin, permitir o ajuste dos parâmetros de cada uma delas e permitir que o administrador adicione contas. As contas são usadas para organizar perfis, origens de registro, usuários e grupos em uma única entrada corporativa. Para provedores com clientes complexos, usar uma conta para controlar um cliente facilita o acompanhamento de todos os componentes desse cliente.<p><b>Adicionar</b><br>Para adicionar uma conta, clique no botão "Adicionar" na parte superior direita da tela. Isso ativará o Assistente para adicionar conta, que orientará você nas etapas simples para adicionar uma conta.<p><b>Editar</b><br>Ao lado de cada conta da lista há uma série de botões que permitem controlá-las. O botão "Editar" permite acesso a todas as configurações dessa conta, organizadas em formato de guias.<p><b>Excluir</b><br>Clique no botão "Excluir" ao lado de uma conta para removê-la da configuração.<p><i>CUIDADO:</i> TODOS os perfis, origens do registro, filtros, usuários e grupos associados a essa conta serão excluídos.<p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar o número de entradas relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior" ou "Próxima".
+561	<nobr><span class=title1><b>Perfis: origens do registro (Ref. #A-2102)</b></span></nobr><br>Use essa tela para adicionar <b>origens do perfil a serem processadas</b> da lista de <b>origens do perfil disponíveis</b>. A coluna <b>Origens do registro a serem processadas</b> exibe as origens do registro que são processadas como parte desse perfil. Geralmente, cada perfil tem apenas uma origem do registro associada a ele. No entanto, nas configurações de equilíbrio de carga ou em sites que têm registros de comércio eletrônico (no formato ELF) ou registros de CPC, pode haver várias origens do registro. <p><b>Controles:</b><br><ul><li><b>Adicionar</b><br>Clique no ícone “Adicionar” para adicionar mais uma origem do registro às origens do registro disponíveis. O Assistente para adicionar origem do registro será iniciado. Ele orientará você nas etapas para adicionar uma origem de registro local ou remota. <li><b>Editar</b><br>Destaque a origem do registro disponível que você deseja editar e clique no ícone “Editar”. <li>Clique no botão <b>Atualizar</b> para salvar as alterações. <li>As guias na parte superior da tela permitem acessar todas as configurações editáveis desse perfil.
+562	<nobr><span class=title1><b>Perfis: filtros (Ref. #A-2103)</b></span></nobr><br>Use essa tela para adicionar <b>Filtros aplicados</b> da lista de <b>Filtros disponíveis</b>. <p><b>Controles:</b><br><ul><li><b>Adicionar</b><br>Clique no ícone "Adicionar" para adicionar outro filtro aos já disponíveis. Isso iniciará o Assistente para adicionar filtros, que orientará você nas etapas para adicionar um filtro novo ou preexistente.<li><b>Editar</b><br>Destaque o filtro disponível que deseja editar e clique no ícone "Editar".<br><li>Clique nas setas para cima e para baixo para alterar a ordem na qual os filtros são aplicados.<br><li>Clique no botão <b>Atualizar</b> para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse perfil.
+563	<nobr><span class=title1><b>Perfis: usuários (Ref. #A-2104)</b></span></nobr><br>Us essa tela para conceder acesso à visualização dos relatórios deste perfil aos usuários configurados no sistema do Urchin. Quando um usuário não administrativo registra-se no sistema do Urchin, ele terá acesso somente aos relatórios aos quais foi adicionado explicitamente pelo Administrador. <p><b>Atribuir usuários</b><br>Para conceder acesso ao perfil de um usuário específico, selecione-o na caixa do lado esquerdo, em “Usuários disponíveis”, e clique na seta voltada para a direita. Para negar acesso ao perfil de um usuário específico, selecione-o na caixa do lado direito e clique na seta voltada para a esquerda. Clique em Atualizar para salvar as alterações.<p><b>Substituir painel de controle</b><br>Essa opção permite que você altere quais relatórios e quais painéis estão disponíveis por usuário. Clique uma vez em um usuário na janela "Acesso concedido" para destacá-lo. Em seguida, clique no botão "Substituir painel de controle" para abrir uma janela pop-up em que você pode ativar e desativar seções inteiras do relatório para o usuário selecionado e selecionar o painel padrão. Ao mover um usuário de "Usuários disponíveis" para "Acesso concedido", você deve clicar em “Atualizar” antes que essa opção seja disponibilizada para esse usuário.<p><b>Controls</b><br><ul><li><b>Adicionar</b><br>Clique no ícone "Adicionar" para iniciar o Assistente do usuário e adicioná-lo à lista de usuários disponíveis.<li><b>Editar</b><br>Clique no ícone "Editar" para editar o usuário destacado.<li>Clique no botão "Atualizar" para salvar as alterações. <li>As guias na parte superior da tela permitem acessar todas as configurações editáveis desse perfil.
+564	Essa tela mostra todos os parâmetros configurados para o arquivo de registro selecionado. Se as informações estiverem incorretas, clique em Editar na parte superior direita para alterar as configurações. Se os filtros ou as informações sobre "Perfis atribuídos a" precisarem de ajustes, clique no botão "Editar" na seção correspondente dessa página.
+565	<nobr><span class=title1><b>Gerenciador de registro: configurações do registro (Ref. #A-1601)</b></span></nobr><br>Essa tela permite que você configure o local e o formato da origem do registro. Para a geração correta de relatórios, é essencial que essas configurações sejam definidas corretamente. <p><b>Conta opcional</b> (somente modo Datacenter)<br>Exibe a conta à qual a origem do registro está associada.<p><b>Localização do arquivo de registro</b><br>Selecione “Local”, se o arquivo de registro estiver acessível no sistema de arquivos local ou em um sistema de arquivos de rede montado nesse computador. Selecione “Remoto” se o arquivo de registro tiver que ser transferido de um sistema remoto usando FTP ou HTTP ou acessado através de um compartilhamento UNC (somente Windows). Para registros remotos, depois que o botão “Atualizar” for clicado, a guia “Configurações remotas” aparecerá na parte superior. Clique na guia para configurar os detalhes de acesso ao registro remoto.<p><b>Nome da origem do registro</b><br>Qualquer nome escolhido para essa origem do registro. <p><b>Formato do registro</b><br>Use essa opção para especificar o formato do arquivo de registro que está sendo processado. O tipo de formato do registro <i>automático</i> deve ser escolhido para a maioria dos servidores da web. Outros tipos de formato de registro de servidor da web são fornecidos para compatibilidade com versões anteriores do Urchin, mas normalmente não são necessários. Formatos de registro personalizados podem ser criados com os modelos do diretório lib/custom/logformats da distribuição do Urchin.<ul><li><b>Automático:</b> esse formato detecta automaticamente a maioria dos formatos de registro de servidor da web, incluindo Apache, W3C (Microsoft IIS), NCSA, Netscape e iPlanet. <li><b>Campanha:</b> Use esse formato para dados de custo da campanha especificamente formatados para uso do Urchin. Consulte a documentação on-line para obter detalhes. O formato do registro da campanha não pode ser detectado automaticamente.<li><b>Elf2:</b> Use esse formato para registros de comércio eletrônico no formato ELF2. O formato de registro de comércio eletrônico não pode ser detectado automaticamente.<li><b>Google:</b> Use esse formato para registros que contêm os dados de gastos de custo por clique do Google. O formato de registro do Google não pode ser detectado automaticamente.<li><b>NCSA:</b> Esse formato geralmente pode ser detectado automaticamente e normalmente é usado por servidores da web Apache. Para geração de relatórios completa, deve ser usado um registro "Combinado estendido", que não é o comportamento padrão do Apache na maioria dos casos. <li><b>Netscape:</b> Os servidores Netscape legados (não iPlanet) usam esse formato por padrão.<li><b>Overture:</b> Use esse formato para registros que contêm dados de gastos de custo por clique do Overture. O formato do registro do Overture não pode ser detectado automaticamente.<li><b>W3C:</b> Esse formato pode ser detectado automaticamente, e é usado para servidores da web que fazem login no formato W3C padrão, como servidores Microsoft IIS.</ul></ul></ul> <p><b>Caminho do arquivo de registro</b><br>Para origens do registro locais, o caminho do arquivo de registro especifica o local no sistema de arquivos locais do arquivo de registro. Use to botão "Procurar" para sua conveniência. <p><b>Controles</b><br>Clique no botão “Atualizar” para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis dessa origem do registro.
+566	Essa tela mostra todos os parâmetros configurados para o filtro do registro selecionado. Se as informações estiverem incorretas, clique em "Editar" na parte superior direita para alterar as configurações. Se as informações "Origens do registro aplicadas a" precisarem de ajuste, clique no botão "Editar" na seção correspondente dessa página.
+567	<nobr><span class=title1>    <b>Contas: informações (Ref. #A-1201)</b></span></nobr><br>Essa tela permite editar as diversas configurações dessa conta.<p><b>Nome da conta</b><br>Cada conta requer um nome exclusivo. Esse nome pode ser arbitrário ou ter como base o nome ou o website do cliente.<p><b>Contato e e-mail de contato</b><br>As informações de contato são opcionais e fornecidas como uma forma conveniente de acompanhar seus clientes.<p><b>Local dos dados do relatório</b><br>Essa configuração opcional especifica o caminho do diretório para armazenar os dados do relatório de todos os perfis que pertencem a essa conta. O local padrão é no diretório data/reports/<i>account_name</i> na distribuição do Urchin. O diretório de dados inteiro pode ser movido por todo o sistema. Para isso, edite o arquivo urchin.conf no diretório etc. Para sua conveniência, é fornecido o botão "Procurar".<p><b>Local do histórico de execução</b><br>Essa configuração opcional especifica o caminho do diretório para armazenar os dados do histórico do tempo de execução de todos os perfis que pertencem a essa conta. O local padrão é no diretório data/history/<i>account_name</i> na distribuição do Urchin. Para sua conveniência, é fornecido o botão "Procurar".<p><b>Local de navegação no diretório</b><br>Essa configuração opcional é fornecida como uma medida de segurança ao conceder acesso para criar perfis ao administrador da conta. Um caminho de diretório inserido nesse campo limita a capacidade do administrador da conta de procurar arquivos de registro a esse diretório. Por padrão, não há nenhuma restrição de navegação. Isso pode ser alterado em todo o sistema modificando o arquivo urchin.conf no diretório etc. Para sua conveniência, é fornecido o botão "Procurar".<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis dessa conta.
+568	<nobr><span class=title1><b>Perfis: executar/programar (Ref. #A-2105)</b></span></nobr><br>Essa tela permite que você programe a execução de uma tarefa (processe as origens do registro associadas ao perfil) ou execute a tarefa imediatamente clicando no botão “Executar agora” à direita. Depois de clicar em um dos botões de programação, você terá mais opções, como hora e minuto desejados, dependendo da frequência escolhida. Clique no botão “Atualizar” para aplicar as alterações. Se você selecionar o botão “Executar agora”, a execução do perfil será feita imediatamente. Para visualizar os detalhes da execução, verifique o status da tarefa no Programador.<p><b>Executar agora</b><br>Para processar esse perfil imediatamente, clique no botão verde grande "Executar agora" à direita. Assim, a tarefa será colocada na fila para ser executada pelo Programador do Urchin<p><b>Programar</b><br>Para programar essa tarefa do perfil para ser executada regularmente ou mais tarde, selecione uma das opções de frequência: “Por hora”, “Diariamente”, “Semanalmente” ou “Mensalmente”. Assim, esse perfil será executado na frequência escolhida. Para especificar o momento exato da ativação, use os controles de data que aparecem quando a frequência é selecionada. Todos os horários são especificados como hora local para o sistema no qual o Urchin está em execução.<p><b>Controles</b><br>Clique no botão “Atualizar” para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse perfil.
+569	<nobr><span class=title1><b>Perfis: relatórios (Ref. #A-2106)</b></span></nobr><br>A tela "Configurações dos relatórios" permite que você controle diversos recursos de processamento importantes do Urchin, incluindo a identificação de determinados filtros e configurações de proxy.<p><b>URL do website</b><br>Essa configuração é usada para criar links de referência para seu website. Tais links devem ser o nome do domínio completo do site, incluindo http://. <p><b>Domínios do site</b> (somente superadministrador)<br>Essa configuração deve relacionar todos os domínios possíveis para seu website, com e sem “www”. Esse campo é usado para determinar se uma referência é externa a seu site. Use vírgulas para separar cada entrada de domínio. <p><b>Página padrão</b><br> Essa página deve ser definida como a página (ou índice) padrão, seja qual for, nos diretórios desse site. Geralmente, será “index.html”. No entanto, nos servidores IIS Windows, geralmente é “Default.htm” ou “index.htm”. Essas informações permite que o Urchin compare entradas de registro, como “http://www.urchin.com/” e “http://www.urchin.com/index.html”, que na verdade são a mesma página. Se as informações da página padrão não forem inseridas corretamente, essas páginas serão informadas como duas páginas distintas. Somente uma página padrão deve ser especificada. <p><b>Configurações de proxy</b> (somente superadministrador)<br>Algumas instalações podem precisar de configurações de proxy para exibir os relatórios de sobreposição da página inicial. Como as consultas de sobreposição são iniciadas no sistema do Urchin, é possível que as configurações de firewall não permitam comunicações externas. Se isso for verdadeiro, você poderá usar um proxy para permitir esses tipos de consulta. O servidor proxy deve ser o nome do host do servidor. A porta do proxy deve ser o número da porta para comunicação com o proxy. Os campos nome de usuário e senha do proxy também podem oferecer mais segurança, se forem necessários nome de usuário e senha para acessar o proxy. Deixe todos esses campos em branco, a menos ocorra um erro ao tentar usar o recurso de sobreposição. Se ocorrer, entre em contato com o administrador da rede para obter as configurações.<p><b>Processamento paralelo de registros</b> (somente superadministrador)<br>Se você tiver muitos registros grandes com equilíbrio de carga, executá-los em paralelo poderá aumentar o desempenho. Isso depende de muitos fatores, inclusive do tamanho dos dados e do desempenho IO da máquina. Especialmente se puderem existir acessos de uma única sessão do usuário em vários registros, ative essa configuração para aumentar o desempenho. <p><b>Ajuste de horário</b> (somente superadministrador)<br>Essa configuração determina em qual fuso horário o Urchin informa os dados. Como todos os acessos contêm referência ao GMT, o Urchin pode informar os dados em qualquer fuso horário. A opção "Horário local" registrará dados de acordo com o fuso horário configurado servidor em que o Urchin está sendo executado. Para usar outra configuração, selecione o ajuste a partir do GMT. <p><b>Correspondência entre palavras-chave estruturais</b> (somente superadministrador)<br>Essa configuração controla como o Urchin detecta mecanismos de pesquisa e palavras-chave para esses relatórios. O Urchin irá procurar parâmetros em consultas de sites de referência que sejam correspondentes usando essa lista (separada por vírgulas). Então, o Urchin captura o valor do parâmetro como as palavras-chave ou o termo de pesquisa usados na referência. Use essa lista para adicionar entradas com a finalidade de capturar termos de pesquisa que podem não ser incluídos automaticamente. A lista padrão funciona para a maioria dos mecanismos de pesquisa.<p><b>Correspondência de mimes de exibições de páginas</b> (somente superadministrador)<br> Essa lista separada por vírgulas controla quais extensões de arquivo são tratadas como exibições de páginas. A lógica pode ser definida para incluir ou excluir determinadas extensões. A lista padrão funciona para a maioria dos sites.<p><b>Correspondência de parâmetros de página</b><br>Essa configuração controla quais parâmetros o Urchin irá ou não capturar no Relatório de parâmetros. Os parâmetros vêm da parte da consulta do URL solicitado e podem conter termos de pesquisa internos ou outro conteúdo dinâmico. O Urchin captura automaticamente esses pares de valores de nomes e os informa no Relatório de parâmetros. Essa lista separada por vírgulas permite que você exclua ou inclua determinados parâmetros. Por exemplo, em um site com milhões de IDs de sessão aleatórios, convém excluir a variável SID desse relatório para economizar recursos de armazenamento.<p><b>Correspondência de downloads</b> (somente superadministrador)<br> Essa lista separada por vírgulas controla quais extensões de arquivo são tratadas como arquivos baixados no Relatórios de downloads. Edite a lista conforme necessário para incluir extensões de arquivo usadas para downloads.<p><b>Detalhes geográficos</b><br><p><b>Informações geográficas</b><br>Essa configuração controla quais informações geográficas serão incluídas nos relatórios do perfil. Selecionar outras opções aumenta o espaço da memória do mecanismo de processamento de registros (aproximadamente 350 MB para redes, 100 MB para domínios e de 20 a 150 MB para países, dependendo do banco de dados geográficos escolhido). O Urchin é fornecido com diversos bancos de dados geográficos, que variam no nível de detalhes de país/região fornecidos. Selecione banco de dados geográficos mais adequado a suas necessidades no menu suspenso.<p><b>Banco de dados geo gráfico</b><br>O Urchin é fornecido com diversos bancos de dados geográficos. Cada um deles fornece níveis diferentes de informações sobre os países:<br>- Mundial (contém informações detalhadas sobre países/regiões/cidades de todo o mundo)<br>- Mundial leve (contém informações somente no nível do país para todo o mundo)<br>- Bancos de dados regionais, como Estados Unidos, União Europeia e Japão, que contêm informações detalhadas de regiões correspondentes e no nível do país para o resto do mundo.<br> <p><b>Codificação de caracteres</b><br>Se os registros que serão processados contiverem dados não codificados em UTF-8, escolha o formato de codificação correto para os dados. Há suporte para os formatos Japonês Nativo e Latino 1. <p><b>Moeda e precisão</b><br>Para sites de comércio eletrônico, use as configurações de moeda e precisão para alterar os símbolos de moeda padrão, a formatação para exibição e a precisão numérica. <p><b>Controles:</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse perfil.
+570	<nobr><span class=title1>    <b>Grupos: informações do grupo (Ref. #A-1401)</b></span></nobr><br>Essa tela permite editar as diversas configurações desse grupo.<p><b>Conta opcional</b> (somente modo Datacenter)<br>Exibe a conta com a qual o grupo está associado.<p><b>Nome do grupo</b><br>Use esse campo para especificar o nome do grupo. Use qualquer nome descritivo. Os nomes de grupos devem ser exclusivos.<p><b>Descrição do grupo</b> (opcional)<br>É um campo opcional que ajuda a acompanhar a finalidade de cada grupo. Insira uma breve descrição para ajudar a manter os grupos organizados.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse grupo.
+571	<nobr><span class=title1><b>Grupos: usuários no grupo (Ref. #A-1402)</b></span></nobr><br>Essa tela é utilizada para selecionar os usuários que pertencem a esse grupo. As permissões para visualizar os relatórios podem ser concedidas no nível do grupo. Os usuários que pertencerem a esse grupo poderão visualizar todos os relatórios aos quais o grupo tem acesso.<p><b>Adicionar usuário ao grupo</b><br>Para adicionar um usuário a esse grupo, selecione seu nome na caixa "Usuários disponíveis" e clique na seta voltada para a direita. Para remover um usuário desse grupo, selecione-o na caixa "Usuários do grupo" e clique na seta voltada para a esquerda. Clique em "Atualizar" para aplicar as alterações.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse grupo.
+572	<nobr><span class=title1><b>Grupos: acesso aos relatórios (Ref. #A-1403)</b></span></nobr><br>Essa tela é usada para conceder permissão para que esse grupo visualize os relatórios de um ou mais perfis existentes. Além das permissões individuais, os usuários desse grupo terão acesso aos relatórios, conforme definido nessa tela.<p><b>Conceder acesso</b><br>Para conceder acesso aos relatórios de um perfil, selecione o nome do perfil na caixa "Perfis disponíveis" e clique na seta voltada para a direita. Para negar acesso aos relatórios de um perfil, selecione-o na caixa "Acesso concedido" e clique na seta voltada para a esquerda. Clique em "Atualizar" para aplicar as alterações.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis desse grupo.
+573	<nobr><span class=title1><b>Grupos: resumo (Ref. #A-1404)</b></span></nobr><br>Essa tela mostra o conjunto completo de parâmetros desse grupo. Se algo precisar de ajustes, clique na guia apropriada e atualize as configurações conforme necessário. <p><b>Controles</b><br>As guias na parte superior da tela permitem acessar todas as configurações editáveis desse grupo.
+574	<nobr><span class=title1><b>Perfis: resumo (Ref. #A-2107)</b></span></nobr><br>Essa tela mostra o conjunto completo de parâmetros desse perfil. Examine essas configurações cuidadosamente antes de processar o perfil para garantir que esteja tudo correto. Se precisar fazer qualquer ajuste, clique na guia apropriada e atualize as configurações conforme necessário. <p><b>Controles</b><br>As guias na parte superior da tela permitem acessar todas as configurações editáveis desse perfil.
+575	<nobr><span class=title1><b>Gerenciador de registro: configurações remotas (Ref. #A-1602)</b></span></nobr><br>Essa tela permite especificar como recuperar ou acessar o arquivo de registro remoto dessa origem do registro.<p><b>Protocolo do servidor</b><br>O Urchin pode gerenciar quatro tipos de arquivos de registro remoto: HTTP (www), HTTPS, FTP e UNC (somente Windows). Se seu arquivo de registro puder ser acessado através de um navegador da web, use HTTP. Se não for necessário utilizar senha, deixe os campos "nome de usuário" e "senha" em branco. O FTP pode ser usado com um nome de usuário e uma senha (geralmente os mesmos usados para enviar conteúdo para seu site). O UNC, que está disponível apenas nos sistemas Windows, exige um nome de usuário e uma senha para acessar o compartilhamento UNC.<p><b>Nome do servidor/IP</b><br>Insira o nome do servidor (por exemplo, www.urchin.com) ou o endereço IP (por exemplo, 63.212.171.4) em que se encontra o arquivo de registro. Para o UNC, use a notação \\server\share.<p><b>Mesmo login local e remoto</b><br>Essa opção ficará visível se o UNC tiver sido selecionado como Protocolo do servidor (somente Windows). Selecione "Sim" se os mesmos login e senha puderem ser usados para os servidores remoto e local. Selecione "Não" se o servidor remoto exigir login ou senha diferentes daqueles usados no servidor local. Se você selecionar "Não", outros campos do login do servidor local ficarão visíveis.<p><b>Porta do servidor</b><br>A porta do servidor será preenchida automaticamente. No entanto, se você estiver usando uma porta que não seja a padrão, poderá editar esse campo manualmente.<p><b>Nome de usuário/senha</b><br>Esses campos ficarão em branco para HTTP não autenticado e conexões de FTP anônimas. Para usar uma conexão HTTP/FTP autenticada, insira o nome de usuário e senha aqui. O UNC exige um nome de usuário e uma senha para acessar o compartilhamento. <p><b>Domínio (somente UNC)</b><br>Se o compartilhamento UNC fizer parte de um domínio, insira as informações de rede do domínio aqui. <p><b>Modo FTP</b><br>Essa opção ficará visível se o FTP tiver sido selecionado como Protocolo de servidor. Selecione "Passivo" para o método de transferência passiva (PASV). Selecione "Ativo" para o método de transferência direta (PORT). <p><b>Arquivo de origem do registro remota</b><br>Esse arquivo especifica o caminho para o arquivo de registro no sistema remoto. Se você estiver usando HTTP, geralmente é mais fácil se você localizar primeiro o arquivo de registro com um navegador da web. Para fazer isso, insira o URL do site no navegador seguido de uma barra, os nomes dos diretórios usados e o nome do arquivo de registro (por exemplo, http://www.urchin.com/logs/access_log). Se a tela do navegador for preenchida com texto, o caminho estará correto. Basta inserir tudo à direita do domínio (por exemplo, /logs/access_log). Os curingas não são suportados para nomes de caminho de origem do registro remota com base em HTTP. Se estiver usando FTP, procure o arquivo de registro no servidor remoto. Antes de procurá-lo, será necessário configurar as informações de servidor/nome de usuário.<p><b>Destino do registro</b> (somente remoto)<br>Antes do processamento, os arquivos de registro remoto são transferidos para o sistema local. Selecione um diretório local para armazenar o arquivo de registro. Um botão de navegação é fornecido.<p><b>Servidor proxy</b> (somente HTTP e HTTPS)<br>Se o registro estiver disponível por meio de uma máquina proxy, especifique o endereço IP ou o nome do host. <p><b>Porta proxy</b> (somente HTTP e HTTPS)<br>Se o registro estiver disponível por meio de uma máquina proxy, especifique a porta.<p><b>Nome de usuário proxy</b> e <b>Senha proxy</b><br>Se o registro estiver disponível por meio de uma máquina proxy que exija nome de usuário e senha, especifique-os nesses campos.
+576	<nobr><span class=title1><b>Gerenciador de registro: filtros de registro (Ref. #A-1603)</b></span></nobr><br>Use essa tela para aplicar filtros à origem do registro. Para aplicar um filtro, selecione-o na caixa à esquerda, em "Filtros disponíveis", e clique na seta voltada para a direita. Para remover um filtro, selecione-o na caixa à direita e clique na seta voltada para a esquerda. Clique em "Atualizar" para salvar as alterações.<p><b>Controles</b><br><ul><li><b>Adicionar</b><br>Clique no ícone "Adicionar" para iniciar o Assistente de filtros e adicionar um filtro à lista de filtros disponíveis.<li><b>Editar</b><br>Clique no ícone "Editar" para editar o filtro destacado.<li>Clique nas setas para cima e para baixo para alterar a ordem em que os são aplicados.<br><li>Clique no botão "Atualizar" para salvar as alterações.
+577	<nobr><span class=title1><b>Gerenciador de registro: configurações avançadas (Ref. #A-1604)</b></span></nobr><br>Essa tela permite configurar configurações avançadas para essa origem do registro, incluindo como gerenciar o arquivo de registro quando o processamento estiver concluído e qual tipo de codificação será usado.<p><b>Destino do registro</b><br>Quando o Urchin tiver concluído o processamento do arquivo de registro de todos os perfis aos quais ele foi aplicado, poderá arquivar, excluir ou não fazer nada com o arquivo de registro <ul><li>Selecione "Não tocar" para deixar o registro como está após o processamento.<li>Selecione "Arquivar - Compactar" para compactar e coloque a data no arquivo de registro. <li>Selecionar arquivo - Sem compactação" para arquivar um registro sem compactá-lo. Essa seleção é útil para registros que já foram compactados. <li>Selecione "Excluir" para excluir o arquivo de registro após o processamento.</ul> As seleções "Arquivar" e "Excluir" requerem que o processo do Urchin tenha permissões apropriadas. Para origens de registro usadas por vários perfis, somente a opção "Não tocar" deve estar selecionada. <b>Aviso:</b> Não usar em arquivos de registro ativos.<p><b>Codificação de arquivo de registro</b><br>Se estiver processando registros do idioma japonês de byte duplo, altere essa codificação para Shift-JIS. Caso contrário, deixe-a na configuração em inglês (ISO) padrão, que é apropriada para todos os registros de byte único.<p><b>Decodificar URL</b><br>Se estiver usando um servidor de aplicativos ou outro sistema dinâmico de geração de páginas e quiser traduzir URLs de páginas para entradas de relatório mais significativas (mais fáceis de ler e entender), clique no botão "Ativar".<p><b>Token de consulta</b><br>URLs de página gerados dinamicamente normalmente usam um token de consulta para separar a base do URL da informação específica da consulta. O Urchin precisa saber qual é essa informação para que possa analisar adequadamente o URL para seus relatórios. Geralmente, o token de consulta é um ponto de interrogação.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acesso a todas as configurações editáveis dessa origem de registro.
+578	URL do website
+579	Bem-vindo ao Urchin. Clique no<br> botão “Assistente de configuração de relatórios” à esquerda para começar.
+580	Você optou por alterar o número da porta do servidor. \n\nEssa alteração não entrará em vigor até que os serviços do Urchin \nsejam desativados e reativados a partir do menu Iniciar. \n\n
+581	Codificação do arquivo de registro
+582	<nobr><span class=title1><b>Gerenciador de registro: configurações avançadas (Ref. #A-1605)</b></span></nobr><br>Essa tela permite definir configurações avançadas para essa origem do registro, incluindo o que fazer com o arquivo de registro quando o processamento for concluído. A codificação e a decodificação do arquivo de registro foram movidas para os filtros.<p><b>Destino do registro</b><br>Use o destino do registro para indicar como os arquivos de registro devem ser gerenciados depois que forem processados para todos os perfis aos quais se aplicam. <ul><li>Selecione "Não tocar" para indicar que nenhuma outra ação deverá ser executada quando o processamento for concluído. <li>Selecione "Arquivo - Compactar" para compactar e colocar a data no arquivo de registro. <li>Selecionar arquivo - Não compactar" para arquivar e colocar a data em um registro sem compactá-lo. Essa seleção é útil para registros que já foram compactados. <li>Selecione "Excluir" para excluir o arquivo de registro após o processamento.</ul> As seleções "Arquivar" e "Excluir" exigem que o processo Urchin tenha permissões apropriadas. Para origens do registro usadas por diversos perfis, somente a opção "Não tocar" deverá ser selecionada. <b>Warning:</b> Não use as opções "Arquivar" e "Excluir" com arquivos de registro ativos. <p><b>Origem do URI para letras minúsculas</b><br> Quando ativada, essa opção coloca o URL em letras minúsculas automaticamente nos registros criados em plataformas Windows, onde o URL do mesmo arquivo pode estar tanto em letras maiúsculas quanto minúsculas. Assim, são geradas duas entradas diferentes para esse arquivo no Relatório de conteúdo<p><b>Token da consulta</b><br>URLs de páginas gerados automaticamente normalmente usam um token de consulta para separar a base do URL das informações específicas da consulta. O Urchin precisa saber quais são essas informações para que possa analisar adequadamente o URL para seus relatórios. Geralmente, o token de consulta é um ponto de interrogação.<p><b>Substituição de do curinga Data/hora no nome do caminho do registro</b><br>Para automatizar o Urchin e fazer com que ele abra os arquivos de registro apropriados, o nome do caminho do arquivo de registro pode conter curingas do registro de data, que podem ter como base o horário atual. No entanto, é comum que o Urchin seja executado depois de os arquivos de registro terem sido alternados e registrados. Para que o Urchin encontre o arquivo de registro correto, ele precisa saber como ajustar o horário ao substituir curingas de data. Por padrão, o Urchin procurará arquivos de registro de ontem (local - 24 horas). Os curingas seguem a convenção <i>strftime</i>, que é descrita na Central de documentação on-line. “Intervalo de dias” indica o número de dias que o Urchin deverá voltar no tempo ao fazer a correspondência com uma string compatível com strftime no nome do arquivo de registro. Essa configuração é muito útil em ambientes em que o arquivo de registro do dia atual possa não estar presente e permite que o Urchin execute um processamento de “atualização”, se o arquivo de registro estiver disponível em uma data futura na janela “Intervalo de dias”.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis dessa origem do registro.
+583	<nobr><span class=title1><b>Gerenciador de registro: resumo (Ref. #A-1606)</b></span></nobr><br>Essa tela mostra o conjunto completo de parâmetros dessa origem do registro. Examine essas configurações cuidadosamente antes de processar os perfis relacionados para garantir que tudo esteja correto. Se precisar fazer qualquer ajuste, clique na guia apropriada e atualize as configurações conforme necessário. <p><b>Controles</b><br>As guias na parte superior da tela permitem acessar todas as configurações editáveis dessa origem do registro.
+584	Verificar arquivo(s) de registro
+585	Verificar
+586	Arquivos selecionados
+587	Outros arquivos do diretório
+588	Informações sobre o arquivo
+589	Localização do arquivo de registro
+590	Tamanho do arquivo (Bytes)
+591	Última modificação
+592	Permissão do arquivo
+593	Ler
+594	Gravar
+595	Não foi possível obter informações sobre o arquivo.
+596	Arquivo(s) de registro
+597	Diretório atual
+598	Nenhuma permissão
+599	Você optou por alterar o número da porta do servidor. \n\nEssa alteração não entrará em vigor até que o Servidor da web do Urchin \nseja reiniciado por meio da execução de urchinctl -w restart no diretório bin do Urchin.\n\n
+600	Licenciar Urchin
+601	Informações sobre a licença
+602	Itens de ação
+603	Obter licença de demonstração
+604	Ativar licença pré-adquirida
+605	Comprar licença
+606	Reativar licença
+607	Ativar licença
+608	Nenhuma permissão para o diretório
+609	Atualizar licença
+610	Clique em uma das seguintes opções
+611	Licença válida - Regular
+612	Licença válida - Demonstração
+613	Nunca
+614	Nenhuma licença instalada
+615	Licença inválida
+616	(Expirou)
+617	(Chave errada)
+618	Aguardando a ativação
+619	Status da licença
+620	Vencimento da licença
+621	Perfis incluindo a Base
+622	Servidores incluindo Base
+623	Produto
+624	Versão
+625	Licença válida
+626	Reativar Gold Master
+627	Licença
+628	Código de série
+629	Decodificar URL
+630	Configurações avançadas
+631	Token de consulta
+632	Nível de referência
+633	Padrão
+634	Problema na licença
+635	Foi detectado um problema de Licenciamento. Entre em contato com o administrador do sistema local para resolver o problema.
+636	Processar DNS
+637	Filtro
+638	Limite de licença
+639	Nome do perfil
+640	Configurações gerais
+641	Origens do registro
+642	Filtros
+643	Usuários
+644	Avançado
+645	Avançado
+646	Mais opções
+647	Bytes do registro
+648	s
+649	Filtros/avançado/perfis
+650	Configurações do registro
+651	Configurações remotas
+652	Filtros do registro
+653	Configurações avançadas
+654	Ajuste de horário
+655	Adicionar origem do registro local
+656	Adicionar origem do registro remoto
+657	Selecionar origem do registro pré-configurada
+658	Destino do registro
+659	Perfis aplicados a
+660	Configurações do filtro
+661	Perfis
+662	Origens do registro
+663	Selecionar filtro pré-configurado
+664	Adicionar novo filtro
+665	Opções de adição da origem do registro
+666	Aviso: Você optou por interromper a Tarefa do Urchin. \nInterromper a tarefa pode corromper o banco de dados do Urchin. \nPara obter mais informações, consulte o artigo sobre “Hard Close” na Base do conhecimento. \n\nInterromper a tarefa?
+667	Aviso. Programador secundário desativado.
+668	Perfis/origens do registro
+669	Opção
+670	Remover
+671	Visualização rápida do usuário
+672	Configurações do usuário
+673	Informações do usuário
+674	Preferências
+675	Grupos
+676	Acesso ao relatório
+677	Confirmar senha
+678	Acesso/grupos do relatório
+679	Horário GMT
+680	Visualização rápida do grupo
+681	Descrição do grupo
+682	Os caracteres a seguir não são permitidos: (*?“<>|).
+683	Informações do grupo
+684	Usuários do grupo
+685	Acesso ao relatório
+686	Os caracteres a seguir não são permitidos no nome do perfil:\n\n -> / (barra)\n\ -> \\ (barra invertida)\n -> + (sinal de adição). \n\n Remova o(s) caractere(s) e tente novamente.
+687	Usuários/acesso aos relatórios
+688	Erro.\n\nAs senhas não coincidem.
+689	O campo obrigatório a seguir está vazio ou é inválido.
+690	Configurações de DNS
+691	Configurações do banco de dados
+692	Configurações da sessão
+693	Configurações de acesso
+694	Configurações do servidor
+695	Padrão de filtro
+696	Linhas
+697	Tem certeza de que deseja excluir este registro?
+698	Resumo
+699	Mais informações
+700	Programar
+701	Executar agora
+702	Andamento da tarefa
+703	Relatório Todos os perfis
+704	Clique aqui para obter detalhes
+705	Hora de início
+706	Horário de término
+707	Detalhe do processo da tarefa
+708	Ocultar detalhes
+709	Método de acompanhamento do visitante
+710	IP+User-Agent
+711	ID da sessão
+712	Monitor de tráfego do Urchin (UTM)
+713	Definição da análise da sessão
+714	Hora atual
+715	Campo da sessão
+716	ERRO: a tarefa foi concluída. \nERRO: é possível que os dados tenham sido corrompidos. Consulte o artigo sobre "Hard Close" na Base de conhecimento para obter informações sobre a execução do udb-sanitizer.
+717	ERRO: falha na conclusão da tarefa.
+718	SOMENTE IP
+719	A sessão exige exibição de página
+720	Nenhum perfil para importar
+721	Versão
+722	Uso da memória
+723	Configurações de uso da memória
+724	Meta de uso da memória
+725	Opção de análise dos dados
+726	Personalizar
+727	Configurações personalizadas do uso da memória
+728	Tamanho do buffer de visitantes
+729	Tamanho do buffer de sessão
+730	Tamanho do buffer de caminho
+731	Tamanho do buffer de dados
+732	Tamanho do buffer da string de dados
+733	Em execução - Arquivos de registro
+734	Execução - DNS
+735	Concluído
+736	Erro
+737	Pendente
+738	Processar caminhos
+739	Nível do caminho
+740	Histórico de tarefas de perfil
+741	Acompanhamento de registro
+742	usar qualquer nome descritivo
+743	Moeda
+744	Símbolo da moeda
+745	Número anterior
+746	Após o número
+747	Precisão
+748	nenhum
+749	EUA
+750	China
+751	França
+752	Alemanha
+753	Itália
+754	Japão
+755	Coreia
+756	Portugal
+757	Espanha
+758	Suécia
+759	Reino Unido
+760	Região
+761	Alterar região
+762	Localização
+763	Vinculação direta ao relatório
+764	Limpar ou modificar o banco de dados
+765	Excluir TODOS os dados do perfil
+766	Excluir todos os dados
+767	Tem certeza que deseja excluir PERMANENTEMENTE TODOS os dados deste perfil?
+768	consulte a ajuda para obter detalhes
+769	Selecionar filtro de exemplo
+770	Filtrar tráfego interno
+771	Filtrar tráfego do robô
+772	Filtrar tráfego do agente de monitoramento
+773	Filtrar todas as solicitações de imagem
+774	Informar o tráfego somente para um subdiretório
+775	excluir tráfego interno
+776	excluir robôs
+777	excluir agente de monitoramento
+778	excluir imagens
+779	incluir subdiretório
+780	Correspondência de downloads
+781	<nobr><span class=title1><b>Configurações de acesso: padrões globais (Ref. #A-781)</b></span></nobr><br>Essa tela contém determinadas configurações de todo o sistema que controlam o comportamento padrão para acessar e visualizar relatórios. <p><b>Idioma do relatório</b><br>Use a configuração de idioma do relatório para controlar o idioma padrão de visualização dos relatórios. Quando forem criados novos usuários, por padrão, esse será o valor de suas configurações de idioma do relatório. <p><b>Região</b><br>Use a configuração de região para controlar o estilo de localização padrão da visualização de relatórios. Quando forem criados novos usuários, por padrão, esse será o valor de suas configurações de região. Essa configuração controla o formato de moeda, datas, horários e números, que podem ser exibidos de forma diferente em várias localidades. Se você não visualizar determinado país na lista, selecione uma região que use os mesmos formatos de data/número. Clique em "Atualizar" para salvar as alterações.
+782	Com falha
+783	Diferencia maiúsculas de minúsculas
+784	Opções de equilíbrio de cargas
+785	Processamento do registro paralelo
+786	FTPS
+787	HTTPS
+788	Configurações de proxy HTTP (Opcional)
+789	Servidor proxy
+790	Porta proxy
+791	Nome de usuário proxy
+792	Senha proxy
+793	Opções da campanha
+794	Correspondência da meta principal
+795	Campo da meta principal
+796	Diferencia maiúsculas de minúsculas
+797	UTM necessário para a campanha
+798	Modo FTP
+799	Passivo
+800	Ativa
+801	Login do servidor local
+802	Mesmo login local e remoto
+803	Nome de usuário
+804	Senha
+805	Confirmar senha
+806	Domínio
+807	Tabela de consulta
+808	Nome da tabela
+809	Arquivar - Sem compactação
+810	Austrália
+811	Nova Zelândia
+812	Adicionar entrada CTM
+813	<b>Assistente para Adicionar entrada CTM</b><br>Use esse assistente para inserir dados estáticos de custo e/ou impressões de uma campanha. Preencha os campos para cada uma das três etapas e clique em "Adicionar à próxima execução. Depois de inseridos, os dados são adicionados ao banco de dados do Urchin durante a próxima execução programada desse perfil. <p><b>Etapa 1: data da entrada</b><br>Insira a data a partir da qual o custo e/ou o número de impressões devem ser aplicados. <p><b>Etapa 2: variáveis de CTM</b><br>Insira as variáveis de CTM que descrevem a campanha da qual você está inserindo dados. Por exemplo, para aplicar os dados a todas as referências orgânicas do Google, especifique o Origem como Google e a Mídia como orgânica. Para aplicar os dados ao boletim informativo summer (e presumindo que você marcou as referências ao boletim informativo summer com um utm_source=summer_news), especifique a Origem como summer_news. <ul><li><b>ID de campanha</b><br>Se a campanha para a qual você está inserindo dados puder ser identificada com um ID de campanha (por exemplo, utm_id), insira-o aqui e prossiga para a Etapa 3. <li><b>Campanha</b><br>Insira o nome da campanha à qual os dados se aplicam. <li><b>Origem</b><br>Insira a Origem (por exemplo, Google) à qual os dados se aplicam.<li><b>Mídia</b><br>Insira a Mídia (por exemplo, orgânica ou e-mail) à qual os dados se aplicam. <li><b>Termo de pesquisa</b><br>Insira a palavra-chave (por exemplo, clubes de golfe) à qual dos dados se aplicam.<li><b>Conteúdo do anúncio</b><br>Insira o conteúdo ao qual os dados se aplicam.</ul><p><b>Etapa 3: adicionar dados de custo/impressão</b><br>Insira o valor do custo e/ou o número de impressões que deseja associar a essa campanha.<ul><li><b>Custo</b><br>Insira o valor do custo. <li><b>Impressões</b><br>Insira o número de impressões.</ul><p>Clique em <b>Adicionar à próxima execução</b> para adicionar essas dados ao banco de dados do Urchin na próxima vez que esse perfil for executado. Clique em <b>Visualizar pendentes</b> para visualizar as entradas de dados que serão adicionadas ao banco de dados do Urchin na próxima vez que esse perfil for executado. Clique em <b>Fechar</b> para sair. Clique em <b>Limpar</b> para limpar todos os campos.
+814	Adicionar dados de custo manuais
+815	Adicionar dados de custo
+816	Adicionar à próxima execução
+817	Etapa 1: data da entrada
+818	Data da entrada
+819	Etapa 2: variáveis do CTM
+820	Campanha
+821	Origem
+822	Mídia
+823	Termo de pesquisa
+824	Conteúdo do anúncio
+825	Etapa 3: Adicionar custo/dados de impressão
+826	Custo
+827	Impressões
+828	ID da campanha
+829	ID ou origem da campanha
+830	Custo ou impressões
+831	Entrada CTM adicionada.
+832	Falha na entrada CTM.
+833	Limpar
+834	Visualizar pendentes
+835	Entradas CTM pendentes
+836	<b>Entradas CTM pendentes</b><br>Essa tela exibe as entradas de dados de impressão e custo que serão gravadas no banco de dados do Urchin na próxima vez que o perfil for executado.
+837	Nenhuma entrada CTM pendente.
+838	Fechar
+839	Falha na adição. Número do registro do perfil inválido (1001).
+840	Falha na adição. Falha do perfil ao obter o registro (1002).
+841	Falha na adição. O diretório de entrada CTM não pode ser criado (1003).
+842	Falha ao adicionar. Não foi possível abrir o arquivo de entrada do CTM (1004).
+843	Meta 1
+844	Meta 2
+845	Meta 3
+846	Meta 4
+847	Ativar meta
+848	Valor da meta (Receita)
+849	Etapa 1
+850	Etapa 2
+851	Etapa 3
+852	Meta
+853	Campo "B" obrigatório
+854	Usar valor da meta
+855	Lista de perfis disponíveis
+856	Intervalo de dias
+857	Nome de usuário ou senha do servidor remoto ausente.
+858	Nome de usuário ou senha do servidor local ausente.
+859	Falha na conexão do servidor local.
+860	Falha na conexão do servidor remoto.
+861	Etapa 4
+862	Etapa 5
+863	Etapa 6
+864	Etapa 7
+865	Etapa 8
+866	Etapa 9
+867	Etapa 10
+868	Página inicial
+869	Configurações de proxy HTTP do website (Opcional)
+870	Etapa obrigatória 1
+871	Opção 4 (sob demanda)
+872	Campos obrigatórios
+873	Filtros de amostra
+874	Etapas
+875	Metas
+876	<b>Perfis: metas</b><p>Edite uma meta clicando na guia correspondente na parte superior da tela. Em seguida, clique em <img alt='Analysis Options Button' title='magic wand' src ='/uicons/default/wizard.gif' border=''> na parte superior direita para ativar o Assistente de configuração de metas. Use o navegador da web incorporado ao assistente para navegar até a página que deseja definir como etapa de funil ou meta. Para selecionar a página como a etapa 1, clique em <b>Definir página como etapa: 1</b>. Repita o processo para todas as etapas do funil. Clique em <b>Definir página como meta</b> para definir a página como a meta e fechar o assistente. As páginas selecionadas serão exibidas nos campos "Endereço da web de etapas e meta". Não é necessário incluir a parte <i>http://www.domain.com</i> do URL no campo "Endereço da web da meta" ou "Endereço da web" em nenhuma etapa. O Urchin irá ignorar essa parte do URL.<p>IMPORTANTE: O Urchin permite usar expressões regulares em todos os campos de endereço da web para etapas e metas. Coloque todas as expressões regulares entre metacaracteres após a última barra ("/"), isto é, caracteres como "?" ou "." no endereço da web devem ser colocados entre barras invertidas ("\") se desejar que o Urchin os interprete literalmente. <p><b>Configurações de meta</b><br>O Urchin contará cada visita ao URL especificado em <b>Endereço da web da meta</b> como uma conversão de meta sempre que a opção <b>Ativar meta</b> estiver selecionada. O nome fornecido em <b>Nome da meta</b> será exibido nos relatórios do Urchin. O valor fornecido em <b>Valor da meta (receita)</b> será usado para calcular o retorno de investimento e outras métricas de avaliação.<p><b>Configurações de funil de meta</b><br>Especifique as etapas que levam à meta nesta seção. Cada etapa é uma página no caminho para a conversão da meta. Juntas, as etapas representam um funil de conversão. O Urchin mostra quantos visitantes concluem cada etapa e quantos deixam o funil em cada etapa no relatório Otimização do conteúdo-->Processo de funil e metas-->Abandono definido do funil. Para cada etapa, forneça um URL e um nome para a página. <p><b>Configurações avançadas de meta</b><br>Ao relatar conversões de meta e conclusões de etapa, o Urchin compara os URLs fornecidos com os URLs visitados. Quando <b>Opção de endereço da web</b> está definido como "URL sem consulta", o Urchin ignora a parte de consulta dos URLs nessas comparações. Se você definir <b>Diferenciar maiúsculas de minúsculas</b> como "Sim", essas comparações irão diferenciar maiúsculas de minúsculas. Definir <b>Etapa obrigatória 1</b> como "Sim" indica que somente os caminhos de conversão que incluem a primeira etapa devem ser incluídos nos relatórios de funil.
+877	Configurações
+878	Assistente de configuração da meta
+879	Ajuda do assistente de configuração da meta
+880	Selecionar meta
+881	Etapa atual
+882	Configurações globais da localização
+883	Localizar metas e etapas
+884	Endereço
+885	Nome da página
+886	Usar este endereço
+887	Usar esse nome
+888	Aplicar
+889	O filtro Decodificar URL foi desativado. Agora, a decodificação de campos será gerenciada automaticamente. Se você tiver um campo especial a ser decodificado, consulte a documentação para obter mais informações.
+890	Configurações da meta
+891	Endereço da web de destino
+892	Nome da meta
+893	Configurações de funil da meta
+894	Configurações avançadas da meta
+895	URL sem consulta
+896	URL com consulta
+897	Opção de endereço da web
+898	Endereço da web
+899	Nome
+900	Website de comércio eletrônico
+901	Dados de comércio eletrônico
+902	Valor da meta
+903	Definir página como etapa
+904	Definir página como meta
+905	Navegue até uma página de seu website. Para adicionar a página como uma etapa do funil, clique em <b>Definir página como etapa ...</b>. Repita para todas as etapas do funil. Para definir a página como meta e fechar o assistente, clique em <b>Definir página como meta</b>. Para voltar a uma etapa anterior, clique em <b>Voltar</b>. Para fechar o assistente sem salvar a página de etapas ou de meta, clique em <b>Cancelar</b>.
+906	Uso da memória do banco de dados
+907	Limitar com sistema de cache
+908	Manter tudo na memória
+909	Grupos
+910	<b>Perfis: grupos</b><br>Use essa tela para conceder acesso de grupo aos relatórios desse perfil. <p><b>Atribuir grupos</b><br>Para conceder acesso ao perfil de um grupo específico, selecione o grupo na caixa à esquerda, em "Grupos disponíveis" e clique na seta que aponta para a direita. Para negar acesso ao perfil de um grupo específico, selecione o grupo na caixa à direita e clique na seta que aponta para a esquerda. Clique em "Atualizar" para salvar suas alterações. <p><b>Substituir painel de controle</b> (somente superadministrador)<br>Essa opção permite que você altere quais relatórios e quais painéis estão disponíveis por grupo. Clique uma vez em um grupo na janela “Acesso concedido” para destacá-lo. Em seguida, clique no botão “Substituir painel de controle” para abrir uma janela pop-up em que você pode ativar e desativar seções inteiras de relatórios do grupo selecionado e selecione o painel padrão deles. Ao mover um grupo dos grupos disponíveis para acesso concedido, você deve clicar em "Atualizar" antes que essa opção seja disponibilizada para tal grupo. <p><b>Controles</b><br><ul><li><b>Adicionar</b><br>Clique no ícone "Adicionar" para iniciar o Assistente de grupos e adicioná-lo à lista de usuários disponíveis.<li><b>Editar</b><br>Clique no ícone "Editar" para editar o grupo destacado.<li>Clique no botão "Atualizar" para salvar suas alterações. <li>As guias na parte superior da tela permitem o acesso a todas as configurações editáveis desse perfil.
+911	Ajuste do GMT
+912	Adicionar nova origem do registro
+913	Adicionar mais origens do registro
+914	Adicionar origem do registro existente
+915	Página de erro
+916	Erro do utilitário de configuração do Urchin
+917	Local do histórico de execuções
+918	Selecione um registro para editar.
+919	Erro desconhecido.
+920	10001 - Erro do banco de dados: Não foi possível conectar-se ao banco de dados de configuração.
+921	10002 - Erro do banco de dados: não foi possível iniciar a transação.
+922	10003 - Erro do banco de dados: Não foi possível confirmar a transação.
+923	10004 - Erro do banco de dados: Não foi possível repetir a transação.
+924	11001 - Erro de conf.: falha ao ler os parâmetros de entrada do usuário.
+925	11002 - Erro de conf.: Falha ao obter um registro de configuração global.
+926	11003 - Erro de conf.: falha ao obter o registro do usuário.
+927	11004 - Erro de conf.: Falha ao obter as informações sobre a licença.
+928	11005 - Erro de conf.: Falha ao obter navegação.
+929	11006 - Erro de conf.: Falha ao obter o registro de visualização.
+930	11007 - Erro de conf.: falha ao obter o registro da ação.
+931	12001 - Ação: falha ao adicionar registro.
+932	12002 - Ação: Falha ao excluir um registro.
+933	12003 - Ação: falha ao atualizar registro. Possíveis motivos: <br><br> * Já existe outro registro com o mesmo nome.<br> * O registro pode ter sido atualizado por outro usuário desde que foi recuperado.<br><br>Os dados mais recentes devem ser exibidos agora. Solucione os conflitos de nomenclatura e tente atualizar novamente.<br><br>
+934	12004 - Ação: Falha ao vincular os registros.
+935	12005 - Ação: Falha ao importar um registro.
+936	12006 - Ação: Falha ao excluir os dados do relatório. É possível que os dados já tenham sido excluídos ou que haja problemas na permissão. Verifique e tente novamente.
+937	12007 - Ação: Falha ao adicionar perfil à fila do programador. O perfil já está na fila.
+938	12008 - Ação: Falha ao cancelar o processo do Urchin.
+939	15001 - Permissão: licença ausente ou inválida.
+940	15002 - Permissão: O usuário não tem permissão para visualizar.
+941	15003 - Permissão: O usuário não tem permissão para executar a ação especificada.
+942	15004 - Permissão: Uso não autorizado do arquivo do dicionário.
+943	13001 - Visualizar: Falha ao capturar a lista de registros.
+944	13002 - Visualizar: Falha ao obter registro.
+945	13003 - Visualizar: falha no Resumo da configuração.
+946	13004 - Visualizar: Falha ao obter registros relacionais.
+947	13005 - Visualizar: Falha ao obter o histórico de tarefas.
+948	13006 - Visualizar: Falha ao transmitir as diretrizes de configuração do assistente.
+949	13007 - Visualizar: Falha ao capturar o registro da meta do perfil.
+950	13008 - Visualizar: Falha ao obter uma listagem do diretório.
+951	13009 - Visualizar: Falha ao obter uma listagem do FTP.
+952	13010 - Visualizar: Falha ao obter a lista de arquivos e diretórios para verificação.
+953	13011 - Visualizar: Falha ao obter o histórico de tarefas detalhado.
+954	13012 - Visualizar: Falha ao obter a visualização do acompanhamento da campanha.
+955	13013 - Visualizar: Falha ao obter o website para configurar metas.
+956	13014 - Visualizar: falha ao obter as informações sobre a licença para exibição.
+957	13015 - Visualizar: Falha ao obter os websites IIS para importação.
+958	13016 - Visualizar: Falha ao obter uma listagem do diretório UNC.
+959	13017 - Visualizar: Falha ao obter a lista de contas.
+960	13018 - Visualizar: Falha ao obter lista de tarefas.
+961	Fuso horário
+962	GMT-12:00: linha de data internacional
+963	GMT-11:00: Ilhas Midway, Samoa
+964	GMT-10:00: Havaí
+965	GMT-09:00: Alasca
+966	GMT-08:00: Horário do Pacífico (EUA e Canadá); Tijuana
+967	GMT-07:00: Arizona
+968	GMT-07:00: Horário das Montanhas (EUA e Canadá)
+969	GMT-06:00: hora central (EUA e Canadá)
+970	GMT-05:00: Indiana (Ocidental)
+971	GMT-05:00: Hora do Leste (EUA e Canadá)
+972	GMT-04:00: Hora do Atlântico (Canadá)
+973	GMT-03:00: Buenos Aires, Georgetown
+974	GMT-02:00: Atlântico Central
+975	GMT-01:00: Açores, Cabo Verde
+976	GMT-00:00: Horário de Greenwich (Londres)
+977	GMT+01:00: Amsterdã, Berlim, Paris
+978	GMT+02:00: Atenas, Beirute, Minsk
+979	GMT+03:00: Moscou, Kuait
+980	GMT+04:00: Abu Dhabi, Mascate
+981	GMT+05:00: Ekaterimburgo, Karachi
+982	GMT-06:00: Astana, Dacca
+983	GMT+07:00: Bangcoc, Hanói
+984	GMT+08:00: Pequim, Hong Kong
+985	GMT-09:00: Tóquio, Seul
+986	GMT+10:00: Sydney, Melbourne, Guam
+987	GMT+11:00: Ilhas Salomão
+988	GMT+12:00: Ilhas Marshall, Fiji
+989	GMT+13:00: Nuku‘alofa
+990	Chinês (simplificado)
+991	Chinês (tradicional)
+992	Holandês
+993	Brasil
+994	Holanda
+995	Taiwan
+996	Localização
+997	Codificação de caracteres
+998	ASCII/UTF-8 (Sem conversão de conjunto de caracteres)
+999	Japonês (EUC-JP, SHIFT-JIS, ISO-2022-JP)
+1000	Latim 1 (ISO-8859-1)
+1001	E-mail
+1002	Painéis disponíveis
+1003	Seções do relatório
+1004	Executivo
+1005	Profissional de marketing
+1006	Webmaster
+1007	Otimização de marketing
+1008	Otimização do conteúdo
+1009	Análise de comércio eletrônico
+1010	Relatórios de TI
+1011	Painéis e seções
+1012	Padrão
+1013	Configurações de painel de controle do usuário de perfil
+1014	Usar padrão de perfil
+1015	Atualize antes de substituir o painel do perfil.
+1016	Substituir painel de controle
+1017	Configurações de painel de controle do grupo do perfil
+1018	Configurações de painel de controle do grupo de perfil: ajuda
+1019	Configurações de painel de controle do usuário de perfil: ajuda
+1020	13019 - Visualizar: falha ao obter permissões de usuário/grupo
+1021	Padrão
+1022	Avançado
+1023	Tem certeza de que deseja excluir esta conta?\n\nCUIDADO: TODOS os perfis, origens de registro, filtros, usuários e grupos associados a essa conta serão excluídos.
+1024	(GMT)
+1025	Erro de senha. \n\nAs senhas não coincidem ou têm menos de 8 caracteres.
+1026	opcional, consulte as informações de ajuda
+1027	12009 - Ação: O perfil foi colocado em fila para execução. Consulte a tela "Histórico de tarefas de perfil" para conhecer o status e a saída em tempo de execução.
+1028	Aviso. Programador principal desativado.
+1029	Aviso. Programadores principal e secundário desativados.
+1030	ex.:
+1031	e-mail
+1032	Origem de CPC - Histórico de downloads
+1033	Origem de CPC - Detalhe do download
+1034	Banco de dados geográficos - Histórico de downloads
+1035	Banco de dados geográficos - Detalhe do download
+1036	Resultado do assistente de origem de custo.
+1037	Gerenciador de origens de CPC
+1038	Nome da origem de CPC
+1039	Tipo de origem de CPC
+1040	<nobr><span class=title1>    <b>Gerenciador de origens de CPC (Ref. #A-1500)</b></span></nobr><br>A finalidade dessa tela é exibir as origens de CPC que foram configuradas para essa instalação do Urchin, permitir o ajuste dos parâmetros de cada uma delas e permitir que o Administrador adicione novas origens de CPC. As origens de CPC podem ser aplicadas individualmente a perfis.<p><b>Adicionar</b><br>Para adicionar uma origem de CPC, clique no botão "Adicionar", no canto superior direito da tela. Isso abrirá o assistente "Adicionar origem de CPC" que orientará você nas etapas simples para adicionar uma origem de CPC.<p><b>Editar</b><br>Ao lado de cada origem de CPC na lista, existe uma série de botões que possibilitam controlar cada origem de CPC. O botão "Editar" permite acessar todas as configurações da respectiva origem de CPC, organizada em formato de guias.<p><b>Excluir</b><br>Clique no botão "Excluir" ao lado de uma origem de CPC para remover essa origem de CPC da configuração e de todos os perfis que fazem referência a ela. <p><b>Download</b><br>O botão "Download" fornece um atalho para a tela "Download" em que você poderá fazer download de relatórios para essa origem de CPC imediatamente ou programá-lo para fazer download regularmente. Nenhum dado relacionado ao CPC estará disponível até que seja feito o download dos relatórios de CPC.<p><b>Controles</b><br>Use o menu suspenso "N° exibido" para alterar quantas entradas são relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use o botão "Anterior" ou "Próxima". <p><b>Conta</b> (somente modo Datacenter)<br>Na operação do modo Datacenter, o menu "Conta" pode filtrar quais entradas são relacionadas.
+1041	Assistente de origem de CPC: configurações
+1042	<nobr><span class=title1><b>Gerenciador de origens de CPC: configurações de CPC (Ref. #A-1501)</b></span></nobr><br>Essa tela permite que você configure e ajuste as configurações de uma origem de CPC. Para obter mais informações sobre origens, consulte o manual ou a Central de documentação on-line.<p><b>Conta opcional</b> (somente modo Datacenter)<br>Para novas origens de CPC, essa opção permite que você selecione a conta à qual a origem de CPC deve ser associada. Para origens de CPC existentes, o nome da conta à qual a origem de CPC pertence será exibido.<p><b>Nome da origem de CPC</b><br>Esse campo obrigatório é um nome arbitrário utilizado por conveniência ao se referir a essa origem de CPC. Insira algo que seja exclusivo para essa origem de CPC.<p><b>Tipo de origem de CPC</b><br>O Urchin permite criar as seguintes origens de CPC:<p><b>Google AdWords</b><br>Uma origem de CPC do Google AdWords exige os seguintes campos: <li><b>E-mail</b>: Endereço de e-mail do anunciante ou ID de login da Minha central de clientes (obrigatório).<li><b>Senha</b>: Essa é a senha para acessar a conta do Google AdWords (obrigatório).<li><b>Token de desenvolvedor</b>: String exclusiva que identifica um desenvolvedor autorizado da API do Google AdWords (opcional). O Urchin é fornecido com o token de desenvolvedor padrão, que é alternado mensalmente. Se o usuário não fornecer o token de desenvolvedor, o Urchin usará o token padrão. O token de desenvolvedor será cobrado, pela API do Google AdWords, por chamada feita por aquela origem de CPC. Desse modo, se os usuários estiverem utilizando seus próprios tokens de desenvolvedor, seu login ou sua conta da MCC serão cobrados pelo uso da API. Para todas as finalidades padrão, deixe esse campo em branco.<li><b>Token de aplicativo</b>: Esse é o token de aplicativo que será usado durante o acesso à API do Google AdWords. Se o usuário tiver fornecido o token de desenvolvedor, precisará fornecer também o token de aplicativo. Caso contrário, deixe esse campo em branco.<li><b>E-mail e ID do cliente</b>: Se um usuário estiver utilizando o login da MCC em vez do e-mail do anunciante, um desses dois campos (não os dois) será obrigatório.<p><b>Yahoo! Search Marketing</b><br>Uma origem de CPC Yahoo! exige os seguintes campos: <li><b>Nome de usuário</b>: Esse é o nome de usuário da conta Yahoo! Search Marketing acessada (obrigatório). Ele pode ser o endereço de e-mail do anunciante ou o endereço de e-mail da agência que acessa o relatório em nome do anunciante.<li><b>Senha</b>: Essa é a senha da conta Yahoo! Search Marketing acessada (obrigatório).<li><b>ID da conta principal</b>: Esse é o ID da conta principal do anunciante (obrigatório).<li><b>ID da conta</b>: Esse é o ID da conta Yahoo! Search Marketing acessada. (obrigatório).<li><b>Chave de licença</b>: Essa é a chave de licença do usuário que faz login, o anunciante ou a agência (obrigatório). <li><b>Nome de usuário de representação</b>: Esse é o nome de usuário de representação do anunciante. Ele só será obrigatório se o nome de usuário da agência tiver sido fornecido em lugar do nome do anunciante. (opcional).<li><b>Senha de representação</b>: Essa é senha de representação do anunciante (opcional). <p><b>Download de relatório de CPC ativado</b><br> (visível apenas durante a edição de uma origem de CPC). Essa opção ativa e desativa os downloads futuros dos relatórios dessa origem de CPC. <b>Observação</b>: Mesmo que você opte por desativar downloads de relatório futuros, os perfis anexados a essa origem de CPC continuarão usando os relatórios já baixados.
+1043	Configurações da origem de CPC
+1044	Google AdWords
+1045	Microsoft adCenter
+1046	Yahoo! Search Marketing
+1047	E-mail
+1048	Senha
+1049	Token de desenvolvedor
+1050	Token de aplicativo
+1051	Login do adCenter
+1052	Chave de acesso do usuário
+1053	Nome de usuário
+1054	ID da conta principal
+1055	ID da conta
+1056	Chave de licença
+1057	Configuração de origem de CPC concluída.
+1058	Assistente de origem de CPC: confirmação
+1059	Nome de usuário “Em nome de”
+1060	Senha “Em nome de”
+1061	Senha “Em nome de” (Digitar novamente)
+1062	Senha (digitar novamente)
+1063	As senhas estão em branco, são inválidas ou não são correspondentes
+1064	Número de origens de CPC
+1065	<nobr><span class=title1><b>Origens de CPC: perfis (Ref. #A-1502)</b></span></nobr><br>Essa tela é usada para aplicar essa origem de custo a um ou mais perfis existentes.<p><b>Aplicar ao perfil</b><br>Para aplicar essa origem de custo a um perfil, selecione o nome do perfil na caixa "Perfis disponíveis" e clique na seta voltada para a direita. Para remover essa origem de custo de um perfil, selecione o perfil na caixa "Aplicada a" e clique na seta voltada para a esquerda. Clique em "Atualizar" para aplicar as alterações.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar suas alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis dessa origem de custo.
+1066	Download de relatórios de CPC ativado
+1067	Testar origem de CPC
+1068	Êxito na conexão com a origem de CPC
+1069	Falha na conexão com a origem de CPC
+1070	Origens de CPC a serem aplicadas
+1071	Origens de CPC disponíveis
+1072	Origens de CPC aplicadas
+1073	<nobr><span class=title1><b>Perfis: origens de custo (Ref. #A-2106)</b></span></nobr><br>Use essa tela para adicionar <b>Origens de custo aplicadas</b> da lista de <b>Origens de custo disponíveis</b>. <p><b>Controles:</b><br><ul><li><b>Adicionar</b><br>Clique no ícone "Adicionar" para adicionar outro filtro aos já disponíveis. Isso iniciará o Assistente para adicionar filtros, que orientará você nas etapas para adicionar um filtro novo ou preexistente.<li><b>Editar</b><br>Destaque o filtro disponível que deseja editar e clique no ícone "Editar". <li>Clique no botão <b>Atualizar</b> para salvar as alterações. <li>As guias na parte superior da tela permitem acessar todas as configurações editáveis desse perfil.
+1074	Origens de CPC
+1075	Aviso: O Google AdWords disponibilizará os relatórios com algum atraso. Verifique se as origens de CPC estão programadas em um período em que os relatórios estão disponíveis. Para obter mais informações, leia o artigo relevante na <a href="https://secure.urchin.com/helpwiki/en/Help_Center"><b>Central de Ajuda on-line</b></a>.
+1076	E-mail do cliente
+1077	ID do cliente
+1078	Forneça o “E-mail do cliente” ou o “Id do cliente” (não ambos)
+1079	<nobr><span class=title1><b>Origem de CPC: programação (Ref. #A-1503)</b></span></nobr><br>Essa tela permite definir opções de download de origens de CPC.<p><b>Fazer download agora</b><br>Para fazer download dessa origem de CPC agora, clique no botão verde grande "Fazer download agora" à direita. Isso colocará a tarefa de CPC na fila para ser executada pelo Programador de CPC do Urchin.<p><b>Programação - Intervalo de download</b><br>A operação de download de relatórios de CPC acontece em duas etapas. Na primeira etapa, as credenciais de CPC são validadas e a solicitação de relatório é feita ao servidor (Google AdWords etc.). Na segunda etapa, a disponibilidade do relatório é verificada periodicamente até que ele fique disponível. A segunda fase termina com o download propriamente dito do relatório. Considerando que a disponibilidade do relatório pode levar de alguns segundos até meia hora e que cada chamada de API para verificação de disponibilidade pode resultar em custos para o cliente (1 unidade no caso do Google AdWords), o Urchin começa a verificar a disponibilidade do relatório após o intervalo configurável entre as duas fases. <br><br>Ao usar essa opção, o usuário poderá definir o intervalo entre a programação do relatório e o tempo real de verificação/download dessa origem de custo.<p><b>Download - Hora do dia</b><br>Ao usar essa opção, o usuário poderá configurar a hora do dia na qual o relatório atualizado dessa origem de CPC será baixado.<p><b>Dados da conta - Intervalo de download</b><br>Use essa opção para definir o Intervalo de download do download da estrutura da conta do Google AdWords. Você terá que fazer download dessa estrutura para poder visualizar os metadados de campanha e palavra-chave ou usar a Ferramenta de palavras-chave ou a ferramenta Gerenciador de tags do Google AdWords.
+1080	Programação
+1081	Configurações de download da origem de CPC
+1082	<nobr><span class=title1><b>Configurações globais: atualização da origem de CPC (Ref. #A-2705)</b></span></nobr><br>Essa tela permite definir opções de download de origens de CPC globais.<p><b>Programação - Intervalo de download</b><br>A operação de download de relatórios de CPC acontece em duas etapas. Na primeira etapa, as credenciais de CPC são validadas e a solicitação de relatório é feita ao servidor (Google AdWords etc.). Na segunda etapa, a disponibilidade do relatório é verificada periodicamente até que ele fique disponível. A segunda fase termina com o download propriamente dito do relatório. Considerando que a disponibilidade do relatório pode levar de alguns segundos até meia hora e que cada chamada de API para verificação de disponibilidade pode resultar em custos para o cliente (1 unidade no caso do Google AdWords), o Urchin começa a verificar a disponibilidade do relatório após o intervalo configurável entre as duas fases. <br><br>Ao usar essa opção, o usuário poderá definir o valor global do intervalo entre a programação do relatório e o tempo real de verificação/download.<p><b>Download - Hora do dia</b><br>Ao usar essa opção, o usuário poderá configurar a hora do dia na qual o relatório atualizado dessa origem de CPC será baixado.<p><b>Dados da conta - Intervalo de download</b><br>Use essa opção para definir o intervalo de download da estrutura da conta do Google AdWords. Você terá que fazer download dessa estrutura para poder visualizar os metadados de Campanha e Palavra-chave ou usar a Ferramenta de palavras-chave e a ferramenta Gerenciador de tags do Google AdWords.
+1083	Atualização da origem de CPC
+1084	Programar - Intervalo de download
+1085	Download - Hora do dia
+1086	segundos
+1087	minutos
+1088	Fazer download agora
+1089	Histórico de atualização automática
+1090	Histórico de downloads de CPC
+1091	<nobr><span class=title1><b>Programador: histórico de atualização automática (Ref. #A-2800)</b></span></nobr><br>A finalidade dessa tela é relacionar o histórico de atualizações automáticas executadas pelo Programador de tarefas. Um resumo dos downloads é relacionado, fornecendo informações valiosas sobre cada um deles. O campo "Status" pode ser clicado para visualizar o detalhe do tempo de execução dessa tarefa do histórico. Use as setas abaixo de cada campo para classificar de acordo com tal campo.<p>Cada entrada mostra o componente (produto, ajuda ou dados geográficos), o nome da máquina, o status da tarefa, quando a tarefa foi iniciado e quando ela foi concluída.<p><b>Status</b> (com hiperlink)<br>O status de cada tarefa é "Em execução", "Concluída", "Aviso" ou "Erro". Eles são codificados por cor e a lista pode ser classificada por status. Para isso, clique na seta abaixo da palavra "Status". Para visualizar o detalhe do tempo de execução de uma atualização automática específica, clique na entrada de status codificada por cor ao lado dessa tarefa. Será aberta uma janela separada para a visualização dos detalhes do tempo de execução.<p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar a quantidade de entradas relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use o botão "Anterior" ou "Próxima".
+1092	Configuração de origem de custo concluída. A origem de custo foi adicionada. Clique no botão "Concluído" para voltar ao sistema do administrador.
+1093	Nenhum <b>histórico de tarefas de atualização automática</b> encontrado.
+1094	<nobr><span class=title1><b>Programador: histórico de downloads de CPC (Ref. #A-2900)</b></span></nobr><br>Essa tela mostra o histórico de todas as tarefas de download de CPC realizadas pelo Programador de tarefas de CPC. Os downloads da Estrutura de conta do Google AdWords são registrados como tarefas separadas nessa lista. Um resumo de todos os downloads de CPC é fornecido. Clique no campo "Status" para visualizar o detalhe do tempo de execução de qualquer tarefa relacionada no histórico. Utilize as setas abaixo de cada campo para classificar segundo esse campo.<p>Cada entrada mostra o Nome da origem de CPC, o tipo de CPC, o Status da Tarefa, quando a Tarefa foi iniciada, quando foi concluída, o número da unidade de API consumida e o host de processamento.<p><b>Status</b> (com hiperlink)<br>O status de cada tarefa é "Pendente", "Em exibição", "Concluída", "Anulada" ou "Erro". Eles são codificados por cor e a lista pode ser classificada por status clicando na seta abaixo da palavra "Status". Para visualizar os detalhes do tempo de execução de uma tarefa específica, clique na entrada do status codificado por cor, ao lado da tarefa em questão. Será aberta uma janela separada para visualização dos detalhes do tempo de execução.<p><b>Controles</b><br>Use o menu suspenso "Nº mostrado" para alterar a quantidade de entradas relacionadas por vez. Para percorrer as entradas das páginas, uma por vez, use os botões "Anterior" ou "Próxima". <p><b>Conta</b> (somente Modo Datacenter)<br>Na operação do modo Datacenter, o menu "Conta" pode ser usado para filtrar quais entradas serão relacionadas.
+1095	Aviso: o programador de CPC está desativado.
+1096	Nenhum <b>Histórico de downloads de CPC</b> encontrado.
+1097	Tipo de CPC
+1098	Anulado
+1099	Download
+1100	Unidades consumidas
+1101	Processo
+1102	Direcione mais tráfego de qualidade para seu site com o <A href="http://www.google.com/urchin/sign-up65.html#rd=adwords&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>Google AdWords</B></FONT></A>.<br/>Já tem uma conta? <A href="http://www.google.com/urchin/sign-up65.html#rd=keygen&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>Adicione mais palavras-chave</B></FONT></A> a sua campanha.
+1103	12010 - Ação: A origem de CPC foi colocada na fila para download. Verifique a tela "Histórico de downloads de CPC" para consultar o status e a saída em tempo de execução.
+1104	12011 - Ação: falha ao adicionar origem de CPC à fila do programador. A origem de CPC já está na fila.
+1105	Ação
+1106	Não foi possível “Cancelar” a tarefa do perfil.
+1107	12016 - Ação: Falha ao cancelar a tarefa programada. O processamento do perfil está em andamento.
+1108	Cancelado
+1109	A criação de backup regular deve estar ativada
+1110	12014 - Ação: o processamento do perfil será cancelado.
+1111	Cancelando
+1112	Duração média da visita
+1113	Origens do registro
+1114	Filtrado
+1115	Visitas
+1116	Taxa de rejeições
+1117	Metas concluídas
+1118	Contas de anúncios
+1119	Falha ao adicionar. Você já atingiu o limite máximo de perfis.<p>Atualize sua licença ou exclua um perfil existente e tente novamente.
+1120	Falha na adição. Você já alcançou o limite máximo de origens do registro.<p>Atualize sua licença ou exclua uma origem do registro existente e tente novamente.
+1121	Você já atingiu o limite máximo de origens de registro por perfil.
+1122	Você já atingiu o limite máximo de perfis.
+1123	Você está usando a licença de demonstração que expira em
+1124	Informações
+1125	Licença válida - USP
+1126	(Hora errada)
+1127	A licença USP expira em
+1128	Entre em contato com o administrador do sistema local para solucionar o problema.
+1129	Anunciante
+1130	Otimização do anúncio
+1131	Registros de CPC
+1132	Estrutura da conta
+1133	Dados da conta - Intervalo de download
+1134	horas
+1135	dias
+1136	Tipo de autenticação
+1137	12015 - Não foi possível confirmar usuário.
+1138	Não foi possível confirmar o usuário.<p>Os possíveis motivos podem ser:<ul><li>você inseriu um nome de usuário incorreto;</li><li>problema de conectividade com o serviço de autenticação externa;</li><li>provedor de autenticação externa configurado incorretamente.</li></ul><p>Verifique o nome de usuário inserido, tente novamente e, se o problema persistir, verifique a configuração do provedor de autenticação externa de acordo com as diretrizes específicas do provedor.
+1139	dia
+1140	hora
+1141	minuto
+1142	Acesso às ferramentas do Google AdWords
+1143	Localizações geográficas/velocidade de conexão
+1144	Locais de rede
+1145	Domínios
+1146	Detalhes geográficos
+1147	Informações geográficas
+1148	Banco de dados geográficos
+1149	<nobr><span class=title1><b>Origens do registro: perfis</b></span></nobr><br>Essa tela é usada para aplicar essa origem do registro a um ou mais perfis existentes.<p><b>Aplicar ao perfil</b><br>Para aplicar essa origem do registro a um perfil, selecione o nome do perfil na caixa "Perfis disponíveis" e clique na seta voltada para a direita. Para remover essa origem do registro de um perfil, selecione-o na caixa "Aplicado a" e clique na seta voltada para a esquerda. Clique em "Atualizar" para aplicar as alterações.<p><b>Controles</b><br>Clique no botão "Atualizar" para salvar as alterações. As guias na parte superior da tela permitem acessar todas as configurações editáveis dessa origem do registro.
+1150	Dia
+1151	Semana
+1152	Mês
+1153	Ano
+1154	Administrador
+1155	Empresa
+1156	Básica
+1157	Gerenciar segmentos
+1158	A operação falhou
+1159	Você já alcançou o limite máximo de segmentos por usuário
+1160	Interno
+1161	Externo
+1162	Arquivo
+1163	Recursos de ajuda
+1164	Sobre este relatório
+1165	Website do Urchin
+1166	Programar atualização
+1167	Atualizar configurações
+1168	Atualizar silenciosamente os artigos de ajuda
+1169	Atualizar silenciosamente o banco de dados geográficos
+1170	Versões
+1171	O Urchin
+1172	Artigos de ajuda
+1173	Banco de dados geográficos
+1174	Componente
+1175	Versão atual
+1176	Nova versão
+1177	Ação
+1178	download em andamento
+1179	atualização em andamento
+1180	visualizar registro de erros
+1181	verificar agora
+1182	visualizar lista de alterações
+1183	programar download agora
+1184	instalar agora
+1185	cancelar
+1186	Atualização automática
+1187	Atualizações disponíveis.
+1188	Visualizar agora.
+1189	Último cheque
+1190	Os serviços do Urchin serão interrompidos durante uma atualização. Tem certeza de que deseja continuar?
+1191	Há tarefas ativas em processamento em uma fila. Aguarde até que elas sejam concluídas.
+1192	Componente
+1193	produto
+1194	ajuda
+1195	dados geográficos
+1196	Nome da máquina
+1197	Central de Ajuda on-line do Urchin
+1198	Novo
+1199	Consultores autorizados do Urchin
+1200	Blog do Google Analytics e Urchin
+1201	Ajuda
+1202	que contêm
+1203	exclusão
+1204	Ir
+1205	Exibir linhas:
+1206	Página inicial do Google Analytics
+1207	Perguntas frequentes
+1208	Política de privacidade
+1209	Central de Ajuda do Urchin
+1210	concluída
+1211	atualizar
+1212	atualizando
+1213	atualizado
+1214	download
+1215	fazendo download
+1216	baixados
+1217	atualizar
+1218	atualização
+1219	cancelado
+1220	erro
+1221	Imprimir visualização
+1222	Visualização padrão
+1223	Link permanente
+1224	Link permanente (colar no e-mail ou na mensagem instantânea)
+1225	Recomendado para você
+1226	O que há de novo?
+1227	Beta
+1228	Alfa
+1229	Nova interface de relatórios do usuário
+1230	Segmentos avançados
+1231	Acompanhamento de eventos
+1232	Processamento paralelo do perfil
+1233	Links permanentes
+1234	Dados geográficos/DNS personalizáveis
+1235	Ordem personalizada dos filtros
+1236	API de dados v2
+1237	Atualizações automáticas
+1238	Central de Ajuda Local
+1239	Amostragem de tráfego
+1240	Amostragem de segmento
+1241	Google Analytics
+1242	Google AdWords
+1243	Otimizador de website do Google
+1244	Ferramenta de palavras-chave do Google
+1245	Filtro:
+1246	Software Urchin do Google
+1247	Política de privacidade do Google
+1248	Política de privacidade
+1249	Blog do Google Analytics
+1250	Contrato de licença do usuário
+1251	Fórum do usuário do Urchin
+1252	Task state is not up to date, please refresh the page
+1253	Personalizado
+1254	Script externo
+1255	Comando
+1256	Linha de comando
+1257	Parâmetros opcionais

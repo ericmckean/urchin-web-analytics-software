@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>"urchin.cgi 执行超时"是什么意思？</strong> <p class="line874">此项错误应该只在使用 Urchin"直接报告链接"功能且绕过了 Urchin 会话控制器的情况下才会出现。可在查看 Urchin 报告时检查所用的网址加以确认。如果使用的是直接报告链接，则网址中会包含"report.cgi"；如果使用的是标准 Urchin 会话控制器，则网址中会包含"session.cgi"。 <p class="line874">通过直接报告链接查看 Urchin 报告时，浏览器会通过 report.cgi 应用程序查询此 Urchin 数据库文件，以获取与所请求的日期范围和报告视图相匹配的数据。如果数据查询并未在默认的 60 秒内收到响应，CGI 应用程序会超时，并在浏览器上显示"urchin.cgi 执行超时"错误。发生这一情况后，必须相应提高 CGI 应用程序的超时值。要更改此超时值，需要以命令行方式访问 Urchin 发行套装 <p class="line874">要提高直接报告链接的应用程序超时值： <ul><li>打开 Urchin 服务器的命令 shell </li><li>修改此文件：/path/to/urchin/htdocs/.report.conf；如果不存在此文件，请将 .report.conf.sample 文件复制到 .report.conf，以创建文件。 </li><li>找到 "#Timeout = 60" 行 </li><li>删除 '#' 字符以取消对此行的注释 </li><li>将默认的 60 秒值提高到更适当的数字 </li><li>保存文件。这些更改会立即生效 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

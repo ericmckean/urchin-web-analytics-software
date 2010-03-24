@@ -1,0 +1,13 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>이미 Urchin이 구성되었는데 데이터 센터 모드로 변경하려면 어떻게 해야 합니까?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>이 문서는 Urchin 소프트웨어 공인 컨설턴트인 </em> <a href="ROIRevolution.html">ROI Revolution</a><em>이(가) 작성했습니다. </em> </li></ul><p class="line874">데이터 센터 모드를 이용하면 그룹 내 하나 이상의 프로필에 다양한 수준의 관리 권한을 추가할 수 있습니다. 이미 최초 설정 과정을 완료했으며 데이터 센터 모드를 사용하려는 경우 MySQL이나 PostgreSQL에서 쉽게 설정할 수 있습니다. <p class="line867"><strong>MySQL:</strong> <pre>mysql&gt; USE urchin;
+mysql&gt; UPDATE uglobals SET ubgl_enable_accounts = 1;
+</pre><p class="line867"><strong>PostgreSQL:</strong> <pre>postgres=# \connect urchin; 
+postgres=# UPDATE uglobals SET ubgl_enable_accounts = 1;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

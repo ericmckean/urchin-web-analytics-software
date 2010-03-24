@@ -1,0 +1,74 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>REST .NET Example 4: Retrieving data for specified dimensions and metrics</strong>  <p class="line862">(Return to main article: <a href="Samples_for_.NET_(REST)_v1.html">Samples for .NET (REST) v1</a>) <p class="line874">1. Specify Service URL: <pre>private const string serviceURL = "http://SERVER_NAME:URCHIN_PORT/services/v1/reportservice/data";
+</pre><p class="line874">2. Specify login, profile, date, metrics and dimensions: <pre>// Set up date format.
+private const string DATE_FORMAT = "yyyy-MM-dd";
+// Provide login information.
+private const string login = "YOUR_LOGIN";
+private const string password = "YOUR_PASSWORD";
+private const int profileId = 16;
+private const string startDate = "2000-01-01";
+private const string endDate = "2009-01-01";
+private const string table = "258";
+private const string dimensions = "u:visitor_id";
+private const string metrics = "u:pages,u:visits";
+private const int maxResults = 5;
+</pre><p class="line874">3. Compose REST URL: <ul><li>Retrieve data with implicit table id for specific date range. </li></ul><p class="line867"><pre>string url = serviceURL + "?login=" + login + "&amp;password=" + password + "&amp;ids=" + profileId;
+url += "&amp;start-date=" + startDate + "&amp;end-date=" + endDate;
+url += "&amp;dimensions=" + dimensions + "&amp;metrics=" + metrics;
+</pre><ul><li>Retrieve data with explicit table id for specific date range w/o metrics. </li></ul><p class="line867"><pre>string url = serviceURL + "?login=" + login + "&amp;password=" + password + "&amp;ids=" + profileId;
+url += "&amp;start-date=" + startDate + "&amp;end-date=" + endDate;
+url += "&amp;dimensions=" + dimensions + "&amp;table=" + table;
+</pre><ul><li>Retrieve visitor list limited with max-records. </li></ul><p class="line867"><pre>string url = serviceURL + "?login=" + login + "&amp;password=" + password + "&amp;ids=" + profileId;
+url += "&amp;start-date=" + startDate + "&amp;end-date=" + endDate;
+url += "&amp;dimensions=" + dimensions + "&amp;max-results=" + maxResults;
+</pre><ul><li>Retrieve transaction list sorted by Id (descending order). </li></ul><p class="line867"><pre>string url = serviceURL + "?login=" + login + "&amp;password=" + password + "&amp;ids=" + profileId;
+url += "&amp;start-date=" + startDate + "&amp;end-date=" + endDate;
+url += "&amp;dimensions=u:transaction_id" + "&amp;table=258";
+url += "&amp;metrics=u:transactions,u:revenue";
+url += "&amp;sort=-u:transactions";
+</pre><ul><li>Retrieve totals aggregated by month for specific date range sorted by one metric, limited with max-records. </li></ul><p class="line867"><pre>string url = serviceURL + "?login=" + login + "&amp;password=" + password + "&amp;ids=" + profileId;
+url += "&amp;start-date=" + startDate + "&amp;end-date=" + endDate;
+url += "&amp;dimensions=u:month" + "&amp;table=total";
+url += "&amp;metrics=u:hits,u:bytes";
+url += "&amp;sort=u:hits" + "&amp;max-results=" + maxResults;
+</pre><p class="line874">4. Retrieve data: <pre>XPathDocument xPathDocument = new XPathDocument(url);
+</pre><p class="line874">5. Parse response: <pre>XPathNavigator xPathNavigator = xPathDocument.CreateNavigator();
+XmlNameTable xmlNameTable = new NameTable();
+XmlNamespaceManager xmlNamespaceManager = new XmlNamespaceManager(xmlNameTable);
+xmlNamespaceManager.AddNamespace("tns", "https://urchin.com/api/urchin/v1/");
+// Get all data.
+XPathNodeIterator recordXPathNodeIterator = xPathNavigator.Select("/tns:getDataResponse/record", xmlNamespaceManager);
+</pre><p class="line874">6. Display the information: <pre>    // Display profile data.
+
+DisplayDataRecordList(recordXPathNodeIterator);
+
+    ....
+
+
+  // Function to display retrieved profile data.
+
+private static void DisplayDataRecordList(XPathNodeIterator recordXPathNodeIterator)
+{
+        while (recordXPathNodeIterator.MoveNext())
+        {
+                Console.WriteLine("Record id is \"" + recordXPathNodeIterator.Current.SelectSingleNode("recordId/text()") + "\", ");
+                // Display the table dimensions.
+                Console.WriteLine("dimensions are:");
+                XPathNodeIterator dimensionsXPathNodeIterator = recordXPathNodeIterator.Current.Select("dimensions/dimension");
+                while (dimensionsXPathNodeIterator.MoveNext())
+                        Console.WriteLine(" \tname: \"" + dimensionsXPathNodeIterator.Current.SelectSingleNode("@name") + "\", value: " + dimensionsXPathNodeIterator.Current.SelectSingleNode("text()"));
+                // Display the table metrics.
+                Console.WriteLine("metrics are:");
+                XPathNodeIterator metricsXPathNodeIterator = recordXPathNodeIterator.Current.Select("metrics/*");
+                while (metricsXPathNodeIterator.MoveNext())
+                        Console.WriteLine(" \tname: \"" + metricsXPathNodeIterator.Current.LocalName + "\", value: " + metricsXPathNodeIterator.Current.SelectSingleNode("text()"));
+        }
+}
+</pre><p class="line874">The full sample code for this example is available in ReportServiceGetDataREST.cs file.     </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

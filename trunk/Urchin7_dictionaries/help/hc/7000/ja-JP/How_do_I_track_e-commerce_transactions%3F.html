@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>e コマースのトランザクションをトラッキングする</strong> <ul><li style="list-style-type:none"><p class="line891"><em>この記事は、Urchin ソフトウェア認定コンサルタントの</em> <a href="ivantageLimited.html">ivantage Limited</a><em> によって作成されています。 </em> </li></ul><p class="line874">Urchin ではクライアント サイドで e コマース のトランザクションに関するデータを収集できます。 領収ページにいくつか簡単な設定を行うだけで、Urchin でトランザクションや商品情報が自動的に検出、記録されるようになります。 トランザクションや商品情報の分析に必要なデータは、領収ページの非表示のフォームで収集されます。 一般的なテンプレート型の e コマース システムであれば、この設定に必要な情報を非表示で追加することができます。 <p class="line867"><strong>e コマースのトラッキングを有効にする</strong> <p class="line874">e コマースのトランザクションをトラッキングするには、まず選択したプロファイルで e コマース レポートを有効にする必要があります。 e コマース レポートを有効にする方法は次のとおりです。 <ol type="1"><li>Urchin にログインします。 </li><li>有効にするプロファイルの横にある [編集] をクリックします。 </li><li>[プロファイル設定] ページで、[メインのプロファイル情報] の横にある [編集] をクリックします。 </li><li>[e コマース ウェブ サイト] ラジオボタンを [いいえ] から [はい] に変更します。 </li></ol><p class="line867"><strong>領収ページのフォーマット</strong> <p class="line874">次に、トラッキング コードを標準の形式で領収ページに設定します。 SSI (Server Side Include) やその他のテンプレート ドライバまたは HTML コードに次のコードを追加します。 <pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+</pre><p class="line874">また、システムを用いて、領収ページのトラッキング コードの下に次の行が動的に書き込まれるようにする必要があります。 かっこ内の項目は、下記の変数リストを参照してすべて実際の値に置き換えてください。 <pre>   &lt;form style="display:none;" name="utmform"&gt;
+   &lt;textarea id="utmtrans"&gt;UTM:T|[order-id]|[affiliation]|
+   [total]|[tax]| [shipping]|[city]|[state]|[country] UTM:I|[order-id]|[sku/code]|[productname]|[category]|[price]|
+   [quantity] &lt;/textarea&gt;
+   &lt;/form&gt;
+</pre><p class="line862">最後に、トランザクションを記録するフォームが送信された後に、utmSetTrans 関数が呼び出されるようにします。 これには、開始 &lt;body&gt; タグ内の body onLoad イベントを使用すると簡単です。 <pre>   &lt;body onLoad="javascript:__utmSetTrans()"&gt;
+</pre><p class="line874">body タグを編集できない場合は、フォームを送信した後で、他のスクリプト タグ内で utmSetTrans 関数を呼び出します。 <pre>   &lt;script type="text/javascript"&gt;
+   __utmSetTrans();
+   &lt;/script&gt;
+</pre><p class="line874">注:  フォームの値を設定する際に、角かっこは含めないでください。 合計、税、配送フィールドの価格の桁区切りにカンマを使用しないでください。カンマより後の数字は無視されます。 <p class="line867"><strong>例</strong> <pre>UTM:T|34535|Main Store|111108.06|8467.06|10.00|San Diego|CA|USA
+UTM:I|34535|XF-1024|Urchin T-Shirt|Shirts|11399.00|9
+UTM:I|34535|CU-3424|Urchin Drink Holder|Accessories|20.00|2
+</pre><p class="line874">非表示のフォームには、 トランザクション行とアイテム行の 2 種類があります。 トランザクションごとに 1 つのトランザクション行を設定し、「UTM」の直後に「T」を付けて識別します。 この行では、税や配送料などを含むトランザクションの合計額と他の情報を指定します。 アイテム行は領収ページのアイテムごとに作成し、「I」で区別されます。 アイテム行には、商品名、コード、単価、数量を含めることができます。 各トランザクションに設定できるアイテム行の数に制限はありません。 <p class="line867"><strong>変数リスト</strong> <p class="line867"><strong>トランザクション行の変数</strong> <pre>[order-id]      固有の内部注文 ID
+[affiliation]   提携パートナーまたはアフィリエーション ストア (オプション)
+[total]         トランクザクションの合計収益額
+[tax]   トランザクションの税額
+[shipping]      トランザクションの配送料
+[city]  トランザクションを関連付ける都市
+[state/region]  都道府県
+[country]       国
+</pre><p class="line867"><strong>アイテム行の変数</strong> <pre>[order-id]      固有の内部注文 ID (トランザクション行と同じ値を使用する必要があります)
+[sku/code]      商品の在庫管理コード
+[product name]  商品名または説明
+[category]      商品のカテゴリや関連商品
+[price]         商品単価
+[quantity]      注文数量
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

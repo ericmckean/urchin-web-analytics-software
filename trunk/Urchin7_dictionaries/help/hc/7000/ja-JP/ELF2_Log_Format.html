@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>ELF2 ログ形式</strong> <ul><li style="list-style-type:none"><p class="line891"><em>この記事は、Urchin ソフトウェア認定コンサルタントの</em> <a href="ivantageLimited.html">ivantage Limited</a><em> によって作成されています。 </em> </li></ul><p class="line867"><strong>注</strong> <p class="line874">Urchin の前のバージョンでは、IP のみのトラッキングで ELF 形式を使用できました。 Urchin 6 では IP のみのトラッキングは行われないため、ELF 形式はサポートされません。  <p class="line867"><strong>概要</strong> <p class="line874">e コマース ログ フォーマット 2 (ELF2) は、オンライン ショッピングのサイトでの顧客のトランザクションに関する情報を記録するように設計されています。 しかし、Urchin 6 では e コマース トランザクションの記録にこのメカニズムをサポートしていません。 代わりに、Urchin 6 ではクライアント サイドで e コマース  トランザクションに関するデータを収集できます。 領収ページにいくつか簡単な設定を行うするだけで、Urchin 6 でトランザクションや商品情報が自動的に検出、記録されるようになります。 トランザクションや商品情報の分析に必要なデータは、領収ページの非表示のフォームで収集されます。 一般的なテンプレート型の e コマース システムであれば、この設定に必要な情報を非表示で追加することができます。 <p class="line862">Urchin ではいくつかのコードを追加することで、所有するドメインだけでなく、他のドメインにあるショッピング カートのデータもトラッキングできます。 Urchin でトランザクション データを集計するようページを設定するには、e コマース トランザクションをトラッキングするをご覧ください。 また、ショップ サイトがメイン サイトとは異なるサブドメインやドメインにある場合は、<a href="Tracking_Secure_Store_Transactions.html">セキュリティで保護されたショップ トランザクションのトラッキング</a>をご覧ください。 <p class="line874">このセクションでは、ショッピング カート ソフトウェアで作成された ELF2 形式のログ ファイルと、e コマースのログを処理できるように Urchin を設定する方法について説明します。 <p class="line867"><strong>ELF2 ログ ファイル用の Urchin の設定</strong> <p class="line874">ELF2 ログ形式を設定する際は、次のようにパラメータを設定する必要があります。 <ul><li>管理者として管理 UI にログインします。 </li><li>[構成] 画面にアクセスします。 </li><li><p class="line862">[ログ ソース] の編集 -&gt; [ログ設定] 画面で、[ログ形式]を elf2 または自動のどちらかに設定します。 </li><li><p class="line862">[プロファイル] の編集 -&gt; [設定] 画面で、[e コマース ウェブサイト] フィールドを [はい] に設定します。 </li></ul><p class="line874">e コマースのログは、e コマース レポートを処理するために作成したプロファイルに、メインのウェブサイトのログとともにセカンド ログ ソースとして表示されます。 ログは Urchin により順番に処理されます。 <p class="line867"><strong>ELF2 ログ形式の説明</strong> <p class="line874">ELF2 はタブ区切りの複数行のログ形式です。 1 行目は感嘆符の「!」で始まり、購入に関する全体的な情報が含まれます。 2 行目以降には、購入商品に関する詳細情報が含まれます。 1 行目はトランザクション、2 行目以降はアイテムと呼ばれます。 空白のフィールドには「-」の文字を入れる必要があります。 タブはフィールドの区切りに使用されるため、フィールド内では使用できません。 <p class="line874">一般的な ELF2 ログ ファイルは次のような形式です。 <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>ELF2 トランザクション行</strong> <p class="line874">ELF2 トランザクション行は感嘆符の「!」で始まり、次のタブ区切りのフィールドが含まれます (空白のフィールドには「-」の文字を入れる必要があります)。 <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">各フィールドの説明は次のとおりです。 <pre>    * %{ORDERID}: 注文番号
+    * %{REMOTE_HOST}: リモート マシンのホスト名または IP アドレス
+    * %{DATE/TIME}: 一般的なログ形式 [dd/mmm/yyyy:HH:MM:SS +/-ZZZZ] で表した日時
+    * %{STORE}: 店舗の名前または ID
+    * %{SESSIONID}: 顧客の固有のセッション ID
+    * %{TOTAL}: 税金と配送料を含むトランザクションの合計額 (小数点のみで「$」の文字を除く)
+    * %{TAX}: 小計の税額
+    * %{SHIPPING}: 配送料
+    * %{BILL_CITY}: 顧客の請求先の市町村
+    * %{BILL_STATE}: 顧客の請求明細
+    * %{BILL_ZIP}: 顧客の請求先の郵便番号
+    * %{BILL_COUNTRY}: 顧客の請求先の国
+    * %{USER_AGENT}: 顧客のブラウザのユーザー エージェント
+    * %{COOKIES}: 顧客のブラウザのヘッダーに含まれる Cookie 
+</pre><p class="line867"><strong>ELF2 アイテム行</strong> <p class="line874">ELF2 アイテム行には次のタブ区切りのフィールドが含まれます (空白のフィールドには「-」の文字を入れる必要があります)。 <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">各フィールドの説明は次のとおりです。 <pre>    * %{ORDERID}: 注文番号
+    * %{REMOTE_HOST}: リモート マシンのホスト名または IP アドレス
+    * %{DATE/TIME}: 一般的なログ形式 [dd/mm/yyyy:HH:MM:SS +/-ZZZZ] で表した日時
+    * %{PRODUCT_CODE}: 商品の ID
+    * %{PRODUCT_NAME}: 商品の名前
+    * %{VARIATION}: 色やサイズなど、商品のバリエーション
+    * %{PRICE}: 商品の単価 (小数点のみで「$」の文字を除く)
+    * %{QUANTITY}: 商品の注文数
+    * %{UPSOLD}: 商品が販売中かどうかを示すブール値 (0|1)
+    * %{USER_AGENT}: 顧客のブラウザのユーザー エージェント
+    * %{COOKIES}: 顧客のブラウザのヘッダーに含まれる Cookie 
+</pre><p class="line867"><strong>ELF2 ログ ファイルの例</strong> <p class="line874">次の 2 行はトランザクションと対応するアイテムのエントリを示す ELF2 ログです。 <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Journalisation - iPlanet</strong> <p class="line867"><strong>Présentation</strong> <p class="line874">Cet article explique brièvement comment configurer la journalisation sur un serveur Web iPlanet de manière à faciliter le traitement des données et la création des rapports Urchin. <p class="line874">Définissez la Source du journal sur le type "Netscape". <p class="line874">Les champs dont Urchin doit impérativement disposer pour produire des rapports sont les suivants : <ul><li>date </li><li>heure </li><li>nom d'hôte ou adresse IP du système initiant la demande </li><li>requête (document auquel le système demandeur souhaite accéder) </li><li>code d'état généré par la requête (numérique) </li><li>octets (nombre d'octets transférés du serveur au client)  </li></ul><p class="line874">Pour exploiter au mieux la création de rapports, vous devez en outre disposer des champs suivants : <ul><li>Site référent (referral) </li><li>User-Agent </li><li>Cookies, si l'UTM (Urchin Traffic Monitor) est installé sur votre site  </li></ul><p class="line867"><strong>Configuration</strong> <pre>Init fn=flex-init access="$accesslog"
+format.access="%Ses-&gt;client.ip% - %Req-&gt;vars.auth-user%
+[%SYSDATE%] \"%Req-&gt;reqpb.clf-request%\"
+%Req-&gt;srvhdrs.clf-status% %Req-&gt;srvhdrs.content-length%
+\"%Req-&gt;headers.user-agent%\"
+\"%Req-&gt;headers.referer%\"
+\"%Req-&gt;headers.cookie%\""
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

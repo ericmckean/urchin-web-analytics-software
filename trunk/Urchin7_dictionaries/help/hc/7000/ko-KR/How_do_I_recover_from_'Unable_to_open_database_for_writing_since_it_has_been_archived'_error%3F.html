@@ -1,0 +1,10 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><hr class="hr1" /><p class="line874"> 이 문서는 Urchin 소프트웨어 공인 컨설턴트인 <a href="%2522FriedrichsoftwareResources%2522.html">"FriedrichsoftwareResources"</a>에서 작성했습니다. <hr class="hr1" /><p class="line874"> <strong>'압축되어 있어 데이터를 열어 쓰기 작업을 수행할 수 없음' 오류는 어떻게 해결해야 합니까?</strong> <p class="line874">Urchin 6에서 프로필 실행을 시도할 때 다음 오류가 표시됩니다. <p class="line867"><pre>WARNING: (7063-54-63) Unable to open database for writing since it has been archived
+</pre><p class="line874">이 오류는 로그 추적 데이터베이스가 Urchin에서 월 단위로 저장되므로 발생합니다.처리하는 동안 Urchin은 로그 파일의 처음 두 줄을 읽고 이 로그가 속한 달을 확인하며 해당 달에 대한 데이터베이스 열기를 시도합니다.해당 달에 대한 데이터베이스가 압축된 후에는 Urchin에서 압축된 데이터베이스를 읽고 쓸 수 없으므로 이 오류가 반환됩니다. 이 경우 두 가지 해결 방법이 있습니다. <ol type="1"><li>압축 기능을 해제하고 해당 프로필의 *-archive.zip 파일의 압축을 푼 후 *-archive.zip 파일을 삭제합니다. </li><li>로그 와일드카드를 데이터 일치 문자열(YY* 또는 YYYY*를 해당 연도에 대한 파일만 식별하는 데 사용할 수 있음)을 포함하도록 변경합니다. </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

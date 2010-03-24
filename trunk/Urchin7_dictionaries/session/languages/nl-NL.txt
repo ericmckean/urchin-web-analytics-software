@@ -1,0 +1,66 @@
+#################################################################################################
+#  Urchin 7 session default dictionary file
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	Niet gebruikt
+1	Meld u aan bij uw account.
+2	Gebruikersnaam
+3	Wachtwoord
+4	Meld u opnieuw aan.
+5	Hartelijk dank dat u Urchin heeft gebruikt. Wilt u zich weer aanmelden?
+6	Sessiefout: kan configuratie niet lezen. (1000)
+7	Beveiligingsovertreding: extern adres is niet ingesteld. (1001)
+8	Beveiligingsovertreding: geen goedgekeurde module. (1002)
+9	Sessiefout: id heeft onjuiste indeling. (1003)
+10	Sessiefout: ongeldige zoekopdracht naar sessiecontroller. (10004)
+11	Sessiefout: standaardroutine kan niet worden opgeroepen. (2001)
+12	Sessiefout: standaardroutine kan niet worden opgeroepen. (2002)
+13	Sessiefout: standaardroutine kan niet worden opgeroepen. (2003)
+14	Sessiefout: sessie kan niet worden gemaakt. (2004)
+15	Sessiefout: env. kan niet worden ingesteld. (2005)
+16	Sessiefout: ontbrekende sessie-id. (3000)
+17	Sessiefout : ophalen van record uit database niet mogelijk. (3001)
+18	Sessiefout: IP komt niet overeen met deze sessie. (3002)
+19	Sessiefout: ongeldige sessie-id. (3003)
+20	Sessiefout: sessierecord kan niet worden bijgewerkt. (3004)
+21	Er is een time-out opgetreden voor de sessie. U bent om veiligheidsredenen automatisch afgemeld.
+22	Sessiefout: toepassing kan niet worden opgeroepen. (4001)
+23	Sessiefout: toepassing kan niet worden opgeroepen. (4002)
+24	Sessiefout: toepassing kan niet worden opgeroepen. (4003)
+25	Sessiefout: ontbrekende sid. (4004)
+26	Sessiefout: ophalen van sessierecord uit database is niet mogelijk. (4005)
+27	Sessiefout: het huidige IP-adres komt niet overeen met het IP-adres dat werd gebruikt aan het begin van de sessie.
+28	Sessiefout: ongeldige sessie-id. (4007)
+29	Sessiefout: sessierecord kan niet worden bijgewerkt. (4008)
+30	Sessiefout: env. kan niet worden gemaakt. (4009)
+31	Verificatiefout: verificatiemodule kan niet worden opgeroepen. (5001)
+32	Verificatiefout: verificatiemodule kan niet worden opgeroepen. (5002)
+33	Verificatiefout: verificatiemodule kan niet worden opgeroepen. (5003)
+34	Verificatiefout: verificatie mislukt. (6001)
+35	Verificatiefout: het aantal parameters klopt niet. (6002)
+36	Verificatiefout: externe toegang voor gebruikers geweigerd. (6003)
+37	Verificatiefout: externe toegang voor beheer geweigerd. (6004)
+38	Verificatiefout: IP ontbreekt. (6005)
+39	Verificatiefout: kan de globale configuratie niet ophalen uit database. (6006)
+40	Verificatie mislukt.
+41	Externe toegang voor gebruikers is geweigerd. (6008)
+42	Externe toegang voor beheer is geweigerd. (6009)
+43	Aanmelden
+44	Welkom bij Urchin-software van Google
+45	Analytics Startpagina
+46	Veelgestelde vragen
+47	Privacybeleid
+48	Helpcentrum van Urchin
+49	Google Analytics- en Urchin-blog
+50	Urchin-software van Google
+51	Privacybeleid van Google
+52	Google Analytics- en Urchin-blog (Engelstalig)
+53	Privacybeleid van Google
+54	Startpagina
+55	Nieuw
+56	Geautoriseerde consultants
+57	<p>Urchin-software van Google analyseert verkeer voor een of meer websites en genereert eenvoudig te begrijpen rapporten over uw bezoekers - waar ze vandaan komen, hoe ze uw site gebruiken, de reden waarom ze klant worden en veel meer</p><p>Als uw inhoud zich achter een firewall bevindt of op een intranet of intern netwerk waardoor u geen gebruik kunt maken van de Google Analytics-service, is Urchin-software van Google de oplossing.</p><p>Urchin-software van Google wordt uitsluitend ondersteund door geautoriseerde consultants voor Urchin-software.</p>
+58	Meer informatie.
+59	Eindgebruikersovereenkomst
+60	Urchin-gebruikersforum

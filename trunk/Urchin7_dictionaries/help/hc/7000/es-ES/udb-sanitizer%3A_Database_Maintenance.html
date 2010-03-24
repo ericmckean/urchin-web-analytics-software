@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer: La utilidad de mantenimiento de bases de datos</strong> <p class="line867"><strong>Visión general</strong> <p class="line874">La utilidad de mantenimiento de bases de datos de Urchin, udb-sanitizer, le permite comprobar las bases de datos de los perfiles de Urchin 6 y realizar en las mismas diferentes operaciones de mantenimiento.  <p class="line874">Los tipos de operación que udb-sanitizer lleva a cabo son los siguientes:  <ul><li>Recupera las bases de datos al estado anterior mediante copias de seguridad. </li><li class="gap">Elimina datos de perfil durante un día, varios días o un mes entero.  </li></ul><p class="line867"><strong>Utilización</strong>  <p class="line874">udb-sanitizer se sitúa en el directorio util de su distribución de Urchin 6.  <p class="line874">La utilidad funciona de la siguiente manera:  <pre>  udb-sanitizer [-h] (imprime un mensaje de uso y sale del programa).
+
+  udb-sanitizer [-v] (imprime la versión y sale del programa)
+
+  udb-sanitizer -p profile [-d AAAAMM[DD]] -bfhprq] [-z [-e DD]] 
+</pre><p class="line874">donde:  <pre>   -b  procede directamente a la recuperación de datos.
+
+   -d  especifica el año, el mes y el día (opcional) de funcionamiento.
+
+   -e, junto a las opciones "z" y "d", elimina datos durante varios días (intervalo d-&gt;e) en el mismo mes.
+
+   -f  permite realizar la acción sin confirmación.
+
+   -h  imprime esta información de ayuda.
+
+   -p  especifica el nombre del perfil (obligatorio)
+
+   -a  especifica el nombre de la cuenta.
+
+   -r  procede directamente a la eliminación.
+
+   -q  establece el modo silencioso, que anula la exportación de datos, excepto en casos críticos especificados por el usuario.
+
+   -z  procede directamente a eliminar datos durante un día. 
+
+</pre><p class="line867"><span class="u">Nota</span>: cuando se activa udb-sanitizer con opciones que no describen de forma completa la acción que debe realizarse, este mostrará el texto de uso (equivalente a la opción<tt>-h</tt>). Puede hacer que una acción se realice sin interacción por parte del usuario usando una combinación de opciones: <tt>–f</tt> y <tt>-q</tt>, en conjunto con las opciones correspondientes:<tt>-d</tt>, <tt>-b</tt>, <tt>-r</tt> y <tt>-z</tt>.  <p class="line867"><strong>Funcionamiento</strong>  <p class="line874">Habitualmente, se ejecuta udb-sanitizer a partir de un shell de comandos con diferentes opciones para cada tipo de operación.    <p class="line874">Las acciones que se asocian con las opciones disponibles descritas con anterioridad son las siguientes:  <p class="line874">1. Recuperación de datos (–r). <ul><li style="list-style-type:none">Esta opción permite al usuario recuperar la versión de unos datos de perfil guardada anteriormente. Se le muestra al usuario una lista de archivos ZIP de copia de seguridad entre los que elegir y el contenido del archivo seleccionado sustituye la base de datos de informes existente. Los archivos ZIP se nombran siguiendo el siguiente modelo: "AAAAMM-backupv6-AAAAMMDDHHMMSS.zip", donde "AAAAMM" hace referencia al año y mes correspondientes a la copia de seguridad (por ejemplo, "200803" hace referencia a marzo de 2008) y el fragmento AAAAMMDDHHMMSS representa la fecha y hora de creación del archivo ZIP. Esta fecha y hora debería ser util para determinar qué archivo ZIP desea recuperar. </li></ul><p class="line874">2. Eliminar datos del mes (-d). <ul><li style="list-style-type:none">Se eliminan todos los datos de un perfil correspondientes al mes especificado. Esta opción permite establecer en cero los valores de las estadísticas correspondientes a un mes si los datos no son correctos; por ejemplo, en caso de que se aplicaran los filtros incorrectos o se procesaran registros equivocados, o quizás, en caso de que se modificaran algunos parámetros de perfil avanzados, tales como el nivel de detalle de la ruta o el nivel de referencia. Es aconsejable actualizar los datos de los informes de Urchin correspondientes al mes en cuestión. Esta acción puede realizarse sin la interacción del usuario activando udb-sanitizer con los argumentos "-f", "-r" y "-q".  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. Estadísticas a cero durante uno o más días. <ul><li style="list-style-type:none">Esta opción permite que los datos correspondientes a un intervalo de varios días queden a cero, lo cual permitirá que el procesamiento de registro de Urchin pueda volver a ejecutarse únicamente durante los días especificados. Por ejemplo, "urchin -p perfil -d AAAAMMDD". Esta acción puede realizarse sin la interacción del usuario para establecer en cero los valores correspondientes a un único día ejecutando udb-sanitizer con los argumentos "-f", "-q" -z"-d".  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">Y para los valores correspondientes a varios días, se debe especificar el argumento "-e", así como una fecha de finalización. Por ejemplo, el comando siguiente:  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">establecerá en cero las estadísticas correspondientes al intervalo del 7 al 10 de septiembre. Recuerde que el argumento "–e" requiere únicamente que se introduzca la fecha del día de finalización. Este procedimiento es mucho más eficaz que ejecutar una instancia de udb-sanitizer por cada día que desee dejar las estadísticas a cero, ya que los índices y cabeceras de la base de datos se verifican una sola vez.. La operación de verificación de índice y cabecera requiere una cantidad de tiempo notable en el caso de perfiles que incluyen una gran cantidad de datos.  </li></ul><p class="line874">4. Si el perfil forma parte de una cuenta, el nombre de esta deberá especificarse mediante el argumento "-a".   <p class="line867"><span class="u">Importante</span>: las acciones que eliminan datos diarios o mensuales no pueden deshacerse. El único recurso es procesar de nuevo los registros del servidor web correspondientes al periodo de tiempo en cuestión para rellenar de nuevo las bases de datos del perfil. Utilice estas opciones con precaución. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

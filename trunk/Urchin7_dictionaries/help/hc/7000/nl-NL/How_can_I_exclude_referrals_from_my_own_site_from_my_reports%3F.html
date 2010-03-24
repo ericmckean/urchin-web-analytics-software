@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Hoe voorkom ik dat verwijzingen van mijn eigen site wordt gerapporteerd?</strong> <p class="line874">Om verwijzingen afkomstig van uw eigen site uit te sluiten van uw verwijzingsrapporten, moet u het bestand urchin.js enigszins wijzigen. Open het bestand in uw favoriete teksteditor en voeg het volgende gedeelte toe: <pre>    //-- Referral domains to Ignore
+    var _uRno=new Array();
+    _uRno[0]=".urchin.com";
+</pre><p class="line874">In het bovenstaande geval wordt elke treffer met .urchin.com uitgesloten in uw verwijzingen. Als u extra domeinen toe te voegen heeft, wijzigt u het bestand om een andere '_uRno[x]' waarde op te nemen en verhoogt u tegelijkertijd de getalwaarde van x. Bijvoorbeeld: <pre>    //-- Referral domains to Ignore
+    var _uRno=new Array();
+    _uRno[0]=".urchin.com";
+    _uRno[1]=".urchin.net";
+    _uRno[2]=".urchinsoftware.com"
+</pre><p class="line874">Zodra u wijzigingen heeft gemaakt in het urchin.js-bestand moet u het bijgewerkte bestand uploaden naar uw webserver zodat de wijzigingen worden doorgevoerd.  </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

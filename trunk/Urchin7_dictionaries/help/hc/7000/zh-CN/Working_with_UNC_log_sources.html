@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>使用 UNC 日志源</strong> <p class="line874">在 Urchin 中创建 UNC 日志源时，需要指定以下参数： Server Name/IP、Remote Server Login、Local Server Login、Remote Log Source File。 <p class="line874">Urchin 从 UNC 来源取得日志的流程如下： - Urchin 尝试浏览 "Remote Log Source File"（远程日志源文件）中指定的文件； - 如果浏览失败，Urchin 会尝试与 "Server Name/IP"（服务器名称/IP）字段中指定的 UNC 共享建立连接。 - 如果连接失败，Urchin 会认为目前登录的用户帐户没有网络访问权（如本地系统帐户）。 在这种情况下，它会为 "Local Server Login"（本地服务器登录信息）中指定的用户帐户创建登录会话，然后模拟此帐户，也就是说，Urchin 会使用此帐户来启动进程。 如果 "Same Local and Remote Login"（为本地和远程使用相同的登录信息）选项已设为 "Yes"（是），系统就会从 "Remote Server Login"（远程服务器登录信息）取得帐户模仿凭据。 - 模拟成功后，Urchin 会再次尝试与网络共享建立 UNC 连接，并再次尝试进行浏览。 - 取得日志源后，Urchin 会关闭 UNC 连接并终止模仿操作，也就是说，Urchin 进程会开始使用模拟操作之前的帐户。  <p class="line874">模拟帐户有以下缺点： - 模拟期间，Urchin 进程运行于不同的帐户之下，该帐户可能没有 Urchin 数据目录的访问权，导致无法创建任何报告数据库。 - 模拟结束后，Urchin 进程可能无法访问模拟过程中所创建的报告数据库。 - 此操作会影响性能，尤其是当配置文件附加了多个 UNC 日志文件时，由于 Urchin 需要为每个文件启动/终止模拟操作，因此对性能会有显著的影响。 <p class="line874">因此，以下介绍几种在 Urchin 中使用 UNC 共享的最佳做法： - 使用具有网络访问权的帐户运行 Urchin。 这样就不需要执行模拟操作。 - 向运行 Urchin 的用户帐户授予 UNC 日志共享的读取访问权。 这样，可能就没必要建立 UNC 连接和进行模拟了。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>レポートから e コマース トランザクションを削除する</strong> <p class="line862">注文やトランザクションをキャンセルするには、レコードで該当のトランザクションを探します。 次に、領収ページ (<tt class="backtick">__</tt>utmSetTrans) を複製し、キャンセルするトランザクションの合計額をマイナス値に変更して読み込みます。 たとえば、元のトランザクション合計額が 69.900 円の場合は、複製したエントリのトランザクション合計額を -69.900 円に変更します。 <p class="line874">元のトランザクションの一部を払い戻すには、次のようにする必要があります。 <ul><li>トランザクションとアイテム フォーム データで、購入と同じトランザクション ID を使用する </li><li>トランザクション フォーム データの [合計] フィールドをマイナスの値で指定する </li><li><p class="line862">アイテム フォーム データの単価を<strong>プラス</strong>の値で、数量を<strong>マイナス</strong>の値で指定する </li><li>トランザクション フォーム データの各フィールドで、払い戻す税金や配送料をマイナスの値で指定する </li></ul><p class="line874">元のトランザクション全体の収益額がマイナスの場合、どちらかのトランザクションを含む期間を選択すると、トランザクション レポートにプラスとマイナスのエントリが両方表示されます。 ただし、両方のトランザクションを含む期間を選択すると、そのトランザクション ID の合計収益額はゼロになるため、エントリはキャンセルされ、トランザクションはレポートから省かれます。 アイテム量がマイナスの場合も、商品レポートで同様に処理されます。 <p class="line874">取り消しが必要なトランザクションの情報をキャンセルすることで、Urchin のレポートに正確な情報を反映することができます。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

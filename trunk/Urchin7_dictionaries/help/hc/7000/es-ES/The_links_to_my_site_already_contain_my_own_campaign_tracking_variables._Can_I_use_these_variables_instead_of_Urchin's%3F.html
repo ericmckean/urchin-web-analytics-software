@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Los enlaces al sitio web ya contienen mis propias variables de seguimiento de campañas. ¿Puedo utilizar estas en lugar de las variables de Urchin?</strong> <p class="line874">Si ya ha etiquetado sus enlaces online con sus propias variables de seguimiento, las puede asignar a las variables de seguimiento de campañas de Urchin. Los enlaces que etiquete deben contener al menos tres variables, que se asignan a: <ol type="1"><li>utm_source: la fuente de su campaña (por ejemplo, Google, Yahoo), </li><li>utm_medium: el medio de su campaña (cpc, banner, correo electrónico), </li><li>utm_campaign: el nombre de su campaña (rebajas_primavera) </li></ol><p class="line874">A modo de ejemplo, supongamos que su sitio posee la siguiente dirección URL: <pre>            www.ejemplo.es/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>Paso 1.</strong> Establezca una correspondencia entre sus variables y las de Urchin. Cree una tabla con el formato que se indica en el ejemplo a continuación: <pre>               Campaña      Fuente del anuncio  Tipo de anuncio     Palabra clave   contenido A/B  Códigos
+de usuario maestros=    camp        adver       tipo        palabra clave       versión            
+Códigos de Urchin= utm_campaign utm_source      utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>Paso 2.</strong> Modifique el archivo de UTM. <ul><li style="list-style-type:none">Abra el archivo urchin.js en un editor de textos. En la parte superior del archivo aparece una sección definida por el usuario que recoge las variables de UTM: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">Si utiliza el enlace etiquetado del ejemplo anterior, esta sección se modificará de la siguiente manera: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>Paso 3.</strong> Cree filtros para estas nuevas variables de seguimiento. <ul><li style="list-style-type:none">Esta es la configuración de filtro básica que debe emplear con cada filtro: </li></ul><p class="line867"><pre>                Tipo de filtro: Avanzado
+                Campo A: utm_campaign_uri (sin procesar)
+                Extracto A: new_variable = ([^&amp;]*) 
+                Campo B: (Ninguno)
+                Extracto B: (vacío)
+                Enviar resultados a: utm _(old_variable)
+                Constructor: $A1
+                El campo A es obligatorio: Sí
+                El campo B es obligatorio: No
+                Sobrescribir el campo de resultados: Sí
+                Distinción entre mayúsculas y minúsculas: No
+</pre><ul><li style="list-style-type:none">old_variable se refiere a la variable de seguimiento predeterminada de Urchin. new_variable se refiere a su propia variable de seguimiento. Recuerde que necesita un filtro para cada variable que modifique. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,1648 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Zuordnung von Berichtdaten bei der Migration von Urchin 5 auf Urchin 6</strong> Bei der Migration von Profileinstellungen und Berichten mit Daten von Urchin 5 auf Urchin 6 treten Abweichungen auf: <ul><li>Die Migration von in Urchin 5 erstellten Zielen wird nicht unterstützt. </li><li>Das Protokollformat "ELF" wird in Urchin 6 nicht unterstützt. Protokolle in diesem Format werden bei der Migration übersprungen. </li><li>Urchin 6 verwendet einen anderen Satz von Methoden für das Besucher-Tracking als Urchin 5. Die nachstehende Tabelle enthält eine Übersicht über die Konvertierung dieser Methoden nach der Migration. </li></ul><div><table style="width: 424px"><tbody><tr>  <td class="xl68" style="background-color: #999999; height: 20px; width: 212px"><p class="line891"><strong>Besucher-Tracking-Methode in Urchin 5</strong> </td>
+  <td class="xl69" style="background-color: #999999; height: 20px; width: 212px"><p class="line891"><strong>Besucher-Tracking-Methode in Urchin 6</strong> </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">IP+User-Agent </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Username </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Session ID </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+<tr>  <td class="xl65" style="height: 20px"><p class="line862">Urchin Traffic Monitor (UTM) </td>
+  <td class="xl66"><p class="line862">Urchin Traffic Monitor (UTM) </td>
+</tr>
+<tr>  <td class="xl67" style="height: 21px"><p class="line862">IP ONLY </td>
+  <td class="xl65"><p class="line862">IP+User-Agent </td>
+</tr>
+</tbody></table></div><p class="line874">Urchin 5- und Urchin 6-Berichte werden anhand der in der nachfolgenden Tabelle aufgelisteten Kennzahlen zugeordnet. <div><table style="width: 1223px"><tbody><tr>  <td class="xl81" style="text-align: center; ; width: 141px; height: 40px; background-color: #999999"><p class="line891"><strong>Berichtabschnitt</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Urchin 5-Bericht</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Kennzahl</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Urchin 6-Bericht</strong> </td>
+  <td class="xl82" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Kennzahl</strong> </td>
+  <td class="xl87" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Besucher-Tracking-Methode </strong> </td>
+  <td class="xl83" style="text-align: center; ; background-color: #999999; height: 40px; width: 141px"><p class="line891"><strong>Kommentare</strong> </td>
+</tr>
+<tr>  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+  <td style="vertical-align: top;"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Zugriffe</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Sitzungsgrafik </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketing-Optimierung &gt; Tracking eindeutiger Besucher &gt; Tracking von Besuchen und Seitenzugriffen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+  <td class="xl89" colspan="1" rowspan="13" style="text-align: center; ; width: 111px"><p class="line862">"UTM" und "IP+User-Agent" </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Seitenzugriffsgrafik </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketing-Optimierung &gt; Tracking eindeutiger Besucher &gt; Tracking von Besuchen und Seitenzugriffen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Treffergrafik </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 309px"><p class="line862">IT-Berichte &gt; Treffer- und Byte-Tracking </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Bytegrafik </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 309px"><p class="line862">IT-Berichte &gt; Treffer- und Byte-Tracking </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Zusammenfassung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>Lastausgleich</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Protokollquelle nach Treffern </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Protokollquelle </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Lastausgleich </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Protokollquelle </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Protokollquelle nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Protokollquelle </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Lastausgleich </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Protokollquelle </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Besucher und Sitzungen</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="2" style="text-align: center; ; height: 40px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="2" style="text-align: center; ; width: 198px"><p class="line862"> Besucher nach Tag </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Besucher </td>
+  <td class="xl66" colspan="1" rowspan="2" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Tracking eindeutiger Besucher &gt; Tägliche Besucher </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besucher </td>
+  <td class="xl89" colspan="1" rowspan="10" style="text-align: center; ; width: 111px"><p class="line862">"UTM" </td>
+  <td class="xl97" colspan="1" rowspan="2" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Neue Besucher </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 80px; width: 141px"><p class="line862">Sitzungen nach Tag </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Marketing-Optimierung &gt; Tracking eindeutiger Besucher &gt; Tracking von Besuchen und Seitenzugriffen </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Besuche </td>
+  <td class="xl66" style="width: 188px"><p class="line862"> und </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Seitenzugriffe </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittliche Seitenzugriffe pro Besuch (S/Besuch) </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Eindeutige Besucher </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Eindeutige Besucher </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketing-Optimierung &gt; Tracking eindeutiger Besucher &gt; Eindeutige Besucher </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Eindeutige Besucher </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Eindeutige Sitzungen </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Besuchertreue </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Besuche </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketing-Optimierung &gt; Tracking eindeutiger Besucher &gt; Besuchertreue </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Sitzungshäufigkeit </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketing-Optimierung &gt; Tracking eindeutiger Besucher &gt; Letzter Besuch </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Zusammenfassung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Seiten und Dateien</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Angeforderte Seiten </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Seiten </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Webseiten-Analyse &gt; Beliebteste Webseiten </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Content </td>
+  <td class="xl92" colspan="1" rowspan="51" style="text-align: center; ; width: 111px"><p class="line862">"UTM" und "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Seitenzugriffe </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittliche Zeit </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">% Ausstiege </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€-Index </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Downloads </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Downloads </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Downloads </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Downloads </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Seitensuchbegriffe </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Seitensuchbegriffe </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Webseiten-Analyse &gt; Seitensuchbegriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Seiten/Suchbegriffe </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Anzahl </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Anzahl </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Hochgeladene Formulare </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Hochgeladene Formulare </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Hochgeladene Formulare </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Hochgeladene Formulare </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Status und Fehler </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Status und Fehler </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Statuscodes </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Statuscodes </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong>Alle Dateien</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Alle Dateien nach Treffern </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Dateien </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Beliebteste Dateien </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Dateien </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">Dieser Bericht wird nicht direkt migriert: Das Feld "Gültige Treffer" in Urchin 6 enthält die Gesamtzahl der Treffer, also gültige Treffer und Fehlertreffer. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Alle Dateien nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Dateien </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Beliebteste Dateien </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Dateien </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">Dieser Bericht wird nicht direkt migriert: Das Feld "Gültige Treffer" in Urchin 6 enthält die Gesamtzahl der Treffer, also gültige Treffer und Fehlertreffer. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="15" style="text-align: center; ; height: 300px; width: 141px"><p class="line891"><strong>Verzeichnisaufschlüsselung</strong> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Aufschlüsselung von Verzeichnissen nach Seiten </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verzeichnis und Seiten </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Webseiten-Analyse &gt; Alle Seiten </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verzeichnis und Seiten </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Seitenzugriffe </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittliche Zeit </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">% Ausstiege </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€-Index </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Aufschlüsselung von Verzeichnissen nach Dateien </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verzeichnis und Dateien </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Dateiaufschlüsselung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verzeichnis und Dateien </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Aufschlüsselung von Verzeichnissen nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verzeichnis und Dateien </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Dateiaufschlüsselung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verzeichnis und Dateien </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 141px"><p class="line891"><strong> Dateitypen</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Dateitypen nach Treffern </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Dateitypen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Dateitypen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">MIME-Typen </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Dateitypen nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Dateitypen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Dateitypen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">MIME-Typen </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">Nach der Migration dieses Berichts können geringe Datenabweichungen auftreten. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Treffer </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Navigation</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Einstiegsseiten </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Einstiegsseiten </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Navigationsanalyse &gt; Absprungraten der Einstiegsseiten </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Erfolgreichste Einstiegsseiten </td>
+  <td class="xl89" colspan="1" rowspan="39" style="text-align: center; ; width: 111px"><p class="line862">"UTM" und "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Einstiege </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Absprünge </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Absprungrate </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Ausstiegsseiten </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Ausstiegsseiten </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Navigationsanalyse &gt; Häufigste Ausstiegspunkte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Häufigste Ausstiegsseiten </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Ausstiege </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Seitenzugriffe </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">% Ausstiege </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Absprungrate </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Absprungseiten </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Navigationsanalyse &gt; Absprungraten der Einstiegsseiten </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Erfolgreichste Einstiegsseiten </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Absprünge </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Absprünge </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Einstiege </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Einstiege </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Absprungrate </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Absprungrate </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="6" style="text-align: center; ; height: 120px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 198px"><p class="line862">Klickpfade </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Klickpfade </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Navigationsanalyse &gt; Anfangsnavigation </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Anfangspfad </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 198px"><p class="line862">Klick auf "Zu" und "Von" </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verzeichnis und Dateien </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Navigationsanalyse &gt; Alle Navigationspfade </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verzeichnis und Seiten </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Vorherige Seiten </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Top-10-Klicks von </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Nächste Seiten </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Top-10-Klicks zu </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klicks </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Klicks </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Klicks % </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Klicks </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Klicks </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschn. Qualitätsfaktor </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Dauer des Seitenaufrufs </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Seiten </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Webseiten-Analyse &gt; Alle Seiten </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verzeichnis und Seiten </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Seitenzugriffe </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Durchschnittliche Besuchszeit </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittliche Zeit </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">% Ausstiege </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">€-Index </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Sitzungstiefe </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Content-Optimierung &gt; Webseiten-Analyse &gt; Besuchstiefe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Sitzungslänge </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Content-Optimierung &gt; Webseiten-Analyse &gt; Kennzahlen zur Kundenansprache </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Verweise</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Verweise </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verweise </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Ergebnisse der Marketingkampagnen &gt; Verweis-Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verweise </td>
+  <td class="xl89" colspan="1" rowspan="31" style="text-align: center; ; width: 111px"><p class="line862">"UTM" und "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Dieser Bericht kann nicht direkt migriert werden: In diesem Urchin 6-Bericht sind nur "Verweis"-Seitenaufrufe enthalten, keine "organischen" oder "CPC"-Seitenaufrufe. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Verweisaufschlüsselung </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verweise </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Ergebnisse der Marketingkampagnen &gt; Verweis-Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Verweise </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Dieser Bericht kann nicht direkt migriert werden: In diesem Urchin 6-Bericht sind nur "Verweis"-Seitenaufrufe enthalten, keine "organischen" oder "CPC"-Seitenaufrufe. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Suchbegriffe </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Suchbegriffe </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Suchmaschinen-Marketing &gt; Keyword-Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Keyword/Quelle[Medium] </td>
+  <td class="xl98" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Bei einer Verarbeitung des Urchin 5-Profils mit der Besucher-Tracking-Methode "UTM" kann dieser Bericht nicht direkt migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Suchmaschinen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Suchmaschinen </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Suchmaschinen-Marketing &gt; CPC- und indexbasierte Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Quelle[Medium]/Keyword </td>
+  <td class="xl98" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Bei einer Verarbeitung des Urchin 5-Profils mit der Besucher-Tracking-Methode "UTM" kann dieser Bericht nicht direkt migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Verweisfehler </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Verweisfehler </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Seiten und Dateien &gt; Verweisfehler </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Fehlercodes/Inhalt/Verweis </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">"401"-Fehlercodes sind bei der Migration zu Urchin 6 von den Berichtdaten ausgenommen. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Fehlertreffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line862"> <strong>Domains und Nutzer</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Domains </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Domains </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Leistung der Besuchersegmente &gt; Domains </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Domains </td>
+  <td class="xl89" colspan="1" rowspan="44" style="text-align: center; ; width: 111px"><p class="line862">"UTM" und "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Domainaufschlüsselung </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Domains </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Domains und Nutzer &gt; Domainaufschlüsselung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Primäre Domain/Domain </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">Aufgrund von inkompatiblen Datenzuordnungen kann dieser Bericht nicht migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Länder </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Länder </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Leistung der Besuchersegmente &gt; Geografischer Standort </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Land/Region/Stadt </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862">Aufgrund von inkompatiblen Datenzuordnungen kann dieser Bericht nicht migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">IP-Adressen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">IP-Adressen </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Domains und Nutzer &gt; IP-Adressen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">IP-Adressen </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">Aufgrund von inkompatiblen Datenzuordnungen kann dieser Bericht nicht migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Aufschlüsselung nach IP-Adresse </td>
+  <td class="xl66" style="width: 121px"><p class="line862">IP-Adressen </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Domains und Nutzer &gt; Aufschlüsselung nach IP-Adresse </td>
+  <td class="xl66" style="width: 188px"><p class="line862">IP-Adressen </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862">Aufgrund von inkompatiblen Datenzuordnungen kann dieser Bericht nicht migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="15" style="text-align: center; ; height: 300px; width: 141px"><p class="line891"><strong>Nutzernamen</strong> </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 198px"><p class="line862">Nutzernamen nach Treffern </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Nutzernamen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Domains und Nutzer &gt; Nutzernamen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Nutzernamen </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862">Dieser Bericht kann nicht direkt migriert werden: Das Feld "Gültige Treffer" in Urchin 6 enthält die Gesamtzahl der Treffer, also gültige Treffer und Fehlertreffer. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Nutzernamen nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Nutzernamen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Domains und Nutzer &gt; Nutzernamen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Nutzernamen </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">Nutzernamen nach Sitzungen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Nutzernamen </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Leistung der Besuchersegmente &gt; Nutzernamen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Nutzernamen </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Browser und Robots</strong> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>Browser</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Aufschlüsselung von Browsern nach Sitzung </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Browser </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Parameter für Web-Design &gt; Browser-Versionen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browser </td>
+  <td class="xl89" colspan="1" rowspan="42" style="text-align: center; ; width: 111px"><p class="line862">"UTM" und "IP+User-Agent" </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Aufschlüsselung von Browsern nach Treffern </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Browser </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Browser und Robots &gt; Browser-Versionen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browser </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Aufschlüsselung von Browsern nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Browser </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Browser und Robots &gt; Browser-Versionen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browser </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>Plattformen</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Aufschlüsselung von Plattformen nach Sitzungen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Plattformen </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Parameter für Web-Design &gt; Plattformen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Plattformen </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Aufschlüsselung von Plattformen nach Treffern </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Plattformen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Browser und Robots &gt; Plattformen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Plattformen </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Aufschlüsselung von Plattformen nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Plattformen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Browser und Robots &gt; Plattformen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Plattformen </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>Kombinationen</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Kombinationen nach Sitzungen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Browser </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Parameter für Web-Design &gt; Browser- und Plattformkombinationen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browser </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Kombinationen nach Treffern </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Kombinationen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Browser und Robots &gt; Browser- und Plattformkombinationen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browser - Plattform </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; height: 80px; width: 198px"><p class="line862">Kombinationen nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Kombinationen </td>
+  <td class="xl66" colspan="1" rowspan="4" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Browser und Robots &gt; Browser- und Plattformkombinationen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Browser - Plattform </td>
+  <td class="xl97" colspan="1" rowspan="4" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="9" style="text-align: center; ; height: 180px; width: 141px"><p class="line891"><strong>Robots</strong> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Aufschlüsselung von Robots nach Treffern </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Robots </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Browser und Robots &gt; Robot-Content </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Robots/User-Agent </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treffer </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; height: 120px; width: 198px"><p class="line862">Aufschlüsselung von Robots nach Byte </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Robots </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">IT-Berichte &gt; Browser und Robots &gt; Robots </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Robots/User-Agent </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Gültige Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Fehlertreffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Alle Treffer </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Byte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Byte </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Clientparameter</strong> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Bildschirmauflösung </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Bildschirmauflösung </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Parameter für Web-Design &gt; Bildschirmauflösung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bildschirmauflösung </td>
+  <td class="xl89" colspan="1" rowspan="14" style="text-align: center; ; width: 111px"><p class="line862">"UTM" </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">Aufgrund von inkompatiblen Datenzuordnungen kann dieser Bericht nicht migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Bildschirmfarben </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Farbtiefe </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Parameter für Web-Design &gt; Bildschirmfarben </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Bildschirmfarben </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">Aufgrund von inkompatiblen Datenzuordnungen kann dieser Bericht nicht migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 100px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Sprachen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Sprachen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Content-Optimierung &gt; Parameter für Web-Design &gt; Sprachen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Sprachen </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">Marketing-Optimierung &gt; Leistung der Besuchersegmente &gt; Sprachen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 309px"><p class="line862"> </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="3" style="text-align: center; ; height: 60px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 198px"><p class="line862">Für Java aktiviert </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Für Java aktiviert </td>
+  <td class="xl66" colspan="1" rowspan="3" style="text-align: center; ; width: 309px"><p class="line862">Content-Optimierung &gt; Parameter für Web-Design &gt; Für Java aktiviert </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Für Java aktiviert </td>
+  <td class="xl97" colspan="1" rowspan="3" style="text-align: center; ; width: 155px"><p class="line862">Aufgrund von inkompatiblen Datenzuordnungen kann dieser Bericht nicht migriert werden. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Zeitzonenverschiebung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line891">JavaScript-Version </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>E-Commerce</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Umsatz </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Umsatz </td>
+  <td class="xl66" style="width: 309px"><p class="line862">E-Commerce-Analyse &gt; Produkt-Tracking &gt; Umsatz und Transaktionen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Umsatz </td>
+  <td class="xl89" colspan="1" rowspan="54" style="text-align: center; ; width: 111px"><p class="line862">"UTM" und "IP+User-Agent" mit "E-Commerce-Website" aktiviert </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 40px"><p class="line862"> </td>
+  <td class="xl66" style="width: 198px"><p class="line862">Anzahl der Transaktionen </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Transaktionen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">E-Commerce-Analyse &gt; Produkt-Tracking &gt; Umsatz und Transaktionen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Transaktionen </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="1" rowspan="6" style="text-align: center; ; height: 200px; width: 141px"><p class="line862"> </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 198px"><p class="line862">E-Commerce-Zusammenfassung </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Gesamtumsatz </td>
+  <td class="xl66" colspan="1" rowspan="6" style="text-align: center; ; width: 309px"><p class="line862">Leitender Angestellter &gt; E-Commerce-Zusammenfassung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Umsatz </td>
+  <td class="xl97" colspan="1" rowspan="6" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Gesamtanzahl der Transaktionen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Durchschnittlicher Umsatz pro Transaktion </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittlich </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Durchschnittlicher Umsatz pro Tag </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Durchschnittliche Transaktionen pro Tag </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 40px"><p class="line862">Durchschnittlicher Umsatz pro Sitzung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="28" style="text-align: center; ; height: 560px; width: 141px"><p class="line891"><strong>Produkte</strong> </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 198px"><p class="line862">Produkte nach Umsatz </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Produkte </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">E-Commerce-Analyse &gt; Produkt-Merchandising &gt; Produktleistung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Produkte/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Artikel </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Umsatz </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Umsatz </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschn. Preis </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittliche Menge </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">Produkte nach Menge </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Produkte </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">E-Commerce-Analyse &gt; Produkt-Merchandising &gt; Produktleistung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Produkte/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Artikel </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Artikel </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Umsatz </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschn. Preis </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittliche Menge </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">Aufschlüsselung von Produkten nach Umsatz </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Regionen </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">E-Commerce-Analyse &gt; Produkt-Merchandising &gt; Produktleistung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Produkte/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Artikel </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Umsatz </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Umsatz </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschn. Preis </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittliche Menge </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; height: 140px; width: 198px"><p class="line862">Aufschlüsselung von Produkten nach Menge </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Produkte </td>
+  <td class="xl66" colspan="1" rowspan="7" style="text-align: center; ; width: 309px"><p class="line862">E-Commerce-Analyse &gt; Produkt-Merchandising &gt; Produktleistung </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Produkte/SKU </td>
+  <td class="xl97" colspan="1" rowspan="7" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Artikel </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Artikel </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Umsatz </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschn. Preis </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Durchschnittliche Menge </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="18" style="text-align: center; ; height: 382px; width: 141px"><p class="line891"><strong>Umsatzquelle</strong> </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 198px"><p class="line862">Umsatzaufschlüsselung nach Region </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Regionen </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">E-Commerce-Analyse &gt; Umsatzquellen &gt; Aufschlüsselung nach Land </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Land/Region/Stadt </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Umsatz </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Umsatz </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent € </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 198px"><p class="line862">Umsatz nach Stadt </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Städte </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">E-Commerce-Analyse &gt; Umsatzquellen &gt; Vorrangige Städte </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Land/Region/Stadt </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Umsatz </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Umsatz </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Prozent € </td>
+</tr>
+<tr>  <td class="xl68" colspan="1" rowspan="5" style="text-align: center; ; height: 100px; width: 198px"><p class="line862">Umsatz nach Verweisen </td>
+  <td class="xl96"><p class="line862">Verweise </td>
+  <td class="xl66" colspan="1" rowspan="5" style="text-align: center; ; width: 309px"><p class="line862">E-Commerce-Analyse &gt; Umsatzquellen &gt; Verweisquellen </td>
+  <td class="xl65"><p class="line862">Quelle [Medium] </td>
+  <td class="xl97" colspan="1" rowspan="5" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Umsatz </td>
+  <td class="xl65"><p class="line862"> Umsatz </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl65"><p class="line862">Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl65"><p class="line862">$/Trans </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Prozent </td>
+  <td class="xl65"><p class="line862">Prozent € </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Umsatz nach Suchbegriffen </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Umsatzaufschlüsselung nach Suchmaschinen </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Umsatzaufschlüsselung nach Domains </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" colspan="7" style="text-align: center; ; width: 1223px; height: 20px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl84" colspan="7" style="text-align: center; ; width: 1223px; height: 20px; background-color: #cccccc"><p class="line891"><strong>Kampagnen-Tracking</strong> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Gesamtergebnisse </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl89" colspan="1" rowspan="87" style="text-align: center; ; width: 111px"><p class="line862">"UTM" mit aktiviertem "Kampagnen-Tracking" </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl69" style="width: 141px; height: 20px"><p class="line862"> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Zielergebnisse </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="14" style="text-align: center; ; height: 280px; width: 141px"><p class="line891"><strong>Leadquellen</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Akquisition </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 198px"><p class="line862">Qualität </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Quelle </td>
+  <td class="xl66" colspan="1" rowspan="11" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Ergebnisse der Marketingkampagnen &gt; Quellen-Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Quelle [Medium] </td>
+  <td class="xl97" colspan="1" rowspan="11" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klicks </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Intensität </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treue </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G4/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">Conversion </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">Kostenaufschlüsselung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>Keyword-Analyse</strong> </td>
+  <td class="xl67" style="width: 198px"><p class="line862">Akquisition </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">Qualität </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Quelle/Keyword </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Suchmaschinen-Marketing &gt; CPC- und indexbasierte Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Quelle[Medium]/Keyword </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klicks </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Intensität </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treue </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Conversion </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Kostenaufschlüsselung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="11" style="text-align: center; ; height: 220px; width: 141px"><p class="line891"><strong>Keyword-Vergleich</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Akquisition </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="8" style="text-align: center; ; height: 160px; width: 198px"><p class="line862">Qualität </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Keyword/Quelle </td>
+  <td class="xl66" colspan="1" rowspan="8" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Suchmaschinen-Marketing &gt; Keyword-Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Keyword/Quelle[Medium] </td>
+  <td class="xl97" colspan="1" rowspan="8" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klicks </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Intensität </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treue </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Conversion </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Kostenaufschlüsselung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>Kampagnen-Vergleich &gt; ...</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Akquisition </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">Qualität </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Kampagne/Quelle </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Ergebnisse der Marketingkampagnen &gt; Kampagnen-Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Kampagne/Quelle </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klicks </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Intensität </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treue </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Conversion </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Kostenaufschlüsselung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>Medienvergleich</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Akquisition </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">Qualität </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Medium/Quelle </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Marketing-Optimierung &gt; Ergebnisse der Marketingkampagnen &gt; Medium-Conversions </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Medium/Quelle </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klicks </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Intensität </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treue </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">Conversion </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="width: 198px; height: 20px"><p class="line862">Kostenaufschlüsselung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl70" colspan="1" rowspan="13" style="text-align: center; ; height: 260px; width: 141px"><p class="line891"><strong>Content-/A/B-Tests &gt; ...</strong> </td>
+  <td class="xl67" style="width: 198px"><p class="line862">Akquisition </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; height: 200px; width: 198px"><p class="line862">Qualität </td>
+  <td class="xl66" style="width: 121px"><p class="line862">Quelle/Content </td>
+  <td class="xl66" colspan="1" rowspan="10" style="text-align: center; ; width: 309px"><p class="line862">Vergleich der Anzeigenversion &gt; Quellenvergleich </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Quelle/Content </td>
+  <td class="xl97" colspan="1" rowspan="10" style="text-align: center; ; width: 155px"><p class="line862">Dieser Bericht kann nicht direkt migriert werden: Datensätze mit "Verweis"quellen sind vom entsprechenden Bericht in Urchin 6 ausgenommen. </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Klicks </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Seitenzugriffe </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Sitzungen </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Intensität </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">Treue </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">S/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">G1/Besuch </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">T/Besuche </td>
+</tr>
+<tr>  <td class="xl66" style="width: 121px; height: 20px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">$/Besuche </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Conversion </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Kostenaufschlüsselung </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl72" colspan="1" rowspan="4" style="text-align: center; ; height: 120px; width: 141px"><p class="line891"><strong>Latenzberichte</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Zeit bis zum Ziel </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; height: 20px; width: 198px"><p class="line862">Sitzungen bis zum Ziel </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl68" style="width: 198px; height: 40px"><p class="line862">Zeit bis zur Transaktion </td>
+  <td class="xl102" style="width: 121px"><p class="line862">Transaktionen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">E-Commerce-Analyse &gt; Treue und Latenz &gt; Zeit bis zur Transaktion </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl68" style="width: 198px; height: 40px"><p class="line862">Sitzungen bis zur Transaktion </td>
+  <td class="xl102" style="width: 121px"><p class="line862">Transaktionen </td>
+  <td class="xl66" style="width: 309px"><p class="line862">E-Commerce-Analyse &gt; Treue und Latenz &gt; Besuche bis zur Transaktion </td>
+  <td class="xl66" style="width: 188px"><p class="line862">Trans </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl79" colspan="1" rowspan="2" style="text-align: center; ; height: 44px; width: 141px"><p class="line891"><strong>Aufschlüsselung nach Tagesabschnitten</strong> </td>
+  <td class="xl77" style="background-color: #ffcc99; width: 198px"><p class="line862">Ziel-Conversion nach Stunde </td>
+  <td class="xl78" style="width: 121px"><p class="line862"> </td>
+  <td class="xl78" style="width: 309px"><p class="line862">- </td>
+  <td class="xl78" style="width: 188px"><p class="line862">- </td>
+  <td class="xl99" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Umsatz-Conversion nach Stunde </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl73" colspan="1" rowspan="2" style="text-align: center; ; height: 41px; width: 141px"><p class="line891"><strong>Beobachtung von Klickbetrug</strong> </td>
+  <td class="xl67" style="background-color: #ffcc99; width: 198px"><p class="line862">Wiederholte Klicks nach IP </td>
+  <td class="xl66" style="width: 121px"><p class="line862"> </td>
+  <td class="xl66" style="width: 309px"><p class="line862">- </td>
+  <td class="xl66" style="width: 188px"><p class="line862">- </td>
+  <td class="xl97" style="width: 155px"><p class="line862"> </td>
+</tr>
+<tr>  <td class="xl75" style="background-color: #ffcc99; width: 198px"><p class="line862">Wiederholte Klicks nach Quelle </td>
+  <td class="xl76" style="width: 121px"><p class="line862"> </td>
+  <td class="xl76" style="width: 309px"><p class="line862">- </td>
+  <td class="xl76" style="width: 188px"><p class="line862">- </td>
+  <td class="xl100" style="width: 155px"><p class="line862"> </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

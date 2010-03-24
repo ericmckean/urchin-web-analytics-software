@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Die Links zu meiner Website enthalten bereits meine eigenen Kampagnen-Tracking-Variablen. Kann ich diese Variablen anstelle der von Urchin verwenden?</strong> <p class="line874">Wenn Sie Ihre Online-Links bereits mit Ihren eigenen Tracking-Variablen gekennzeichnet haben, können Sie diese Variablen den Kampagnen-Tracking-Variablen von Urchin zuordnen. Die gekennzeichneten Links müssen mindestens drei Variablen enthalten. Diese verweisen auf: <ol type="1"><li>utm_source: die Quelle Ihrer Kampagne (z. B. Google, Yahoo) </li><li>utm_medium: das Medium Ihrer Kampagne (CPC, Banner, E-Mail) </li><li>utm_campaign: den Namen Ihrer Kampagne (Frühling_Verkauf) </li></ol><p class="line874">Zur Veranschaulichung dieser Anleitung nehmen wir einmal an, dass Ihre Website die folgende URL enthält: <pre>            www.beispiel.de/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>Schritt 1.</strong> Ordnen Sie Ihre Variablen denen von Urchin zu. Erstellen Sie eine Tabelle im Format des folgenden Beispiels: <pre>               Kampagne     Kampagnenquelle     Anzeigentyp     Keyword   A/B-Content  Master
+Nutzer-Codes=    kamp       kunde       typ         kwd       version      
+Urchin-Codes=  utm_campaign utm_source  utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>Schritt 2.</strong> Ändern Sie die UTM-Datei. <ul><li style="list-style-type:none">Öffnen Sie die Datei "urchin.js" in einem Texteditor. Am Anfang der Datei befindet sich ein benutzerdefinierter Abschnitt, der die UTM-Variablen enthält: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">Unter Verwendung des obigen Beispiels eines mit Tags erstellten Links wird dieser Abschnitt folgendermaßen bearbeitet: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>Schritt 3.</strong> Erstellen Sie Filter für diese neuen Tracking-Variablen. <ul><li style="list-style-type:none">Die folgende grundlegende Filterkonfiguration sollte für jeden Filter verwendet werden: </li></ul><p class="line867"><pre>                Filterart: Erweitert
+                Feld A : utm_campaign_uri (raw)
+                A extrahieren: neue_variable =([^&amp;]*)
+                Feld B: (Keine)
+                B extrahieren: (leer)
+                Ausgabe in: utm _(alte_variable )
+                Konstruktor: $A1
+                Feld A erforderlich: Ja
+                Feld B erforderlich: Nein
+                Ausgabefeld überschreiben: Ja
+                Groß-/Kleinschreibung beachten: Nein
+</pre><ul><li style="list-style-type:none">"alte_variable" verweist auf die standardmäßige Urchin-Tracking-Variable. "neue_variable" verweist auf Ihre eigene Tracking-Variable. Beachten Sie, dass Sie einen Filter für jede modifizierte Variable benötigen. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

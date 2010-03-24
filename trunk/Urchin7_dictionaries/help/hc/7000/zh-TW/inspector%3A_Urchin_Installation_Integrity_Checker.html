@@ -1,0 +1,18 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>inspector： Urchin 安裝完整性檢查程式</strong> <p class="line867"><strong>總覽</strong> <p class="line874">Urchin 安裝完整性檢查程式又名「inspector」，可用來檢查 Urchin 分佈和報告的方式 <ul><li>Urchin 6 伺服器狀態 (網頁伺服器與排程器) </li><li class="gap">授權或權限問題  </li><li class="gap">檔案遺失 </li><li class="gap">其他設定問題   </li></ul><p class="line874">按照預設，其也提供關於 Urchin 安裝和其安裝之平台類型的資訊摘要。 <p class="line874">inspector 可執行的作業類型為： <ul><li>執行 Urchin 分佈的完整性檢查，包括檔案存在和適當權限 </li><li class="gap">檢查網頁伺服器通訊埠的可用性 (用於 Urchin 的網頁伺服器) </li><li class="gap">重新設定 Urchin 分佈中的適當權限 </li></ul><p class="line867"><strong>使用方式</strong> <p class="line874">inspector 位於 Urchin 6 分佈的 util 目錄中。 <p class="line874">此公用程式的使用方法如下： <p class="line867"><pre>
+  inspector [-h] (列印使用方法訊息，然後離開)
+
+  inspector [-v]  列印 inspector 版本
+
+  inspector [-p]  檢查指定的通訊埠以判定可用性
+
+  inspector [-r]  指定修復分佈檔案中的權限
+
+</pre><p class="line874">若在沒有指令行引數時呼叫，inspector 會在 Urchin 安裝中執行一些完整性檢查，以確定安裝的完整性。 具體來說，其將執行下列作業： <ol type="1"><li>列印 Urchin 版本和伺服器資訊，如作業系統版本與主機名稱 </li><li class="gap">驗證所有適當的 Urchin 二進位資料和公用程式無誤，且版本正確。 在 UNIX 平台中，也會記下 Urchin 分佈的二進位資料和檔案之權限差異。 </li><li class="gap">檢查並報告 Urchin Apache 網頁伺服器的狀態 (urchinwebd) </li><li class="gap">檢查並報告 Urchin Scheduler 的狀態 (urchind) </li><li class="gap">檢查 Urchin 組態，並報告記錄總數和一些授權資訊摘要 </li><li class="gap">Urchin 6 組態資訊 (序號、授權狀態、授權版本) </li></ol><p class="line874">當以  "-p" 引數叫用時，inspector 會檢查由 Urchin 6 網頁伺服器使用的特定通訊埠可用性。  <p class="line874">"-r" (修復) 選項會使公用程式嘗試修復和原始安裝不一致之 Urchin 分佈裡任何檔案的權限。 這通常只在 UNIX 平台中有用，且在多數情況下，公用程式必須以 "根" 使用者執行。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin サービス コントロール ユーティリティ (urchinctl)</strong> <p class="line867"><strong>概要</strong> <p class="line874">urchinctl は、Urchin スケジューラ と Urchin ウェブサーバー サービスのステータス確認、開始、停止を行なうための Urchin サービス コントロール ユーティリティ です。 UNIX システムでは、通常 urchinctl はシステム起動時のスクリプトから呼び出され、Urchin サービスを自動的に開始または停止します。 <p class="line874">urchinctl は下記の処理を行います。 <ul><li>Urchin 6 マスターとスレーブ スケジューラのステータスの確認 </li><li class="gap">スケジューラ、またはウェブサーバー (またはその両方) の開始、停止、および再起動 </li><li class="gap">異なるポートでのウェブサーバーの開始 </li><li class="gap">SSL による暗号化を用いたウェブサーバーの開始 </li></ul><p class="line867"><strong>使用方法</strong> <p class="line874">urchinctl は Urchin ディストリビューションの bin  ディレクトリにございます。 <p class="line874">このユーティリティの使用方法は下記のようになります。 <p class="line867"><pre>
+  urchinctl -h (使用方法を出力して終了します)
+
+  urchinctl -v (バージョンを出力して終了します)
+
+  urchinctl [-e] [-p port] [[-s] | [-w]] action
+
+</pre><p class="line874">各オプションの説明は以下のとおりです。 <p class="line867"><pre>
+  -e  ウェブサーバーでの暗号化 (SSL) を有効化します
+
+  -p  ウェブサーバーのポートを指定します
+
+  -s  Urchin スケジューラでのみ操作を実行します
+
+  -w  Urchin ウェブサーバーでのみ操作を実行します
+
+</pre><p class="line874">操作とは、下記のいずれかを指します。 <p class="line867"><pre>
+  start   (サービスを開始します)
+
+  stop   (サービスを停止します)
+
+  restart   (サービスを再起動します)
+
+  status  (ウェブサーバー、スケジューラの実行時間のステータスを表示します)
+
+</pre><p class="line874">デフォルトでは、ウェブサーバーとスケジューラの両方で操作が実行されるように設定されています。いずれか一方のみで実行する場合には、"-s" (スケジューラ) または "-w" (ウェブサーバー) オプションを指定してください。 この 2 つのオプションは併用できません。 <p class="line867"><strong>アドバイス</strong> <p class="line874">UNIX システムで Urchinctl を実行する場合、Urchin がインストールされたユーザー、UID を使用し、urchinwebd と urchind Urchin のプロセスと同じ UID で開始されるようにします。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>サイトのすべてのサブドメインを個別のプロファイルでトラッキングする</strong> <ul><li style="list-style-type:none"><p class="line891"><em>この記事は、Urchin ソフトウェア認定コンサルタントの</em> <a href="ivantageLimited.html">ivantage Limited</a><em> によって作成されています。 </em> </li></ul><p class="line874">Urchin でサブドメインを個別のプロファイルでトラッキングするには、ウェブサーバーの設定が重要です。 ウェブサーバーでサブドメインごとにログ ファイルを個別に記録するよう設定すると、Urchin で各サブドメインのログ ファイルを個別に処理できます。 または、ログ ファイルを 1 つだけ生成し、ウェブ アクセス ログでサブドメインを含むホスト名を記録するよう設定すると、各サブドメインのプロファイルで一致フィルタによる処理を行うことができます。 たとえば、プロファイルのフィルタで help.example.co.uk へのトラフィックのみを含めて、別のフィルタで www.example.co.uk へのトラフィックのみを含めます。 <p class="line874">このため、サブドメインを個別のプロファイルでトラッキングするには、特定のホスト名のみを含めるよう各プロファイルに一致フィルタを適用します。 まず最初に各サブドメインのプロファイルを作成し、 次の手順でフィルタを作成します。 <p class="line874">たとえば、sub.example.com と www.example.com を 2 つの異なるプロファイルでトラッキングする場合は、次のフィルタを適用します。 <ul><li style="list-style-type:none">sub.example.com のプロファイル </li></ul><p class="line867"><pre>    フィルタの種類:  一致するパターンのみ
+    フィルタ フィールド:  utm_request_hostname (AUTO)
+    フィルタ パターン:  ^sub\.example\.com
+</pre><ul><li style="list-style-type:none">www.example.com のプロファイル </li></ul><p class="line867"><pre>    フィルタの種類:  一致するパターンのみ
+    フィルタ フィールド:  utm_request_hostname (AUTO)
+    フィルタ パターン:  ^www\.example\.com
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

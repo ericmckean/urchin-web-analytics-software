@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6.602 Geo-databases</strong> <p class="line874">Urchin 6.602에는 두 개의 geo databases가 있습니다. <ul><li><p class="line891"><strong>geo.db</strong> - 자세한 대도시(country/region/city), 네트워크(조직) 및 도메인 정보를 포함하고 있습니다. 이전 버전의 urchin 6(6.400 - 6.601)에서와 동일한 수준이지만 업데이트된 정보를 포함하고 있습니다. </li><li class="gap"><p class="line891"><strong>geo.light.db</strong> - 국가 수준까지만 대도시 정보를 포함하고 있습니다. 지역, 도시, 네트워크 및 조직 정보는 포함되어 있지 않습니다. 이 데이터베이스는 필요한 메모리 공간과 로드 시간이 훨씬 적기 때문에 로그 처리 엔진의 성능이 중요할 때마다 사용하십시오. 이 경량급 geo database는 다음 보고서에 영향을 줍니다. <ul><li style="list-style-type:none">o 다음 "Geo Map" 보고서는 국가 수준까지만 대도시 데이터를 표시합니다(지역 및 도시 정보 없음). <ul><li><p class="line862">경영진 보기 -&gt; 경영진 개요(대시보드) </li><li><p class="line862">경영진 보기 -&gt; Geo Map 오버레이 </li><li><p class="line862">마케팅 담당자 보기 -&gt; 마케팅 담당자 개요(대시보드) </li><li><p class="line862">웹마스터 보기 -&gt; 웹마스터 개요(대시보드) </li><li><p class="line862">마케팅 최적화 -&gt; 방문자 세그먼트 실적 -&gt; Geo Map 오버레이 </li></ul><p class="line862">o "네트워크 위치" 보고서에 데이터가 표시되지 않습니다(마케팅 최적화 -&gt; 방문자 세그먼트 실적 -&gt; 네트워크 위치). <p class="line862">o "도메인" 보고서에 데이터가 표시되지 않습니다(마케팅 최적화 -&gt; 방문자 세그먼트 실적 -&gt; 도메인). </li></ul></li></ul><p class="line874">기본적으로 geo.db가 사용됩니다. geo.light.db database로 전환하려면 urchin.conf 파일에서 해당 행의 주석을 해제하십시오. <p class="line867"><pre>
+
+# Geo Database 설정
+
+# 아래 행의 주석을 해제하여 경량급 geo-database를 사용합니다.
+# GeodbLight: ON
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

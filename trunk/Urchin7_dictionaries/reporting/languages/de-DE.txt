@@ -1,0 +1,1241 @@
+#################################################################################################
+#  Copyright (c) 2010 Urchin Software Corporation
+#  Dictionary
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	-
+1	Besucher
+2	Besuche
+3	Seitenaufrufe
+4	Treffer
+5	Byte
+6	Durchschnittliche Zeit
+7	Umsatz
+8	Trans
+9	Reaktionen
+10	Neue Anfragen
+11	Ziele
+12	Impressionen
+13	Klicks
+14	Kosten
+15	Kunden
+16	Zeitraum
+17	S/Besuch
+18	Besucherarten
+19	Länder
+20	Quellen
+21	Quelle/Medium
+22	Umsatz/Artikel
+23	Gesamt
+24	Conversion-Rate
+25	Berichte
+26	Zeitraum
+27	$-Index
+28	Z1
+29	Z2
+30	Z3
+31	Z4
+32	Nutzernamen
+33	-
+34	Benutzerdefinierter Zeitraum
+35	XML
+36	Profilname
+37	Berichtname
+38	Zeitraum
+39	Anzeigen nach
+40	Standard
+41	Stündlich
+42	Täglich
+43	Monatlich
+44	Filter
+45	Export
+46	Durch Tabulatoren getrennt (Text)
+47	Word (DOC)
+48	Excel (CSV)
+49	Drucken/Standardansicht
+50	Hilfeinformationen
+51	Zeitraum vergleichen
+52	Eingabebereich
+53	Bereich anwenden
+54	Z1/Besuch
+55	Z2/Besuch
+56	Z3/Besuch
+57	Z4/Besuch
+58	Z5/Besuch
+59	Browser
+60	Prozent
+61	Plattformen
+62	Browser - Plattform
+63	Bildschirmauflösung
+64	Bildschirmfarbe
+65	Sprache
+66	Für Java aktiviert
+67	JavaScript-Version
+68	Flash-Version
+69	Verbindungsgeschwindigkeit
+70	Aktueller Bereich
+71	Vorheriger Bereich
+72	Tage zuvor
+73	Quelle [Medium]
+74	T/Besuche
+75	$/Besuche
+76	Land/Region/Stadt
+77	Name der Organisation
+78	Benutzerdefiniert
+79	Kampagne/Quelle
+80	Medium/Quelle
+81	CPA
+82	RPA
+83	ROI
+84	Medium
+85	Content
+86	Quelle/Content
+87	Keyword/Content
+88	Seiten
+89	% Ausstiege
+90	Verzeichnis und Seiten
+91	Seitentitel
+92	Seiten/Suchbegriffe
+93	Anzahl
+94	Besuchstiefe
+95	Dauer des Besuchs (Sek.)
+96	Einstiege
+97	Absprünge
+98	Absprungrate
+99	Verweise
+100	Ansicht
+101	Marketing-Optimierung
+102	Content-Optimierung
+103	E-Commerce-Analyse
+104	Besucherzusammenfassung
+105	xxxxx
+106	E-Commerce-Zusammenfassung
+107	xxxxx
+108	Conversion-Zusammenfassung
+109	xxxxx
+110	Marketing-Zusammenfassung
+111	xxxxx
+112	Verweis-Conversions
+113	xxxxx
+114	Besuche und Seitenaufrufe
+115	Besuche nach neuen und wiederkehrenden Besuchern
+116	Besuche nach Land
+117	Besuche nach Quelle
+118	Parameter für Web-Design
+119	Browser-Versionen
+120	xxxxx
+121	Plattformversionen
+122	xxxxx
+123	Browser- und Plattformkombinationen
+124	xxxxx
+125	Bildschirmauflösungen
+126	xxxxx
+127	Bildschirmfarben
+128	xxxxx
+129	Sprachen
+130	xxxxx
+131	Für Java aktiviert
+132	xxxxx
+133	JavaScript-Version
+134	xxxxx
+135	Flash-Version
+136	xxxxx
+137	Verbindungsgeschwindigkeit
+138	xxxxx
+139	Besucher-Tracking
+140	Besuche und Seitenaufrufe
+141	xxxxx
+142	Besuchergrafik
+143	Besuche
+144	Seitenaufrufe
+145	Umsatz und Transaktionen
+146	Umsatz nach neuen und wiederkehrenden Besuchern
+147	Umsatz nach Land
+148	Umsatz nach Quelle
+149	Ziel-Conversion-Tracking
+150	xxxxx
+151	Tägliche Besucher
+152	xxxxx
+153	Eindeutige Besucher
+154	xxxxx
+155	Besuchertreue
+156	xxxxx
+157	Besucherwiederkehr
+158	xxxxx
+159	Leistung der Besuchersegmente
+160	Neue und wiederkehrende Besucher
+161	xxxxx
+162	Verweisende Quelle
+163	xxxxx
+164	Geografischer Standort
+165	xxxxx
+166	Provider der Besucher
+167	xxxxx
+168	Sprache
+169	xxxxx
+170	Benutzerdefiniert
+171	xxxxx
+172	Ergebnisse der Marketingkampagnen
+173	Kampagnen-Conversions
+174	xxxxx
+175	Quellen-Conversions
+176	xxxxx
+177	Medium-Conversions
+178	xxxxx
+179	ROI pro Kampagne
+180	xxxxx
+181	ROI pro Quelle
+182	xxxxx
+183	ROI pro Medium
+184	xxxxx
+185	Suchmaschinen-Marketing
+186	CPC-Programmanalyse
+187	xxxxx
+188	Keyword-Conversions
+189	xxxxx
+190	CPC- und organische Conversions
+191	xxxxx
+192	Webseiten-Analyse
+193	Beliebteste Webseiten
+194	xxxxx
+195	Alle Seiten
+196	xxxxx
+197	Content nach Titeln
+198	xxxxx
+199	Seitensuchbegriffe
+200	xxxxx
+201	Besuchstiefe
+202	xxxxx
+203	Dauer des Besuchs
+204	xxxxx
+205	Navigationsanalyse
+206	Absprungraten auf Einstiegsseite
+207	xxxxx
+208	Häufigste Ausstiegspunkte
+209	xxxxx
+210	Hostnamen
+211	xxxxx
+212	Superadministrator
+213	Kontoadministrator
+214	Ziele und Trichterprozess
+215	Ziel-Tracking
+216	xxxxx
+217	Ziel-Conversions
+218	xxxxx
+219	Ausstiegsraten im Trichter
+220	xxxxx
+221	Trichternavigation
+222	xxxxx
+223	Zielpfad umkehren
+224	xxxxx
+225	Zielüberprüfung
+226	xxxxx
+227	Änderung in %
+228	Besuchergrafik
+229	Neue Besucher in Prozent
+230	Hinweise zu Keywords
+231	xxxxx
+232	Berechnung des max. Gebots
+233	Hilfe zur Berechnung des max. Gebots
+234	Aufschlüsselung nach Tagesabschnitten
+235	xxxxx
+236	Klick-Tracking
+237	xxxxx
+238	Z1-Conversions
+239	Z2-Conversions
+240	Z3-Conversions
+241	Z4-Conversions
+242	Produkt-Tracking
+243	Umsatz und Transaktionen
+244	xxxxx
+245	Grafik "Conversion-Rate"
+246	xxxxx
+247	Durchschnittlicher Bestellwert
+248	xxxxx
+249	Transaktionsliste
+250	xxxxx
+251	Treue und Latenz
+252	Neue und wiederkehrende Besucher
+253	xxxxx
+254	Zeit bis zur Transaktion
+255	xxxxx
+256	Besuche bis zur Transaktion
+257	xxxxx
+258	Umsatzquellen
+259	Verweisquellen
+260	xxxxx
+261	Sprachen
+262	xxxxx
+263	Organisationen
+264	xxxxx
+265	Benutzerdefiniert
+266	xxxxx
+267	Vorrangige Städte
+268	xxxxx
+269	Aufschlüsselung nach Land
+270	xxxxx
+271	Angliederungen
+272	xxxxx
+273	Produkt-Merchandising
+274	Produktleistung
+275	xxxxx
+276	Produktkategorien
+277	xxxxx
+278	Zusammenhang Produkt/Käufer
+279	xxxxx
+280	Zusammenhang Produkt und Standort
+281	xxxxx
+282	Zusammenhang Produkt und Stadt/Region
+283	xxxxx
+284	Zusammenhang Produkt/Keyword
+285	xxxxx
+286	Zusammenhang Produkt/Quelle
+287	xxxxx
+288	Vergleich der Anzeigenversion
+289	A/B-Anzeigenvergleich
+290	xxxxx
+291	Quellenvergleich
+292	xxxxx
+293	Keyword-Vergleich
+294	xxxxx
+295	Anfangsnavigation
+296	xxxxx
+297	Alle Navigationspfade
+298	xxxxx
+299	-
+300	-
+301	So
+302	Mo
+303	Di
+304	Mi
+305	Do
+306	Fr
+307	Sa
+308	Tag
+309	Woche
+310	Monat
+311	Jahr
+312	Erstbesucher
+313	Vorherige Besucher
+314	Neue Besucher
+315	Gesamt
+316	Durchschnittlich
+317	Grafikspalte
+318	Quelle[Medium]/Keyword
+319	Trans
+320	CTR
+321	CR
+322	CPC
+323	RPC
+324	Keyword/Quelle[Medium]
+325	Quelle[Medium]/Keyword
+326	Keywords
+327	Keywords/Stunde
+328	Verloren %
+329	Max. Gebot
+330	Besuchertyp
+331	Z1/R
+332	Z2/R
+333	Z3/R
+334	Z4/R
+335	T/R
+336	Umsatz
+337	Transaktionen
+338	$/Trans.
+339	Tage
+340	Sitzungen
+341	Trans
+342	Stadt/Region/Land
+343	Angliederungen
+344	Produkte/SKU
+345	Artikel
+346	Umsatz
+347	Durchschn. Preis
+348	Durchschnittliche Menge
+349	Produktkategorien/Name/SKU
+350	Produktkategorien
+351	Produkt/Käufer
+352	Land
+353	Stadt
+354	Produkt/Keyword
+355	Produkt/Quelle
+356	Häufigste Ausstiegsseiten
+357	Ausstiege
+358	Erfolgreichste Einstiegsseiten
+359	Anfangspfad
+360	Jan
+361	Feb
+362	Mär
+363	Apr
+364	Mai
+365	Jun
+366	Jul
+367	Aug
+368	Sep
+369	Okt
+370	Nov
+371	Dez
+372	Z1-Tracking
+373	Z2-Tracking
+374	Z3-Tracking
+375	Z4-Tracking
+376	Kampagnen
+377	Analyseoptionen
+378	Daten im Zeitverlauf
+379	Overlay-Seite
+380	Schließen
+381	Top 5 der Quellen
+382	Top 5 der Keywords
+383	Top 5 der Kampagnen
+384	Content-Zusammenfassung
+385	xxxxx
+386	Top 5 der Einstiegspunkte
+387	Top 5 der Ausstiegspunkte
+388	Top 5 der Inhalte
+389	Rate %
+390	Ziel-Conversions
+391	Klick auf "Zu" und "Von"
+392	Top-10-Klicks von|Top-10-Klicks zu
+393	Klickraten-Overlay
+394	Overlay-Seite
+395	Ausstiege
+396	Zielpfad
+397	Passende Ziele
+398	Ziel auswählen
+399	Z1-Ausstiegsrate
+400	Z2-Ausstiegsrate
+401	Z3-Ausstiegsrate
+402	Z4-Ausstiegsrate
+403	Ausstiegsrate
+404	Website konnte nicht abgerufen werden.
+405	Fehlercode:
+406	Steuer
+407	Versand
+408	Transaktionsliste
+409	Durchschnittliche Seitenaufrufe pro Besuch
+410	Besuchsnummer
+411	Z1/Klicks
+412	Z2/Klicks
+413	Z3/Klicks
+414	Z4/Klicks
+415	T/Klicks
+416	Durchschn. Qualitätsfaktor
+417	Einstiegspunkte|Ausstiegspunkte
+418	Anzahl der Besuche
+419	Prozent $
+420	Website-Overlay
+421	xxxxx
+422	Landkarten-Overlay
+423	xxxxx
+424	Standort
+425	Zeilen anzeigen:
+426	Vorherige Seite 1
+427	Vorherige Seite 2
+428	Vorherige Seite 3
+429	Segment
+430	Quelle[Medium]
+431	Kampagne
+432	Keyword
+433	Content
+434	Land
+435	Region
+436	Stadt
+437	Provider der Besucher
+438	Sprache
+439	Benutzerdefiniert
+440	Browser
+441	Plattform
+442	Verbindungsgeschwindigkeit
+443	Bildschirmauflösung
+444	Farben
+445	Java
+446	JavaScript
+447	Flash
+448	Besuchertyp
+449	Zurück
+450	Conv.-Rate
+451	Hostnamen
+452	Lifetime-Wert bis heute
+453	Lifetime-Wert bis heute
+454	Erstes Mal
+455	Vorher
+456	Eindeutige Besucher
+457	Ziel 1
+458	Ziel 2
+459	Ziel 3
+460	Ziel 4
+461	Durchschnittlicher Besucherwert
+462	Gesamtumsatz aus E-Commerce
+463	Gesamtanzahl der Transaktionen
+464	Durchschnittlicher Bestellwert
+465	Eindeutige Conversions bis heute
+466	Besucherprotokollaufschlüsselung
+467	Besucher-ID
+468	Besuche nach Datum
+469	Besuchsnummer
+470	Nte Sitzung
+471	Seitenaufrufpfad
+472	Transaktion
+473	CODE
+474	Beschreibung
+475	Menge
+476	Gesamt
+477	xxxxx
+478	Transaktionsdetails
+479	Besucherliste
+480	xxxxx
+481	Netzseite
+482	Geografischer Standort
+483	Verweisquelle
+484	Erster Besuch
+485	Letzter Besuch
+486	Bildschirminformationen
+487	Browsereinstellungen
+488	Liste der Besuche und Besuchsdetails
+489	Besuchsdetails
+490	Datum des Besuchs
+491	Grafik ausblenden/einblenden
+492	Zurück
+493	Weiter
+494	Besucher
+495	Startseite
+496	Konfiguration
+497	Einstellungen
+498	Abmelden
+499	Adresse
+500	Datentabelle maximieren/minimieren
+501	xxxxx
+502	xxxxx
+503	Segmentübergreifende Leistung
+504	xxxxx
+505	Klicken Sie links neben einem Eintrag auf die Schaltfläche <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0">, um die Daten über einen bestimmten Zeitraum hinweg, den Lifetime-Wert bis heute oder die Daten segmentübergreifend anzuzeigen.
+506	Klicken Sie links neben einem Eintrag auf die Schaltfläche <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0">, um Daten über einen bestimmten Zeitraum hinweg zu erfassen oder diese Daten segmentübergreifend anzuzeigen.
+507	Klicken Sie links neben einem Eintrag auf die Schaltfläche <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0">, um Daten über einen gewissen Zeitraum hinweg zu erfassen.
+508	Klicken Sie links neben einem Eintrag auf die Schaltfläche <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0">, um Daten über einen bestimmten Zeitraum hinweg zu erfassen oder das Website-Overlay anzuzeigen.
+509	Liste der Besuche
+510	Stückpreis
+511	Angliederung
+512	Datum
+513	IT-Berichte
+514	Treffer- und Byte-Tracking
+515	xxxxx
+516	Browser-Versionen
+517	xxxxx
+518	Plattformversionen
+519	xxxxx
+520	Browser- und Plattformkombinationen
+521	xxxxx
+522	Nutzernamen
+523	xxxxx
+524	Beliebteste Dateien
+525	xxxxx
+526	Dateiaufschlüsselung
+527	xxxxx
+528	Dateitypen
+529	xxxxx
+530	Dateien
+531	Verzeichnis und Dateien
+532	MIME-Typen
+533	Downloads
+534	xxxxx
+535	Hochgeladene Formulare
+536	xxxxx
+537	Downloads
+538	Hochgeladene Formulare
+539	Statuscodes
+540	xxxxx
+541	Verweisfehler
+542	xxxxx
+543	Statuscodes
+544	Fehlercodes/Content/Verweis
+545	Nicht autorisierte Nutzernamen
+546	xxxxx
+547	Nutzernamen
+548	Robots
+549	xxxxx
+550	Robot-Content
+551	xxxxx
+552	Robots/User-Agent
+553	Robots/User-Agent/Dateien
+554	Gültige Treffer
+555	Fehlertreffer
+556	Alle Treffer
+557	Lastausgleich
+558	xxxxx
+559	Protokollquelle
+560	Grafik gültige Treffer
+561	Grafik Bytes
+562	Grafik Fehlertreffer
+563	Aufschlüsselung nach IP-Adresse
+564	xxxxx
+565	IP-Adresse
+566	IP-Adressen
+567	xxxxx
+568	Domain-Aufschlüsselung
+569	xxxxx
+570	Primäre Domain/Domain
+571	Nicht aufgelöste IP-Adressen
+572	xxxxx
+573	Domains
+574	xxxxx
+575	Domains
+576	Nutzername
+577	Nutzername: Hilfe
+578	Seiten und Dateien
+579	Domains und Nutzer
+580	Browser und Robots
+581	Domains
+582	Domains: Hilfe
+583	Tage
+584	Benutzerdefiniert
+585	Erstes Datum
+586	Zweites Datum
+587	Neuer Besucher
+588	Wiederkehrender Besucher
+589	af (Afrikaans)
+590	sq (Albanisch)
+591	ar-sa (Arabisch - Saudi-Arabien)
+592	ar-iq (Arabisch - Irak)
+593	ar-eg (Arabisch - Ägypten)
+594	ar-ly (Arabisch - Libyen)
+595	ar-dz (Arabisch - Algerien)
+596	ar-ma (Arabisch - Marokko)
+597	ar-tn (Arabisch - Tunesien)
+598	ar-om (Arabisch - Oman)
+599	ar-ye (Arabisch - Jemen)
+600	ar-sy (Arabisch - Syrien)
+601	ar-jo (Arabisch - Jordanien)
+602	ar-lb (Arabisch - Libanon)
+603	ar-kw (Arabisch - Kuwait)
+604	ar-ae (Arabisch - Vereinigte Arabische Emirate)
+605	ar-bh (Arabisch - Bahrain)
+606	ar-qa (Arabisch - Katar)
+607	eu (Baskisch)
+608	bg (Bulgarisch)
+609	be (Weißrussisch)
+610	ca (Katalanisch)
+611	zh-tw (Chinesisch - Taiwan)
+612	zh-cn (Chinesisch - Volksrepublik China)
+613	zh-hk (Chinesisch - Hongkong SAR)
+614	zh-sg (Chinesisch - Singapur)
+615	hr (Kroatisch)
+616	cs (Tschechisch)
+617	cs-cz (Tschechisch)
+618	da (Dänisch)
+619	nl (Niederländisch - Standard)
+620	nl-nl (Niederländisch - Standard)
+621	nl-be (Niederländisch - Belgien)
+622	en (Englisch)
+623	en-us (Englisch - USA)
+624	en-gb (Englisch - Vereinigtes Königreich)
+625	en-au (Englisch - Australien)
+626	en-ca (Englisch - Kanada)
+627	en-nz (Englisch - Neuseeland)
+628	en-ie (Englisch - Irland)
+629	en-za (Englisch - Südafrika)
+630	en-jm (Englisch - Jamaika)
+631	en (Englisch - Karibik)
+632	en-bz (Englisch - Belize)
+633	en-tt (Englisch - Trinidad)
+634	et (Estnisch)
+635	fo (Färöisch)
+636	fa (Farsi)
+637	fi (Finnisch)
+638	fr (Französisch - Standard)
+639	fr-fr (Französisch - Standard)
+640	fr-be (Französisch - Belgien)
+641	fr-ca (Französisch - Kanada)
+642	fr-ch (Französisch - Schweiz)
+643	fr-lu (Französisch - Luxemburg)
+644	gd (Gälisch - Schottland)
+645	gd-ie (Gälisch - Irland)
+646	de-de (Deutsch - Standard)
+647	de (Deutsch - Standard)
+648	de-ch (Deutsch - Schweiz)
+649	de-at (Deutsch - Österreich)
+650	de-lu (Deutsch - Luxemburg)
+651	de-li (Deutsch - Liechtenstein)
+652	el (Griechisch)
+653	he (Hebräisch)
+654	hi (Hindi)
+655	hu (Ungarisch)
+656	is (Isländisch)
+657	id (Indonesisch)
+658	it (Italienisch - Standard)
+659	it-it (Italienisch - Standard)
+660	it-ch (Italienisch - Schweiz)
+661	ja (Japanisch)
+662	ja-jp (Japanisch)
+663	ko (Koreanisch)
+664	ko (Koreanisch - Johab)
+665	lv (Lettisch)
+666	lt (Litauisch)
+667	mk (FYRO Mazedonisch, ms Malaysisch)
+668	mt (Maltesisch)
+669	no (Norwegisch - Bokmal)
+670	no (Norwegisch - Nynorsk)
+671	pl (Polnisch)
+672	pl-pl (Polnisch)
+673	pt-br (Portugiesisch - Brasilien)
+674	pt (Portugiesisch - Portugal)
+675	rm (Rätoromanisch)
+676	ro (Rumänisch)
+677	ro-mo (Rumänisch - Moldawien)
+678	ru (Russisch)
+679	ru-ru (Russisch)
+680	ru-mo (Russisch - Moldawien)
+681	sz (Samisch - Lappisch)
+682	sr (Serbisch - Kyrillisch)
+683	sr (Serbisch - Lateinisch)
+684	sk (Slowakisch)
+685	sl (Slowenisch)
+686	sb (Sorbisch)
+687	es (Spanisch)
+688	es (Spanisch - Spanien traditionell)
+689	es-mx (Spanisch - Mexiko)
+690	es-gt (Spanisch - Guatemala)
+691	es-cr (Spanisch - Costa Rica)
+692	es-pa (Spanisch - Panama)
+693	es-do (Spanisch - Dominikanische Republik)
+694	es-ve (Spanisch - Venezuela)
+695	es-co (Spanisch - Kolumbien)
+696	es-pe (Spanisch - Peru)
+697	es-ar (Spanisch - Argentinien)
+698	es-ec (Spanisch - Ecuador)
+699	es-cl (Spanisch - Chile)
+700	es-uy (Spanisch - Uruguay)
+701	es-py (Spanisch - Paraguay)
+702	es-bo (Spanisch - Bolivien)
+703	es-sv (Spanisch - El Salvador)
+704	es-hn (Spanisch - Honduras)
+705	es-ni (Spanisch - Nicaragua)
+706	es-pr (Spanisch - Puerto Rico)
+707	sx (Sutu)
+708	sv (Schwedisch)
+709	sv-fi (Schwedisch - Finnland)
+710	th (Thailändisch)
+711	ts (Tsonga)
+712	tn (Tswana)
+713	tr (Türkisch)
+714	uk (Ukrainisch)
+715	ur (Urdu)
+716	ve (Venda)
+717	vi (Vietnamesisch)
+718	xh (Xhosa)
+719	ji (Jiddisch)
+720	zu (Zulu)
+721	S
+722	M
+723	D
+724	M
+725	D
+726	F
+727	S
+728	Vermarkter - Übersicht
+729	Übersicht für Webmaster
+730	Übersicht für leitende Angestellte
+731	Leitender Angestellter
+732	Vermarkter
+733	Webmaster
+734	Dashboards
+735	Alle Berichte
+736	ja-jp-Mac (Japanisch)
+737	ja-jp-Osaka (Japanisch)
+738	Auf Ihrer Website werden möglicherweise Zugriffe durch Keywords verzeichnet, die nicht in Ihrem Google AdWords-Konto enthalten sind. Möchten Sie diese Keywords <a href="http://www.google.com/urchin/sign-up65.html#rd=adwords&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><b>Ihrer Kampagne hinzufügen</FONT></b></a>?
+739	"Alle Anzeigengruppen auf einen Blick"-Bericht
+740	Dimension
+741	Weitere Quelle und zusätzliches Medium zum Vergleich hinzufügen
+742	Kampagne
+743	Keyword
+744	Content
+745	Diese Demo-Lizenz ist bis zum folgenden Datum gültig:
+746	Besuchszeit auf Website
+747	Zeit (hh:mm:ss)
+748	Diese USP-Lizenz ist bis zum folgenden Datum gültig:
+749	Wenden Sie sich zur Lösung des Problems an Ihren lokalen Systemadministrator.
+750	Beim Ändern der Anzeigengruppe wird die Keyword-Liste neu erstellt. Dabei gehen alle vorherigen Änderungen verloren. Möchten Sie fortfahren?
+751	AdWords-Anzeigengruppe für Ziel auswählen
+752	Erforderliches Feld (muss ausgefüllt werden)
+753	Sie können bis zu zehn Wörter oder Wortgruppen angeben.
+754	Mit eingegebenen Begriffen verknüpfte Keywords
+755	Zusätzliche zu überprüfende Keywords
+756	In Anzeigengruppe
+757	Daten nicht ausreichend
+758	Hinzufügen als:
+759	Weitgehend passend
+760	Wortgruppe
+761	Genau passend
+762	Ausschließend
+763	Keine Änderungen
+764	Aktualisierung ist erfolgreich.
+765	Keine Anzeigengruppe ausgewählt
+766	Die Daten konnten nicht geladen werden.
+767	Die Anzeigengruppe “%1” wurde <b>erfolgreich</b> gekennzeichnet.
+768	Quelle
+769	Kennzeichnung anwenden auf:
+770	Wie möchten Sie eine Auswahl von Keywords generieren?
+771	Beschreibende Wörter oder Wortgruppen
+772	Beispiel: grüner Tee
+773	Website-Content
+774	Beispiel: www.example.com/product?id=123
+775	Geben Sie pro Zeile ein Keyword oder eine Wortgruppe ein:
+776	Webseiten-URL eingeben:
+777	Keyword-Tool von Google AdWords testen
+778	Weitere Keywords in der Anzeigengruppe
+779	Alle Keywords kopieren
+780	Bitte warten...
+781	Mitbewerberdichte
+782	Durchschn. Suchvolumen
+783	Gesch. durchschn. Suchvolumen
+784	Vorschau
+785	Aktualisieren
+786	Aktualisieren: Vorschau
+787	Hinzugefügt
+788	Entfernt
+789	AdWords Tag-Manager
+790	Zielkennzeichnung
+791	Anzeigengruppe:
+792	Anzeigen
+793	Beides
+794	Kennzeichnungs-URL
+795	Nur existierende URLs generieren, also nur die Keywords oder Anzeigen verarbeiten, für die eine URL explizit angegeben wurde
+796	Bereits gekennzeichnete URLs überspringen
+797	Diese URL auf alle gekennzeichneten Objekte innerhalb der Anzeigengruppe anwenden:
+798	UTM-Tags
+799	Kampagnenquelle
+800	Kampagnenmedium
+801	Kampagnenbegriff
+802	Kampagnen-Content
+803	(optional)
+804	Kampagnenname
+805	Tags auf die Anzeigengruppe anwenden
+806	Kennzeichnung wird durchgeführt, bitte warten...
+807	Kampagne “%1” in AdWords kopieren
+808	Zielkonto
+809	Kampagne
+810	Budget
+811	pro Tag
+812	Anzeigengruppenname
+813	In diesem Fenster können Sie die ausgewählte Kampagne in das AdWords-Konto kopieren. Die Kampagne kann als Ganzes oder in mehreren Teilen kopiert werden.
+814	Keyword-Liste
+815	Die Keyword-Liste kann zur Überprüfung der Keyword-Leistung und zur Auswahl eines bestimmten zu kopierenden Keywords ausgewählt werden.
+816	AdWords-Kampagne erstellen
+817	Auswahl von Keywords abrufen
+818	Kampagne in AdWords kopieren
+819	Wenden Sie UTM-Tracking-Tags in Urchin unkompliziert auf Ihre CPC-Kampagnen in AdWords an unter Verwendung von
+820	CPC-Struktur
+821	Tools
+822	AdWords-Optimierungstool
+823	Optimieren
+824	Keyword-Tool
+825	Kampagnendetails
+826	Keyword-Details
+827	Gehe zu AdWords
+828	Die AdWords-Kampagne wurde erfolgreich erstellt. Das Tool zum Kopieren von Kampagnen wird geschlossen.
+829	AdWords-Benachrichtigungen
+830	Jetzt Plan aktualisieren
+831	Warnung!
+832	Zuletzt aktualisiert: %1 UTC
+833	Budget für AdWords-Kampagne:
+834	Budget-Empfehlungen von AdWords
+835	Kunde
+836	Werbeoptimierung
+837	Status
+838	Qualität
+839	Tool zum Kopieren von Kampagnen
+840	CPC-Kontostruktur wurde in die Warteschlange zum Herunterladen eingereiht.
+841	Die CPC-Kontostruktur konnte nicht in die Planerwarteschlange aufgenommen werden. Der Download der CPC-Kontostruktur befindet sich bereits in der Warteschlange.
+842	Abbrechen
+843	Begriff/Konto/Kampagne/Anzeigengruppe/Keyword
+844	UTM-Kampagne/Konto/Kampagne/Anzeigengruppe/Keyword
+845	xxxxx
+846	Hilfe einblenden/ausblenden
+847	xxxxx
+848	xxxxx
+849	(und %1 jetzt)
+850	Verschiedene Keywords
+851	Besuchszeit auf Website
+852	XXXXX
+853	Folgende Objekte wurden geändert:
+854	Die Anzeigengruppe “%1” ist bereits gekennzeichnet. Keine Aktion ergriffen.
+855	Neue AdWords-Kampagne
+856	Kampagnenname
+857	Alle AdWords hinzufügen
+858	Keyword-Tool von AdWords
+859	Keywords verknüpft mit
+860	Keine Daten für den Export
+861	URL mit fehlerhaftem Format
+862	Die Keyword-Option “%1” steht in Konflikt mit der Keyword-Option “%2”, die Sie zum Hinzufügen ausgewählt haben:\n“%1” und “%2” können nicht für das gleiche Keyword in einer Anzeigengruppe vorhanden sein.\nFalls Sie die Entfernung der Keyword-Option “%1” abbrechen, entsteht ein Konflikt mit dem Hinzufügen der Keyword-Option “%2”.\nWir empfehlen Ihnen, zuerst die Keyword-Option “%2” aus der Liste “Hinzugefügt” zu entfernen.
+863	<i>Keine Daten in Tabelle</i>
+864	Kennzahlen
+865	AdWords Editor
+866	<i>Keine weiteren Keywords in der Anzeigengruppe</i>
+867	<i>Keine Anzeigengruppe abgefragt</i>
+868	xxxxx
+869	xxxxx
+870	Kampagnenansicht
+871	Keyword-Ansicht
+872	Leistungsvergleich
+873	Kennzahlen zur Kundenansprache
+874	ROI-Berichte
+875	Die folgenden erforderlichen Felder sind leer:
+876	xxxxx
+877	xxxxx
+878	xxxxx
+879	xxxxx
+880	xxxxx
+881	xxxxx
+882	xxxxx
+883	xxxxx
+884	xxxxx
+885	xxxxx
+886	xxxxx
+887	xxxxx
+888	xxxxx
+889	Ungültiger Wert für Budget
+890	Entfernen als:
+891	Sortieren nach:
+892	Alle anzeigen
+893	Entfernen
+894	Alle Keywords verwenden
+895	Vergleichen mit:
+896	Dauerlink
+897	Dauerlink (in E-Mail oder IM-Nachricht einfügen)
+898	Erweiterte Urchin-Segmente verwalten
+899	Segmentname
+900	Aktionen
+901	Neues benutzerdefiniertes Segment erstellen
+902	Dimension oder Kennzahl
+903	Bedingung
+904	Wert
+905	Aktion
+906	Übereinstimmungen
+907	stimmt nicht überein
+908	ist gleich
+909	weniger als
+910	kleiner als oder gleich
+911	größer als
+912	Größer als oder gleich
+913	"and"-Anweisung hinzufügen
+914	Speichern
+915	Abbrechen
+916	Neues Segment
+917	Hilfe
+918	Nutzer:
+919	Warnung: Speichern oder verwerfen Sie zunächst Ihre ausstehenden Änderungen.
+920	Warnung: Einige Filter sind ungültig.
+921	Möchten Sie diesen Datensatz wirklich löschen?
+922	Fehler: Der Urchin-Server war nicht erreichbar.
+923	Fehler: Ein unbekannter Fehler ist aufgetreten. Möglicherweise ist in der Sitzung eine Zeitüberschreitung aufgetreten.
+924	Fehler: Nicht numerische Bedingung wird mit numerischem Ausdruck verwendet.
+925	Fehler: Numerische Bedingung wird mit nicht numerischem Ausdruck verwendet.
+926	Fehler: Numerischer Wert wurde erwartet.
+927	Fehler: Filterzeichenfolge darf nicht null sein.
+928	Fehler: Filterzeichenfolge enthält ungültigen regulären Ausdruck.
+929	Meine Anpassungen
+930	Wählen Sie das Segment aus, nach dem Ihr Bericht gefiltert werden soll.
+931	Bearbeiten
+932	Löschen
+933	Auf alle Profile anwenden
+934	Möchten Sie dieses Segment wirklich in all Ihren Profilen bereitstellen?
+935	Alle Besuche
+936	Neue Besucher
+937	Wiederkehrende Besucher
+938	Bezahlte Suchzugriffe
+939	Nicht bezahlte Suchzugriffe
+940	Suchzugriff
+941	Direkte Zugriffe
+942	Durch Verweise zustande gekommene Zugriffe
+943	Besuche·mit Conversions
+944	Besuche über iPhones
+945	Anzeige:
+946	Ereignis-Tracking
+947	xxxxx
+948	Ereignisse gesamt
+949	Kategorien
+950	Aktionen
+951	Labels
+952	Eindeutige Ereignisse
+953	Durchschn. Wert
+954	Seiten
+955	Hosts
+956	Trend
+957	Ereignisse pro Besuch
+958	Hosts und Seiten
+959	Besuche mit Ereignis
+960	Endnutzer-Lizenzvereinbarung
+961	Urchin-Nutzerforum
+962	Besuche mit Ereignissen
+963	Analytics-Startseite
+964	Häufig gestellte Fragen
+965	Datenschutzbestimmungen
+966	Urchin-Hilfe
+967	Google Analytics & Urchin-Blog
+968	Löschen
+969	Beta
+970	Website-Nutzung
+971	Ziel-Conversions
+972	Erweiterte Segmente
+973	Profil:
+974	Druckansicht
+975	Standardansicht
+976	Hilferessourcen
+977	Informationen zu diesem Bericht
+978	mit
+979	ohne
+980	Ansichten:
+981	Tabelle
+982	Tortendiagramm
+983	Balkengrafik
+984	Los geht’s!
+985	Mit bisherigen Daten vergleichen
+986	Vorherige:
+987	Keine Daten
+988	Durchschnittliche Besucher pro Tag
+989	Durchschnittliche Besuche pro Tag
+990	Durchschnittliche Seitenaufrufe pro Tag
+991	Website-Zusammenfassung
+992	xxxxx
+993	Besucher
+994	Marketing
+995	Besuchergesamtzahl
+996	Gesamtanzahl der Besuche
+997	Seitenaufrufe insgesamt
+998	Ziel-Conversions
+999	E-Commerce
+1000	Durchschnittlicher Umsatz pro Tag
+1001	Durchschnittliche Transaktionen pro Tag
+1002	Durchschnittlicher Umsatz pro Transaktion
+1003	Durchschnittliche Treffer pro Tag
+1004	Durchschnittliche Byte pro Tag
+1005	Traffic
+1006	Durchschnittliche Besuchsdauer
+1007	Gesamtimpressionen
+1008	Gesamtanzahl der Klicks
+1009	Gesamtkosten
+1010	Gesamtumsatz
+1011	Gesamtanzahl der Transaktionen
+1012	Treffer insgesamt
+1013	Byte insgesamt
+1014	ROI-Übersicht
+1015	Conversion-Übersicht
+1016	Besucher-Tracking
+1017	Browserfunktionen
+1018	Browser und Plattformen
+1019	Produktname
+1020	Produkt-Artikelposition (SKU)
+1021	Produktkategorie
+1022	Kampagne
+1023	Quelle
+1024	Medium
+1025	Fehler: Der Segmentname darf nicht null sein.
+1026	Sonstiges
+1027	Informationen zum Keyword-Tool
+1028	Über den Tag-Manager von AdWords
+1029	Informationen zu erweiterten Segmenten
+1030	Urchin-Hilfe
+1031	Wert des Abfrageparameters (194)
+1032	xxxxx
+1033	xxxxx
+1034	xxxxx
+1035	xxxxx
+1036	xxxxx
+1037	xxxxx
+1038	xxxxx
+1039	xxxxx
+1040	xxxxx
+1041	xxxxx
+1042	xxxxx
+1043	xxxxx
+1044	xxxxx
+1045	xxxxx
+1046	xxxxx
+1047	xxxxx
+1048	xxxxx
+1049	xxxxx
+1050	IIS-Datum (1)
+1051	IIS-Zeit (2)
+1052	Apache-Zeit (3)
+1053	IP (4)
+1054	Nutzername (5)
+1055	Anforderung (6)
+1056	Methode (7)
+1057	URI-Stamm (8)
+1058	URI-Abfrage (9)
+1059	Statuscode (10)
+1060	Byte (11)
+1061	Host (12)
+1062	User-Agent (13)
+1063	Cookie (14)
+1064	Verweis-URL (15)
+1065	Benutzerdefiniertes Datum (16)
+1066	Benutzerdefinierte Zeit (17)
+1067	Host (19)
+1068	Port (20)
+1069	Version (21)
+1070	Name der Website (22)
+1071	Computername (23)
+1072	IP (24)
+1073	ELF: Auftrags-ID (25)
+1074	ELF: Geschäft (26)
+1075	ELF: Sitzungs-ID (27)
+1076	ELF: Gesamt (28)
+1077	ELF: Steuern (29)
+1078	ELF: Versand (30)
+1079	ELF: Rechnungsstadt (31)
+1080	ELF: Rechnungsbundesland (32)
+1081	ELF: Rechnungs-PLZ (33)
+1082	ELF: Rechnungsland (34)
+1083	ELF: Produktcode (35)
+1084	ELF: Produktname (36)
+1085	ELF: Produktvariation (37)
+1086	ELF: Stückpreis (38)
+1087	ELF: Menge (39)
+1088	ELF: Upsold (40)
+1089	UTM-Kampagnen-URI (41)
+1090	UTM-Kampagnenkosten (42)
+1091	UTM-Kampagnenimpressionen (43)
+1092	UTM-Kampagnenklicks (44)
+1093	CPC-Konto (45)
+1094	CPC-Kampagne (46)
+1095	CPC-Anzeigengruppe (47)
+1096	CPC-Keyword (48)
+1097	Verweisprotokoll (76)
+1098	Verweis-Host (77)
+1099	Verweis-Port (79)
+1100	Verweis-URL (80)
+1101	Verweis-URI (81)
+1102	Verweisstamm (82)
+1103	Verweisanfrage (83)
+1104	Verweisanker (84)
+1105	Verweisverzeichnis (85)
+1106	Verweisdateiname (86)
+1107	Verweis-MIME-Typ (87)
+1108	Verweis-Keywords (88)
+1109	Methode anfordern (91)
+1110	URL anfordern (92)
+1111	Version anfordern (93)
+1112	Protokoll anfordern (94)
+1113	Host anfordern (95)
+1114	Port anfordern (96)
+1115	URI anfordern (97)
+1116	Stamm anfordern (98)
+1117	Suchanfrage anfordern (99)
+1118	Anker anfordern (100)
+1119	Verzeichnis anfordern (101)
+1120	Dateinamen anfordern (102)
+1121	MIME-Typ anfordern (103)
+1122	Ursprünglichen Dateipfad anfordern (104)
+1123	Ursprünglichen MIME-Typ anfordern (105)
+1124	Browserart (108)
+1125	Browser-Version (109)
+1126	Betriebssystem (110)
+1127	Betriebssystemversion (111)
+1128	Primäre Domain (112)
+1129	Domain des Internetanbieters (113)
+1130	SID (114)
+1131	UTM-ID (154)
+1132	Online-Kampagne (137)
+1133	Medium (138)
+1134	Zugriffsquelle (139)
+1135	Keyword (140)
+1136	Content (141)
+1137	UTM Cookiea (115)
+1138	UTM Cookieb (116)
+1139	UTM Cookiec (117)
+1140	UTM Cookiez (118)
+1141	UTM - Eindeutige ID (122)
+1142	Neue UTM-Kampagne (123)
+1143	UTM-Seite (124)
+1144	UTM-Verweis (125)
+1145	Bildschirmauflösung (126)
+1146	Bildschirmfarben (129)
+1147	Sprachen (130)
+1148	Für Java aktiviert (131)
+1149	JavaScript-Version (134)
+1150	Kampagnenstunde (150)
+1151	Kampagnenziel (151)
+1152	Name der Protokollquelle (152)
+1153	UTM-Typ (155)
+1154	Robot-Agent (156)
+1155	Host-IP (157)
+1156	Hostname (158)
+1157	Nutzername (159)
+1158	Land (160)
+1159	Region (161)
+1160	Stadt (162)
+1161	Breitengrad (163)
+1162	Längengrad (164)
+1163	ISP (165)
+1164	Name des Internetanbieters (166)
+1165	Verbindungsgeschwindigkeit (167)
+1166	Flash-Version (168)
+1167	Seitentitel (169)
+1168	Neu oder wiederkehrend (170)
+1169	UTM Cookiev (171)
+1170	Benutzerdefiniert (172)
+1171	Auftrags-ID (173)
+1172	Angliederung (174)
+1173	Gesamt (175)
+1174	Steuer (176)
+1175	Versand (177)
+1176	Rechnungsstadt (178)
+1177	Rechnungsregion (179)
+1178	Rechnungsland (180)
+1179	Produktcode (181)
+1180	Produktname (182)
+1181	Variante (183)
+1182	Stückpreis (184)
+1183	Menge (185)
+1184	Hostnamen anfordern (186)
+1185	Download anfordern (187)
+1186	Formular anfordern (188)
+1187	Organische Quelle (189)
+1188	UTM (erweitert) (190)
+1189	Kategorie (191)
+1190	Aktion (192)
+1191	Label (193)
+1192	Klickseiten-Ursprung (301)
+1193	Klickseiten-Ziel (302)
+1194	Ziel-Klickeinstiegsseite (303)
+1195	Ziel-Klickausstiegsseite (304)
+1196	Anfangspfad-Seite 1 (305)
+1197	Anfangspfad-Seite 2 (306)
+1198	Anfangspfad-Seite 3 (307)
+1199	Zielpfad umkehren (308)
+1200	"Zielpfad umkehren"-Seite 1 (309)
+1201	"Zielpfad umkehren"-Seite 2 (310)
+1202	"Zielpfad umkehren"-Seite 3 (311)
+1203	Gesamt (312)
+1204	Jahr (313)
+1205	Monat (314)
+1206	Tag (315)
+1207	Stunde (316)
+1208	Besucher-ID (317)
+1209	Transaktions-ID (318)
+1210	Sitzungs-ID (319)
+1211	Sitzungs-IP (320)
+1212	Startzeit der Sitzung (321)
+1213	Endzeit der Sitzung (322)
+1214	Zeit anfordern (323)
+1215	Transaktionszeit (324)
+1216	Benutzerdefiniertes RAW-Feld (201)
+1217	Benutzerdefiniertes berechnetes Feld (226)
+1218	Neu!
+1219	Alpha
+1220	Neue Benutzeroberfläche für die Berichterstellung
+1221	Parallele Profilverarbeitung
+1222	Dauerlinks
+1223	Anpassbare Geo-/DNS-Daten
+1224	Benutzerdefinierte Filterreihenfolge
+1225	Daten-API v2
+1226	Automatische Aktualisierungen
+1227	Lokale Urchin-Hilfe
+1228	Traffic-Stichproben
+1229	Segment-Stichproben
+1230	Suchtabellenfilter
+1231	Urchin-Software von Google
+1232	Google-Datenschutzbestimmungen
+1233	Analytics-Blog
+1234	none

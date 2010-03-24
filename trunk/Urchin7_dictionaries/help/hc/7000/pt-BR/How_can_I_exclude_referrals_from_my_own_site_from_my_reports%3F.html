@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como posso excluir dos meus relatórios referências do meu próprio site?</strong> <p class="line874">Para excluir dos relatórios de Referência as referências do seu próprio site, será necessário fazer uma pequena modificação no arquivo urchin.js.Abra o arquivo no seu editor de texto favorito e insira a seguinte seção: <pre>    //-- Referral domains to Ignore
+    var _uRno=new Array();
+    _uRno[0]=".urchin.com";
+</pre><p class="line874">No caso acima, qualquer hit contendo urchin.com será excluído das suas referências.Se você tiver domínios extras para adicionar, edite o arquivo de forma a incluir outro valor _uRno[x] e aumente o valor numérico de x.Por exemplo: <pre>    //-- Referral domains to Ignore
+    var _uRno=new Array();
+    _uRno[0]=".urchin.com";
+    _uRno[1]=".urchin.net";
+    _uRno[2]=".urchinsoftware.com"
+</pre><p class="line874">Como lembrete, depois de fazer edições no arquivo urchin.js, você precisará enviar o arquivo atualizado para o nosso servidor da web, para que as alterações possam ser efetivadas. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

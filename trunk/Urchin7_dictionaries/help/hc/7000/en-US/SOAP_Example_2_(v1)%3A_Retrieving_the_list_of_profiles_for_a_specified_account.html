@@ -1,0 +1,24 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Example 2: Retrieving the list of profiles for a specified account</strong> <p class="line862">(Return to main article: <a href="Samples_for_Java_(SOAP)_v1.html">Samples for Java (SOAP) v1</a>) <p class="line874">1. Define login and account information: <p class="line867"><pre>  final int accountId = 1;
+  private static final String login = "URCHIN_LOGIN";
+  private static final String password = "URCHIN_PASSWORD";
+</pre><p class="line862">2. Define a service connection for the AdminService API: <p class="line867"><pre>AdminserviceStub adminStub = new AdminserviceStub();
+</pre><p class="line862">3. Define a request for the getProfileList method in the AdminService: <p class="line867"><pre>AdminserviceStub.GetProfileList profileReq = new AdminserviceStub.GetProfileList();
+</pre><p class="line874">4. Define the parameters: <p class="line867"><pre>profileReq.setLogin(login);
+profileReq.setPassword(password);
+profileReq.setAccountId(accountId);
+</pre><p class="line874">5. Get the list of profiles for the account: <p class="line867"><pre>AdminserviceStub.GetProfileListResponse profileRsp = adminStub.getProfileList(profileReq);
+</pre><p class="line874">6. Parse and display the list of profiles: <p class="line867"><pre>        for (AdminserviceStub.GetProfileListResponseSequence profile : responseSequence){
+          System.out.print("profile id: \"" + profile.localProfile.getProfileId() + "\", ");
+          System.out.print("profile name: \"" + profile.localProfile.getProfileName() + "\"; ");
+          System.out.print("account id: \"" + profile.localProfile.getAccountId() + "\", ");
+          System.out.println("account name: \"" + profile.localProfile.getAccountName() + "\".");
+        }
+</pre><p class="line862">For the complete sample code, see the implementation of GetProfileList() in the AdminService.java file. <p class="line862">(Return to main article: <a href="Samples_for_Java_(SOAP)_v1.html">Samples for Java (SOAP) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

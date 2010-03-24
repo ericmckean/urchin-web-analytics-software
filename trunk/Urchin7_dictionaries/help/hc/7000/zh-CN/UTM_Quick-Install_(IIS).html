@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 访问量监控器快速安装 (IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 软件授权顾问</em> <a href="EpikOne.html">EpikOne</a><em> 编写</em> </li></ul><p class="line874">以下内容旨在简要介绍，如何将 Urchin 访问量监控器安装到基于 Windows 平台的 Microsoft IIS 服务器的网站上。 要了解有关 Urchin 访问量监控器的详情，请参阅本部分的文章 "Urchin 访问量监控器 (UTM)"。 <p class="line867"><strong>第 1 步：</strong> 将 UTM 文件复制到网站的文档根目录下。 urchin.js 文件和 <tt class="backtick">__</tt>utm.gif 文件位于 Urchin 发行套装的 "utils\utm" 文件夹中。 将这两个文件复制到您网站内容的主文件夹下。 重要提示： GIF 文件以两个下划线字符开头。 <p class="line867"><strong>第 2 步：</strong> 在您网站的 HTML 中引荐 UTM。 在所有 HTML 网页中输入以下行。 尽管可以将此行输入到网页的任何位置，但我们建议将其紧挨着输入到关闭 &lt;/body&gt; 标记的前面。 如果您使用常用的包含功能或模板，可在此处输入。 <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line874">如果您正在使用 "HTML Tidy" 这样的包，则可以在网页的 HEAD 部分加入 Javascript 行，例如： <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>第 3 步：</strong> 在 IIS 日志中启用 cookie。 打开 IIS Manager，然后打开网站的“属性”窗口。 请确保日志已启用并设为 W3C 扩展格式。 点击格式旁边的“属性”按钮，然后在“扩展属性”标签下选择 cookie 旁边的框。 <p class="line867"><strong>第 4 步：</strong> 将 Urchin 配置文件设为使用 Urchin 访问量监控器 (UTM)。 在 Urchin 管理界面，修改相应的配置文件并点击“设置”标签。 将访问者跟踪方法设为 Urchin 访问量监控器 (UTM)。 将 UTM 域设为不包含 www 的网站地址。  然后将“报告设置”设为默认并点击“更新”按钮。 <p class="line874">大功告成！ 您的网站现在开始将 Urchin 访问量监控器数据记录到您的普通日志文件中，下一次运行 Urchin 时您便可以看到此文件。 <p class="line874">UTM 是否正常工作？ 要查看 UTM 是否成功地将条目记录到日志文件中，请在安装了 UTM 并点击了网站的几个网页后查看日志。 在日志文件结尾的地方，您应看到与下列条目类似的条目： <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">如果您没有看到 utma 条目，请务必检查是否在日志中正确启用了 cookie。 如果状态代码不是 200，请检查以确认已将文件正确复制到了您的文档根目录下。<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

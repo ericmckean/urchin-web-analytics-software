@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Aangepaste bezoekerssegmenten definiëren</strong> <p class="line874">Naast het segmenteren van gebruikers aan de hand van voorgedefinieerde segmenten zoals regio en taalkeuze, kunt u met Urchin 6 ook aangepaste segmenten definiëren en het gedrag van elk segment analyseren. U kunt bezoekers bijvoorbeeld vragen in een formulier een vinkje te zetten bij de sector waarin ze werkzaam zijn (zoals Techniek/engineering, Marketing/PR, enz.). U kunt vervolgens zoek- en koopgedrag analyseren aan de hand van de categorieën die uw bezoekers hebben aangevinkt. <p class="line862">U kunt conversiegedrag bekijken voor elk aangepast segment in het rapport 'Marketingoptimalisatie' &gt; 'Prestaties van bezoekerssegmenten' &gt; 'Door de gebruiker' gedefinieerd. Tevens kunt u met een van de vele andere rapporten een kruisanalyse uitvoeren van gegevens van bezoekerssegmenten. Voor het uitvoeren van een kruisanalyse kunt u voor de meeste rapporten op de knop 'Analyseopties' links van het item klikken. Selecteer 'Door de gebruiker gedefinieerd' om uw aangepaste segmenten weer te geven. <p class="line862">Om een bezoekerssegment in te stellen, gebruikt u de JavaScript-functie <tt class="backtick">__</tt>utmSetVar. U kunt bijvoorbeeld op elke locatie op de webpagina onder de UTM de volgende aanroep gebruiken: <p class="line867"><pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line874">Voorbeeld: gebruikers van deze pagina aan het segment 'Marketing/PR' toewijzen <p class="line874">In dit voorbeeld wordt elke gebruiker van de pagina toegewezen aan het segment 'Marketing/PR'. <p class="line867"><pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line874">Voorbeeld: bezoekers toewijzen aan het door bezoekers geselecteerde segment <p class="line874">In dit voorbeeld worden gebruikers toegewezen aan een segment aan de hand van wat zij op het formulier hebben geselecteerd. <p class="line867"><pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;Techniek/engineering&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;Marketing/PR&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;Productie&lt;/option&gt;
+    &lt;option value="General Management"&gt;Algemeen management&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>
