@@ -1,0 +1,1241 @@
+#################################################################################################
+#  Copyright (c) 2010 Urchin Software Corporation
+#  Dictionary
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	-
+1	Visitors
+2	Visits
+3	Pageviews
+4	Hits
+5	Bytes
+6	Avg Time
+7	Revenue
+8	Trans
+9	Responses
+10	New Leads
+11	Goals
+12	Impressions
+13	Clicks
+14	Cost
+15	Customers
+16	Date Range
+17	P/Visit
+18	Visitor Types
+19	Countries
+20	Sources
+21	Source/Medium
+22	Revenue/Items
+23	Total
+24	Conversion Rate
+25	Reports
+26	Date Range
+27	$ Index
+28	G1
+29	G2
+30	G3
+31	G4
+32	Usernames
+33	-
+34	Custom Date Range
+35	XML
+36	Profile Name
+37	Report Name
+38	Date Range
+39	View By
+40	Default
+41	Hourly
+42	Daily
+43	Monthly
+44	Filter
+45	Export
+46	Tab Separated (Text)
+47	Word (DOC)
+48	Excel (CSV)
+49	Print/Standard View
+50	Help Information
+51	Compare Date Range
+52	Enter Range
+53	Apply Range
+54	G1/Visit
+55	G2/Visit
+56	G3/Visit
+57	G4/Visit
+58	G5/Visit
+59	Browsers
+60	Percent
+61	Platforms
+62	Browsers - Platform
+63	Screen Resolution
+64	Screen Color
+65	Language
+66	Java Enabled
+67	Javascript Version
+68	Flash Version
+69	Connection Speed
+70	Current Range
+71	Previous Range
+72	Days Ago
+73	Source [Medium]
+74	T/Visits
+75	$/Visits
+76	Country/Region/City
+77	Organization Name
+78	User-defined
+79	Campaign/Source
+80	Medium/Source
+81	CPA
+82	RPA
+83	ROI
+84	Medium
+85	Content
+86	Source/Content
+87	Keyword/Content
+88	Pages
+89	% Exit
+90	Directory and Pages
+91	Page Titles
+92	Pages/Query Terms
+93	Count
+94	Depth of Visit
+95	Length of Visit (sec)
+96	Entrances
+97	Bounces
+98	Bounce Rate
+99	Referrals
+100	View
+101	Marketing Optimization
+102	Content Optimization
+103	E-Commerce Analysis
+104	Visitor Summary
+105	xxxxx 
+106	E-commerce Summary
+107	xxxxx
+108	Conversion Summary
+109	xxxxx
+110	Marketing Summary
+111	xxxxx
+112	Referral Conversion
+113	xxxxx
+114	Visits and Pageviews
+115	Visits by New and Returning
+116	Visits by Country
+117	Visits by Source
+118	Web Design Parameters
+119	Browser Versions
+120	xxxxx
+121	Platform Versions
+122	xxxxx
+123	Browser & Platform Combos
+124	xxxxx
+125	Screen Resolutions
+126	xxxxx
+127	Screen Colors
+128	xxxxx
+129	Languages
+130	xxxxx
+131	Java Enabled
+132	xxxxx
+133	Javascript Version
+134	xxxxx
+135	Flash Version
+136	xxxxx
+137	Connection Speed
+138	xxxxx
+139	Visitor Tracking
+140	Visits & Pageviews
+141	xxxxx
+142	Visitor Graph
+143	Visits
+144	Pageviews
+145	Revenue and Transactions
+146	Revenue by New and Returning
+147	Revenue by Country
+148	Revenue by Source
+149	Goal Conversion Tracking
+150	xxxxx  
+151	Daily Visitors
+152	xxxxx
+153	Absolute Unique Visitors
+154	xxxxx
+155	Visitor Loyalty
+156	xxxxx
+157	Visitor Recency
+158	xxxxx
+159	Visitor Segment Performance
+160	New vs Returning
+161	xxxxx
+162	Referring Source 
+163	xxxxx
+164	Geo Location
+165	xxxxx
+166	Network Location
+167	xxxxx
+168	Language
+169	xxxxx
+170	User-defined
+171	xxxxx
+172	Marketing Campaign Results
+173	Campaign Conversion
+174	xxxxx
+175	Source Conversion
+176	xxxxx
+177	Medium Conversion
+178	xxxxx
+179	Campaign ROI
+180	xxxxx
+181	Source ROI
+182	xxxxx
+183	Medium ROI
+184	xxxxx
+185	Search Engine Marketing
+186	CPC Program Analysis
+187	xxxxx
+188	Overall Keyword Conversion
+189	xxxxx
+190	CPC vs Organic Conversion
+191	xxxxx
+192	Content Performance
+193	Top Content
+194	xxxxx
+195	Content Drilldown
+196	xxxxx
+197	Content by Titles
+198	xxxxx
+199	Page Query Terms
+200	xxxxx
+201	Depth of Visit
+202	xxxxx
+203	Length of Visit 
+204	xxxxx
+205	Navigational Analysis
+206	Entrance Bounce Rates
+207	xxxxx
+208	Top Exit Points
+209	xxxxx
+210	Hostnames
+211	xxxxx
+212	Super Admin
+213	Account Admin
+214	Goals & Funnel Process
+215	Goal Tracking
+216	xxxxx
+217	Goal Conversion
+218	xxxxx
+219	Defined Funnel Abandonment
+220	xxxxx
+221	Defined Funnel Navigation
+222	xxxxx
+223	Reverse Goal Path
+224	xxxxx
+225	Goal Verification
+226	xxxxx
+227	% Change
+228	Visitors Graph
+229	Percent New Visitors
+230	Keyword Considerations
+231	xxxxx
+232	Max Bid Calculation
+233	Max Bid Calculation Help
+234	Day Parts Breakdown
+235	xxxxx
+236	Click Tracking
+237	xxxxx
+238	G1 Conversion
+239	G2 Conversion
+240	G3 Conversion
+241	G4 Conversion
+242	Commerce Tracking
+243	Revenue & Transactions
+244	xxxxx
+245	Conversion Rate Graph
+246	xxxxx
+247	Average Order Value
+248	xxxxx
+249	Transaction List
+250	xxxxx
+251	Loyalty & Latency
+252	New vs Returning
+253	xxxxx
+254	Time to Transaction
+255	xxxxx
+256	Visits to Transaction
+257	xxxxx
+258	Revenue Sources
+259	Referring Sources
+260	xxxxx
+261	Languages
+262	xxxxx
+263	Organizations
+264	xxxxx
+265	User-defined
+266	xxxxx
+267	Top Cities
+268	xxxxx
+269	Country Drilldown
+270	xxxxx
+271	Affiliations
+272	xxxxx
+273	Product Merchandising
+274	Product Performance
+275	xxxxx
+276	Product Categories
+277	xxxxx
+278	Product Buyer Correlation
+279	xxxxx
+280	Product-Location Correlation
+281	xxxxx
+282	Product City, Region Correlation
+283	xxxxx
+284	Product-Keyword Correlation
+285	xxxxx
+286	Product-Source Correlation
+287	xxxxx
+288	Ad Version Testing
+289	Overall Ad A/B Testing
+290	xxxxx
+291	Source Specific Testing 
+292	xxxxx
+293	Keyword Specific Testing
+294	xxxxx
+295	Initial Navigation
+296	xxxxx
+297	All Navigation
+298	xxxxx
+299	-
+300	-
+301	Sun
+302	Mon
+303	Tue
+304	Wed
+305	Thu
+306	Fri
+307	Sat
+308	Day
+309	Week
+310	Month
+311	Year
+312	First Time Visitors
+313	Prior Visitors
+314	New Visitors
+315	Totals
+316	Average
+317	Graph Column
+318	Source[Medium]/Keyword
+319	Trans
+320	CTR
+321	CR
+322	CPC
+323	RPC
+324	Keyword/Source[Medium]
+325	Source[Medium]/Keyword
+326	Keywords
+327	Keywords/Hour
+328	% Lost
+329	Max Bid
+330	Visitor Type
+331	G1/R
+332	G2/R
+333	G3/R
+334	G4/R
+335	T/R
+336	Revenue
+337	Transactions
+338	$/Trans
+339	Days
+340	Sessions
+341	Trans
+342	City/Region/Country
+343	Affiliations
+344	Products/SKU
+345	Items
+346	Revenue
+347	Avg Price
+348	Avg QTY
+349	Product Categories/Name/SKU
+350	Product Categories
+351	Product/Buyer
+352	Country
+353	City
+354	Product/keyword
+355	Product/Source
+356	Top Exits
+357	Exits
+358	Top Entrances
+359	Initial Path
+360	Jan
+361	Feb
+362	Mar
+363	Apr
+364	May
+365	Jun
+366	Jul
+367	Aug
+368	Sep
+369	Oct
+370	Nov
+371	Dec
+372	G1 Tracking
+373	G2 Tracking
+374	G3 Tracking
+375	G4 Tracking
+376	Campaigns
+377	Analysis Options
+378	Data Over Time
+379	Overlay Page
+380	Close
+381	Top 5 Sources
+382	Top 5 Keywords
+383	Top 5 Campaigns
+384	Content Summary
+385	xxxxx
+386	Top 5 Entrances
+387	Top 5 Exits
+388	Top 5 Content
+389	% Rate
+390	Goal Conversion
+391	Click To and From
+392	Top 10 Clicks From|Top 10 Clicks To
+393	Click Through Overlay
+394	Overlay Page
+395	Exits
+396	Goal Path
+397	Matched Goals
+398	Select Goal
+399	G1 Abandonment Rate
+400	G2 Abandonment Rate
+401	G3 Abandonment Rate
+402	G4 Abandonment Rate
+403	Abandonment Rate
+404	Failed to Obtain Webpage:
+405	Error Code:
+406	Tax
+407	Shipping
+408	Transactions List
+409	Average Pageviews per Visit
+410	Visit Number
+411	G1/Clicks
+412	G2/Clicks
+413	G3/Clicks
+414	G4/Clicks
+415	T/Clicks
+416	Avg. Score
+417	Entrance Points|Abandonment Points
+418	Number of Visits
+419	Percent $
+420	Site Overlay
+421	xxxxx
+422	Geo Map Overlay
+423	xxxxx
+424	Location
+425	Show rows:
+426	Previous Page 1
+427	Previous Page 2
+428	Previous Page 3
+429	Segment
+430	Source[Medium]
+431	Campaign
+432	Keyword
+433	Content
+434	Country
+435	Region
+436	City
+437	Network Location
+438	Language
+439	User Defined
+440	Browser
+441	Platform
+442	Connection Speed
+443	Screen Resolution
+444	Colors
+445	Java
+446	Javascript
+447	Flash
+448	Visitor Type
+449	Back
+450	Conv. Rate
+451	Hostnames
+452	To-date Lifetime Value
+453	To-date Lifetime Value
+454	First Time
+455	Prior
+456	Absolute Unique Visitors
+457	Goal 1
+458	Goal 2
+459	Goal 3
+460	Goal 4
+461	Average Visitor Value
+462	Total Ecommerce Revenue
+463	Total # Transactions
+464	Average Order Value
+465	To Date Unique Conversion
+466	Visitor History Drilldown
+467	Visitor ID
+468	Visits by Date
+469	Visit Number
+470	Nth Session
+471	Pageview Path
+472	Transaction
+473	CODE
+474	Description
+475	QTY
+476	Total
+477	xxxxx
+478	Transaction Detail
+479	Visitor List
+480	xxxxx
+481	Net Location
+482	Geo Location
+483	Referral Source
+484	First Visit
+485	Last Visit
+486	Screen Info
+487	Browser Settings
+488	List of Visits and Visit Details
+489	Visit Detail
+490	Visit Date
+491	Hide/Show Graph 
+492	Prev
+493	Next
+494	Visitor
+495	Home
+496	Configuration
+497	Preferences
+498	Log Out
+499	Address
+500	Expand/Collapse Data Table
+501	xxxxx
+502	xxxxx
+503	Cross Segment Performance
+504	xxxxx
+505	Click the  <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0"> button at the far left of any entry to view the data over time, to view to-date lifetime value, or to cross-segment this data.
+506	Click the  <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0"> button at the far left of any entry to view the data over time or to cross-segment this data.
+507	Click the  <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0"> button at the far left of any entry to view the data over time.
+508	Click the  <img alt="Analysis Options Button" title="Analysis Options Button" src="/uicons/report/options.gif" border="0"> button at the far left of any entry to view the data over time or to display the Site Overlay.
+509	List of Visits
+510	Unit Price
+511	Affiliation
+512	Date
+513	IT Reports
+514	Hits & Bytes Tracking
+515	xxxxx
+516	Browser Versions
+517	xxxxx
+518	Platform Versions
+519	xxxxx
+520	Browser & Platform Combos
+521	xxxxx
+522	Usernames
+523	xxxxx
+524	Top Files
+525	xxxxx
+526	File Drilldown
+527	xxxxx
+528	File Types
+529	xxxxx
+530	Files
+531	Directory and Files
+532	Mime Types
+533	Downloads
+534	xxxxx
+535	Posted Forms
+536	xxxxx
+537	Downloads
+538	Posted Forms
+539	Status Codes
+540	xxxxx
+541	Referral Errors
+542	xxxxx
+543	Status Codes
+544	Error Codes/Content/Referral
+545	Unauthorized Usernames
+546	xxxxx
+547	Usernames
+548	Robots
+549	xxxxx
+550	Robot Content
+551	xxxxx
+552	Robots/User-Agent
+553	Robots/User-Agent/Files
+554	Valid Hits
+555	Error Hits
+556	All Hits
+557	Load Balancing
+558	xxxxx
+559	Log Source
+560	Valid Hits Graph
+561	Bytes Graph
+562	Error Hits Graph
+563	IP Drilldown
+564	xxxxx
+565	IP Address
+566	IP Addresses
+567	xxxxx
+568	Domain Drilldown
+569	xxxxx
+570	Primary Domain/Domain
+571	Unresolved IPs
+572	xxxxx
+573	Domains
+574	xxxxx
+575	Domains
+576	Username
+577	Username: Help
+578	Pages & Files
+579	Domains & Users
+580	Browsers & Robots
+581	Domains
+582	Domains: Help
+583	DOW
+584	Custom
+585	First Date
+586	Second Date
+587	New Visitor
+588	Returning Visitor
+589	af (Afrikaans)
+590	sq (Albanian)
+591	ar-sa (Arabic Saudi Arabia)
+592	ar-iq (Arabic Iraq)
+593	ar-eg (Arabic Egypt)
+594	ar-ly (Arabic Libya)
+595	ar-dz (Arabic Algeria)
+596	ar-ma (Arabic Morocco)
+597	ar-tn (Arabic Tunisia)
+598	ar-om (Arabic Oman)
+599	ar-ye (Arabic Yemen)
+600	ar-sy (Arabic Syria)
+601	ar-jo (Arabic Jordan)
+602	ar-lb (Arabic Lebanon)
+603	ar-kw (Arabic Kuwait)
+604	ar-ae (Arabic U.A.E.)
+605	ar-bh (Arabic Bahrain)
+606	ar-qa (Arabic Qatar)
+607	eu (Basque)
+608	bg (Bulgarian)
+609	be (Belarusian)
+610	ca (Catalan)
+611	zh-tw (Chinese Taiwan)
+612	zh-cn (Chinese PRC)
+613	zh-hk (Chinese Hong Kong SAR)
+614	zh-sg (Chinese Singapore)
+615	hr (Croatian)
+616	cs (Czech)
+617	cs-cz (Czech)
+618	da (Danish)
+619	nl (Dutch Standard)
+620	nl-nl (Dutch Standard)
+621	nl-be (Dutch Belgium)
+622	en (English)
+623	en-us (English United States)
+624	en-gb (English United Kingdom)
+625	en-au (English Australia)
+626	en-ca (English Canada)
+627	en-nz (English New Zealand)
+628	en-ie (English Ireland)
+629	en-za (English South Africa)
+630	en-jm (English Jamaica)
+631	en (English Caribbean)
+632	en-bz (English Belize)
+633	en-tt (English Trinidad)
+634	et (Estonian)
+635	fo (Faeroese)
+636	fa (Farsi)
+637	fi (Finnish)
+638	fr (French Standard)
+639	fr-fr (French Standard)
+640	fr-be (French Belgium)
+641	fr-ca (French Canada)
+642	fr-ch (French Switzerland)
+643	fr-lu (French Luxembourg)
+644	gd (Gaelic Scotland)
+645	gd-ie (Gaelic Ireland)
+646	de-de (German Standard)
+647	de (German Standard)
+648	de-ch (German Switzerland)
+649	de-at (German Austria)
+650	de-lu (German Luxembourg)
+651	de-li (German Liechtenstein)
+652	el (Greek)
+653	he (Hebrew)
+654	hi (Hindi)
+655	hu (Hungarian)
+656	is (Icelandic)
+657	id (Indonesian)
+658	it (Italian Standard)
+659	it-it (Italian Standard)
+660	it-ch (Italian Switzerland)
+661	ja (Japanese)
+662	ja-jp (Japanese)
+663	ko (Korean)
+664	ko (Korean Johab)
+665	lv (Latvian)
+666	lt (Lithuanian)
+667	mk (FYRO Macedonian ms Malaysian)
+668	mt (Maltese)
+669	no (Norwegian Bokmal)
+670	no (Norwegian Nynorsk)
+671	pl (Polish)
+672	pl-pl (Polish)
+673	pt-br (Portuguese Brazil)
+674	pt (Portuguese Portugal)
+675	rm (Rhaeto-Romanic)
+676	ro (Romanian)
+677	ro-mo (Romanian Moldavia)
+678	ru (Russian)
+679	ru-ru (Russian)
+680	ru-mo (Russian Moldavia)
+681	sz (Sami Lappish)
+682	sr (Serbian Cyrillic)
+683	sr (Serbian Latin)
+684	sk (Slovak)
+685	sl (Slovenian)
+686	sb (Sorbian)
+687	es (Spanish)
+688	es (Spanish Spain Traditional)
+689	es-mx (Spanish Mexico)
+690	es-gt (Spanish Guatemala)
+691	es-cr (Spanish Costa Rica)
+692	es-pa (Spanish Panama)
+693	es-do (Spanish Dominican Republic)
+694	es-ve (Spanish Venezuela)
+695	es-co (Spanish Colombia)
+696	es-pe (Spanish Peru)
+697	es-ar (Spanish Argentina)
+698	es-ec (Spanish Ecuador)
+699	es-cl (Spanish Chile)
+700	es-uy (Spanish Uruguay)
+701	es-py (Spanish Paraguay)
+702	es-bo (Spanish Bolivia)
+703	es-sv (Spanish El Salvador)
+704	es-hn (Spanish Honduras)
+705	es-ni (Spanish Nicaragua)
+706	es-pr (Spanish Puerto Rico)
+707	sx (Sutu)
+708	sv (Swedish)
+709	sv-fi (Swedish Finland)
+710	th (Thai)
+711	ts (Tsonga)
+712	tn (Tswana)
+713	tr (Turkish)
+714	uk (Ukrainian)
+715	ur (Urdu)
+716	ve (Venda)
+717	vi (Vietnamese)
+718	xh (Xhosa)
+719	ji (Yiddish)
+720	zu (Zulu)
+721	S
+722	M
+723	T
+724	W
+725	T
+726	F
+727	S
+728	Marketer Overview
+729	Webmaster Overview
+730	Executive Overview
+731	Executive
+732	Marketer
+733	Webmaster
+734	Dashboards
+735	All Reports
+736	ja-jp-mac (Japanese)
+737	ja-jp-osaka (Japanese)
+738	Your site may be getting traffic from keywords not represented in your Google AdWords account.  Would you like to <a href="http://www.google.com/urchin/sign-up65.html#rd=adwords&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><b>add them to your campaign</FONT></b></a>?
+739	Rollup Report
+740	Dimension
+741	Add another source and medium to compare
+742	Campaign
+743	Keyword
+744	Content
+745	The demo license will expire at
+746	Time on Site
+747	Time (hh:mm:ss)
+748	The USP license license will expire at
+749	Please contact your local system administrator to resolve the problem.
+750	If you change the ad group, the list of keywords will be regenerated and all previous changes will be lost. Do you want to proceed?
+751	Select target AdWords ad group
+752	Required field cannot be blank
+753	You can provide a maximum of 10 words or phrases
+754	Keywords related to term(s) entered
+755	Additional keywords to consider
+756	in ad group
+757	Not enough data
+758	Add as:
+759	Broad
+760	Phrase
+761	Exact
+762	Negative
+763	There were no changes
+764	Update is successful
+765	No ad group selected
+766	Unable to load data
+767	The ad group ‘%1’ has been <b>successfully</b> tagged
+768	Source
+769	Apply tagging to:
+770	How would you like to generate keyword ideas?
+771	Descriptive words or phrases
+772	(e.g. green tea)
+773	Website content
+774	(e.g. www.example.com/product?id=123)
+775	Enter one keyword or phrase per line:
+776	Enter a webpage URL:
+777	Try Google AdWords Keyword Tool
+778	Other Keywords in the Ad Group
+779	copy all keywords
+780	Please wait...
+781	Advertiser Competition
+782	Approx. Search Volume
+783	Approx. Avg Search Volume
+784	Preview
+785	Update
+786	Update: Preview
+787	Added
+788	Removed
+789	AdWords Tag Manager
+790	Tagging Target
+791	Ad Group:
+792	Ads
+793	Both
+794	Tagging URL
+795	Reconstruct existing URLs only (i.e. process only those keywords or ads that have URL explicitly specified)
+796	Skip already tagged URLs
+797	Apply this URL to all the tagged objects within the ad group:
+798	UTM Tags
+799	Campaign Source
+800	Campaign Medium
+801	Campaign Term
+802	Campaign Content
+803	(optional)
+804	Campaign Name
+805	Apply tags to the ad group
+806	Tagging in progress, please wait...
+807	Copy campaign ‘%1’ to AdWords
+808	Target Account
+809	Campaign
+810	Budget
+811	per day
+812	Ad Group Name
+813	Use this screen to copy the selected campaign to the AdWords Account. Campaign could be copied entirely or partially.
+814	Keywords list
+815	Keywords list could be used to check keyword performance and select particular keyword to copy.
+816	Create AdWords Campaign
+817	Get keyword ideas
+818	Copy Campaign to AdWords
+819	Apply Urchin UTM-tracking tags to your AdWords CPC campaigns easily using our
+820	CPC Structure
+821	Tools
+822	AdWords Optimizer Tool
+823	Optimize
+824	Keyword Tool
+825	Campaign Details
+826	Keyword Details
+827	Go to AdWords
+828	The AdWords campaign successfully created. Copy Campaign Tool will be closed.
+829	AdWords Alerts
+830	Schedule refresh now
+831	Warning!
+832	Last update time: %1 UTC.
+833	AdWords campaign budget:
+834	AdWords budget recommendations
+835	Advertiser
+836	Advertisement Optimization
+837	Status
+838	Quality
+839	Copy Campaign Tool
+840	CPC account structure has been queued to download.
+841	Failed to add CPC account structure to the scheduler queue. The CPC account structure download is already in the queue.
+842	Cancel
+843	Term/Account/Campaign/Ad Group/Keyword
+844	UTM Campaign/Account/Campaign/Ad Group/Keyword
+845	xxxxx
+846	Show/Hide Help
+847	xxxxx
+848	xxxxx
+849	(vs. %1 now)
+850	Miscellaneous keywords
+851	Time on Site
+852	XXXXX
+853	The following objects were modified:
+854	The ad group “%1” is already tagged. No action taken.
+855	New AdWords Campaign
+856	Campaign Name
+857	Add&nbsp;all&nbsp;to&nbsp;AdWords
+858	AdWords Keyword Tool
+859	Keywords related to
+860	No data to export
+861	Malformed URL
+862	The “%1” match type conflicts with “%2” match type that you have selected for adding:\nthe “%1” and “%2” cannot be present for the same keyword in a single ad group.\nIf you cancel removal of “%1” match type, there will conflict with addition of “%2” match type.\nYou should remove “%2” match type from “Added” list first.
+863	<i>No data in the table</i>
+864	Metrics
+865	AdWords Editor
+866	<i>No other keywords in the ad group</i>
+867	<i>No ad group queried</i>
+868	xxxxx
+869	xxxxx
+870	Campaign View
+871	Keyword View
+872	Performance Comparison
+873	Engagement Metrics
+874	ROI Reports
+875	The following required fields are blank:
+876	xxxxx
+877	xxxxx
+878	xxxxx
+879	xxxxx
+880	xxxxx
+881	xxxxx
+882	xxxxx
+883	xxxxx
+884	xxxxx
+885	xxxxx
+886	xxxxx
+887	xxxxx
+888	xxxxx
+889	Invalid budget value
+890	Remove as:
+891	Sort by:
+892	Show all
+893	remove
+894	Use all keywords
+895	Comparing to:
+896	Permalink
+897	Permalink (paste into email or IM)
+898	Manage Urchin Advanced Segments
+899	Segment Name
+900	Actions
+901	Create new custom segment
+902	Dimension or Metric
+903	Condition
+904	Value
+905	Action
+906	matches
+907	does not match
+908	equals to
+909	less than
+910	less than or equal to
+911	greater than
+912	greater than or equal to
+913	Add “and” statement
+914	Save
+915	Cancel
+916	New Segment
+917	Help
+918	User:
+919	Warning: save or cancel your pending changes first.
+920	Warning: some filters are invalid.
+921	Are you sure you want to delete this record?
+922	Error: couldn‘t reach Urchin server.
+923	Error: unknown error happened, possible reason is your session has timed out.
+924	Error: non-numeric condition is used with numeric expression.
+925	Error: numeric condition is used with non-numeric expression.
+926	Error: numeric value expected.
+927	Error: filter string can‘t be null.
+928	Error: filter string contains invalid regular expression.
+929	My Customizations
+930	Select segment by which to filter your report
+931	edit
+932	delete
+933	apply to all profiles
+934	Are you sure you want to make this segment available in all your profiles?
+935	All Visits
+936	New Visitors
+937	Returning Visitors
+938	Paid Search Traffic
+939	Non-paid Search Traffic
+940	Search Traffic
+941	Direct Traffic
+942	Referral Traffic
+943	Visits with Conversions
+944	Visits from iPhones
+945	Display:
+946	Event Tracking
+947	xxxxx
+948	Total Events
+949	Categories
+950	Actions
+951	Labels
+952	Unique Events
+953	Avg. Value
+954	Pages
+955	Hosts
+956	Trending
+957	Events per Visit
+958	Hosts & Pages
+959	Visits with Event
+960	End-User License Agreement
+961	Urchin User Forum
+962	Visits with Events
+963	Analytics Home
+964	FAQs
+965	Privacy Policy
+966	Urchin Help Center
+967	Google Analytics & Urchin Blog
+968	delete
+969	Beta
+970	Site Usage
+971	Goal Conversion
+972	Advanced Segments
+973	Profile:
+974	Print View
+975	Standard View
+976	Help Resources
+977	About this Report
+978	containing
+979	excluding
+980	Views:
+981	Table
+982	Pie Chart
+983	Bar Graph
+984	Go
+985	Compare to Past
+986	Previous:
+987	No Data
+988	Average Visitors Per Day
+989	Average Visits Per Day
+990	Average Pageviews Per Day
+991	Site Summary
+992	xxxxx
+993	Visitors
+994	Marketing
+995	Total Visitors
+996	Total Visits
+997	Total Pageviews
+998	Goal Conversion
+999	E-Commerce
+1000	Average Revenue Per Day
+1001	Average Transactions Per Day
+1002	Average Revenue Per Transaction
+1003	Average Hits Per Day
+1004	Average Bytes Per Day
+1005	Traffic
+1006	Average Visit Length
+1007	Total Impressions
+1008	Total Clicks
+1009	Total Cost
+1010	Total Revenue
+1011	Total Transactions
+1012	Total Hits
+1013	Total Bytes
+1014	ROI Overview
+1015	Conversion Overview
+1016	Visitor Tracking
+1017	Browser Capabilities
+1018	Browsers & Platforms
+1019	Product Name
+1020	Product SKU
+1021	Product Category
+1022	Campaign
+1023	Source
+1024	Medium
+1025	Error: Segment name can‘t be null.
+1026	Other
+1027	About Keyword Tool
+1028	About AdWords Tag Manager
+1029	About Advanced Segments
+1030	Urchin Help Center
+1031	Query Parameter Value (194)
+1032	xxxxx
+1033	xxxxx
+1034	xxxxx
+1035	xxxxx
+1036	xxxxx
+1037	xxxxx
+1038	xxxxx
+1039	xxxxx
+1040	xxxxx
+1041	xxxxx
+1042	xxxxx
+1043	xxxxx
+1044	xxxxx
+1045	xxxxx
+1046	xxxxx
+1047	xxxxx
+1048	xxxxx
+1049	xxxxx
+1050	IIS Date (1)
+1051	IIS Time (2)
+1052	Apache Time (3)
+1053	IP (4)
+1054	User Name (5)
+1055	Request (6)
+1056	Method (7)
+1057	URI Stem (8)
+1058	URI Query (9)
+1059	Status Code (10)
+1060	Bytes (11)
+1061	Host (12)
+1062	User Agent (13)
+1063	Cookie (14)
+1064	Referer (15)
+1065	Custom Date (16)
+1066	Custom Time (17)
+1067	Host (19)
+1068	Port (20)
+1069	Version (21)
+1070	Site Name (22)
+1071	Computer Name (23)
+1072	IP (24)
+1073	ELF Order ID (25)
+1074	ELF Store (26)
+1075	ELF Session ID (27)
+1076	ELF Total (28)
+1077	ELF Tax (29)
+1078	ELF Shipping (30)
+1079	ELF Bill City (31)
+1080	ELF Bill State (32)
+1081	ELF Bill ZIP (33)
+1082	ELF Bill Country (34)
+1083	ELF Product Code (35)
+1084	ELF Product Name (36)
+1085	ELF Product Variation (37)
+1086	ELF Unit Price (38)
+1087	ELF Quantity (39)
+1088	ELF Upsold (40)
+1089	UTM Campaign URI (41)
+1090	UTM Campaign Cost (42)
+1091	UTM Campaign Impressions (43)
+1092	UTM Campaign Clicks (44)
+1093	CPC Account (45)
+1094	CPC Campaign (46)
+1095	CPC Adgroup (47)
+1096	CPC Keyword (48)
+1097	Referral Protocol (76)
+1098	Referral Host (77)
+1099	Referral Port (79)
+1100	Referral URL (80)
+1101	Referral URI (81)
+1102	Referral Stem (82)
+1103	Referral Query (83)
+1104	Referral Anchor (84)
+1105	Referral Directory (85)
+1106	Referral Filename (86)
+1107	Referral MIME Type (87)
+1108	Referral Keywords (88)
+1109	Request Method (91)
+1110	Request URL (92)
+1111	Request Version (93)
+1112	Request Protocol (94)
+1113	Request Host (95)
+1114	Request Port (96)
+1115	Request URI (97)
+1116	Request Stem (98)
+1117	Request Query (99)
+1118	Request Anchor (100)
+1119	Request Directory (101)
+1120	Request Filename (102)
+1121	Request MIME Type (103)
+1122	Request Original File Path (104)
+1123	Request Original MIME Type (105)
+1124	Browser Type (108)
+1125	Browser Version (109)
+1126	Operating System (110)
+1127	Operating System Version (111)
+1128	Primary Domain (112)
+1129	Provider Domain (113)
+1130	SID (114)
+1131	UTM ID (154)
+1132	Online Campaign (137)
+1133	Medium (138)
+1134	Traffic Source (139)
+1135	Keyword (140)
+1136	Content (141)
+1137	UTM Cookiea (115)
+1138	UTM Cookieb (116)
+1139	UTM Cookiec (117)
+1140	UTM Cookiez (118)
+1141	UTM Uniques ID (122)
+1142	UTM New Campaign (123)
+1143	UTM Page (124)
+1144	UTM Referral (125)
+1145	Screen Resolution (126)
+1146	Screen Colors (129)
+1147	Languages (130)
+1148	Java Enabled (131)
+1149	Javascript Version (134)
+1150	Campaign Hour (150)
+1151	Campaign Goal (151)
+1152	Log Source Name (152)
+1153	UTM Type (155)
+1154	Robot Agent (156)
+1155	Host IP (157)
+1156	Hostname (158)
+1157	Username (159)
+1158	Country (160)
+1159	Region (161)
+1160	City (162)
+1161	Latitude (163)
+1162	Longitude (164)
+1163	ISP (165)
+1164	Provider Name (166)
+1165	Connection Speed (167)
+1166	Flash Version (168)
+1167	Page Title (169)
+1168	New or Returning (170)
+1169	UTM Cookiev (171)
+1170	User Defined (172)
+1171	Order ID (173)
+1172	Affiliation (174)
+1173	Total (175)
+1174	Tax (176)
+1175	Shipping (177)
+1176	Bill City (178)
+1177	Bill Region (179)
+1178	Bill Country (180)
+1179	Product Code (181)
+1180	Product Name (182)
+1181	Variation (183)
+1182	Unit Price (184)
+1183	Quantity (185)
+1184	Request Hostname (186)
+1185	Request Download (187)
+1186	Request Form (188)
+1187	Organic Source (189)
+1188	UTM Extended (190)
+1189	Category (191)
+1190	Action (192)
+1191	Label (193)
+1192	Click-through Page From (301)
+1193	Click-through Page To (302)
+1194	Goal Click-through Entrance Page (303)
+1195	Goal Click-through Exit Page (304)
+1196	Initial Path Page 1 (305)
+1197	Initial Path Page 2 (306)
+1198	Initial Path Page 3 (307)
+1199	Reverse Goal Path (308)
+1200	Reverse Goal Path Page 1 (309)
+1201	Reverse Goal Path Page 2 (310)
+1202	Reverse Goal Path Page 3 (311)
+1203	Totals (312)
+1204	Year (313)
+1205	Month (314)
+1206	Day (315)
+1207	Hour (316)
+1208	Visitor ID (317)
+1209	Transaction ID (318)
+1210	Session ID (319)
+1211	Session IP (320)
+1212	Session Start Time (321)
+1213	Session End Time (322)
+1214	Request Time (323)
+1215	Transaction Time (324)
+1216	Custom Raw Field (201)
+1217	Custom Calculated Field (226)
+1218	New!
+1219	Alpha
+1220	New Reporting User Interface
+1221	Parallel Profile Processing
+1222	Permalinks
+1223	Customizable Geo/DNS Data
+1224	Custom Order of Filters
+1225	Data API v2
+1226	Automatic Updates
+1227	Local Help Center
+1228	Traffic Sampling
+1229	Segment Sampling
+1230	Lookup Table Filters
+1231	Urchin Software from Google
+1232	Google Privacy Policy
+1233	Analytics Blog
+1234	none

@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como criar relatórios personalizados</strong> <p class="line874">Para criar um relatório personalizado: <ol type="1"><li><p class="line862">Escolha uma das tabelas de mapas de dados ou defina a tabela nova (consulte <a href="Custom_Data_Maps.html">Mapas de dados personalizados</a>); </li><li><p class="line862">Crie um novo arquivo de relatório (".rs2") copiando &lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample. </li><li>Defina um novo relatório adicionando uma nova linha ao arquivo de relatório. </li></ol><p class="line874">O formato do arquivo de relatório é descrito a seguir: <ul><li>ID – id exclusivo do relatório <ul><li>C=Categoria </li><li>D=Dados </li><li>M=Menu </li><li>R=Relatório </li><li>S=Sub-relatório </li><li>P=Relatório da página </li><li>B=Painel </li></ul></li><li>RS - Seções de painel e relatório: <ul><li>1=exec </li><li>2=comerciante </li><li>4=webmaster </li></ul></li><li>RR – Requisitos do relatório: <ul><li>1=Software </li><li>2=Avançado </li><li>4=Comércio eletrônico </li><li>8=UTM </li></ul></li><li>NTITLE – título de navegação (número da entrada no dicionário) </li><li>ONCOLOR – navegação na cor </li><li>OFFCOLOR – navegação fora da cor </li><li>HELP – ajuda do relatório (número da entrada no dicionário) </li><li>NDATA – número de elementos de dados (as entradas devem vir imediatamente em seguida) <ul><li>Esse campo pode ser usado antes de sub-relatórios adicionais com o tipo D (dados) </li></ul></li><li>CTITLES – títulos de colunas (número da entrada no dicionário) </li><li>CTYPES – tipo de coluna usado para formatação <ul><li>10=string </li><li>11=data/anomês </li><li>12=data </li><li>20=número </li><li>21=receita </li><li>22=bytes </li><li>23=proporção de tempo </li><li>24=proporção </li><li>25=pct </li><li>26=hora </li><li>30=pct total </li><li>40=receita </li><li>41=receita/núm. </li><li>42=núm./receita </li></ul></li><li>TABLE – número da tabela de dados: <ul><li>T=total </li><li>TR=transação </li><li>H=histograma </li><li>V=visitante </li><li>1-n tabela </li></ul></li><li>DXFORMAT – formato de extração de dados </li><li>RF - campo obrigatório </li><li>RT - tipo de relatório: <ul><li>1=totais de gráficos </li><li>2=histograma </li><li>3=pilha </li><li>4=principais </li><li>5=árvore </li><li>6=diretório" </li><li>7=limitado por gráficos </li><li>8=ponto </li><li>9=cliques </li><li>10=funil definido </li><li>11=cobertura da página inicial </li><li>12=cobertura do mapa </li><li>13=verificação de meta </li><li>14=caminho da meta </li><li>20=relatório de data kpi </li><li>21=dez principais kpi </li><li>22=resumo de tendências </li><li>23=resumo de conversões </li><li>24=Miniatura do Mapa </li></ul></li><li>GTYPES – tipos de gráfico: <ul><li>1=barra </li><li>2=linha </li><li>3=pizza </li><li>4=barrah </li><li>5=diversão </li><li>6=várias linhas </li></ul></li><li>FSEP – separador de campos </li><li>SP – opções especiais (adicionar números de bitmap) <ul><li>1=totais </li><li>2=médias </li><li>4=comparação de datas </li><li>8=paraminúsculas </li><li>16=dados ao longo do tempo </li><li>32=Cobertura </li><li>64=consulta de idioma </li><li>128=segmento </li><li>256=valor da vida útil </li><li>512=detalhes da transação </li><li>1024=Detalhamento do visitante </li><li>2048=consulta de termos </li></ul></li><li>SR – sinalizador especial de relatório: <ul><li>1=sugestões de palavras-chave </li><li>2=cliques </li><li>3=desdobramento das partes do dia </li><li>4=lista de visitantes </li><li>5=Cobertura do mapa </li><li>6=dicionário de uso personalizado </li><li>7=comparação de datas </li></ul></li><li>FNT – número do filtro tipo de filtro: <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF – campo número do filtro </li><li>FNV – valor do filtro </li><li>FST - tipo de string do filtro: <ul><li>1=excluir </li><li>2=incluir </li></ul></li><li>FSF – campo string do filtro </li><li>FSX – string de expressões regulares </li></ul><p class="line874">Veja a seguir o exemplo de uma linha do relatório com explicações: <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> Sub-relatório com ID 1208 </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> Seção executiva do relatório </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">Exige que o UTM esteja ativado </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> Título do menu de navegação </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      Cor do menu ao passar o mouse </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      Cor do menu sem passar o mouse </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> Entrada de ajuda: </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862"> Não há dados nos sub-relatórios </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> Rótulos das colunas da tabela de relatórios </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> Tipos das colunas da tabela de relatórios </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> ID do mapa de dados </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">Formato de extração de dados </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Nenhum campo obrigatório </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> O tipo de relatório é “principal” </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  Dois tipos de gráfico: “pizza” e “barrah” </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">O separador de campos não é usado </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> Opções especiais usadas: 4 – Comparação de datas; 16 – Dados ao longo do tempo; 128 - Segmento; 256 – Valor da vida útil; 1024 – Detalhamento dos visitantes </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Relatório regular </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> O filtro opcional não é usado </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> O filtro opcional não é usado </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> O filtro opcional não é usado </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> O filtro opcional não é usado </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> O filtro opcional não é usado </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> O filtro opcional não é usado </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>追蹤安全商店交易</strong> <p class="line867"><em>本文由 Urchin 軟體授權顧問 </em> <a href="ivantageLimited.html">ivantage Limited</a><em> 撰寫</em> <p class="line862">只要加上一些程式碼，Urchin 即可追蹤來自您所屬網域或是其他網域上的購物車資料。若要設定讓您的網頁向 Urchin 回報交易資料，請參閱<a href="How_do_I_track_e-commerce_transactions%253F.html">如何追蹤電子商務交易？</a> <p class="line874">此外，如果您的商店網站位於與您的主要網站不同的子網域或網域中，請按照下列指示設定您的網頁。 <p class="line874">如果您的網站在其他子網域上起始購買結帳程序 (例如將客戶從 www.mystore.com 導向到 shoppingcart.mystore.com)： <ul><li style="list-style-type:none">請將下列程式碼 (粗體顯示) 添加到您商店網站和購物車網頁的追蹤程式碼中： </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">如果您的網站在其他商店網站上起始購買結帳程序 (例如將客戶從 www.mystore.com 導向到 www.securecart.com)： <ul><li style="list-style-type:none">請將下列程式碼 (粗體顯示) 添加到您商店網站和購物車網頁的追蹤程式碼中： </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">如下所示，使用  <span class="u">utmLinker 將主要網站改為連結至安全網站。例如，如果您目前的連結為：</span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;立即購買&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">改成： </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;立即購買&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;立即購買&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">無論是否啟用了 JavaScript，上述程式碼都可以為使用者提供連結。請務必注意，當簡縮號 (') 出現在連結或連結文字裡中時，應該使用反斜線 (\) 來逸出。 重要：如果網頁中包含對 urchinTracker()、utmLinker()、utmSetTrans() 或 utmLinkPost() 的呼叫，那麼您必須將 Analytics (分析) 追蹤程式碼放在 HTML 程式碼中這些呼叫的前面。在這些狀況下，追蹤程式碼可以放在開始標記 &lt;body&gt; 和 JavaScript 呼叫之間的任何位置。 </li></ul><p class="line874">如果您利用表單將資訊傳送到購物車，請使用 utmLinkPost() 函數，以便將 Cookie 資料附加到所提供表單的網址中。 <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">這個方法也適用於 method="GET" 的表單 <p class="line891"><strong>重要：</strong>如果網頁中包含對 urchinTracker()、utmLinker()、utmSetTrans() 或 utmLinkPost() 的呼叫，那麼您必須將 Analytics (分析) 追蹤程式碼放在 HTML 程式碼中這些呼叫的前面。在這些狀況下，追蹤程式碼可以放在開始標記 &lt;body&gt; 和 JavaScript 呼叫之間的任何位置。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

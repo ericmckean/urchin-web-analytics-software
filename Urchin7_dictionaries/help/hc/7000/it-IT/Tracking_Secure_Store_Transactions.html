@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Monitoraggio delle transazioni di negozio protetto</strong> <p class="line867"><em>Articolo di</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, consulente autorizzato del software Urchin </em> <p class="line862">Urchin è in grado di monitorare i dati di un carrello degli acquisti presente sul tuo dominio o altri domini mediante l'aggiunta di un frammento di codice. Per fare in modo che le tue pagine producano rapporti sui dati delle transazioni in Urchin, consulta la sezione <a href="How_do_I_track_e-commerce_transactions%253F.html">Come faccio a monitorare le transazioni di e-commerce?</a> <p class="line874">Inoltre, se il sito riservato alla vendita si trova in un sottodominio o in un dominio diverso dal sito principale, segui le istruzioni riportate più avanti per configurare le tue pagine. <p class="line874">Se il tuo sito web avvia una procedura di checkout degli acquisti in un sottodominio diverso (ad esempio, se i clienti vengono reindirizzati da www.mionegozio.it a carrelloacquisti.mionegozio.it): <ul><li style="list-style-type:none">Aggiungi la seguente riga (in grassetto) al codice di monitoraggio sia nel sito di vendita che nelle pagine del carrello degli acquisti: </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">Se il tuo sito web avvia una procedura di checkout degli acquisti in un sito di vendita distinto (ad esempio, se i clienti vengono reindirizzati da www.mionegozio.it a www.carrelloprotetto.it): <ul><li style="list-style-type:none">Aggiungi le seguenti righe (in grassetto) al codice di monitoraggio sia nel sito di vendita che nelle pagine del carrello degli acquisti: </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Modifica i link che collegano il sito principale al sito protetto utilizzando <span class="u">utmLinker nel seguente modo. Se i tuoi link hanno il seguente formato: </span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;Acquista adesso&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">modificali in: </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;Acquista adesso&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;Acquista adesso&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Il codice indicato qui sopra offre link sia agli utenti che hanno JavaScript attivato sia a quelli che lo hanno disattivato. Tieni presente che gli apostrofi devono essere convertiti in caratteri escape utilizzando una barra rovesciata (\) quando sono inclusi all'interno del link o del testo del link. Importante. Se le tue pagine includono una chiamata a urchinTracker(), utmLinker(), utmSetTrans() o utmLinkPost(), il tuo codice di monitoraggio Analytics deve essere collocato all'interno del tuo codice HTML sopra una di queste chiamate. In questi casi, il codice di monitoraggio può essere inserito in qualsiasi punto tra il tag iniziale &lt;body&gt; e la chiamata JavaScript. </li></ul><p class="line874">Se invii informazioni al tuo carrello degli acquisti utilizzando dei moduli, utilizza la funzione utmLinkPost(). Aggiunge dati sui cookie all'URL del modulo fornito. <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">Questo funziona anche per i moduli con method="GET" <p class="line891"><strong>Importante.</strong> Se le tue pagine includono una chiamata a urchinTracker(), utmLinker(), utmSetTrans() o utmLinkPost(), il tuo codice di monitoraggio Analytics deve essere collocato all'interno del tuo codice HTML sopra una di queste chiamate. In questi casi, il codice di monitoraggio può essere inserito in qualsiasi punto tra il tag iniziale &lt;body&gt; e la chiamata JavaScript. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Uso de un servidor web Apache existente (plataformas de tipo UNIX)</strong> <p class="line874">De forma predeterminada, la administración e informes de Urchin se llevan a cabo mediante un servidor independiente Apache que viene integrado con el producto Urchin. En la mayoría de las instalaciones de Urchin, este es el método preferido para la distribución de interfaces de administración e informes de Urchin. Sin embargo, en algunos casos es posible que deba utilizarse una instalación de Apache existente. Esto puede deberse a que el sitio exija que se utilice una versión localizada de Apache en la organización, o que todos los servicios web se controlen a través de una única configuración de Apache. La información que se detalla a continuación describe dos modelos diferentes que pueden emplearse para cumplir estos requisitos. <p class="line867"><strong>RENUNCIA DE RESPONSABILIDAD:</strong> recuerde que estas modificaciones a la instalación de Urchin <strong>no están permitidas</strong>. <p class="line867"><strong>Opción 1:</strong> Utilización de un archivo binario httpd de Apache específico del sitio existente para ejecutar servicios de Urchin como caso independiente <p class="line867"><strong>Efectos secundarios</strong> <ul><li>Las actualizaciones de Urchin que dependen de funciones añadidas o cambios de configuración realizados en el servidor Apache integrado tal vez no funcionen correctamente si el archivo binario de Apache existente no admite estos cambios/funciones.  </li></ul><p class="line867"><strong>Cambios de configuración</strong> <ul><li>Asegúrese de que su archivo httpd es compatible con los siguientes módulos: <ul><li style="list-style-type:none">mod_access mod_cgi mod_dir mod_mime </li></ul></li><li>Instale Urchin de modo normal, seleccionando el puerto deseado para las interfaces de administración y generación de informes de Urchin en las que se ejecute. </li><li>Una vez que Urchin esté instalado, realice los siguientes pasos: </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin ./urchinctl stop
+                  mv urchinwebd urchinwebd.orig
+                  ln -s /path/to/your/httpd urchinwebd
+                  ./urchinctl start
+</pre><ul><li style="list-style-type:none">De este modo se iniciará una sesión independiente de Apache que utiliza el archivo binario de este, pero se ejecuta independientemente de sus servicios web estándar.  </li></ul><p class="line867"><strong>Opción 2::</strong> Ejecución de los servicios de Urchin desde una configuración de Apache existente <p class="line867"><strong>Efectos secundarios</strong> <ul><li>Toda la distribución de Urchin debe pertenecer al mismo UID que httpd. </li><li>La GUI de administración no puede utilizarse para cambiar el puerto en el que se ejecuta Urchin. </li><li>La herramienta bin/wrapper no puede utilizarse para iniciar los servicios de Urchin ya que intentará ejecutar el archivo httpd específico de Urchin. Utilice la secuencia de comandos bin/urchindctl.sh exclusivamente para iniciar/detener sólo el programador de Urchin (urchind). </li></ul><p class="line867"><strong>Cambios de configuración</strong> <ul><li>Añada las siguientes líneas a su archivo httpd.conf existente. Debe proporcionar la dirección IP de su servidor, el número de puerto que debe utilizar Urchin, así como la ruta de la ubicación donde ha instalado Urchin. </li></ul><p class="line867"><pre>            ## Support for Urchin administration and reporting services
+            Listen [port#]
+            &lt;VirtualHost [server-ip]:[port#]&gt;
+            ErrorLog /path/to/urchin-distribution/var/error.log
+            DocumentRoot /path/to/urchin-distribution/htdocs/
+            &lt;Directory /path/to/urchin-distribution/htdocs/&gt;
+                  AddHandler cgi-script .cgi
+                  Options ExecCGI
+                  DirectoryIndex session.cgi
+                  AllowOverride None
+                  Order allow,deny
+                  Allow from all
+            &lt;/Directory&gt;
+            &lt;/VirtualHost&gt; 
+</pre><ul><li style="list-style-type:none">Una vez efectuados estos cambios en la configuración, realice las siguientes tareas: </li><li class="gap">Cambie la titularidad de la distribución de Urchin al UID que utiliza su servidor web Apache para ejecutarse: </li></ul><p class="line867"><pre>                  chown -R apache-user /path/to/urchin/bin
+</pre><ul><li>Asegúrese de que el servidor Apache integrado con Urchin está detenido: </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin
+                  ./urchinctl -w stop
+</pre><ul><li>Reinicie el servidor Apache para habilitar la administración y generación de informes de Urchin.  </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

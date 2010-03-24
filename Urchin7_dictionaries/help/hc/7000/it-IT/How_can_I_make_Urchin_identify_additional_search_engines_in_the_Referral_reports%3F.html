@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Come faccio a fare in modo che Urchin identifichi motori di ricerca supplementari nei rapporti Referral?</strong> <p class="line874">Per impostazione predefinita, Urchin tiene traccia dei referral di 20 motori di ricerca, come indicato nel file UTM. È inoltre possibile configurare Urchin per consentire che identifichi i referral di motori di ricerca supplementari modificando il file UTM nel seguente modo: <ol type="1"><li>Apri il file urchin.js in un editor di testo. </li><li>Scorri fino alla seguente sezione: </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>In questo punto trovi le voci per i motori di ricerca con numerazione 0-19. Si tratta dei motori di ricerca che Urchin controlla per impostazione predefinita. Per aggiungere un altro motore di ricerca all'elenco, aggiungi semplicemente una nuova voce mantenendo lo stesso formato delle altre. Di seguito viene riportato un esempio di come aggiungere la voce per un motore di ricerca "nuovo": </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">Il valore di _uOsr deve essere il nome del motore di ricerca, mentre il valore di _uOkw deve essere la variabile di query che memorizza la parola chiave. Ad esempio, se un utente cerca "motocicletta" e l'URL del risultato di ricerca è: </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">il valore di _uOkw sarà "q"; il valore di _uOsr sarà "google". </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

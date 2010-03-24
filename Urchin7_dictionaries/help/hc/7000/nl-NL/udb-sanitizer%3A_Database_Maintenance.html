@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer: hulpprogramma voor database-onderhoud</strong> <p class="line867"><strong>Overzicht</strong>  <p class="line874">Het hulpprogramma voor database-onderhoud van Urchin, 'udb-sanitizer', is een manier om de profieldatabases van Urchin 6 te controleren en verschillende onderhoudswerkzaamheden aan deze databases uit te voeren.  <p class="line874">'udb-sanitizer' kan de volgende soorten bewerkingen uitvoeren:  <ul><li>Databases herstellen naar een eerder opgeslagen back-upstatus. </li><li class="gap">Profielgegevens voor een bepaalde dag, meerdere dagen of een hele maand verwijderen.  </li></ul><p class="line867"><strong>Gebruik</strong>  <p class="line874">'udb-sanitizer' bevindt zich in de directory 'util' van de Urchin 6-distributie.  <p class="line874">Het hulpprogramma wordt als volgt gebruikt:  <pre>  udb-sanitizer [-h] (drukt gebruiksoverzicht af en sluit af)
+
+  udb-sanitizer [-v] (drukt versie af en sluit af)
+
+  udb-sanitizer -p profile [-d JJJJMM[DD]] -bfhprq] [-z [-e DD]] 
+</pre><p class="line874">waarbij:  <pre>   -b direct naar de hersteloptie gaat
+
+   -d het jaar, de maand en optioneel de dag aangeeft waarop dit wordt uitgevoerd
+
+   -e met de opties 'z' en 'd' meerdere dagen verwijdert (bereik d-&gt;e) in dezelfde maand
+
+   -f een actie forceert zonder bevestiging
+
+   -h deze helpgegevens afdrukt
+
+   -p de naam van het profiel opgeeft (verplicht)
+
+   -a de naam van de account opgeeft
+
+   -r direct naar de verwijderingsoptie gaat
+
+   -q de stille modus start, die uitvoer onderdrukt behalve wanneer bevestiging van de gebruiker nodig is
+
+   -z direct naar de optie voor het wissen van dagen gaat 
+
+</pre><p class="line867"><span class="u">Opmerking</span>: wanneer 'udb-sanitizer' wordt aangeroepen met opties die niet volledig beschrijven welke actie moet worden ondernomen, worden de gebruiksinstructies weergegeven (vergelijkbaar met de optie <tt>-h</tt>). U kunt een actie zonder tussenkomst van de gebruiker laten uitvoeren met een combinatie van de opties <tt>–f</tt> en <tt>-q</tt> in combinatie met de opties <tt>-d</tt>, <tt>-b</tt>, <tt>-r</tt> of <tt>-z</tt> wanneer die van toepassing zijn.  <p class="line867"><strong>Gebruik</strong>  <p class="line874">Bij normaal gebruik wordt 'udb-sanitizer' aangeroepen vanuit een opdrachtshell met eventueel van toepassing zijnde opties voor het geplande type bewerking.    <p class="line874">Acties gekoppeld aan de hierboven genoemde beschikbare opties zijn:  <p class="line874">1. Gegevensherstel (–r) <ul><li style="list-style-type:none">Met deze optie kan een gebruiker reeds gearchiveerde gegevens voor een profiel herstellen. De gebruiker krijgt een lijst met back-ups in ZIP-indeling te zien om uit te kiezen en de inhoud van het geselecteerde ingepakte bestand vervangt de bestaande rapportagedatabase. De ZIP-bestanden hebben volgens de volgende notatie een naam gekregen: "JJJJMM-backupv6-JJJJMMDDUUMMSS.zip", waarbij de eerste JJJJMM verwijst naar de maand waarvoor de back-up van de gegevens is gemaakt (200803 verwijst bijvoorbeeld naar maart 2008) en de tweede JJJJMMDDUUMMSS is het moment waarop het ZIP-bestand is gemaakt. Dit tijdstempel kan u helpen te bepalen welk ZIP-bestand u wilt herstellen. </li></ul><p class="line874">2. Maandelijkse gegevens verwijderen (-d) <ul><li style="list-style-type:none">Alle gegevens voor een bepaald profiel voor de opgegeven maand worden verwijderd. Deze optie is handig voor het verwijderen van de statistieken voor een bepaalde maand als de gegevens onjuist zijn (er zijn bijvoorbeeld verkeerde filters toegepast of verkeerde logbestanden verwerkt), of misschien zijn enkele van de geavanceerde profielparameters gewijzigd, zoals de klikpaddiepte of het verwijzingsniveau, waardoor het beter is de rapportagegegevens van Urchin voor die maand bij te werken om deze wijziging te weerspiegelen. Deze actie kan worden uitgevoerd zonder tussenkomst van de gebruiker door 'udb-sanitizer' aan te roepen met de argumenten '-f', '-r' en '-q'.  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. Gegevens verwijderen voor een of meer dagen <ul><li style="list-style-type:none">Met deze optie kunnen gegevens voor een bepaald aantal dagen binnen een maand worden verwijderd, waardoor de logverwerking van Urchin alleen opnieuw wordt uitgevoerd voor die dagen (zoals urchin -p profiel -d JJJJMMDD). Deze actie kan worden uitgevoerd zonder tussenkomst van de gebruiker om één bepaalde dag te verwijderen door 'udb-sanitizer' aan te roepen met de argumenten '-f', '–q', '-z' en '-d', zoals:  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">en voor meerdere dagen door het argument '-e' toe te voegen, dat een einddatum opgeeft, zoals:  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">waardoor de gegevens van 7 tot en met 10 september worden verwijderd. Het argument '–e' verwacht alleen de einddatum. Dit is efficiënter dan het aanroepen van meerdere instanties van 'udb-sanitizer' om telkens één dag tegelijk te verwijderen, aangezien de database-indexen en headers hiermee slechts één keer worden gecontroleerd. De bewerking voor het controleren van de indexheader kan merkbaar meer tijd kosten voor profielen die veel gegevens bevatten.  </li></ul><p class="line874">4. Als het profiel deel uitmaakt van een account, moet de accountnaam worden opgegeven met het argument '-a'.   <p class="line867"><span class="u">Belangrijk</span>: acties die gegevens voor een dag of een maand verwijderen, kunnen niet ongedaan worden gemaakt. Het enige wat u kunt doen, is de webserverlogbestanden voor die periode opnieuw verwerken om de gegevens weer in de profieldatabases op te nemen. Wees voorzichtig met het gebruik van deze opties. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

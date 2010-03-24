@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Schnellinstallation für UTM (IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dieser Artikel wurde von </em> <a href="EpikOne.html">EpikOne</a><em> erstellt, einem autorisierten Berater für Urchin-Software.</em> </li></ul><p class="line874">Dieser Text ist eine Kurzanleitung zur UTM-Installation für Websites, die auf einem Microsoft-IIS-Server auf einer beliebigen Windows-Plattform ausgeführt werden. Genauere Informationen zu UTM erhalten Sie im Artikel "Urchin Traffic Monitor (UTM)" in diesem Website-Bereich. <p class="line867"><strong>Schritt 1:</strong> Kopieren Sie die UTM-Dateien in das Dokumentstammverzeichnis der Website. Die Dateien urchin.js und <tt class="backtick">__</tt>utm.gif befinden sich im Ordner "utils\utm" in der Urchin-Installation. Kopieren Sie diese beiden Dateien in den Hauptordner mit dem Inhalt der Website. WICHTIG: Die GIF-Datei beginnt mit zwei Unterstrichen. <p class="line867"><strong>Schritt 2:</strong> Verweisen Sie im HTML-Code Ihrer Website auf UTM. Geben Sie auf allen HTML-Seiten die folgende Zeile ein. Die Zeile kann auf den Seiten zwar an einer beliebigen Stelle stehen, aber wir empfehlen Ihnen, sie direkt vor dem End-Tag "&lt;/body&gt;" einzufügen. Falls Sie eine allgemeine Einfügung oder Vorlage verwenden, können Sie diese hier angeben. <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line862">Falls Sie ein Paket wie "HTML Tidy" verwenden, sollten Sie die JavaScript-Zeile im Bereich "HEAD" der Seite einfügen. Beispiel: <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>Schritt 3:</strong> Aktivieren Sie für die IIS-Protokollierung die Cookies. Öffnen Sie den IIS-Manager und dann das Fenster "Eigenschaften" für Ihre Website. Stellen Sie sicher, dass die Protokollierung aktiviert und das "W3C Extended Log"-Format ausgewählt ist. Klicken Sie auf die Schaltfläche "Eigenschaften" neben dem Format und aktivieren Sie auf der Registerkarte "Erweiterte Eigenschaften" das Kontrollkästchen neben dem Cookie. <p class="line867"><strong>Schritt 4:</strong> Richten Sie für das Urchin-Profil die Verwendung von "Urchin Traffic Monitor" (UTM ) ein. Bearbeiten Sie auf der Urchin-Verwaltungsoberfläche das entsprechende Profil und klicken Sie auf die Registerkarte "Einstellungen". Setzen Sie die Option "Besucher-Tracking-Methode" auf "Urchin Traffic Monitor (UTM)". Geben Sie für die Option "UTM-Domain" die Adresse Ihrer Website ohne "www." ein. Wählen Sie "Standard" für das Berichtset und klicken Sie dann auf die Schaltfläche "Aktualisieren". <p class="line874">Das war schon alles! Ihre Website protokolliert jetzt UTM-Daten in Ihrer üblichen Protokolldatei, die bei der nächsten Ausführung von Urchin identifiziert wird. <p class="line874">Funktioniert alles? Prüfen Sie, ob UTM korrekt Einträge in Ihre Protokolldatei vornimmt, indem Sie das Protokoll anzeigen, nachdem Sie UTM installiert und auf einige Seiten der Website geklickt haben. Am Ende der Protokolldatei muss ein Eintrag vorhanden sein, der folgender Zeile ähnelt: <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">Falls die Einträge vom Typ "utma" nicht angezeigt werden, sollten Sie prüfen, ob die Cookies für die Protokollierung korrekt eingerichtet wurden. Lautet der Statuscode nicht 200, sollten Sie sich vergewissern, ob die Dateien richtig in das Dokumentstammverzeichnis kopiert wurden.<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

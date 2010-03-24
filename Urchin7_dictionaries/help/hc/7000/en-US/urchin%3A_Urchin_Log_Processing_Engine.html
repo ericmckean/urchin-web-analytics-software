@@ -1,0 +1,20 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>urchin: Urchin Log Processing</strong> <p class="line867"><strong>Overview</strong> <p class="line874">The Urchin Log Processing Engine, urchin, is the core log processing component of Urchin. Ordinarily, the log processing engine is invoked from the Urchin Scheduler (urchind) when a task is run. However, it is possible to execute urchin directly from a command shell to run a specific profile. This is useful in highly scripted environments where running Urchin tasks from an external source such as the Windows Task Scheduler or cron on UNIX-type systems. It is also useful for running a profile under special circumstances, such as to process only hits for a particular day, or to do some type of debugging. <p class="line874">Urchin is not truly an utility - it is documented here because it provides some limited command-line capabilities that may prove useful in certain environments. <p class="line867"><strong>Usage</strong> <p class="line874">urchin is located in the bin directory of the Urchin distribution. Usage is as follows: <pre>urchin [options...] (-p &lt;profile name&gt; | -P &lt;profile id&gt;)
+</pre><p class="line874">Options: <pre>-a &lt;account name&gt;       Specifies the account name for the profile. Default account name is '(NONE)'
+-D                      Enables debug mode
+-d &lt;YYYYMMDD&gt;           Specifies the reprocess date
+-H                      Specifies to log run output to history file. A new task history record is created if -H is specified and -T is not specified
+-h                      Prints help information and exits
+-P &lt;profile id&gt;         Specifies the profile id to process
+-p &lt;profile name&gt;       Specifies the profile name to process
+-T &lt;task id&gt;            Specifies the task history record to update. Specifying -T forces use of -H
+-t                      Prints configuration data and exits
+-v                      Prints version number and exits
+</pre><p class="line867"><strong>Considerations</strong> <ul><li>On UNIX-type systems, urchin should be run as the user/UID that Urchin is installed as to ensure that the databases for the profile are owned by that UID, since urchin will create them if they do not already exist. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

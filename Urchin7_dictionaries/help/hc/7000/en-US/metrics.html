@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Example 3: Getting a list of tables for a profile and the supported dimensions/metrics</strong> <p class="line862">(Return to main article: <a href="Samples_for_Java_(SOAP)_v1.html">Samples for Java (SOAP) v1</a>) <p class="line862">1. Define a connection to the ReportService: <p class="line867"><pre>ReportserviceStub reportStub = new ReportserviceStub();
+</pre><p class="line862">2. Define a request for the getTableList method in the ReportService: <p class="line867"><pre>ReportserviceStub.GetTableList storReq = new ReportserviceStub.GetTableList();
+</pre><p class="line874">3. Set up the getTableList request parameters: <p class="line867"><pre>storReq.setLogin("URCHIN_LOGIN");
+storReq.setPassword("URCHIN_PASSWORD");
+storReq.setProfileId(PROFILE_ID);
+</pre><p class="line874">5. Get the list of profiles: <p class="line867"><pre>ReportserviceStub.GetTableListResponse storRsp = reportStub.getTableList(storReq);
+</pre><p class="line874">6. Parse and display the response. <p class="line862">For the complete sample code, see the implementation of GetTableList() in the ReportService.java file. <p class="line862">(Return to main article: <a href="Samples_for_Java_(SOAP)_v1.html">Samples for Java (SOAP) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

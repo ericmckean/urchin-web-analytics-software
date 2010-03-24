@@ -1,0 +1,35 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>uconf-manager: Urchin Configuration Manager 유틸리티</strong> <p class="line867"><strong>개요</strong> <p class="line874">Urchin Configuration Manager 유틸리티(uconf-manager)를 사용하면 uaccounts, ucosts, ufilters, ugoals, ugroups, ugroups_uusers, ulogs, ulogs_ufilters, uprofiles, uprofiles_ucosts, uprofiles_ufilters, uprofiles_ugroups, uprofiles_ulogs, uprofiles_uusers 및 uusers 테이블에서 레코드를 추가, 수정 및 삭제할 수 있습니다. 또한 Urchin 관리 인터페이스를 통해 수행할 수 없는 작업도 이 유틸리티를 사용하면 할 수 있습니다. 예를 들면 다음과 같습니다.  <ul><li>Urchin 관리자 비밀번호 재설정 </li><li>사용자 자동 생성 </li><li>다른 계정으로 사용자 이동 </li><li>비용 소스 자동 생성 </li></ul><p class="line867"><span class="u">참고사항</span>: Urchin Configuration Manager 유틸리티 6.402 버전은 사용자 레코드만 추가, 수정 및 삭제할 수 있습니다.   <p class="line867"><strong>Usage</strong> <p class="line874">이 유틸리티는 Urchin(6.402 이상) 설치 시 번들로 제공되며 /util 디렉토리에 있습니다. <p class="line867"><pre>uconf-manager.exe -h      :   도움말 정보를 출력합니다..
+uconf-manager.exe -v      :   버전 정보를 출력합니다..
+uconf-manager.exe [app_params] [db_params]
+</pre><p class="line874">where app_params are: <pre>table=&lt;table_name&gt;    작업을 수행할 테이블의 이름으로, 현재 지원되는 테이블은 다음과 같습니다. 
+                      uaccounts, ucosts, ufilters, ugoals, ugroups, ugroups_uusers, ulogs, ulogs_ufilters, uprofiles, uprofiles_ucosts, uprofiles_ufilters, uprofiles_ugroups, uprofiles_ulogs, uprofiles_uusers, uusers
+
+action=&lt;action_name&gt;  'add', 'delete' 또는 'update'의 작업 유형입니다.
+
+print=&lt;print_level&gt;   'quite', 'error', 'status' 또는 'all'의 출력 수준입니다.
+
+key1=&lt;column_name1&gt;   [선택]. 'update' 명령어의 WHERE 구문에서 사용될 열 이름입니다(key1).
+
+key2=&lt;column_name2&gt;   [선택]. 'update' 명령어의 WHERE 구문에서 사용될 열 이름입니다(key2).
+</pre><p class="line874">db_params는 다음과 같이 열 이름과 값의 조합으로 구성됩니다. <pre>&lt;col1&gt;=&lt;value1&gt; &lt;col2&gt;=&lt;value2&gt; ...
+</pre><p class="line874">예를 들면 다음과 같습니다. <pre>ucus_name="user11" ucus_password="passwd" uius_level=1
+</pre><p class="line867"><strong>예제</strong> <p class="line874">1. 다음 명령은 ‘testuser’ 및 ‘testpassword’ 자격으로 관리 사용자를 만듭니다. <pre>command: ./uconf-manager table=uusers action=add ucus_name="testuser" ucus_password="testpassword" uius_level=1 usac_id=1 print=status
+output : Successful : Operation 'add' 테이블에서 작업 'uusers'.
+</pre><p class="line874">2. 다음 명령은 ‘testuser’ 로그인 ID로 사용자를 업데이트하며, 이름을 ‘Test User’로 계정 ID를 3으로 설정합니다. <pre>command: ./uconf-manager table=uusers action=update ucus_name="testuser" ucus_ful_name="Test User" usac_id=3 key1=ucus_name print=status
+output : 성공: 'uusers'테이블에서 수행되는 'update' 작업
+</pre><p class="line874">3. 다음 명령은 ‘testuser’ 사용자를 삭제합니다. <pre>command: ./uconf-manager table=uusers action=delete ucus_name="testuser" print=status
+output : 성공: 'uusers' 테이블에서 수행되는 'delete' 작업
+</pre><p class="line874">4. 다음 명령은 "cpc_name"이라는 이름의 CPC 소스를 생성합니다. <pre>command: ./uconf-manager table=ucosts action=add ucco_name="cpc_name" ucco_adwords_loginName="cpc@gmail.com" ucco_adwords_loginPassword="test_password" ucco_adwords_devToken="dev_token" ucco_adwords_appToken="app_token"  
+ucco_adwords_clientEmail="client_email@gmail.com" print=status
+
+output : 성공: 'ucosts' 테이블에서 수행되는 'add' 작업
+         레코드 ID 삽입: 17.
+</pre><p class="line867"><strong>UUSERS 테이블 입력란에 대한 추가 정보(Urchin 6.402+)</strong> <p class="line874">UUSERS 테이블의 다음 입력란은 uconf-manager를 사용하여 업데이트할 수 있습니다. <ul><li>usac_id* - 계정 ID로, 계정이 없으면 사용자를 만들 수 없습니다. '(NONE)' 기본 계정의 ID는 1입니다. </li><li>ucus_name* - 사용자에 대한 고유한 로그인 이름으로 공백이면 안됩니다. </li><li>ucus_full_name – 사용자 이름입니다. </li><li>ucus_password* - 사용자 비밀번호로, 8자 이상을 권장합니다. </li><li>ucus_language – 사용자 언어입니다. 사용할 수 있는 값은 en-US, de-DE, es-ES, fr-FR, it-IT, ja-JP, ko-KR, nl-NL, pt-BR, zh-CH, zh-TW 이고 맞춤 언어가 설정되어 있으면 더 추가됩니다.  기본값은 en-US입니다. </li><li>ucus_region – 사용자 지역 설정입니다. 사용할 수 있는 값은 us, au, de, br, cn, fr, it, jp, kr, nl, es, tw, uk이고, 기본값은 us입니다. </li><li>uius_level* - 사용자 권한 수준입니다. 사용할 수 있는 값은 1(수퍼 관리자), 4(사용자), 8(사용자: 업데이트 없음), 16(계정 관리자)입니다. (주의: uconf-manager는 이 입력란의 값을 확인하지 않음) </li></ul><p class="line874">*로 표시된 입력란은 새 사용자를 추가하기 위한 필수 입력란입니다. <p class="line867"><strong>UCOSTS 테이블 입력란에 대한 추가 정보(Urchin 6.500+)</strong> <p class="line874">UCOSTS 테이블의 다음 입력란은 uconf-manager를 사용하여 업데이트할 수 있습니다. <ul><li>usac_id* - 계정 ID로, 계정이 없으면 사용자를 만들 수 없습니다. '(NONE)' 기본 계정의 id=1입니다. </li><li>ucco_name* - CPC 소스 이름은 고유해야 하며 공백이면 안됩니다.  </li><li>uico_schedule_time - CPC 보고서 다운로드 시간입니다. 사용할 수 있는 값은 -1(전체 기본값) 및 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23의 시간 값입니다. 기본값은 -1입니다. </li><li>uico_schedule_download_interval - CPC 보고서 다운로드 간격입니다. </li><li>ubco_active – CPC 소스에 대한 보고서 다운로드 여부를 지정하는 옵션입니다. 사용할 수 있는 값은 1(사용)과 0(사용중지)이고, 기본값은 1입니다. </li><li>ucco_connection_string – Urchin은 모든 CPC 관련 연결값을 암호화하여 이 열에 저장하며, 사용자는 다음 개별 연결 입력란에 값을 입력하여 열을 수정하는 것만 가능합니다.  <ul><li>ucco_adwords_loginName * - 광고주의 이메일 주소 또는 내 고객센터 로그인 ID입니다(필수). </li><li>ucco_adwords_loginPassword * - 애드워즈 계정에 액세스할 수 있는 비밀번호입니다(필수). </li><li>ucco_adwords_devToken - 애드워즈 API 공인 개발자를 식별할 수 있는 고유 문자열입니다(선택). 사용자가 개발자 토큰을 제공하지 않으면 urchin은 기본 개발자 토큰을 사용합니다. </li><li>ucco_adwords_appToken - 애드워즈 API에 액세스할 때 사용하는 응용프로그램 토큰입니다. 개발자 토큰을 제공한 경우 응용프로그램 토큰도 제공해야 합니다. </li><li>ucco_adwords_clientEmail 및 ucco_adwords_customerId - 광고주 이메일 대신 내 고객센터 로그인 이메일을 사용하는 경우 둘 중 하나만 작성해야 합니다. </li></ul></li></ul><p class="line874">*로 표시된 입력란은 새 사용자를 추가하기 위한 필수 입력란입니다. <p class="line867"><strong>UPROFILES_UCOSTS 테이블 입력란에 대한 추가 정보(Urchin 6.500+)</strong> <p class="line874">UPROFILES_UCOSTS 테이블의 다음 입력란은 uconf-manager를 사용하여 업데이트할 수 있습니다. <ul><li>uspr_id* – 프로필 ID입니다. CPC 소스를 지정하려면 프로필이 존재해야 하며 공백이면 안됩니다. </li><li>usco_id* – CPC 소스 ID입니다. 존재하는 CPC 소스를 프로필에 입력해야 하며 공백이면 안됩니다. </li></ul><p class="line874">*로 표시된 입력란은 새 사용자를 추가하기 위한 필수 입력란입니다. <p class="line867"><strong>참고:</strong> uaccounts, ufilters, ugoals, ugroups, ugroups_uusers, ulogs, ulogs_ufilters, uprofiles, uprofiles_ufilters, uprofiles_ugroups, uprofiles_ulogs 및 uprofiles_uusers의 테이블 입력란에 대한 설명은 ‘Urchin 구성 DB 스키마’ 문서를 참조하시기 바랍니다(현재 개발 중임).  </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

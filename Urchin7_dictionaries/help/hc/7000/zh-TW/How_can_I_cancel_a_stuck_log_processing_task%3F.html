@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如果記錄處理工作停滯，該如何取消？</strong> <p class="line867"><strong>情況 1： 工作耗費的時間過長</strong> <p class="line874">如果因為某項工作耗費時間過長而想要取消，必須終止記錄處理引擎。 您可以在 Unix 上終止 "urchin" 程序，或在 Windows 上使用「處理程序管理員」來完成此操作。 <p class="line874">請注意： 請不要僅刪除設定檔，然後重新建立。 儘管沒有顯示在排程器網頁上，但實際上工作仍在停滯中，且排程器仍處於封鎖狀態。 <p class="line867"><strong>情況 2： 系統突然當機/重新開機</strong> <p class="line874">在此情況下，工作執行本來很順利，但系統卻突然重新開機或當機，而沒有向記錄程序引擎與排程器的發出適當的離開訊號， 導致工作的資料庫項目處於不一致狀態。 系統重新開機後，排程器與記錄處理引擎會重新找回該設定檔，同時管理介面會錯誤顯示設定檔正在執行。 如果您試圖再次為同一設定檔進行排程，就會看見一個訊息顯示工作已經排入佇列/已在執行中。  <p class="line874">對於這種情況，您只需耐心等候 30 分鐘。 主要排程器會從資料庫中刪除前 30 分鐘內未更新的所有工作。 移除工作之後，管理排程頁面會顯示該工作的狀態為「錯誤」，您就可以替設定檔重新安排時間了。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

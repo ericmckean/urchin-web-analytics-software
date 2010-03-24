@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Installazione rapida di UTM (Apache)</strong> <p class="line867"><em>Articolo di </em><a href="Panalysis.html">Panalysis</a><em>, partner autorizzato del software Urchin</em> <p class="line874">Nel seguente paragrafo viene rapidamente illustrato come installare UTM per i siti web gestiti su un server Apache con tutte le piattaforme. <p class="line867"><strong>Passaggio 1. Copia i file UTM nella root dei documenti del sito web.</strong> I file, urchin.js e <tt class="backtick">__</tt>utm.gif sono ubicati nella directory "util/utm" della distribuzione Urchin. Copia questi due file nella directory principale dei contenuti del sito web. <p class="line867"><strong>Passaggio 2. Riferimento UTM nel codice HTML.</strong> In tutte le pagine HTML inserisci la riga indicata di seguito. Puoi posizionarli in qualsiasi punto delle pagine, tuttavia, è consigliabile inserirla nella sezione &lt;head&gt;. Se utilizzi una normale inclusione o un modello, puoi inserire il codice in quel punto. <span class="u">IMPORTANTE</span>: il nome del file GIF comincia con due trattini di sottolineatura. <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line874">Se utilizzi un pacchetto come "HTML Tidy", puoi inserire la riga Javascript nell'area HEAD della pagina, ad esempio: <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>Passaggio 3. Attivazione dei cookie nella registrazione Apache.</strong> Se non l'hai già fatto, per abilitare la registrazione dei cookie puoi utilizzare il seguente esempio di httpd.conf: <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\"\"%{User-Agent}i\"\"%{Cookie}i\"" special
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log special
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>Passaggio 4. Impostazione dell'uso di UTM nel profilo Urchin.</strong> Nell'interfaccia di amministrazione di Urchin, modifica il profilo in questione e fai clic sulla scheda dei rapporti. In Metodo monitoraggio visitatore, imposta UTM. In Dominio UTM indica l'indirizzo del tuo sito web, senza www. Al termine, fai clic sul pulsante Aggiorna. Fai clic sulla scheda Impostazioni profilo e nel set di rapporti predefinito scegli UTM-Abilita tutti e fai nuovamente clic sul pulsante Aggiorna. È tutto. Il sito web comincia a registrare i dati UTM nel normale file di log che verrà identificato al successivo avvio di Urchin. <p class="line867"><strong>Funziona?</strong> Per verificare se il sistema UTM esegue correttamente le registrazioni nel file di log, esamina il log dopo aver installato l'UTM e selezionato alcune pagine del sito. In fondo al file di log dovrebbe essere riportata una voce simile alla seguente: <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line862">Se le voci <tt class="backtick">__</tt>utma non sono presenti, verifica che i cookie siano stati attivati correttamente nella registrazione. Se il codice di stato non è 200, verifica che i file siano stati copiati correttamente nella root dei documenti. <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

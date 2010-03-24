@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>カスタム レポートの作成方法</strong> <p class="line874">カスタム レポートを作成する方法は下記のとおりです。 <ol type="1"><li><p class="line862">データ マップの表を選択するか、新しい表を定義します (<a href="Custom_Data_Maps.html">カスタムのデータ マップ</a> をご覧ください); </li><li><p class="line891">&lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample をコピーして新しい (".rs2") レポートファイルを作成します。 </li><li>レポート ファイルに新しい行を追加して、新しいレポートを定義します。 </li></ol><p class="line874">レポート ファイルの形式につきましては下記をご覧ください。 <ul><li>ID - 固有のレポート ID: <ul><li>C= カテゴリ </li><li>D= データ </li><li>M= メニュー </li><li>R= レポート </li><li>S= サブレポート </li><li>P= ページ レポート </li><li>B= マイレポート </li></ul></li><li>RS - マイレポート/レポート セクション: <ul><li>1= 管理 </li><li>2= マーケティング </li><li>4= ウェブマスター </li></ul></li><li>RR - レポート要件: <ul><li>1= ソフトウェア </li><li>2= 上級 </li><li>4= e コマース </li><li>8=UTM </li></ul></li><li>NTITLE - ナビゲーション タイトル (辞書エントリ #) </li><li>ONCOLOR - ナビゲーション オン カラー </li><li>OFFCOLOR - ナビゲーション オフ カラー </li><li>HELP - レポート ヘルプ (辞書エントリ #) </li><li>NDATA - データ要素の数 (直後にエントリが来る) <ul><li>このフィールドの直後に追加のタイプ D （データ) のサブレポートが来ても使用できます </li></ul></li><li>CTITLES - 列タイトル (辞書エントリ #) </li><li>CTYPES - フォーマットに使用される列形式 <ul><li>10= ストリング </li><li>11= 日/年月 </li><li>12= 日付 </li><li>20= 数字 </li><li>21= 収益 </li><li>22= バイト数 </li><li>23= 時間比率 </li><li>24= 比率 </li><li>25= 割合 </li><li>26= 時間 </li><li>30= 合計割合 </li><li>40= 収益 </li><li>41= 収益/数 </li><li>42= 数/収益 </li></ul></li><li>TABLE - データ表の数字: <ul><li>T= 合計 </li><li>TR= トランザクション </li><li>H= 棒グラフ </li><li>V= ユーザー </li><li>1-n 表 </li></ul></li><li>DXFORMAT - データ抽出形式 </li><li>RF - 必須フィールド </li><li>RT - レポート形式: <ul><li>1= グラフの合計 </li><li>2= 棒グラフ </li><li>3= スタック </li><li>4= トップ </li><li>5= ツリー </li><li>6= ディレクトリ </li><li>7= グラフ専用 </li><li>8= 点 </li><li>9= クリック </li><li>10= 目標到達プロセスの定義 </li><li>11= ホームページ上のデータ表示 </li><li>12= 地図上のデータ表示 </li><li>13= 目標の確認 </li><li>14= 目標パス </li><li>20= KPI 日付レポート </li><li>21= KPI 上位 10 位 </li><li>22= トレンドの概要 </li><li>23= コンバージョンの概要 </li><li>24= Map Mini </li></ul></li><li>GTYPES - グラフ形式: <ul><li>1= 棒 </li><li>2= 線 </li><li>3= 円 </li><li>4= 水平棒 </li><li>5=fun </li><li>6= 多重線 </li></ul></li><li>FSEP - フィールドの区切り </li><li>SP - 特別オプション (ビット マップ番号を追加): <ul><li>1= 合計 </li><li>2= 平均 </li><li>4= 日付の比較 </li><li>8= 小文字 </li><li>16= 一定期間のデータ </li><li>32= データ表示 </li><li>64= 言語ルックアップ </li><li>128= セグメント </li><li>256= 有効値 </li><li>512= トランザクションの詳細 </li><li>1024= ユーザーの詳細 </li><li>2048= 用語のルックアップ </li></ul></li><li>SR - 特別レポート フラグ: <ul><li>1= キーワード アドバイス </li><li>2= クリック </li><li>3= 時間別の詳細 </li><li>4= ユーザー リスト </li><li>5= 地図上のデータ表示 </li><li>6= カスタム使用のカスタム辞書 </li><li>7= 日付の比較 </li></ul></li><li>FNT - フィルタ数とフィルタ形式: <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF - フィルタ数のフィールド </li><li>FNV - フィルタの値 </li><li>FST - フィルタ ストリングの形式: <ul><li>1= 除外 </li><li>2= 含む </li></ul></li><li>FSF - フィルタ ストリングのフィールド </li><li>FSX - 正規表現のストリング </li></ul><p class="line874">レポートの 1 行と説明のサンプルを下記にご覧ください。 <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> ID 1208 のサブレポート </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> 管理者レポート セクション </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">有効にするには UTM が必要 </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> メニュー ナビゲーション タイトル </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      メニューに合わせるとオン カラー </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      メニューに合わせるとオフ カラー </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> ヘルプ エントリ </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862"> データ サブレポートなし </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> レポート表の列のラベル </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> レポート表の列の形式 </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> データ マップ ID </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">データ抽出形式 </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 必須フィールドなし </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> レポート形式は「トップ」 </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  2 つのグラフ形式: 「円」と「水平棒」 </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">フィールドの区切りは未使用 </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> 使用されている特別オプション:  4 - 日付の比較; 16 - 一定の期間のデータ; 128 - セグメント; 256 - 有効値; 1024 - ユーザーの詳細 </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 通常のレポート </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> オプション フィルタは未使用 </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> オプション フィルタは未使用 </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> オプション フィルタは未使用 </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> オプション フィルタは未使用 </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> オプション フィルタは未使用 </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> オプション フィルタは未使用 </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

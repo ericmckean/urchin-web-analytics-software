@@ -1,0 +1,25 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>別名ドメインでの UTM の使用</strong> <p class="line867"><strong>背景</strong> <p class="line874">Cookie はドメイン ベースのオブジェクトであるため、サイトに複数のドメインがある場合は注意が必要です。 「mysite.com」というドメインで設定された Cookie は、「www.mysite.com」などのあらゆるサブドメインに渡されますが、 「mysite.net」などの他のルート ドメインには渡されません。 <p class="line874">ウェブサイトで「mysite.com」と「www.mysite.com」 1 つののドメインを使用している場合は、UTM の通常の設定でトラッキングできますが、 ウェブサイトで別名ドメインを使用している場合は、別名ドメインからメイン サイトにトラフィックをリダイレクトすることをおすすめします。 これにより、メインのドメインで UTM ユーザーがトラッキングされるようになり、すべてのユーザーを重複することなくトラッキングできます。 <p class="line874">このように設定しない場合、同じユーザーが 2 つの異なるドメインから同じサイトにアクセスしても、重複してカウントされます。 次に Apache サーバーや IIS サーバーで別名ドメインをメインのドメインにリダイレクトする方法を紹介します。 <p class="line867"><strong>Apache で別名ドメインをリダイレクトする場合</strong> <p class="line862">Apache ウェブサーバーを使用している場合は、簡単な修正を加えることで、別名ドメインで発生したすべてのトラフィックをメインのサイトにリダイレクトできます。 方法としては、2 つの VirtualHost エントリを作成します。 一方の VirtualHost はメインのドメインとして通常の設定を行い、もう一方の VirtualHost は別名ドメイン用としてメインのドメインにリダイレクトするよう設定します。 たとえば次のように設定します。 <p class="line867"><pre>#---primary virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername www.mysite.com
+Serveralias mysite.com
+...
+&lt;/VirtualHost&gt;
+#---second virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername mysite.org
+Serveralias www.mysite.org mysite.net www.mysite.net
+RewriteEngine on
+RewriteRule ^(.*)       http://www.mysite.com$1     [R=301]
+&lt;/VirtualHost&gt;
+</pre><p class="line862">2 つ目の VirtualHost では、301 (完全に移動) リダイレクト コードによる書き換えルールを使用して、すべてのトラフィックをメインのサイトに転送します。 301 のみのヒットはログ ファイルに記録され、ユーザーがアクセスしたドメインをトラッキングできますが、残りのトラフィックは 1 つのドメインにまとめられます。 これにより、UTM でサイトが 1 つのドメインのサイトと見なされるようになります。後は UTM の通常の設定でトラッキングできます。 <p class="line874">注:  パラメータの設定は管理者とともに apache.org サイトを参照して行うことをおすすめします。 <p class="line867"><strong>IIS サーバーで別名ドメインをリダイレクトする場合</strong> <p class="line874">Apache ウェブサーバーを使用している場合は、簡単な修正を加えることで、別名ドメインで発生したすべてのトラフィックをメインのサイトにリダイレクトできます。 方法としては、IIS サーバーの構成上に 2 つのウェブサイトを作成します。 一方のウェブサイトはメインのドメイン (www.mysite.com) として通常の設定を行い、もう一方のウェブサイトは別名ドメイン (mysite.net、mysite.org など) 用としてメインのドメインにリダイレクトするよう設定します。 <p class="line874">IIS マネージャーでいずれかのウェブサイトを右クリックし、[プロパティ] ダイアログボックスを表示します。 [Web サイト] タブで [詳細設定] ボタンをクリックします。 表示されたウィンドウの [ホスト ヘッダー] フィールドを使用して、別名ドメインをウェブサイトに割り当てます。 メインのウェブサイトにメインのドメインを設定し、2 つ目のウェブサイトにすべての別名ドメインを設定します。 <p class="line874">2 つ目のウェブサイトにすべての別名ドメインを設定して有効にした後、次のリダイレクト コードを設定した空のホームページを作成します。 <p class="line867"><pre>&lt;head&gt;
+&lt;META HTTP-EQUIV=Refresh CONTENT="0; URL=http://www.mysite.com/"&gt;
+&lt;/head&gt;
+</pre><p class="line874">これで、ユーザーのブラウザがすぐにメインの URL にリダイレクトされるようになり、 メインのウェブサイトが単一のドメイン構成と見なされるようになります。後は UTM の通常の設定でトラッキングできます。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

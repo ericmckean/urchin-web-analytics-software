@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Suivi des transactions dans une boutique sécurisée</strong> <p class="line867"><em>Cet article a été rédigé par</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, un consultant agréé du logiciel Urchin. </em> <p class="line862">Pour qu'Urchin puisse effectuer le suivi des données d'un panier sur votre domaine et même sur d'autres domaines, il vous suffit d'ajouter le code approprié. Si vous souhaitez configurer vos pages de manière à transmettre à Urchin des rapports relatifs aux transactions, consultez la rubrique <a href="How_do_I_track_e-commerce_transactions%253F.html">Comment puis-je effectuer le suivi des transactions en ligne?</a>. <p class="line874">En outre, si votre boutique en ligne n'est pas sur le même sous-domaine ou domaine que votre site principal, appliquez la procédure décrite ci-dessous pour configurer vos pages. <p class="line874">Si votre site Web lance un processus de commande sur un sous-domaine différent (par exemple si les clients sont envoyés de www.maboutique.fr à panier.maboutique.fr) : <ul><li style="list-style-type:none">Ajoutez la ligne suivante (en gras) au code de suivi des pages de votre boutique en ligne et des pages où se trouve le panier : </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">Si votre site Web lance un processus de commande sur une autre boutique en ligne (par exemple si les clients sont envoyés de www.maboutique.fr à www.paniersecurise.fr) : <ul><li style="list-style-type:none">Ajoutez les lignes suivantes (en gras) au code de suivi des pages de votre boutique en ligne et des pages où se trouve le panier : </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Pour utiliser <span class="u">utmLinker, remplacez les liens du site principal par ceux du site sécurisé en procédant de la manière suivante. Si vos liens actuels sont de type : </span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;Acheter&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">remplacez-les par des liens de type : </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;Acheter&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;Acheter&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Le code ci-dessus vous permet d'afficher les liens avec ou sans JavaScript. Notez bien que les apostrophes doivent être précédées du caractère d'échappement (barre oblique inverse) dans le lien ou dans le texte du lien. Important : Si vos pages contiennent un appel à la fonction urchinTracker(), utmLinker(), utmSetTrans() ou utmLinkPost(), votre code de suivi Analytics doit être inséré dans votre code HTML au-dessus de cet appel. Dans ce cas, le code de suivi peut être inséré n'importe où entre la balise d'ouverture &lt;body&gt; et l'appel JavaScript. </li></ul><p class="line874">Si vous envoyez des informations au panier à l'aide de formulaires, utilisez la fonction utmLinkPost(). Elle ajoute des cookies à l'URL fournie pour le formulaire. <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">Cela fonctionne également pour les formulaires avec method="GET". <p class="line891"><strong>Important :</strong> Si vos pages contiennent un appel à la fonction urchinTracker(), utmLinker(), utmSetTrans() ou utmLinkPost(), votre code de suivi Analytics doit être inséré dans votre code HTML au-dessus de cet appel. Dans ce cas, le code de suivi peut être inséré n'importe où entre la balise d'ouverture &lt;body&gt; et l'appel JavaScript. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

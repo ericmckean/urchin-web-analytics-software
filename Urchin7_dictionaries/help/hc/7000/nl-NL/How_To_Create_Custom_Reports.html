@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Aangepaste rapporten maken</strong> <p class="line874">Een aangepast rapport maken: <ol type="1"><li><p class="line862">Kies een tabel voor gegevensoverzichten of definieer een nieuwe tabel (raadpleeg <a href="Custom_Data_Maps.html">Aangepaste gegevensoverzichten</a>]); </li><li><p class="line862">Maak een nieuw rapportbestand ('.rs2') door &lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample te kopiëren. </li><li>Definieer het nieuwe rapport door een nieuwe rij toe te voegen aan het rapportbestand. </li></ol><p class="line874">De indeling van het rapportbestand wordt hieronder beschreven: <ul><li>ID - unieke rapport-id: <ul><li>C=Categorie </li><li>D=Gegevens </li><li>M=Menu </li><li>R=Rapport </li><li>S=Subrapport </li><li>P=Paginarapport </li><li>B=Dashboard </li></ul></li><li>RS - Dashboard-/rapportagesecties: <ul><li>1=leidinggevende </li><li>2=marketeer </li><li>4=webmaster </li></ul></li><li>RR - Rapportvereisten: <ul><li>1=Software </li><li>2=Geavanceerd </li><li>4=E-commerce </li><li>8=UTM </li></ul></li><li>NTITLE - navigatietitel (nummer woordenlijstitem) </li><li>ONCOLOR - kleur bij navigatie over </li><li>OFFCOLOR - kleur bij navigatie buiten </li><li>HELP - Help bij rapport (nummer woordenlijstitem) </li><li>NDATA - aantal gegevenselementen (items moeten direct hierna volgen) <ul><li>Dit veld kan worden gevolgd door aanvullende subrapporten met type D (gegevens) </li></ul></li><li>CTITLES - kolomtitels (nummer woordenlijstitem) </li><li>CTYPES - kolomtype gebruikt voor lay-out <ul><li>10=tekenreeks </li><li>11=datum/jaarmaand </li><li>12=datum </li><li>20=nummer </li><li>21=opbrengst </li><li>22=bytes </li><li>23=tijdverhouding </li><li>24=verhouding </li><li>25=pct </li><li>26=tijd </li><li>30=totaal pct </li><li>40=opbrengst </li><li>41=opbrengst/num </li><li>42=num/opbrengst </li></ul></li><li>TABLE - gegevenstabelnummer: <ul><li>T=totaal </li><li>TR=transactie </li><li>H=histogram </li><li>V=bezoeker </li><li>1-n-tabel </li></ul></li><li>DXFORMAT - indeling voor gegevensextractie </li><li>RF - verplicht veld </li><li>RT - rapporttype: <ul><li>1=grafiektotalen </li><li>2=histogram </li><li>3=stack </li><li>4=top </li><li>5=verkenner </li><li>6=directory </li><li>7=grafiek-beperkt </li><li>8=punt </li><li>9=doorklik </li><li>10=gedefinieerde trechter </li><li>11=overlay voor startpagina </li><li>12=kaartoverlay </li><li>13=doelverificatie </li><li>14=doelpad </li><li>20=kpi-datumrapport </li><li>21=kpi top tien </li><li>22=trendoverzicht </li><li>23=conversieoverzicht </li><li>24=kaartminiatuur </li></ul></li><li>GTYPES - typen grafieken: <ul><li>1=balk </li><li>2=lijn </li><li>3=cirkel </li><li>4=horizontale balk </li><li>5=trechter </li><li>6=meerdere lijnen </li></ul></li><li>FSEP - veldscheidingsteken </li><li>SP - speciale opties (bitmap-nummers toevoegen): <ul><li>1=totalen </li><li>2=gemiddelden </li><li>4=datum vergelijken </li><li>8=naar kleine letters </li><li>16=gegevens voor een bepaalde periode </li><li>32=overlay </li><li>64=taal opzoeken </li><li>128=segment </li><li>256=waarde tot op heden </li><li>512=transactiedetail </li><li>1024=bezoekersspecificatie </li><li>2048=term opzoeken </li></ul></li><li>SR - markering voor speciaal rapport: <ul><li>1=suggesties voor zoekwoorden </li><li>2=doorklik </li><li>3=gespecificeerd naar dagdeel </li><li>4=bezoekerslijst </li><li>5=kaartoverlay </li><li>6=aangepaste woordenlijst voor aangepast gebruik </li><li>7=datumvergelijking </li></ul></li><li>FNT - filternummer filtertype: <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF - nummerveld filter </li><li>FNV - filterwaarde </li><li>FST - type filtertekenreeks: <ul><li>1=uitsluiten </li><li>2=opnemen </li></ul></li><li>FSF - tekenreeksveld filter </li><li>FSX - tekenreeks van reguliere expressie </li></ul><p class="line874">Hieronder ziet u een voorbeeld van één rapportrij met uitleg: <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> Subrapport met id 1208 </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> Rapportagesectie leidinggevende </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">UTM moet zijn ingeschakeld </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> Navigatietitel van menu </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      Kleur bij muisaanwijzer boven menu </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      Kleur bij muisaanwijzer niet boven menu </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> Help-item </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862"> Geen gegevenssubrapporten </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> Labels van kolommen voor rapportagetabel </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> Typen kolommen voor rapportagetabel </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> Id van gegevensoverzicht </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">Indeling voor gegevensextractie </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Geen verplichte velden </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> Rapporttype is 'top' </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  Twee typen grafieken: 'cirkel' en 'horizontale balk' </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">Veldscheidingsteken wordt niet gebruikt </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> Gebruikte speciale opties: 4 - Datum vergelijken; 16 - Gegevens voor een bepaalde periode; 128 - Segment; 256 - Waarde tot op heden; 1024 - Bezoekersspecificatie </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Normaal rapport </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optioneel filter wordt niet gebruikt </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optioneel filter wordt niet gebruikt </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optioneel filter wordt niet gebruikt </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optioneel filter wordt niet gebruikt </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optioneel filter wordt niet gebruikt </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Optioneel filter wordt niet gebruikt </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

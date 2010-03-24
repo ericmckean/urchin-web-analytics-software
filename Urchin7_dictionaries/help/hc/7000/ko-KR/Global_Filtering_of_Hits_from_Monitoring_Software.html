@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>모니터링 소프트웨어에서 조회수 전체 필터링</strong> <p class="line867"><strong>개요</strong> <p class="line874">대부분의 호스팅 환경에서는 서비스 수준 계약(SLA)을 유지하기 위한 일종의 고객 웹서버 모니터링 기능을 제공합니다.그러나 이에 따른 부작용으로 세션, 페이지뷰, 조회, 바이트 카운트 등을 인위적으로 증가시켜 이 모니터링을 통한 조회수가 모니터링된 웹사이트의 실제 Urchin 보고를 부풀릴 수 있습니다. <p class="line867"><strong>권장사항</strong> <p class="line874">이러한 모니터링 방식을 사용하는 호스팅 환경에서는 각 고객의 구성된 Urchin 프로필에 표준/전체 Urchin 필터를 적용하여 모니터링 소프트웨어에서 생성한 조회수를 검증하는 것이 좋습니다.이 작업은 중앙 집중식 Urchin 설치(호스팅 업체에서 관리)를 통해 각 고객 웹사이트에 대한 보고 기능을 사용할 수 있는 환경에서는 편리하게 수행할 수 있습니다.고객 자신이 서버에 Urchin 인스턴스를 유지하는 전용/공동 위치 환경에서는 호스팅 업체가 사용된 모니터링에 적합한 샘플 필터를 제공해야 합니다. <p class="line874">Urchin 필터링 구현을 위해 호스트 및 고객은 함께 협력하여 소프트웨어 활용만 모니터링하는 특정 페이지를 고객 웹사이트에 만들어야 합니다. 예를 들면 다음과 같습니다. <pre>     http://www.customerdomain.com/healthpage.html
+</pre><p class="line874">예 <p class="line874">예 1:모니터링 시스템에 대한 IP 주소를 필터링 <pre>      Filter Type: Exclude
+      Filter Field: IP
+      Filter Spec: 172\.16\.1\.1
+</pre><ul><li style="list-style-type:none">이 예에서는 Urchin이 처리하는 웹서버 로그 중 IP 주소가 172.16.1.1인 조회를 모두 제거합니다. </li></ul><p class="line874">예 2:모니터링 시스템에서 조회한 특정 페이지 필터링 <pre>      Filter Type: Exclude
+      Filter Field: REQUEST
+      Filter Spec: ^/healthpage.html
+</pre><ul><li style="list-style-type:none">이 예에서는 Urchin이 처리하는 웹서버 로그 중 /healthpage.html에 대한 요청이 있는 조회를 모두 제거합니다. </li></ul><p class="line874">주의사항 <ol type="1"><li>이 방법은 고객이 웹서버에 대한 실제 트래픽 로드(필터링 포함)를 확인할 수 있도록 고객에 대해 필터링되지 않는 추가 프로필을 만드는 경우 유용합니다. </li><li>호스팅 업체는 모니터링 소프트웨어에서 조회만 필터링하는 것처럼 조회 모니터링을 독점적으로 보고하는 프로필을 제공하고자 할 수 있습니다.이 프로필은 모니터링이 올바르게 수행되었으며 SLA를 충족하는지 확인하는 데 사용할 수 있습니다. </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

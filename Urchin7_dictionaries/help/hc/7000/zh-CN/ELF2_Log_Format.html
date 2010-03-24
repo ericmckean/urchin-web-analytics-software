@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>ELF2 日志格式</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 软件授权顾问 </em> <a href="ivantageLimited.html">ivantage Limited</a><em> 编写</em> </li></ul><p class="line867"><strong>请注意</strong> <p class="line874">旧版本的 Urchin 支持仅限 IP 跟踪的 ELF 格式，由于 Urchin 6 不提供仅 IP 跟踪，因此它不再支持 ELF 格式。 <p class="line867"><strong>概述</strong> <p class="line874">电子商务日志格式 2 (ELF2) 可记录客户于在线购物网站上的交易信息。不过，Urchin 6 不再支持这种记录电子商务交易的机制。Urchin 6 支持客户端数据收集技术，以此捕获电子商务交易。通过在您的收据页面加入某些简单功能，Urchin 6 可自动检测并记录交易和产品信息。所需信息会被置入隐藏表单，该表单会被解析为交易和产品信息。大多数由模板驱动的电子商务系统都可以通过修改而加入隐藏在收据中的信息。 <p class="line862">Urchin 通过添加某些代码，可以跟踪来自您自己的域或其他域上的购物车的数据。要将您的页面设置为向 Urchin 报告交易数据，请阅读"如何跟踪电子商务交易？"另外，如果您的商店网站位于同您的主网站不同的子域或域中，请阅读 <a href="Tracking_Secure_Store_Transactions.html">跟踪安全商店交易</a>。 <p class="line874">本文档描述了由购物车软件创建的 ELF2 日志文件的格式，并解释了应如何配置 Urchin，以处理电子商务日志。 <p class="line867"><strong>针对 ELF2 日志文件配置 Urchin</strong> <p class="line874">设置 ELF2 日志类型时，您需要采用以下配置参数。 <ul><li>以管理员身份登录到"管理员用户界面" </li><li>进入"配置"页面 </li><li><p class="line862">在"修改日志源 -&gt; 日志设置"屏幕，将"日志格式"设置为 elf2 或自动 </li><li><p class="line862">在"修改配置文件 -&gt; 设置"屏幕，将"电子商务网站"字段设置为 YES </li></ul><p class="line874">除了用以处理电子商务报告的主网站日志，您的电子商务日志应作为第二个日志源列出。Urchin 将相继处理这些日志。 <p class="line867"><strong>ELF2 日志格式说明</strong> <p class="line874">ELF2 是由 tab 键分隔的多行日志格式。第一行以感叹号 '!' 字符开头，并包含与购买相关的全部信息。后续行包括有关所购买项目的详细信息。第一行的内容与交易相关，后续行的内容与所购买项目相关。空白字段应包含 '-' 字符。因为 tab 键用于分隔字段，因此不能用在字段中。 <p class="line874">通常，ELF2 日志文件格式如下： <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>ELF2"交易"行</strong> <p class="line874">ELF2"交易"行以感叹号 '!' 字符开头，并包含下列以 tab 键分隔的字段（空白字段应包含 '-' 字符）： <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">其中： <pre>    * %{ORDERID} 是订单号
+    * %{REMOTE_HOST} 是远程计算机的"主机名/IP 地址"
+    * %{DATE/TIME} 是通用日志格式时间 [dd/mmm/yyyy:HH:MM:SS +/-ZZZZ]
+    * %{STORE} 是商店的名称/ID
+    * %{SESSIONID} 是客户唯一的会话标识符
+    * %{TOTAL} 是交易总额，包括税款和运费（仅使用十进制数，不包括 '$' 字符）
+    * %{TAX} 是计入小计的税额
+    * %{SHIPPING} 是运费金额
+    * %{BILL_CITY} 是客户的结算城市
+    * %{BILL_STATE} 是客户的结算州/省
+    * %{BILL_ZIP} 是客户的结算邮编
+    * %{BILL_COUNTRY} 是客户的结算国家/地区
+    * %{USER_AGENT} 是客户浏览器的用户代理
+    * %{COOKIES} 指包含在客户浏览器标头中的进站 Cookie
+</pre><p class="line867"><strong>ELF2"项目"行</strong> <p class="line874">ELF2"项目"行包含下列以 tab 键分隔的字段（空白字段应包含 '-' 字符）： <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">其中： <pre>    * %{ORDERID} 是订单号
+    * %{REMOTE_HOST} 是远程计算机的"主机名/IP 地址"
+    * %{DATE/TIME} 是通用日志格式时间 [dd/mm/yyyy:HH:MM:SS +/-ZZZZ]
+    * %{PRODUCT_CODE} 是产品的标识符
+    * %{PRODUCT_NAME} 是产品名称
+    * %{VARIATION} 是产品的可选变量，例如颜色、大小等
+    * %{PRICE} 是产品单价（仅使用十进制数，不包括 '$' 字符）
+    * %{QUANTITY} 是产品的订购量
+    * %{UPSOLD} 是产品是否有售的布尔值 (0|1)
+    * %{USER_AGENT} 是客户浏览器的用户代理
+    * %{COOKIES} 指包含在客户浏览器标头中的进站 Cookie
+</pre><p class="line867"><strong>ELF2 日志文件示例</strong> <p class="line874">下列两行是 ELF2 日志中的交易和相应的项目内容： <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

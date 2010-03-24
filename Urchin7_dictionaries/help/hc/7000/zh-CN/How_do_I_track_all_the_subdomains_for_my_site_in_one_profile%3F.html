@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何在一个配置文件中跟踪网站的所有子域？</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 软件授权顾问</em> <a href="ivantageLimited.html">ivantage Limited</a><em>编写</em> </li></ul><p class="line874">您可以在主域所用的同一配置文件中跟踪子域。为此，您需要在子域每一网页的跟踪代码中添加一行。下面的说明假定此配置文件在主域为已列出站点（如 example.co.uk）的情况下设置的。 <ol type="1"><li>在所有子域网页和主域网页的跟踪代码中加入以下行（以粗体显示）： </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">此行应引用主域 (example.co.uk)。 </li></ul><p class="line874">请注意，尽管这一更改可让您在一个配置文件中跟踪各个子域，但您的报告可能无法区分来自 www.example.co.uk 和 help.example.co.uk 的网页。例如，在"最常见内容"报告中，您可能会看到 www.example.co.uk/index.html 和 help.example.co.uk/more.html 的点击情况，但报告将会显示如下内容： <pre>   /index.html
+   /more.html
+</pre><p class="line874">如果您想区分子域，可按照以下设置为配置文件创建高级过滤器： <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">使用此过滤器后，前例显示时会附加子域： <pre>   www.example.co.uk/index.html
+   help.example.co.uk/more.html
+</pre><p class="line874">请注意：此过滤器以写入到您的网络访问日志文件中包括子域在内的您网站的主机名为依据。如果您的网络访问日志文件不包含此主机名，则 Urchin 6 报告无法记录此差别，例如以下两个域名的 index.html 之间的差别： <pre> www.example.co.uk/index.html
+ help.example.co.uk/more.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

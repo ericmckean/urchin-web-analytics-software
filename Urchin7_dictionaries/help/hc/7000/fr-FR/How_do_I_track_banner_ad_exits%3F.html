@@ -1,0 +1,23 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Mon site ne comporte qu'une seule URL, car j'utilise Flash. Comment puis-je définir un entonnoir de conversion ?</strong> <p class="line862">Vous pouvez effectuer le suivi de tous les événements de navigateur qui se produisent sur votre site Web, notamment des événements Flash. La fonction JavaScript urchinTracker vous permet d'attribuer des noms de page à vos actions Flash. Vous pouvez alors associer ces noms de page à l'objectif approprié ou aux différentes étapes de l'entonnoir. <p class="line862">Pour effectuer le suivi d'un événement, appelez la fonction JavaScript urchinTracker() avec un argument spécifiant le nom de l'événement. Par exemple, si vous appelez : <p class="line867"><pre>    javascript:urchinTracker('/purchase_funnel/page1.html');
+</pre><p class="line874">chaque occurrence de l'événement Flash correspondant sera consignée comme s'il s'agissait d'une consultation de la page nommée /purchase_funnel/page1.html. L'argument doit débuter par une barre oblique. <p class="line874">Vous pouvez organiser les noms des événements selon la structure de répertoires de votre choix. L'argument chemin/nom de fichier de la fonction urchinTracker ne doit pas nécessairement représenter une URL existante de votre site Web. <p class="line867"><strong>Exemples de code Flash</strong> <p class="line867"><pre>    on (release) {
+    // Track with no action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+    on (release) {
+    //Track with action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    _root.gotoAndPlay(3);
+    myVar = "Flash Track Test"
+    }
+    onClipEvent (enterFrame) {
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

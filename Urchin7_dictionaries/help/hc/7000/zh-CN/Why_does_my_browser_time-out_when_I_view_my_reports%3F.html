@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>为了让 Urchin 能够将某些关键字或网址处理为直接推介链接而非关键字，应该如何进行配置？</strong> <p class="line874">您可能希望将某些关键字或网址作为直接推介链接而非关键字处理。为此，可对 urchin.js 文件加以配置，以便 Urchin 能在报告中将其报告为直接推介链接。 <ol type="1"><li>使用任何文本编辑器打开 urchin.js 文件 </li><li>向下滚动到以下标题： </li></ol><p class="line867"><pre>          //-- Auto/Organic Keywords to Ignore
+</pre><ol type="3"><li>在表单的列表末尾处添加要忽略的新随机关键字： </li></ol><p class="line867"><pre>          _uOno[#]="keyword";
+</pre><ul><li style="list-style-type:none">..参见以下示例： </li></ul><p class="line867"><pre>        //-- Auto/Organic Keywords to Ignore
+        var _uOno=new Array();
+        _uOno[0]="urchin";
+        _uOno[1]="urchin.com";
+        _uOno[2]="www.urchin.com";
+</pre><p class="line867"><p class="line867"><p class="line867"><p class="line867"><p class="line867"><p class="line874">#format wiki #language en <p class="line867"><strong>我的浏览器为什么在查看报告时超时？</strong> <p class="line874">如果未在 45 秒内返回数据，则查询 Urchin 数据库并生成每个报告的应用程序会显示超时。如果数据库相当大，在 45 秒内可能无法检索完毕所请求的所有报告数据。发生这种情况时，就会发生超时且通常会显示错误。 <p class="line874">如果您对运行 Urchin 的服务器有足够的访问权限，可以延长超时值。 <p class="line867"><strong>延长应用程序超时值</strong> <ul><li>使用命令 shell 连接到 Urchin 服务器 </li><li>浏览到 .../[urchin-install-dir]/etc/ 目录 </li><li>使用文本编辑器打开"session.conf" </li><li>提高 'APPLICATION_TIMEOUT:' 的值（以秒为单位） </li><li>保存文件，这些更改会立即更新 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

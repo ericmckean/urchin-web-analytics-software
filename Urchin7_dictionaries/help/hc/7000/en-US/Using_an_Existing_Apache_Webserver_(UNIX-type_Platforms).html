@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Using an Existing Apache Webserver (UNIX-type Platforms)</strong> <p class="line874">By default, Urchin administration and reporting are done using a standalone Apache server that is bundled with the Urchin product. In the vast majority of Urchin installations, this is the preferred method for delivering Urchin admin and reporting interfaces. However, in rare instances it may be necessary to utilize an existing Apache installation. This may be due to site requirements that a localized version of Apache be used throughout the organization, or that all web services be controlled via a single Apache configuration. The information below describes two different models that can be employed to meet these requirements. <p class="line867"><strong>DISCLAIMER:</strong> Please note that these modifications to the Urchin installation are <strong>unsupported</strong>. <p class="line867"><strong>Option 1:</strong> Utilitizing an existing site-specific Apache httpd binary to run Urchin services as a separate instance <p class="line867"><strong>Side effects</strong> <ul><li>Urchin upgrades that depend on features added and/or configuration changes to the bundled Apache may not work properly if the existing Apache binary doesn't support these changes/features.  </li></ul><p class="line867"><strong>Configuration changes</strong> <ul><li>Ensure that your httpd includes support for the following modules: <ul><li style="list-style-type:none">mod_access mod_cgi mod_dir mod_mime </li></ul></li><li>Install Urchin in the normal fashion, choosing the desired port for Urchin's admin and reporting interfaces to run on. </li><li>Once Urchin is installed, do the following: </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin ./urchinctl stop
+                  mv urchinwebd urchinwebd.orig
+                  ln -s /path/to/your/httpd urchinwebd
+                  ./urchinctl start
+</pre><ul><li style="list-style-type:none">This will start up a separate instance of Apache that uses your Apache binary, but runs independently from your standard web services.  </li></ul><p class="line867"><strong>Option 2:</strong> Running Urchin services from an existing Apache configuration <p class="line867"><strong>Side effects</strong> <ul><li>The entire Urchin distribution must be owned by the same UID that httpd runs as. </li><li>The admin GUI cannot be used to change the port Urchin runs on. </li><li>The bin/wrapper tool cannot be used to start Urchin services since it will attempt to run the Urchin-specific httpd. Use the bin/urchindctl.sh script exclusively to start/stop only the Urchin scheduler (urchind) </li></ul><p class="line867"><strong>Configuration changes</strong> <ul><li>Add the following lines to your existing httpd.conf file. You will need to supply the IP address for your server, the port number for the Urchin to use, as well as the path to the location where you've installed Urchin. </li></ul><p class="line867"><pre>            ## Support for Urchin administration and reporting services
+            Listen [port#]
+            &lt;VirtualHost [server-ip]:[port#]&gt;
+            ErrorLog /path/to/urchin-distribution/var/error.log
+            DocumentRoot /path/to/urchin-distribution/htdocs/
+            &lt;Directory /path/to/urchin-distribution/htdocs/&gt;
+                  AddHandler cgi-script .cgi
+                  Options ExecCGI
+                  DirectoryIndex session.cgi
+                  AllowOverride None
+                  Order allow,deny
+                  Allow from all
+            &lt;/Directory&gt;
+            &lt;/VirtualHost&gt; 
+</pre><ul><li style="list-style-type:none">Once these configuration changes have been made, perform the following tasks: </li><li class="gap">Change the ownership of the Urchin distribution to the UID that your Apache webserver runs as: </li></ul><p class="line867"><pre>                  chown -R apache-user /path/to/urchin/bin
+</pre><ul><li>Ensure that the Apache bundled with Urchin is stopped: </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin
+                  ./urchinctl -w stop
+</pre><ul><li>Restart your Apache server to enable Urchin reporting and administration  </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

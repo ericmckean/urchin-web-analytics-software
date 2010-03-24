@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Hoe kan ik alle subdomeinen van mijn site in afzonderlijke profielen bijhouden?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dit artikel is geschreven door</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, een geautoriseerde consultant van Urchin-software </em> </li></ul><p class="line874">Het bijhouden van subdomeinen in afzonderlijke profielen met Urchin is afhankelijk van de configuratie van uw webserver. Het is mogelijk om uw webserver zodanig te configureren dat afzonderlijke logbestanden voor elk subdomein worden opgeslagen. Vervolgens kan Urchin elk logbestand van een subdomein afzonderlijk verwerken. Wanneer er echter maar één logbestand wordt gemaakt en het logbestand voor webtoegang zodanig is ingesteld dat de hostnaam inclusief het subdomein wordt opgeslagen, kunt u een filter voor  opnemen maken voor het profiel van elk subdomein. Het filter van een profiel bevat bijvoorbeeld alleen verkeer naar 'help.example.co.uk', terwijl een ander filter voor opnemen alleen verkeer naar 'www.example.co.uk' bevat. <p class="line874">Als u dus uw subdomeinen wilt bijhouden in aparte profielen, kunt u een filter voor opnemen toepassen op elk profiel om alleen een bepaalde hostnaam op te nemen. U moet eerst een profiel maken voor elk subdomein. Zodra u dit heeft gedaan, kunt u de filters maken zoals hieronder wordt beschreven. <p class="line874">Als u bijvoorbeeld 'sub.example.com' en 'www.example.com' wilt bijhouden in twee verschillende profielen, past u de volgende filters toe: <ul><li style="list-style-type:none">Voor uw profiel voor 'sub.example.com' </li></ul><p class="line867"><pre>    Filtertype: Alleen patroon opnemen
+    Filterveld: utm_request_hostname (AUTO)
+    Filterpatroon: ^sub\.example\.com
+</pre><ul><li style="list-style-type:none">Voor uw profiel voor 'www.example.com' </li></ul><p class="line867"><pre>    Filtertype: Alleen patroon opnemen
+    Filterveld: utm_request_hostname (AUTO)
+    Filterpatroon: ^www\.example\.com
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

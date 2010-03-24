@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Een bestaande Apache-webserver gebruiken (UNIX-platforms)</strong> <p class="line874">Voor beheer en rapportage van Urchin wordt standaard een zelfstandige Apache-webserver gebruikt die bij Urchin wordt geleverd. Voor de meeste Urchin-installaties is dit de voorkeursmethode voor het leveren van de interfaces voor beheer en rapportage van Urchin. In uitzonderlijke gevallen kan het echter nodig zijn om een bestaande installatie van Apache te gebruiken. Dit kan zijn omdat het een sitevereiste betreft waarbij in de gehele organisatie een gelokaliseerde versie van Apache moet worden gebruikt, of dat alle webservices worden beheerd vanuit één Apache-configuratie. Hieronder worden twee verschillende modellen beschreven die kunnen worden gebruikt om aan deze vereisten te voldoen. <p class="line867"><strong>DISCLAIMER:</strong> houd er rekening mee dat deze wijzigingen in de Urchin-installatie <strong>niet worden ondersteund</strong>. <p class="line867"><strong>Optie 1:</strong> Een bestaand sitespecifiek binair Apache-httpd-bestand gebruiken om de Urchin-services als een afzonderlijke instantie uit te voeren <p class="line867"><strong>Neveneffecten</strong> <ul><li>Upgrades van Urchin die afhankelijk zijn van functies die aan de gebundelde Apache zijn toegevoegd en/of van configuratiewijzigingen aan de gebundelde Apache, werken mogelijk niet correct als de bestaande binaire Apache deze wijzigingen/functies niet ondersteunt.  </li></ul><p class="line867"><strong>Configuratiewijzigingen</strong> <ul><li>Controleer of uw httpd ondersteuning biedt voor de volgende modules: <ul><li style="list-style-type:none">mod_access mod_cgi mod_dir mod_mime </li></ul></li><li>Installeer Urchin op de normale manier en selecteer de poort voor het uitvoeren van de beheer- en rapportage-interface van Urchin. </li><li>Na installatie van Urchin geeft u de volgende opdrachten:. </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin ./urchinctl stop
+                  mv urchinwebd urchinwebd.orig
+                  ln -s /path/to/your/httpd urchinwebd
+                  ./urchinctl start
+</pre><ul><li style="list-style-type:none">Hiermee start u een aparte instantie van Apache die gebruikmaakt van uw binaire Apache maar onafhankelijk van uw standaard webservices wordt uitgevoerd.  </li></ul><p class="line867"><strong>Optie 2::</strong> Urchin-services uitvoeren vanaf een bestaande configuratie van Apache <p class="line867"><strong>Neveneffecten</strong> <ul><li>De gehele Urchin-distributie moet eigendom zijn van dezelfde UID als die waaronder httpd wordt uitgevoerd. </li><li>De beheer-GUI kan niet worden gebruikt om de poort aan te passen waarop Urchin wordt uitgevoerd. </li><li>Het hulpprogramma bin/wrapper kan niet worden gebruikt om Urchin-services te starten omdat het hulpprogramma zal proberen de Urchin-specifieke httpd uit te voeren. Gebruik uitsluitend het script bin/urchindctl.sh om alleen de Urchin-planner (urchind) te starten en te stoppen. </li></ul><p class="line867"><strong>Configuratiewijzigingen</strong> <ul><li>Voeg de volgende regels toe aan uw bestaande httpd.conf-bestand. U moet het IP-adres voor uw server opgeven, het poortnummer dat Urchin moet gebruiken, en het pad naar de locatie waarop u Urchin heeft geïnstalleerd. </li></ul><p class="line867"><pre>            ## Support for Urchin administration and reporting services
+            Listen [port#]
+            &lt;VirtualHost [server-ip]:[port#]&gt;
+            ErrorLog /path/to/urchin-distribution/var/error.log
+            DocumentRoot /path/to/urchin-distribution/htdocs/
+            &lt;Directory /path/to/urchin-distribution/htdocs/&gt;
+                  AddHandler cgi-script .cgi
+                  Options ExecCGI
+                  DirectoryIndex session.cgi
+                  AllowOverride None
+                  Order allow,deny
+                  Allow from all
+            &lt;/Directory&gt;
+            &lt;/VirtualHost&gt; 
+</pre><ul><li style="list-style-type:none">Nadat u deze configuratiewijzigingen heeft aangebracht, voert u de volgende taken uit: </li><li class="gap">Wijzig het eigendom van de Urchin-distributie in de UID waaronder uw Apache-webserver wordt uitgevoerd: </li></ul><p class="line867"><pre>                  chown -R apache-user /path/to/urchin/bin
+</pre><ul><li>Controleer of de met Urchin gebundelde Apache is stopgezet: </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin
+                  ./urchinctl -w stop
+</pre><ul><li>Start de Apache-server opnieuw om beheer en rapportage van Urchin in te schakelen.  </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

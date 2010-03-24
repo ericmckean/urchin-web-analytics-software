@@ -1,0 +1,66 @@
+#################################################################################################
+#  Urchin 7 session default dictionary file
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	Nicht verwendet
+1	Melden Sie sich an, um auf Ihr Konto zuzugreifen.
+2	Nutzername
+3	Passwort
+4	Melden Sie sich erneut an.
+5	Vielen Dank, dass Sie Urchin verwenden. Möchten Sie sich erneut anmelden?
+6	Sitzungsfehler - Konfiguration kann nicht gelesen werden. (1000)
+7	Sicherheitsverletzung - Remote-Adresse nicht festgelegt. (1001)
+8	Sicherheitsverletzung - kein freigegebenes Modul (1002)
+9	Sitzungsfehler - Format für ID ist falsch. (1003)
+10	Sitzungsfehler - Ungültige Abfrage des Sitzungs-Controllers (10004)
+11	Sitzungsfehler - Standardroutine konnte nicht aufgerufen werden. (2001)
+12	Sitzungsfehler - Standardroutine konnte nicht aufgerufen werden. (2002)
+13	Sitzungsfehler - Standardroutine konnte nicht aufgerufen werden. (2003)
+14	Sitzungsfehler - Sitzung kann nicht erstellt werden. (2004)
+15	Sitzungsfehler - Umgebung kann nicht eingerichtet werden. (2005)
+16	Sitzungsfehler - Fehlende Sitzungs-ID (3000)
+17	Sitzungsfehler - Datensatz kann nicht aus Datenbank abgerufen werden. (3001)
+18	Sitzungsfehler - IP stimmt nicht mit dieser Sitzung überein. (3002)
+19	Sitzungsfehler - ungültige Sitzungs-ID (3003)
+20	Sitzungsfehler - Sitzungsdatensatz kann nicht aktualisiert werden. (3004)
+21	Zeitüberschreitung der Sitzung: Als Vorsichtsmaßnahme wurden Sie automatisch abgemeldet.
+22	Sitzungsfehler - Anwendung kann nicht aufgerufen werden. (4001)
+23	Sitzungsfehler - Anwendung kann nicht aufgerufen werden. (4002)
+24	Sitzungsfehler - Anwendung kann nicht aufgerufen werden. (4003)
+25	Sitzungsfehler - Fehlende SID (4004)
+26	Sitzungsfehler - Sitzungsdatensatz kann nicht aus Datenbank abgerufen werden. (4005)
+27	Sitzungsfehler - Die derzeit verwendete IP-Adresse stimmt nicht mit der IP-Adresse überein, die zur Einleitung der Sitzung verwendet wurde.
+28	Sitzungsfehler - Ungültige Sitzungs-ID (4007)
+29	Sitzungsfehler - Sitzungsdatensatz kann nicht aktualisiert werden. (4008)
+30	Sitzungsfehler - Umgebung kann nicht erstellt werden. (4009)
+31	Authentifizierungsfehler - Authentifizierungsmodul kann nicht aufgerufen werden. (5001)
+32	Authentifizierungsfehler - Das Authentifizierungsmodul kann nicht aufgerufen werden. (5002)
+33	Authentifizierungsfehler - Authentifizierungsmodul kann nicht aufgerufen werden. (5003)
+34	Authentifizierungsfehler - Authentifizierung fehlgeschlagen. (6001)
+35	Authentifizierungsfehler - Anzahl der Parameter ist falsch. (6002)
+36	Authentifizierungsfehler - Remote-Zugriff für Nutzer wurde verweigert. (6003)
+37	Authentifizierungsfehler - Remote-Zugriff für Verwaltung wurde verweigert. (6004)
+38	Authentifizierungsfehler - IP-Adresse fehlt. (6005)
+39	Authentifizierungsfehler - Globale Konfigurationsdatei kann nicht aus Datenbank abgerufen werden. (6006)
+40	Authentifizierung fehlgeschlagen.
+41	Remote-Zugriff für Nutzer wurde verweigert. (6008)
+42	Remote-Zugriff für Verwaltung wurde verweigert. (6009)
+43	Anmelden
+44	Willkommen bei der Urchin-Software von Google
+45	Analytics-Startseite
+46	Häufig gestellte Fragen
+47	Datenschutzbestimmungen
+48	Urchin-Hilfe
+49	Google Analytics & Urchin-Blog
+50	Urchin-Software von Google
+51	Google-Datenschutzbestimmungen
+52	Google Analytics & Urchin-Blog (auf Englisch)
+53	Google-Datenschutzbestimmungen
+54	Startseite
+55	Was gibt's Neues?
+56	Autorisierte Berater
+57	Urchin-Software von Google analysiert die Zugriffe auf eine oder mehrere Websites und bietet unkomplizierte Berichte zu Ihren Besuchern: woher diese kommen, wie sie auf Ihrer Site navigieren, welche Conversions sie ausführen und viele weitere Angaben.</p><p>Urchin-Software von Google ist das Richtige für Sie, falls Sie Google Analytics nicht verwenden können, weil sich Ihr Content hinter einer Firewall oder im Intranet befindet.Urchin-Software von Google wird exklusiv durch autorisierte Berater für Urchin-Software unterstützt.
+58	Weitere Informationen
+59	Endnutzer-Lizenzvereinbarung
+60	Urchin-Nutzerforum

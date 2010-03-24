@@ -1,0 +1,623 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+    
+    .writely-callout-data {
+      display: none;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>Marketing Optimization</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<h1 class=heading>
+  Marketing Optimization section
+</h1>
+<br>
+<p style=TEXT-ALIGN:justify>
+  &nbsp;&nbsp; &nbsp;<font size=2>Data in reports of Marketing Optimization section</font><font size=2> reflects all the activities that occur on your website. By analyzing that data, you can learn more about your visitors. </font><font size=2><br>
+  </font>
+</p>
+<p style=TEXT-ALIGN:justify>
+  <font size=2>&nbsp;&nbsp; &nbsp;The amount of useful data gathered on visitor interaction with your website is vast. You can receive information about </font><font size=2>new and </font><font size=2>returning</font><font size=2> website visitors, </font><font size=2>how visitors reach your website, how visitors interact with it, </font><font size=2>what pages were viewed, </font><font size=2>measure visitor traffic, </font><font size=2>the length of time spent on the website, calculate cost, revenue, conversion rate, cost per click and other metrics for organic and paid search, displays many other useful facts.</font><font size=2> That is all helps </font><font size=2>to increase profitability of your website.<br>
+  </font>
+</p>
+<p style=TEXT-ALIGN:justify>
+  <br>
+</p>
+<p style=TEXT-ALIGN:justify>
+  <font size=2>The Marketing Optimization</font><font size=2> section contains the following reports:</font>
+</p>
+<h6>
+  <font size=3>Unique Visitor Tracking</font>
+</h6>
+<ul style=FONT-FAMILY:Verdana>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Daily Visitors:</b></span></font></span> The Visitors Graph shows how many visitors your site received over time during the date range. The Percent New Visitors graph shows the percentage of visitors who were new visitors<span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>.</span></font></span></font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Visits &amp; Pageview Tracking</b></span></font></span><b>:</b></span></font></span> The Visits, Pageviews, and Average Pageviews per Visit graphs show the number of visits, the number of pageviews, and the average pageviews per visit (P/Visit) over time during the date range.</font>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Goal Conversion Tracking</b></span></font></span></span></span>: The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>Goal Conversion Tracking report displays</span></font></span></span></span></span></span></span></span></font> how conversion rates vary over time for each of your goals. This report charts conversion rates over time for each goal you have defined.</span></font></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Absolute Unique Visitors</b></span></font></span></span></span></span></span><b>:</b></span></font></span></span></span></span></span> This report shows how effectively your marketing drives new and returning visitors to your site. First Time Absolute Unique Visitors is the number of visitors (counting each visitor only once) who visited your site for the first time during the active date range. Prior Absolute Unique Visitors is the number of visitors (counting each visitor only once) who first visited your site prior to the active date range and who returned for one or more visits during the active date range.</span></font></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Visitor Loyalty:</b></span></font></span></span></span></span></span></span></span> Each visitor who visits your site during the active date range is categorized according to the total number of times (i.e. without regard to date range) that he or she has visited your site. The number of visitors with only one visit (no loyalty) are indicated on the left of the histogram. The number of visitors with over 200 visits (very loyal) are indicated on the far right.</span></font></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Visitor Recency:</b></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span> Each visitor who visits your site during the active date range is categorized according to the number of days that have elapsed since their most recent prior visit. New visitors and those who are returning from a previous visit today are shown on the left of the histogram. Visitors who last visited the site one year ago are shown on the far right.</font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Visitor List</b></span></font></span></span></span></span></span></span></span></span></span></span></span>: The Visitor List report lists all visitors that came to the site during the specified time period. The number of visits, pages per visit, the conversion rates for each goal, and the average per visit value are shown for each visitor.<br>
+    </font>
+  </li>
+</ul>
+<h6>
+  <b><font size=3>Visitor Segment Performance</font></b>
+</h6>
+<ul style=FONT-FAMILY:Verdana>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>New vs Returning Visitors:</b></span></font></span></font><font size=2> How do new visitors compare with returning visitors with respect to conversions and average per visit value? This report shows number of visits, conversion rates for each goal, and the average per visit value for new and returning visitors.</font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Referring Source:</b></span></font></span></font><font size=2> How do visitors referred by different sources (such as search engine, newsletter, or referral site) compare with respect to number of visits, conversion rate, and the average value of each visit?</font>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Geo Location:</b></span></font></span></span></span> The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>Geo Location</span></font></span></span></span></span></span></span></span></font> report shows how visitors from different regions compare with respect to conversions and average visit value. This report compares each geographic region's number of visits, pageviews per visit, conversion rates, and the average value of each visit.</span></font></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Geo Map Overlay:</b></span></font></span></span></span></span></span> The Geo Map Overlay is a graphical representation of the volume of visitors coming from locations around the world. The largest points indicate locations driving the most visitors to your website.<br>
+      </span></font></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Network Location:</b></span></font></span></span></span></span></span></span></span> How do visitors from different organizations compare with respect to conversions and average visit value? This report shows the number of visits, pageviews per visit, conversion rates, and average visit value for each ISP and corporate network.</span></font></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Connection Speed:</b></span></font></span></span></span></span></span></span></span></span></span> The Connection Speed report displays for which connection speeds you should optimize your site and content.</span></font></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Language:</b></span></font></span></span></span></span></span></span></span></span></span></span></span> The Language report shows how visitors with different language preferences compare with respect to conversions and average visit value. This report compares number of visits, pageviews per visit, conversion rates, and average visit value for visitors according to the language preference they have set on their computer.</span></font></span></span></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>User-defined:</b></span></font></span></span></span></span></span></span></span></span></span></span></span> This report allows you to track visitor behavior based upon an arbitrary segment variable that you define. For example, the value selected in a pull-down menu of a registration form can be tagged to the visitor and used to determine conversion and behavior metrics. This report compares how visitors who identified with each of the different groups you defined compare with respect to number of visits, pageviews per visit, conversion rates, and average visit value.<br>
+      </span></font></span></span></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Usernames:</b></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span> If your site requires user login, the Usernames report will display all visitors to your site by username, the amount of successful hits, and the amount of bytes transferred.</span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Domains:</b></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span> The Domains report displays visitors by their ISP provider's top level domain name determined by user IP address.</span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+</ul>
+<h6>
+  <font size=3>Marketing Campaign Results</font>
+</h6>
+<ul style=FONT-FAMILY:Verdana>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Campaign Conversion:</b></span></font></span> The Campaign Conversion report shoes which campaigns result in the highest quality traffic. This report lists all of your marketing campaigns (i.e. any campaign which you have specified in a referral link) with respect to number of visits, pageviews per visit, conversion rates, and average visit value.</font>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Source Conversion:</b></span></font></span></span></span></span></span></span></span> The Source Conversion report displays which referral sources drive the highest quality traffic. This report compares referral sources with respect to number of visits, pageviews per visit, conversion rates, and average visit value.</font>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Medium Conversion:</b></span></font></span></span></span> The Medium Conversion report shows which types of marketing activities drive the highest quality traffic. This report compares mediums (such as email programs, paid keywords, and organic searches) with respect to number of visits, pageviews per visit, conversion rates, and average visit value.</span></font></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Referral Conversion</b></span></font></span></span></span></span></span><b>:</b> The <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left>Referral Conversion</span></font></span></span></span></span></span></span></span></span></span></span></span></font> report displays which referrals drive the highest quality traffic. This report lists non-campaign activity coming via referrals from other websites. This is useful for tracking links that you can not control - you can gauge the overall effectiveness and importance of PR activities, partnerships, etc. The referrals are compared with respect to number of visits, pageviews per visit, conversion rates, and average value per visit.</span></font></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Campaign ROI:</b></span></font></span></span></span></span></span></span></span> The Campaign ROI report displays which campaigns provide the greatest return for the least cost. This report lists all of your marketing campaigns (i.e. any campaign you have used in a referral link) with respect to number of visits, cost, revenue, cost per acquisition (cost/visits), revenue per acquisition (revenue/visits), and ROI ( [Revenue - Cost]/Cost).</span></font></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Source ROI:</b></span></font></span></span></span></span></span></span></span></span></span> The Source ROI report shows which referral sources provide the greatest return for the least cost. This report compares sources with respect to number of visits, cost, revenue, cost per acquisition (cost/visits), revenue per acquisition (revenue/visits), and ROI ( [Revenue - Cost]/Cost).</span></font></span></span></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><b>Medium ROI:</b></span></font></span></span></span></span></span></span></span></span></span></span></span> The Medium ROI report displays which types of marketing activities provide the greatest return for the least cost. This report compares mediums with respect to number of visits, cost, revenue, cost per acquisition (cost/visits), revenue per acquisition (revenue/visits), and ROI ( [Revenue - Cost]/Cost).</font>
+  </li>
+</ul>
+<h6>
+  <font size=3>Search Engine Marketing</font>
+</h6>
+<ul>
+  <li>
+    <p style=FONT-FAMILY:verdana,arial,helvetica>
+      <font size=2><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>CPC Program Analysis:</b></font></span></font></span> For paid search, which search engine-keyword combinations drive the highest quality traffic? Specifically designed for cost-per-click search programs, this report shows the number of impressions (as provided by the search vendors), clicks, number of transactions, cost (from search ad vendor data and cost data you have supplied), Revenue, click-through rate, conversion rate, cost per click, revenue per click, and ROI ([Revenue - Cost]/Cost) for organic and paid search.</font></span></font></span></font>
+    </p>
+  </li>
+  <li>
+    <p style=FONT-FAMILY:verdana,arial,helvetica>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Overall Keyword Conversion:</b></font></span></font></span></span></span> Which keywords drive the highest quality traffic? This report shows number of visits, pageviews per visit, conversion rates, and average value per visit for paid and organic keywords.</font></span></font></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p style=FONT-FAMILY:verdana,arial,helvetica>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>CPC vs Organic Conversion:</b></font></span></font></span></span></span></span></span> How does paid search compare with organic search in driving high quality traffic to your site? This report compares paid and organic referrals with respect to number of visits, pageviews per visit, conversion rates, and average visit value.</font></span></font></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p style=FONT-FAMILY:verdana,arial,helvetica>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Keyword Considerations:</b></font></span></font></span></span></span></span></span></span></span> How well do other keywords perform? This report shows the top performing unused organic keywords. Each keyword's performance is shown in terms of number of visits, pageviews per visit, conversion rates, transactions per visit, and average visit value.</font></span></font></span></span></span></span></span></span></span></font>
+    </p>
+  </li>
+  <li>
+    <p style=FONT-FAMILY:verdana,arial,helvetica>
+      <font size=2><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><span style=TEXT-ALIGN:left><span style=FONT-STYLE:normal><font color=#000000><span style=TEXT-ALIGN:left><font face=verdana,arial,helvetica><b>Day Parts Breakdown:</b></font></span></font></span></span></span></span></span></span></span></span></span> At which hours of the day is each keyword most effective? This report compares the number of responses, and the goals or transactions per response for each keyword.</font></span></font></span></span></span></span></span></span></span></span></span></font>
+    </p>
+    <font size=2><br>
+    </font>
+  </li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br></body>
+</html></body></html>

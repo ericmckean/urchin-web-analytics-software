@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>広告などのリンクに設定している独自のキャンペーン トラッキング変数を  Urchin の変数の代わりに使用する</strong> <p class="line874">オンライン リンクに独自のトラッキング変数を設定している場合、この既存の変数を Urchin のキャンペーン トラッキング変数に置き換えて使用できます。 タグ付きリンクには 3 つ以上の変数を設定する必要があり、 次の変数に置き換えられます。 <ol type="1"><li>utm_source: キャンペーンのソース (Google、Yahoo など) </li><li>utm_medium: キャンペーンのメディア (クリック単価、バナー、メールなど) </li><li>utm_campaign: キャンペーンの名前 (「春のセール」など) </li></ol><p class="line874">たとえば、サイトに次のような URL があるとします。 <pre>            www.example.com/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>ステップ 1: </strong> 独自の変数と Urchin の変数を関連付けるため、 下記の例のようなフォーマットで表を作成します。 <pre>               キャンペーン     広告ソース         広告の種類     キーワード   A/B コンテンツ  マスター
+ユーザー コード=    camp           adver       type        kwd       version      
+Urchin コード=  utm_campaign utm_source    utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>ステップ 2: </strong> UTM ファイルを編集します。 <ul><li style="list-style-type:none">urchin.js ファイルをテキスト エディタで開き、 ファイルの上部にあるユーザー定義セクションで、次の utm 変数を探します。 </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">上の例のタグ付きリンクを基に、このセクションを次のように編集します。 </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>ステップ 3:  </strong> 新しいトラッキング変数のフィルタを作成します。 <ul><li style="list-style-type:none">各フィルタでは、次の基本的なフィルタ設定を使用します。 </li></ul><p class="line867"><pre>                フィルタの種類:  アドバンス
+                フィールド A:  utm_campaign_uri (raw)
+                引用 A:  new_variable =([^&amp;]*)
+                フィールド B:  (なし)
+                引用 B:  (空欄)
+                出力先:  utm _( old_variable )
+                構成:  $A1
+                フィールド A は必須:  はい
+                フィールド B は必須:  いいえ
+                出力フィールドを上書き:  はい
+                大文字と小文字の区別:  いいえ
+</pre><ul><li style="list-style-type:none">old_variable はデフォルトの Urchin トラッキング変数、 new_variable はユーザー独自のトラッキング変数です。 修正した変数ごとにフィルタを作成する必要があります。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

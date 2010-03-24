@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何创建自定义报告</strong> <p class="line874">要创建自定义报告，请按以下步骤操作： <ol type="1"><li><p class="line862">选择一个数据映射表或定义新的数据映射表（请参阅 <a href="Custom_Data_Maps.html">自定义数据映射</a>）； </li><li><p class="line862">通过复制 &lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample 创建新的 (".rs2") 报告文件。 </li><li>向报告文件中添加新行以定义新报告。 </li></ol><p class="line874">报告文件的格式如下所述： <ul><li>ID – 唯一的报告 ID： <ul><li>C=类别 </li><li>D=数据 </li><li>M=菜单 </li><li>R=报告 </li><li>S=子报告 </li><li>P=页面报告 </li><li>B=控制台 </li></ul></li><li>RS - 控制台/报告部分： <ul><li>1=执行人员 </li><li>2=营销商 </li><li>4=网站管理员 </li></ul></li><li>RR – 报告要求： <ul><li>1=软件 </li><li>2=高级 </li><li>4=电子商务 </li><li>8=Urchin 访问量监控器 </li></ul></li><li>NTITLE – 导航标题（字典条目 #） </li><li>ONCOLOR – 启用导航颜色 </li><li>OFFCOLOR – 停用导航颜色 </li><li>HELP – 报告帮助（字典条目 #） </li><li>NDATA – 数据元素个数（条目必须紧跟其后） <ul><li>该字段后面可能跟随类型为 D（数据）的附加子报告 </li></ul></li><li>CTITLES – 列标题（字典条目 #） </li><li>CTYPES – 用于格式设置的列类型 <ul><li>10=字符串 </li><li>11=日期/年月 </li><li>12=日期 </li><li>20=编号 </li><li>21=收入 </li><li>22=字节 </li><li>23=时间比 </li><li>24=比率 </li><li>25=pct </li><li>26=时间 </li><li>30=pct 总计 </li><li>40=收入 </li><li>41=收入/数量 </li><li>42=数量/收入 </li></ul></li><li>TABLE – 数据表编号： <ul><li>T=总计 </li><li>TR=交易 </li><li>H=柱状图 </li><li>V=访问者 </li><li>1-n 表格 </li></ul></li><li>DXFORMAT – 数据提取格式 </li><li>RF - 必填字段 </li><li>RT - 报告类型： <ul><li>1=图表总计 </li><li>2=柱状图 </li><li>3=堆栈 </li><li>4=热门内容 </li><li>5=树状图 </li><li>6=目录 </li><li>7=图表限制 </li><li>8=点 </li><li>9=点击率 </li><li>10=定义的渠道 </li><li>11=主页覆盖图 </li><li>12=地图覆盖图 </li><li>13=目标确认 </li><li>14=目标路径 </li><li>20=kpi 日期报告 </li><li>21=kpi 前十项内容 </li><li>22=趋势摘要 </li><li>23=转化摘要 </li><li>24=地图 Mini </li></ul></li><li>GTYPES – 图表类型： <ul><li>1=条形图 </li><li>2=线形图 </li><li>3=饼图 </li><li>4=水平的条形图 </li><li>5=趣味图 </li><li>6=多线图 </li></ul></li><li>FSEP – 字段分隔符 </li><li>SP – 特殊选项（添加位图数）： <ul><li>1=总计 </li><li>2=平均数 </li><li>4=日期比较 </li><li>8=小写 </li><li>16=阶段性数据 </li><li>32=覆盖图 </li><li>64=语言查找 </li><li>128=群组 </li><li>256=生命周期值 </li><li>512=交易详细信息 </li><li>1024=访问者细目 </li><li>2048=字词查找 </li></ul></li><li>SR – 特殊报告标记： <ul><li>1=关键字建议 </li><li>2=点击率 </li><li>3=时段分解细目 </li><li>4=访问者列表 </li><li>5=地图覆盖图 </li><li>6=专用自定义字典 </li><li>7=日期比较 </li></ul></li><li>FNT – 过滤器编号过滤器类型： <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF – 过滤器编号字段 </li><li>FNV – 过滤器值 </li><li>FST - 过滤器字符串类型： <ul><li>1=排除 </li><li>2=包含 </li></ul></li><li>FSF – 过滤器字符串字段 </li><li>FSX - 正则表达式字符串 </li></ul><p class="line874">下面是含解释说明的报告行示例： <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> ID 为 1208 的子报告 </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> 执行报告部分 </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">要求启用 Urchin 访问量监控器 </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> 菜单导航标题 </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      启用菜单悬停颜色 </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      停用菜单悬停颜色 </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> 帮助条目 </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862"> 无数据子报告 </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> 报告表格的列标签 </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> 报告表格的列类型 </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> 数据映射 ID </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">数据提取格式 </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 无必填字段 </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> 报告类型为“热门内容” </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  两种图表类型： “饼图”和“水平的条形图” </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">不使用字段分隔符 </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> 使用的特殊选项： 4 – 日期比较；16 - 阶段性数据；128 – 群组；256 - 生命周期值；1024 - 访问者细目 </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 常规报告 </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 不使用可选的过滤器 </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 不使用可选的过滤器 </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 不使用可选的过滤器 </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 不使用可选的过滤器 </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 不使用可选的过滤器 </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> 不使用可选的过滤器 </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

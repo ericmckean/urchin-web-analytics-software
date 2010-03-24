@@ -1,0 +1,10 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><hr class="hr1" /><p class="line874"> 本文由 Urchin 軟體授權顧問 <a href="%2522FriedrichsoftwareResources%2522.html">"FriedrichsoftwareResources"</a> 撰寫 <hr class="hr1" /><p class="line874"> <strong>如何從「無法開啟資料庫並寫入，此資料庫已經被封存」的錯誤中恢復？</strong> <p class="line874">當您嘗試在 Urchin 6 中執行設定檔時，收到這個錯誤訊息： <p class="line867"><pre>WARNING: (7063-54-63) Unable to open database for writing since it has been archived
+</pre><p class="line874">這個錯誤產生的原因，是因為記錄追蹤資料庫是以月為單位，在 Urchin 中儲存資料。在這個過程中，Urchin 會讀取記錄檔的前兩行並判斷記錄檔來自哪個月份，並嘗試開啟此月份的資料庫。由於這個月份的資料庫已經被封存了，因此會傳回錯誤，因為 Urchin 不允許對已經封存的資料庫進行讀取或寫入。對此我們提供兩個解決方法： <ol type="1"><li>關閉封存功能並解壓縮所有受到影像之設定檔的 *-archive.zip 檔案，並移除 *-archive.zip 檔案。 </li><li>將記錄中的萬用字元變更為包含與日期相符的字串 (例如，您也許可以使用 YY* 或 YYYY* 來識別今年的檔案)。 </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

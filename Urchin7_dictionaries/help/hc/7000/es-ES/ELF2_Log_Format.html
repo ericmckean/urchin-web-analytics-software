@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Formato de registro de ELF2</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Autor: </em> <a href="ivantageLimited.html">ivantage Limited</a><em>, asesor autorizado del software Urchin </em> </li></ul><p class="line867"><strong>NOTA:</strong> <p class="line874">Las versiones anteriores de Urchin admitían el formato ELF para seguimientos de IP solamente. Como Urchin 6 no ofrece seguimiento de IP únicamente, ya no es compatible con el formato ELF.  <p class="line867"><strong>Visión general</strong> <p class="line874">El formato de registro de E-commerce 2 (ELF2) se diseñó para registrar información sobre las transacciones de los clientes en sitios de compra online. Sin embargo, Urchin 6 ya no admite este mecanismo para registrar transacciones de E-commerce. En su lugar, Urchin 6 proporciona una técnica de recopilación de datos de clientes para capturar las transacciones de e-commerce. Con unas simples adiciones a su página de recibos, Urchin 6 puede detectar y registrar de modo automático información de productos y transacciones. La información necesaria se guarda en un formulario oculto que, posteriormente, se analiza para obtener datos sobre transacciones y productos. La mayoría de los sistemas de e-commerce basados en plantillas pueden modificarse para añadir la información oculta en el recibo. <p class="line862">Urchin permite realizar el seguimiento de la información del carrito de la compra del dominio o de otros dominios con tan solo añadir un fragmento de código. Si desea configurar las páginas para informar a Urchin sobre los datos de transacción, consulte ¿Cómo se realiza el seguimiento de las transacciones de e-commerce? Además, si la tienda online se encuentra en un dominio o subdominio distinto del propio sitio web principal, consulte <a href="Tracking_Secure_Store_Transactions.html">Seguimiento de transacciones seguras en tiendas</a>. <p class="line874">En este documento se describe el formato del archivo de registro de ELF2 que crea el software del carrito de la compra y se explica cómo configurar Urchin para procesar registros de comercio electrónico. <p class="line867"><strong>Configuración de Urchin para archivos de registro de ELF2</strong> <p class="line874">Al configurar el tipo de registro de ELF2, debe seguir los parámetros de configuración que se indican a continuación. <ul><li>Acceda a la interfaz de administración como administrador. </li><li>Acceda a la pantalla de configuración. </li><li><p class="line862">En la pantalla de edición Fuente del registro -&gt;Configuración de registro establezca el Formato del registro en elf2 o automático </li><li><p class="line862">En la pantalla de editar Perfil -&gt;Configuración establezca el campo del sitio web de E-Commerce en SÍ </li></ul><p class="line874">El registro de e-commerce debe aparecer como una segunda fuente del registro, junto con el registro de sitio web principal, en el perfil que se cree para gestionar los informes de e-commerce. Urchin procesa los registros de forma secuencial. <p class="line867"><strong>Descripción del formato de registros de ELF2</strong> <p class="line874">ELF2 es un formato de registro de varias líneas separadas por tabulaciones. La primera línea empieza por un signo de exclamación '!' y contiene información general sobre la compra. Las líneas siguientes incluyen información detallada sobre los artículos adquiridos. La primera línea se refiere a la transacción y las siguientes a los artículos. Los campos vacíos deben incluir un carácter '-'. Dado que las tabulaciones se utilizan para separar campos, no es posible utilizar el carácter de tabulación dentro de un campo. <p class="line874">El aspecto general de un archivo de registro de ELF2 típico es el siguiente: <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>Línea de transacciones de ELF2</strong> <p class="line874">La línea de transacción de ELF2 empieza por un signo de exclamación '!' y contiene los siguientes campos separados por tabulaciones (los campos vacíos deben incluir el carácter '-'): <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">donde: <pre>    * %{ORDERID} es el número de pedido
+    * %{REMOTE_HOST} es el nombre de host/dirección IP del equipo remoto
+    * %{DATE/TIME} es la hora expresada en el formato de registro habitual [dd/mmm/aaaa:HH:MM:SS +/-ZZZZ]
+    * %{STORE} es el nombre/id del escaparate
+    * %{SESSIONID} es el identificador de sesión único del cliente
+    * %{TOTAL} es el importe total de la transacción incluidos los impuestos y gastos de envío (solo puede ser un valor decimal, sin caracteres '$')
+    * %{TAX} es el importe de los impuestos que se aplican al subtotal
+    * %{SHIPPING} es el importe de los gastos de envío
+    * %{BILL_CITY} es la ciudad de facturación del cliente
+    * %{BILL_STATE} es el estado de facturación del cliente
+    * %{BILL_ZIP} es el código postal de facturación del cliente
+    * %{BILL_COUNTRY} es el país de facturación del cliente
+    * %{USER_AGENT} es el user agent del navegador del cliente
+    * %{COOKIES} son las cookies entrantes que se incluyen en las cabeceras del navegador del cliente 
+</pre><p class="line867"><strong>Líneas de artículo de ELF2</strong> <p class="line874">La línea de artículo de ELF2 contiene los siguientes campos separados por tabulaciones (los campos vacíos deben incluir el carácter '-'): <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">donde: <pre>    * %{ORDERID} es el número de pedido
+    * %{REMOTE_HOST} es el nombre de host/dirección IP del equipo remoto
+    * %{DATE/TIME} es la hora expresada en el formato de registro habitual [dd/mm/aaaa:HH:MM:SS +/-ZZZZ]
+    * %{PRODUCT_CODE} es el identificador del producto
+    * %{PRODUCT_NAME} es el nombre del producto
+    * %{VARIATION} es una variación opcional del producto según color, tamaño, etc.
+    * %{PRICE} es el precio unitario del producto (solo puede ser un valor decimal, sin caracteres '$')
+    * %{QUANTITY} es la cantidad solicitada de este producto
+    * %{UPSOLD} es un valor booleano (0|1) si el producto se encontraba a la venta
+    * %{USER_AGENT} es el user agent del navegador del cliente
+    * %{COOKIES} son las cookies entrantes que se incluyen en las cabeceras del navegador del cliente 
+</pre><p class="line867"><strong>Ejemplo de archivo de registro ELF2 </strong> <p class="line874">Las dos líneas siguientes muestran una transacción y la correspondiente entrada de artículo de un registro ELF2: <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

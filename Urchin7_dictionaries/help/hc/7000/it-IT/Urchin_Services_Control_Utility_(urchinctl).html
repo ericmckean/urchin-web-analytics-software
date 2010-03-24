@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Utilità di controllo dei servizi di Urchin (urchinctl)</strong> <p class="line867"><strong>Panoramica</strong> <p class="line874">L'Urchin Services Control utility, urchinctl, verifica lo stato dei servizi Urchin Scheduler e Urchin Webserver e consente di avviare e arrestare questi servizi. Di solito, nei sistemi UNIX l'utilità urchinctl viene richiamata da uno degli script di avvio del sistema per attivare o disattivare automaticamente i servizi Urchin. <p class="line874">L'utilità urchinctl consente di effettuare le seguenti operazioni: <ul><li>Verifica dello stato del programma di pianificazione master e slave di Urchin6. </li><li class="gap">Avvio, arresto o riavvio del programma di pianificazione o del server web (o di entrambi). </li><li class="gap">Avvio del server web su una porta alternativa. </li><li class="gap">Avvio del server web con crittografia SSL. </li></ul><p class="line867"><strong>Utilizzo</strong> <p class="line874">L'utilità urchinctl è ubicata nella directory bin della distribuzione di Urchin. <p class="line874">L'utilità può essere utilizzata nei seguenti modi: <p class="line867"><pre>
+  urchinctl -h (consente di stampare il messaggio sull'utilizzo e di uscire)
+
+  urchinctl -v (consente di stampare la versione e di uscire)
+
+  urchinctl [-e] [-p port] [[-s] | [-w]] azione
+
+</pre><p class="line874">dove: <p class="line867"><pre>
+  -e attiva la crittografia (SSL) nel server web
+
+  -p specifica la porta di ascolto del server web
+
+  -s esegue l'azione SOLO sul programma di pianificazione di Urchin
+
+  -w esegue l'azione SOLO sul server web Urchin
+
+</pre><p class="line874">e l'azione è una delle seguenti: <p class="line867"><pre>
+  start (avvia il servizio o i servizi)
+
+  stop (arresta il servizio o i servizi)
+
+  restart (arresta e quindi riavvia il servizio o i servizi)
+
+  status (visualizza lo stato di runtime del server web/programma di pianificazione)
+
+</pre><p class="line874">Per impostazione predefinita, l'azione viene eseguita sia sul server web che nel programma di pianificazione, a meno che non siano specificate le opzioni "-s" (programma di pianificazione) oppure "-w" (server web). Tieni presente che queste opzioni si escludono reciprocamente. <p class="line867"><strong>Considerazioni</strong> <p class="line874">Nei sistemi UNIX, urchinctl deve essere eseguita come utente/UID di installazione di Urchin per assicurarsi che i processi urchinwebd e urchind siano avviati come questo UID. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

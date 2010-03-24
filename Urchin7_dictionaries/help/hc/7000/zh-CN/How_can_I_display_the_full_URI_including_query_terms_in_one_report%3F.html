@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>怎样在一个报告中显示包括查询字词在内的完整网址？</strong> <p class="line862">在 Urchin 6 中，查询模式显示在特殊的细目结构中：'内容优化 -&gt; 内容效果 -&gt; 网页查询字词'。如果要在'最常见内容'报告中显示完整的页面和查询模式，可使用下面的过滤器更改此数据的显示方法。 <p class="line867"><strong>请注意：</strong> 这将使所涉及的所有配置文件的处理时间有所延长。此外，由于唯一网页名称的增加，可能会导致您的数据库上限溢出。 <p class="line874">通过以下设置创建新的'配置文件过滤器'： <ul><li>过滤器类型：高级 </li><li>过滤器 A：request_stem (AUTO) - Extract A (.*) </li><li>过滤器 B：request_query (AUTO) - Extract B (.*) </li><li>输出至：request_stem (AUTO) - Constructor $A1/$B1 </li><li>覆盖输出字段：'是' </li><li>必填字段："二个字段" </li><li>区分大小写：'否' </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

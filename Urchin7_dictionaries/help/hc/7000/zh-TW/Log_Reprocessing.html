@@ -1,0 +1,11 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>重新處理記錄</strong> <p class="line867"><strong>總覽</strong> <p class="line874">在某些情況下，可能需重新處理記錄資料，例如 DNS 伺服器在處理時當機、錯誤套用篩選器等情況。以下文件將說明退出並重新處理網頁伺服器記錄資料的必要恰當程序。 <p class="line874">請注意重新處理記錄需使用僅於指令行殼層環境中提供的 Urchin 公用程式。單單在 Urchin 網頁式管理的圖形使用者介面中無法完成全部的程序。 <p class="line867"><strong>重新處理單一日期</strong> <ul><li>在 Urchin 使用者圖形管理介面中，編輯「設定檔」並關閉「儲存空間 / 資料庫」下方的「記錄追蹤」。務必按一下 [更新] 以儲存您的變更。 </li><li>在「記錄來源」標籤下方，確認已指定要重新處理的記錄檔。記錄資料應僅包含您要清除統計資料的當日點擊情況。 </li><li>在 Urchin 系統上調用指令殼層與 </li></ul><p class="line867"><pre>cd /&lt;URCHIN_DIR&gt;/util
+</pre><ul><li>在 Urchin 分佈的 'util' directory/folder 中，利用此指令執行 udb-sanitizer 公用程式 </li></ul><p class="line867"><pre>udb-sanitizer -p profile-name -d YYYYMM 
+</pre><ul><li style="list-style-type:none">此處的 YYYYMM 即是包含您想重新處理之日期的年份與月份 </li></ul><ul><li><p class="line862">選取選項 5，「清除」一天或數天資料。此公用程式會提示您正確日期，並清除該特定日期的統計資料。如需更多如何使用 udb-sanitizer 的範例，請參閱 udb-sanitizer：資料庫維護。 </li><li>在「設定檔」的「執行 / 排程」標籤下方按一下 [立即執行] 按鈕，即可重新處理記錄資料。 </li><li>將「記錄檔案路徑」變更回其原始設定，以重設「記錄來源」。 </li><li>在設定檔編輯區的「儲存空間 / 資料庫」下方，重新開啟「記錄追蹤」。 </li></ul><p class="line867"><strong>重新處理整個月份：</strong> <p class="line862">重新處理整個月份資料的程序與前述單一日期處理程序類似，唯一的差別是您需使用不同的 udb-sanitizer 選項。如需範例，請參閱 udb-sanitizer：資料庫維護。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

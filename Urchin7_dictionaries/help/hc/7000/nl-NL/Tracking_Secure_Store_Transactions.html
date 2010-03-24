@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Beveiligde winkeltransacties bijhouden</strong> <p class="line867"><em>Dit artikel is geschreven door </em> <a href="ivantageLimited.html">ivantage Limited</a><em>, een geautoriseerde softwareconsultant voor Urchin </em> <p class="line862">Met Urchin kunt u gegevens bijhouden voor winkelwagentjes in uw eigen domein of in andere domeinen door enkele regels code toe te voegen. Als u pagina's wilt instellen voor het rapporteren van transactiegegevens naar Urchin, leest u <a href="How_do_I_track_e-commerce_transactions%253F.html">Hoe houd ik e-commercetransacties bij?</a>. <p class="line874">Als uw winkelsite zich in een ander subdomein of domein bevindt dan uw hoofdsite, volgt u de onderstaande instructies om uw pagina's te configureren. <p class="line874">Als voor de betalingsprocedure op uw website een ander subdomein wordt gebruikt (bijvoorbeeld als u klanten doorstuurt van www.mijnwinkel.nl naar winkelwagentje.mijnwinkel.nl), gaat u als volgt te werk: <ul><li style="list-style-type:none">Voeg de volgende regel (vetgedrukt) toe aan de conversiecode voor zowel uw winkelsite als de pagina's van uw winkelwagentje: </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">Als voor de betalingsprocedure op uw website een aparte winkelsite wordt gebruikt (bijvoorbeeld als u klanten doorstuurt van www.mijnwinkel.nl naar www.veiligwagentje.nl), gaat u als volgt te werk: <ul><li style="list-style-type:none">Voeg de volgende regels (vetgedrukt) toe aan de conversiecode voor zowel uw winkelsite als de pagina's van uw winkelwagentje: </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Wijzig als volgt de links van de hoofdpagina naar de beveiligde site om <span class="u">utmLinker te gebruiken. Als uw huidige links er als volgt uitzien: </span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;Nu bestellen&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">wijzigt u deze in: </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;Nu bestellen&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;Nu bestellen&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">De bovenstaande code genereert links voor gebruikers, ongeacht of ze JavaScript hebben ingeschakeld. Apostrofs moeten worden uitgesloten met een backslash wanneer ze in de link of de tekst van de link verschijnen. Belangrijk: als uw pagina's een aanroep bevatten voor urchinTracker(), utmLinker(), utmSetTrans() of utmLinkPost(), moet uw Analytics-conversiecode in de HTML-code boven deze aanroepen worden geplaatst. In deze gevallen kan de conversiecode overal worden geplaatst tussen de &lt;body&gt;-openingstag en de JavaScript-aanroep. </li></ul><p class="line874">Als u informatie via formulieren verzendt naar uw winkelwagentje, gebruikt u de functie utmLinkPost(). Hiermee worden cookiegegevens toegevoegd aan de URL van het betreffende formulier. <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">Dit is ook geschikt voor formulieren die met method="GET" werken. <p class="line891"><strong>Belangrijk:</strong> als uw pagina's een aanroep bevatten voor urchinTracker(), utmLinker(), utmSetTrans() of utmLinkPost(), moet uw Analytics-conversiecode in de HTML-code boven deze oproepen worden geplaatst. In deze gevallen kan de conversiecode overal worden geplaatst tussen de &lt;body&gt;-openingstag en de JavaScript-aanroep. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

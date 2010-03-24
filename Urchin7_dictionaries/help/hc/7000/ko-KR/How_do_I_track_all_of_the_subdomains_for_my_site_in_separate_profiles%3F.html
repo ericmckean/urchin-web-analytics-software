@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>다른 프로필에 내 사이트의 하위 도메인을 모두 추적하려면 어떻게 해야 합니까?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>이 문서는 Urchin 소프트웨어 공인 컨설턴트인</em> <a href="ivantageLimited.html">ivantage Limited</a><em>에서 작성했습니다.</em> </li></ul><p class="line874">Urchin에서 개별 프로필의 하위 도메인을 추적하는 방법은 웹서버 구성에 따라 달라집니다.각 하위 도메인마다 별도의 로그 파일을 기록하도록 웹서버를 구성할 수 있습니다. 그러면 Urchin이 각 하위 도메인 로그 파일을 별도로 처리합니다.또는 하나의 로그 파일만 생성되고 웹 액세스 로그가 하위 도메인을 포함한 호스트 이름을 기록하도록 설정된 경우 하위 도메인의 프로필마다 구성할 수 있는 필터를 포함시킬 수 있습니다.예를 들어 특정 프로필의 필터는 help.example.co.uk에 대한 트래픽만 포함하고 다른 프로필은 www.example.co.uk에 대한 트래픽만 포함하도록 할 수 있습니다. <p class="line874">따라서 다른 프로필에서 하위 도메인을 모두 추적하려면 각 프로필에 포함 필터를 적용하여 특정 호스트 이름만 포함시킬 수 있습니다.우선 각 하위 도메인에 대한 프로필을 생성해야 합니다.프로필을 생성한 후 다음과 같은 필터를 만들 수 있습니다. <p class="line874">예를 들어 두 개의 프로필에서 sub.example.com 및 www.example.com을 추적하려면 다음 필터를 적용하십시오. <ul><li style="list-style-type:none">sub.example.com 프로필의 경우 </li></ul><p class="line867"><pre>    필터 유형:패턴만 포함
+    필터 입력란:utm_request_hostname (AUTO)
+    필터 패턴:^sub\.example\.com
+</pre><ul><li style="list-style-type:none">www.example.com 프로필의 경우 </li></ul><p class="line867"><pre>    필터 유형:패턴만 포함
+    필터 입력란:utm_request_hostname (AUTO)
+    필터 패턴:^www\.example\.com
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Protokollformat ELF2</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dieser Artikel wurde von</em> <a href="ivantageLimited.html">ivantage Limited</a><em> erstellt, einem autorisierten Berater für Urchin-Software. </em> </li></ul><p class="line867"><strong>HINWEIS</strong> <p class="line874">Frühere Versionen von Urchin beinhalteten die Unterstützung des Formats ELF für "Nur IP"-Tracking. Da in Urchin 6 kein "Nur IP"-Tracking vorgesehen ist, wird das Format ELF nicht mehr unterstützt.  <p class="line867"><strong>Übersicht</strong> <p class="line874">Das E-Commerce-Protokollformat 2 (ELF2) diente der Aufzeichnung von Informationen zu Kundentransaktionen in Online-Shops. Dieser Mechanismus zum Aufzeichnen von E-Commerce-Transaktionen wird jedoch von Urchin 6 nicht mehr unterstützt. Stattdessen unterstützt Urchin 6 ein clientseitiges Datensammlungsverfahren zur Erfassung von E-Commerce -Transaktionen. Mit einigen einfachen Ergänzungen an Ihrer Belegseite kann Urchin 6 die Transaktion und Produktinformationen automatisch erkennen und aufzeichnen. Die erforderlichen Informationen werden in einem verborgenen Formular abgelegt, das hinsichtlich Transaktions- und Produktinformationen analysiert wird. Die meisten vorlagengesteuerten E-Commerce-Systeme können so bearbeitet werden, dass diese verborgenen Informationen im Beleg enthalten sind. <p class="line862">Urchin kann Daten aus einem Warenkorb in Ihrer eigenen Domain erfassen sowie - durch Hinzufügen von Code - auch in anderen Domains. Informationen dazu, wie Sie Ihre Seiten einrichten, um Transaktionsdaten an Urchin berichten zu können, erhalten sie unter "Wie kann ich E-Commerce-Transaktionen erfassen? Lesen Sie außerdem <a href="Tracking_Secure_Store_Transactions.html">Tracking von Transaktionen eines sicheren Shops</a>, wenn sich Ihr Online-Shop auf einer anderen Sub-Domain oder Domain befindet als Ihre Hauptwebsite. <p class="line874">In diesem Hilfethema wird das Format der ELF2-Protokolldatei beschrieben, das von der Warenkorbsoftware erstellt wird, und wie Urchin zur Verarbeitung von E-Commerce-Protokollen konfiguriert wird. <p class="line867"><strong>Konfigurieren von Urchin für ELF2-Protokolldateien</strong> <p class="line874">Berücksichtigen Sie beim Einrichten des ELF2-Protokolltyps die folgenden Konfigurationsparameter. <ul><li>Melden Sie sich in der Verwaltungsoberfläche als Administrator an. </li><li>Öffnen Sie die Konfigurationsseite. </li><li><p class="line862">Legen Sie auf der Bearbeitungsseite "Protokollquelle -&gt; Protokolleinstellungen" das Protokollformat auf "elf2" oder "auto" fest. </li><li><p class="line862">Legen Sie auf der Seite "Profil -&gt; Einstellungen" das Feld "E-Commerce-Website" auf JA fest. </li></ul><p class="line874">Ihr E-Commerce-Protokoll sollte als zweite Protokollquelle neben dem Protokoll Ihrer Hauptwebsite in dem Profil aufgeführt werden, das zur Verarbeitung Ihrer E-Commerce-Berichte erstellt wird. Die Protokolle werden in Urchin nacheinander verarbeitet. <p class="line867"><strong>Beschreibung des ELF2-Protokollformats</strong> <p class="line874">ELF2 ist ein durch Tabulatoren getrenntes, mehrzeiliges Protokollformat. Die erste Zeile beginnt mit einem Ausrufezeichen "!" und enthält allgemeine Informationen zum Kauf. Folgende Zeilen enthalten detaillierte Informationen zu den gekauften Artikeln. Die erste Zeile wird Transaktionszeile und die folgenden Zeilen werden Eintragszeilen genannt. Leere Felder sollten ein "-"-Zeichen enthalten. Das Tabulatorzeichen ist in einem Feld nicht zulässig, da es zum Trennen der Felder verwendet wird. <p class="line874">Eine typische ELF2-Protokolldatei hat in der Regel folgendes Format: <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>ELF2-Transaktionszeile</strong> <p class="line874">Die ELF2-Transaktionszeile beginnt mit einem Ausrufezeichen "!" und enthält folgende durch Tabulatoren getrennte Felder (leere Felder sollten ein "-"-Zeichen enthalten): <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">Hierbei gilt: <pre>    * %{ORDERID} entspricht der Auftragsnummer.
+    * %{REMOTE_HOST} entspricht dem Hostnamen/der IP-Adresse des Remote-Computers.
+    * %{DATE/TIME} entspricht der Zeit im allgemeinen Protokollformat [TT/MM/JJJJ:HH:MM:SS +/-ZZZZ].
+    * %{STORE} entspricht dem Namen/der ID des Shops.
+    * %{SESSIONID} entspricht der eindeutigen Sitzungskennung des Kunden.
+    * %{TOTAL} entspricht dem Gesamtbetrag der Transaktion, einschließlich Steuern und Versandkosten (nur Dezimalstellen, keine "$"-Zeichen).
+    * %{TAX} entspricht dem Steuerbetrag, der zur Zwischensumme hinzugerechnet wird.
+    * %{SHIPPING} entspricht den Versandkosten.
+    * %{BILL_CITY} entspricht der Stadt der Rechnungsadresse des Kunden.
+    * %{BILL_STATE} entspricht dem Bundesland der Rechnungsadresse des Kunden.
+    * %{BILL_ZIP} entspricht der Postleitzahl der Rechnungsadresse des Kunden.
+    * %{BILL_COUNTRY} entspricht dem Land der Rechnungsadresse des Kunden.
+    * %{USER_AGENT} entspricht dem User-Agent des Browsers des Kunden.
+    * %{COOKIES} sind die eingehenden Cookies, die in den Headern der Kunden-Browser enthalten sind. 
+</pre><p class="line867"><strong>ELF2-Eintragszeile</strong> <p class="line874">Die ELF2-Eintragszeile enthält folgende durch Tabulatoren getrennte Felder (leere Felder sollten ein "-"-Zeichen enthalten): <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">Hierbei gilt: <pre>    * %{ORDERID} entspricht der Auftragsnummer.
+    * %{REMOTE_HOST} entspricht dem Hostnamen/der IP-Adresse des Remote-Computers.
+    * %{DATE/TIME} entspricht der Zeit im allgemeinen Protokollformat [TT/MM/JJJJ:HH:MM:SS +/-ZZZZ].
+    * %{PRODUCT_CODE} entspricht dem Kennzeichner des Produkts.
+    * %{PRODUCT_NAME} entspricht dem Namen des Produkts.
+    * %{VARIATION} entspricht einer optionalen Variation des Produkts, z. B. hinsichtlich Farbe oder Größe.
+    * %{PRICE} entspricht dem Einheitspreis des Produkts (nur Dezimalstellen, keine "$"-Zeichen).
+    * %{QUANTITY} entspricht der Bestellmenge des Produkts.
+    * %{UPSOLD} entspricht einem booleschen Wert (0|1), wenn das Produkt zum Verkauf stand.
+    * %{USER_AGENT} entspricht dem User Agent des Browsers des Kunden.
+    * %{COOKIES} sind die eingehenden Cookies, die in den Headern der Browsers des Kunden enthalten sind. 
+</pre><p class="line867"><strong>Beispiel für eine ELF2-Protokolldatei</strong> <p class="line874">Die folgenden Zeilen veranschaulichen eine Transaktion und die entsprechenden Einträge im einem ELF2-Protokoll: <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

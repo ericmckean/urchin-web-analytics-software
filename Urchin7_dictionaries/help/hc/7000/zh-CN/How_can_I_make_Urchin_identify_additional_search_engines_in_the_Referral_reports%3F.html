@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何使 Urchin 识别推介链接报告中的其他搜索引擎？</strong> <p class="line874">默认情况下，Urchin 可跟踪 UTM 文件中列出的 20 种搜索引擎的推介链接。您也可按照以下方式修改 UTM 文件，将 Urchin 配置为识别来自其他搜索引擎的推介链接： <ol type="1"><li>在文本编辑器中打开 urchin.js 文件。 </li><li>向下滚动到以下内容： </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>您会看到编号为 0-19 的搜索引擎条目。这些是 Urchin 默认情况下跟踪的搜索引擎。要将其他搜索引擎添加到列表中，只要按照其他条目的格式加入新条目即可。例如，可按照下面的方式，加入搜索引擎"new"的条目： </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">_uOsr 的值应为搜索引擎的名称，_uOkw 的值应为存储关键字的查询变量。例如，如果用户搜索"motorcycle"（摩托车），搜索结果的网址为： </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">_uOkw 的值会是"q"。 _uOsr 的值会是"google"。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

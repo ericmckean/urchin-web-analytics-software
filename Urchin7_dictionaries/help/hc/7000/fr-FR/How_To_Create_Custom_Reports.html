@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Création de rapports personnalisés</strong> <p class="line874">Pour créer un rapport personnalisé, procédez comme suit : <ol type="1"><li><p class="line862">Choisissez un tableau de carte de données ou définissez-en un nouveau (reportez-vous à <a href="Custom_Data_Maps.html">Cartes de données personnalisées</a>). </li><li><p class="line862">Créez un fichier de rapport (".rs2") en copiant &lt;Urchin&gt;/lib/custom/profiletypes/Default/default.rs2.sample. </li><li>Définissez un nouveau rapport en ajoutant une ligne dans le fichier de rapport. </li></ol><p class="line874">Le format du fichier de rapport est décrit ci-après : <ul><li>ID (identifiant unique du rapport) : <ul><li>C=Catégorie </li><li>D=Données </li><li>M=Menu </li><li>R=Rapport </li><li>S=Sous-rapport </li><li>P=Rapport de page </li><li>B=Tableau de bord </li></ul></li><li>RS (tableau de bord/sections de rapports) : <ul><li>1=dirigeants </li><li>2=responsable marketing </li><li>4=webmaster </li></ul></li><li>RR (exigences des rapports) : <ul><li>1=Logiciels </li><li>2=Avancé </li><li>4=Commerce électronique </li><li>8=UTM </li></ul></li><li>NTITLE : titre de navigation (n d'entrée de dictionnaire) </li><li>ONCOLOR : couleur de l'élément activé </li><li>OFFCOLOR : couleur de l'élément désactivé </li><li>HELP : aide du rapport (n d'entrée de dictionnaire) </li><li>NDATA : nombre d'éléments de données (les entrées doivent suivre immédiatement après) <ul><li>Ce champ peut être suivi de sous-rapports supplémentaires avec type D (données) </li></ul></li><li>CTITLES : titres des colonnes (n d'entrée de dictionnaire) </li><li>CTYPES : type de colonne utilisé pour la mise en forme <ul><li>10=chaîne </li><li>11=date/mois de l'année </li><li>12=date </li><li>20=numéro </li><li>21=chiffre d'affaires </li><li>22=octets </li><li>23=ratio de durée </li><li>24=ratio </li><li>25=pct </li><li>26=durée </li><li>30=pct total </li><li>40=chiffre d'affaires </li><li>41=chiffre d'affaires/num </li><li>42=num/chiffre d'affaires </li></ul></li><li>TABLE (numéro de tableau de données) : <ul><li>T=total </li><li>TR=transaction </li><li>H=histogramme </li><li>V=visiteur </li><li>Tableau 1-n </li></ul></li><li>DXFORMAT : format d'extraction de données </li><li>RF : champ obligatoire </li><li>RT : type de rapport <ul><li>1=totaux du graphique </li><li>2=histogramme </li><li>3=pile </li><li>4=pages les plus consultées </li><li>5=arborescence </li><li>6=répertoire </li><li>7=limites du graphique </li><li>8=point </li><li>9=clics </li><li>10=entonnoir de conversion défini </li><li>11=synthèse données/site de la page d'accueil </li><li>12=synthèse géographique </li><li>13=vérification de l'objectif </li><li>14=chemin vers l'objectif </li><li>20=rapport dates KPI </li><li>21=top 10 KPI </li><li>22=résumé des tendances </li><li>23=résumé des conversions </li><li>24=carte Google Mini </li></ul></li><li>GTYPES (types de graphique) : <ul><li>1=bâtons </li><li>2=linéaire </li><li>3=circulaire </li><li>4=barres horizontales </li><li>5=entonnoir de conversion </li><li>6=multiligne </li></ul></li><li>FSEP : séparateur de champs </li><li>SP (options spéciales) (ajouter numéros bitmap) : <ul><li>1=totaux </li><li>2=moyennes </li><li>4=comparer des dates </li><li>8=mettre en minuscules </li><li>16=données par période </li><li>32=synthèse </li><li>64=choix de la langue </li><li>128=segment </li><li>256=durée de vie </li><li>512=détails de la transaction </li><li>1024=détail de l'historique du visiteur </li><li>2048=recherche d'un terme </li></ul></li><li>SR (indicateur de rapport spécial) : <ul><li>1=suggestions de mots clés </li><li>2=clics </li><li>3=répartition sur la journée </li><li>4=liste des visiteurs </li><li>5=synthèse géographique </li><li>6=dictionnaire personnalisé </li><li>7=comparaison de dates </li></ul></li><li>FNT (type de filtre, numéro de filtre) : <ul><li>1: = </li><li><p class="line862">2: &gt;= </li><li><p class="line862">3: &lt;= </li><li><p class="line862">4: &gt; </li><li><p class="line862">5: &lt; </li></ul></li><li>FNF : champ de numéro de filtre </li><li>FNV : valeur de filtre </li><li>FST (type de chaîne de filtre) : <ul><li>1=exclure </li><li>2=inclure </li></ul></li><li>FSF : champ de chaîne de filtre </li><li>FSX : chaîne d'expression rationnelle </li></ul><p class="line874">Vous trouverez ci-après un exemple de ligne de rapport et les explications correspondantes : <div><table><tbody><tr>  <td><p class="line862">ID </td>
+  <td><p class="line862"> S1208 </td>
+  <td><p class="line862"> Sous-rapport dont l'identifiant est 1208 </td>
+</tr>
+<tr>  <td><p class="line862">DS </td>
+  <td><p class="line862"> 1 </td>
+  <td><p class="line862"> Section de rapport pour les dirigeants </td>
+</tr>
+<tr>  <td><p class="line862">RR </td>
+  <td><p class="line862"> 8 </td>
+  <td><p class="line862">UTM doit être activé. </td>
+</tr>
+<tr>  <td><p class="line862">NTITLE </td>
+  <td><p class="line862">     162 </td>
+  <td><p class="line862"> Titre de navigation du menu </td>
+</tr>
+<tr>  <td><p class="line862">ONCOLOR </td>
+  <td><p class="line862">    #A2C488 </td>
+  <td><p class="line862">      Couleur de survol du menu activée </td>
+</tr>
+<tr>  <td><p class="line862">OFFCOLOR </td>
+  <td><p class="line862">   #D0E1C3 </td>
+  <td><p class="line862">      Couleur de survol du menu désactivée </td>
+</tr>
+<tr>  <td><p class="line862">HELP </td>
+  <td><p class="line862">       163 </td>
+  <td><p class="line862"> Entrée de l'aide </td>
+</tr>
+<tr>  <td><p class="line862">NDATA </td>
+  <td><p class="line862">      - </td>
+  <td><p class="line862"> Aucune donnée dans les sous-rapports </td>
+</tr>
+<tr>  <td><p class="line862"> CTITLES </td>
+  <td><p class="line862"> 73,2,17,54,55,56,57,74,75 </td>
+  <td><p class="line862"> Libellés des colonnes dans le tableau du rapport </td>
+</tr>
+<tr>  <td><p class="line862"> CTYPES </td>
+  <td><p class="line862">    10,20,24,25,25,25,25,24,41 </td>
+  <td><p class="line862"> Types de colonnes dans le tableau du rapport </td>
+</tr>
+<tr>  <td><p class="line862"> TABLE </td>
+  <td><p class="line862">     1 </td>
+  <td><p class="line862"> Identifiant de la carte des données </td>
+</tr>
+<tr>  <td><p class="line862">DXFORMAT </td>
+  <td><p class="line862">   $A[$B],11,5/11,28/11,29/11,30/11,31/11,15/11,19/11 </td>
+  <td><p class="line862">Format d'extraction de données </td>
+</tr>
+<tr>  <td><p class="line862">RF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Aucun champ obligatoire </td>
+</tr>
+<tr>  <td><p class="line862">RT </td>
+  <td><p class="line862"> 4 </td>
+  <td><p class="line862"> Le type de rapport est "pages les plus consultées". </td>
+</tr>
+<tr>  <td><p class="line862">GTYPES </td>
+  <td><p class="line862">     3,4 </td>
+  <td><p class="line862">  Deux types de graphique : "circulaire" et "à barres horizontales". </td>
+</tr>
+<tr>  <td><p class="line862"> FSEP </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862">Le séparateur de champs n'est pas utilisé. </td>
+</tr>
+<tr>  <td><p class="line862"> SP </td>
+  <td><p class="line862"> 1428 </td>
+  <td><p class="line862"> Options spéciales utilisées : 4 (comparer des dates), 16 (données par période), 128 (segment), 256 (durée de vie) et 1024 (détail de l'historique du visiteur) </td>
+</tr>
+<tr>  <td><p class="line862">SR </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Rapport standard </td>
+</tr>
+<tr>  <td><p class="line862"> FNT </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Le filtre facultatif n'est pas utilisé. </td>
+</tr>
+<tr>  <td><p class="line862"> FNF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Le filtre facultatif n'est pas utilisé. </td>
+</tr>
+<tr>  <td><p class="line862"> FNV </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Le filtre facultatif n'est pas utilisé. </td>
+</tr>
+<tr>  <td><p class="line862"> FST </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Le filtre facultatif n'est pas utilisé. </td>
+</tr>
+<tr>  <td><p class="line862"> FSF </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Le filtre facultatif n'est pas utilisé. </td>
+</tr>
+<tr>  <td><p class="line862"> FSX </td>
+  <td><p class="line862"> - </td>
+  <td><p class="line862"> Le filtre facultatif n'est pas utilisé. </td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

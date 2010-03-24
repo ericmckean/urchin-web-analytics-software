@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Por que o meu arquivo de registro não pode ser lido, mesmo sendo legível para o grupo?</strong> <p class="line874">O número de erro "7026-76-*" que resulta em um arquivo de registro que não pode ser lido, mesmo sendo legível para o grupo, é um problema conhecido na funcionalidade setuid/setgid do binário do urchin.Por questões de segurança, o mecanismo do urchin será executado como proprietário do binário, mesmo sendo iniciado como raiz.Nessas condições, apenas o id de grupo exato, e não a lista de grupos, será visto pelo aplicativo. <p class="line874">Para corrigir o problema, talvez seja necessário alterar as permissões no arquivo de registro para universalmente legível ou alterar o grupo para o grupo exato do usuário do urchin.Isso afeta apenas arquiteturas do tipo UNIX. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

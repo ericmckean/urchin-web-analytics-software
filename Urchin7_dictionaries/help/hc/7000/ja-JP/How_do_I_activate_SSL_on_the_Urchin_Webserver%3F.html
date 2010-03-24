@@ -1,0 +1,22 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin ウェブサーバーで SSL を有効にする</strong> <p class="line874">Urchin に実装されている Urchin ウェブサーバーでは、SSL で通信を暗号化することができます。SSL を有効にするには、認証機関の署名が入った有効な証明書か、自己署名証明書が必要です。 <p class="line874">Urchin ウェブサーバーで SSL を有効にする方法は下記のとおりです。 <ol type="1"><li>SSL 認証ファイルを Urchin の var ディレクトリにコピーし、server.crt という名前を付けます。 </li><li>SSL キー ファイルを Urchin の var ディレクトリにコピーし、server.key という名前を付けます。 </li><li>Urchin の var ディレクトリにある urchinwebd.conf.template ファイルを編集します。 <ol type="1"><li>（Urchin 6.6+ を使用している場合は、この手順を省略してください。）「Port」の行をコメント アウトし、Listen ディレクティブのコメントを外します。 <pre>          #XXXPortXXX
+          Listen 443
+          </pre></li><li class="gap"><p class="line891">ServerName ディレクティブを localhost からウェブサーバーの名前に変更します。たとえば下記のように変更します。 <pre>          ServerName: www.urchin.com
+          </pre></li><li style="list-style-type:none"><p class="line862">注: urchinwebd.conf.template ファイルの ServerName は、認証ファイルで指定されているサーバー名と一致する必要があります。 </li></ol></li><li>-e オプションで urchinctl を実行し、ウェブサーバーを起動または再起動します。urchinctl は Urchin の bin ディレクトリにあります。urchinctl に -e オプションを使用することにより、ウェブサーバーで SSL を使用できるようになります。たとえば、ポート 443 で SSL を有効にしてウェブサーバーを再起動する場合は下記のように指定します。  Urchin 6.6 より前のバージョンの場合: <pre>   urchinctl -e -w restart
+   </pre>Urchin 6.6 以降のバージョンの場合: <pre>   urchinctl -e -p 443 -w restart
+   </pre><p class="line891"><span class="u">注</span>: SSL を有効にせずにサーバーを起動する場合は、-e オプションを外します。 </li></ol><p class="line862">これで、<a class="https" href="https://servername.domain.com:port/">https://servername.domain.com:port/</a> を使用して SSL を有効にしたサーバーへのアクセスが可能になります。 <p class="line867"><span class="u">注</span>: urchinwebd.conf.template の SSL 設定をカスタマイズすると、問題が発生しウェブサーバーを起動できない場合があります。 <p class="line867"><strong>Windows を使用している場合の手順</strong> <p class="line874">Urchin ウェブサーバーで SSL を有効にする方法は下記のとおりです。 <ol type="1"><li>SSL 認証ファイルを Urchin の var ディレクトリにコピーし、server.crt という名前を付けます。 </li><li>SSL キー ファイルを Urchin の var ディレクトリにコピーし、server.key という名前を付けます。 </li><li>Urchin の var ディレクトリにある urchinwebd.conf.template ファイルを編集します。 <ol type="1"><li>（Urchin 6.6+ を使用している場合は、この手順を省略してください。）「Port」の行をコメント アウトし、Listen ディレクティブのコメントを外します。 <pre>          #XXXPortXXX
+          Listen 443
+          </pre></li><li class="gap">次の行のコメントを外し、ウェブサーバーの起動時に mod_ssl.so が読み込まれるようにします。 <pre>          LoadModule ssl_module etc/mod_ssl.so
+          </pre></li><li class="gap"><p class="line891">ServerName ディレクティブを localhost からウェブサーバーの名前に変更します。たとえば下記のように変更します。 <pre>          ServerName: www.urchin.com
+          </pre></li><li style="list-style-type:none"><p class="line862">注: urchinwebd.conf.template ファイルの ServerName は、認証ファイルで指定されているサーバー名と一致する必要があります。 </li></ol></li><li>ウェブサーバー サービスを一度削除し、-e オプションで urchinctl を実行してもう一度インストールします。urchinctl は Urchin の bin ディレクトリにあります。urchinctl に -e オプションを使用することにより、ウェブサーバーで SSL を使用できるようになります。たとえば、ウェブサーバーを削除してからポート 443 で SSL を有効にして再インストールする場合は下記のように指定します。  Urchin 6.6 より前のバージョンの場合: <pre>   urchinctl.exe -w remove
+   urchinctl.exe -w -e install
+   </pre>Urchin 6.6 以降のバージョンの場合: <pre>   urchinctl.exe -w remove
+   urchinctl.exe -e -p 443 -w install
+   </pre><p class="line891"><span class="u">注</span>: SSL を有効にせずにサーバーを起動する場合は、-e オプションを外します。 </li></ol><p class="line862">これで、<a class="https" href="https://servername.domain.com:port/">https://servername.domain.com:port/</a> を使用して SSL を有効にしたサーバーへのアクセスが可能になります。 <p class="line867"><span class="u">注</span>: urchinwebd.conf.template の SSL 設定をカスタマイズすると、問題が発生しウェブサーバーを起動できない場合があります。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

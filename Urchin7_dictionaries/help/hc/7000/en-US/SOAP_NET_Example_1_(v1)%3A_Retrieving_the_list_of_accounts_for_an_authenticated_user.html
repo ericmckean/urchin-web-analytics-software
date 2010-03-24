@@ -1,0 +1,22 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>SOAP .NET Example 1: Retrieving the list of accounts for an authenticated user</strong> <p class="line862">(Return to main article: <a href="Samples_for_.NET_(SOAP)_v1.html">Samples for .NET (SOAP) v1</a>) <p class="line874">1. To use the types from the generated class without specifying the namespace, include the namespace as follows: <p class="line867"><pre>using SampleCode.com.google.DataAPI.AdminService;
+</pre><p class="line874">2. Specify login information: <p class="line867"><pre>private const string login = "YOUR_LOGIN";
+private const string password = "YOUR_PASSWORD";
+</pre><p class="line862">3. Define a service connection for AdminService API: <p class="line867"><pre>adminservice adminService = new adminservice();
+</pre><p class="line874">4. Execute request: <p class="line867"><pre>Account[] accounts = adminService.getAccountList(login, password);
+</pre><p class="line874">5. Parse and display results: <p class="line867"><pre>    foreach (Account account in accounts)
+    {
+      Console.Write("Account id is \"" + account.accountId + "\", ");
+      Console.Write("name is \"" + account.accountName + "\", ");
+      Console.Write("contact name is \"" + account.contactName + "\", ");
+      Console.Write("e-mail is \"" + account.emailAddress + "\" ");
+      Console.WriteLine("and phone number is \"" + account.phoneNumber + "\".");
+    }
+</pre><p class="line874">Complete sample code for this example is available in the AdminServiceGetAccountListSOAP.cs file. <p class="line862">(Return to main article: <a href="Samples_for_.NET_(SOAP)_v1.html">Samples for .NET (SOAP) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

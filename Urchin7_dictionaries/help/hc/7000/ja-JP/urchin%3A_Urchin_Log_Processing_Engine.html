@@ -1,0 +1,33 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>urchin: Urchin ログ処理</strong> <p class="line867"><strong>概要</strong> <p class="line874">Urchin ログ処理エンジン、urchin は、Urchin のログ処理の中心となるコンポーネントです。 通常、ログ処理エンジンは、タスク実行時に Urchin Scheduler (urchind) から呼び出されます。 しかし、コマンド シェルから直接 urchin を実行し、特定のプロファイルを実行することもできます。 これは、Windows タスク スケジューラ、または UNIX タイプのシステムの cron など、外部ソースから Urchin タスクを実行するため高度にスクリプト化された環境下で有用な機能です。 また、特定の日のアクセス数のみを処理する場合や、特定のタイプのデバッグを行なう場合など、特別の状況下でプロファイルを実行する場合にも便利です。 <p class="line874">Urchin は厳密にはユーティリティではございませんが、特別な場合に役に立つコマンド ライン機能についてここで説明します。 <p class="line867"><strong>使用方法</strong> <p class="line874">urchin は Urchin ディストリビューションの bin  ディレクトリにございます。 使用方法は下記のようになります。 <p class="line867"><pre>
+urchin [options...] (-p &lt;profile name&gt; | -P &lt;profile id&gt;)
+
+</pre><p class="line874">オプション: <p class="line867"><pre>
+-a &lt;account name&gt;       プロファイルのアカウント名を指定します。 デフォルトでは、アカウント名は '(なし)' に設定されています。
+
+-D                      デバッグ モードを有効化します
+
+-d &lt;YYYYMMDD&gt;           処理日を指定します
+
+-H                      実行出力を履歴ファイルに記録するよう指定します。 -H が指定され、-T が指定されていない場合、新しいタスクの履歴が作成されます
+
+-h                      ヘルプ情報を出力して終了します
+
+-P &lt;profile id&gt;         処理するプロファイルの ID を指定します
+
+-p &lt;profile name&gt;       処理するプロファイル名を指定します
+
+-T &lt;task id&gt;            更新するタスク履歴レコードを指定します。 -T を指定した場合は -H も実行されます
+
+-t                      設定データを出力して終了します
+
+-v                      バージョン番号を出力して終了します
+
+</pre><p class="line867"><strong>アドバイス</strong> <ul><li>UNIX システムで urchin を実行する場合、Urchin がインストールされたユーザー、UID を使用し、プロファイルのデータベースと同じ UID で開始されるようにします。データベースが見つからない場合、urchin によりデータベースが作成されます。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

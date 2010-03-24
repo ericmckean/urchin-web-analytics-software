@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 为什么不跟踪我的目标？</strong> <p class="line874">造成报告不跟踪目标的原因有很多。以下列出了最常见的一些问题。 <ul><li>您正在对目标使用完全匹配。 <ul><li style="list-style-type:none"><p class="line862">如果为目标使用完全匹配（即 <tt>http://domain.com/page.html</tt>），则任何在末尾的空格都会造成目标无效。如果使用部分匹配（即 ^/page.html），则末尾空格便不会产生问题。 在设置目标时，最好只将网址的主干部分作为目标。例如，如果目标为 www.domain.com/1/thanks.html，则输入 /1/thanks\.html 作为目标。 <p class="line862">提示：当您输入网址主干（任何不含 <tt>http://</tt> 的网址）时，Urchin 会将其作为正则表达式处理。您需要使用反斜杠 (\) 对句点或其他通配符进行转义。 </li></ul></li><li class="gap">未使用 UTM 对目标页进行标记。 <ul><li style="list-style-type:none">如果未使用 UTM 对目标页进行标记，Urchin 将不会跟踪该页，因此也就不会报告该目标。 </li></ul></li><li class="gap">目标页是下载文件（如 PDF） <ul><li style="list-style-type:none">Urchin 不会直接将下载文件作为目标进行跟踪，相反，如果使用了下载链接，则需要调用 urchinTracker 函数。然后可将作为参数指定给 urchinTracker 的综合浏览名称作为目标。 </li></ul></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

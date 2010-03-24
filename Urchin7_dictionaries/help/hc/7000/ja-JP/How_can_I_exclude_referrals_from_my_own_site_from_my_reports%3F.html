@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>自分のサイトからの参照をレポートから除外する</strong> <p class="line874">自分のサイトからの参照を参照元レポートから除外するには、urchin.js ファイルを若干変更する必要があります。 テキスト エディタでファイルを開き、次のセクションを挿入します。 <pre>    //-- Referral domains to Ignore
+    var _uRno=new Array();
+    _uRno[0]=".urchin.com";
+</pre><p class="line874">上記の例では、.urchin.com を含むヒットが参照から除外されます。 追加するドメインがある場合は、ファイルを編集して _uRno[x] 値を追加し、x の数値を自由に増やせるようにします。 次に例を示します。 <pre>    //-- Referral domains to Ignore
+    var _uRno=new Array();
+    _uRno[0]=".urchin.com";
+    _uRno[1]=".urchin.net";
+    _uRno[2]=".urchinsoftware.com"
+</pre><p class="line874">urchin.js を編集した場合は、更新後のファイルをウェブサーバーにアップロードして変更が反映されるようにする必要があります。  </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

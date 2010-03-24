@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Définition de segments de visiteurs personnalisés</strong> <p class="line874">Outre la segmentation des utilisateurs en fonction de segments prédéfinis, tels que la localisation géographique ou les préférences de langue, Urchin 6 vous permet de définir des segments personnalisés et d'analyser le comportement de chaque segment. Par exemple, vous pouvez demander aux visiteurs de cocher, dans un formulaire, une catégorie professionnelle : Technique/Ingénierie, Marketing/PR, etc. Vous pouvez alors analyser les liens existants entre le comportement d'achat et de navigation des visiteurs et la catégorie professionnelle qu'ils ont sélectionnée. <p class="line862">Vous pouvez afficher le comportement en termes de conversion pour chacun des segments personnalisés dans le rapport Optimisation du marketing &gt; Performances par segment &gt; Défini par l'utilisateur. En outre, de nombreux autres rapports vous permettent d'effectuer des analyses croisées des données en fonction d'un segment de visiteurs. Pour effectuer une analyse croisée, cliquez sur le bouton Options d'analyse qui se trouve complètement à gauche des entrées dans la plupart des rapports. Sélectionnez "Défini par l'utilisateur" pour afficher vos segments personnalisés. <p class="line862">Pour définir un segment de visiteurs, appelez la fonction JavaScript <tt class="backtick">__</tt>utmSetVar. Par exemple, insérez l'appel de fonction suivant à n'importe quel endroit de la page Web, en dessous de l'UTM : <p class="line867"><pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line874">Exemple : Associer les visiteurs de cette page au segment "Marketing/PR" <p class="line874">Dans cet exemple, tous les visiteurs de la page seront associés au segment "Marketing/PR". <p class="line867"><pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line874">Exemple : Associer des visiteurs au segment qu'ils ont sélectionné <p class="line874">Dans cet exemple, les visiteurs sont associés à un segment en fonction de leurs sélections dans un formulaire. <p class="line867"><pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;Technique/Ingénierie&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;Marketing/PR&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;Fabrication&lt;/option&gt;
+    &lt;option value="General Management"&gt;Direction générale&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

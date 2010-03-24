@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin에서 추천 보고서의 추가 검색엔진을 식별하려면 어떻게 해야 합니까?</strong> <p class="line874">기본적으로 Urchin은 UTM 파일에 나와 있는 20개의 검색엔진에서 추천을 추적합니다.또한 UTM 파일을 다음과 같이 수정하여 추가 검색엔진에서 추천을 식별하도록 Urchin을 구성할 수도 있습니다. <ol type="1"><li>텍스트 편집기에서 urchin 파일을 엽니다. </li><li>다음으로 스크롤합니다. </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>0-19까지의 숫자가 매겨진 검색엔진 항목이 나타납니다.이 항목들은 기본적으로 Urchin이 추적하는 검색엔진입니다.목록에 다른 검색엔진을 추가하려면 다른 항목과 같은 형식으로 새 항목을 추가하면 됩니다.예를 들어 다음은 'new'라는 검색엔진 항목을 추가하는 방법은 다음과 같습니다. </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">_uOsr에 대한 값은 검색엔진의 이름이어야 하며, _uOkw에 대한 값은 키워드를 저장하는 검색어 변수여야 합니다.예를 들어 사용자가 'motorcycle'을 검색하는 경우 검색결과 URL은 다음과 같습니다. </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">_uOkw 값은 'q'가 됩니다. _uOsr 값은 'google'이 됩니다. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

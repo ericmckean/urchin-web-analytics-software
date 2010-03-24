@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>UTM Quick-Install (IIS) (英語)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>この記事は、Urchin ソフトウェア認定コンサルタントの </em> EpikOne:EpikOne<em> によって作成されています </em> </li></ul><p class="line874">各種 Windows プラットフォームの Microsoft IIS サーバー上で実行するウェブサイトへの UTM のインストールについて、概要を説明します。 UTM に関する詳細情報については、このセクションの "Urchin トラフィック モニタ (UTM)" を参照してください。 <p class="line867"><strong>ステップ 1: </strong> UTM ファイルをウェブサイトのドキュメント ルートにコピーします。 UTM ファイル (urchin.js、<tt class="backtick">__</tt>utm.gif) は Urchin の "utils\utm" フォルダにございます。 この 2 つのファイルをウェブサイトのコンテンツのメイン フォルダにコピーします。 重要:  GIF ファイル名は 2 文字のアンダースコアで始まります。 <p class="line867"><strong>ステップ 2: </strong> ウェブサイトの HTML に UTM への参照を設定します。 すべての HTML ページに下記の行を挿入します。 ページ内のどの場所でも挿入できますが、&lt;/body&gt; タグの直前をおすすめします。 インクルードまたはテンプレートを共有している場合は、これらのファイルのいずれかに挿入してください。 <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line874">"HTML Tidy" などのパッケージを使用している場合は、ページの HEAD セクションに下記のような Javascript 行を含めることができます。 <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>ステップ 3: </strong> IIS ログで cookies を有効にします。 IIS マネージャを開き、ウェブサイトの設定ウィンドウに移動します。 ログが有効になっていること、ログ形式が W3C Extended になっていることを確認してください。 [拡張プロパティ] タブの下の "設定" の隣りにある [プロパティ] ボタンをクリックし、"Cookie" の隣りのチェック ボックスをオンにします。 <p class="line867"><strong>ステップ 4: </strong> Urchin トラフィック モニタ (UTM) で使用する Urchin プロファイルを設定します。 Urchin 管理インターフェースで、対象のプロファイルを編集して [設定] タブをクリックします。 [ユーザーのトラッキング方法] を「Urchin トラフィック モニタ (UTM)」に設定します。 [UTM ドメイン] にウェブサイトの URL (「www.」を除く) を入力します。  その後、[レポート セット] でデフォルトを選択し、[更新] ボタンをクリックします。 <p class="line874">上記の手順を完了すると ウェブサイトの通常のログ ファイルに UTM データが記録されるようになります。このログ ファイルは、Urchin の下記実行時に識別されます。 <p class="line874">動作の確認 UTM でログ ファイルにエントリが正しく作成されているかどうかを確認するには、UTM をインストールし、サイトのページをいくつかクリックしてからログを確認します。 ログ ファイルの末尾に下記のようなエントリが記述されます。 <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">utma エントリがない場合は、ログで cookie が有効になっていることを確認してください。 ステータス コードが「200」でない場合は、ファイルがドキュメントのルート ディレクトリに正しくコピーされていることを確認してください。<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

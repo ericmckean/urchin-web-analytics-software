@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何从报告中排除来自我自己网站的推介链接？</strong> <p class="line874">要从"推介链接"报告中排除您自己网站的推介链接，需要对 urchin.js 文件稍加修改。在您喜欢的文本编辑器中打开文件，然后插入以下部分： <pre>    //-- Referral domains to Ignore
+    var _uRno=new Array();
+    _uRno[0]=".urchin.com";
+</pre><p class="line874">上述情况将从推介链接中排除任何包含 .urchin.com 的点击。要添加其他域，请修改文件以包含另一个 _uRno[x] 值，并相应提高 x 的数值。例如： <pre>    //-- Referral domains to Ignore
+    var _uRno=new Array();
+    _uRno[0]=".urchin.com";
+    _uRno[1]=".urchin.net";
+    _uRno[2]=".urchinsoftware.com"
+</pre><p class="line874">在此提醒您，对 urchin.js 进行了任何改动后，都需要向网络服务器上传更新的文件，这样更改才会生效。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

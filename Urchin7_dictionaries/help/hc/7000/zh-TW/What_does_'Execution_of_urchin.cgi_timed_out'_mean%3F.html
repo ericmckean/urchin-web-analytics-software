@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>「執行 urchin.cgi 時發生逾時錯誤」代表什麼意思？</strong> <p class="line874">此項錯誤應該只會發生在 Urchin 的直接報告連結功能在使用中狀態，卻略過了 Urchin 工作階段控制器的情況下。在您檢視 Urchin 報告的同時，您可以檢查所使用的網址並進行確認。如果使用的是直接報告連結，則網址會包含 [report.cgi]，如果使用的是標準 Urchin 工作階段控制器，則網址會包含 [session.cgi]。 <p class="line874">當您透過直接報告連結檢視 Urchin 報告時，您的瀏覽器會透過 [report.cgi] 應用程式查詢此 Urchin 資料庫檔案，以取得與您要求的日期範圍和報告檢視相節的資料。如果資料查詢並未在預設的 60 秒內收到回應，CGI 應用程式便會逾時，並在瀏覽器上顯示 "Execution of urchin.cgi timed out" 錯誤。如果發生這個狀況，您必須提高 CGI 應用程式的逾時值。變更此逾時值需要對 Urchin 分佈的進行指令行存取 <p class="line874">若要提高直接報告連接的應用程式逾時： <ul><li>開啟 Urchin 伺服器的指令殼層 </li><li>請編輯下列檔案：/path/to/urchin/htdocs/.report.conf，如果此檔案並不存在，請複製 .report.conf.sample 至 .report.conf，以建立檔案。 </li><li>尋找下列程式行 "#Timeout = 60" </li><li>移除開頭的 '#' 字元以取消對行的註解： </li><li>將預設的 60 秒值提高到更適當的數字 </li><li>儲存此檔案。變更將會立即生效 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

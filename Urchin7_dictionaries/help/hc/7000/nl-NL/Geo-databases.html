@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6.602 Geo-databases</strong> <p class="line874">Urchin 6.602 wordt geleverd met twee geo-databases: <ul><li><p class="line891"><strong>geo.db</strong>: bevat gedetailleerde gegevens over grootstedelijke gebieden (country/region/city), netwerken (organisaties) en domeinen. Deze geografische database bevat hetzelfde gegevensniveau (hoewel bijgewerkt) als in de eerdere versies van Urchin 6 (6.400 - 6.601). </li><li class="gap"><p class="line891"><strong>geo.light.db</strong>: bevat alleen gegevens over grootstedelijke gebieden tot op landniveau. Deze geografische database bevat geen gegevens over regio's, steden, netwerken en organisaties. Deze database verbruikt minder geheugen en laadt sneller. U kunt deze database dus gebruiken wanneer de prestaties van de verwerkingsengine voor logbestanden belangrijk zijn. Als u deze eenvoudige geo-database gebruikt, heeft dit effect op de volgende rapporten. <ul><li style="list-style-type:none">o The following "Geo Map" reports only show metro data up to country level (no region and city info): <ul><li><p class="line862">'Weergave voor leidinggevenden' -&gt; 'Overzicht voor leidinggevenden' (dashboard) </li><li><p class="line862">'Weergave voor leidinggevenden' -&gt; 'Geografische kaart-overlay' </li><li><p class="line862">'Weergave voor marketeers' -&gt; 'Overzicht voor marketeers' (dashboard) </li><li><p class="line862">'Weergave voor webmasters' -&gt; 'Overzicht voor webmasters' (dashboard) </li><li><p class="line862">'Marketingoptimalisatie' -&gt; 'Prestaties van bezoekerssegmenten' -&gt; 'Geografische kaart-overlay' </li></ul><p class="line862">o Er worden geen gegevens weergegeven voor het rapport "Netwerklocaties" ('Marketingoptimalisatie' -&gt; 'Prestaties van bezoekerssegmenten' -&gt; 'Netwerklocatie') <p class="line862">o Er worden geen gegevens weergegeven voor het rapport "Domeinen" ('Marketingoptimalisatie' -&gt; 'Prestaties van bezoekerssegmenten' -&gt; 'Domeinen') </li></ul></li></ul><p class="line874">De database geo.db wordt standaard gebruikt. Als u wilt overschakelen naar de database geo.light.db, zet u de commentaarregel in het bestand urchin.conf om in code door het #-teken te verwijderen: <p class="line867"><pre>
+
+# Geo Database Settings (Instellingen geo-database)
+
+# Uncomment the line below to enable the lightweight geo-database (Zet de onderstaande commentaarregel om in code om de eenvoudige geo-database te gebruiken)
+# GeodbLight: ON (AAN)
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>為監控軟體的點擊進行全域篩選</strong> <p class="line867"><strong>總覽</strong> <p class="line874">大多數的代管環境都提供某類型的客戶網站伺服器監控，以便維護服務等級協定 (SLA)。但是它有其缺點，來自此監控服務的點擊數會造成針對這些受監控的網站之 Urchin 報告的誤差，造成因人為因素而偏高不實的工作階段、網頁檢視、點擊和位元計算結果。 <p class="line867"><strong>建議</strong> <p class="line874">在使用這類監控服務的代管環境中，我們強烈建議您為客戶已進行設定的 Urchin 設定檔套用標準或全域性 Urchin 篩選器，以篩去由監控軟體產生的點擊。對於使用集中式 Urchin 安裝 (由代管公司管理) 的環境，此安裝提供了各個客戶網站的報告服務，您在此可輕鬆套用這個功能。在專用 / 主機代管環境中，客戶可自行維護其伺服器上的 Urchin 例項，代管公司則需提供適合使用之監控服務的範例篩選器。 <p class="line874">為了幫助您執行 Urchin 篩選，代管公司和客戶本身應共同合作，在客戶的網站上建立一個只有監控軟體使用的特定網頁，舉例如下： <pre>     http://www.customerdomain.com/healthpage.html
+</pre><p class="line874">範例 <p class="line874">範例 1：為監視系統篩選掉 IP 位址 <pre>      Filter Type: Exclude
+      Filter Field: IP
+      Filter Spec: 172\.16\.1\.1
+</pre><ul><li style="list-style-type:none">這個方法會在 Urchin 進行處理時，同時剔除網站伺服器記錄中 IP 位址為 172.16.1.1 的點擊。 </li></ul><p class="line874">範例 2：篩選掉監視系統點擊的特定網頁 <pre>      Filter Type: Exclude
+      Filter Field: REQUEST
+      Filter Spec: ^/healthpage.html
+</pre><ul><li style="list-style-type:none">這個方法會在 Urchin 進行處理時，同時剔除網站伺服器記錄中要求使用 /healthpage.html 的點擊。 </li></ul><p class="line874">注意事項 <ol type="1"><li>建議您在網站伺服器上為客戶建立不具備篩選功能的額外設定檔，以便客戶檢視實際的流量負載 (包含篩選)。 </li><li>代管公司可能想要供應只為監控點擊提供報告功能的設定檔，意即此設定檔將只篩選來自監控軟體的點擊。此設定檔可用來顯示監控過程是否適當，以及是否達到了 SLA 要求。 </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

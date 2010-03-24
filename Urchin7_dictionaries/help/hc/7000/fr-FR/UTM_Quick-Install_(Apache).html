@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Installation rapide de l'UTM (Apache)</strong> <p class="line867"><em>Cet article a été rédigé par </em><a href="Panalysis.html">Panalysis</a><em>, un consultant agréé du logiciel Urchin.</em> <p class="line874">La procédure présentée ci-après permet une installation rapide de l'UTM pour des sites Web fonctionnant sur un serveur Apache, quelle que soit la plate-forme associée. <p class="line867"><strong>Étape 1 : copiez les fichiers UTM à la racine du site Web.</strong> Ces fichiers (urchin.js et <tt class="backtick">__</tt>utm.gif) sont situés dans le répertoire "util/utm" de la distribution Urchin. Copiez ces deux fichiers dans le répertoire principal du contenu de votre site Web. <p class="line867"><strong>Étape 2 : référencez l'UTM dans votre code HTML.</strong> Saisissez la ligne ci-après dans toutes vos pages HTML. Cette ligne peut être placée n'importe où dans la page, mais nous vous recommandons de l'insérer dans la section &lt;head&gt;. Si vous utilisez une inclusion ou un modèle, vous pouvez l'insérer à cet endroit. <span class="u">IMPORTANT</span> : Le nom du fichier GIF commence par deux traits de soulignement. <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line862">Si vous utilisez un logiciel du type "HTML Tidy", vous devez inclure la ligne JavaScript dans la section HEAD de votre page, par exemple : <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>Étape 3 : activez les cookies dans votre journalisation Apache.</strong> Si cette fonctionnalité n'est pas encore activée, vous pouvez utiliser l'exemple httpd.conf suivant pour activer la journalisation des cookies : <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\"\"%{User-Agent}i\"\"%{Cookie}i\"" special
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log special
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>Étape 4 : définissez le profil Urchin de manière à utiliser l'UTM.</strong> Dans l'interface d'administration Urchin, modifiez le profil en question et cliquez sur l'onglet Création de rapports. Configurez la Méthode de suivi des visiteurs sur UTM. Attribuez au Domaine UTM l'adresse de votre site Web sans préfixe www. Lorsque vous avez terminé, cliquez sur le bouton Mettre à jour. Ouvrez ensuite l'onglet Paramètres des profils et choisissez UTM - Tout activer pour l'option Groupe de rapports par défaut, puis cliquez de nouveau sur Mettre à jour. L'opération est terminée. Votre site Web enregistrera désormais les données UTM dans votre fichier journal habituel, qui sera identifié la prochaine fois que vous lancerez Urchin. <p class="line867"><strong>Cela fonctionne-t-il ?</strong> Pour vérifier que l'UTM génère bien des entrées dans votre fichier journal, examinez votre journal après l'installation de l'UTM et cliquez sur quelques pages du site. Une entrée semblable à la suivante devrait apparaître à la fin du fichier journal : <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line862">Si les entrées <tt class="backtick">__</tt>utma n'apparaissent pas, vérifiez que les cookies sont correctement activés dans la journalisation. Si un autre code d'état que 200 s'affiche, vérifiez que les fichiers ont bien été copiés à la racine du site. <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

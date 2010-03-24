@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Erweiterte Filter</strong> <p class="line867"><strong>Einführung</strong> <p class="line874">Mit der Option der erweiterten Filter können Sie Felder für Berichte aus einem oder zwei vorhandenen Feldern erstellen. Reguläre POSIX-Ausdrücke und entsprechende Variablen können zum Erfassen von Feldern oder Teilen von Feldern sowie zum Kombinieren des Ergebnisses in beliebiger Reihenfolge verwendet werden. <p class="line867"><strong>Verwendung der erweiterten Filter</strong> <p class="line867"><img alt="Advanced_Filters" src="../images/Advanced_Filters.jpg" title="Advanced_Filters" /> <p class="line874">Wie in der obigen Abbildung dargestellt, nimmt der erweiterte Filter zwei Felder ein: Feld A und Feld B, um das Ausgabefeld zu erstellen. Das Erstellen erfolgt folgendermaßen: Der Ausdruck "A extrahieren" wird auf Feld A angewendet und der Ausdruck "B extrahieren" wird auf Feld B angewendet. Diese Ausdrücke können vollständige oder partielle Textentsprechungen verwenden und Platzhalter enthalten. Es folgt eine Liste der häufigsten Platzhalter und ihrer Bedeutungen. Die Ausdrücke entsprechen regulären POSIX-Ausdrücken. <p class="line867"><pre>.   Übereinstimmung mit jedem einzelnen Zeichen
+*   Übereinstimmung mit null oder mehr der vorherigen Elemente
++   Übereinstimmung mit einem oder mehreren der vorherigen Elemente
+?   Übereinstimmung mit null oder einem der vorherigen Elemente
+()  Inhalt der Klammer als Element merken
+[]  Übereinstimmung mit einem Element in dieser Liste
+-   Einen Bereich in einer Liste erstellent
+|   oder
+^   Übereinstimmung zum Anfang des Felds
+$   Übereinstimmung zum Ende des Felds
+\   Oben genannte Platzhalter wieder aufheben
+
+</pre><p class="line874">Verwenden Sie Klammern (), um Teile der Felder zu erfassen. Auf diese kann im Konstruktor mithilfe der Werte $A1, $A2, $B1, $B2 verwiesen werden. A|B bezieht sich auf das Feld und die Zahl bezieht sich darauf, welche Klammer erfasst werden soll. Im obigen Beispiel werden das gesamte Feld A und das gesamte Feld B erfasst und als neues Feld zusammengestellt. Bei dem Feld "Ausgabe in" kann es sich um dasselbe oder um ein anderes Feld als Feld A bzw. Feld B handeln. <p class="line867"><strong>Steuerelemente</strong> <p class="line874">Mithilfe des Optionsfelds "Ausgabefeld überschreiben" können Sie entscheiden, was zu tun ist, wenn das Ausgabefeld bereits vorhanden ist. Mit der Option "Feld x erforderlich" können Sie entscheiden, was zu tun ist, wenn einer der Ausdrücke nicht übereinstimmt. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>UTM 快速安裝 (Apache)</strong> <p class="line867"><em>本文由 Urchin 軟體授權顧問 </em><a href="Panalysis.html">Panalysis</a><em> 撰寫</em> <p class="line874">以下為快速的安裝概要，說明如何為所有平台之 Apache 伺服器上所執行的網站安裝 UTM。 <p class="line867"><strong>步驟 1： 將 UTM 檔案複製到網站的文件根。</strong>urchin.js 和 <tt class="backtick">__</tt>utm.gif 檔案位於 Urchin 分佈的「util/utm」目錄中。 請將這兩個檔案複製到網站內容的主目錄中。 <p class="line867"><strong>步驟 2： 在您的 HTML 中參照 UTM。</strong>請將下行複製到您的所有 HTML 網頁中。 因為它可放在網頁中的任何位置，所以我們建議放在 &lt;head&gt; 區段中。 如果您使用常見的 [包含] 或範本，可以在此輸入。 <span class="u">重要事項</span>： GIF 檔案名稱的開頭是兩個底線。 <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line874">如果您使用「HTML Tidy」之類的套件，則可以將 Javascript 指令行放在網頁的 HEAD 區域。例如： <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>步驟 3： 在 Apache 記錄中啟用 Cookie。</strong>如果尚未啟用，您可以使用下列的 httpd.conf 範例來啟用 Cookie 記錄： <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\"\"%{User-Agent}i\"\"%{Cookie}i\"" special
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log special
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>步驟 4： 設定 Urchin 設定檔使用 UTM。</strong>在 Urchin 管理介面中，編輯有疑問的設定檔，然後按一下 [報告] 標籤。 將 [訪客追蹤方式] 設定為 UTM。 將 UTM 網域設定為您的網址 (不包含 www)。 完成時請按一下 [更新] 按鈕。 接著請按一下 [設定檔設定] 標籤並為 [預設報告集] 選擇 [UTM-啟用全部]，然後再次按一下 [更新]。 大功告成！ 現在，您的網站會開始將 UTM 資料記錄到一般記錄檔案中，當您下次執行 Urchin 時就，這些記錄將會受到辨識。 <p class="line867"><strong>有在運作嗎？</strong>若要查看 UTM 是否成功將項目記錄到您的記錄檔中，請在安裝 UTM 並點擊網站的幾個網頁後查看記錄。 您會在記錄檔的結尾看到如下的項目： <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line862">如果沒有看到 <tt class="backtick">__</tt>utma 項目，請務必檢查記錄中是否有正確啟用 Cookie。 如果狀態碼不是 200，則請確定檔案已正確複製到您的文件根。 <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

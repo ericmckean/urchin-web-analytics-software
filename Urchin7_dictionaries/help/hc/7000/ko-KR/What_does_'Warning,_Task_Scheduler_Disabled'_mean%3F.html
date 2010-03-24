@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>‘작업 스케줄러 비활성화 경고’의 의미</strong> <p class="line874">Urchin 작업 스케줄러는 Urchin 처리 실행을 담당하는 서비스입니다. 작업 스케줄러가 비활성화되면 Urchin에서는 작업을 처리할 수 없습니다. "작업 스케줄러 비활성화 경고" 오류가 발생하는 주요 원인은 다음과 같습니다. <ul><li>urchind 서비스가 중지되었습니다. 이러한 문제는 서버가 재부팅되었는데 시스템 시작 스크립트에 Urchin이 없을 때 발생할 수 있습니다. </li><li class="gap">(Unix만 해당) urchind 서비스가 실행되고 있지만 Urchin을 소유한 사용자와 urchind 서비스 소유자가 다릅니다. </li></ul><p class="line874">스케줄러가 실행되고 있는지 확인하려면 다음 단계를 따르십시오. <ul><li>명령 쉘을 열고 /path/to/urchin/bin/ 디렉토리로 이동합니다. </li><li class="gap">urchinctl status를 입력합니다. Unix에서는 ./urchinctl status를 입력합니다. </li></ul><p class="line874">스케줄러가 실행되지 않고 있으면 명령행에서 다음 작업을 수행합니다. <ul><li>명령 쉘을 열고 /path/to/urchin/bin/ 디렉토리로 이동합니다. </li><li class="gap">urchinctl -s start를 입력합니다. Unix에서는 ./urchinctl -s start를 입력합니다. </li><li class="gap">두 서비스 모두 실행되지 않고 있으면 urchinctl start를 입력합니다. </li></ul><p class="line874">서비스가 실행되고 있으면 ps -ef | grep urchind 명령으로 서버에서 실행 중인 프로세스를 확인하여 Urchin 프로세스 소유자를 파악합니다. <p class="line874">프로세스 소유자의 "User-Name"은 다음과 같이 표시됩니다. <p class="line867"><pre>
+User-Name 33597 0.0 0.2 352 204 ?? Ss 27Feb08 17:42.18 /usr/local/urchin6/bin/urchind
+
+</pre><p class="line874">프로세스를 소유한 사용자가 Urchin 소유자와 동일하지 않으면 서비스를 중지하고 적절한 사용자에 의해 다시 실행되도록 해야 합니다. 그러려면 현재 urchind 프로세스를 소유한 사용자와 동일한 "사용자로 전환"한 후 urchinctl 서비스를 중지합니다. 이때 위에 설명된 "-s" 전환을 사용합니다. 그런 다음 Urchin 사용자로 돌아가 다시 "-s" 전환을 사용하여 urchinctl을 시작합니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

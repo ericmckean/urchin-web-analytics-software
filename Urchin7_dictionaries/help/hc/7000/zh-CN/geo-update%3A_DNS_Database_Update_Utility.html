@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>geo-update：DNS 数据库更新实用程序</strong> <p class="line867"><strong>概述</strong> <p class="line874">geo-update 实用程序用于检查 Urchin 内部 DNS 数据库的更新并下载可用的更新。  此实用程序允许您从 Google 下载服务器以及从本地目录（Urchin 6 的新功能）下载更新。 <p class="line867"><strong>用法</strong> <p class="line874">geo-update 实用程序可以通过 Urchin 调度程序 (urchind) 每月进行调用或通过命令行手动调用。 当通过调度程序调用时，该实用程序总是从 google 下载服务器进行更新。 当通过命令行调用时，它使您还可以通过一些本地路径更新 DNS 数据库。 该任务设置为每月检查一次新的更新，用户可以通过管理界面配置进行检查的时间。 <p class="line874">如果为 geo-update 创建了任务，那么该任务将以“geo-update”的名称出现在“任务历史记录”屏幕中。 <p class="line874">默认行为是检查更新、下载新的数据库并覆盖现有的数据库。  可以通过使用合适的选项从命令行中运行 geo-update 以覆盖默认行为。 用法如下： <pre>geo-update [-Hhv] [-D | -F] [-i file]
+</pre><p class="line874">其中， <pre>  -F            强制下载 geo 数据库
+  -f            geo.zip 文件在本地文件系统中的路径名 [可选]
+  -H            指定将运行输出记录到历史记录文件
+  -h            显示帮助信息并退出
+  -T &lt;task id&gt;  指定要更新的任务历史记录
+                指定 -T 会强制使用 -H
+  -V            显示 geo 数据库版本号并退出
+  -v            显示版本号并退出
+</pre><p class="line874">使用 -F 选项会强制下载新数据库，即使数据库已经是最新状态也是如此。 当您导入了不正确的自定义域信息或破坏了您的域数据库时，这个功能可以帮助您以新的副本重新开始。 <p class="line862">当查看 Urchin 管理界面的配置 -&gt; 调度程序区域中的“任务历史记录”屏幕时，使用 -H 选项将输出记录到历史记录文件中可以提供运行信息。 <p class="line862">使用选项 -T 使您可以从 &lt;Task_ID&gt; 指定的 CLI 中强制更新特定的任务。 通过以下查询可以从 Urchin 6 数据库中找到 Task_ID 值： <pre>mysql&gt; select * from ugeo_tasks\G
+</pre><p class="line867"><strong>示例</strong> <p class="line874">强制下载最新的域数据库： <pre>geo-update -F
+</pre><p class="line874">从 CLI 手动更新任务（如果已从数据库中检索到了任务 ID）： <pre>geo-update -T &lt;Task_ID&gt; -H
+</pre><p class="line874">geo-update 实用程序需连接互联网才能检查并下载新的更新。 该实用程序使用 80 端口与提供更新的网络服务器进行通信。 在进行更新时，你可能会遇到防火墙和代理服务器限制的问题。 如果发生这方面的问题，请咨询您的网络管理员。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

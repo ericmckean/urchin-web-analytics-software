@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>geo-update：DNS 資料庫更新公用程式</strong> <p class="line867"><strong>總覽</strong> <p class="line874">地理更新公用程式可檢查 Urchin 的內部 DNS 資料庫是否有更新，若有可用的更新，便加以下載。  它可以向 Google 的下載伺服器下載更新，也可以向本機目錄下載 (Urchin 6 的新功能)。 <p class="line867"><strong>用法</strong> <p class="line874">地理更新公用程式可由 Urchin 排程器 (urchind) 於每月叫用一次，也可以透過指令行來以手動的方式叫用。 由排程器叫用時，它永遠會從 Google 的下載伺服器進行更新。 由指令行叫用時，它會提供一個額外的選項，從某個本機路徑更新 DNS 資料庫。 這項工作的設定是每月檢查一次是否有新的更新，使用者也可以透過管理介面進行設定，讓檢查作業在特定的時間發生。 <p class="line874">如果某項工作已經為了進行地理更新而建立，該工作就會顯示在 [工作記錄] 畫面上，名稱為「地理更新」。 <p class="line874">預設的行為是要檢查更新、下載新資料庫來覆寫現有資料庫。 只要以指令行搭配適當的選項來執行地理更新，就可以覆寫預設的行為。 用法如下： <pre>geo-update [-Hhv] [-D | -F] [-i 檔案]
+</pre><p class="line874">其中 <pre>  -F            強制下載地理資料庫
+  -f            geo.zip 檔案在本機檔案系統上的路徑名稱 [選擇性]
+  -H            指定將執行的輸出結果記錄到記錄檔中
+  -h            列印說明資訊然後離開
+  -T &lt;task id&gt;  指定讓工作記錄進行更新
+                指定 -T 就會強制使用 -H
+  -V            列印地理資料庫的版本編號，然後離開
+  -v            列印版本編號然後離開
+</pre><p class="line874">使用 -F 選項就會強制下載新資料庫，即使資料庫原本就是最新的。 如果您匯入錯誤的自訂網域資訊或是毀損了網域資料庫，而您希望能以新的一份資料庫重頭開始，那麼這個功能就可以派上用場。 <p class="line862">如果使用 -H 選項將輸出結果記錄到記錄檔，則當您在 Urchin 管理介面之 [組態] -&gt; [排程器] 的 [工作記錄] 畫面中進行檢視時，就可以檢視執行資訊。 <p class="line862">-T 選項可讓您強制從 &lt;Task_ID&gt; 指定的 CLI 進行某個特定工作的更新。 Task_ID 的值可透過下列查詢在 Urchin 6 資料庫中找到： <pre>mysql&gt; select * from ugeo_tasks\G
+</pre><p class="line867"><strong>範例</strong> <p class="line874">強制下載最新的網域資料庫： <pre>geo-update -F
+</pre><p class="line874">若要從 CLI 手動更新工作 (當已經從資料庫擷取到工作 ID 時)： <pre>geo-update -T &lt;Task_ID&gt; -H
+</pre><p class="line874">地理更新公用程式需要網際網路連線才能檢查並下載更新。 公用程式會以通訊埠 80 來和提供更新的網頁伺服器進行通訊。 進行更新時，您有可能會在遇到防火牆和 Proxy 伺服器時發生問題。 如果發生這種情形，請和您的網路管理員聯絡。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

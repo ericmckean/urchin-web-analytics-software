@@ -1,0 +1,25 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Flash를 사용하고 있어 내 사이트에 하나의 URL만 있습니다.목표 유입경로는 어떻게 설정합니까?</strong> <p class="line874">웹사이트에서 Flash 이벤트를 비롯한 브라우저 기반 이벤트를 추적할 수 있습니다.urchinTracker 자바스크립트 함수를 사용하여 Flash 액션에 페이지 파일 이름을 지정하고 적합한 목표 또는 유입경로 단계에서 해당 파일 이름을 입력할 수 있습니다. <p class="line874">이벤트를 추적하려면 이벤트에 대한 이름을 지정하는 인수를 사용하여 urchinTracker() 자바스크립트 함수를 호출하십시오.예를 들어 다음을 호출할 수 있습니다. <pre>    javascript:urchinTracker('/purchase_funnel/page1.html');
+</pre><p class="line874">그러면 Flash 이벤트 호출이 발생할 때마다 /purchase_funnel/page1.html 이름 아래 페이지뷰처럼 기록됩니다.인수는 슬래쉬로 시작해야 합니다. <p class="line874">원하는 디렉토리 스타일 구조로 이벤트 이름을 구성할 수 있습니다.urchinTracker에 대한 경로/파일 이름 인수가 웹사이트의 실제 URL을 나타내지 않아도 됩니다. <p class="line867"><strong>Flash 코드 예</strong> <pre>    on (release) {
+    // Track with no action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+
+    on (release) {
+    //Track with action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    _root.gotoAndPlay(3);
+    myVar = "Flash Track Test"
+    }
+
+    onClipEvent (enterFrame) {
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    } 
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>既存の Apache ウェブサーバーの使用 (UNIX プラットフォーム)</strong> <p class="line874">デフォルトでは、Urchin の管理とレポート作成は、Urchin にバンドルされている単体の Apache サーバーを使用して行うよう設定されています。 Urchin の管理とレポート作成のインターフェースとして、ほとんどの場合 Urchin ではこの方法が利用されます。 しかし、まれに既存の Apache ウェブサーバーの使用が必要な場合があります。 組織全体でローカライズした Apache を使用する必要がある場合や、すべてのウェブ サービスを 1 つの Apache 構成で管理する場合などです。 このような要件を満たす 2 つの実装例を次に説明します。 <p class="line867"><strong>免責条項: </strong> Urchin にこれらの修正を加えた場合は、<strong>サポート対象外となります</strong>。 <p class="line867"><strong>オプション 1: </strong> 既存のサイト固有の Apache httpd バイナリを使用して、Urchin サービスを別のインスタンスとして実行する <p class="line867"><strong>他の影響</strong> <ul><li>バンドルされた Apache に機能追加や設定変更を行った Urchin をアップグレードしたとき、既存の Apache バイナリがこのような変更や機能をサポートしていない場合は、正しく処理されない可能性があります。  </li></ul><p class="line867"><strong>設定の変更</strong> <ul><li>httpd が次のモジュールをサポートしていることを確認します。 <ul><li style="list-style-type:none">mod_access mod_cgi mod_dir mod_mime </li></ul></li><li>通常の手順で Urchin をインストールし、Urchin の管理とレポート作成のインターフェースを実行するポートを指定します。 </li><li>Urchin をインストールしたら、次の手順を行います。 </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin ./urchinctl stop
+                  mv urchinwebd urchinwebd.orig
+                  ln -s /path/to/your/httpd urchinwebd
+                  ./urchinctl start
+</pre><ul><li style="list-style-type:none">これにより、指定した Apache バイナリを使用する Apache の別のインスタンスが起動し、標準のウェブ サービスとは独立して実行されます。  </li></ul><p class="line867"><strong>オプション 2: :</strong> Urchin サービスを既存の Apache 構成から実行する <p class="line867"><strong>他の影響</strong> <ul><li>Urchin の所有者は httpd を実行する UID と同じである必要があります。 </li><li>管理 GUI を使用して Urchin の実行ポートを変更することはできません。 </li><li>bin/wrapper ツールは、Urchin 独自の httpd を実行しようとするため、このツールを使用して Urchin サービスを開始することはできません。 bin/urchindctl.sh スクリプトは、Urchin スケジューラ (urchind) を開始/停止する場合のみ使用してください。 </li></ul><p class="line867"><strong>設定の変更</strong> <ul><li>既存の httpd.conf ファイルに次の行を追加します。 サーバーの IP アドレス、使用する Urchin のポート番号、Urchin のインストール場所のパスを指定してください。 </li></ul><p class="line867"><pre>            ## Support for Urchin administration and reporting services
+            Listen [port#]
+            &lt;VirtualHost [server-ip]:[port#]&gt;
+            ErrorLog /path/to/urchin-distribution/var/error.log
+            DocumentRoot /path/to/urchin-distribution/htdocs/
+            &lt;Directory /path/to/urchin-distribution/htdocs/&gt;
+                  AddHandler cgi-script .cgi
+                  Options ExecCGI
+                  DirectoryIndex session.cgi
+                  AllowOverride None
+                  Order allow,deny
+                  Allow from all
+            &lt;/Directory&gt;
+            &lt;/VirtualHost&gt; 
+</pre><ul><li style="list-style-type:none">設定を変更したら、次のタスクを実行します。 </li><li class="gap">Urchin の所有権を、Apache ウェブサーバーを実行する UID に変更します。 </li></ul><p class="line867"><pre>                  chown -R apache-user /path/to/urchin/bin
+</pre><ul><li>Urchin にバンドルされている Apache を停止します。 </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin
+                  ./urchinctl -w stop
+</pre><ul><li>Apache サーバーを再起動して、Urchin のレポート作成と管理を有効にします。  </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

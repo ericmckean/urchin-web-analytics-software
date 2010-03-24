@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>SOAP Example 1: Retrieving the list of accounts for an authenticated user</strong> <p class="line862">(Return to main article: <a href="Samples_for_Java_(SOAP)_v1.html">Samples for Java (SOAP) v1</a>) <p class="line874">1. Define login information: <p class="line867"><pre>private static final String login = "URCHIN_LOGIN";
+private static final String password = "URCHIN_PASSWORD";
+</pre><p class="line862">2. Define a service connection for the AdminService API: <p class="line867"><pre>AdminserviceStub adminStub = new AdminserviceStub();
+</pre><p class="line862">3. Define a request for the getAccountList method in the AdminService: <p class="line867"><pre>AdminserviceStub.GetAccountList accReq = new AdminserviceStub.GetAccountList();
+</pre><p class="line874">4. Set up the getAccountList request parameters: <p class="line867"><pre>accReq.setLogin(login);
+accReq.setPassword(password);
+</pre><p class="line874">5. Retrieve the list of available accounts: <p class="line867"><pre>AdminserviceStub.GetAccountListResponse accRsp = adminStub.getAccountList(accReq);
+</pre><p class="line874">6. Parse and display the response: <p class="line867"><pre>      if (accRsp != null){
+        AdminserviceStub.GetAccountListResponseSequence [] responseSequence = accRsp.getGetAccountListResponseSequence();
+        // Display accounts info
+        System.out.println("AdminService::GetAccountList");
+        for (AdminserviceStub.GetAccountListResponseSequence account : responseSequence) {
+          System.out.print("account id: \"" + account.localAccount.getAccountId() + "\", ");
+          System.out.print("account name: \"" + account.localAccount.getAccountName() + "\", ");
+          System.out.print("contact name: \"" + account.localAccount.getContactName() + "\", ");
+          System.out.print("e-mail: \""  + account.localAccount.getEmailAddress() + "\", ");
+          System.out.println("phone number: \"" + account.localAccount.getPhoneNumber() + "\".");
+        }
+      }
+</pre><p class="line862">For the complete sample code, see the implementation of GetAccountList() in the AdminService.java file. <p class="line862">(Return to main article: <a href="Samples_for_Java_(SOAP)_v1.html">Samples for Java (SOAP) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

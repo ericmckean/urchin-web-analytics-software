@@ -1,0 +1,25 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>도메인 별칭으로 UTM 사용</strong> <p class="line867"><strong>배경</strong> <p class="line874">쿠키는 도메인 기반 개체이므로 사이트가 여러 도메인을 포함하는 경우 몇 가지 고려해야 할 사항이 있습니다.'mysite.com' 도메인에 설정된 쿠키는 'www.mysite.com'과 같은 모든 하위 도메인에 전달되지만'mysite.net'이나 기타 다른 루트 도메인에는 전달되지 않습니다. <p class="line874">웹사이트가 'mysite.com' 및 'www.mysite.com'에 대응하는 하나의 도메인만 포함하는 경우 표준 UTM 설치를 따를 수 있습니다.그러나 웹사이트가 하나 이상의 별칭을 사용하는 경우 별칭의 트래픽을 기본 사이트로 리디렉션할 것을 권장합니다.그러면 UTM 방문자 추적이 기본 도메인에 설정되어 모든 방문자를 일관적으로 추적할 수 있습니다. <p class="line874">그렇지 않으면 방문자가 별도의 두 도메인을 통해 같은 사이트에 액세스하는 경우 실제로는 한 명의 방문자가 두 명의 방문자로 나타날 수 있습니다.다음 내용에서는 Apache 및 IIS 서버에서 별칭 도메인을 기본 도메인으로 리디렉션하는 방법의 예를 보여 줍니다. <p class="line867"><strong>Apache에서 별칭 리디렉션</strong> <p class="line862">Apache 웹서버를 사용 중인 경우 별칭 도메인에서 발생하는 모든 트래픽이 기본 사이트로 리디렉션되도록 편리하게 설정을 수정할 수 있습니다.이렇게 설정을 변경하기 위한 방법 중 하나는 VirtualHost 항목을 두 개 생성하는 것입니다.첫 번째 항목은 일반설정을 포함하는 기본 도메인이 되고 두 번째 VirtualHost 항목은 모든 별칭용으로 기본 사이트로 리디렉션됩니다.예: <p class="line867"><pre>#---primary virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername www.mysite.com
+Serveralias mysite.com
+...
+&lt;/VirtualHost&gt;
+#---second virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername mysite.org
+Serveralias www.mysite.org mysite.net www.mysite.net
+RewriteEngine on
+RewriteRule ^(.*)       http://www.mysite.com$1     [R=301]
+&lt;/VirtualHost&gt;
+</pre><p class="line862">두 번째 VirtualHost는 301(영구 이동) 리디렉션 코드가 있는 재작성 규칙을 사용하여 모든 트래픽을 원래 사이트로 전달합니다.단일 301 조회는 사용자가 들어가는 도메인을 추적하기 위한 로그 파일에 계속해서 기록되지만 나머지 모든 트래픽은 단일 도메인으로 전달됩니다.이때 UTM은 이 사이트를 정상적으로 UTM을 설치할 수 있는 하나의 도메인 사이트로 인식합니다. <p class="line874">참고:관리자와 함께 apache.org 사이트의 구성 매개변수를 확인하시기 바랍니다. <p class="line867"><strong>IIS에서 별칭 리디렉션</strong> <p class="line874">Microsoft IIS 웹서버를 사용 중인 경우 별칭에서 발생하는 모든 트래픽이 기본 사이트로 리디렉션되도록 편리하게 설정을 수정할 수 있습니다.이렇게 설정을 변경하기 위한 방법 중 하나는 IIS 구성에 웹사이트를 두 개 생성하는 것입니다.첫 번째 항목은 일반 설정을 포함하는 기본 도메인(www. mysite.com)이 되고 두번째 항목은 다른 모든 별칭(mysite.net, mysite.org 등)용으로 기본 사이트로 리디렉션됩니다. <p class="line874">IIS 관리자에서 웹사이트 중 하나를 마우스 오른쪽 버튼으로 클릭하여 속성 대화상자를 여십시오.'웹사이트' 탭에서 '고급...' 버튼을 클릭하십시오.그러면 '호스트 헤더' 입력란을 통해 웹사이트에 추가 도메인을 지정할 수 있는 창이 나타납니다.기본 웹사이트에서 기본 도메인을 설정하고 두 번째 웹사이트에 모든 별칭을 저장하십시오. <p class="line874">모든 별칭을 포함하는 두 번째 웹사이트를 구성 및 설정한 후 다음과 같은 리디렉션 코드를 삽입하여 홈페이지를 만드십시오. <p class="line867"><pre>&lt;head&gt;
+&lt;META HTTP-EQUIV=Refresh CONTENT="0; URL=http://www.mysite.com/"&gt;
+&lt;/head&gt;
+</pre><p class="line874">그러면 방문자의 브라우저를 기본 URL로 리디렉션하도록 지시됩니다.이때 기본 웹사이트는 단일 도메인 구성으로 표시되며, 기본설정을 사용하여 정상적으로 UTM 설치를 진행할 수 있습니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6.602 Geo-databases</strong> <p class="line874">Urchin 6.602 se suministra con dos bases de datos de información geográfica: <ul><li><p class="line891"><strong>geo.db</strong>: contiene información detallada sobre áreas metropolitanas (country/region/city), redes (empresas) y dominios. Contiene el mismo tipo de información (aunque actualizada) que las versiones anteriores de urchin 6 (6.400 - 6.601). </li><li class="gap"><p class="line891"><strong>geo.light.db</strong>: contiene información de área metropolitana relativa al país únicamente. No incluye información sobre regiones, ciudades, redes o empresas. La memoria de esta base de datos es bastante más reducida y el tiempo de carga también es inferior. Se recomienda utilizarla cuando el rendimiento del motor de procesamiento de registros sea clave. El uso de esta base de datos con contenido geográfico y de versión reducida afecta a los informes siguientes. <ul><li style="list-style-type:none">o En los informes siguientes sobre "visitas por ubicación", se muestran datos de área metropolitana relativos al país únicamente. No se ofrece información sobre la región ni sobre la ciudad. <ul><li><p class="line862">“Vista de ejecutivo” -&gt; “Visión general de ejecutivo” (panel), </li><li><p class="line862">“Vista de ejecutivo” -&gt; “Gráfico de visitas por ubicación”, </li><li><p class="line862">“Vista de profesional del marketing” -&gt; “Visión general de profesional del marketing” (panel), </li><li><p class="line862">“Vista de webmaster” -&gt; “Visión general de webmaster” (panel), </li><li><p class="line862">“Optimización de marketing” -&gt; “Rendimiento del segmento de usuarios” -&gt; “Gráfico de visitas por ubicación”. </li></ul><p class="line862">o El informe "Ubicaciones de red" (“Optimización de marketing” -&gt; “Rendimiento del segmento de usuarios” -&gt; “Ubicación de red”) no muestra datos. <p class="line862">o El informe "Dominios" (“Optimización de marketing” -&gt; “Rendimiento del segmento de usuarios” -&gt; “Dominios”) no ofrece datos. </li></ul></li></ul><p class="line874">La base de datos que se utiliza de forma predeterminada es geo.db. Para cambiar a geo.light.db, elimine el comentario de la línea correspondiente del archivo urchin.conf: <p class="line867"><pre>
+
+# Configuración de la base de datos con información geográfica
+
+# Elimine el comentario de la línea siguiente para habilitar la versión reducida de la base de datos con información geográfica.
+# GeodbLight: ON
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

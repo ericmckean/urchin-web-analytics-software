@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>응답 없는 로그 처리 작업을 취소하려면 어떻게 해야 합니까?</strong> <p class="line867"><strong>사례 1: 작업 시간이 너무 많이 소요됩니다.</strong> <p class="line874">너무 많은 시간이 소요되는 작업을 취소하려면 로그 처리 엔진을 중지해야 합니다.  Unix에서는 "urchin" 프로세스를 중지하고 Windows에서는 프로세스 관리자를 사용하십시오. <p class="line874">참고: 프로필을 삭제하고 다시 만드는 것은 좋지 않은 방법입니다. 스케줄러 페이지에 프로필이 표시되지 않더라도 작업 중지 및 스케줄러 차단 상태에는 변화가 없습니다. <p class="line867"><strong>사례 2: 예기치 못한 오류로 인해 시스템이 다운되거나 재부팅됩니다.</strong> <p class="line874">작업은 정상적으로 실행되고 있는데 로그 처리 엔진과 스케줄러에 적절한 종료 신호 없이 시스템이 재부팅 또는 다운되는 경우입니다. 이 경우에는 데이터베이스의 작업 항목이 불안정하게 됩니다. 그 결과 시스템이 부팅되고 나면 스케줄러와 로그 처리 엔진이 프로필을 찾아낼 수 없어도 관리 인터페이스에는 프로필이 실행 중이라고 잘못 표시됩니다. 동일한 프로필을 다시 예약하려고 하면 해당 작업이 이미 실행 중이거나 대기 중이라는 메시지가 표시됩니다.  <p class="line874">이 경우 30분만 기다리면 문제가 해결됩니다. 마스터 스케줄러가 최근 30분간 업데이트되지 않은 모든 작업을 데이터베이스에서 삭제합니다. 작업이 삭제되면 관리 인터페이스 페이지에 작업 상태가 ‘오류’로 표시되고 프로필을 다시 예약할 수 있습니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

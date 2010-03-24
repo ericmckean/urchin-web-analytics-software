@@ -1,0 +1,25 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Wie kann ich Flash-Ereignisse erfassen?</strong> <p class="line862">Mit Urchin können Sie jedes browserbasierte Ereignis erfassen - auch Flash- und Javascript-Ereignisse. Rufen Sie zum Erfassen eines Ereignisses die JavaScript-Funktion urchinTracker mit einem Argument auf, das einen Namen für das Ereignis angibt. Beispiel: Durch das Aufrufen von <p class="line867"><pre>    javascript:urchinTracker('/homepage/flashbuttons/button1');
+</pre><p class="line874">wird jedes Auftreten dieses Flash-Eignisses protokolliert, als ob es ein Seitenzugriff von /homepage/flashbuttons/button1 wäre. Das Argument muss mit einem Schrägstrich beginnen. Die Ereignisnamen können in jeder gewünschten Art von Verzeichnisstruktur angeordnet werden und tatsächliche Seiten mit diesen Dateinamen müssen nicht existieren. <p class="line874">Wenn Sie z. B. flash-Ereignisse nach Seite und Ereignistyp anordnen möchten, können Sie eine Hierarchie nach diesem Schema erstellen: <p class="line867"><pre>    /homepage/flashbuttons/button1
+    /homepage/clips/clip1
+</pre><p class="line867"><strong>Beispiele für Flash-Code</strong> <p class="line867"><pre>    on (release) {
+    // Track with no action
+    getURL("javascript:urchinTracker('/folder/file');");
+    }
+    on (release) {
+    //Track with action
+    getURL("javascript:urchinTracker('/folder/file');");
+    _root.gotoAndPlay(3);
+    myVar = "Flash Track Test"
+    }
+    onClipEvent (enterFrame) {
+    getURL("javascript:urchinTracker('/folder/file');");
+    }
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

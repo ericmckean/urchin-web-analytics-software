@@ -1,0 +1,42 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Mapas de datos personalizados</strong> <p class="line874">Los mapas de datos describen conjuntos de tablas que sirven para almacenar los datos que se calculan a partir de los archivos de registro. A continuación, se indican las tablas predefinidas: <ul><li>T: totales, </li><li>TR: transacciones, </li><li>H: histograma, </li><li>V: visitantes, </li><li>1-n: tablas predefinidas globales que aparecen descritas en el archivo del mapa de datos. </li></ul><p class="line862">El conjunto de tablas predeterminadas se almacena en el archivo &lt;Urchin&gt;/lib/reporting/profiletypes/Default/datamap.dm2 . Formato de las tablas: <ul><li>Las entradas de las tablas ocupan una fila y deben contener los campos siguientes: TABLE AFIELD BFIELD CFIELD DFIELD EFIELD REQUIREMENTS SPECIAL IFIELDS PPFIELDS. </li><li>Las columnas no deben contener espacios. </li><li>Las columnas están separadas por uno o por varios espacios. </li><li>En los campos sin ningún valor, debe incluirse el signo '-'. </li><li class="gap">TABLE: identificador exclusivo de la tabla; el valor máximo es 200. </li><li><p class="line862">AFIELD-EFIELD: campos de cadena procedentes de &lt;Urchin&gt;/lib/reporting/logformats/fieldlist.txt. </li><li>REQUIREMENTS: indica los campos (del A al E) que deben estar presentes en el resultado para que este pueda incluirse en la tabla; se trata de un tipo de limitación de la clave principal. </li></ul><p class="line874">Supongamos que el campo A es obligatorio para la tabla T1 y que dicho campo hace referencia al campo "Dirección IP" (cfield=4), pero el resultado no contiene la dirección IP. En este caso, el resultado se omite por completo y no se incluye en la tabla T1. Sin embargo, si otra tabla, la T2, hace referencia al campo "Dirección IP", pero el campo REQUIREMENT no incluye el campo A, el resultado se incluirá en T2. <ul><li>SPECIAL: se emplea para enlazar registros de tablas globales a registros de tablas internas (sesiones, visitantes, transacciones, elementos de transacción, rutas); se trata de un tipo de clave externa. Por ejemplo, la tabla n. 1 del archivo del mapa de datos predeterminado podría enlazar la fuente, el medio y la campaña con la sesión (donde la "fuente" es la clave principal); la tabla n. 2 podría enlazar la fuente, el medio, el término y el contenido con la sesión (donde la "fuente" es la clave principal); y la tabla n. 12 podría enlazar la raíz de la solicitud y el título de la página con las rutas. Se desaconseja realizar cambios en las tablas con marcadores especiales o utilizar marcadores en tablas personalizadas, ya que esto podría bloquear las claves externas. <ul><li>S1-S11: enlace de la sesión, </li><li>P1: enlace de la ruta, </li><li>PARAM: parámetro especial, </li><li>T1-T2: enlace de la transacción, </li><li>I0 - I1: enlace del elemento, </li><li>IPATH: ruta inicial, </li><li>GTHRU: porcentaje de clics de objetivo, </li><li>GPATH: ruta de objetivo invertida, </li><li>CTHRU: porcentaje de clics. </li></ul></li><li class="gap">IFIELDS: métricas. Las tablas almacenan conjuntos de métricas procesadas para optimizar la velocidad de la extracción de datos, es decir, cuando el motor procesa los registros, realiza los cálculos de todas las combinaciones de parámetros (o cfields) para así poder obviar esta fase durante la extracción. Por ejemplo, cfields: dirección IP, ifields: visitas. Durante el procesamiento, se crea una tabla nueva con el fin de almacenar las visitas calculadas previamente para cada dirección IP. El informe, que se genera a partir de la tabla, extrae los datos al instante sin tener que calcular prácticamente nada. A continuación, se describen valores válidos para la columna IFIELDS.  </li><li class="gap">PPFIELDS: campos de posprocesamiento (de un intervalo de ifields). Los datos de los campos de posprocesamiento vienen determinados por el registro de la sesión, la ruta asociada, la transacción y los elementos. Se desaconseja utilizar campos de posprocesamiento en los informes personalizados. </li></ul><p class="line874">Si desea crear una entrada personalizada en el mapa de datos, siga las instrucciones anteriores para crear una fila nueva. Para evitar la descomposición del mapa de datos, asegúrese de que todas las entradas nuevas de la tabla tengan asignado un número exclusivo. <p class="line874">Ejemplo de una fila en un archivo de mapa de datos: <div><table><tbody><tr>  <td><p class="line891"><strong>TABLE</strong> </td>
+  <td><p class="line862"> <strong>AFIELD</strong> </td>
+  <td><p class="line862"> <strong>BFIELD</strong> </td>
+  <td><p class="line862"> <strong>CFIELD</strong> </td>
+  <td><p class="line862"> <strong>DFIELD</strong> </td>
+  <td><p class="line862"> <strong>EFIELD</strong> </td>
+  <td><p class="line862"> <strong>REQUIREMENTS</strong> </td>
+  <td><p class="line862"> <strong>SPECIAL</strong> </td>
+  <td><p class="line862"> <strong>IFIELDS</strong> </td>
+  <td><p class="line862"> <strong>PPFIELDS</strong></td>
+</tr>
+<tr>  <td><p class="line862">1 </td>
+  <td><p class="line862"> 139 </td>
+  <td><p class="line862"> 138 </td>
+  <td><p class="line862"> 137</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> A</td>
+  <td><p class="line862"> S1 </td>
+  <td><p class="line862">5,11,15,19,24,25,26,27,28,29,30,31 </td>
+  <td><p class="line862"> -</td>
+</tr>
+<tr>  <td><p class="line862"> Número de tabla </td>
+  <td><p class="line862"> Campo A del registro que debe usarse </td>
+  <td><p class="line862"> Campo B del registro que debe usarse </td>
+  <td><p class="line862"> Campo C del registro que debe usarse </td>
+  <td><p class="line862"> El campo D no se utiliza </td>
+  <td><p class="line862"> El campo E no se utiliza </td>
+  <td><p class="line862"> Solo debe contener datos el campo A</td>
+  <td><p class="line862"> Enlace de la sesión 1 </td>
+  <td><p class="line862"> Campos calculados </td>
+  <td><p class="line862">No hay campos de posprocesamiento</td>
+</tr>
+</tbody></table></div><p class="line874">Campos calculados que se han utilizado para la columna IFIELDS: <ol type="1"><li>Hits </li><li>Validhits </li><li>Errorhits </li><li>Bytes </li><li>Pages </li><li>Nonpages </li><li>Entrancepages </li><li>Exitpages </li><li>Bouncepages </li><li>Pagetime </li><li>Visits </li><li>Visitors </li><li>Newvisitors </li><li>Priorvisitors </li><li>Transactions </li><li>Customers </li><li>Newcustomers </li><li>Priorcustomers </li><li>Revenue </li><li>Tax </li><li>Shipping </li><li>Items </li><li>Itemrevenue </li><li>Responses </li><li>Impressions </li><li>Clicks </li><li>Cost </li><li>Goals1 </li><li>Goals2 </li><li>Goals3 </li><li>Goals4 </li><li>Goalstarts1 </li><li>Goalstarts2 </li><li>Goalstarts3 </li><li>Goalstarts4 </li><li>Score  </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

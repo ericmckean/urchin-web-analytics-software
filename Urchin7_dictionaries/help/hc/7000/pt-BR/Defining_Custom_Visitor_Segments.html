@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como definir segmentos de visitante personalizados</strong> <p class="line874">Além de segmentar usuários em categorias predefinidas, como região geográfica e preferência de idiomas, o Urchin 6 permite definir segmentos personalizados e analisar o comportamento de cada um deles.Por exemplo, você pode solicitar que os visitantes coloquem uma marca de seleção ao lado de sua área de atuação (como Técnico/Engenharia, Marketing/PR, etc.) em um formulário.Com esses dados, você pode analisar o comportamento de navegação e compra segundo as informações sobre área de atuação selecionadas pelos visitantes. <p class="line862">Você pode visualizar o comportamento de conversão de cada segmento personalizado no relatório "Otimização de Marketing &gt; Desempenho do segmento do visitante &gt; Definido pelo usuário".Além disso, vários outros relatórios permitem fazer uma análise cruzada dos dados de acordo com o segmento do visitante.Para fazer uma análise cruzada, clique no botão "Opções de análise", na extremidade esquerda de qualquer entrada na maioria dos relatórios.Selecione "Definido pelo usuário" para visualizar seus segmentos personalizados. <p class="line862">Para definir um segmento de visitantes, basta chamar a função javascript <tt class="backtick">__</tt>utmSetVar.Por exemplo, faça a seguinte chamada em qualquer lugar na página da web, abaixo do UTM: <pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line867">Exemplo:atribua visitantes desta página ao segmento "Marketing/PR" <p class="line874">Neste exemplo, quem visitar a página será colocado no segmento "Marketing/PR". <pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line867">Exemplo:atribuir visitantes ao segmento que ele selecionar <p class="line874">Neste exemplo, os visitantes são atribuídos a um segmento de acordo com sua seleção no formulário. <pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;Técnico/Engenharia&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;Marketing/PR&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;Indústria&lt;/option&gt;
+    &lt;option value="General Management"&gt;Administração geral&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

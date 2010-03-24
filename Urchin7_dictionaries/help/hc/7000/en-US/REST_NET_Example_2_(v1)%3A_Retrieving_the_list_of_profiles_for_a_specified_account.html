@@ -1,0 +1,35 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>REST .NET Example 2: Retrieving the list of profiles for a specified account</strong>  <p class="line862">(Return to main article: <a href="Samples_for_.NET_(REST)_v1.html">Samples for .NET (REST) v1</a>) <p class="line874">1. Specify Service URL: <pre>private const string serviceURL = "http://SERVER_NAME:URCHIN_PORT/services/v1/adminservice/profiles/";
+</pre><p class="line874">2. Provide login and account information: <pre>private const string login = "YOUR_LOGIN";
+private const string password = "YOUR_PASSWORD";
+private const int accountId = ACCOUNT_ID;
+</pre><p class="line874">3. Compose REST URL: <pre>string url = serviceURL + "?login=" + login + "&amp;password=" + password + "&amp;accountId=" + accountId;
+</pre><p class="line874">4. Retrieve account list: <pre>XPathDocument xPathDocument = new XPathDocument(url);
+</pre><p class="line874">5. Parse response: <pre>XPathNavigator xPathNavigator = xPathDocument.CreateNavigator();
+XmlNameTable xmlNameTable = new NameTable();
+XmlNamespaceManager xmlNamespaceManager = new XmlNamespaceManager(xmlNameTable);
+xmlNamespaceManager.AddNamespace("tns", "https://urchin.com/api/urchin/v1/");
+                                // Get all profiles.
+XPathNodeIterator profileXPathNodeIterator = xPathNavigator.Select("/tns:getProfileListResponse/profile", xmlNamespaceManager);
+</pre><p class="line874">6. Display the information: <pre>while (profileXPathNodeIterator.MoveNext())
+        DisplayProfile(profileXPathNodeIterator.Current);
+
+    .....
+
+    // Function to display profile info.
+
+private static void DisplayProfile(XPathNavigator profileXPathNavigator)
+{
+        Console.Write("Profile id is \"" + profileXPathNavigator.SelectSingleNode("profileId/text()") + "\", ");
+        Console.Write("profile name is \"" + profileXPathNavigator.SelectSingleNode("profileName/text()") + "\", ");
+        Console.Write("account id is \"" + profileXPathNavigator.SelectSingleNode("accountId/text()") + "\", ");
+        Console.WriteLine("account name is \"" + profileXPathNavigator.SelectSingleNode("accountName/text()") + "\" ");
+}
+</pre><p class="line874">The full sample code for this example is available in AdminServiceGetProfileListREST.cs file.     </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

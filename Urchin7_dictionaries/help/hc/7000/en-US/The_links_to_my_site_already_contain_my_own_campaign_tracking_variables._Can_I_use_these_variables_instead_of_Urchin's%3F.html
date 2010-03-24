@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>The links to my site already contain my own campaign tracking variables. Can I use these variables instead of Urchin's?</strong> <p class="line874">If you've already tagged your online links with your own tracking variables, you can map these existing variables to Urchin's campaign tracking variables. Your tagged links will need to contain at least 3 variables. These will map to: <ol type="1"><li>utm_source: the source of your campaign (for example, Google, Yahoo) </li><li>utm_medium: the medium of your campaign (cpc, banner, email) </li><li>utm_campaign: the name of your campaign (spring_sale) </li></ol><p class="line874">For the purpose of these instructions, we will assume that your site contains the following URL: <pre>            www.example.com/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>Step 1.</strong> Match your variables with Urchin's variables. Create a table following the format shown in the example below: <pre>               Campaign     Ad Source   Ad Type     Keyword   A/B content  Master
+User codes=    camp         adver       type        kwd       version      
+Urchin codes=  utm_campaign utm_source  utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>Step 2.</strong> Modify the UTM file. <ul><li style="list-style-type:none">Open the urchin.js file in a text editor. At the top of the file there is a user-defined section which includes the utm variables: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">Using the tagged link example above, this section would be edited as follows: </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>Step 3.</strong> Create filters for these new tracking variables. <ul><li style="list-style-type:none">This is the basic filter configuration you should use for each filter: </li></ul><p class="line867"><pre>                Filter Type : Advanced
+                Field A : utm_campaign_uri (raw)
+                Extract A : new_variable =([^&amp;]*)
+                Field B : (None)
+                Extract B : (empty)
+                Output To : utm _( old_variable )
+                Constructor : $A1
+                Field A Required : Yes
+                Field B Required : No
+                Override Output Field : Yes
+                Case Sensitive : No
+</pre><ul><li style="list-style-type:none">old_variable refers to the default Urchin tracking variable. new_variable refers to your own tracking variable. Remember that you will need a filter for each modified variable. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,1263 @@
+######################################################
+#  Urchin 7 admin default dictionary file
+#  NOTE:  Don't edit this file! Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+######################################################
+0	Niet gebruikt
+1	Configuratie
+2	Rapporten weergeven
+3	Voorkeuren
+4	2999803979
+5	Administratie
+6	DNS-database bijwerken
+7	Gebruikers en groepen
+8	Accounts
+9	Gebruikers
+10	Groepen
+11	Urchin-profielen
+12	Profielen
+13	Instellingen
+14	Verwerkingsinstellingen
+15	Globale instellingen
+16	Help-informatie
+17	Beheerdershandleiding
+18	Woordenlijst
+19	Over Urchin
+20	Gebruikershandleiding van Urchin
+21	Planner
+22	Vorige
+23	Volgende
+24	Startershandleiding
+25	Wizard Account: Algemene informatie
+26	Wizard Account: Voltooien
+27	Wizard Account: Bevestiging
+28	Profieltaakoverzicht
+29	Naam
+30	Documentatiecentrum
+31	Overeenkomst organische zoekwoorden
+32	Overeenkomst paginaparameters
+33	Overeenkomst bestandsextensies
+34	inclusief
+35	uitsluiten
+36	Bezoekers en sessies verwerken
+37	Gegevensoverzicht
+38	Rapportreeks
+39	Verwerkingsinstellingen
+40	Toevoegen
+41	Accountnaam
+42	IP-adres
+43	Bewerken
+44	Verwijderen
+45	Uitvoeren
+46	Accountgegevens
+47	Bestemming van logbestand
+48	Accountoverzicht
+49	verwijderen
+50	Beheerdersinstellingen van Configuratiescherm
+51	DNS-zoekopdracht
+52	op
+53	uit
+54	IP omzetten
+55	DNS-lussen
+56	Resolutiepercentage %
+57	afhankelijk van geldige instellingen voor DNS-zoekopdrachten
+58	Limiet databasetabel
+59	Modus Datacentrum
+60	GMT verschuiven
+61	Tijdsverschil
+62	Urchin Help-informatie
+63	Time-out sessie
+64	Niet wijzigen
+65	Archiveren - Comprimeren
+66	Verwijderen
+67	Datum toepassen
+68	Datum/tijd vervangen door jokerteken in padnaam logbestand
+69	Tijd vervangen door
+70	Zoeken en vervangen
+71	zo
+72	M
+73	di
+74	W
+75	do
+76	V
+77	za
+78	jan
+79	feb
+80	mrt
+81	apr
+82	mei
+83	jun
+84	jul
+85	aug
+86	sep
+87	okt
+88	nov
+89	dec
+90	Bijwerken
+91	Account
+92	Snelle weergave
+93	Weergegeven
+94	Beheerdersrechten
+95	Optie 1 (Gebruiker,Groepen,Profieltaakplanner,Profieltaakoverzicht)
+96	DNS-zoekopdracht
+97	Instellingen rapportdatabase
+98	Tijd aanpassen
+99	Opties voor bijhouden bezoekers
+100	Contact
+101	Accountgegevens
+102	Toevoegen mislukt: licentielimiet bereikt voor profiel.<p> Werk uw licentie bij of verwijder<br> een bestaand profiel en probeer het nogmaals.
+103	Toevoegen is mislukt
+104	Verwijderen mislukt
+105	Ophalen mislukt
+106	Bijwerken mislukt
+107	E-mailadres contactpersoon
+108	Gebruikers
+109	Gebruikersnaam
+110	Profielen
+111	Volledige naam
+112	Gebruikersinformatie
+113	Optie 2 (optie 1 + filters)
+114	Wachtwoord
+115	Optioneel account
+116	Alles
+117	Optie 3 (optie 2 + profielen, bronnen logbestand)
+118	Beheerdersniveau
+119	Gebruikersvoorkeuren
+120	Rapporttaal
+121	Taal voor beheer
+122	Groepen
+123	Groepsnaam
+124	Groepsgegevens
+125	Gebruikers toegewezen aan groep
+126	Kopiëren
+127	Gebruikers in groep
+128	Back-up maken en opschonen van database
+129	Back-ups maken
+130	Back-ups opschonen
+131	Aantal te behouden back-ups
+132	Geavanceerd
+133	Lokaal
+134	GMT
+135	Uren
+136	Sitedomeinen
+137	URL decoderen
+138	Zoekreeks
+139	Vervangreeks
+140	Toegang verleend
+141	Te verwerken bronnen logbestand
+142	Te verwerken bronnen logbestand
+143	Selecteer een profiel hierboven
+144	Logbeheer
+145	Filterbeheer
+146	Logbeheer
+147	Filterbeheer
+148	Naam bron logbestand
+149	Filternaam
+150	Taak annuleren
+151	Informatie bron logbestand
+152	Pad logbestand
+153	Indeling logbestand
+154	Gebruiker instellen: rapportreeks configureren
+155	Filterinformatie
+156	Filtertype
+157	Filterveld
+158	Alleen patroon opnemen
+159	Patroon uitsluiten
+160	Dynamische URL
+161	Te gebruiken filter(s)
+162	Beschikbare filters
+163	Toegewezen filters
+164	Veld A
+165	Veld B
+166	Uitvoeren naar
+167	A extraheren
+168	B extraheren
+169	Samenstellen
+170	Uitvoerveld negeren
+171	Veld A verplicht
+172	Ja
+173	Nee
+174	Alleen A is verplicht
+175	Alleen veld B is verplicht
+176	Beide velden
+177	Eén van beide velden
+178	Geen van deze velden
+179	Rapportreeks selecteren
+180	Rapportreeksen
+181	Rapportreeks voor profiel negeren
+182	Geografische gegevens
+183	Back-up maken en opschonen van Urchin-database
+184	<nobr><span class=title1><b>Globale instellingen: Automatische update (Ref. #A-2704)</b></span></nobr><p><b>Versies<br></b>Met de functie voor automatische updates kunt u de volgende Urchin-componenten afzonderlijk bijwerken:<ul><li>Urchin - bevat alle componenten met uitzondering van geo-databases (ongeveer 50 MB)</li><li>Help-artikelen - bevat de ingesloten Help en de Helpcentrum-artikelen (ongeveer 5 MB per taal)</li><li>Geo-databases - bevat alle geo-databases (ongeveer 200 MB)</li></ul>Beschikbare acties:<ul><li>nu controleren - controleren op updates</li><li>lijst met wijzigingen weergeven - de lijst met wijzigingen van een nieuwe versie weergeven</li><li>download nu plannen - het downloaden van een nieuwe versie starten</li><li>annuleren - de download annuleren</li><li>nu installeren - het installatieproces starten</li><li>foutenlogboek bekijken - fouten weergeven</li></ul></p><p><b>Update plannen<br></b>Gebruik deze besturingselementen om aan te passen of en wanneer de componenten worden bijgewerkt. Standaard worden de componenten dagelijks bijgewerkt. Indien ingeschakeld, worden elke dag op het geconfigureerde tijdstip updates van Urchin automatisch gedownload. Houd er rekening mee dat updates van de geo-database relatief groot zijn (ongeveer 200 MB), dus het downloaden kan van invloed zijn op de netwerkbandbreedte.</p><p><b>HTTP-proxyinstellingen (optioneel)<br></b>Als voor uitgaande toegang tot de Google-server waar de updates van de geografische gegevens worden gehost het gebruik van een proxyserver is vereist, gebruikt u deze velden om de naam en poort van de proxyserver, en de gebruikersnaam en het wachtwoord op te geven.</p><p><b>Instellingen bijwerken<br></b>Indien ingeschakeld, worden de Help-artikelen of geo-databases op het geconfigureerde tijdstip op de achtergrond bijgewerkt zonder gebruikersinteractie.</p>
+185	<nobr><span class=title1><b>Profielen: Opslag/Database (Ref. #A-2108)</b></span></nobr><br>In dit scherm kunt u opties voor gegevensbeheer instellen. Voor fouttolerante bewerkingen biedt Urchin opties voor automatische back-up en herstel. Gebruik deze opties voor een veilige werking. Urchin bevat bovendien een optie voor automatisch archiveren waarmee oude gegevens automatisch kunnen worden gecomprimeerd. <p><b>Geheugengebruik van database</b><br>Onder normale gebruiksomstandigheden beperkt Urchin de hoeveelheid RAM die door de verwerkingsengine wordt gebruikt met behulp van een cache-systeem. Wanneer het proces geheel in het geheugen wordt uitgevoerd, nemen de prestaties weliswaar toe, maar omdat het proces dan mogelijk alle beschikbare RAM op het systeem in beslag neemt, is deze mogelijkheid alleen geschikt voor systemen die exclusief voor Urchin worden gebruikt. Voor de meeste toepassingen kunt u deze instelling het beste op 'Limiet voor cache-systeem' laten staan.<p><b>Limiet databasetabel</b><br>Als u bij grote websites greep wilt houden op de hoeveelheid gegevens en de daarmee samenhangende prestaties van Urchin, kunt u met deze instelling elke tabel in de Urchin-databases beperken tot het aantal vermelde records. De standaardoptie is geschikt voor de meeste installaties. Als deze limiet binnen een bepaalde maand wordt bereikt, worden overige items ondergebracht onder een item met de naam 'Overige'. Geef voor optimale prestaties een waarde op die lager is dan of gelijk is aan 100.000. <p><b>Ruwe gegevens over verkeer behouden</b><br>Als deze optie is uitgeschakeld, worden ruwe bezoekers- en sessiegegevens na verwerking verwijderd. Hierdoor kunnen de prestaties van het verwerken van logbestanden aanzienlijk worden verbeterd en kan de hoeveelheid gegevens die wordt opgeslagen voor grote sites, worden gereduceerd. Nadat de ruwe sessiegegevens zijn verwijderd, worden overige treffers voor deze sessie als een nieuwe sessie behandeld. Dit kan een beperkt bijeffect veroorzaken in het rapport. <p><b>Logbestand bijhouden</b><br>Urchin is uitgerust met een intelligente functie voor logbestandstracering waarmee het systeem kan vaststellen of een bepaald logbestand al eerder is verwerkt. Hierdoor kunt u logbestanden op een willekeurig moment roteren in plaats van een strak schema te moeten volgen. Bovendien kunt u Urchin hierdoor verwijzen naar een directory met logbestanden zonder dat u zich hoeft af te vragen of deze directory logbestanden bevat die al zijn verwerkt. Belangrijk: als Urchin niet daadwerkelijk aanwezig is op het systeem waarop de logbestanden zich bevinden, worden alle logbestanden in het geheel gekopieerd naar het lokale Urchin-systeem voordat wordt vastgesteld of de logbestanden reeds zijn verwerkt. Wanneer grote logbestanden worden geanalyseerd, kan dit het netwerk aanzienlijk belasten.<p><b>Database automatisch herstellen</b><br>Als deze optie is ingeschakeld, worden gegevens automatisch hersteld wanneer de verwerking halverwege werd beëindigd of afgebroken. Urchin neemt dit automatisch waar en herstelt de meest recente back-up van de gegevens (mits aanwezig) voordat de verwerking wordt voortgezet.<p><b>Back-ups maken</b><br>Met deze optie schakelt u het automatisch maken van back-ups na verwerking in. Back-ups worden gecomprimeerd om compact te worden opgeslagen.<p><b>Back-ups opschonen</b><br> Met deze optie worden oude back-ups automatisch opgeschoond op basis van het aantal gewenste resterende back-ups dat bij de volgende optie is opgegeven. Als deze optie is ingeschakeld, verwijdert Urchin automatisch oude back-ups die opslagruimte in beslag nemen. <p><b>Aantal te behouden back-ups</b><br> Hier kunt u opgeven hoeveel back-ups per maand moeten worden behouden door de opschoningsfunctie die hierboven wordt beschreven.<p><b>Database archiveren</b><br> Met deze optie kunt u het automatisch archiveren van oude maandelijkse gegevens inschakelen. Oude gegevens worden automatisch gecomprimeerd in één archief, back-ups worden verwijderd en de gegevens worden vergrendeld. Met de rapportagefunctie kunnen de gearchiveerde gegevens nog wel worden weergegeven, maar er kunnen geen treffers meer worden verwerkt voor de maanden die zijn gearchiveerd.<p><b>Database archiveren na</b><br>Met deze optie kunt u opgeven hoeveel maanden oud de gegevens moeten zijn voordat ze automatisch worden gearchiveerd.<p><b>Alle gegevens voor profiel verwijderen</b><br>Hiermee kunt u ALLE gegevens voor dit profiel, inclusief alle back-ups en archieven, permanent verwijderen. U moet alle logbestanden voor dit profiel opnieuw verwerken. <b>Waarschuwing</b>: controleer eerst of u over alle logbestanden beschikt voordat u deze gegevens verwijdert.
+186	Aanpassen
+187	Profielinstellingen
+188	Profielnaam
+189	Domein
+190	Profielinformatie
+191	Welkom bij de wizard Urchin Setup. <p>De wizard Setup bestaat uit een reeks eenvoudige configuratiestappen waarmee u snel aan de slag kunt. Als u later nog wijzigingen wilt aanbrengen, heeft u de volledige toegang tot alle instellingen via het gedeelte 'Configuratie' van de beheerinterface.<p> Klik op 'Doorgaan' om aan de slag te gaan.
+192	<nobr><span class=title1><b>Planner: Taakvoortgang (Ref. #A-2664)</b></span></nobr><br>Op dit scherm wordt de voortgang weergegeven van de taak die momenteel wordt uitgevoerd. Dit scherm bevat ook besturingselementen om de actieve taak te annuleren. Boven aan het venster wordt een voortgangsbalk weergegeven die het geschatte voltooiingspercentage weergeeft. Gebruik de knop 'Taak annuleren' om de actieve taak te annuleren en het profiel terug te zetten. Boven de voortgangsbalk wordt een klikbare link naar het rapport van het profiel weergegeven. De uitvoertijd van de logbestandsverwerking wordt weergegeven in het venster 'Detail taakvoortgang'. <p>Opmerking: als een groot extern logbestand wordt verwerkt, kan het kopiëren van gegevens erg lang duren. Gedurende die tijd wordt de voortgang niet aangegeven op de voortgangsbalk. Nadat het bestand naar de computer met Urchin is gekopieerd, zou de voortgangsbalk min of meer continu moeten worden bijgewerkt.
+193	<nobr><span class=title1><b>Planner: Overzichtsdetails (Ref. #A-2563)</b></span></nobr><br>In dit scherm worden de details van de uitvoering van een taak weergegeven, doorgaans voor foutopsporing of evaluatie van de prestaties. Als er zich een fout heeft voorgedaan, wordt in dit scherm een mogelijke oplossing gegeven. <p><b>Algemene problemen</b><br>Algemene problemen zijn fouten, waaronder 'logbestand niet gevonden', die doorgaans eenvoudig kunnen worden opgelost door een pad of bestandsnaam te corrigeren. Als FTP wordt gebruikt om logbestanden via het netwerk te verplaatsen, moet u ervoor zorgen dat de gebruikersnaam en het wachtwoord juist zijn. U kunt dit doen door u aan te melden bij de server met een speciaal FTP-programma. Als de tijd voor gegevensverwerking ('data proc'-tijd) slechts een fractie van de totale uitvoeringstijd beslaat, is er waarschijnlijk een probleem met het kopiëren van het logbestand via het netwerk. Mogelijk kunt u Urchin beter rechtstreeks op de server installeren.
+194	<nobr><span class=title1><b>Bestandsbrowser (Ref. #A-5000)</b></span></nobr><br>In dit scherm kunt u door het lokale bestandssysteem bladeren om de gewenste logbestandsbron te zoeken. Dit is vooral handig als u niet helemaal zeker bent van de naam van het logbestand. In het vak 'Ga naar directory' (links) kunt u een directory selecteren om in te bladeren. De bestanden in de directory worden weergegeven in het vak 'Bestand selecteren' (rechts). Als u het gewenste logbestand heeft gevonden, klikt u op het bestand in het vak 'Bestand selecteren' en klikt u op 'OK'.<p><b>Huidige directory</b><br>Het veld 'Huidige directory' boven in het venster kan rechtstreeks worden bewerkt. Druk op Enter om na het bewerken de inhoud van de betreffende directory weer te geven.<p><b>Bovenliggende directory</b><br>Met het pictogram Bovenliggende directory rechtsboven in het venster (de directory met de pijl) kunt u naar de directory boven de huidige directory gaan. De inhoud van de nieuwe directory wordt weergegeven.<p><b>Ga naar directory</b><br>In het linkervenster kunt u een directory binnen de huidige directory selecteren. Klik eenmaal op een directory in het venster 'Ga naar directory' om naar deze directory te gaan<p><b>Bestand selecteren</b><br>In het venster 'Bestand selecteren' (rechts) kunt u een bestand selecteren. Klik eenmaal op het gewenste bestand. De bestandsnaam wordt in het veld 'Bestandsnaam' geplaatst. Klik op 'OK' als u het bestand heeft geselecteerd.<p><b>OK/Controleren/Annuleren</b><br>Met de knop 'OK' sluit u het venster en wordt het padveld in het vorige venster met uw selectie gevuld. Met de knop 'Annuleren' sluit u het venster. Met de knop 'Controleren' opent u een nieuw venster. Hierin kunt u de rechten en de grootte controleren van één bestand of van meerdere bestanden als in de bestandsnaam een jokerteken is gebruikt.
+195	<nobr><span class=title1><b>Browser externe logbestanden (Ref. #A-5001)</b></span></nobr><br>In dit scherm kunt u in een extern bestandssysteem bladeren (via FTP) om de gewenste logbestandsbron te zoeken. Dit is met name handig wanneer u niet helemaal zeker bent van de naam van het logbestand, of als u de FTP-instellingen wilt testen die u in het Urchin-systeem heeft geconfigureerd. In het vak 'Ga naar directory' (links) kunt u een directory selecteren om in te bladeren. De bestanden in de directory worden weergegeven in het vak 'Bestand selecteren' (rechts). Als u het gewenste logbestand heeft gevonden, klikt u op het bestand in het vak 'Bestand selecteren' en klikt u op 'OK'.<p><b>Huidige directory</b><br>Het veld 'Huidige directory' boven in het venster kan rechtstreeks worden bewerkt. Druk op Enter om na het bewerken de inhoud van de betreffende directory weer te geven.<p><b>Bovenliggende directory</b><br>Met het pictogram 'Bovenliggende directory' rechtsboven in het venster (de map met de pijl) kunt u naar de directory boven de huidige directory gaan. De inhoud van de nieuwe directory wordt weergegeven.<p><b>Ga naar directory</b><br>In het linkervenster kunt u een directory binnen de huidige directory selecteren. Klik eenmaal op een directory in het venster 'Ga naar directory' om naar deze directory te gaan.<p><b>Bestand selecteren</b><br>In het venster 'Bestand selecteren' (rechts) kunt u een bestand selecteren. Klik eenmaal op het gewenste bestand. De bestandsnaam wordt in het veld 'Bestandsnaam' geplaatst. Klik op 'OK' als u het bestand heeft geselecteerd.<p><b>OK/Annuleren</b><br>Met de knop 'OK' sluit u het venster en wordt het padveld in het vorige venster met uw selectie gevuld. Met de knop 'Annuleren' sluit u het venster.
+196	<nobr><span class=title1><b>Directorybrowser (Ref. #A-5002)</b></span></nobr><br>In dit scherm kunt u door het lokale bestandssysteem van Urchin bladeren om een directory te selecteren voor de parameter die u bewerkt.<p><b>Huidige directory</b><br>Het veld 'Huidige directory' boven in het venster kan rechtstreeks worden bewerkt. Druk op Enter om na het bewerken de inhoud van de betreffende directory weer te geven.<p><b>Bovenliggende directory</b><br>Met het pictogram Bovenliggende directory rechtsboven in het venster (de directory met de pijl) kunt u naar de directory boven de huidige directory gaan. Druk op Enter om na het bewerken de inhoud van de betreffende directory weer te geven.<p><b>Directory selecteren</b><br>In het venster 'Directory selecteren' kunt u de directory die u zoekt, openen en selecteren. Klik eenmaal op een directory in de lijst om naar deze directory te gaan. Als in het venster 'Huidige directory' de gewenste directory wordt weergegeven, klikt u op de knop 'OK'.<p><b>OK/Annuleren</b><br>Met de knop 'OK' sluit u het venster en wordt het padveld in het vorige venster met uw selectie gevuld. Met de knop 'Annuleren' sluit u het venster.
+197	Hoofdbeheerder
+198	Gebruiker
+199	Accountbeheer
+200	Chinees
+201	Engels
+202	Frans
+203	Duits
+204	Italiaans
+205	Japans
+206	Koreaans
+207	Portugees (Brazilië)
+208	Spaans
+209	Zweeds
+210	Record toegevoegd
+211	Record bijgewerkt
+212	Bijwerken van geografische database plannen
+213	Back-up en opschonen van Urchin-database plannen
+214	Database automatisch herstellen
+215	Ruwe gegevens over verkeer behouden
+216	Rapportageopties
+217	Selecteer de optie Bewerken.
+218	Algemene standaard
+219	Rapportagerechten
+220	Beschikbare profielen
+221	Toegang verleend
+222	Opslag/Database
+223	Rapportage
+224	Groepen toegewezen aan groep
+225	URI-stam in kleine letters
+226	Groepen binnen groep
+227	Rapportinstellingen
+228	Rapportreeks
+229	Standaard rapportreeks voor profiel
+230	Opties gegevensopslag
+231	Beschikbare gebruikers
+232	Beschikbare groepen
+233	UTM-domein
+234	Groepen toegewezen aan
+235	Lid van deze groepen
+236	Instellingen logbestand
+237	Filterinstellingen
+238	Beschikbare bronnen logbestand
+239	Toegepast op
+240	Bronnen logbestand toegepast op
+241	Snelle weergave profiel
+242	Aan profiel toegewezen gebruikers
+243	Opties Archiefdatabase
+244	Database archiveren
+245	Database archiveren na
+246	Maanden
+247	Profieltype:
+248	Wizard Profiel: Algemene instellingen
+249	<nobr><span class=title1><b>Wizard Profiel: Algemene instellingen (Ref. #A-249)</b></span></nobr><br>In dit scherm kunt u verschillende parameters instellen om de verwerking van de gegevens voor dit profiel te beheren.<p><b>Website-URL</b><br>Met deze instelling kunt u links naar uw feitelijke website maken. Dit moet de volledige domeinnaam van de site zijn, inclusief http://. <p><b>Sitedomeinen</b><br>Met deze instelling kunt u alle mogelijke domeinen voor uw website weergeven, met en zonder vermelding van www. Dit veld kunt u gebruiken om vast te stellen of een verwijzing extern is ten opzichte van uw site (interne verwijzingen worden niet gebruikt in verwijzingsrapportages). Gebruik komma's om de domeinen van elkaar te scheiden.<p><b>Standaardpagina</b><br>Voer hier de standaardpagina voor uw site in. Deze pagina kan doorgaans worden geopend met www.site.com/ en www.site.com/index.html of standaard.html. Urchin moet de naam van deze pagina weten zodat het systeem de mogelijkheden intern kan combineren wanneer beide notatiestijlen worden waargenomen.<p><b>Parallelle logbestandsverwerking</b><p>Als u deze optie inschakelt, wordt de logbestandsverwerking effectiever door load-balanced logbestanden. Hiervoor moet u een afzonderlijke logbestandsbron instellen voor elk load-balanced serverlogbestand.
+250	Fout serverpoort. \n\nControleer of de poort zich binnen het juiste bereik bevindt.
+251	Gebruikersrechten
+252	Wachtwoord wijzigen
+253	Rapporttaal wijzigen
+254	Aanvullende bronnen
+255	Geïnstalleerde modules
+256	Taalpakket
+257	E-commerce (ELF-verwerking)
+258	Campagne bijhouden
+259	Licentielimiet voor bron logbestand bereikt. \n\nRaadpleeg het licentiescherm voor informatie over het bijwerken van de licentie. \n\nInstellingen->Licentie
+260	Latijn-1-codering (UTF-8)
+261	Gebruiker - Geen update
+262	Accountinstellingen
+263	Locatie van rapportgegevens
+264	Locatie voor bladeren in directory's
+265	Administratie
+266	Overzicht van Urchin Setup
+267	Aantal accounts
+268	Aantal groepen
+269	Aantal gebruikers
+270	Aantal profielen
+271	UTM geïnstalleerd
+272	Aantal gegevensreeksen
+273	Aantal bronnen logbestand
+274	Aantal logbestandsindelingen
+275	Aantal logbestandsfilters
+276	Nummer schema
+277	Aantal databasevelden
+278	Aantal apparaten
+279	Aantal geplande taken
+280	Accountoverzicht
+281	Profieltaakplanner
+282	Toepassing
+283	Taaknaam
+284	Planningsgegevens
+285	Planning instellen
+286	Aantal verwerkingen
+287	Uit te voeren toepassing
+288	Taakinstellingen
+289	Frequentie
+290	Dagelijks
+291	Wekelijks
+292	Maandelijks
+293	Eenmaal
+294	Starttijd
+295	Uur
+296	Minuut
+297	Basislicentie
+298	Taak dagelijks plannen
+299	Willekeurig aantal dagen
+300	Taak plannen op weekbasis
+301	Willekeurig aantal weken
+302	Dag van de week
+303	ma
+304	di
+305	wo
+306	do
+307	vr
+308	za
+309	zo
+310	Taak maandelijks plannen
+311	Dag van de maand
+312	Taak eenmaal plannen
+313	Datum
+314	Per uur
+315	Taak plannen op uurbasis
+316	Uur van de dag
+317	Minuut van uur
+318	Alles
+319	(Geen)
+320	Selecteren
+321	Japanse codering (UTF-8)
+322	Proces
+323	Naam
+324	Starttijd
+325	Eindtijd
+326	Status
+327	Help van Wizard Toevoegen voor profiel 2
+328	Bezoekers
+329	Paginaweergaves
+330	Treffers
+331	Bytes
+332	Aangepaste velden
+333	Aangepast scheidingsteken
+334	Totalen
+335	Nu plannen
+336	Later plannen
+337	Weergeven
+338	Wizard Profiel: Bevestiging kopiëren
+339	Kopiëren van profiel is gelukt. U kunt nu wijzigingen in het profiel aanbrengen door op 'Meer opties' te klikken. Als u andere bewerkingen wilt uitvoeren, klikt u op 'Gereed'.
+340	Profieltaakplanner
+341	Ga naar rapport
+342	Geen rapporten om te bekijken
+343	Voorkeuren
+344	In dit scherm ziet u een overzicht van het profiel dat u heeft gekopieerd. Als de instellingen correct zijn, klikt u op 'Voltooien' om het kopiëren af te ronden. Klik op de knop 'Vorige' als u wijzigingen wilt aanbrengen.
+345	Records (zie de Help voor meer informatie)
+346	Lokale tijd
+347	Wizard Profiel: Kopiëren voltooid
+348	Minuten
+349	<nobr><span class=title1><b>Wizard Profiel: Kopiëren (Ref. #A-349)</b></span></nobr><br>In dit scherm kunt u een bestaand profiel kopiëren. Het profiel dat u maakt, is identiek aan het origineel. U moet alleen de naam en de primaire URL (domeinnaam) opgeven, en alle overige URL's die naar deze site wijzen.<p><b>Optioneel account</b> (modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de instelling 'Account' gebruiken om dit profiel te koppelen aan een account. Dit account kunt u vervolgens gebruiken voor de controle op toegang en beheer op accountniveau.<p><b>Profielnaam</b><br>Dit veld is vereist en bevat de naam die is gekoppeld aan dit profiel. Deze unieke naam kan willekeurig zijn of het kan de naam van de website zijn. Als een naam zoals www.urchin.com wordt opgegeven, worden de overige twee velden voor uw gemak automatisch ingevuld.<p><b>Website-URL</b><br>Met deze instelling kunt u links naar uw feitelijke website maken. Dit moet de volledige domeinnaam van de site zijn, inclusief http://. <p><b>Sitedomeinen</b><br>Met deze instelling kunt u alle mogelijke domeinen voor uw website weergeven, met en zonder vermelding van www. Dit veld kunt u gebruiken om vast te stellen of een verwijzing extern is ten opzichte van uw site. Gebruik komma's om de domeinen van elkaar te scheiden.<p><b>UTM-domein</b> (voor UTM-geconverteerde profielen)<br>Doorgaans laat u dit leeg. De UTM zal het domein voor de site automatisch detecteren. De UTM-domeinfunctie wordt alleen gebruikt wanneer u overlappende domeinen heeft, die apart moeten worden gevolgd.
+350	Uitvoerprioriteit in Urchin
+351	Laag
+352	Normaal
+353	Hoog
+354	Toegangsinstellingen
+355	Licentie-informatie
+356	Licentiecode
+357	Serienummer
+358	Instellingen externe toegang
+359	Wizard Profiel: Kopiëren
+360	Rapporttoegang via het web
+361	Beheer via het web
+362	Instellingen van rapportserver
+363	Nummer van serverpoort
+364	Wizard Urchin Setup: Welkom
+365	Wizard Setup: Beheerdersinstellingen
+366	Wizard Setup: Beheerder
+367	Wizard Setup: DNS-zoekopdracht
+368	<nobr><span class=title1><b>Wizard Bron logbestand: Beschikbare logbestanden (Ref. #A-368)</b></span></nobr><br>In dit scherm wordt de lijst met bestaande en beschikbare logbestandsbronnen weergegeven, die u kunt toevoegen aan het profiel.<p><b>Bron logbestand toevoegen</b><br>Als u een logbestandsbron wilt toevoegen aan dit profiel, selecteert u de logbestandsbron in het linkervenster en klikt u op de pijl-rechts. Als u een logbestandsbron wilt verwijderen uit dit profiel, selecteert u de logbestandsbron in het rechtervenster en klikt u op de pijl-links. Klik op 'Voltooien' om de wijzigingen toe te passen.
+369	<nobr><span class=title1><b>Wizard Filter: Beschikbare filters (Ref. #A-369)</b></span></nobr><br>In dit scherm wordt de lijst met eerder geconfigureerde filters weergegeven en kunt u de filters toepassen op dit profiel/deze logbestandsbron.<p><b>Filter toepassen</b><br>Als u een bestaand filter wilt toepassen op dit profiel/deze logbestandsbron, klikt u op het filter in het vak links en klikt u op de pijl-rechts. U kunt meer dan één filter op een profiel of logbestandsbron toepassen. Als u een filter wilt verwijderen, selecteert u het filter in het rechtervak en klikt u op de pijl-links. Klik op 'Voltooien' om de wijzigingen toe te passen.
+370	UNC
+371	Volgende
+372	Vorige
+373	Voltooien
+374	Doorgaan
+375	<nobr><span class=title1><b>Wizard Setup: Beheerdersinstellingen (Ref. #A-375)</b></span></nobr><br>Gebruik deze instellingen om de toegang tot het Urchin-systeem te beheren.<p><b>Rapporttoegang via het web</b><br>Met deze instelling kunt u aangeven of rapporten kunnen worden bekeken vanaf andere computers dan de computer waarop Urchin wordt uitgevoerd. Selecteer 'Aan' als u externe toegang tot rapporten mogelijk wilt maken. <p><b>Beheer via het web</b><br>Met deze instelling kunt u beheerderstoegang via het web tot de Urchin-configuratie in- of uitschakelen. Selecteer 'Aan' als u Urchin wilt kunnen beheren vanaf een andere computer dan de computer waarop Urchin is geïnstalleerd. Belangrijk: als u deze installatie uitvoert vanaf een andere computer dan de computer waarop Urchin is geïnstalleerd, heeft u alleen toegang tot het beheerderssysteem vanaf de Urchin-computer, als u beheer via het internet niet inschakelt. <p><b>Modus Datacentrum</b><br>Gebruik deze optie om accounts en subbeheerders in de configuratie in te schakelen. Deze extra besturingselementen bieden datacentra de mogelijkheid complexe klanten te beheren en hun aan hen beperkte beheerdersfunctionaliteit te verschaffen. Door profielen, logbestanden en gebruikers in een account samen te brengen kan het datacentrum de locatie van de gegevens en beheerdersrechten voor de klant beheren.
+376	<nobr><span class=title1><b>Wizard Setup: Beheerder (Ref. #A-376)</b></span></nobr><br>Hier kunt u het beheerderswachtwoord voor het Urchin-systeem invoeren. Omdat elke installatie van Urchin wordt geleverd met hetzelfde standaardwachtwoord, is het belangrijk dat u tijdens de installatieprocedure een ander wachtwoord instelt.<p><b>Beheerderswachtwoord</b><br>Hier kunt u het wachtwoord voor de beheerder van deze Urchin-installatie wijzigen. Het is raadzaam een uniek wachtwoord te kiezen om uw systeem te beschermen. Zorg dat org ervoor dat u uw wachtwoord niet vergeet. Dit heeft u namelijk nodig als u de Urchin-configuratie wilt wijzigen.<p>Als Externe beheerderstoegang in de vorige stap werd ingeschakeld, moet u Urchin rechtstreeks openen vanaf de computer waarop Urchin wordt uitgevoerd. In dat geval vraagt Urchin niet naar een wachtwoord.<p>Als u uw Urchin-installatie wilt configureren met SSL als extra beveiligingsmaatregel, verwijzen we u naar ons Documentatiecentrum voor de nieuwste informatie.
+377	<nobr><span class=title1><b>Logboekverificatie (Ref. #A-5003)</b></span></nobr><br>In dit scherm kunt u het geselecteerde logbestand controleren en vaststellen of het de juiste logbestandsbron is. Als u meer informatie over het logbestand wilt, klikt u op de naam in het linkervak en bekijkt u de tekst die in het onderste vak wordt weergegeven. Hier vindt u de locatie (het pad), de grootte, de wijzigingsdatum en de rechten die aan het logbestand zijn gekoppeld. Als u de parameters van de logbestandsselectie wilt wijzigen, wijzigt u de tekst in het bovenste veld. U kunt desgewenst gebruikmaken van reguliere expressies, zoals een asterisk (bijvoorbeeld toegang_log*, waarmee alle logbestanden met het prefix 'toegang_log' worden geselecteerd) of een datumexpressie (bijvoorbeeld toegang_logDDMMJJJJ). Druk op Enter om de resultaten van de zoekpatronen te bekijken. Klik op 'OK' om door te gaan.<p><b>Logbestand(en)</b><br>Het veld 'Logbestand(en)' boven in het venster kan rechtstreeks worden bewerkt. Druk op Enter om de resultaten van het betreffende item weer te geven.<p><b>Geselecteerde bestanden</b><br>Klik op een bestand in het venster 'Geselecteerde bestanden' om de bestandsgegevens weer te geven. De gegevens worden onder aan het venster weergegeven.<p><b>Andere bestanden in directory</b><br>Klik op een bestand in dit venster om de bestandsgegevens weer te geven. De gegevens worden onder aan het venster weergegeven.<p><b>OK/Annuleren</b><br>Met de knop 'OK' sluit u het venster en wordt het padveld in het vorige venster met uw selectie gevuld. Met de knop 'Annuleren' sluit u het venster.
+378	<nobr><span class=title1><b>Wizard Setup: DNS-zoekopdracht (Ref. #A-378)</b></span></nobr><br>In dit scherm kunt u de parameters voor DNS-zoekopdrachten voor deze Urchin-installatie wijzigen. Kort gezegd worden via de DNS-zoekopdracht numerieke IP-adressen, zoals 63.212.171.4, vertaald naar domeinnamen, zoals www.urchin.com. Doorgaans zult u DNS-zoekopdrachten willen inschakelen zodat belangrijke domeingegevens in uw rapport verschijnen. <p><b>DNS-zoekopdracht</b><br>Selecteer de knop 'Aan' om deze functie in te schakelen.<p><b>IP omzetten</b><br>In dit veld kunt u het IP-adres van een geldige DNS-server invoeren, uw eigen of dat van uw provider. Als u het IP-adres niet weet, informeert u bij uw systeembeheerder of serviceprovider naar dit adres. Voor een juiste werking moet de DNS-server lokaal zijn ten opzichte van uw netwerk.
+379	(aanbevolen)
+380	Standaardpagina
+381	Profielen toegewezen aan
+382	Geen <b>profielen</b> in configuratie. Klik op de knop 'Toevoegen'<br> rechtsboven als u een nieuw <b>profiel</b> wilt toevoegen.
+383	Geen <b>logbestandsbronnen</b> in configuratie. Klik op de knop 'Toevoegen'<br> rechtsboven als u een nieuwe <b>logbestandsbron</b> wilt toevoegen.
+384	Geen <b>filters</b> in configuratie. Klik op de knop 'Toevoegen'<br> rechtsboven als u een nieuw <b>filter</b> wilt toevoegen.
+385	Geen <b>gebruikers</b> in configuratie. Klik op de knop 'Toevoegen'<br> rechtsboven als u een nieuwe <b>gebruiker</b> wilt toevoegen.
+386	Wizard Profiel: Profielinstellingen
+387	Geen <b>groepen</b> in configuratie. Klik op de knop 'Toevoegen' <br> in de rechterbovenhoek als u een nieuwe <b>groep</b> wilt toevoegen.
+388	Wizard Profiel: Instellingen logbestand
+389	Geen <b>taken</b> in configuratie. Voeg<br> een profiel toe om de bijbehorende taak toe te voegen.
+390	Taak inschakelen
+391	<nobr><b>Wizard Profiel: Profielinformatie</b></span></nobr><br>Gebruik dit scherm om de naam en het type in te voeren van het profiel dat wordt toegevoegd. <p><b>Optioneel account</b> (modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de instelling 'Account' gebruiken om dit profiel te koppelen aan een account. Accounts kunnen eigen beheerders hebben die de instellingen van het account kunnen beheren en aanpassen.<p><b>Profielnaam</b><br>Dit veld is verplicht en bevat de naam die is gekoppeld aan dit profiel. Deze unieke naam kan willekeurig zijn of het kan de naam van de website of service zijn.<p><b>Profieltype</b><br>Deze instelling hoeft meestal niet te worden aangepast, tenzij u aangepaste gegevensoverzichten heeft geconfigureerd. Als u aangepaste gegevensoverzichten heeft, gebruikt u deze instelling om te bepalen welk gegevensoverzicht van toepassing is op dit profiel.<p><b>E-Commercewebsite</b><br>Als u van plan bent om e-commercegegevens te verwerken met dit profiel, zet u deze instelling op 'Ja'. Bent u dit niet van plan, dan zet u de instelling op 'Nee'. Wanneer E-commerce is uitgeschakeld, kunt u een dollarwaarde instellen als doel om algemene ROI-informatie te genereren.<p><b>Methode voor het bijhouden van bezoekers</b><br>Urchin kan op twee manieren bezoekers identificeren. De meest nauwkeurige manier is via UTM JavaScript-codering. Als UTM is geïnstalleerd, selecteert u dit als optie. Als UTM niet is geïnstalleerd, selecteert u de methode 'IP+User-agent'. Sommige rapporten worden alleen ingevuld als u de UTM gebruikt.<p><b>UTM-domein</b><br>Doorgaans laat u dit leeg. De UTM zal het domein voor de site automatisch detecteren. De UTM-domeinfunctie wordt alleen gebruikt wanneer u overlappende domeinen heeft, die apart moeten worden gevolgd.
+392	<nobr><span class=title1><b>Wizard Profiel: Instellingen logbestand (Ref. #A-391)</b></span></nobr><br>In dit scherm worden alle logbestandsbronnen weergegeven die voor dit profiel worden verwerkt. Gebruik de knop 'Toevoegen' rechtsboven om de wizard Bron logbestand te openen en een nieuwe logbestandsbron toe te voegen. Load-balanced sites met meerdere logbestandsbronnen moeten extra licenties krijgen. Wanneer deze procedure is voltooid, keert u terug naar dit scherm. Klik op 'Voltooien' om de wizard te voltooien.<p><b>Opties voor load-balancing</b><br>Deze optie is beschikbaar als u een licentie voor load-balancing heeft aangeschaft. Wanneer 'Parallelle logbestandsverwerking' is ingeschakeld, opent Urchin alle logbestanden tegelijkertijd en worden deze roterend gelezen, één sectie per keer. Elke sectie komt overeen met 15 minuten logbestandsactiviteit. Door deze optie in te schakelen, kunt u de prestaties op load-balanced sites aanzienlijk verbeteren.<br><p><b>Toevoegen</b><br>Klik op de knop 'Toevoegen' rechtsboven om een logbestandsbron toe te voegen aan dit profiel. Als de limiet voor licenties is bereikt, wordt de knop 'Toevoegen' uitgeschakeld.
+393	In dit scherm ziet u een samenvatting van het profiel dat u heeft geconfigureerd. Als de instellingen correct zijn, klikt u op 'Voltooien' om de installatie af te ronden. Klik op de knop 'Vorige' als u wijzigingen wilt aanbrengen.
+394	Wizard Bron logbestand: Beschikbare bronnen logbestand
+395	Wizard Bron logbestand: Opties
+396	Wizard Bron logbestand: Voltooien
+397	Instellingen logbestandsbron
+398	Er is geen <b>profieltaakoverzicht</b> gevonden.
+399	Groep toegevoegd. Deze groep is nu beschikbaar om gebruikers en andere groepen in te delen in eenheden die u eenvoudig kunt beheren. Klik op 'Meer opties' om de rapporttoegang en gebruikers voor deze groep te bewerken. Klik op 'Gereed' om dit scherm te sluiten.
+400	Profielconfiguratie voltooid. Als u een bestaande logbestandsbron wilt toevoegen, klikt u op 'Bestaande bron logbestand toevoegen'. Als u een nieuwe logbestandsbron wilt maken en aan dit profiel wilt koppelen, klikt u op 'Nieuwe bron logbestand toevoegen' onder aan dit scherm. Als u nog meer profielopties wilt configureren, klikt u op 'Rapportageopties'. Als u dit profiel zodanig wilt inplannen dat het nu of in de toekomst wordt uitgevoerd, selecteert u 'Nu plannen'.
+401	Wizard Profiel: Voltooien
+402	Wizard Profiel: Bevestiging
+403	Wizard Bron logbestand: Locatie extern logbestand
+404	Gereed
+405	Gebruiker toegevoegd. De gebruiker heeft nu toegang tot een of meer rapporten van het profiel. Als u toegang wilt verlenen of de groepsrechten wilt aanpassen, klikt u op de link 'Meer opties'. Klik op 'Gereed' om dit scherm te sluiten.
+406	Record toevoegen is mislukt. <p> Er bestaat al een record met dezelfde naam. <br>Ga terug en corrigeer de fout.
+407	Resultaat van wizard Profiel.
+408	Wizard Bron logbestand: Voltooien
+409	Resultaat van wizard Filter.
+410	Wizard Bron logbestand: Bevestiging
+411	Resultaat van wizard Bron logbestand.
+412	Wizard Filter: Opties
+413	Wizard Filter: Instellingen
+414	Wizard Filter: Voltooien
+415	Wizard Filter: Bevestiging
+416	<nobr><span class=title1><b>Wizard Filter: Opties (Ref. #A-416)</b></span></nobr><br>In dit scherm kunt u een nieuw filter maken of een reeds bestaand filter gebruiken. Daardoor hoeft u maar eenmaal een filtertype te maken, dat u vervolgens meerdere malen kunt gebruiken.<p><b>Nieuw filter toevoegen</b><br>Selecteer deze optie als u een nieuw filter wilt maken en dat wilt toevoegen aan dit profiel of deze logbestandsbron.<p><b>Vooraf geconfigureerd filter</b><br>Selecteer deze optie om een reeds in het Urchin-systeem opgenomen filter toe te passen op dit profiel of deze logbestandsbron.
+417	Dat is alles. U kunt Urchin nu gaan gebruiken. <br>Klik op 'Gereed' om te beginnen met uw eerste profiel.
+418	In dit scherm ziet u een overzicht van het filter dat u heeft geconfigureerd. Als de instellingen correct zijn, klikt u op 'Voltooien' om de installatie af te ronden. Klik op de knop 'Vorige' als u wijzigingen wilt aanbrengen.
+419	Filterconfiguratie gereed. Als u dit filter wilt toepassen op een of meer profielen of logbestandsbronnen, klikt u op de link 'Meer opties'. [De enige reden om een filter toe te passen op een logbestandsbron in plaats van een profiel is een situatie waarin meer dan één profiel gebruikmaakt van dezelfde logbestandsbron.] Klik op 'Gereed' om dit scherm te sluiten.
+420	Annuleren
+421	Wizard Gebruiker: Algemene informatie
+422	Wizard Gebruiker: Gebruikersinstellingen
+423	Wizard Gebruiker: Groepen
+424	Wizard Gebruiker: Rapporttoegang
+425	Wizard Gebruiker: Voltooien
+426	Wizard Gebruiker: Bevestiging
+427	<nobr><span class=title1><b>Wizard Gebruiker: Algemene informatie (Ref. #A-427)</b></span></nobr><br>Gebruik dit scherm om de gebruikersnaam en het wachtwoord van de nieuwe gebruiker in te stellen.<p><b>Optioneel account</b> (modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de instelling 'Account' gebruiken om dit profiel te koppelen aan een account. Accounts kunnen eigen beheerders hebben die de instellingen binnen het account kunnen beheren en aanpassen.<p><b>Gebruikersnaam</b><br>Iedere gebruiker moet zich aanmelden met zijn of haar gebruikersnaam en wachtwoord. Gebruik dit veld om voor iedere gebruiker een unieke gebruikersnaam op te geven. Gebruikersnamen mogen geen spaties bevatten.<p><b>Wachtwoord</b><br>Geef in de velden 'Wachtwoord' en 'Wachtwoord bevestigen' het wachtwoord voor deze gebruiker op. De gebruiker kan het wachtwoord wijzigen in het gebied 'Voorkeuren'.<p><b>Type verificatie</b><br>De methode die moet worden gebruikt voor de verificatie van gebruikers, bijvoorbeeld Ingebouwd/LDAP/MSAD. 'Ingebouwd' is de ingebouwde verificatie van Urchin. De andere waarden voor het type verificatie verwijzen naar alternatieve, aangepaste verificatiemethoden die door een beheerder kunnen worden geconfigureerd in uw Urchin-installatie. Als in de keuzelijst 'Type verificatie' een andere waarde dan 'Ingebouwd' is geselecteerd, zijn de velden 'Wachtwoord' en 'Wachtwoord bevestigen' niet beschikbaar. De keuzelijst 'Type verificatie' wordt alleen weergegeven wanneer door een beheerder ten minste één aangepaste verificatieprovider is geconfigureerd in uw Urchin-installatie.<p><b>Volledige naam</b><br>In dit veld kunt u de voornaam en achternaam van de gebruiker opgeven.
+428	<nobr><span class=title1><b>Wizard Gebruiker: Gebruikersinstellingen (Ref. #A-428)</b></span></nobr><br>In dit scherm kunt u de eventuele beheerdersrechten en de landinstellingen voor de gebruiker instellen.<p><b>Beheerdersniveau</b><br>Met deze optie wordt aangegeven of de gebruiker beheerdersrechten heeft. Met de instelling 'Gebruiker' wordt aangegeven dat de gebruiker rapporten mag weergeven en het persoonlijke wachtwoord en de landinstelling mag wijzigen, maar verder geen controle heeft over de configuratie. De instelling 'Gebruiker - Niet bijwerken' houdt in dat de gebruiker rapporten mag weergeven maar geen persoonlijke voorkeuren mag wijzigen. De instelling 'Accountbeheer' betekent dat de gebruiker beperkte beheermogelijkheden heeft en bijvoorbeeld gebruikers mag toevoegen en doelen mag configureren. Met de instelling 'Hoofdbeheerder' heeft de gebruiker volledig beheer over het systeem. Alleen een bestaande hoofdbeheerder kan een nieuwe hoofdbeheerder maken. <p><b>Rapporttaal</b><br>Met deze optie kunt u de taal kiezen waarin de rapporten voor deze gebruiker worden weergegeven. De gebruiker kan de taal zelf wijzigen op het tabblad 'Voorkeuren'.<p><b>Regio</b><br>Met de instelling 'Regio' kunt u de landinstellingen voor de weergave van rapporten bepalen voor deze gebruiker. Met deze instelling regelt u de notatie van datums, tijden en getallen die in de verschillende landen anders worden weergegeven. Als het land van de gebruiker niet in de lijst wordt weergegeven, selecteert u een land met dezelfde datum- en tijdnotatie.<p><b>Toegang tot AdWords-hulpprogramma's</b><br/>Deze optie bepaalt de toegang van gebruikers tot de 'AdWords-hulpprogramma's' in de rapportage-interface. Als deze optie wordt ingeschakeld, worden AdWords-hulpprogramma's beschikbaar voor ALLE profielen met CPC-gegevens waartoe de gebruiker toegang heeft. Als deze optie wordt uitgeschakeld, worden CPC-rapporten alleen-lezen (worden alle AdWords-hulpprogramma's verborgen).</p><p>Klik op 'Voltooien' om de wizard te voltooien.
+429	In dit scherm kunt u een of meer groepen koppelen aan de betreffende gebruiker. Daardoor kunt u een gebruiker bijvoorbeeld toegang tot twee verschillende sites geven. Als u deze gebruiker wilt toewijzen aan een groep, markeert u de groep in het linkervak en klikt u op de pijl-rechts. Als u deze gebruiker wilt verwijderen uit een groep, selecteert u de groep in het rechtervak en klikt u op de pijl-links. Nadat u deze stap heeft uitgevoerd, klikt u op 'Volgende' om door te gaan.
+430	In dit scherm kunt u een of meer rapporten koppelen aan de betreffende gebruiker. Als u een gebruiker toestemming wilt verlenen om een rapport te bekijken, markeert u het rapport in het linkervak en klikt u op de pijl-rechts. Als u deze toestemming weer wilt intrekken, selecteert u het rapport in het rechtervak en klikt u op de pijl-links. Nadat u deze stap heeft uitgevoerd, klikt u op 'Volgende' om door te gaan.
+431	In dit scherm ziet u een overzicht van de gebruiker die u heeft geconfigureerd. Als de instellingen correct zijn, klikt u op 'Voltooien' om de installatie af te ronden. Klik op de knop 'Vorige' als u wijzigingen wilt aanbrengen.
+432	Resultaat van wizard Gebruiker.
+433	Wizard Groep: Algemene informatie
+434	Wizard Groep: Instellingen
+435	Wizard Groep: Groepen binnen groep
+436	Wizard Groep: Rapporttoegang
+437	Wizard Groep: Voltooien
+438	Wizard Groep: Bevestiging
+439	<nobr><span class=title1><b>Wizard Groep: Algemene informatie (Ref. #A-439)</b></span></nobr><br>Gebruik dit scherm om de basisinstellingen te configureren die nodig zijn om een groep te maken. U kunt groepen gebruiken om rapporttoegang aan meerdere gebruikers tegelijk te verlenen. Alle gebruikers die tot een groep behoren, krijgen naast hun eigen rechten ook de rechten van de groep.<p><b>Optioneel account</b> (modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de instelling 'Account' gebruiken om deze groep te koppelen aan een account dat kan worden gebruikt voor het beheer van complexe klanten. Accounts kunnen worden gezien als 'supergroepen', die elk een eigen beheerder kunnen hebben. <p><b>Groepsnaam</b><br>Met dit veld kunt u de naam van de groep opgeven. Gebruik een beschrijvende naam. Groepsnamen moeten uniek zijn.<p><b>Groepsbeschrijving</b> (optioneel) <br>Met dit veld kunt u een beschrijving van de groep opgeven. Dit is handig om het doel van verschillende groepen bij te houden. Gebruik een beschrijvende naam. Klik op 'Voltooien' om de wizard te voltooien.
+440	In dit scherm kunt u een selectie maken uit de beschikbare gebruikers die zijn ingesteld in de Urchin-configuratie en kunt u deze gebruikers toevoegen aan de betreffende groep. Als u een gebruiker wilt toevoegen aan een groep, markeert u de gebruiker in het linkervak en klikt u op de pijl-rechts. Als u een gebruiker wilt verwijderen uit een groep, selecteert u de gebruiker in het vak 'Gebruikers in groep' en klikt u op de pijl-links. Nadat u deze stap heeft uitgevoerd, klikt u op 'Volgende' om door te gaan.
+441	In dit scherm kunt u een selectie maken uit de beschikbare groepen die zijn ingesteld in de Urchin-configuratie. Bovendien kunt u in dit scherm deze groepen toevoegen aan de betreffende groep. Dit is vooral handig wanneer u de diverse groepen in uw systeem hiërarchisch wilt indelen. Als u de ene groep aan de andere groep wilt toevoegen, markeert u de betreffende groep in het linkervak en klikt u op de pijl-rechts. Als u een specifieke groep wilt verwijderen uit een groep, selecteert u die specifieke groep in het rechtervak en klikt u op de pijl-links. Nadat u deze stap heeft uitgevoerd, klikt u op 'Volgende' om door te gaan.
+442	In dit scherm kunt u een selectie maken van de ingestelde rapporten in de Urchin-configuratie en kunt u de bewuste groep bekijken. Als u een groep toestemming wilt verlenen om rapporten te bekijken, markeert u het rapport in het linkervak en klikt u op de pijl-rechts. Als u een groep geen toestemming meer wilt verlenen om rapporten te bekijken, selecteert u het rapport in het rechtervak en klikt u op de pijl-links. Nadat u deze stap heeft uitgevoerd, klikt u op 'Volgende' om door te gaan.
+443	In dit scherm ziet u een overzicht van de groep die u heeft geconfigureerd. Als de instellingen correct zijn, klikt u op 'Voltooien' om de installatie af te ronden. Klik op de knop 'Vorige' als u wijzigingen wilt aanbrengen.
+444	Resultaat van wizard Groep.
+445	Wizard Taak: Algemene informatie
+446	Wizard Filter: Beschikbare filters
+447	Wizard Filter: Voltooien
+448	<nobr><span class=title1><b>Filterbeheer: Filterinstellingen (Ref. #A-1701)</b></span></nobr><br>In dit scherm kunt u de instellingen voor een filter configureren en aanpassen. Raadpleeg de handleiding of het online Documentatiecentrum voor meer informatie over het gebruik van filters.<p><b>Voorbeelden</b><br>Wanneer u een nieuw filter toevoegt, wordt voor uw gemak een lijst met voorbeeldfilters weergegeven. Als u een voorbeeldfilter selecteert, worden de instellingen voor het filter automatisch weergegeven. Vervolgens kunt u deze aanpassen. Dit is met handig om te kunnen zien hoe de instellingen worden gemaakt voor diverse veelgebruikte filters.<p><b>Optioneel account</b> (alleen modus Datacentrum)<br>Voor nieuwe filters kunt u het account selecteren waaraan het filter moet worden gekoppeld. Voor bestaande filters wordt de naam van het account weergegeven waartoe het filter behoort.<p><b>Filternaam</b><br>Dit verplichte veld bevat een willekeurige naam die voor het gemak wordt gebruikt bij verwijzingen naar dit filter. Voer een naam in die uniek is voor dit filter.<p><b>Filtertype</b><br>Afhankelijk van wat u met het filter wilt doen, kunt u een van de volgende filtertypen selecteren: <li><b>Patroon uitsluiten</b>: met dit type filter sluit u <i>alleen</i> logbestandsregels (treffers) uit die overeenkomen met het filterpatroon. De regels die wel met het patroon overeenkomen, worden volledig genegeerd. Houd er daarom rekening mee dat een filter waarmee bijvoorbeeld Netscape wordt uitgesloten, ervoor zorgt dat Urchin alle andere informatie in die logbestandsregel uitsluit, zoals bezoeker, pad, aanbevelingen en domeingegevens. <li><b>Patroon opnemen</b>: met dit type filter neemt u <i>alleen</i> logbestandsregels (treffers) op die overeenkomen met het filterpatroon. Alle andere regels worden genegeerd. Net zoals in het voorbeeld hierboven worden alle genegeerde treffers volledig van het Urchin-systeem uitgesloten wat betreft rapportage. <li><b>Zoeken en vervangen</b>: dit is een eenvoudig filter dat kan worden gebruikt om te zoeken naar een patroon binnen een veld en om het gevonden patroon te vervangen door een alternatieve vorm. Als het patroon meer dan eens voorkomt in het veld, wordt alleen de laatste instantie van het patroon vervangen. Met het teken '^' kunt u zoeken naar overeenkomsten aan het begin van het veld, met '$' kunt u zoeken naar overeenkomsten aan het eind van het veld. <li><b>Opzoektabel</b>: met dit filter kunt u een opzoektabel selecteren waarmee u codes kunt toewijzen aan begrijpelijke labels. Er moet eerst een overeenkomend bestand voor een opzoektabel worden gemaakt en geïnstalleerd in de directory 'lib/custom/lookuptables' van de Urchin-installatie (intern) of op het lokale bestandssysteem, NFS- of UNC-share (alleen Windows) worden geplaatst. FTP-/HTTP-bronnen worden niet ondersteund.<li><b>Geavanceerd</b>: met dit type filter kunt u een veld samenstellen op basis van één of twee andere velden. De filtermodule past de expressies toe op de twee velden voor extraheren en stelt vervolgens een veld samen met behulp van de expressie Samenstellen. De techniek is gebaseerd op de reguliere POSIX-expressies. <p><b>Filterveld</b><br>In de vervolgkeuzelijst kunt u het veld in de logbestandsbron selecteren waarop het filter moet worden toegepast. Velden met de aanduiding RAW geven de feitelijke inhoud van het logbestand aan, zonder dat enige verwerking plaatsvindt. Velden met de aanduiding AUTO zijn automatisch berekende velden die worden bepaald op basis van RAW-velden en andere AUTO-velden. Raadpleeg het gedeelte over filters in het online Documentatiecentrum voor een volledig overzicht van het gebruik van alle velden. <p><b>Filterpatroon</b><br>Stel deze optie in op het patroon waaraan het filter moet voldoen. Bij het patroon kan gebruik worden gemaakt van jokertekens zoals gedefinieerd door de standaard voor reguliere POSIX-expressies.<p><b>Zoekreeks</b><br>Filters voor zoeken en vervangen gebruiken de zoekreeks als zoekpatroon in het veld.<p><b>Vervangreeks</b><br>Filters voor zoeken en vervangen gebruiken de vervangreeks als vervanging voor de inhoud van de zoekreeks.<p><b>Tabelnaam</b> (alleen opzoektabel)<br>Met dit veld, dat zichtbaar wordt wanneer u 'Opzoektabel' als filtertype selecteert, kunt u een tabel selecteren om codes toe te wijzen aan begrijpelijke namen. De tabel met telefoonmodellen wijst codes voor telefoonplatforms toe aan het model en de fabrikant voor telefoonwebbrowsers. U kunt uw eigen opzoektabellen maken om codes toe te wijzen aan campagnes (voor de module Campagne bijhouden) of om variabalen in een URL toe te wijzen aan paginanamen. Alle bestanden die u maakt met de bestandsnaamextensie lt in de directory lib/custom/lookuptables van de Urchin-installatie, worden in deze vervolgkeuzelijst weergegeven.<p><b>Bestandsnaam</b> (alleen externe opzoektabel)<br>Met dit veld, dat zichtbaar wordt wanneer u 'Opzoektabel' als filtertype selecteert, kunt u een extern opzoektabelbestand selecteren waarmee codes worden toegewezen aan begrijpelijke namen. U kunt uw eigen opzoektabellen maken om codes toe te wijzen aan campagnes (voor de module Campagne bijhouden) of om variabalen in een URL toe te wijzen aan paginanamen.<p><b>Gebruikersnaam/Wachtwoord</b> (Windows, alleen externe opzoektabel)<br>Deze velden worden gebruikt om de aanmeldingsgegevens van de gebruiker op te geven voor de UNC-share waarop de externe opzoektabel zich bevindt.<p><b>Besturingselementen</b><br>Klik op de knop 'Voltooien' (voor een nieuw filter) of op de knop 'Bijwerken' (voor een bestaand filter) om uw wijzigingen op te slaan. Voor bestaande filters heeft u via de tabbladen boven aan het scherm toegang tot alle bewerkbare instellingen voor dit filter.
+449	<nobr><span class=title1><b>Filters: Profielen (Ref. #A-1702)</b></span></nobr><br>In dit scherm kunt u dit filter toepassen op een of meer bestaande profielen. Nadat een filter is toegepast op een profiel, worden alle aan dat profiel gekoppelde logbestandsbronnen gefilterd tijdens de verwerking van het profiel.<p><b>Toepassen op profiel</b><br>Als u dit filter wilt toepassen op een profiel, selecteert u de naam van het profiel in het vak 'Beschikbare profielen' en klikt u op de pijl-rechts. Als u dit filter uit een profiel wilt verwijderen, selecteert u het profiel in het vak 'Toegepast op' en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen toe te passen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit filter.
+450	<nobr><span class=title1><b>Filters: Bronnen logbestand (Ref. #A-1703)</b></span></nobr><br> Hier kunt u dit filter toepassen op één of meer bestaande logbestandsbronnen. Nadat dit filter is toegepast op een logbestandsbron, wordt bij alle verwerkingen van die logbestandsbron gebruikgemaakt van het filter, ongeacht het profiel dat actief is.<p><b>Toepassen op bron logbestand</b><br>Als u dit filter wilt toepassen op een logbestandsbron, selecteert u de naam van de logbestandsbron in het vak 'Beschikbare bronnen logbestand' en klikt u op de pijl-rechts. Als u dit filter uit een logbestandsbron wilt verwijderen, selecteert u de logbestandsbron in het vak 'Toegepast op' en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen toe te passen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit filter.
+451	<nobr><span class=title1><b>Filterbeheer: Overzicht (Ref. #A-1704)</b></span></nobr><br>In dit scherm wordt de complete verzameling parameters voor dit filter weergegeven. Controleer deze instellingen zorgvuldig voordat u de bijbehorende profielen verwerkt. Als er iets moet worden aangepast, klikt u op het betreffende tabblad en past u de instellingen naar wens aan. <p><b>Besturingselementen</b><br>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit filter.
+452	<nobr><span class=title1> <b>Gebruikers: Gebruikersinfo (Ref. #A-1301)</b></span></nobr><br>In dit scherm kunt u de verschillende instellingen voor deze gebruiker bewerken. <p><b>Optioneel account</b> (alleen modus Datacentrum)<br>Geeft het account weer waaraan de gebruiker is gekoppeld.<p><b>Gebruikersnaam</b><br>Gebruik dit veld om een unieke gebruikersnaam voor deze gebruiker op te geven. Gebruikersnamen mogen geen spaties bevatten.<p><b>Type verificatie</b><br>Kies in de keuzelijst 'Type verificatie' de methode die moet worden gebruikt voor de verificatie van gebruikers, bijvoorbeeld Ingebouwd/LDAP/MSAD. 'Ingebouwd' is de ingebouwde verificatie van Urchin. De andere waarden voor het type verificatie verwijzen naar alternatieve, aangepaste verificatiemethoden die door een beheerder kunnen worden geconfigureerd in uw Urchin-installatie. Als in de keuzelijst 'Type verificatie' een andere waarde van 'Ingebouwd' is geselecteerd, zijn de velden 'Wachtwoord' en 'Wachtwoord bevestigen' niet beschikbaar. De keuzelijst 'Type verificatie' wordt alleen weergegeven wanneer door een beheerder ten minste één aangepaste verificatieprovider is geconfigureerd in uw Urchin-installatie.<p><b>Wachtwoord</b><br>Wachtwoorden moeten minimaal acht tekens lang zijn en mogen geen spaties bevatten. Wachtwoorden zijn hoofdlettergevoelig. Het woord 'wachtwoord' verschilt dus van 'Wachtwoord'. U kunt het wachtwoord wijzigen door het nieuwe wachtwoord te typen in de velden 'Wachtwoord' en 'Wachtwoord bevestigen'. Klik op de knop 'Bijwerken' als u wijzigingen heeft aangebracht. <p><b>Volledige naam</b><br>In dit veld kunt u de volledige naam opgeven van de persoon die zich als deze gebruiker aanmeldt.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om de wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze gebruiker.
+453	<nobr><span class=title1>    <b>Gebruikers: Voorkeuren (Ref. #A-1302)</b></span></nobr><br>In dit scherm kunt u verschillende instellingen voor deze gebruiker bewerken, waaronder het beheerdersniveau en de standaardtaal. <p><b>Beheerdersniveau</b><br>Met deze optie wordt aangegeven of de gebruiker beheerdersrechten heeft. De instelling 'Gebruiker' betekent dat de gebruiker rapporten mag weergeven en voorkeuren mag wijzigen, maar geen controle heeft over de configuratie. De instelling 'Gebruiker - Geen update' betekent dat de gebruiker alleen rapporten kan weergeven en niets mag wijzigen. De instelling 'Accountbeheer' betekent dat de gebruiker beperkte beheermogelijkheden binnen de accountgroep heeft (wordt gebruikt in de modus Datacentrum). Met de instelling 'Hoofdbeheerder' heeft de gebruiker volledig beheer over het systeem. Alleen een bestaande hoofdbeheerder kan het beheerdersniveau instellen op 'Hoofdbeheerder'.<p><b>Rapporttaal</b><br>Met deze optie kunt u de taal kiezen waarin de rapporten voor deze gebruiker worden weergegeven. De gebruiker kan de taal zelf wijzigen op het tabblad 'Voorkeuren'.<p><b>Regio</b><br>Met de instelling 'Regio' kunt u de landinstellingen voor de weergave van rapporten bepalen voor deze gebruiker. Met deze instelling regelt u de notatie van datums, tijden en getallen die in de verschillende landen anders worden weergegeven. Als het land van de gebruiker niet in de lijst wordt weergegeven, selecteert u een land met dezelfde datum- en tijdnotatie als het land van de gebruiker. <p><b>Toegang tot AdWords-hulpprogramma's</b><br>Deze optie bepaalt de toegang van gebruikers tot de AdWords-hulpprogramma's in de rapportage-interface. Als deze optie wordt ingeschakeld, worden AdWords-hulpprogramma's beschikbaar voor ALLE profielen met CPC-gegevens waartoe de gebruiker toegang heeft. Als deze optie wordt uitgeschakeld, worden CPC-rapporten alleen-lezen (worden alle AdWords-hulpprogramma's verborgen).</p><p><b>Besturingselementen</b><br>Klik na het aanpassen van de configuratie op de knop 'Bijwerken' om de wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze gebruiker.
+454	<nobr><span class=title1><b>Gebruikers: Groepen (Ref. #A-1303)</b></span></nobr><br>In dit scherm kunt u aangeven tot welke groepen (indien van toepassing) deze gebruiker behoort. U kunt toestemmingen voor het weergeven van rapporten toewijzen op groepsniveau. Gebruikers kunnen alle rapporten weergeven waartoe hun groep toegang heeft.<p><b>Toevoegen aan groep</b><br>Als u deze gebruiker lid wilt maken van een groep, selecteert u de naam van de groep in het vak 'Beschikbare groepen' en klikt u op de pijl-rechts. Als u deze gebruiker uit een groep wilt verwijderen, selecteert u de groep in het vak 'Lid van deze groepen' en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen toe te passen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze gebruiker.
+455	<nobr><span class=title1><b>Gebruikers: Rapporttoegang (Ref. #A-1304)</b></span></nobr><br>In dit scherm kunt u aan deze gebruiker rechten toekennen om de rapporten voor een of meer bestaande profielen weer te geven. Naast groepsrechten kan de gebruiker ook persoonlijke toegangsrechten hebben, die via dit scherm kunnen worden ingesteld.<p><b>Toegang verlenen</b><br>Als u een gebruiker toegang wilt verlenen tot de rapporten van een profiel, selecteert u de naam van het profiel in het vak 'Beschikbare profielen' en klikt u op de pijl-rechts. Als u toegang wilt weigeren, selecteert u het profiel in het vak 'Toegang verleend' en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen toe te passen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze gebruiker.
+456	<nobr><span class=title1><b>Gebruikers: Overzicht (Ref. #A-1305)</b></span></nobr><br>In dit scherm wordt de complete verzameling parameters voor deze gebruiker weergegeven. Als er iets moet worden aangepast, klikt u op het betreffende tabblad en past u de instellingen aan. <p><b>Besturingselementen</b><br>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze groep.
+457	Uit te voeren profiel
+458	Bestandsbrowser
+459	Huidige directory
+460	Ga naar directory
+461	Bestand selecteren
+462	Bestandsnaam
+463	OK
+464	Bladeren
+465	Wizard Bron logbestand: Locatie lokaal logbestand
+466	Snelle weergave bron logbestand
+467	Wizard Bron logbestand: Externe instellingen
+468	Gebruikersnaam en wachtwoord
+469	Wizard Bron logbestand: Instellingen
+470	<nobr><span class=title1><b>Wizard Bron logbestand: Opties (Ref. #A-470)</b></span></nobr><br>In dit scherm kunt u een lokale logbestandsbron (op de computer waarop Urchin is geïnstalleerd) of een externe logbestandsbron (op een andere computer) opgeven. Klik op 'Volgende' om door te gaan.<p><b>Lokale bron logbestand</b><br>Een logbestand dat zich bevindt op een computer waarop Urchin wordt uitgevoerd of op een aangesloten station, wordt als een lokaal station beschouwd. Selecteer deze optie als uw logbestand zich lokaal op het Urchin-systeem bevindt.<p><b>Externe bron logbestand</b><br>Urchin kan externe logbestanden met behulp van het FTP- of HTTP-protocol overbrengen naar het Urchin-systeem voordat deze worden verwerkt. Bovendien kan Urchin op Windows-platforms logbestanden openen via UNC-shares. Selecteer deze optie als u een extern logbestand heeft dat via een share moet worden overgebracht of geopend.
+471	<nobr><span class=title1><b>Wizard Bron logbestand: Externe instellingen (Ref. #A-471)</b></span></nobr><br>In dit scherm kunt u opgeven op welke wijze het externe logbestand voor deze logbestandsbron kan worden opgehaald en geopend.<p><b>Serverprotocol</b><br>In Urchin kunnen vier typen externe logbestanden worden gebruikt: HTTP (www), HTTPS, FTP en UNC (alleen Windows). Gebruik HTTP als het logbestand via een webbrowser kan worden geopend. Als er geen wachtwoord vereist is, laat u de velden voor de gebruikersnaam en het wachtwoord leeg. FTP kan worden gebruikt met een gebruikersnaam en wachtwoord (doorgaans dezelfde gebruikersnaam als die voor het uploaden van inhoud naar uw site). Voor UNC, dat alleen beschikbaar is op Windows-systemen, zijn een gebruikersnaam en wachtwoord vereist voor toegang tot de UNC-share.<p><b>Servernaam/IP</b><br>Geef de servernaam (bijvoorbeeld www.urchin.com) of het IP-adres (bijvoorbeeld 63.212.171.4) op van de locatie waarop het logbestand zich bevindt. Voor UNC gebruikt u de notatie \\server\share.<p><b>Serverpoort</b><br>Er wordt automatisch een serverpoort ingevuld. Wanneer u geen standaardpoort gebruikt, kunt u deze instelling handmatig wijzigen.<p><b>Lokale en externe aanmelding komen overeen</b> (alleen voor UNC)<br>Deze optie wordt weergegeven als UNC is geselecteerd als het serverprotocol (alleen Windows). Selecteer 'Ja' als voor de lokale en externe server dezelfde aanmeldingsnaam en hetzelfde wachtwoord kunnen worden gebruikt. Selecteer 'Nee' als voor de externe server en lokale server een andere aanmeldingsnaam en een ander wachtwoord moeten worden gebruikt. Als u 'Nee' selecteert, worden er extra velden voor aanmelding bij de lokale server weergegeven.<p><b>Gebruikersnaam/wachtwoord</b><br>Deze velden kunnen leeg worden gelaten voor niet-geverifieerde HTTP-verbindingen en anonieme FTP-verbindingen. Als u een geverifieerde HTTP/FTP-verbinding wilt gebruiken, geeft u hier uw gebruikersnaam en wachtwoord op. UNC vereist een gebruikersnaam en wachtwoord voor toegang tot de share. <p><b>Domein</b> (alleen voor UNC)<br>Als de UNC-share deel uitmaakt van een domein, geeft u hier de netwerkgegevens voor het domein op. <p><b>FTP-modus</b> (alleen voor FTP)<br>Deze optie is beschikbaar wanneer FTP is geselecteerd als het serverprotocol. Selecteer 'Passief' voor een passieve overdrachtsmethode. Selecteer 'Actief' voor een directe overdrachtsmethode.
+472	<nobr><span class=title1><b>Wizard Bron logbestand: Lokaal/Extern (Ref. #A-472)</b></span></nobr><br>Hier kunt u de locatie/bestemming en de naam van de logbestandsbron opgeven.<p><b>Pad logbestand</b> (alleen lokaal)<br>In dit veld kunt u het volledige pad en de bestandsnaam van het logbestand invoeren (bijvoorbeeld /var/logs/access-log). Voor het gemak wordt de knop 'Bladeren' weergegeven. De bestandsnaam kan jokertekens bevatten, zoals een asterisk.<p><b>Extern bron logbestand</b> (alleen extern)<br>In dit veld kunt u het externe pad naar het logbestand opgeven. Dit is het volledige pad zonder de domeingegevens. Jokertekens worden niet ondersteund voor padnamen van externe HTTP-logbestandsbronnen. Voor het gemak wordt een knop 'Bladeren' weergegeven voor FTP- en UNC-verbindingen.<p><b>Logbestemming</b> (alleen extern)<br>Externe logbestanden overgebracht naar het lokale systeem voordat ze worden verwerkt. Selecteer een lokale directory om het logbestand op te slaan. De knop 'Bladeren' wordt weergegeven.<p><b>Optioneel account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u dit optionele veld gebruiken om deze logbestandsbron te koppelen aan een account, waardoor de logbestandsbron alleen voor dat account beschikbaar is.<p><b>Naam bron logbestand</b><br>Dit verplichte veld bevat een willekeurige naam die voor het gemak wordt gebruikt bij verwijzingen naar deze logbestanden. Voer een naam in die uniek is voor deze logbestandsbron.
+473	<nobr><span class=title1><b>Wizard Bron logbestand: Instellingen (Ref. #A-473)</b></span></nobr><br>In dit scherm kunt u de indeling opgeven van het logbestand dat u aan het verwerken bent. Het <i>automatische</i> logbestandsindelingstype moet voor de meeste webservers worden gekozen. Andere webserver-logbestandsindelingstypen worden aangeboden voor compatibiliteit met oudere versies van Urchin, maar deze zijn meestal niet nodig. Aangepaste logbestandsindelingen kunnen worden gemaakt met de sjablonen in de directory lib/custom/logformats van de Urchin-installatie.<p><b>Indeling logbestand</b><br>Met de optie 'Indeling logbestand' kunt u de indeling van deze logbestandsbron opgeven. <ul><li><b>Automatisch:</b> hiermee worden automatisch de meeste webserverlogbestandsindelingen, inclusief Apache, W3C (Microsoft IIS), NCSA, Netscape en iPlanet, opgespoord. <li><b>Campagne:</b> gebruik deze indeling voor kostengegevens van campagnes die specifiek is geformatteerd voor het gebruik van Urchin. Raadpleeg de online documentatie voor details. De logbestandsindeling van de campagne kan niet automatisch worden gedetecteerd.<li><b>Elf2:</b> gebruik deze indeling voor e-commerce-logbestanden in ELF2-indeling. De e-commerce-logbestandsindeling kan niet automatisch worden gedetecteerd.<li><b>Google:</b> gebruik deze indeling voor logbestanden met Google-gegevens over kosten per klik. De Google-logbestandsindeling kan niet automatisch worden gedetecteerd.<li><b>NCSA:</b> deze indeling wordt meestal automatisch gedetecteerd en wordt gewoonlijk gebruikt op Apache-webservers. Voor een volledige rapportage moet u de optie Extended Combined (Uitgebreid gecombineerd) gebruiken, die in de meeste gevallen niet de standaardoptie voor Apache is. <li><b>Netscape:</b> oudere Netscape-servers (geen iPlanet-servers) maken standaard gebruik van deze indeling.<li><b>Overture:</b> gebruik deze indeling voor logbestanden met Overture-gegevens over kosten per klik. De Overture-logbestandsindeling wordt niet automatisch gedetecteerd.<li><b>W3C:</b> deze indeling kan automatisch worden opgespoord en wordt gebruikt voor webservers die logbestanden standaard in W3C-indeling maken zoals Microsoft IIS-servers.</ul>
+474	In dit scherm ziet u een overzicht van de logbestandsbron die u heeft geconfigureerd. Als de instellingen correct zijn, klikt u op 'Voltooien' om de installatie af te ronden. Klik op de knop 'Vorige' als u wijzigingen wilt aanbrengen.
+475	Locatie logbestand
+476	Lokaal
+477	Extern
+478	Instellingen externe server
+479	FTP
+480	HTTP
+481	Serverprotocol
+482	Servernaam/IP
+483	Serverpoort
+484	Logconfiguratie gelukt. De logbestandsbron die u heeft toegevoegd, is nu beschikbaar voor verwerking door alle in het systeem geconfigureerde profielen. Klik op de knop 'Gereed' om terug te keren naar het beheerderssysteem of klik op 'Meer opties' als u extra parameters wilt instellen.
+485	Aanmelding bij externe server
+486	Gebruikersnaam
+487	Wachtwoord
+488	Logconfiguratie gelukt. De logbestandsbronnen die u heeft geselecteerd, worden nu toegevoegd aan het profiel. Klik op de knop 'Gereed' om terug te keren naar het beheerderssysteem.
+489	Filterconfiguratie gereed. De filters die u heeft geselecteerd, worden toegevoegd aan het profiel. Klik op de knop 'Gereed' om terug te keren naar het beheerderssysteem.
+490	Locatie logbestand
+491	Externe bron logbestand
+492	Browser externe logbestanden
+493	https
+494	Directorybrowser
+495	Directory selecteren
+496	Locatie extern logbestand
+497	Wizard Setup: Bevestiging
+498	<p><b>Nieuwe gebruikers - Lezen s.v.p. - Concepten en terminologie</b><br><ul><li>Profiel is de term die wordt gebruikt voor een reeks rapporten voor een website en de configuratie-instellingen die nodig zijn om die rapporten te maken. <li>Urchin moet logbestanden die door de server van uw website zijn gemaakt, verwerken voordat rapporten kunnen worden weergegeven. Deze logbestanden worden 'Bronnen logbestand' genoemd.<li>Nadat u de locatie van de logbestandsbronnen heeft bepaald, kan Urchin de logbestanden onmiddellijk verwerken of kunt u Urchin zodanig configureren dat logbestanden bij het maken worden ingesteld op periodieke verwerking. <li>U kunt voor elk configuratiescherm Help-informatie opvragen door op het vraagteken onder aan het scherm te klikken.
+499	Profielen instellen
+500	Afmelden
+501	Profielen importeren
+502	Selecteer om te importeren
+503	Profielen importeren
+504	Importeren
+505	Wizard Setup
+506	<nobr><span class=title1><b>Wizard Bron logbestand: Opties (Ref. #A-506)</b></span></nobr><br>In dit scherm kunt u een lokale logbestandsbron (op de computer waarop Urchin is geïnstalleerd) of een externe logbestandsbron (op een andere computer) opgeven. Klik op 'Volgende' om door te gaan.<p><b>Lokale bron logbestand</b><br>Een logbestand dat zich bevindt op een computer waarop Urchin wordt uitgevoerd of op een aangesloten station, wordt als een lokaal station beschouwd. Selecteer deze optie als uw logbestand zich lokaal op het Urchin-systeem bevindt.<p><b>Externe bron logbestand</b><br>Urchin kan externe logbestanden met behulp van het FTP- of HTTP-protocol overbrengen naar het Urchin-systeem voordat deze worden verwerkt. Bovendien kan Urchin op Windows-platforms logbestanden openen via UNC-shares. Selecteer deze optie als u een extern logbestand heeft dat via een share moet worden overgebracht of geopend.<p><b>Vooraf geconfigureerde logbestandsbron</b><br>Selecteer deze optie als u een logbestandsbron wilt toewijzen die al in het Urchin-systeem is ingevoerd.
+507	Logconfiguratie gelukt. De logbestandsbron die u heeft toegevoegd, is nu beschikbaar voor verwerking door alle in het systeem geconfigureerde profielen. Klik op de knop 'Gereed' om terug te keren naar het beheerderssysteem.
+508	Filterconfiguratie gereed. Het filter is toegevoegd. Klik op de knop 'Gereed' om terug te keren naar het beheerderssysteem.
+509	Status
+510	% voltooid
+511	In wachtrij
+512	Laatste uitvoeringstijd
+513	Frequentie
+514	Nooit
+515	Realtime
+516	Uitvoeren/Plannen
+517	Niet gepland
+518	Niet gepland
+519	Gepland
+520	Wordt uitgevoerd
+521	Voltooid
+522	Fout
+523	Externe instellingen
+524	Nu uitvoeren
+525	Geen <b>account</b> in configuratie.  Klik op de knop 'Toevoegen'<br> rechtsboven als u een nieuw <b>account</b> wilt toevoegen.
+526	Servernaam ontbreekt
+527	Kan de hostname niet oplossen
+528	Kan geen verbinding maken met server
+529	Geen toegang
+530	Gebruikersnaam of wachtwoord onjuist
+531	Lege lijst
+532	Profieltaakoverzicht
+533	Succes
+534	Waarschuwing
+535	Fout
+536	<nobr><span class=title1><b>Accounts: Overzicht (Ref. #A-1202)</b></span></nobr><br>In dit scherm wordt de complete verzameling parameters voor dit account weergegeven. Als er iets moet worden aangepast, klikt u op het betreffende tabblad en past u de instellingen naar wens aan. <p><b>Besturingselementen</b><br>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit account.
+537	Jaar/maand
+538	<nobr><span class=title1><b>Wizard Account: Algemene informatie (Ref. #A-538)</b></span></nobr><br>Gebruik dit scherm om de parameters voor het nieuwe account in te stellen. Accounts kunnen worden gebruikt om profielen, gebruikers, bronnen voor logbestanden, enzovoort, te groeperen in één account.<p><b>Accountnaam</b><br>Elk account vereist een unieke naam. Dit kan een willekeurige naam zijn of een naam die is gebaseerd op een klant of website.<p><b>Contactpersoon/e-mail van contactpersoon</b><br>Contactgegevens zijn optioneel en worden verschaft zodat klanten gemakkelijk kunnen worden bijgehouden.<p><b>Locatie van rapportgegevens</b><br>Dit is een optionele instelling waarmee u kunt opgeven wat het directorypad is voor het opslaan van de rapportgegevens voor alle profielen die bij dit account horen. De standaardlocatie is in de directory data/reports/<i>accountnaam</i> binnen de Urchin-installatie. De volledige gegevensdirectory kan in het hele systeem worden verplaatst door het bestand urchin.conf in de directory etc te bewerken. Voor het gemak wordt de knop 'Bladeren' weergegeven.<p><b>Locatie van uitvoeringsoverzicht</b><br>Dit is een optionele instelling waarmee u het directorypad kunt opgeven waar de gegevens over uitvoering worden opgeslagen voor alle profielen die bij dit account horen. De standaardlocatie is in de directory data/history/<i>accountnaam</i> binnen de Urchin-installatie. Voor het gemak wordt de knop 'Bladeren' weergegeven.<p><b>Locatie voor bladeren in directory's</b><br>Dit is een optionele instelling die dient als veiligheidsmaatregel wanneer een accountbeheerder toegang krijgt om profielen te maken. De accountbeheerder heeft beperkte mogelijkheden om in het opgegeven directorypad in dit veld naar logbestanden te zoeken. Standaard is er geen beperking op het bladeren. Dit kan voor het hele systeem worden gewijzigd door het bestand urchin.conf in de directory etc te bewerken. Voor het gemak wordt de knop 'Bladeren' weergegeven.
+539	<nobr><span class=title1><b>Instellingen: Globale instellingen (Ref. #A-2701)</b></span></nobr><br>In dit scherm kunt u de toegangsinstellingen voor deze Urchin-installatie wijzigen. De juiste instellingen zijn afhankelijk van het gegeven of u Urchin installeert op een server of op een desktopcomputer.<p><b>Rapporttoegang via het web</b><br>Selecteer 'Aan' als u ervoor wilt zorgen dat gebruikers zich extern kunnen aanmelden en rapporten kunnen bekijken met een webbrowser. Selecteer 'Uit' om alleen rapporten te kunnen bekijken vanaf de console van het systeem waarop Urchin is geïnstalleerd.<p><b>Beheer via het web</b><br>Selecteer 'Aan' als u ervoor wilt zorgen dat de beheerder zich extern kan aanmelden en de configuratie kan wijzigen met een webbrowser. Selecteer 'Uit' om de configuratie te kunnen wijzigen vanaf de console van het systeem waarop Urchin is geïnstalleerd.<p>Over het algemeen worden beide instellingen ingesteld op 'Aan' voor serverinstallaties. Beheer via het web moet in elk geval worden uitgeschakeld voor gebruik op een desktop.<p>Deze instellingen kunnen worden genegeerd met de optie ALLOW_AUTO_LOGIN in het bestand etc/session.conf.<p><b>Directe link naar rapporten</b><br>Belangrijke beveiligingsmededeling: als u deze functie inschakelt, wordt de sessiegebaseerde beveiligingscontrole uitgeschakeld en kunt u rechtstreekse links naar rapporten maken. Dit is met name handig voor systemen die reeds een wachtwoord- of netwerkbeveiliging hebben. Door deze functie in te schakelen kunt u rechtstreeks naar rapporten gaan met de notatie:<p>&nbsp;&nbsp;(basis-url)/report.cgi?profile=(profielnaam)&user=(gebruikersnaam)<p>waarbij (basis-url) alles aangeeft vóór session.cgi in de huidige URL, (profielnaam) de URI-escaped naam van het profiel is en (gebruikersnaam) een gebruiker is die toegang tot het rapport heeft. De instelling user= is optioneel en regelt de taalvoorkeuren en landinstellingen. Als u deze instelling niet opgeeft, wordt uitgegaan van de beheerder als gebruiker. Raadpleeg het bestand report.conf in de directory htdocs van de Urchin-distributie voor aanvullende opties voor configuratie en toegang.<p><b>Nummer van serverpoort</b><br>Met deze optie kunt u opgeven via welke poort de Urchin-webservice moet worden uitgevoerd. Nadat u deze optie heeft gewijzigd, moet u de Urchin-services opnieuw opstarten met de toepassing urchinctl in de bin-directory van het product. Raadpleeg de installatiedocumentatie voor meer informatie. Standaard wordt Urchin uitgevoerd via poort 9999, maar dit kan tijdens de installatie worden gewijzigd.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot andere instellingen.
+540	<nobr><span class=title1><b>Instellingen: Serverinstellingen (Ref. #A-2702)</b></span></nobr><br>In dit scherm kunt u de serverpoort wijzigen die door Urchin-systemen wordt gebruikt voor het beheer en het genereren van rapporten. <p><b>Nummer van serverpoort</b><br>De online weergave voor beheer en rapportage wordt uitgevoerd op de opgegeven poort van de server waarop Urchin is geïnstalleerd. Standaard is dat poort 9999. Belangrijk: wijzig dit nummer niet in een poortnummer dat wordt gebruikt door een andere service, zoals standaard-HTTP (poort 80) of voor het versturen van e-mail (poort 25). We raden u aan contact op te nemen met uw systeembeheerder als u een andere poort dan 9999 wilt instellen. Nadat u deze waarde heeft gewijzigd, moet u de Urchin-services opnieuw starten om de wijzigingen te activeren. De twee Urchin-services zijn de planner ('urchind') en de server ('urchinwebd'). Als u deze services opnieuw wilt starten op Windows-platforms, gebruikt u de opties 'Uitschakelen' en 'Inschakelen' in het menu 'Start'->'Programma's'->'Urchin'. Op UNIX-platforms typt u 'bin/urchinctl restart' in de directory Urchin.
+541	<b>Rapporten weergeven</b><br>In dit scherm worden alle beschikbare profielen weergegeven waartoe u toegang heeft. U kunt hier prestatiestatistieken voor meerdere profielen op één scherm weergeven.<p><b>Beperkte kalender</b><br>In de beperkte kalender in de rechterbovenhoek kunt u een periode kiezen (dag, week, maand of jaar).<p><b>Ga naar rapport</b><br>Klik op de profielnaam om het rapportagevenster voor dat profiel te openen. In het rapportagevenster kunt u alle beschikbare rapporten voor het profiel weergeven.<p><b>Bewerken</b> (alleen hoofdbeheerders)<br>De knop 'Bewerken' biedt toegang tot alle instellingen voor het profiel, onderverdeeld op tabbladen.<p><b>Status</b> (hyperlink, alleen hoofdbeheerders)<br>De status van elke taak is 'Niet gepland', 'In behandeling', 'In wachtrij', 'Wordt uitgevoerd', 'Wordt geannuleerd', 'Voltooid', 'Geannuleerd', 'Waarschuwing' of 'Fout'. De statusaanduiding is voorzien van een kleurcodering en u kunt de lijst op status sorteren door op de pijl onder het woord 'Status' te klikken. Als u runtimegegevens voor een bepaalde taak wilt weergeven, klikt u op de gekleurde statusvermelding naast die taak. Er wordt dan een apart venster met runtimegegevens weergegeven. <p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren. Als u naar de site zelf wilt gaan, klikt u op de link naast de profielnaam.<p><b>Account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de weergegeven items filteren met het menu 'Account'.<p><b>Weergave</b><br>In de vervolgkeuzelijst 'Weergave' kunt u de beheerders-, bedrijfs- of basisweergave selecteren voor overzichtspagina's.
+542	<nobr><span class=title1><b>Voorkeuren (Ref. #A-1001)</b></span></nobr><br>In dit scherm kunt u uw wachtwoord instellen of wijzigen en de standaardtaal en landinstellingen voor de rapporten in Urchin bepalen. Klik op 'Bijwerken' om de wijzigingen toe te passen. Sommige instellingen kunnen niet worden bewerkt als de rechten daarvoor zijn voorbehouden aan de beheerder.<p><b>Wachtwoord</b><br>U kunt uw wachtwoord wijzigen door uw nieuwe wachtwoord te typen in het veld 'Wachtwoord' en vervolgens in het veld 'Wachtwoord bevestigen', waarna u op de knop 'Bijwerken' klikt. Wanneer u zich de volgende keer aanmeldt, wordt uw nieuwe wachtwoord gebruikt. Wachtwoorden mogen geen spaties of andere gereserveerde tekens bevatten. <b>Opmerking voor beheerders:</b> zorg ervoor dat u het beheerderswachtwoord niet vergeet! <p><b>Rapporttaal</b><br>Met dit menu kunt u de taal selecteren waarin u rapporten wilt bekijken. Alle informatie over navigeren en andere eenvoudige Help-informatie in de rapportage-interface wordt weergegeven in de geselecteerde taal. Vergeet niet op 'Bijwerken' te klikken als u wijzigingen heeft aangebracht.<p><b>Regio</b><br>Met de instelling 'Regio' kunt u de landinstellingen voor de weergave van rapporten bepalen. Met deze instelling regelt u de notatie van datums, tijden en getallen die in de verschillende landen anders worden weergegeven. Als uw land niet in de lijst wordt weergegeven, selecteert u een land met dezelfde datum- en tijdnotatie als uw land. Klik op de knop 'Bijwerken' om de wijzigingen op te slaan.
+543	<nobr><span class=title1><b>Verwerkingsinstellingen: DNS-instellingen (Ref. #A-2301)</b></span></nobr><br>In dit scherm kunt u de functionaliteit voor DNS-zoekopdrachten van Urchin configureren, waarmee IP-adressen worden omgezet in domeinnamen (bijvoorbeeld 63.212.171.4 -> urchin.com). Daardoor kan Urchin verslag doen van domeinnamen, netwerken en landen. Voor het configureren van DNS heeft u het IP-adres van een lokale naamserver nodig. Neem contact op met uw beheerder voor meer informatie.<p><b>DNS-zoekopdracht</b><br>Selecteer de knop 'Aan' om DNS-zoekopdrachten in te schakelen.<p><b>IP omzetten</b><br>Voer het IP-adres in van een lokale DNS-naamserver waarop Urchin kan zoeken naar IP's die moeten worden omgezet naar domeinnamen.<p><b>DNS-lussen</b><br>Deze instelling bepaalt hoeveel pogingen tot omzetting Urchin moet ondernemen voordat het omzetten wordt gestaakt. De standaardinstelling 5 is geschikt voor de meeste installaties.<p><b>Resolutiepercentage</b><br>Zodra Urchin het beoogde resolutiepercentage heeft bereikt, wordt de DNS-verwerking stopgezet. De standaardinstelling van 80% biedt een uitstekende balans tussen verwerkingssnelheid en resolutie. Als u deze waarde verhoogt, kan dat leiden tot een tragere verwerking.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot andere instellingen.
+544	<nobr><span class=title1><b>Globale instellingen: Database-instellingen (Ref. #A-2302)</b></span></nobr><br>In dit scherm kunt u een aantal basisparameters instellen voor het beheren van prestaties ten opzichte van bronnengebruik. De standaardwaarden vormen doorgaans het beste compromis voor snelheid versus processor- en schijfgebruik. Als u Urchin echter sneller wilt maken of de impact van Urchin op de computer wilt verkleinen, kunt u deze instellingen wijzigen. <p><b>Limiet databasetabel</b><br>Als u de grootte van de database van Urchin op grote sites wilt beperken, kunt u met deze instelling willekeurige tabellen beperken tot het aantal vermelde records. De standaardoptie is geschikt voor de meeste installaties. Als deze limiet voor een bepaalde maand wordt bereikt, worden overige items ondergebracht onder een item met de naam 'Overige'. Als in uw rapporten derhalve naar verhouding veel items onder 'Overige' aanwezig zijn, kunt u deze instelling verhogen. Geef voor optimale prestaties een waarde op die lager is dan of gelijk is aan 100.000<p><b>Beoogd geheugengebruik</b><br>Deze instelling biedt u een richtlijn voor de hoeveelheid te gebruiken geheugen tijdens de uitvoering van het Urchin-proces. Voor grotere websites kan het toekennen van meer geheugen de prestaties verhogen omdat het systeem minder gebruikmaakt van de schijfcache. De standaardinstelling is behoudend en het wordt aanbevolen om het doel te verhogen naar ten minste 512 MB op systemen met voldoende fysiek geheugen.<p><b>Geografische details</b><br><p><b>Geografische informatie</b><br>Deze instelling bepaalt welke geografische gegevens worden opgenomen in de profielrapporten. Wanneer u extra opties selecteert, is er meer geheugen nodig voor de logbestandsverwerking (ongeveer 350 MB voor netwerken, 100 MB voor domeinen en 20-150 MB voor geografische locaties, afhankelijk van de gekozen geo-database). Bij Urchin worden verschillende geo-databases geleverd, waarin de mate van land/regio-details varieert. Selecteer de geo-database die het beste aan uw behoeften voldoet in de vervolgkeuzelijst.<p><b>Geografische database</b><br>Bij Urchin worden verschillende geo-databases geleverd, die allemaal verschillende niveaus met informatie over geografische locaties leveren:<br>- Wereld (bevat gedetailleerde informatie op land-/regio-/plaatsniveau voor de gehele wereld)<br>- Wereld: light (bevat alleen informatie op landniveau voor de gehele wereld)<br>- Regionale databases zoals 'Verenigde Staten', 'Europese Unie' en 'Japan' bevatten gedetailleerde informatie voor de overeenkomstige regio's en informatie op landniveau voor de rest van de wereld. <br><br>Instellingen voor de geografische database kunnen algemeen of op profielniveau worden gedefinieerd.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot andere instellingen.
+545	<nobr><span class=title1><b>Verwerkingsinstellingen: Geheugengebruik (Ref. #A-2303)</b></span></nobr><br>In dit scherm kunt u het geheugengebruik van de logbestandsverwerking door Urchin aanpassen. Tenzij uw logbestanden bijzonder groot zijn, kunt u het beste de standaardinstelling te gebruiken. Bij gebruik van omvangrijke logbestanden kan de snelheid van Urchin worden vergroot door uitbreiding van het geheugengebruik. Op deze manier kunt u gebruik blijven maken van beschikbare bronnen. Als u een te grote hoeveelheid geheugen instelt, kunnen fouten optreden bij de geheugentoewijzing. Bovendien kan het systeem trager worden als gevolg van het gebruik van wisselbestanden.<p><b>Beoogd geheugengebruik</b><br>Selecteer in de vervolgkeuzelijst de hoeveelheid geheugen die Urchin gebruikt tijdens de verwerking. Afhankelijk van de gegevens is het mogelijk dat Urchin wat meer of minder geheugen gebruikt dan de geselecteerde hoeveelheid. De optie 'Aanpassen' dient alleen in speciale gevallen te worden gebruikt door ervaren Urchin-beheerders.<p><b>Aangepaste instellingen voor geheugengebruik</b><br>Wanneer de aangepaste geheugeninstelling wordt geselecteerd, worden er extra opties weergegeven, waarmee elk van de primaire Urchin-buffers handmatig kan worden ingesteld. Als u deze waarden opgeeft in megabytes, wordt de buffergrootte gewijzigd, hetgeen effect heeft op de algehele prestaties van het systeem. U wordt derhalve afgeraden deze waarden te wijzigen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot andere instellingen.
+546	<nobr><span class=title1><b>Instellingen: Administratie (Ref. #A-3000)</b></span></nobr><br>Dit scherm biedt een overzicht van de basisstatus van deze Urchin-installatie, gezien vanuit gebruikers/groepen en licenties. Dit zijn de bijbehorende parameters:<ul><li>Accounts (alleen modus Datacentrum): het aantal klanten of supergroepen in het systeem. Accounts worden gebruikt voor het samenbrengen van meerdere profielen en gebruikers. Accounts kunnen afzonderlijke beheerdersrechten hebben.<li>Gebruikers: het aantal verschillende gebruikers dat toegang heeft tot rapporten en/of het beheerderssysteem.<li>Groepen: het aantal geconfigureerde groepen met gebruikers.<li>Profielen: het aantal geconfigureerde profielen. <li>Logbestandsbronnen: het aantal geconfigureerde logbestandsbronnen. <li>Logbestandsfilters: het aantal geconfigureerde logbestandsfilters. <li>CPC-bronnen: het aantal geconfigureerde logbestandsbronnen. </ul>
+547	<nobr><span class=title1>    <b>Profielen (Ref. #A-2100)</b></span></nobr><br>In dit scherm worden de profielen weergegeven die voor deze Urchin-installatie zijn geconfigureerd, kunnen de parameters voor elk van deze profielen worden aangepast en kan de beheerder profielen toevoegen. Elke website waarvoor u rapporten wilt maken, heeft een configuratieprofiel nodig.<p><b>Toevoegen</b> (alleen hoofdbeheerder)<br>Als u een profiel wilt toevoegen, klikt u op de knop 'Toevoegen' in de rechterbovenhoek van het scherm. De wizard 'Profiel toevoegen' wordt gestart. Hiermee kunt u gemakkelijk een profiel toevoegen.<p><b>Bewerken</b><br>Naast elk profiel in de lijst bevindt zich een reeks knoppen waarmee u elk profiel kunt beheren. Via de knop 'Bewerken' heeft u toegang tot alle instellingen voor het profiel, die zijn ondergebracht op een tabblad.<p><b>Verwijderen</b> (alleen hoofdbeheerder)<br>Klik op de knop 'Verwijderen' naast een profiel om het profiel te verwijderen uit de configuratie. Daardoor worden alle gegevens en configuratie-instellingen voor dat profiel definitief verwijderd. De verwerkingsgeschiedenis voor dit profiel wordt ook verwijderd.<p><b>Kopiëren</b> (alleen hoofdbeheerder)<br>Met de knop 'Kopiëren' kunt u gemakkelijk een nieuw profiel maken met instellingen die zijn gebaseerd op een bestaand profiel. Klik op deze knop om de wizard 'Kopiëren' te starten. U wordt gevraagd een nieuwe profielnaam op te geven. <p><b>Uitvoeren</b> (alleen hoofdbeheerder)<br>De knop 'Uitvoeren' is een snelkoppeling naar het scherm 'Uitvoeren/Plannen' waar u ervoor kunt kiezen om dit profiel onmiddellijk uit te voeren of het profiel kunt inplannen om dit periodiek uit te voeren. Er zijn pas rapportgegevens beschikbaar als het profiel is uitgevoerd.<p><b>Weergeven</b><br>Klik op de knop 'Weergeven' om het rapportagevenster van elk profiel te openen.<p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren. <p><b>Account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de weergegeven items filteren met het menu 'Account'.
+548	<nobr><span class=title1>    <b>Logbeheer (Ref. #A-1600)</b></span></nobr><br>Het doel van dit scherm is om de logbestandsbronnen weer te geven die voor deze Urchin-installatie zijn geconfigureerd, om aanpassing van de parameters van elk van de logbestandsbronnen mogelijk te maken en om de beheerder in staat te stellen logbestandsbronnen toe te voegen.<p><b>Toevoegen</b><br>Als u een logbestandsbron wilt toevoegen, klikt u op de knop 'Toevoegen' rechtsboven in het scherm. In dat geval wordt de wizard Bron logbestand toevoegen gestart waarmee u gemakkelijk een logbestandsbron toevoegt.<p><b>Bewerken</b><br>Naast elke logbestandsbron in de lijst bevindt zich een reeks knoppen waarmee u elke logbestandsbron kunt beheren. Via de knop 'Bewerken' heeft u toegang tot alle instellingen voor deze logbestandsbron, die zijn ondergebracht op een tabblad.<p><b>Verwijderen</b><br>Klik op de knop 'Verwijderen' naast een logbestandsbron om die logbestandsbron te verwijderen uit de configuratie en uit alle profielen die ernaar verwijzen. Het logbestand zelf en de gegevens in een profiel worden niet verwijderd.<p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren. <p><b>Account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u met het menu Account op de weergegeven items filteren.
+549	<nobr><span class=title1>    <b>Filterbeheer (Ref. #A-1700)</b></span></nobr><br>In dit scherm worden de filters weergegeven die voor deze Urchin-installatie zijn geconfigureerd. Bovendien kunnen de parameters voor elk van deze profielen worden aangepast en kan de beheerder filters toevoegen. U kunt filters afzonderlijk toepassen op profielen of logbestandsbronnen. Filters kunnen worden gemaakt om treffers uit te sluiten of juist alleen overeenkomsten op te nemen, of om een dynamische URL om te zetten in een meer leesbare vorm wanneer deze wordt weergegeven in rapporten. Opmerking: het filter 'Zoekwoorden decoderen', waarmee zoekwoorden op de juiste manier worden opgemaakt, is standaard ingeschakeld en mag niet worden verwijderd.<p><b>Toevoegen</b><br>Als u een filter wilt toevoegen, klikt u op de knop 'Toevoegen' rechtsboven in het scherm. In dat geval wordt de wizard Filter toevoegen gestart waarmee u gemakkelijk een filter toevoegt.<p><b>Bewerken</b><br>Naast elk filter in de lijst bevindt zich een reeks knoppen waarmee u elk filter kunt beheren. Via de knop 'Bewerken' heeft u toegang tot alle instellingen voor dit filter, die zijn ondergebracht op een tabblad.<p><b>Verwijderen</b><br>Klik op de knop 'Verwijderen' naast een filter om dat filter te verwijderen uit de configuratie en uit alle profielen en logbestandsbronnen die ernaar verwijzen. <p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren. <p><b>Account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de weergegeven items filteren met het menu 'Account'.
+550	<nobr><span class=title1><b>Instellingen: Licentie (Ref. #A-6001)</b></span></nobr><br>In dit scherm wordt de status van de huidige licentie voor deze installatie weergegeven en zijn verschillende opties beschikbaar, afhankelijk van hoe de licentiepagina heet, waarmee de volgende acties kunnen worden uitgevoerd: een demolicentie aanvragen, een bestaande demo of permanent serienummer een bestaande licentie opnieuw activeren. De licentiestatus bevat informatie over het bestaande licentietype en de vervaldatum van demolicenties, het serienummer dat is gebruikt om de licentie te activeren en de licentieversie.<p><b>Demolicentie aanvragen</b><br>Klik op de link 'Demolicentie aanvragen' als u een demolicentie voor beperkte tijd wilt aanvragen. In dat geval wordt automatisch de beveiligde licentieregistratiepagina van Urchin geopend. Wanneer u de optionele contactgegevens heeft ingevuld en de licentieovereenkomst heeft geaccepteerd, wordt er een link weergegeven waarmee u de demolicentie automatisch kunt installeren.<p><b>Licentie activeren</b><br>Als u een demo of permanent serienummer heeft gekregen via een geautoriseerde distributeur of wederverkoper van Urchin, klikt u op deze link. In dat geval wordt automatisch de beveiligde pagina voor registratie en licentieactivering van Urchin geopend. U wordt gevraagd uw serienummer op te geven. Wanneer u de optionele contactgegevens heeft ingevuld en de licentieovereenkomst heeft geaccepteerd, wordt er een link weergegeven waarmee u het serienummer kunt activeren en de bijbehorende licentie in uw Urchin-configuratie kunt installeren.<p><b>Licentie opnieuw activeren</b><br>Wanneer u de Urchin-installatie verplaatst of herstelt, moet u de licentie opnieuw activeren Klik op de link 'Licentie opnieuw activeren' om de installatie weer in te schakelen. In dat geval wordt automatisch de beveiligde registratiepagina van Urchin geopend. Wanneer u de voorwaarden van de licentieovereenkomst accepteert, wordt er een link weergegeven waarmee u de licentie opnieuw kunt activeren.
+551	<nobr><span class=title1>    <b>Groepen (Ref. #A-1400)</b></span></nobr><br>In dit scherm worden de groepen weergegeven die voor deze Urchin-installatie zijn geconfigureerd. Daarnaast kunnen de parameters van elke groep worden aangepast en kan de beheerder groepen toevoegen. Er kunnen groepen worden ingesteld om de toegang tot rapporten te beheren.<p><b>Toevoegen</b><br>Als u een groep wilt toevoegen, klikt u op de knop 'Toevoegen' rechtsboven in het scherm. In dat geval wordt de wizard Groep toevoegen gestart waarmee u gemakkelijk een groep toevoegt.<p><b>Bewerken</b><br>Naast elke groep in de lijst bevindt zich een reeks knoppen waarmee u elke groep kunt beheren. De knop 'Bewerken' biedt toegang tot alle instellingen voor deze groep, die zijn ondergebracht op een tabblad.<p><b>Verwijderen</b><br>Klik op de knop 'Verwijderen' naast een groep om deze te verwijderen uit de configuratie. <p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren.<p><b>Account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de weergegeven items filteren met het menu 'Account'.
+552	<nobr><span class=title1>    <b>Gebruikers (Ref. #A-1300)</b></span></nobr><br>In dit scherm worden de gebruikers weergegeven die voor deze Urchin-installatie zijn geconfigureerd. Bovendien kunnen de parameters voor ieder van deze gebruikers worden aangepast en kan de beheerder gebruikers toevoegen. Iedere gebruiker heeft een eigen gebruikersnaam en wachtwoord. Leesrechten voor rapporten worden ingesteld in de configuratie voor de gebruiker.<p><b>Toevoegen</b><br>Als u een gebruiker wilt toevoegen, klikt u op de knop 'Toevoegen' rechtsboven in het scherm. In dat geval wordt de wizard Gebruiker toevoegen gestart waarmee u gemakkelijk een gebruiker toevoegt.<p><b>Bewerken</b><br>Naast elke gebruiker in de lijst bevindt zich een reeks knoppen waarmee u elke groep kunt beheren. De knop 'Bewerken' biedt toegang tot alle instellingen voor deze gebruiker, die zijn ondergebracht op een tabblad.<p><b>Verwijderen</b><br>Klik op de knop 'Verwijderen' naast een gebruiker om deze te verwijderen uit de configuratie. <p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren.<p><b>Account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de weergegeven items filteren met het menu 'Account'.
+553	<nobr><span class=title1><b>Planner (Ref. #A-2600)</b></span></nobr><br>In dit scherm worden de taken weergegeven die zijn gepland voor elk profiel in de configuratie. Voor elk profiel worden verschillende gegevens vermeld, zoals de profielnaam, de uitvoeringsfrequentie en de uitvoeringsstatus (niet gepland, in behandeling, in wachtrij, wordt uitgevoerd, wordt geannuleerd). Voor taken die worden uitgevoerd, worden het voltooiingspercentage, de beschikbare acties en de starttijd van de taak weergegeven. Klik op de pijlen onder een veld als u de lijst wilt sorteren op dat veld. Opmerking: de taak 'geo-update' is een interne taak voor het bijwerken van de database met geografische gegevens, die wordt gebruikt om geografische gegevens van bezoekers te verwerken.<p><b>Profielnaam</b><br>Alle geconfigureerde profielen worden weergegeven.<p><b>Frequentie</b><br>De uitvoeringsfrequentie van het profiel<p><b>Status</b><br>De status van taken kan zijn: 'Niet gepland', 'In behandeling' (in afwachting van de volgende uitvoering), 'In wachtrij' (taak staat klaar in de wachtrij van de Taakplanner), 'Wordt uitgevoerd' of 'Wordt geannuleerd' (taak wordt zo snel mogelijk geannuleerd). Voor taken die momenteel worden uitgevoerd of die worden geannuleerd, is de statusaanduiding gekoppeld aan het voortgangsvenster waarin de runtimegegevens van de taak worden weergegeven. Klik op de status van een taak om het venster te openen.<p><b>Actie</b><br>In dit veld worden acties weergegeven voor geplande taken. Het veld 'Actie' bevat de actie 'Annuleren' voor de taken die op dat moment worden uitgevoerd.<p><b>Voltooiingspercentage</b><br>Voor taken die in dit veld worden weergegeven, wordt in dit veld een voortgangsbalk weergegeven die aangeeft welk percentage van de taak bij benadering is verwerkt.<p><b>Starttijd</b><br>Voor taken die worden uitgevoerd wordt de starttijd weergegeven in GMT.<p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren. <p><b>Account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de weergegeven items filteren met het menu 'Account'.
+554	<nobr><span class=title1><b>Planner: Profieltaakoverzicht (Ref. #A-2500)</b></span></nobr><br>In dit scherm kunt u een overzicht weergeven van alle taken die via Profieltaakplanner of via de knop 'Nu uitvoeren' zijn uitgevoerd. Er wordt een overzicht van de taken weergegeven, met belangrijke informatie over elke taak. U kunt op het veld 'Status' klikken om de runtimegegevens voor die historische taak weer te geven. Gebruik de pijlen onder een veld als u wilt sorteren op dat veld.<p>Voor elk item worden de naam van de taak weergegeven (profiel), de verwerkingshost en id, de status van de taak, het tijdstip waarop de taak is gestart, de duur van de taak en de verwerkte hoeveelheid gegevens.<p><b>Status</b> (hyperlink)<br>De status van elke taak is 'Voltooid', 'Geannuleerd', 'Waarschuwing' of 'Fout'. De statusaanduiding is voorzien van een kleurcodering en u kunt de lijst op status sorteren door op de pijl onder het woord 'Status' te klikken. Als u de runtimegegevens voor een bepaalde taak wilt weergeven, klikt u op de gekleurde statusvermelding naast die taak. Er wordt dan een apart venster met runtimegegevens weergegeven.<p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren. <p><b>Account</b> (alleen modus Datacentrum)<br>In de modus Datacentrum kunt u de weergegeven items filteren met het menu 'Account'.
+555	<nobr><span class=title1><b>IIS-configuratie importeren (Ref. #A-5004)</b></span></nobr><br>In dit scherm kunt u bestaande siteconfiguraties van een webserver met een Microsoft IIS-configuratie importeren en deze sites omzetten in Urchin-profielen. Dit kan aanzienlijke tijdwinst opleveren en het is de aanbevolen methode voor snelle configuraties op IIS-systemen. Vink het selectievakje aan naast de gevonden sites die u wilt importeren. Klik vervolgens op de knop 'Profielen importeren'.<p><b>Selecteer om te importeren</b><br>Met deze module worden lokale IIS-websites automatisch gevonden. Vink het selectievakje rechts van de gevonden sites aan als u deze wilt importeren. Als het selectievakje standaard is aangevinkt, is de site al geïmporteerd. Klik op de knop 'Profielen importeren' om de importeerstap te voltooien. <p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren.
+556	In dit scherm ziet u een samenvatting van het account dat u heeft geconfigureerd. Als de instellingen correct zijn, klikt u op 'Voltooien' om de installatie af te ronden. Klik op de knop 'Vorige' als u wijzigingen wilt aanbrengen.
+557	Account toegevoegd. Dit account is nu geschikt voor profielen, gebruikers, logbestandsbronnen, enzovoort.
+558	<nobr><span class=title1><b>Profielen: Instellingen (Ref. #A-2101)</b></span></nobr><br>Met dit scherm kunt u het profieltype, de methode om het bezoek bij te houden en de beschikbare rapporten beheren.<p><b>Optioneel account</b> (alleen modus Datacentrum)<br>Geeft het account weer waaraan het profiel is gekoppeld.<p><b>Profielnaam</b><br>Dit is de naam van het profiel, in het algemeen een webadres zoals www.urchin.com. Als er echter meerdere profielen bestaan voor dezelfde site, is het gebruikelijk deze beschrijvende namen te geven die het verschil tussen de profielen duidelijk maken, zoals 'www.urchin.com - gefilterd'<p><b>Profieltype</b><br>Deze instelling hoeft meestal niet te worden aangepast, tenzij u aangepaste datamaps heeft geconfigureerd. Als u aangepaste datamaps heeft, gebruikt u deze instelling om te bepalen welke datamap van toepassing is op dit profiel.<p><b>E-commercewebsite</b><br>Als u van plan bent om e-commercegegevens te verwerken met dit profiel, zet u deze instelling op 'Ja'. Bent u dit niet van plan, dan zet u de instelling op 'Nee'. Wanneer E-commerce is uitgeschakeld, kunt u een dollarwaarde instellen als doel om algemene ROI-informatie te genereren.<p><b>Methode voor het bijhouden van bezoekers</b><br>Urchin kan op twee manieren bezoekers identificeren. De meest nauwkeurige manier is door middel van UTM JavaScript-codering. Als de UTM is geïnstalleerd, selecteert u dit als optie. Als de UTM niet is geïnstalleerd, selecteert u de methode IP+User-Agent. Sommige rapporten worden alleen ingevuld als u de UTM gebruikt.<p><b>UTM-domein</b><br>Doorgaans laat u dit leeg. De UTM zal het domein voor de site automatisch detecteren. De UTM-domeinfunctie wordt alleen gebruikt wanneer u overlappende domeinen heeft, die apart moeten worden gevolgd. <p><b>Rapportreeks</b><br>Deze instelling hoeft over het algemeen niet te worden aangepast, tenzij u aangepaste rapportreeksen heeft geconfigureerd. Als u aangepaste rapportreeksen heeft, gebruikt u deze instelling om te bepalen welke rapportreeks moet worden gebruikt voor dit profiel.<p><b>Beschikbare dashboards</b><br>De standaardrapportreeks omvat drie dashboards. Met deze instelling kunt u bepalen welk dashboard beschikbaar is voor de rapportage en welk dashboard standaard moet worden weergegeven.<p><b>Rapportagesecties</b><br>Naast de dashboards zijn er vier hoofdrapportagesecties. Deze secties kunnen in de rapportage worden uitgeschakeld door het vinkje uit het desbetreffende vakje te verwijderen. Als u de toegang tot het rapport op gebruikersniveau wilt beperken, klikt u op het tabblad 'Gebruikers' en past u de functie 'Dashboard negeren' toe. Klik op de knop 'Bijwerken' om eventuele wijzigingen op te slaan.
+559	Resultaat van wizard Account
+560	<nobr><span class=title1>    <b>Accounts (Ref. #A-1200)</b></span></nobr><br>In dit scherm worden de accounts weergegeven die voor deze Urchin-installatie zijn geconfigureerd. Daarnaast kunnen hier de parameters van deze accounts worden aangepast en kan de beheerder accounts toevoegen. Accounts worden gebruikt om profielen, logbestandsbronnen, gebruikers en groepen in te delen onder één bedrijfsitem. Providers met complexe klanten kunnen een account gebruiken om alle componenten voor die klanten bij te houden.<p><b>Toevoegen</b><br>Als u een account wilt toevoegen, klikt u op de knop 'Toevoegen' rechts boven in het scherm. In dat geval wordt de wizard 'Account toevoegen' gestart waarmee u gemakkelijk een account toevoegt.<p><b>Bewerken</b><br>Naast elk account in de lijst bevindt zich een reeks knoppen waarmee u elk filter kunt beheren. De knop 'Bewerken' biedt toegang tot alle instellingen voor dit account, die zijn ondergebracht op een tabblad.<p><b>Verwijderen</b><br>Klik op de knop 'Verwijderen' naast een account om dit te verwijderen uit de configuratie.<p><i>Let op:</i> Alle aan het account gekoppelde profielen, logbestandsbronnen, filters, gebruikers en groepen worden verwijderd.<p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren.
+561	<nobr><span class=title1><b>Profielen: Bronnen logbestand (Ref. #A-2102)</b></span></nobr><br>In dit scherm kunt u <b>te verwerken logbestandsbronnen</b> toevoegen vanuit de lijst <b>Beschikbare bronnen logbestand</b>. De kolom <b>Te verwerken bronnen logbestand</b> bevat de logbestandsbronnen die worden verwerkt als onderdeel van dit profiel. Aan elk profiel is doorgaans slechts één logbestandsbron gekoppeld, maar in configuraties met load-balancing of voor sites met logbestanden voor e-commerce (in de indeling ELF) of CPC-logbestanden kunnen meerdere logbestandsbronnen worden gebruikt. <p><b>Besturingselementen:</b><br><ul><li><b>Toevoegen</b><br>Klik op het pictogram 'Toevoegen' als u een extra logbestandsbron wilt toevoegen aan de lijst 'Beschikbare bronnen logbestand'. Daardoor wordt de wizard Bron logbestand toevoegen gestart, waarmee u een lokale of externe logbestandsbron kunt toevoegen. <li><b>Bewerken</b><br>Markeer de beschikbare logbestandsbron die u wilt bewerken en klik op 'Bewerken'. <li>Klik op de knop <b>Bijwerken</b> om uw wijzigingen op te slaan. <li>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit profiel.
+562	<nobr><span class=title1><b>Profielen: Filters (Ref. #A-2103)</b></span></nobr><br>In dit scherm kunt u <b>Toegewezen filters</b> toevoegen vanuit de lijst <b>Beschikbare filters</b>. <p><b>Besturingselementen:</b><br><ul><li><b>Toevoegen</b><br>Klik op het pictogram 'Toevoegen' als u een extra filter wilt toevoegen aan de lijst 'Beschikbare filters'. Daardoor wordt de wizard Filter toevoegen gestart waarmee u een nieuw of reeds bestaand filter kunt toevoegen.<li><b>Bewerken</b><br>Markeer het beschikbare filter dat u wilt bewerken en klik op de knop 'Bewerken'.<br><li>Gebruik de pijl-omhoog en pijl-omlaag om de volgorde te wijzigen waarin de filters worden toegepast.<br><li>Klik op de knop <b>Bijwerken</b> om de wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit profiel.
+563	<nobr><span class=title1><b>Profielen: Gebruikers (Ref. #A-2104)</b></span></nobr><br>Gebruik dit scherm om gebruikers die geconfigureerd zijn in het Urchin-systeem, toegang te verlenen tot de rapporten voor dit profiel. Wanneer een gebruiker zich zonder beheerdersrechten aanmeldt bij het Urchin-systeem, heeft die gebruiker alleen toegang tot de rapporten waaraan hij of zij expliciet is gekoppeld door de beheerder. <p><b>Gebruikers toewijzen</b><br>Als u een specifieke gebruiker toegang tot het profiel wilt verlenen, selecteert u de gebruiker onder 'Beschikbare gebruikers' in het linkervak en klikt u op de pijl-rechts. Als u een specifieke gebruiker toegang tot het profiel wilt weigeren, selecteert u de gebruiker in het rechtervak en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen op te slaan.<p><b>Dashboard negeren</b><br>Met deze optie kunt u per gebruiker wijzigen welke rapporten en dashboards beschikbaar zijn. Klik één keer op een gebruiker in het venster 'Toegang verleend' om de gebruiker te markeren. Klik daarna op de knop 'Dashboard negeren' om een venster te openen waar u hele rapportageonderdelen voor de geselecteerde gebruiker kunt in- of uitschakelen en een standaarddashboard voor de gebruiker kunt selecteren. Wanneer u een gebruiker verplaatst van 'Beschikbare gebruikers' naar 'Toegang verleend', moet u op 'Bijwerken' klikken voordat deze optie voor die gebruiker beschikbaar is.<p><b>Besturingselementen</b><br><ul><li><b>Toevoegen</b><br>Klik op 'Toevoegen' om de wizard Gebruiker te starten en een gebruiker toe te voegen aan de lijst 'Beschikbare gebruikers'.<li><b>Bewerken</b><br>Klik op 'Bewerken' om de gemarkeerde gebruiker te bewerken.<li>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. <li>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit profiel.
+564	In dit scherm ziet u alle geconfigureerde parameters voor het logbestand dat u heeft geselecteerd. Als de informatie onjuist is, klikt u op 'Bewerken' rechtsboven in het scherm om de instellingen te wijzigen. Als de filters of de informatie bij 'Profielen toegewezen aan' moet worden aangepast, klikt u op de knop 'Bewerken' onder het desbetreffende gedeelte van deze pagina.
+565	<nobr><span class=title1><b>Logbeheer: Instellingen logbestand (Ref. #A-1601)</b></span></nobr><br>In dit scherm kunt u de locatie en indeling configureren van de bron voor het logbestand. Het is essentieel dat u deze instellingen correct configureert. <p><b>Optioneel account</b> (alleen modus Datacentrum)<br>Geeft het account weer waaraan de logbestandsbron is gekoppeld.<p><b>Locatie logbestand</b><br>Selecteer 'Lokaal' als het logbestand kan worden geopend op het lokale bestandssysteem of op een netwerkbestandssysteem dat is gekoppeld aan deze computer. Selecteer 'Extern' als het logbestand van een extern systeem moet worden overgebracht via FTP of HTTP, of moet worden geopend via een UNC-share (alleen Windows). Voor externe logbestanden wordt het tabblad 'Externe instellingen' weergegeven wanneer u op de knop 'Bijwerken' klikt. Klik op het tabblad om de gegevens voor het openen van het externe logbestand te configureren.<p><b>Naam bron logbestand</b><br>De naam die u kiest voor deze bron. <p><b>Indeling logbestand</b><br>In dit scherm kunt u de indeling opgeven van het logbestand dat u aan het verwerken bent. Het <i>automatische</i> logbestandsindelingstype moet voor de meeste webservers worden gekozen. Andere webserver-logbestandsindelingstypen worden aangeboden voor compatibiliteit met oudere versies van Urchin, maar deze zijn meestal niet nodig. Aangepaste logbestandsindelingen kunnen worden gemaakt met de sjablonen in de directory lib/custom/logformats van de Urchin-installatie.<ul><li><b>Automatisch:</b> hiermee worden automatisch de meeste webserverlogbestandsindelingen, inclusief Apache, W3C (Microsoft IIS), NCSA, Netscape en iPlanet, opgespoord. <li><b>Campagne:</b> gebruik deze indeling voor kostengegevens van campagnes die specifiek is geformatteerd voor het gebruik van Urchin. Raadpleeg de online documentatie voor details. De logbestandsindeling van de campagne kan niet automatisch worden gedetecteerd.<li><b>Elf2:</b> gebruik deze indeling voor e-commerce-logbestanden in ELF2-indeling. De e-commerce-logbestandsindeling kan niet automatisch worden gedetecteerd.<li><b>Google:</b> gebruik deze indeling voor logbestanden met Google-gegevens over kosten per klik. De Google-logbestandsindeling kan niet automatisch worden gedetecteerd.<li><b>NCSA:</b> deze indeling wordt meestal automatisch gedetecteerd en wordt gewoonlijk gebruikt op Apache-webservers. Voor een volledige rapportage moet u de optie Extended Combined (Uitgebreid gecombineerd) gebruiken, die in de meeste gevallen niet de standaardoptie voor Apache is. <li><b>Netscape:</b> oudere Netscape-servers (geen iPlanet-servers) maken standaard gebruik van deze indeling.<li><b>Overture:</b> gebruik deze indeling voor logbestanden met Overture-gegevens over kosten per klik. De Overture-logbestandsindeling wordt niet automatisch gedetecteerd.<li><b>W3C:</b> deze indeling kan automatisch worden opgespoord en wordt gebruikt voor webservers die logbestanden standaard in W3C-indeling maken zoals Microsoft IIS-servers.</ul></ul></ul> <p><b>Pad logbestand</b><br>Voor lokale bronnen wordt bij 'Pad logbestand' de locatie van het logbestand op het lokale bestandssysteem opgegeven. U kunt de knop 'Bladeren' gebruiken. <p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze logbestandsbron.
+566	In dit scherm ziet u alle geconfigureerde parameters voor het logbestandsfilter dat u heeft geselecteerd. Als de informatie onjuist is, klikt u op 'Bewerken' rechtsboven in het scherm om de instellingen te wijzigen. Als de informatie bij 'Bronnen logbestand toegepast op' moet worden aangepast, klikt u op de knop 'Bewerken' onder het betreffende gedeelte van deze pagina.
+567	<nobr><span class=title1>    <b>Accounts: Informatie (Ref. #A-1201)</b></span></nobr><br>In dit scherm kunt u de verschillende instellingen voor dit account bewerken.<p><b>Accountnaam</b><br>Elk account vereist een unieke naam. Dit kan een willekeurige naam zijn of een naam die is gebaseerd op een klant of website.<p><b>Contactpersoon/e-mail van contactpersoon</b><br>Contactgegevens zijn optioneel en worden verschaft zodat klanten gemakkelijk kunnen worden bijgehouden.<p><b>Locatie van rapportgegevens</b><br>Dit is een optionele instelling waarmee u kunt opgeven wat het directorypad is voor het opslaan van de rapportgegevens voor alle profielen die bij dit account horen. De standaardlocatie in de directory data/reports/<i>accountnaam</i> binnen de Urchin-installatie. De volledige gegevensdirectory kan in het hele systeem worden verplaatst door het bestand urchin.conf in de directory etc te bewerken. Voor het gemak wordt de knop 'Bladeren' weergegeven.<p><b>Locatie van uitvoeringsgeschiedenis</b><br>Dit is een optionele instelling waarmee u het directorypad kunt opgeven waar de gegevens over uitvoering worden opgeslagen voor alle profielen die bij dit account horen. De standaardlocatie in de directory data/history/<i>accountnaam</i> binnen de Urchin-installatie. Voor het gemak wordt de knop 'Bladeren' weergegeven.<p><b>Locatie voor bladeren in directory's</b><br>Dit is een optionele instelling die dient als veiligheidsmaatregel wanneer een accountbeheerder toegang krijgt om profielen te maken. De accountbeheerder heeft beperkte mogelijkheden om in het opgegeven directorypad in dit veld naar logbestanden te zoeken. Standaard is er geen beperking op het bladeren. Dit kan voor het hele systeem worden gewijzigd door het bestand urchin.conf in de directory etc te bewerken. Voor het gemak wordt de knop 'Bladeren' weergegeven.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit account.
+568	<nobr><span class=title1><b>Profielen: Uitvoeren/Plannen (Ref. #A-2105)</b></span></nobr><br>In dit scherm kunt u de uitvoering van een taak plannen (de logbestandsbronnen verwerken die zijn gekoppeld aan een profiel), maar u kunt de taak ook onmiddellijk uitvoeren door rechts op de knop 'Nu uitvoeren' te klikken. Wanneer u op een van de planningsknoppen klikt, worden er extra opties weergegeven, afhankelijk van de frequentie, bijvoorbeeld voor het gewenste tijdstip. Klik op de knop 'Bijwerken' als u wijzigingen wilt toepassen. Als u op de knop 'Nu uitvoeren' klikt, wordt het profiel onmiddellijk uitgevoerd. Als u de details van de uitvoering wilt weergeven, controleert u de status van de taak onder 'Planner'.<p><b>Nu uitvoeren</b><br>Als u dit profiel onmiddellijk wilt verwerken, klikt u op de grote, groene knop 'Nu uitvoeren' aan de rechterzijde. Vervolgens wordt de taak in de wachtrij gezet die wordt uitgevoerd door de planner van Urchin<p><b>Plannen</b><br>Als u wilt instellen dat deze profieltaak later of regelmatig wordt uitgevoerd, selecteert u een van de volgende intervalopties: Per uur, Per dag, Per week of Per maand. Dit profiel wordt vervolgens met dit interval uitgevoerd. Als u de exacte tijd wilt opgeven, gebruikt u de datumopties die worden weergegeven wanneer u het interval heeft geselecteerd. Alle tijden komen overeen met de lokale tijd op het systeem waarop Urchin wordt uitgevoerd.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit profiel.
+569	<nobr><span class=title1><b>Profielen: Rapportage (Ref. #A-2106)</b></span></nobr><br>In het scherm 'Rapportage-instellingen' kunt u diverse belangrijke Urchin-functies instellen, zoals de identificatie van bepaalde filters en proxyinstellingen.<p><b>Website-URL</b><br>Met deze instelling kunt u links naar uw feitelijke website maken. Dit moet de volledige domeinnaam van de site zijn, inclusief http://. <p><b>Sitedomeinen</b> (alleen hoofdbeheerders)<br>Met deze instelling kunt u alle mogelijke domeinen voor uw website weergeven, met en zonder vermelding van 'www'. Dit veld kunt u gebruiken om vast te stellen of een verwijzing extern is ten opzichte van uw site. Gebruik komma's om de domeinen van elkaar te scheiden. <p><b>Standaardpagina</b><br> Stel deze optie in op de standaardpagina (of indexpagina) in de directory's van deze site. Dit is gewoonlijk 'ndex.html', maar op Windows IIS-servers is het vaak 'Default.htm' of 'index.htm'. Met deze informatie kan Urchin logbestandsvermeldingen zoals 'http://www.urchin.com/' en 'http://www.urchin.com/index.html' met elkaar vergelijken, die in feite dezelfde pagina aanduiden. Als de informatie voor de standaardpagina niet juist wordt ingevoerd, worden er twee afzonderlijke pagina's geregistreerd. Er moet slechts één standaardpagina worden opgegeven. <p><b>Proxyinstellingen</b> (alleen hoofdbeheerders)<br>Bij sommige installaties zijn mogelijk proxyinstellingen nodig om de overlayrapporten op de startpagina weer te geven. Aangezien de overlayzoekopdrachten vanuit het Urchin-systeem worden verzonden, kan het voorkomen dat de firewallinstellingen geen externe communicatie toelaten. In dat geval kunt u een proxy gebruiken om dit type zoekopdrachten mogelijk te maken. De naam van de proxyserver moet gelijk zijn aan de hostnaam van de server. De proxypoort moet de poort zijn die met de proxy communiceert. U kunt de velden voor de gebruikersnaam en het wachtwoord van de proxy gebruiken voor extra beveiliging als er een gebruikersnaam en wachtwoord zijn vereist om toegang te krijgen tot de proxy. Laat al deze velden leeg, tenzij u een foutmelding krijgt wanneer u de overlayfunctie probeert te gebruiken. In dat geval neemt u contact op met de netwerkbeheerder voor instellingen.<p><b>Parallelle logbestandsverwerking</b> (alleen hoofdbeheerders)<br>Als u veel grote load-balanced logbestanden heeft, kunt u de prestaties opvoeren door deze parallel uit te voeren. Dit is afhankelijk van een groot aantal factoren, zoals de hoeveelheid gegevens en de IO-prestaties van het systeem. Vooral wanneer treffers van een sessie met één gebruiker aanwezig kunnen zijn in meerdere logbestanden, kan het de moeite waard zijn om met deze instelling de prestaties te verhogen. <p><b>Tijdsverschil</b> (alleen hoofdbeheerders)<br>Deze instelling bepaalt in welke tijdzone Urchin de gegevens vastlegt. Aangezien alle treffers een GMT-verwijzing bevatten, kan Urchin gegevens in elke tijdzone vastleggen. Met de optie 'Lokale tijd' worden gegevens vastgelegd op basis van de tijdzone zoals geconfigureerd op de server waarop Urchin is geïnstalleerd. Selecteer het verschil met GMT als u een andere instelling wilt gebruiken. <p><b>Overeenkomst organische zoekwoorden</b> (alleen hoofdbeheerders)<br>Met deze instelling kunt u bepalen hoe Urchin zoekmachines en zoekwoorden voor die rapporten detecteert. Met deze lijst in csv-indeling gaat Urchin op zoek naar parameters voor het verwijzen naar overeenkomende site-zoekopdrachten. Vervolgens wordt de waarde van de parameter vastgelegd als de zoekwaarden die in de verwijzing worden gebruikt. Met deze lijst kunt u items toevoegen om zoekwoorden vast te leggen die mogelijk niet automatisch worden opgenomen. De standaardlijst is geschikt voor de meeste zoekmachines.<p><b>Overeenkomst bestandsextensies</b> (alleen hoofdbeheerders)<br> Deze csv-lijst bepaalt welke bestandsextensies worden beschouwd als paginaweergaves. Deze optie kan zodanig worden ingesteld dat bepaalde extensies wel of niet worden opgenomen. De standaardlijst is geschikt voor de meeste sites.<p><b>Overeenkomst paginaparameters</b><br>Deze instelling bepaalt welke parameters wel en niet door Urchin worden opgenomen in het rapport 'Parameters'. Parameters zijn afkomstig van het gedeelte met de zoekopdracht van de aangevraagde URL en kunnen interne zoekwoorden of andere dynamische inhoud bevatten. Urchin legt deze naam-/waardeparen automatisch vast en vermeldt ze in het rapport 'Parameters'. Met deze csv-lijst kunt u bepaalde parameters wel of niet uitsluiten. Zo kan voor een site met miljoenen willekeurige sessie-id's de SID-variabele van dit rapport worden uitgesloten om meer opslagruimte vrij te houden.<p><b>Overeenkomst voor downloads</b> (alleen hoofdbeheerders)<br> Deze csv-lijst bepaalt welke bestandsextensies in het rapport 'Downloads' worden beschouwd als gedownloade bestanden. Bewerk zo nodig de lijst om andere bestandsextensies voor downloads op te nemen. <p><b>Geografische details</b><br><p><b></b><br>Deze instelling bepaalt welke geografische gegevens worden opgenomen in de profielrapporten. Wanneer u extra opties selecteert, is er meer geheugen nodig voor de logbestandsverwerking (ongeveer 350 MB voor netwerken, 100 MB voor domeinen en 20-150 MB voor geografische locaties, afhankelijk van de gekozen geo-database). Bij Urchin worden verschillende geo-databases geleverd, waarin de mate van land/regio-details varieert. Selecteer de geo-database die het beste aan uw behoeften voldoet in de vervolgkeuzelijst.<p><b>Geografische database</b><br> Bij Urchin worden verschillende geo-databases geleverd, die allemaal verschillende niveaus met informatie over geografische locaties leveren:<br>- Wereld (bevat gedetailleerde informatie op land-/regio-/plaatsniveau voor de gehele wereld)<br>- Wereld: light (bevat alleen informatie op landniveau voor de gehele wereld)<br>- Regionale databases zoals 'Verenigde Staten', 'Europese Unie' en 'Japan' bevatten gedetailleerde informatie voor de overeenkomstige regio's en informatie op landniveau voor de rest van de wereld.<br><p><b>Tekencodering</b><br>Als de logbestanden die u verwerkt, gegevens bevatten die niet zijn gecodeerd in UTF-8, selecteert u de juiste coderingsindeling voor de gegevens. De indelingen 'Native Japanese' en 'Latin 1' worden ondersteund. <p><b>Valuta en nauwkeurigheid</b><br>Gebruik voor e-commercesites de valuta- en nauwkeurigheidsinstellingen om de standaardvalutasymbolen en -layout voor weergave en numerieke nauwkeurigheid te wijzigen. <p><b>Besturingselementen:</b><br>Klik op de knop 'Bijwerken' om de wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit profiel.
+570	<nobr><span class=title1>    <b>Groepen: Groepsinfo (Ref. #A-1401)</b></span></nobr><br>In dit scherm kunt u de verschillende instellingen voor deze groep bewerken.<p><b>Optioneel account</b> (alleen modus Datacentrum)<br>Geeft het account weer waaraan de groep is gekoppeld.<p><b>Groepsnaam</b><br>Met dit veld kunt u de naam van de groep opgeven. Gebruik een beschrijvende naam. Groepsnamen moeten uniek zijn.<p><b>Groepsbeschrijving</b> (optioneel)<br>Met dit optionele veld kunt u het doel van elke groep bijhouden. Typ een korte beschrijving om het overzicht op de verschillende groepen te behouden.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze groep.
+571	<nobr><span class=title1><b>Groepen: Gebruikers in groep (Ref. #A-1402)</b></span></nobr><br>In dit scherm kunt u opgeven welke gebruikers bij deze groep horen. U kunt rechten voor het weergeven van rapporten toewijzen op groepsniveau. Gebruikers die tot deze groep behoren, kunnen alle rapporten weergeven waartoe deze groep toegang heeft.<p><b>Gebruiker toevoegen aan groep</b><br>Als u een gebruiker wilt toevoegen aan deze groep, selecteert u de gebruikersnaam in het vak 'Beschikbare gebruikers' en klikt u op de pijl-rechts. Als u een gebruiker wilt verwijderen uit deze groep, selecteert u de gebruiker in het vak 'Gebruikers in groep' en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen toe te passen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze groep.
+572	<nobr><span class=title1><b>Groepen: Rapporttoegang (Ref. #A-1403)</b></span></nobr><br>In dit scherm kunt u deze groep toestemming verlenen om de rapporten voor een of meer bestaande profielen weer te geven. Naast rechten voor individuele gebruikers hebben gebruikers die tot deze groep behoren, toegangsrechten tot rapporten die via dit scherm kunnen worden ingesteld.<p><b>Toegang verlenen</b><br>Als u toegang wilt verlenen tot de rapporten van een profiel, selecteert u de naam van het profiel in het vak 'Beschikbare profielen' en klikt u op de pijl-rechts. Als u toegang tot de rapporten van een profiel wilt weigeren, selecteert u het profiel in het vak 'Toegang verleend' en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen toe te passen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze groep.
+573	<nobr><span class=title1><b>Groepen: Overzicht (Ref. #A-1404)</b></span></nobr><br>In dit scherm wordt de complete verzameling parameters voor deze groep weergegeven. Als er iets moet worden aangepast, klikt u op het betreffende tabblad en past u de instellingen naar wens aan. <p><b>Besturingselementen</b><br>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze groep.
+574	<nobr><span class=title1><b>Profielen: Overzicht (Ref. #A-2107)</b></span></nobr><br>In dit scherm wordt de complete verzameling parameters voor dit profiel weergegeven. Controleer deze instellingen zorgvuldig voordat u het profiel verwerkt. Als er iets moet worden aangepast, klikt u op het betreffende tabblad en past u de instellingen naar wens aan. <p><b>Besturingselementen</b><br>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit profiel.
+575	<nobr><span class=title1><b>Logbeheer: Externe instellingen (Ref. #A-1602)</b></span></nobr><br>In dit scherm kunt u opgeven op welke wijze het externe logbestand voor de logbestandsbron kan worden opgehaald en geopend.<p><b>Serverprotocol</b><br>In Urchin kunnen vier typen externe logbestanden worden gebruikt: HTTP (www), HTTPS, FTP en UNC (alleen Windows). Gebruik HTTP als het logbestand via een webbrowser kan worden geopend. Als er geen wachtwoord vereist is, laat u de velden voor de gebruikersnaam en het wachtwoord leeg. FTP kan worden gebruikt met een gebruikersnaam en wachtwoord (doorgaans dezelfde gebruikersnaam als die voor het uploaden van inhoud naar uw site). Voor UNC, dat alleen beschikbaar is op Windows-systemen, zijn een gebruikersnaam en wachtwoord vereist voor toegang tot de UNC-share.<p><b>Servernaam/IP</b><br>Geef de servernaam (bijvoorbeeld www.urchin.com) of het IP-adres (bijvoorbeeld 63.212.171.4) op van de locatie waarop het logbestand zich bevindt. Voor UNC gebruikt u de notatie \\server\share.<p><b>Lokale en externe aanmelding komen overeen</b><br>Deze optie wordt weergegeven als UNC is geselecteerd als het serverprotocol (alleen Windows). Selecteer 'Ja' als voor de lokale en externe server dezelfde aanmeldingsnaam en hetzelfde wachtwoord kunnen worden gebruikt. Selecteer 'Nee' als voor de externe server en lokale server een andere aanmeldingsnaam en een ander wachtwoord moeten worden gebruikt. Als u 'Nee' selecteert, worden er extra velden voor aanmelding bij de lokale server weergegeven.<p><b>Serverpoort</b><br>Er wordt automatisch een serverpoort ingevuld. Wanneer u een niet-standaardpoort gebruikt, kunt u deze instelling echter wijzigen.<p><b>Gebruikersnaam/wachtwoord</b><br>Deze velden zijn leeg voor niet-geverifieerde HTTP-verbindingen en anonieme FTP-verbindingen. Als u een geverifieerde HTTP-/FTP-verbinding wilt gebruiken, geeft u hier uw gebruikersnaam en wachtwoord op. UNC vereist een gebruikersnaam en wachtwoord voor toegang tot de share. <p><b>Domein (alleen UNC)</b><br>Als de UNC-share deel uitmaakt van een domein, geeft u hier de netwerkgegevens voor het domein op. <p><b>FTP-modus</b><br>Deze optie is beschikbaar wanneer FTP is geselecteerd als het serverprotocol. Selecteer 'Passief' voor een passieve overdrachtsmethode. Selecteer 'Actief voor een directe overdrachtsmethode. <p><b>Externe bron logbestand</b><br>De externe bron logbestand bevat het pad naar het logbestand op het externe systeem.Als u HTTP gebruikt, is het vaak gemakkelijker om het logbestand eerst op te zoeken met een webbrowser. In dat geval geeft u de URL van de site op in een browser. Vervolgens typt u een slash, de gebruikte directorynamen en de naam van het logbestand (bijvoorbeeld http://www.urchin.com/logs/access_log). Als in het browserscherm tekst wordt weergegeven, is het pad correct. Geef rechts van de domeinnaam de gegevens op (bijvoorbeeld /logs/access_log). Jokertekens worden niet ondersteund voor padnamen van externe HTTP-logbestandsbronnen. Als u FTP gebruikt, kunt u op de externe server zoeken naar het logbestand. Voordat u zoekt, moet u de server- en gebruikersnaamgegevens configureren.<p><b>Bestemming logbestand</b> (alleen extern)<br>Externe logbestanden worden overgebracht naar het lokale systeem voordat ze worden verwerkt. Selecteer een lokale directory waarin u het logbestand wilt opslaan. Er wordt een bladerknop weergegeven.<p><b>Proxyserver</b> (alleen HTTP en HTTPS)<br>Als het logboek beschikbaar is via een proxysysteem, geeft u het IP-adres of de hostnaam op. <p><b>Proxypoort</b> (alleen HTTP en HTTPS)<br>Als het logboek beschikbaar is via een proxysysteem, geeft u de poort op.<p><b>Proxygebruikersnaam</b> en <b>Proxywachtwoord</b><br>Als het logboek beschikbaar is via een proxysysteem waarvoor een gebruikersnaam en wachtwoord vereist zijn, geeft u deze op in deze velden.
+576	<nobr><span class=title1><b>Logbeheer: Logbestandsfilters (Ref. #A-1603)</b></span></nobr><br>In dit scherm kunt u filters toepassen op de logbestandsbron. Als u een filter wilt toepassen, selecteert u het filter in het vak aan de linkerzijde onder 'Beschikbare filters' en klikt u op de pijl-rechts. Wanneer u een filter wilt verwijderen, selecteert u het filter in het rechtervak en klikt u op de pijl-links. Klik op 'Bijwerken' om uw wijzigingen op te slaan.<p><b>Besturingselementen</b><br><ul><li><b>Toevoegen</b><br>Klik op 'Toevoegen' om de wizard Filter te starten en een filter toe te voegen aan de lijst met beschikbare filters.<li><b>Bewerken</b><br>Klik op 'Bewerken' om het gemarkeerde filter te bewerken.<li>Klik op de pijl-omhoog en pijl-omlaag om de volgende te wijzigen waarin de filters worden toegepast.<br><li>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan.
+577	<nobr><span class=title1><b>Logbeheer: Geavanceerde instellingen (Ref. #A-1604)</b></span></nobr><br>In dit scherm kunt u geavanceerde instellingen configureren voor deze logbestandsbron. Zo kunt u opgeven wat er met het logbestand moet worden gedaan wanneer de verwerking is voltooid en welk type codering moet worden gebruikt.<p><b>Doel van logbestand</b><br>Wanneer de logbestandsbron is verwerkt voor alle profielen waarop deze is toegepast, kunt u opgeven dat het logbestand wordt gearchiveerd, wordt verwijderd of verder niet wordt bewerkt. <ul><li>Selecteer 'Niet wijzigen' als het logbestand niet moet worden bewerkt nadat het is verwerkt.<li>Selecteer 'Archiveren: comprimeren' als u het logbestand wilt comprimeren in een GZIP-bestand en wilt voorzien van een datumstempel. <li>Selecteer 'Archiveren: niet comprimeren' als u een logbestand wilt archiveren zonder het te comprimeren. Deze optie is nuttig voor logbestanden die al zijn gecomprimeerd. <li>Selecteer 'Verwijderen' als u het logbestand na verwerking wilt verwijderen.</ul>  Voor de opties voor archiveren en verwijderen moeten de juiste rechten zijn ingesteld. Voor logbestandsbronnen die door meerdere profielen worden gebruikt, moet alleen de optie 'Niet wijzigen' worden geselecteerd. <b>Waarschuwing:</b> niet gebruiken voor actieve logbestanden.<p><b>Codering van logbestand</b><br>Als u logbestanden met Japanse double-byte tekens verwerkt, wijzigt u deze in Shift-JIS-tekens. Anders behoudt u de standaardinstelling Engels (ISO). Deze is geschikt voor alle logbestanden die geen double-byte tekens bevatten.<p><b>URL decoderen</b><br>Als u een toepassingsserver of een ander systeem voor het genereren van dynamische pagina's gebruikt en pagina-URL's wilt omzetten in gemakkelijker te lezen en te begrijpen rapportitems, klikt u op de knop 'aan'.<p><b>Zoeksleutel</b><br>Voor dynamisch gegenereerde pagina-URL's wordt doorgaans een zoeksleutel gebruikt om de basis van de URL te scheiden van de specifieke querygegevens. Deze sleutel is nodig om de URL goed te kunnen parseren voor de rapporten. Doorgaans is de zoeksleutel een vraagteken.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot de bewerkbare instellingen voor deze logbestandsbron.
+578	Website-URL
+579	Welkom bij Urchin. Klik links op de knop<br> 'Wizard Rapport instellen' om te beginnen.
+580	U heeft aangegeven dat u het serverpoortnummer wilt wijzigen. \n\nDe wijziging wordt pas van kracht wanneer u de Urchin-services heeft \nuitgeschakeld en opnieuw heeft ingeschakeld via het menu 'Start'. \n\n
+581	Codering van logbestand
+582	<nobr><span class=title1><b>Logbeheer: Geavanceerde instellingen (Ref. #A-1605)</b></span></nobr><br>In dit scherm kunt u geavanceerde instellingen configureren voor deze bron voor het logbestand. Zo kunt u opgeven wat er met het logbestand moet worden gedaan wanneer de verwerking is voltooid. Er kan nu worden gefilterd op de codering en decodering van logbestanden.<p><b>Doel van logbestand</b><br>Gebruik deze optie om op te geven wat er met logbestanden moet gebeuren wanneer ze zijn verwerkt voor alle profielen waarop ze van toepassing zijn. <ul><li>Selecteer 'Niet wijzigen' als er geen acties moeten worden uitgevoerd wanneer de verwerking is voltooid. <li>Selecteer 'Archiveren: comprimeren' als u het logbestand wilt comprimeren in een ZIP-bestand en wilt voorzien van een datumstempel. <li>Selecteer 'Archiveren: niet comprimeren' als u een logbestand wilt archiveren en van een datumstempel wilt voorzien zonder het te comprimeren. Deze optie is nuttig voor logbestanden die al zijn gecomprimeerd. <li>Selecteer 'Verwijderen' als u het logbestand wilt verwijderen na verwerking.</ul> Voor de opties voor archiveren en verwijderen moeten de juiste rechten zijn ingesteld. Voor logbestandsbronnen die door meerdere profielen worden gebruikt, moet alleen de optie 'Niet wijzigen' worden geselecteerd. <b>Waarschuwing:</b> Gebruik de opties voor archiveren of verwijderen niet bij actieve logbestanden. <p><b>URI-stam in kleine letters</b><br> Als deze optie is ingeschakeld, worden er automatisch kleine letters gebruikt in de URL voor logbestanden die op Windows-platforms zijn gemaakt. Op deze manier wordt voorkomen dat er twee items worden gemaakt voor één URL.<p><b>Zoeksleutel</b><br>Voor dynamisch gegenereerde pagina-URL's wordt doorgaans een zoeksleutel gebruikt om de stam van de URL te scheiden van de specifieke querygegevens. Deze sleutel is nodig om de URL goed te kunnen parseren voor de rapporten. Doorgaans is de zoeksleutel een vraagteken.<p><b>Datum/tijd vervangen door jokerteken in padnaam logbestand</b><br>Als u wilt dat de juiste logbestanden automatisch worden geopend, kan de padnaam van het logbestand jokertekens voor datumstempels bevatten die zijn gebaseerd op de huidige tijd. Urchin wordt doorgaans echter uitgevoerd nadat de logbestanden zijn vernieuwd en van een datum zijn voorzien. In Urchin kan het juiste logbestand mogelijk alleen worden gevonden als bekend is hoe de tijd kan worden aangepast wanneer er jokertekens voor datums worden vervangen. Standaard wordt gezocht naar de logbestanden van de voorgaande dag (lokaal - 24 uur). Bij het gebruik van jokertekens wordt de <i>strftime</i>-conventie gevolgd die wordt beschreven in de handleiding en het online documentatiecentrum. Bij 'Dagen' wordt weergegeven hoeveel dagen wordt teruggegaan bij het zoeken naar een overeenkomende strftime-string in de naam van het logbestand. Deze instelling is heel nuttig in omgevingen waar het huidige logbestand niet aanwezig is en staat Urchin toe om in te lopen op de verwerking als het logbestand op een toekomstige datum binnen het bereik van het venster 'Dagen' beschikbaar is.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om uw wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot de bewerkbare instellingen voor deze logbestandsbron.
+583	<nobr><span class=title1><b>Logbeheer: Overzicht (Ref. #A-1606)</b></span></nobr><br>In dit scherm wordt de complete verzameling parameters voor deze logbestandsbron weergegeven. Controleer deze instellingen zorgvuldig voordat u bijbehorende profielen verwerkt. Als er iets moet worden aangepast, klikt u op het betreffende tabblad en past u de instellingen naar wens aan. <p><b>Besturingselementen</b><br>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor deze logbestandsbron.
+584	Logbestand(en) controleren
+585	Controleren
+586	Geselecteerde bestanden
+587	Andere bestanden in directory
+588	Bestandsinformatie
+589	Locatie logbestand
+590	Bestandsgrootte (bytes)
+591	Laatste wijziging
+592	Bestandstoegang
+593	Gelezen
+594	Schrijven
+595	Kan geen informatie opvragen over dit bestand.
+596	Logbestand(en)
+597	Huidige directory
+598	Geen rechten
+599	U heeft aangegeven dat het serverpoortnummer moet worden gewijzigd. \n\nDe wijziging wordt pas van kracht als u de Urchin-webserver \nopnieuw heeft gestart door 'urchinctl -w restart' uit te voeren vanuit de bin-directory van Urchin.\n\n
+600	Licentie voor Urchin
+601	Licentie-informatie
+602	Actie-items
+603	Demolicentie aanvragen
+604	Eerder aangeschafte licentie activeren
+605	Licentie aanschaffen
+606	Licentie opnieuw activeren
+607	Licentie activeren
+608	Geen rechten voor directory
+609	Licentie bijwerken
+610	Klik op een van de volgende opties
+611	Geldige licentie: normaal
+612	Geldige licentie: demo
+613	Nooit
+614	Geen licentie geïnstalleerd
+615	Ongeldige licentie
+616	(Verlopen)
+617	(Verkeerde sleutel)
+618	Wachten op activering
+619	Licentiestatus
+620	Vervaldatum licentie
+621	Profielen met basis
+622	Servers met basis
+623	Product
+624	Versie
+625	Geldige licentie
+626	Gold Master opnieuw activeren
+627	Licentie
+628	Serienummer
+629	URL decoderen
+630	Geavanceerde instellingen
+631	Zoeksleutel
+632	Verwijzingsniveau
+633	Standaard
+634	Licentieprobleem
+635	Er is een probleem met de licentie vastgesteld. Neem contact op met uw lokale systeembeheerder om het probleem op te lossen.
+636	DNS verwerken
+637	Filter
+638	Licentielimiet
+639	Profielnaam
+640	Algemene instellingen
+641	Bronnen logbestand
+642	Filters
+643	Gebruikers
+644	Geavanceerd
+645	Geavanceerd
+646	Meer opties
+647	Logboekbytes
+648	sec
+649	Filters/Geavanceerd/Profielen
+650	Instellingen logbestand
+651	Externe instellingen
+652	Logboekfilters
+653	Geavanceerde instellingen
+654	Tijd aanpassen
+655	Lokale logbestandsbron toevoegen
+656	Externe bron logbestand toevoegen
+657	Vooraf geconfigureerde logbestandsbron selecteren
+658	Bestemming logbestand
+659	Profielen toegepast op
+660	Filterinstellingen
+661	Profielen
+662	Bronnen logbestand
+663	Vooraf geconfigureerd filter selecteren
+664	Nieuw filter toevoegen
+665	Toevoegingsopties voor bron logbestand
+666	Waarschuwing: u heeft ervoor gekozen de Urchin-taak te beëindigen. \nWanneer u de taak beëindigt, wordt de Urchin-database mogelijk beschadigd. \nRaadpleeg het Knowledgebase-artikel over geforceerd afsluiten voor meer informatie. \n\nWilt u de taak beëindigen?
+667	Waarschuwing! Slaveplanner is uitgeschakeld.
+668	Profielen/logbestandsbronnen
+669	Optie
+670	Verwijderen
+671	Snelle weergave voor gebruiker
+672	Gebruikersinstellingen
+673	Gebruikersinfo
+674	Voorkeuren
+675	Groepen
+676	Rapporttoegang
+677	Wachtwoord bevestigen
+678	Rapporttoegang/-groepen
+679	GMT-tijd
+680	Snelle groepsweergave
+681	Groepsbeschrijving
+682	De volgende tekens zijn niet toegestaan: (*?“<>|).
+683	Groepsinfo
+684	Gebruikers in groep
+685	Rapporttoegang
+686	U kunt de volgende tekens niet gebruiken in de profielnaam:\n\n -> / (slash)\n\ -> \\ (backslash)\n -> + (plusteken). \n\n Verwijder de tekens en probeer het opnieuw.
+687	Rapporttoegang/gebruikers
+688	Fout!\n\nDe wachtwoorden komen niet overeen!
+689	De volgende verplichte velden zijn leeg of ongeldig.
+690	DNS-instellingen
+691	Database-instellingen
+692	Sessie-instellingen
+693	Toegangsinstellingen
+694	Serverinstellingen
+695	Filterpatroon
+696	Regels
+697	Weet u zeker dat u deze record wilt verwijderen?
+698	Overzicht
+699	Meer informatie
+700	Plannen
+701	Nu uitvoeren
+702	Taakvoortgang
+703	Rapport alle profielen
+704	Klik hier voor meer informatie
+705	Starttijd
+706	Eindtijd
+707	Detail taakvoortgang
+708	Details verbergen
+709	Methode voor het bijhouden van bezoekers
+710	IP+User-agent
+711	Sessie-id
+712	Urchin Traffic Monitor (UTM)
+713	Parseerdefinitie voor sessie
+714	Huidige tijd
+715	Veld Sessie
+716	FOUT: de taak is beëindigd. \nFOUT: mogelijke gegevensbeschadiging. Raadpleeg het Knowledgebase-artikel over geforceerd afsluiten voor informatie over het uitvoeren van de udb-sanitizer.
+717	FOUT: de beëindiging van de taak is mislukt.
+718	ALLEEN IP
+719	Paginaweergave vereist voor sessie
+720	Geen profielen om te importeren
+721	Versie
+722	Geheugengebruik
+723	Instellingen voor geheugengebruik
+724	Beoogd geheugengebruik
+725	Optie voor gegevensparsering
+726	Aanpassen
+727	Aangepaste instellingen voor geheugengebruik
+728	Buffergrootte bezoeker
+729	Grootte van sessiebuffer
+730	Grootte van padbuffer
+731	Grootte van gegevensbuffer
+732	Buffergrootte gegevensreeks
+733	Uitvoeren: logbestanden
+734	Uitvoeren: DNS
+735	Voltooid
+736	Fout
+737	In behandeling
+738	Paden verwerken
+739	Padniveau
+740	Profieltaakoverzicht
+741	Logbestand bijhouden
+742	gebruik een beschrijvende naam
+743	Valuta
+744	Valutasymbool
+745	Minimale waarde
+746	Maximale waarde
+747	Precisie
+748	geen
+749	VS
+750	China
+751	Frankrijk
+752	Duitsland
+753	Italië
+754	Japan
+755	Korea
+756	Portugal
+757	Spanje
+758	Zweden
+759	V.K.
+760	Regio
+761	Regio wijzigen
+762	Landinstellingen
+763	Directe link naar rapporten
+764	Database opruimen of wijzigen
+765	Alle gegevens voor profiel verwijderen
+766	Alle gegevens verwijderen
+767	Weet u zeker dat u alle gegevens voor dit profiel definitief wilt verwijderen?
+768	Zie de Help voor meer informatie
+769	Voorbeeldfilter selecteren
+770	Intern verkeer filteren
+771	Robotverkeer filteren
+772	Verkeer van controleagent filteren
+773	Alle afbeeldingsverzoeken filteren
+774	Alleen rapporteren over verkeer naar een subdirectory
+775	intern verkeer uitsluiten
+776	robots uitsluiten
+777	controleagent uitsluiten
+778	afbeeldingen uitsluiten
+779	subdirectory opnemen
+780	Overeenkomst voor downloads
+781	<nobr><span class=title1><b>Toegangsinstellingen: Algemene standaardinstellingen (Ref. #A-781)</b></span></nobr><br>Dit scherm bevat bepaalde algemene systeeminstellingen voor de toegang tot en het weergeven van rapporten. <p><b>Rapporttaal</b><br>Met de instelling 'Rapporttaal' kunt u de standaardtaal voor de weergave van rapporten bepalen. Bij het instellen van nieuwe gebruikers wordt de instelling 'Rapporttaal' standaard op deze waarde ingesteld. <p><b>Regio</b><br>Met de instelling 'Regio' kunt u de standaard landinstellingen voor de weergave van rapporten bepalen. Bij het instellen van nieuwe gebruikers wordt hun landinstelling standaard op deze waarde ingesteld. Met deze instelling regelt u de notatie van valuta, datums, tijden en getallen die in verschillende landen anders worden weergegeven. Als een bepaald land niet in de lijst wordt weergegeven, selecteert u een land met dezelfde datum- en tijdnotatie. Klik op 'Bijwerken' om de wijzigingen op te slaan.
+782	Mislukt
+783	Hoofdlettergevoelig
+784	Opties voor load-balancing
+785	Parallelle logbestandsverwerking
+786	FTPS
+787	HTTPS
+788	HTTP-proxyinstellingen (optioneel)
+789	Proxyserver
+790	Proxypoort
+791	Gebruikersnaam proxy
+792	Proxywachtwoord
+793	Campagneopties
+794	Zoekresultaat voor primair doel
+795	Veld voor primair doel
+796	Hoofdlettergevoelig
+797	UTM vereist voor campagne
+798	FTP-modus
+799	Passief
+800	Actief
+801	Aanmelding bij lokale server
+802	Lokale en externe aanmelding komen overeen
+803	Gebruikersnaam
+804	Wachtwoord
+805	Wachtwoord bevestigen
+806	Domein
+807	Opzoektabel
+808	Tabelnaam
+809	Archiveren: geen compressie
+810	Australië
+811	Nieuw-Zeeland
+812	CTM-item toevoegen
+813	<b>Wizard CTM-item toevoegen</b><br>In deze wizard kunt u vaste kosten en/of vertoningsgegevens voor een campagne opgeven. Vul voor elk van de drie stappen velden in en klik op 'Toevoegen aan volgende uitvoering'. Wanneer u de velden heeft ingevuld, worden de gegevens aan de Urchin-database toegevoegd tijdens de volgende geplande uitvoering van dit profiel. <p><b>Stap 1: begindatum</b><br>Voer de datum in vanaf wanneer de kosten en/of vertoningen moeten worden berekend. <p><b>Stap 2: CTM-variabelen</b><br>Voer de CTM-variabelen in die de campagne beschrijven waarvoor u gegevens invoert. Wanneer u de gegevens bijvoorbeeld wilt toepassen op alle organische Google-verwijzingen, geeft u 'Google' op bij 'Bron' en 'organisch' bij 'Medium'. Als u de gegevens wilt toepassen op de zomernieuwsbrief, geeft u 'zomer_nieuws' op als bron (wanneer u verwijzingen voor zomernieuwsbrieven heeft gecodeerd met utm_source=zomer_nieuws). <ul><li><b>Campagne-id</b><br>Als de campagne waarvoor u gegevens opgeeft, kan worden aangeduid met een campagne-id (bijvoorbeeld utm_id), geeft u die hier op en gaat u naar stap 3. <li><b>Campagne</b><br>Voer de naam in van de campagne waarop de gegevens van toepassing zijn. <li><b>Bron</b><br>Geef de bron op (bijvoorbeeld Google) waarop de gegevens van toepassing zijn.<li><b>Medium</b><br>Geef het medium (bijvoorbeeld organisch of e-mail) op waarop de gegevens van toepassing zijn. <li><b>Zoekterm</b><br>Geef het zoekwoord (bijvoorbeeld golfclubs) op waarop de gegevens van toepassing zijn.<li><b>Inhoud van de advertentie</b><br>Geef de inhoud op waarop de gegevens van toepassing zijn..</ul><p><b>Stap 3: kosten- en vertoningsgegevens toevoegen</b><br>Geef het bedrag en/of het aantal vertoningen op dat u wilt koppelen aan deze campagne.<ul><li><b>Kosten</b><br>Geef de kosten op. <li><b>Vertoningen</b><br>Geef het aantal vertoningen op.</ul><p>Klik op <b>Toevoegen aan volgende uitvoering</b> als deze gegevens aan de Urchin-database moeten worden toegevoegd wanneer dit profiel weer wordt uitgevoerd. Klik op <b>Items in behandeling weergeven</b> om de gegevensitems weer te geven die aan de Urchin-database moeten worden toegevoegd wanneer dit profiel weer wordt uitgevoerd. Klik op <b>Sluiten</b> om af te sluiten. Klik op <b>Wissen</b> om alle velden te wissen.
+814	Handmatige kostengegevens toevoegen
+815	Kostengegevens toevoegen
+816	Toevoegen aan volgende uitvoering
+817	Stap 1: begindatum
+818	Begindatum
+819	Stap 2: CTM-variabelen
+820	Campagne
+821	Bron
+822	Medium
+823	Zoekterm
+824	Inhoud van de advertentie
+825	Stap 3: Klik- en vertoningsgegevens toevoegen
+826	Kosten
+827	Vertoningen
+828	Campagne-id
+829	Campagne-id of bron
+830	Kosten of vertoningen
+831	CTM-item is toegevoegd.
+832	CTM-item niet toegevoegd.
+833	Wissen
+834	Items in behandeling weergeven
+835	CTM-items in behandeling
+836	<b>CTM-items in behandeling</b><br>In dit scherm worden items voor kosten- en vertoningsgegevens weergegeven die naar de Urchin-database worden geschreven wanneer het profiel opnieuw wordt uitgevoerd.
+837	Er zijn geen CTM-items in behandeling.
+838	Sluiten
+839	Toevoegen is mislukt. Ongeldig nummer voor profielrecord (1001).
+840	Toevoegen is mislukt. Record voor het ophalen van een profiel is mislukt (1002).
+841	Toevoegen is mislukt. Directory voor CTM-item kan niet worden gemaakt (1003).
+842	Toevoegen is mislukt. Bestand met CTM-item kan niet worden geopend (1004).
+843	Doel 1
+844	Doel 2
+845	Doel 3
+846	Doel 4
+847	Doel activeren
+848	Doelwaarde (inkomsten)
+849	Stap 1
+850	Stap 2
+851	Stap 3
+852	Doel
+853	Veld B is verplicht
+854	Doelwaarde gebruiken
+855	Beschikbare profiellijst
+856	Dagen
+857	Gebruikersnaam of wachtwoord voor externe server ontbreekt.
+858	Gebruikersnaam of wachtwoord voor lokale server ontbreekt.
+859	Verbinden met lokale server is mislukt.
+860	Verbinden met externe server is mislukt.
+861	Stap 4
+862	Stap 5
+863	Stap 6
+864	Stap 7
+865	Stap 8
+866	Stap 9
+867	Stap 10
+868	Startpagina
+869	HTTP-proxyinstellingen voor website (optioneel)
+870	Stap 1 vereist
+871	Optie 4 (op verzoek)
+872	Verplichte velden
+873	Voorbeeldfilters
+874	Stappen
+875	Doelen
+876	<b>Profielen: Doelen</b><p>Bewerk een doel door op het desbetreffende tabblad boven aan het scherm te klikken. Klik vervolgens op <img alt='Analysis Options Button' title='magic wand' src ='/uicons/default/wizard.gif' border=''> in de rechterbovenhoek om de wizard 'Doel instellen' te openen. Gebruik de webbrowser in de wizard om naar een pagina te gaan die u wilt instellen als een trechterstap of doel. Als u de pagina wilt instellen als stap 1, klikt u op <b>Pagina instellen als stap: 1</b>. Herhaal deze procedure voor elke stap van uw trechter. Klik op <b>Pagina instellen als doel</b> om de pagina in te stellen als het doel en sluit vervolgens de wizard. De geselecteerde pagina's worden weergegeven in de velden 'Stappen' en 'Webadres doel'. Het is voor deze stappen niet nodig om het gedeelte <i>http://www.domein.nl</i> van de URL in het veld 'Webadres doel' of 'Webadres' op te geven. Urchin negeert dit gedeelte van de URL.<p>Belangrijk: in Urchin kunnen reguliere expressies worden gebruikt in alle webadresvelden voor de stappen en het doel. Zorg ervoor dat u alle metatekens in reguliere expressies na de laatste slash ('/') uitsluit, dat wil zeggen: tekens zoals '?' of '.' in het webadres moeten worden uitgesloten met een backslash ('\') als u wilt dat Urchin deze tekens letterlijk interpreteert. <p><b>Doelinstellingen</b><br>In Urchin wordt elk bezoek aan de URL die u opgeeft bij <b>Webadres doel</b> geteld als een doelconversie wanneer de optie <b>Doel activeren</b> is ingeschakeld. De naam die u opgeeft bij <b>Naam doel</b> wordt weergegeven in Urchin-rapporten. De waarde die u opgeeft bij <b>Doelwaarde (inkomsten)</b> wordt gebruikt om de ROI en andere cijfers te berekenen.<p><b>Instellingen voor trechterstappen</b><br>Geef in dit gedeelte de stappen op die leiden naar het doel. Elke stap is een pagina op weg naar de conversie van het doel. Gezamenlijk vormen de stappen een conversietrechter. In het rapport 'Inhoudsoptimalisatie'-->'Doelen en Trechters'-->'Verlating gedefinieerde trechter' wordt weergegeven hoeveel bezoekers elke stap voltooien en hoeveel bezoekers bij elke stap afhaken. Geef voor elke stap een URL en een paginanaam op. <p><b>Geavanceerde instellingen voor doel</b><br>In rapporten voor doelconversies en voltooide stappen worden de door u opgegeven URL's vergeleken met de bezochte URL's. Als <b>Webadresoptie</b> is ingesteld op 'URL zonder query', wordt het querygedeelte van de URL's in deze vergelijkingen genegeerd. Wanneer <b>Hoofdlettergevoelig</b> is ingesteld op 'Ja', zijn deze vergelijkingen hoofdlettergevoelig. Als <b>Stap 1 vereist</b> is ingesteld op 'Ja', moeten in trechterrapporten alleen conversiepaden worden opgenomen waarin de eerste stap is uitgevoerd.
+877	Instellingen
+878	Wizard Doel instellen
+879	Help van Wizard Doel instellen
+880	Doel selecteren
+881	Huidige stap
+882	Algemene landinstellingen
+883	Doelen en stappen zoeken
+884	Adres
+885	Paginanaam
+886	Gebruik dit adres
+887	Gebruik deze naam
+888	Toepassen
+889	Gebruik van het filter URL decoderen is niet mogelijk. De velden worden nu automatisch gedecodeerd. Als een speciaal veld moet worden gedecodeerd, kunt u de documentatie raadplegen voor meer informatie.
+890	Doelinstellingen
+891	Webadres doel
+892	Doelnaam
+893	Instellingen voor doeltrechter
+894	Doel geavanceerde instellingen
+895	URL zonder query
+896	URL met query
+897	Optie voor webadres
+898	Webadres
+899	Naam
+900	E-commercewebsite
+901	Gegevens voor e-commerce
+902	Doelwaarde
+903	Pagina instellen als stap
+904	Pagina instellen als doel
+905	Ga naar een pagina op uw website. Als u de pagina wilt toevoegen als trechterstap, klikt u op <b>Pagina instellen als stap ...</b>. Herhaal deze procedure voor elke stap in de trechter. Klik op <b>Pagina instellen als doel</b> om de pagina in te stellen als het doel en sluit vervolgens de wizard. Klik op <b>Vorige</b> om terug te keren naar een eerdere stap. Klik op <b>Annuleren</b> om de wizard te sluiten zonder stappen of een doelpagina op te slaan.
+906	Geheugengebruik van database
+907	Limiet voor cache-systeem
+908	Alles in geheugen bewaren
+909	Groepen
+910	<b>Profielen: Groepen</b><br>Gebruik dit scherm om groepstoegang te verlenen tot de rapporten voor dit profiel. <p><b>Groepen toewijzen</b><br>Als u toegang wilt verlenen tot het profiel voor een specifieke groep, selecteert u de groep onder 'Beschikbare groepen' in het linkervak en klikt u op de pijl-rechts. Als u een specifieke groep toegang tot het profiel wilt weigeren, selecteert u de groep in het rechtervak en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen op te slaan. <p><b>Dashboard negeren</b> (alleen hoofdbeheerders)<br>Met deze optie kunt u per groep wijzigen welke rapporten en dashboards beschikbaar zijn. Klik één keer op een groep in het venster 'Toegang verleend' om de groep te markeren. Klik daarna op de knop 'Dashboard negeren' om een venster te openen waarin u hele rapportageonderdelen voor de geselecteerde groep kunt in- of uitschakelen en een standaarddashboard voor de gebruiker kunt selecteren. Wanneer u een groep verplaatst van 'Beschikbare groepen' naar 'Toegang verleend', moet u bijwerken voordat deze optie voor die groep beschikbaar is. <p><b>Besturingselementen</b><br><ul><li><b>Toevoegen</b><br>Klik op het pictogram 'Toevoegen' om de  wizard Groep te starten en een groep toe te voegen aan de lijst met beschikbare groepen.<li><b>Bewerken</b><br>Klik op de knop 'Bewerken' om de gemarkeerde groep te bewerken.<li>Klik op de knop 'Bijwerken' om de wijzigingen op te slaan. <li>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit profiel.
+911	Verschil met GMT
+912	Nieuwe bron logbestand toevoegen
+913	Meer logbestandsbronnen toevoegen
+914	Bestaande bron logbestand toevoegen
+915	Foutpagina
+916	Fout in configuratieprogramma van Urchin
+917	Locatie van uitvoeringsgeschiedenis
+918	Selecteer een record om te bewerken.
+919	Onbekende fout.
+920	10001 - Databasefout: kan geen verbinding maken met de configuratiedatabase.
+921	10002 - Databasefout: kan transactie niet starten.
+922	10003 - Databasefout: kan transactie niet uitvoeren.
+923	10004 - Databasefout: kan transactie niet ongedaan maken.
+924	11001 - Configuratiefout: kan parameters voor gebruikersinvoer niet lezen.
+925	11002 - Configuratiefout: kan de record voor globale configuratie niet opvragen.
+926	11003 - Configuratiefout: kan de gebruikersrecord niet opvragen.
+927	11004 - Configuratiefout: kan de licentiegegevens niet opvragen.
+928	11005 - Configuratiefout: kan de navigatie is niet opvragen.
+929	11006 - Configuratiefout: kan weergaverecord niet opvragen.
+930	11007 - Configuratiefout: kan de actierecord niet opvragen.
+931	12001 - Actie: kan record niet toevoegen.
+932	12002 - Actie: kan record niet verwijderen.
+933	12003 - Actie: kan record niet bijwerken. Mogelijke redenen: <br><br> * Er bestaat al een record met dezelfde naam.<br> * De record kan door een andere gebruiker zijn bijgewerkt sinds deze is opgehaald.<br><br>De meest recente gegevens moeten nu worden weergegeven. Los eventuele problemen met namen op en probeer opnieuw bij te werken.<br><br>
+934	12004 - Actie: records kunnen niet worden gekoppeld.
+935	12005 - Actie: importeren record mislukt.
+936	12006 - Actie: verwijderen van rapportgegevens is mislukt. De gegevens zijn mogelijk reeds verwijderd of er zijn problemen met de toestemming. Controleer de gegevens en probeer het opnieuw.
+937	12007 - Actie: het profiel is niet aan de wachtrij van de planner toegevoegd. Het profiel staat al in de wachtrij.
+938	12008 - Actie: het urchin-proces is niet geannuleerd.
+939	15001 - Toestemming: licentie ontbreekt of is ongeldig.
+940	15002 - Toestemming: gebruiker heeft geen toestemming voor de weergave.
+941	15003 - Toestemming: gebruiker heeft geen toestemming om de betreffende actie uit te voeren.
+942	15004 - Toestemming: ongeoorloofd gebruik van het woordenboekbestand.
+943	13001 - Weergave: ophalen lijst met records mislukt.
+944	13002 - Weergave: kan record niet opvragen.
+945	13003 - Weergave: ophalen configuratieoverzicht mislukt.
+946	13004 - Weergave: ophalen relationele records mislukt.
+947	13005 - Weergave: ophalen taakoverzicht mislukt.
+948	13006 - Weergave: kan instructies van de wizardconfiguratie niet doorgeven.
+949	13007 - Weergave: kan doelrecord voor profiel niet ophalen.
+950	13008 - Weergave: ophalen directoryvermelding mislukt.
+951	13009 - Weergave: ophalen ftp-vermelding mislukt.
+952	13010 - Weergave: kan de lijst met te controleren bestanden en directory's niet opvragen.
+953	13011 - Weergave: ophalen gedetailleerd taakoverzicht mislukt.
+954	13012 - Weergave: kan weergave voor het bijhouden van de campagne niet ophalen.
+955	13013 - Weergave: ophalen website voor instellen van doelen is mislukt.
+956	13014 - Weergave: ophalen licentiegegevens ter weergave mislukt.
+957	13015 - Weergave: ophalen IIS-websites voor import mislukt.
+958	13016 - Weergave: ophalen UNC-directoryvermelding mislukt.
+959	13017 - Weergave: kan de lijst met accounts niet ophalen.
+960	13018 - Weergave: kan lijst met taken niet opvragen.
+961	Tijdzone
+962	GMT-12:00: Internationale datumgrens
+963	GMT-11:00: Midway Island, Samoa
+964	GMT-10:00: Hawaï
+965	GMT-09:00: Alaska
+966	GMT-08:00: Pacific time (VS en Canada); Tijuana
+967	GMT-07:00: Arizona
+968	GMT-07:00: Mountain Time (VS en Canada)
+969	GMT-06:00: Central Time (VS en Canada)
+970	GMT-05:00: Indiana (oost)
+971	GMT-05:00: Eastern Time (VS en Canada)
+972	GMT-04:00: Atlantische tijd (Canada)
+973	GMT-03:00: Buenos Aires, Georgetown
+974	GMT-02:00: Mid-Atlantisch
+975	GMT-01:00: Azoren, Kaapverdische Eilanden
+976	GMT-00:00: Greenwich Mean Time (Londen)
+977	GMT+01:00: Amsterdam, Berlijn, Parijs
+978	GMT+02:00: Athene, Beiroet, Minsk
+979	GMT+03:00: Moskou, Koeweit
+980	GMT+04:00: Abu Dhabi, Muscat
+981	GMT+05:00: Jekaterinenburg, Karachi
+982	GMT+06:00: Astana, Dhaka
+983	GMT+07:00: Bangkok, Hanoi
+984	GMT+08:00: Beijing, Hongkong
+985	GMT+09:00: Tokio, Seoul
+986	GMT+10:00: Sydney, Melbourne, Guam
+987	GMT+11:00: Salomonseilanden
+988	GMT+12:00: Fiji, Marshalleilanden
+989	GMT+13:00: Nuku'alofa
+990	Chinees (vereenvoudigd)
+991	Chinees (traditioneel)
+992	Nederlands
+993	Brazilië
+994	Nederland
+995	Taiwan
+996	Landinstellingen
+997	Tekencodering
+998	ASCII/UTF-8 (geen tekensetconversie)
+999	Japans (EUC-JP, SHIFT-JIS, ISO-2022-JP)
+1000	Latijn 1 (ISO-8859-1)
+1001	E-mailadres
+1002	Beschikbare dashboards
+1003	Rapportagesecties
+1004	Leidinggevende
+1005	Marketeer
+1006	Webmaster
+1007	Marketingoptimalisatie
+1008	Inhoudsoptimalisatie
+1009	Analyse van e-commerce
+1010	IT-rapporten
+1011	Dashboards en secties
+1012	Standaard
+1013	Instellingen profiel gebruikersdashboard
+1014	Gebruik standaardinstelling voor profiel
+1015	Werk bij voordat u het profieldashboard overschrijft.
+1016	Dashboard negeren
+1017	Instellingen profiel groepsdashboard
+1018	Instellingen profiel groepsdashboard: Help
+1019	Instellingen profiel gebruikersdashboard: Help
+1020	13019 - Weergave: ophalen gebruikers-/groepsrechten mislukt
+1021	Standaard
+1022	Geavanceerd
+1023	Weet u zeker dat u dit account wilt verwijderen?\n\nLet op: de aan het account gekoppelde profielen, logbestanden, filters, gebruikers en groepen worden verwijderd.
+1024	(GMT)
+1025	Wachtwoordfout: \n\nWachtwoorden komen niet overeen of bevatten minder dan 8 tekens.
+1026	optioneel, zie Help-informatie
+1027	12009 - Actie: het profiel staat in de wachtrij. Bekijk het venster Profieltaakoverzicht voor de status en uitvoertijd.
+1028	Waarschuwing! Masterplanner is uitgeschakeld.
+1029	Waarschuwing! Master- en slaveplanner zijn uitgeschakeld.
+1030	bijvoorbeeld
+1031	e-mail
+1032	CPC-bron - Downloadgeschiedenis
+1033	CPC-bron - Downloaddetails
+1034	Geografische database - Downloadgeschiedenis
+1035	Geografische database - Downloaddetails
+1036	Resultaat van wizard Kostenbron.
+1037	CPC-bron beheren
+1038	Naam CPC-bron
+1039	Type CPC-bron
+1040	<nobr><span class=title1>    <b>CPC-bron beheren (Ref. #A-1500)</b></span></nobr><br>In dit scherm worden de CPC-bronnen weergegeven die voor deze Urchin-installatie zijn geconfigureerd, om aanpassing van de parameters van elk van de CPC-bronnen mogelijk te maken en om de beheerder in staat te stellen CPC-bronnen toe te voegen. U kunt CPC-bronnen afzonderlijk toepassen op profielen.<p><b>Toevoegen</b><br>Als u een CPC-bron wilt toevoegen, klikt u op de knop 'Toevoegen' in de rechterbovenhoek van het scherm. De wizard 'CPC-bron toevoegen' wordt gestart. Deze bevat stapsgewijze instructies voor het toevoegen van een CPC-bron.<p><b>Bewerken</b><br>Naast elke CPC-bron in de lijst bevindt zich een reeks knoppen waarmee u elke CPC-bron kunt beheren. Via de knop 'Bewerken' heeft u toegang tot alle instellingen voor deze CPC-bron, die zijn ondergebracht op het tabblad.<p><b>Verwijderen</b><br>Klik op de knop 'Verwijderen' naast een CPC-bron om die CPC-bron te verwijderen uit de configuratie en uit alle profielen die ernaar verwijzen. <p><b>Downloaden</b><br>Met de knop 'Downloaden' kunt u snel naar het scherm voor downloaden gaan, waar u de rapporten voor deze CPC-bron onmiddellijk kunt downloaden of kunt instellen dat rapporten regelmatig worden gedownload. Er zijn pas CPC-gegevens beschikbaar nadat het CPC-rapport is gedownload.<p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren. <p><b>Account</b> (alleen modus Datacentrum)<br>Wanneer de modus Datacentrum actief is, kunt u de weergegeven items filteren met het menu 'Account'.
+1041	Wizard CPC-bron: Instellingen
+1042	<nobr><span class=title1><b>CPC-bron beheren: CPC-instellingen (Ref. #A-1501)</b></span></nobr><br>In dit scherm kunt u de instellingen voor een CPC-bron configureren en aanpassen. Raadpleeg de handleiding of het online Documentatiecentrum voor meer informatie over CPC-bronnen.<p><b>Optioneel account</b> (alleen modus Datacentrum)<br>Voor nieuwe CPC-bronnen kunt u met deze optie het account selecteren waaraan de CPC-bron moet worden gekoppeld. Voor bestaande CPC-bronnen wordt de naam weergegeven van het account waaraan de CPC-bron is gekoppeld.<p><b>Naam CPC-bron</b><br>Dit verplichte veld bevat een willekeurige naam die voor het gemak wordt gebruikt bij verwijzingen naar deze CPC-bron. Voer een unieke naam in voor deze CPC-bron.<p><b>Type CPC-bron</b><br>U kunt met Urchin de volgende CPC-bronnen maken:<p><b>Google AdWords</b><br>De volgende velden zijn verplicht voor een CPC-bron van het type Google AdWords: <li><b>E-mailadres</b>: het e-mailadres van de adverteerder of de aanmeldings-id voor Mijn Klantencentrum (verplicht).<li><b>Wachtwoord</b>: het wachtwoord voor het AdWords-account dat wordt benaderd (verplicht).<li><b>Ontwikkelaarstoken</b>: de unieke tekenreeks waarmee een geautoriseerde ontwikkelaar van de AdWords API wordt geïdentificeerd (optioneel). Urchin wordt geleverd met een standaardontwikkelaarstoken die maandelijks wordt geroteerd. Als de gebruiker de ontwikkelaarstoken niet levert, gebruikt Urchin de standaardtoken. Houd er rekening mee dat de AdWords API kosten in rekening brengt aan de ontwikkelaarstoken voor alle API-aanroepen die worden gedaan door die CPC-bron. Als gebruikers dus eigen ontwikkelaarstokens gebruiken, worden kosten voor API-gebruik in rekening gebracht aan hun aanmeldings- of Mijn Klantencentrum-account. Voor standaardgebruik laat u dit veld leeg.<li><b>Applicatietoken</b>: de applicatietoken waarmee de AdWords API wordt geopend. Als de gebruiker de ontwikkelaarstoken levert, moet ook de applicatietoken worden geleverd. Als dit niet het geval is, laat u dit veld leeg.<li><b>'E-mailadres klant' en 'Klant-id'</b>: als de gebruiker een Mijn Klantencentrum-aanmelding gebruikt in plaats van het e-mailadres van de adverteerder, is een van deze twee velden (maar niet beide) verplicht.<p><b>Yahoo! Search Marketing</b><br>Voor een CPC-bron van het type Yahoo! zijn de volgende velden verplicht: <li><b>Gebruikersnaam</b>: de gebruikersnaam voor het Yahoo! Search Marketing-account dat wordt benaderd (verplicht). Dit kan het e-mailadres van de adverteerder zijn of het e-mailadres van het bureau dat het rapport benadert namens de adverteerder.<li><b>Wachtwoord</b>: het wachtwoord voor het Yahoo! Search Marketing-account dat wordt benaderd (verplicht).<li><b>Hoofdaccount-id</b>: de hoofdaccount-id van de adverteerder (verplicht).<li><b>Account-id</b>: de id van het Yahoo! Search Marketing-account dat wordt benaderd (verplicht).<li><b>Licentiecode</b>: de licentiecode van de gebruiker die zich aanmeldt, dus de adverteerder of het bureau (verplicht). <li><b>Namens gebruikersnaam</b>: de gebruikersnaam van de persoon namens wie de adverteerder handelt. Alleen verplicht als de gebruikersnaam van het bureau is opgegeven in plaats van de gebruikersnaam van de adverteerder (optioneel).<li><b>Namens wachtwoord</b>: het wachtwoord van de gebruiker namens wie de adverteerder handelt (optioneel). <p><b>CPC-rapport downloaden ingeschakeld</b><br> (Alleen zichtbaar tijdens het bewerken van een CPC-bron): met deze optie worden de toekomstige downloads van de rapporten voor deze CPC-bron in- of uitgeschakeld. <b>Opmerking</b>: zelfs als u instelt dat toekomstige downloadtaken voor het rapport moeten worden uitgeschakeld, worden de reeds gedownloade rapporten nog steeds gebruikt voor de profielen die aan deze CPC-bron zijn gekoppeld.
+1043	Instellingen CPC-bron
+1044	Google AdWords
+1045	Microsoft adCenter
+1046	Yahoo! Search Marketing
+1047	E-mailadres
+1048	Wachtwoord
+1049	Ontwikkelaarstoken
+1050	Applicatietoken
+1051	Aanmelden bij adCenter
+1052	Gebruikerstoegangscode
+1053	Gebruikersnaam
+1054	Hoofdaccount-id
+1055	Account-id
+1056	Licentiecode
+1057	De configuratie van de CPC-bron is voltooid.
+1058	Wizard CPC-bron: Bevestiging
+1059	'Namens' gebruikersnaam
+1060	'Namens' gebruikersnaam
+1061	'Namens' wachtwoord (opnieuw invoeren)
+1062	Wachtwoord (opnieuw invoeren)
+1063	Wachtwoorden zijn leeg, ongeldig of komen niet overeen
+1064	Aantal CPC-bronnen
+1065	<nobr><span class=title1><b>CPC-bronnen: Profielen (Ref. #A-1502)</b></span></nobr><br>In dit scherm kunt u deze kostenbron toepassen op een of meer bestaande profielen.<p><b>Toepassen op profiel</b><br>Als u deze kostenbron wilt toepassen op een profiel, selecteert u de profielnaam in het vak 'Beschikbare profielen' en klikt u op de pijl-rechts. Als u deze kostenbron uit een profiel wilt verwijderen, selecteert u het profiel in het vak 'Toegepast op' en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen toe te passen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om de wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot de bewerkbare instellingen voor deze kostenbron.
+1066	CPC-rapport downloaden ingeschakeld
+1067	CPC-bron testen
+1068	De verbinding met de CPC-bron is tot stand gebracht
+1069	De verbinding met de CPC-bron is niet tot stand gebracht
+1070	Toe te passen CPC-bron(nen)
+1071	Beschikbare CPC-bron(nen)
+1072	Toegepaste CPC-bron(nen)
+1073	<nobr><span class=title1><b>Profielen: Kostenbronnen (Ref. #A-2106)</b></span></nobr><br>In dit scherm kunt u <b>toegepaste kostenbronnen</b> toevoegen vanuit de lijst met <b>beschikbare kostenbronnen</b>. <p><b>Besturingselementen:</b><br><ul><li><b>Toevoegen</b><br>Klik op het pictogram 'Toevoegen' om aanvullende kostenbronnen aan de beschikbare kostenbronnen toe te voegen. Daardoor wordt de wizard 'Filter toevoegen' gestart waarmee u een nieuwe of reeds bestaande kostenbron kunt toevoegen.<li><b>Bewerken</b><br>Markeer de beschikbare kostenbronnen die u wilt bewerken en klik vervolgens op de knop 'Bewerken'. <li>Klik op de knop <b>Bijwerken</b> om de wijzigingen op te slaan. <li>Via de tabbladen boven aan het scherm heeft u toegang tot alle bewerkbare instellingen voor dit profiel.
+1074	CPC-bronnen
+1075	Waarschuwing! Sommige rapporten worden door Google AdWords pas na enige vertraging beschikbaar gesteld. Zorg ervoor dat CPC-bronnen gepland staan op het moment dat de rapporten beschikbaar zijn. Raadpleeg voor meer informatie het relevante artikel in het <a href="https://secure.urchin.com/helpwiki/en/Help_Center"><b>Online Helpcentrum</b></a>.
+1076	E-mailadres klant
+1077	Klant-ID
+1078	Geef het e-mailadres van de klant of de klant-ID op (niet beide)
+1079	<nobr><span class=title1><b>CPC-bron: Planning (Ref. #A-1503)</b></span></nobr><br>In dit scherm kunt u de downloadopties voor de CPC-bron instellen.<p><b>Nu downloaden</b><br>Als u deze CPC-bron onmiddellijk wilt downloaden, klikt u op de grote, groene knop 'Nu downloaden' aan de rechterkant. Vervolgens wordt de CPC-taak die door de CPC-planner van Urchin moet worden uitgevoerd, in de wachtrij gezet.<p><b>Planning - downloadinterval</b><br>De downloadbewerking voor het CPC-rapport bestaat uit twee fasen. Tijdens de eerste fase worden de CPC-referenties gevalideerd en wordt de rapportaanvraag naar de server verzonden (AdWords, enzovoort). Tijdens de tweede fase wordt de beschikbaarheid van het rapport regelmatig gecontroleerd, totdat het rapport beschikbaar komt. De tweede fase wordt beëindigd wanneer het rapport daadwerkelijk wordt gedownload. Het controleren van de beschikbaarheid van het rapport kan enkele seconden tot een half uur in beslag nemen. Omdat elke API-aanroep voor het controleren van de beschikbaarheid de klant geld kan kosten (één eenheid in het geval van AdWords), begint Urchin met het controleren van de beschikbaarheid van het rapport na het aanpasbare interval tussen de twee fasen. <br><br>Met deze optie kan de gebruiker het interval instellen tussen de planning van het rapport en de daadwerkelijke tijd van de controle of de downloadtaak voor deze kostenbron.<p><b>Downloaden - uur van de dag</b><br>Met deze optie kan de gebruiker het tijdstip van de dag configureren waarop het bijgewerkte rapport voor deze CPC-bron moet worden gedownload.<p><b>Accountgegevens - downloadinterval</b><br>Met deze optie kunt u het downloadinterval instellen voor het downloaden van de AdWords-accountstructuur. De AdWords-accountstructuur moet worden gedownload voordat u metagegevens voor campagnes en zoekwoorden kunt bekijken of het Hulpprogramma voor zoekwoorden en AdWords Tag Manager kunt gebruiken.
+1080	Plannen
+1081	CPC-bron downloaden - Instellingen
+1082	<nobr><span class=title1><b>Globale instellingen: CPC-bron bijwerken (Ref. #A-2705)</b></span></nobr><br>In dit scherm kunt u de globale downloadopties voor de CPC-bron instellen.<p><b>Planning - downloadinterval</b><br>De downloadbewerking voor het CPC-rapport bestaat uit twee fasen. Tijdens de eerste fase worden de CPC-referenties gevalideerd en wordt de rapportaanvraag naar de server verzonden (AdWords, enzovoort). Tijdens de tweede fase wordt de beschikbaarheid van het rapport regelmatig gecontroleerd, totdat het rapport beschikbaar komt. De tweede fase wordt beëindigd wanneer het rapport daadwerkelijk wordt gedownload. Het controleren van de beschikbaarheid van het rapport kan enkele seconden tot een half uur in beslag nemen. Omdat elke API-aanroep voor het controleren van de beschikbaarheid de klant geld kan kosten (één eenheid in het geval van AdWords), begint Urchin met het controleren van de beschikbaarheid van het rapport na het aanpasbare interval tussen de twee fasen. <br><br>Met deze optie kan de gebruiker het interval instellen tussen de planning van het rapport en de daadwerkelijke tijd van de controle of de downloadtaak voor deze kostenbron.<p><b>Downloaden - uur van de dag</b><br>Met deze optie kan de gebruiker het tijdstip van de dag configureren waarop het bijgewerkte rapport voor deze CPC-bron moet worden gedownload.<p><b>Accountgegevens - downloadinterval</b><br>Met deze optie kunt u het downloadinterval instellen voor het downloaden van de AdWords-accountstructuur. De AdWords-accountstructuur moet worden gedownload voordat u metagegevens voor campagnes en zoekwoorden kunt bekijken of het Hulpprogramma voor zoekwoorden en AdWords Tag Manager kunt gebruiken.
+1083	CPC-bron bijwerken
+1084	Planning - Downloadinterval
+1085	Downloaden - Uur van de dag
+1086	seconden
+1087	minuten
+1088	Nu downloaden
+1089	Geschiedenis automatische updates
+1090	CPC-downloadgeschiedenis
+1091	<nobr><span class=title1><b>Planner: Geschiedenis automatische updates (Ref. #A-2800)</b></span></nobr><br>In dit scherm wordt de geschiedenis van automatische updates weergegeven die zijn uitgevoerd door de taakplanner. Er wordt een overzicht van alle downloads weergegeven, met belangrijke informatie over elke download. U kunt op het veld 'Status' klikken om de runtimegegevens voor die historische taak weer te geven. Gebruik de pijlen onder een veld als u wilt sorteren op dat veld.<p>Voor elk item worden de component (product, help of geografische gegevens), de computernaam, de status van de taak, de starttijd van de taak en de eindtijd van de taak weergegeven.<p><b>Status</b> (hyperlink)<br>De status van elke taak is 'Wordt uitgevoerd', 'Voltooid', 'Waarschuwing' of 'Fout'. De statusaanduiding is voorzien van een kleurcodering en u kunt de lijst sorteren door op de pijl onder het woord 'Status' te klikken. Als u de runtimegegevens voor een bepaalde automatische update wilt weergeven, klikt u op de gekleurde statusvermelding naast die taak. Er wordt een apart venster met runtimegegevens weergegeven.<p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren.
+1092	De configuratie van de kostenbron is voltooid. De kostenbron is toegevoegd. Klik op de knop 'Gereed' om terug te keren naar het beheerderssysteem.
+1093	Er is geen <b>geschiedenis van automatische updates</b> gevonden.
+1094	<nobr><span class=title1><b>Planner: CPC-downloadgeschiedenis (Ref. #A-2900)</b></span></nobr><br>In dit scherm wordt de geschiedenis weergegeven van elke CPC-downloadtaak die door de CPC-taakplanner is uitgevoerd. Downloads van de AdWords-accountstructuur worden als afzonderlijke taken vastgelegd in deze lijst. Van elke CPC-download wordt een overzicht weergegeven. Klik op het veld 'Status' om de runtimegegevens weer te geven voor een taak die in de geschiedenis wordt weergegeven. Gebruik de pijlen onder een veld als u wilt sorteren op dat veld.<p>Voor elk item worden de naam van de CPC-bron, het CPC-type, de status van de taak, de starttijd van de taak, de eindtijd van de taak, het aantal verbruikte API-eenheden en de verwerkingshost weergegeven.<p><b>Status</b> (hyperlink)<br>De status van elke taak is 'In behandeling', 'Wordt uitgevoerd', 'Voltooid', 'Afgebroken' of 'Fout'. De statusaanduiding is voorzien van een kleurcodering en u kunt de lijst op status sorteren door op de pijl onder het woord 'Status' te klikken. Als u de runtimegegevens voor een bepaalde taak wilt weergeven, klikt u op de gekleurde statusvermelding naast die taak. Er wordt dan een apart venster met runtimegegevens weergegeven.<p><b>Besturingselementen</b><br>Gebruik de vervolgkeuzelijst 'Weergegeven' om het aantal items te wijzigen dat tegelijkertijd wordt weergegeven. Met de knoppen 'Vorige' en 'Volgende' kunt u per pagina door items bladeren. <p><b>Account</b> (alleen modus Datacentrum)<br>In de modus Datacentrum kunt u de weergegeven items filteren met het menu 'Account'.
+1095	Let op! De CPC-planner is uitgeschakeld.
+1096	Er is geen <b>CPC-downloadgeschiedenis</b> gevonden.
+1097	CPC-type
+1098	Afgebroken
+1099	Downloaden
+1100	Gebruikte eenheden
+1101	Proces
+1102	Leid meer verkeer van hoge kwaliteit naar uw site met <A href="http://www.google.com/urchin/sign-up65.html#rd=adwords&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>Google AdWords</B></FONT></A>.<br/>Heeft u al een account? Misschien is het een goed idee <A href="http://www.google.com/urchin/sign-up65.html#rd=keygen&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>meer zoekwoorden toe te voegen</B></FONT></A> aan uw campagne.
+1103	12010 - Actie: de CPC-bron is in de wachtrij voor downloaden gezet. Controleer het scherm 'CPC-downloadgeschiedenis' voor de status en uitvoertijd.
+1104	12011 - Actie: de CPC-bron is niet aan de wachtrij van de planner toegevoegd. De CPC-bron staat al in de wachtrij.
+1105	Actie
+1106	Kan de profieltaak niet 'annuleren'.
+1107	12016 - Actie: de geplande taak is niet geannuleerd. Profielverwerking wordt uitgevoerd.
+1108	Geannuleerd
+1109	Het maken van regelmatige back-ups moet zijn ingeschakeld
+1110	12014 - Actie: profielverwerking wordt geannuleerd.
+1111	Annuleren
+1112	Gem. bezoekduur
+1113	Bronnen logbestand
+1114	Gefilterd
+1115	Bezoeken
+1116	Bouncepercentage
+1117	Voltooide doelen
+1118	Advertentieaccounts
+1119	Toevoegen is mislukt. U heeft het maximale aantal profielen bereikt.<p>Werk uw licentie bij of verwijder een bestaand profiel en probeer het nogmaals.
+1120	Toevoegen is mislukt. U heeft het maximum aantal logbestandsbronnen bereikt.<p>Werk uw licentie bij of verwijder een bestaande logbestandsbron en probeer het nogmaals.
+1121	U heeft het maximum aantal logbestandsbronnen per profiel bereikt.
+1122	U heeft het maximale aantal profielen bereikt.
+1123	U gebruikt een demolicentie die verloopt op
+1124	Informatie
+1125	Geldige licentie - USP
+1126	(Verkeerde tijd)
+1127	De USP-licentie verloopt op
+1128	Neem contact op met uw lokale systeembeheerder om het probleem op te lossen.
+1129	Adverteerder
+1130	Advertentieoptimalisatie
+1131	CPC-logbestanden
+1132	Accountstructuur
+1133	Accountgegevens - downloadinterval
+1134	uren
+1135	dagen
+1136	Type verificatie
+1137	12015 - Kan gebruiker niet verifiëren.
+1138	Kan gebruiker niet verifiëren.<p>Mogelijke redenen:<ul><li>de ingevoerde gebruikersnaam is niet juist;</li><li>er zijn verbindingsproblemen met uw externe verificatieservice;</li><li>de externe verificatieprovider is niet goed geconfigureerd.</li></ul><p>Controleer de gebruikersnaam die u heeft ingevoerd en probeer het opnieuw. Als het probleem zich blijft voordoen, controleert u de configuratie van de externe verificatieprovider aan de hand van de richtlijnen van de provider.
+1139	dag
+1140	uur
+1141	minuut
+1142	Toegang tot AdWords-hulpprogramma's
+1143	Geografische locaties/verbindingssnelheid
+1144	Netwerklocaties
+1145	Domeinen
+1146	Geografische details
+1147	Geografische informatie
+1148	Geografische database
+1149	<nobr><span class=title1><b>Logbestandsbronnen: Profielen</b></span></nobr><br>In dit scherm kunt u deze logbestandsbron toepassen op een of meer bestaande profielen.<p><b>Toepassen op profiel</b><br>Als u deze logbestandsbron wilt toepassen op een profiel, selecteert u de profielnaam in het vak met beschikbare profielen en klikt u op de pijl-rechts. Als u deze logbestandsbron uit een profiel wilt verwijderen, selecteert u het profiel in het vak 'Toegepast op' en klikt u op de pijl-links. Klik op 'Bijwerken' om de wijzigingen toe te passen.<p><b>Besturingselementen</b><br>Klik op de knop 'Bijwerken' om de wijzigingen op te slaan. Via de tabbladen boven aan het scherm heeft u toegang tot de bewerkbare instellingen voor deze logbestandsbron.
+1150	Dag
+1151	Week
+1152	Maand
+1153	Jaar
+1154	Beheerder
+1155	Bedrijf
+1156	Basis
+1157	Segmenten beheren
+1158	Bewerking mislukt
+1159	U heeft het maximum aantal segmenten per gebruiker bereikt
+1160	Intern
+1161	Extern
+1162	Bestand
+1163	Help-bronnen
+1164	Over dit rapport
+1165	Website van Urchin
+1166	Update plannen
+1167	Instellingen bijwerken
+1168	De Help-artikelen op de achtergrond bijwerken
+1169	De geografische database op de achtergrond bijwerken
+1170	Versies
+1171	Urchin
+1172	Help-artikelen
+1173	Geografische database
+1174	Component
+1175	Huidige versie
+1176	Nieuwe versie
+1177	Actie
+1178	download wordt uitgevoerd
+1179	upgrade wordt uitgevoerd
+1180	foutenlogboek bekijken
+1181	nu controleren
+1182	lijst met wijzigingen weergeven
+1183	download nu plannen
+1184	nu installeren
+1185	annuleren
+1186	Automatische update
+1187	Updates beschikbaar.
+1188	Nu bekijken.
+1189	Laatste controle
+1190	Urchin-services worden tijdens een upgrade afgesloten. Weet u zeker dat u wilt doorgaan?
+1191	Er zijn actieve verwerkingstaken in een wachtrij. Wacht tot deze taken zijn voltooid.
+1192	Component
+1193	product
+1194	hulp
+1195	geografische gegevens
+1196	Computernaam
+1197	Online Helpcentrum van Urchin
+1198	Nieuw!
+1199	Geautoriseerde consultants voor Urchin
+1200	Google Analytics- en Urchin-blog
+1201	Help
+1202	met
+1203	zonder
+1204	Uitvoeren
+1205	Rijen weergeven:
+1206	Analytics Startpagina
+1207	Veelgestelde vragen
+1208	Privacybeleid
+1209	Helpcentrum van Urchin
+1210	voltooid
+1211	bijwerken
+1212	bijwerken
+1213	bijgewerkt
+1214	downloaden
+1215	downloaden
+1216	gedownload
+1217	upgraden
+1218	upgraden
+1219	geannuleerd
+1220	fout
+1221	Afdrukweergave
+1222	Standaardweergave
+1223	Permalink
+1224	Permalink (plakken in e-mail of IM)
+1225	Aanbevolen voor u
+1226	Wat is nieuw?
+1227	Bèta
+1228	Alfa
+1229	Nieuwe gebruikersinterface voor rapportage
+1230	Geavanceerde segmenten
+1231	Bijhouden van gebeurtenissen
+1232	Parallelle profielverwerking
+1233	Permalinks
+1234	Aanpasbare geografische/DNS-gegevens
+1235	Aangepaste volgorde van filters
+1236	Data API v2
+1237	Automatische updates
+1238	Lokaal Helpcentrum
+1239	Verkeerssteekproef
+1240	Segmentsteekproeven
+1241	Google Analytics
+1242	Google AdWords
+1243	Google Website Optimizer
+1244	Hulpprogramma voor zoekwoorden van Google
+1245	Filter:
+1246	Urchin-software van Google
+1247	Privacybeleid van Google
+1248	Privacybeleid
+1249	Analytics-blog
+1250	Eindgebruikersovereenkomst
+1251	Urchin-gebruikersforum
+1252	Task state is not up to date, please refresh the page
+1253	Aangepast
+1254	Extern script
+1255	Opdracht
+1256	Opdrachtregel
+1257	Optionele parameters

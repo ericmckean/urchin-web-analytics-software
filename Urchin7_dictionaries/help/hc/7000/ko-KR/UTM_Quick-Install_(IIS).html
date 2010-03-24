@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>UTM 빠른 설치(IIS)</strong> <ul><li style="list-style-type:none"><p class="line891"><em>이 문서는 Urchin 소프트웨어 공인 컨설턴트인 </em><a href="EpikOne.html">EpikOne</a><em>이(가) 작성했습니다.</em> </li></ul><p class="line874">다음은 Windows 플랫폼에서 Microsoft IIS를 운영 중인 웹사이트에 UTM을 설치하는 단계를 알려주는 요약 설명입니다. UTM에 대한 자세한 내용은 본 섹션의 "UTM(Urchin Traffic Monitor)" 항목을 참조하시기 바랍니다. <p class="line867"><strong>1단계:</strong> UTM 파일을 웹사이트 문서 루트에 복사합니다. urchin.js 및 <tt class="backtick">__</tt>utm.gif 파일은 Urchin 폴더의 "utils\utm" 폴더에 있습니다. 이 두 파일을 웹사이트 콘텐츠의 기본 폴더에 복사합니다. 중요사항: GIF 파일 이름은 두 개의 밑줄 문자로 시작합니다. <p class="line867"><strong>2단계:</strong> 웹사이트 HTML에 있는 UTM을 참조합니다. 모든 HTML 페이지에 아래 행을 추가합니다. 페이지 내 어느 위치든 상관 없지만 닫는 &lt;/body&gt; 태그 바로 앞에 추가할 것을 권장합니다. 일반 포함 또는 템플릿을 사용하면 해당 위치에서 입력할 수 있습니다. <p class="line867"><pre>
+&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+&lt;/script&gt;
+
+</pre><p class="line874">"HTML Tidy"와 같은 패키지를 사용한다면 다음 자바스크립트 행을 해당 페이지의 HEAD 영역에 포함시킬 수도 있습니다. <p class="line867"><pre>
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script type="text/javascript"&gt;
+
+        urchinTracker();
+
+  &lt;/script&gt;
+
+  ...
+
+&lt;/head&gt;</pre><p class="line867"><strong>3단계:</strong> IIS 로깅에서 쿠키를 활성화합니다. IIS 관리자를 실행하여 웹사이트 속성창을 엽니다. 로깅을 사용하도록 설정되었는지 확인한 다음 형식을 W3C 확장으로 설정합니다. 형식 옆에 있는 속성 버튼을 클릭하고 확장 속성 탭에서 쿠키 옆에 있는 확인란을 선택합니다. <p class="line867"><strong>4단계:</strong> Urchin 프로필에서 UTM(Urchin Traffic Monitor)을 사용하도록 설정합니다. Urchin 관리 인터페이스에서 해당 프로필을 수정하고 설정 탭을 클릭합니다. 방문자 추적 방법을 UTM(Urchin Traffic Monitor)으로 설정합니다. UTM 도메인을 www를 제외한 웹사이트 주소로 설정합니다. 그런 다음 보고서 설정에 대해 기본값을 선택하고 업데이트 버튼을 클릭합니다. <p class="line874">Urchin 프로필 설정 단계가 완료되었습니다. 이제 웹사이트에서 일반 로그 파일에 UTM 데이터를 기록하기 시작하며, 이 데이터는 다시 Urchin을 실행할 때 인식됩니다. <p class="line874">UTM에서 로그 파일 기록이 이루어지고 있는지 확인하려면, UTM을 설치하고 사이트의 페이지 몇 개를 클릭한 다음 로그 파일을 검토해 보면 됩니다. 로그 파일 맨 아래에 다음과 유사한 항목이 있어야 합니다. <p class="line867"><pre>
+... "GET /__utm.gif?..." 200 ..."__utma=..."
+
+</pre><p class="line862">utma 항목이 없으면 로깅에서 쿠키가 올바르게 활성화되어 있는지 확인해 보십시오. 상태 코드가 200이 아니면 문서 루트에 파일이 제대로 복사되었는지 확인해 보십시오.<span class="u"> </span> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

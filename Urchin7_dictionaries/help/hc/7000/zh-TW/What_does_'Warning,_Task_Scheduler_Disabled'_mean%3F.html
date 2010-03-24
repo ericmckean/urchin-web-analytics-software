@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>「警告，工作排程器已停用」是什麼意思？</strong> <p class="line874">Urchin 工作排程器是一個負責執行 Urchin 處理可執行檔的服務。 如果 [工作排程器] 已停用，Urchin 就無法處理工作。 見到錯誤： 警告工作排程器已停用" 的常見原因如下： <ul><li>urchind 服務並未運作。 這會在伺服器重新開機，且 Urchin 沒有包括在系統啟動指令碼時發生。 </li><li class="gap">(僅供 Unix ) urchind 服務有在運作，但是由另一位使用者所擁有，而非 Urchin 分佈的擁有者。 </li></ul><p class="line874">若要判定排程器是否有在運作，請執行下列工作： <ul><li>開啟指令殼層和 CD 至 /path/to/urchin/bin/ 目錄 </li><li class="gap">輸入： urchinctl status (在 Unix 中，輸入 ./urchinctl status) </li></ul><p class="line874">如果排程器服務沒有運作，您可以透過執行下列工作，從指令行中啟動： <ul><li>開啟指令殼層和 CD 至 /path/to/urchin/bin/ 目錄 </li><li class="gap">輸入： urchinctl -s start (在 Unix 中，輸入 /urchinctl -s start) </li><li class="gap">如果兩項服務都沒有運作，則輸入： /urchinctl start。 </li></ul><p class="line874">如果服務正在運作，請檢查伺服器上正在執行的處理程序，以判定 Urchin 處理程序的擁有者，方法如下： ps -ef | grep urchind <p class="line874">請注意，處理程序擁有者的 "使用者名稱" 位於傳回輸出： <p class="line867"><pre>
+使用者名稱 33597 0.0 0.2 352 204 ?? Ss 27Feb08 17:42.18 /usr/local/urchin6/bin/urchind
+
+</pre><p class="line874">如果使用者不是擁有 Urchin 分佈的使用者，您必須關閉服務，並以適當的使用者重新啟動。 您可以透過執行 "切換使用者" 至目前擁有 urchind 處理程序的相同使用者，並關閉 urchinctl 來完成此步驟。 請使用 "-s" 切換，如上所述。 然後，切換回 Urchin 使用者和啟動 urchinctl，並再次使用 "-s" 切換。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

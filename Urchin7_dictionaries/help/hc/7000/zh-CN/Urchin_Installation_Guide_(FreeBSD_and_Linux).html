@@ -1,0 +1,46 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6 安装指南（FreeBSD 和 Linux）</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 软件授权顾问</em> <a href="EpikOne.html">EpikOne</a><em> 编写</em> </li></ul><p class="line867"><strong>开始之前：针对 Urchin 6.500 用户的重要注意事项</strong> <p class="line874">Urchin 6.501 修复了 CPC 调度程序的几个问题。如果您从 Urchin 6.500 升级至 Urchin 6.601，处理后的每次点击费用数据可能不正确或不完整，从而导致 Urchin 报告的结果出现错误。为了从 Google Adwords 中获取正确的数据，我们建议您 (a) 在新位置安装 Urchin 6.601，或 (b) 如果希望在现有 6.500 实例上安装，请删除原有的每次点击费用数据。在后一种情况下，请删除以下目录中的所有内容： <p class="line867"><pre>&lt;path_to_urchin_6500_installation&gt;/data/cpc/...
+&lt;path_to_urchin_6500_installation&gt;/data/history/cpc/...
+</pre><p class="line874">如果您从 Urchin 6.600、Urchin 6.501 或从 Urchin 6.402 及更早版本升级，则不需要执行任何操作。 <p class="line867"><strong>开始之前 – 针对 FreeBSD 用户的重要注意事项</strong> <ul><li>FreeBSD 的硬编码处理数据量最大为 500MB，与日志处理过程中必须驻留于内存的地理数据大小相比，FreeBSD 的这一容量过小，因此无法支持 Urchin 的运行。运行时，您会看到以下错误消息： </li></ul><p class="line867"><pre>ERROR: (8011-323-1057) Failed to allocate memory
+</pre><ul><li style="list-style-type:none">要解决这一问题，需要增加 FreeBSD 系统的默认处理数据量，方法是修改 /boot/loader.conf 文件并在其中添加下列各行： </li></ul><p class="line867"><pre># Increase max process data segment size to 1GB
+kern.maxdsiz="1073741824"
+</pre><ul><li style="list-style-type:none">然后重新启动系统。 </li><li>FreeBSD 有一个名为 accf_http 的特殊驱动程序。该驱动程序会在某一完整的 HTTP 请求到达之前缓冲传入的连接，从而加快速度和优化性能。默认情况下，该驱动程序不会载入内核，您将看到以下警告： </li></ul><p class="line867"><pre>[warn] (2)No such file or directory: Failed to enable the ‘httpready’ Accept Filter
+</pre><ul><li style="list-style-type:none">为避免这一问题，您需要启用 HTTP Accept Filter FreeBSD 内核模块 (accf_http)，方法是修改 /boot/loader.conf 文件并在其中添加下列各行： </li></ul><p class="line867"><pre># Wait for full HTTP request accept filter
+accf_http_load="YES"
+</pre><ul><li style="list-style-type:none">然后重新启动系统。 </li></ul><p class="line867"><strong>警告！！！</strong>更改系统限额及进行类似操作时请务必小心谨慎。如果将 kern.maxdsiz 设置得过大，系统将可能无法启动。我们<strong>强烈建议</strong>您在进行此项更改前先阅读 FreeBSD 文档，并对将其应用于您的网站配置时的潜在风险进行评估。 <p class="line867"><strong>安装步骤概述</strong> <ul><li>将所需数据库服务器安装到 Urchin 系统或将 Urchin 数据库添加到现有服务器。目前支持的数据库引擎包括： <ul><li>MySQL 5.0.3 或更高版本（请注意：从 Urchin 6.6 开始不再支持 MySQL 4.x.x） </li><li>PostgreSQL 8.2.5 或更高版本 </li></ul></li><li>创建 Urchin 数据库，在数据库服务器创建用户并授予用户访问权限 </li><li>将 Urchin 发行套装解包到临时目录中 </li><li>运行 install.sh 脚本 </li><li>获取 Urchin 安装许可 </li></ul><p class="line867"><strong>选项 1：将 MySQL 与 Urchin 结合使用</strong> <ul><li><p class="line862">如果您的系统中没有安装 MySQL Server，请访问 <a class="http" href="http://dev.mysql.com/downloads/">http://dev.mysql.com/downloads/</a> 获取 MySQL 发行套装。 </li><li>按照 MySQL 网站上的说明安装 MySQL Server。 </li><li>确保您知道 MySQL 数据库管理员登录名（如 root）和密码。 </li><li>选择您将在 Urchin 中使用的数据库名称、本地 MySQL 用户名和密码。保存这些信息，稍后安装 Urchin 时会用到这些信息。下面的示例中创建了一个名为 urchin 的数据库和一个用户名为 urchin、密码为 urchinpassword 的 MySQL 用户帐户（当然，您应该选择您自己的密码！）。 </li><li>使用下列命令创建 Urchin 数据库、用户名和权限： </li></ul><p class="line867"><pre>root@yourserver# mysql -u root -p
+mysql&gt; create database urchin character set utf8;
+mysql&gt; GRANT ALL ON urchin.* to 'urchin'@'localhost' IDENTIFIED BY 'urchinpassword';
+</pre><ul><li>确定用来与您的 MySQL Server 通信的 MySQL 套接字路径名。通常，您可以在 MySQL 安装目录下的 my.cnf 文件中找到该路径名，请查找类似于 socket=/var/lib/mysql/mysql.sock 的行 </li></ul><p class="line867"><strong>选项 2：将 PostgreSQL 与 Urchin 结合使用</strong> <ul><li><p class="line862">如果您的系统中没有安装 PostgreSQL Server，请访问 <a class="http" href="http://www.postgresql.org">http://www.postgresql.org</a> 获取 PostgreSQL 发行套装。 </li><li>按照 PostgreSQL 网站上的说明安装 PostgreSQL Server。 </li><li>确保您的路径中包括 psql 命令，并且您知道 PostgreSQL 数据库管理员登录名（如 pgsql）和密码。 </li><li>选择您将在 Urchin 中使用的数据库名称、本地 PostgreSQL 用户名和密码。保存这些信息，稍后安装 Urchin 时会用到这些信息。下面的示例中创建了一个名为 urchin 的数据库和一个用户名为 urchin、密码为 urchinpass 的 PostgreSQL 用户帐户（当然，您应该选择您自己的密码！）。 </li><li>使用下列命令创建 Urchin 数据库、用户名和权限： </li></ul><p class="line867"><pre>root@yourserver# psql -U pgsql -d postgres
+postgres=# CREATE DATABASE urchin WITH ENCODING 'UTF8';
+postgres=# CREATE USER urchin WITH PASSWORD 'urchinpass';
+postgres=# GRANT ALL ON DATABASE urchin TO urchin;
+postgres=# \connect urchin;
+postgres=# CREATE LANGUAGE 'PLPGSQL';
+</pre><p class="line867"><strong>安装 Urchin</strong> <ul><li>确保您知道前面所选的 Urchin 数据库名称、用户名和密码 </li><li>创建临时目录，并将 Urchin 发行套装解包到该临时目录中： </li></ul><p class="line867"><pre>mkdir /var/tmp/urchintemp
+cd /var/tmp/urchintemp
+tar xzvf urchin6601_&lt;platform&gt;_installer.tar.gz
+</pre><p class="line867"><strong>重要提示！</strong>为保证安装正确无误，请确保目标计算机上不存在“活动”的 Urchin 6 实例。使用下列命令可停用 Urchin 6 的所有现有版本： <p class="line867"><pre>/path/to/urchin6/bin/urchinctl stop
+</pre><ul><li>如果您需要在同一台计算机上运行多个 Urchin 6 实例，则这些实例应满足以下条件：(1) 安装在不同位置；(2) 使用不同的网络服务器端口；(3) 连接到不同的数据库。 </li><li>Urchin 会将所有必要的文件复制到目标文件夹，并会覆盖任何现有文件。为确保现有的自定义设置不受影响，您需要将 Urchin 6 安装到新目录中，或重命名现有的安装目录。 </li><li>Urchin 6.601 既可以进行全新安装，也可以从现有的 Urchin 6 版本进行升级。 <ul><li>在全新安装期间，Urchin 会提示用户提供所有配置参数，例如网络服务器端口、数据库配置设置等。而在进行升级时，Urchin 会直接使用现有 Urchin 6 实例的配置。 </li><li>Urchin 6.601 只能用于升级部分早期版本的 Urchin 6。下列版本可以升级： <ul><li>Urchin 6.6 - 英文版       ：6.600 版 </li><li>Urchin 6.5 - Service Pack 2            ：   6.501 版 </li><li>Urchin 6.5                             ：   6.500 版（请参见上述重要注意事项） </li><li>Urchin 6 - Service Pack 1         ：   6.402 版 </li><li>Urchin 6 - 国际版：   6.401 版 </li><li>Urchin 6 - 英文版         ：   6.400 版 </li></ul></li><li>在全新安装期间，Urchin 会提示您“初始化数据库表”。如果您想保留现有数据库配置，请选择“否”。在这种情况下，虽然 Urchin 会保留现有配置（不重新创建现有表），但仍可能需要“创建额外的表”或“在现有表中创建额外的列”。 </li></ul></li><li>立即运行 Urchin 安装程序。您可以根据提示进行交互式安装，只需键入下列字符即可： </li></ul><p class="line867"><pre>./install.sh
+</pre><p class="line874">或者，您可以提供安装所必需的全部参数，通过命令行直接进行完整安装。要获取命令行参数列表，您可以键入下列字符： <p class="line867"><pre>./install.sh -h
+</pre><ul><li>安装完成后，Urchin 便开始在您的系统中运行了。要完成安装，请将您常用的网络浏览器指向此网址： </li></ul><p class="line867"><pre>http://yourserver:&lt;port&gt;
+</pre><p class="line862">其中 &lt;port&gt; 是您在安装过程中选择的网络端口（默认为 9999）。 <ul><li>如果您希望从旧版本的 Urchin 6 中恢复配置文件报告数据，请将历史记录、报告和现有的全部每次点击费用目录从 /path/to/old-urchin6/data/ 复制到新建的 /path/to/new-urchin6/data/ 目录中。 </li><li>点击“获取演示许可”链接，然后按照许可步骤启用 Urchin 并执行初始设置步骤。 </li></ul><p class="line867"><strong>配置跟踪</strong> <p class="line874">安装完 Urchin 之后，根据自己的使用情况，您可能还需要执行其他步骤，以便能够在您的网站上设置跟踪。 <p class="line867"><strong>第 1 种情况：使用采用“IP+User-Agent”跟踪方法的 Urchin</strong> <p class="line874">这种情况下您不需要进行其他配置。向 Urchin 添加配置文件时，请确保将访问者跟踪方法指定为“IP+User-Agent”。 <p class="line867"><strong>第 2 种情况：使用采用 UTM 跟踪方法的 Urchin</strong> <p class="line874">要使用采用 UTM 跟踪方法的 Urchin，您需要在您网站的每个网页上安装一小段 javascript 跟踪代码。具体操作步骤如下： <ul><li><p class="line862">将 urchin.js 和 <tt class="backtick">__</tt>utm.gif 文件从 Urchin 发行套装中的 util/utm 目录复制到您网站的文档根目录（如网站内容的顶级目录）下 </li><li>在网站的每个网页上，将下列跟踪代码放到 HEAD 部分中，紧随所有 META 标记之后： </li></ul><p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;
+&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+  _userv=0;
+  urchinTracker();
+&lt;/script&gt;
+</pre><ul><li>向 Urchin 添加配置文件时，请确保将“Urchin 流量监视器 (UTM)”指定为访问者跟踪方法 </li></ul><p class="line867"><strong>第 3 种情况：将 Urchin 与 Google Analytics（分析）一起使用</strong> <p class="line874">请注意，Google Analytics（分析）“ga.js”跟踪代码中的新跟踪功能与 Urchin 6 不兼容。要同时使用 Google Analytics（分析）和 Urchin 软件来跟踪您的网站，我们建议您使用基于 urchin.js 的跟踪代码，以便取得最佳效果。如果您选择使用 ga.js，将无法使用新的 ga.js 跟踪功能。 <p class="line874">要将 Urchin 应用于已由 Google Analytics（分析）跟踪的网站，您只需对 Google Analytics（分析）的现有跟踪代码做少许修改。具体操作步骤如下： <ul><li><p class="line862">仅将 <tt class="backtick">__</tt>utm.gif 文件从 Urchin 发行套装的 util/utm 目录复制到您网站的文档根目录（例如，您网站内容的顶级目录）下。 </li><li><p class="line862">将 <tt>_userv=2;</tt> 行（如下所示）添加到您网站网页的现有跟踪代码中。请勿修改现有跟踪代码的其他任何部分！ </li></ul><p class="line867"><pre>&lt;script src="http://www.google-analytics.com/urchin.js"
+type="text/javascript"&gt;
+&lt;script type="text/javascript"&gt;
+  _userv=2;
+  _uacct="UA-XXXXXXX-Y";
+  urchinTracker();
+&lt;/script&gt;
+</pre><ul><li>向 Urchin 添加配置文件时，请确保将“Urchin 流量监视器 (UTM)”指定为访问者跟踪方法 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

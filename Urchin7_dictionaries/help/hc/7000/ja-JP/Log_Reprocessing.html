@@ -1,0 +1,11 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>ログの再処理</strong> <p class="line867"><strong>概要</strong> <p class="line874">処理中に DNS サーバーがダウンしたり、フィルタが不適切に適用されたなどの特定の状況では、ログ データの再処理が必要になります。 ここでは、ウェブサーバーのログ データを取り消して再処理を行うために必要な手順について説明します。 <p class="line874">ログの再処理では、コマンド ラインのシェル環境でのみ利用可能な Urchin ユーティリティを使用する必要があります。 ウェブベースの Urchin 管理 GUI のみで手順を完了することはできません。 <p class="line867"><strong>1 日分の再処理</strong> <ul><li>Urchin 管理 GUI でプロファイルを編集して [ストレージ/データベース] タブの [ログ トラッキング] をオフにします。 [更新] をクリックして変更を保存します。 </li><li>[ログ ソース] タブで、再処理する適切なログ ファイルを指定していることを確認します。 ログ データには、統計情報を消去する日付のヒットのみが含まれている必要があります。 </li><li>Urchin でコマンド シェルを起動して、次のコマンドを実行します。  </li></ul><p class="line867"><pre>cd /&lt;URCHIN_DIR&gt;/util
+</pre><ul><li>Urchin の util ディレクトリ/フォルダにある udb-sanitizer ユーティリティを次のコマンドで実行します。 </li></ul><p class="line867"><pre>udb-sanitizer -p profile-name -d YYYYMM 
+</pre><ul><li style="list-style-type:none">YYYYMM は再処理する日付の年月です。 </li></ul><ul><li>オプション 5 を選択して、1 日分または複数の日数分を消去します。 ユーティリティの手順に従って適切な日付を入力すると、指定した日付の統計情報が削除されます。 udb-sanitizer の使用例については、[udb-sanitizer: データベース メンテナンス]をご覧ください。 </li><li>プロファイルの [実行/スケジュール] タブにある [今すぐ実行] ボタンをクリックして、ログ データを再処理します。 </li><li>ログ ファイル パスを元の設定に戻してログ ソースをリセットします。 </li><li>プロファイルの編集セクションにある [ストレージ/データベース] タブの [ログ トラッキング] をオンに戻します。 </li></ul><p class="line867"><strong>1 か月分の再処理:</strong> <p class="line874">1 か月分のすべてのデータを再処理する手順は上記の 1 日分の再処理手順と同様ですが、別の udb-sanitizer オプションを使用します。 [udb-sanitizer: データベース メンテナンス]の例をご覧ください。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

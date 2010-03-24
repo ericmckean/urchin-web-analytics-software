@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6.602 Geo-databases</strong> <p class="line874">Urchin 6.602 提供了两个地理数据库： <ul><li><p class="line891"><strong>geo.db</strong> - 包含详细的都市圈 (country/region/city)、网络（组织）和域信息。 虽然有所更新，但其信息的详细程度与 urchin 6 的之前版本 (6.400 - 6.601) 是一样的。 </li><li class="gap"><p class="line891"><strong>geo.light.db</strong> - 只包含国家/地区级别的都市圈信息，不含区域、城市、网络和组织信息。 此数据库对内存的需求量要少得多，载入时间也短得多，因此特别适用于日志处理引擎性能至关重要的情况。 使用这一轻型版地理数据库会对下列报告产生影响。 <ul><li style="list-style-type:none">o 下列“地图”报告只能显示国家/地区级别的都市圈数据（不含区域和城市信息）： <ul><li><p class="line862">管理人员视图 -&gt; 内容提要（控制台） </li><li><p class="line862">管理人员视图 -&gt; 地理分布图 </li><li><p class="line862">营销商视图 -&gt; 营销商概述（控制台） </li><li><p class="line862">网站管理员视图 -&gt; 网站管理员概述（控制台） </li><li><p class="line862">营销优化 -&gt; 访问者群体细分效果 -&gt; 地理分布图 </li></ul><p class="line862">o“网络位置”报告（营销优化 -&gt; 访问者群体细分效果 -&gt; 网络位置）不会显示任何数据 <p class="line862">o“域”报告（营销优化 -&gt; 访问者群体细分效果 -&gt; 域）不会显示任何数据 </li></ul></li></ul><p class="line874">默认情况下使用的是 geo.db。 要切换为 geo.light.db 数据库，请在 urchin.conf 文件中取消相应行的注释标记： <p class="line867"><pre>
+
+# 地理数据库设置
+
+# 取消下列行的注释标记，启用轻型版地理数据库
+# GeodbLight: ON
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

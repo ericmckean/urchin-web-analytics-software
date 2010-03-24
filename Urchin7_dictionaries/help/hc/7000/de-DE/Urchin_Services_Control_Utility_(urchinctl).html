@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Dienstprogramm zur Kontrolle der Urchin-Dienste (urchinctl)</strong> <p class="line867"><strong>Übersicht</strong> <p class="line874">Urchin Services Control utility, urchinctl, überprüft den Status der Dienste Urchin Scheduler und Urchin Webserver und ermöglicht Ihnen, diese zu starten bzw. zu stoppen. Auf UNIX-basierten Systemen wird "urchinctl" normalerweise von einem der Bootskripts des Systems aufgerufen, um Urchin-Dienste automatisch zu starten oder zu beenden. <p class="line874">Mit "urchinctl" können Sie folgende Schritte ausführen: <ul><li>Überprüfen des Status des Master- und Slave-Planers von Urchin 6 </li><li class="gap">Starten, Stoppen oder Neustarten des Planers oder Webservers (oder von beiden) </li><li class="gap">Starten des Webservers auf einem anderen Port </li><li class="gap">Starten des Webservers mit SSL-Verschlüsselung </li></ul><p class="line867"><strong>Verwendung</strong> <p class="line874">"urchinctl" befindet sich im Verzeichnis "bin" der Urchin-Installation. <p class="line874">Verwenden Sie das Dienstprogramm wie folgt: <p class="line867"><pre>
+  urchinctl -h (druckt die Verwendungsmeldung und beendet den Vorgang)
+
+  urchinctl -v (druckt die Version und beendet den Vorgang)
+
+  urchinctl [-e] [-p Port] [[-s] | [-w]] Aktion
+
+</pre><p class="line874">Wobei: <p class="line867"><pre>
+  -e  die Verschlüsselung (SSL) im Webserver aktiviert
+
+  -p  den Port für den Webserver angibt, auf dem er hört
+
+  -s  die Aktion NUR auf dem Urchin-Planer ausführt
+
+  -w  die Aktion NUR auf dem Urchin-Webserver ausführt
+
+</pre><p class="line874">und die Aktion eine der folgenden ist: <p class="line867"><pre>
+  start   (startet die Dienste)
+
+  stop   (stoppt die Dienste)
+
+  restart   (stoppt und startet die Dienste dann neu)
+
+  status   (zeigt den Ausführungsstatus des Webservers/Planers an)
+
+</pre><p class="line874">Standardmäßig wird die Aktion sowohl auf dem Webserver als auch auf dem Planer ausgeführt, außer wenn die Optionen "-s" (Planer) oder "-w" (Webserver) angegeben sind. Diese Optionen schließen sich gegenseitig aus. <p class="line867"><strong>Hinweise</strong> <p class="line874">Auf UNIX-Systemen sollte "urchinctl" mit der Nutzer/UID der Urchin-Installation ausgeführt werden, um sicherzustellen, dass die "urchinwebd"- und "urchind"-Prozesse mit dieser UID gestartet werden. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

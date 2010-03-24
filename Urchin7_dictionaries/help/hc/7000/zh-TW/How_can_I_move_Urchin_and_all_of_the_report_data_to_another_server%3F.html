@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何把 Urchin 6.x 的報告資料移至另一個伺服器？</strong> <p class="line874">將 Urchin 6.x 從某伺服器上移至另一個伺服器時，需要進行下列基本的步驟： <ol type="1"><li>準備 Urchin 資料庫 </li><li>在新伺服器上安裝 Urchin 6.x </li><li>移動設定檔的 Urchin 報告資料庫 </li><li>移動自訂檔案和範本 </li><li>套用 Urchin 自訂設定 </li><li>檢查新的檔案權限 </li><li>重新啟用 Urchin 授權 </li></ol><p class="line874">請注意：您也可以將下列詳細指示套用至跨平台的移動上。您可以將 Urchin 報告資料庫檔案移動到任何支援 Urchin 的作業系統中。在不同平台類型之間移動資料和檔案時，請考慮在其中加入指令行語法 (例如，您可以在 Unix 系統中加入 './')。其他注意事項還有目錄語法變更，例如 'Standard\Windows\folders\' 與 '/standard/unix/directories/'。 <p class="line867"><strong>1. 準備 Urchin 資料庫</strong> <p class="line874">如果您想要讓新的 Urchin 安裝使用同一個資料庫伺服器，則您可以略過此步驟。否則，Urchin 資料庫會在您於新伺服器上進行新安裝時準備妥當。 <p class="line867"><strong>a.</strong>      使用正確的 Urchin 使用者權限，建立空白的 Urchin 資料庫。 <p class="line874">建立 MySQL 後端資料庫所使用的 SQL 指令範例： <p class="line867"><pre>   mysql&gt; create database urchin character set utf8;
+   mysql&gt; GRANT ALL ON urchin.* to 'urchin'@'localhost' IDENTIFIED BY 'urchinpassword';
+</pre><p class="line874">建立 PostreSQL 後端資料庫所使用的 PSQL 指令範例： <p class="line867"><pre>   postgres=# CREATE DATABASE urchin WITH ENCODING 'UTF8';
+   postgres=# CREATE USER urchin WITH PASSWORD 'urchin password';
+   postgres=# GRANT ALL ON DATABASE urchin TO urchin;
+   postgres=# \connect urchin;
+   postgres=# CREATE LANGUAGE 'PLPGSQL';
+</pre><p class="line867"><strong>b.</strong>      在原伺服器上複製 Urchin 資料庫資料，方法是從原資料庫中進行 SQL 傾印，然後匯入至新的資料庫中。這麼一來就可以自動複製大多數您所需要的 Urchin 組態 (包含設定檔、記錄來源、使用者、帳戶、群組、排程器和其他設定)。 <p class="line874">建立 MySQL 後端資料庫所使用的 SQL 指令範例： <ul><li style="list-style-type:none">來源資料庫： </li></ul><p class="line867"><pre>   mysqldump -h {oldDBhostname} -u {username} -p {urchinDBname} &gt; urchin.sql
+</pre><ul><li style="list-style-type:none">目的地資料庫： </li></ul><p class="line867"><pre>   mysql -h {newDBhostname} -u {username} -p {urchinDBname} &lt; urchin.sql
+</pre><p class="line874">下列為 PostreSQL 後端資料庫的 PSQL 指令範例： <ul><li style="list-style-type:none">來源資料庫： </li></ul><p class="line867"><pre>   pg_dump -h {oldDBhostname} -p {oldDBport} -U {username} {urchinDBname} &gt; urchin.sql
+</pre><ul><li style="list-style-type:none">目的地資料庫： </li></ul><p class="line867"><pre>   psql -h {newDBhostname} -p {newDBport} -U {username} {urchinDBname} &lt; urchin.sql
+</pre><p class="line867"><strong>2. 在新伺服器上安裝 Urchin 6</strong> <p class="line874">使用先前準備好的資料庫，在新伺服器上建立 Urchin 6 全新安裝。 <p class="line874">(請務必在 Windows 進行安裝前，取消勾選 [如果 Urchin 特定資料庫表格已存在，則進行刪除並重新建立] 選項，或是在 Unix 上進行安裝前，為「您要在安裝期間初始化組態資料庫嗎？」選擇 [否]！)。 <p class="line874">您可以在這裡找到有關 Urchin 安裝的詳細指示 (請略過資料庫組態步驟，並從「安裝 Urchin」章節開始進行)： <ul><li><p class="line891"><a href="Urchin_Installation_Guide_(FreeBSD_and_Linux).html">Urchin 安裝指南 (適用於 FreeBSD 和 Linux)</a> </li><li><p class="line891"><a href="Urchin_Installation_Guide_(Windows).html">Urchin 安裝指南 (適用於 Windows)</a> </li></ul><p class="line874">進行接下來的步驟之前，請先停止 Urchin 程式或服務： <p class="line867"><pre>~/urchin/bin/urchinctl -stop
+</pre><p class="line867"><strong>3. 移動設定檔的 Urchin 報告資料庫</strong> <p class="line874">按照預設，所有的 Urchin 報告資料都儲存在主要 Urchin 目錄的子目錄下：~/urchin/data/ 這個目錄必須封存，以維護子目錄的架構，並在這裡安裝 Urchin 之後，將其移動到新的伺服器下。請務必在新伺服器的相同目錄位置下將它復原：~/urchin/data. <p class="line874">請注意：如果原 Urchin 安裝使用了自訂記錄和報告目錄，那麼您就必須複製自訂目錄 (而不是使用 ~/urchin/data/reports 和 ~/urchin/data/history) <p class="line867"><strong>4. 移動自訂檔案和範本</strong> <p class="line874">所有對 Urchin 所進行的自訂工作，包括自訂記錄格式和報告集，都不會包含在 Urchin 的「資料」目錄中。這些自訂功能的實際儲存位置，是在 Urchin 分佈的 "lib" 目錄下的獨立位置。當您在新伺服器中安裝 Urchin，您必須將所有對 Urchin 系統進行的自訂功能複製到新的 Urchin 安裝中。這些檔案通常會放在 ~/urchin/lib/custom/ 下。 <p class="line874">若要進行這個步驟，請移至原 Urchin 伺服器，然後瀏覽至 Urchin 分佈的 "lib" 目錄。接下來，使用封存公用程式 (如 tar 或 ZIP) 為整個「自訂」目錄 (包含所有子目錄) 建立封存。將封存複製到新的 Urchin 伺服器上，並在 Urchin 分佈的 "lib" 目錄下解壓縮。 <p class="line867"><strong>5. 套用 Urchin 自訂設定</strong> <p class="line874">如果您已經變更了下列位置中的原 Urchin 6.x 安裝預設設定： <p class="line867"><pre>/etc/session.conf
+/etc/urchin.conf
+/var/urchinwebd.conf
+</pre><p class="line874">請務必編輯對應的檔案，將相同的設定套件至您的全新安裝中。 <p class="line867"><strong>6. 檢查新的檔案權限</strong> <p class="line874">在您將所有的檔案移至新伺服器上之後，您應該全面執行檢查，確保所有的檔案不但具備必須的權限，而且檔案所有人也是同一個使用者 (僅適用於 UNIX 系統)。 <p class="line874">若要修復 Urchin 權限，請在 ~/urchin/util/ 目錄中執行下列指令： <p class="line867"><pre>        inspector -r
+</pre><p class="line874">若要檢查檔案的所有權 (僅適用於 UNIX)，請在 ~/urchin/ 目錄中執行下列指令： <p class="line867"><pre>        chown -R urchin_user:urchin_group./
+</pre><p class="line867"><strong>7. 重新啟用 Urchin 授權</strong> <p class="line874">開啟 Urchin 程式或服務。 <p class="line867"><pre>~/urchin/bin/urchinctl start
+</pre><p class="line874">完成 Urchin 安裝後，請開啟 Urchin 網頁介面。 <p class="line874">系統會顯示包含 [重新啟用授權] 連結的 Urchin 授權畫面： <p class="line874">由於您使用了現有已準備好的資料庫來安裝 Urchin，系統金鑰會變更，授權也需要重新啟用。 <p class="line874">請注意：請在重新啟用前，要求您的 Urchin 經銷商為您重設授權。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

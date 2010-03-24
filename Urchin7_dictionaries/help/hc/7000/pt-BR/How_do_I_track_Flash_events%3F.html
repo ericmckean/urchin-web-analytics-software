@@ -1,0 +1,25 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como faço para monitorar eventos em Flash?</strong> <p class="line862">O Urchin permite monitorar qualquer evento com base no navegador, inclusive eventos em Flash e Javascript.Para monitorar um evento, chame a função JavaScript  urchinTracker  com um argumento que especifique um nome para o evento.Por exemplo, chamar: <p class="line867"><pre>    javascript:urchinTracker('/homepage/flashbuttons/button1');
+</pre><p class="line874">fará com que cada ocorrência desse evento em Flash seja registrada como se fosse uma exibição de página de /homepage/flashbuttons/button1.O argumento deve começar com uma barra.Os nomes do evento podem ser organizados em qualquer estrutura de diretórios desejada, e as páginas reais com esses nomes de arquivo não precisam existir. <p class="line874">Por exemplo, se quiser organizar os eventos em flash por página, por tipo de evento, você pode organizar uma hierarquia como esta: <p class="line867"><pre>    /homepage/flashbuttons/button1
+    /homepage/clips/clip1
+</pre><p class="line867"><strong>Exemplos de código em Flash</strong> <p class="line867"><pre>    on (release) {
+    // Track with no action
+    getURL("javascript:urchinTracker('/folder/file');");
+    }
+    on (release) {
+    //Track with action
+    getURL("javascript:urchinTracker('/folder/file');");
+    _root.gotoAndPlay(3);
+    myVar = "Flash Track Test"
+    }
+    onClipEvent (enterFrame) {
+    getURL("javascript:urchinTracker('/folder/file');");
+    }
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

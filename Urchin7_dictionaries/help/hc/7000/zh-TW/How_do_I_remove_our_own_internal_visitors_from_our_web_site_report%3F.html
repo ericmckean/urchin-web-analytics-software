@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong> 如何將我們內部的訪客從網站報告中移除？</strong> <p class="line867"><strong>總覽</strong> <p class="line874">若要僅包含來自特定 IP 位址的項目、排除內部監控系統的 IP 位址等等，常見的做法是以 IP 位址篩選器與設定檔搭配使用。Urchin 可讓您輕鬆完成這項作業。但是，請務必在設定 IP 位址篩選器時使用正確的「篩選器欄位」規格。 <p class="line867"><strong>程序</strong> <p class="line874">設定正確內部流量篩選器最簡單的方法是按照下列步驟進行： <ul><li><p class="line862">在 Urchin 管理介面中，瀏覽至 [組態] &gt; [Urchin 設定檔] &gt; [篩選器管理員] </li><li>按一下 [新增] 按鈕，建立新的篩選器 </li><li><p class="line862">從 [=&gt; 選取範例篩選器] 下拉式清單中選擇 [篩選內部流量] </li><li>以您想要篩選掉的 IP 位址取代 [篩選器模式] 方塊中的範例 IP 位址。別忘了在 IP 位址中的每一點之前加入反斜線字元 ("\")！ </li><li>按一下 [完成]，然後在下一個視窗中按一下 [更多選項] </li><li>在 [可用的設定檔] 方塊中，選取所有您想要套用篩選器的設定檔，然後按一下向右箭頭，將它們傳送到 [套用至] 方塊中。 </li><li>按一下 [更新]，將篩選器套用至選定的設定檔。 </li></ul><p class="line867"><strong>其他注意事項：</strong> <p class="line862">請注意，Urchin 篩選器模式採用 POSIX 正規表示法。因此，請務必逸出 IP 位址規格中的 '.' 字元，以免 Urchin 將它們解譯為正規表示法的中繼字元。例如，若要在 IP 位址 '172.16.1.1' 上進行篩選，可以將篩選器模式指定為 '172\.16\.1\.1'。此外，若要在 IP 位址範圍 '192.168.<em>xxx.xxx<strong> 上進行篩選，可以將篩選器欄位指定為 '192\.168\.'。</em></strong> 以下提供更多範例供您參考：<strong> </strong> <p class="line874">以管狀符號來分隔多個 IP 位址，例如 192\.168\.12\.32$|10\.10\.1\.23$|63\.212\.171\.5$；請注意，使用 $ 時，表示在最後列示的數字之後沒有任何其他數字。因此，若要同時包含 63.212.171.5 和 63.212.171.53，可以將篩選器撰寫為 63\.212\.171\.5。但是，若只要符合 63\.212\.171\.5，則應該將篩選器模式撰寫為 63\.212\.171\.5$ <p class="line874">您可以使用單一字串來表示一個 IP 位址範圍，例如，192.168.10.10 到 192.168.10.50 這個範圍可以撰寫為 192.168.10.[1-5][0-9]$ <p class="line862">符合篩選器模式 63\.212\.171\.5 的開頭也會符合 163\.212\.171\.5。如果只要包含以特定數字開頭的 IP，請使用 '符合字串開頭表示法 '<sup>'例如 </sup>63\.212\.171\.5$ <p class="line867"><strong>完整正規表示法清單</strong> <pre> *'''萬用字元'''    '''意義'''
+ *'''.'''       符合任一字元
+ *'''*'''       符合零個或多個之前的項目
+ *'''+'''       符合一個或多個之前的項目
+ *'''?'''       符合零個或一個之前的項目
+ *'''()'''      將圓括號的內容記憶為項目
+ *'''[]'''      符合此清單中的一個項目
+ *'''-'''       在清單中建立範圍
+ *'''|'''       或
+ *'''^'''       符合欄位的開頭
+ *'''$'''       符合欄位的結尾
+ *'''\'''       逸出以上任何項目
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

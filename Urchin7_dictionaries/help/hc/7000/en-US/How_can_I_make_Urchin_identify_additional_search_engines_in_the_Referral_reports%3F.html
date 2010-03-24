@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>How can I make Urchin identify additional search engines in the Referral reports?</strong> <p class="line874">By default, Urchin tracks referrals from 20 search engines as listed in your UTM file. You can also configure Urchin to identify referrals from additional search engines by editing the UTM file as follows: <ol type="1"><li>Open your urchin.js file in a text editor. </li><li>Scroll down to the following: </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>You will see entries for search engines numbered 0-19. These are the search engines Urchin tracks by default. To add another search engine to the list, simply add a new entry which follows the format of the other entries. For example, this is how you would add an entry for a search engine "new": </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">The value for _uOsr should be the name of the search engine and the value for _uOkw should be the query variable which stores the keyword. For example, if someone searched for "motorcycle" and the search result URL is: </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">the value for _uOkw will be "q". the value for _uOsr will be "google". </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

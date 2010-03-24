@@ -1,0 +1,19 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>외부 인증 또는 인증 회피 사용</strong> <p class="line867"><strong>개요</strong> <p class="line874">기본적으로 Urchin 인증은 Urchin 세션 컨트롤러(session.cgi)가 Urchin 설치 폴더의 'bin' 디렉토리를 호출할 때 수행됩니다.이 바이너리는 구성 데이터베이스를 쿼리하고 입력된 사용자 이름 및 비밀번호를 구성에 저장된 것과 비교합니다.성공 또는 실패를 의미하는 종료 코드가 세션 컨트롤러에 반환됩니다.인증 바이너리의 위치는 구성을 변경하여 제어할 수 있습니다.이러한 모듈식 설계를 통해 관리자는 기본 'auth' 바이너리가 아닌 외부 인증 프로그램을 호출할 수 있습니다. <p class="line867"><img alt="Using_External_Authentication" src="../images/Using_External_Authentication.jpg" title="Using_External_Authentication" /> <p class="line874">위 그림에서처럼 외부 인증 프로그램은 'LDAP' 및 기타 데이터베이스 호출을 포함한 원하는 인증 기능을 수행할 수 있습니다.이 프로그램이 'urchinwebd'(Urchin의 Apache 웹서버)를 실행하는 사용자에 의해 실행되고 입/출력 요구 사항을 따르기만 한다면, 서로 다른 인증 형태를 사용하도록 Urchin을 손쉽게 수정할 수 있습니다. <p class="line867"><strong>인증 루틴 지정</strong> <p class="line874">세션 컨트롤러에서 호출하는 인증 루틴을 구성하려면 Urchin 설치 폴더의 'etc/session.conf' 파일을 수정합니다.이 파일에는 인증을 위해 호출되는 루틴을 포함하여 세션 컨트롤러 동작을 제어하는 구성 가능한 매개변수가 포함됩니다.다음 줄을 수정합니다. <pre>    AUTHENTICATION: ../bin/auth 
+</pre><p class="line874">여기서 '../bin/auth'를 인증 루틴 경로로 바꿉니다.'urchinwebd'를 실행하는 사용자가 인증 루틴을 실행할 수 있는지 확인하십시오. <p class="line867"><strong>입/출력 요구사항</strong> <p class="line874">세션 컨트롤러가 인증 루틴을 호출하면 다음과 같이 사용자의 사용자 이름, 비밀번호 및 원격 IP 주소가 명령행 인수로 전달됩니다. <pre>    argv[1] = username
+    argv[2] = password
+    argv[3] = remote_addr 
+</pre><p class="line874">외부 인증 루틴에서는 모든 또는 일부 매개변수를 무시하도록 선택할 수 있습니다.그러나 일반적인 인증 루틴에서는 사용자 이름 및 비밀번호를 기본적으로 확인합니다.루틴은 원하는 인증을 부분 또는 전체 수행한 후 성공할 경우 0, 실패할 경우 음수에 해당하는 코드로 종료됩니다. <pre>    Exit Code
+     0 = successful authentication
+    -1 = authentication failed 
+</pre><p class="line874">위의 인증 인터페이스를 사용하면 관리자는 자신만의 루틴을 손쉽게 맞춤화하여 사용자 로그인을 확인할 수 있습니다. <p class="line867"><strong>인증 회피</strong> <p class="line874">위의 기법을 사용하여 Urchin 인증을 의도적으로 회피할 수 있습니다.사용자 및 그룹을 제어하기 위해 전체 Urchin 시스템을 사용하려고 하는 호스팅 제공업체에서 사용자가 Urchin에 도착한 시점에 사용자를 이미 인증한 경우 인증 회피를 선택하여 두 번 로그인하는 것을 피할 수 있습니다.호스트에서 Urchin 시스템에 대한 액세스가 인증 포털로부터 제어되고 사용자 이름이 변경되지 않는다는 것을 보장할 수 있다면 해당 호스트는 다음 기법을 사용하여 인증을 회피할 수 있습니다. <p class="line874">인증을 회피하기 위해 항상 0으로 종료되는 더미 외부 인증 루틴을 작성합니다.예를 들어 perl 코드는 다음과 같습니다. <pre>    #!/usr/bin/perl
+    exit(0); 
+</pre><p class="line874">위에 설명된 대로 'etc/session.conf' 파일이 더미 루틴을 가리키도록 수정하여 이 더미 인증 루틴의 세션 컨트롤러를 가리킵니다.그런 다음 아래 링크를 입력하면 됩니다. <pre>    http://hostname:9999/session.cgi?action=login&amp;user=paul 
+</pre><p class="line874">위 링크가 실제 호스트 이름 및 포트를 가리키도록 수정하고 사용자 이름이 원하는 사용자 이름 또는 변수를 가리키도록 수정합니다.더미 인증 루틴에서 이 로그인을 자동 승인합니다.보안 문제가 있을 수 있으므로 이 방법은 신중히 사용하십시오. <p class="line867"><strong>Windows 사용자를 위한 참고사항:</strong> <p class="line874">Perl이 설치되지 않은 Windows 환경에서 유사한 기능을 제공하려면Urchin 지원 웹사이트의 도우미 스크립트 영역에서 제공되는 noauth.exe 바이너리를 사용하면 됩니다..이 바이너리는 'no-op'일 뿐이며 호출하면 성공 상태만 반환합니다.이 해결책을 구현하기 전에 보안에 미치는 영향을 파악하고 있어야 합니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

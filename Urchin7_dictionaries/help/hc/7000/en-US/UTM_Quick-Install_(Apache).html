@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>UTM Quick-Install (Apache)</strong> <p class="line867"><em>This article authored by</em> <a href="Panalysis.html">Panalysis</a><em>, an Urchin Software Authorized Consultant </em> <p class="line874">The following is intended as a quick run-through on installing the UTM for websites running on an Apache server on all platforms. <p class="line867"><strong>Step 1: Copy UTM files to website document root.</strong> The files, urchin.js and <tt class="backtick">__</tt>utm.gif are located in the "util/utm" directory in the Urchin distribution. Copy these two files to the main directory of your website content. <p class="line867"><strong>Step 2: Reference UTM in your HTML.</strong> Enter the following line in all of your HTML pages. While it can go anywhere in the pages, we recommend putting it in the &lt;head&gt; section. If you use a common include or template, you can enter it there. <span class="u">IMPORTANT</span>: the GIF filename begins with two underscores. <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line874">If you are using a package like "HTML Tidy", you may want to include the Javascript line in the HEAD area of your page, for instance: <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>Step 3: Enable cookies in your Apache logging.</strong>  If not already enabled, you can use the following httpd.conf example to enable cookie logging: <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-Agent}i\" \"%{Cookie}i\"" urchin
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log urchin
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>Step 4: Set Urchin Profile to use UTM.</strong>  In the Urchin Administration interface, edit the profile in question and click on the Reporting tab. Set the Visitor Tracking Method to UTM. Set the UTM Domain to the address of your website without the www. When done click the Update button. Then click on the Profile Settings tab and choose UTM-Enable All for the Default Report Set, then click Update again. That's it! Your website will now begin logging UTM data into your normal log file which will be identified the next time you run Urchin. <p class="line867"><strong>Is it working?</strong> To see if the UTM is successfully making entries to your log file, examine the log after you have installed the UTM and clicked on a few pages of the site. You should see an entry similar to the following at the end of the log file: <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line862">If you don't see the <tt class="backtick">__</tt>utma entries, be sure to check that cookies was enabled in the logging properly. If the status code is not 200 then check to make sure the files were properly copied to your document root. <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Defining Custom Visitor Segments</strong> <p class="line874">In addition to segmenting users along pre-defined segments such as geographic region and language preference, Urchin 6 allows you to define custom segments and analyze the behavior of each segment. For example you might ask visitors to check mark their job category (such as Technical/Engineering, Marketing/PR, etc) on a form. You could then analyze browsing and buying behavior based upon the job category information that visitors check marked. <p class="line862">You can view conversion behavior for each of your custom segments in the Marketing Optimization &gt; Visitor Segment Performance &gt; User-Defined report. Also, many other reports allow you to cross analyze data according to visitor segment. To cross analyze, click the Analysis Options button at the far left of any entry in most reports. Select "User-Defined" to view your custom segments. <p class="line862">To set a visitor segment, simply call the javascript <tt class="backtick">__</tt>utmSetVar function. For example, make the following call anywhere on the web page below the UTM: <pre>    __utmSetVar("Marketing/PR");
+</pre><p class="line874">Example: Assign visitors to this page to the "Marketing/PR" segment <p class="line874">In this example, anyone who visits the page will be assigned to the "Marketing/PR" segment. <pre>    &lt;body onLoad="javascript:__utmSetVar("Marketing/PR")"&gt;
+</pre><p class="line874">Example: Assign visitors to the visitor-selected segment <p class="line874">In this example, visitors are assigned to a segment according to their selection in a form. <pre>    &lt;form onSubmit="__utmSetVar(this.mymenu.options[this.mymenu.selectedIndex].value);"&gt;
+    &lt;select name=mymenu&gt;
+    &lt;option value="Technical/Engineering"&gt;Technical/Engineering&lt;/option&gt;
+    &lt;option value="Marketing/PR"&gt;Marketing/PR&lt;/option&gt;
+    &lt;option value="Manufacturing"&gt;Manufacturing&lt;/option&gt;
+    &lt;option value="General Management"&gt;General Management&lt;/option&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

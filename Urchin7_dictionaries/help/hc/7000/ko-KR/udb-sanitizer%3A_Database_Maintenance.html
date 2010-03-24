@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer: 데이터베이스 유지관리 유틸리티</strong> <p class="line867"><strong>개요</strong>  <p class="line874">Urchin 데이터베이스 유지관리 유틸리티인 udb-sanitizer를 통해 Urchin 6 프로필 데이터베이스를 확인하고 데이터베이스에서 다양한 유지관리 작업을 수행할 수 있습니다.  <p class="line874">udb-sanitizer를 통해 수행할 수 있는 작업 유형은 다음과 같습니다.  <ul><li>이전에 저장된 백업 상태로 데이터베이스 롤백 </li><li class="gap">특정 날짜, 여러 날짜 또는 한달 전체 동안의 프로필 데이터 삭제  </li></ul><p class="line867"><strong>사용법</strong>  <p class="line874">udb-sanitizer는 Urchin 6 폴더의 util 디렉토리에 있습니다.  <p class="line874">udb-sanitizer의 사용법은 다음과 같습니다.  <pre>  udb-sanitizer [-h] (사용법 인쇄 후 종료)
+
+  udb-sanitizer [-v] (버전 인쇄 후 종료)
+
+  udb-sanitizer -p profile [-d YYYYMM[DD]] -bfhprq] [-z [-e DD]] 
+</pre><p class="line874">여기서 각 옵션은 다음과 같은 의미가 있습니다.  <pre>   -b  롤백 옵션으로 바로 이동
+
+   -d  작업 수행 연, 월 및 일(선택사항) 지정
+
+   -e  z 및 d 옵션과 함께 사용하여 같은 달 내에서 여러 날짜(d-&gt;e 범위)를 지정
+
+   -f  확인 절차 없이 작업 수행
+
+   -h  해당 도움말 정보 인쇄
+
+   -p  프로필 이름 지정(필수임)
+
+   -a  계정 이름 지정
+
+   -r  삭제 옵션으로 바로 이동
+
+   -q  정숙 모드, 필수 사용자 정보 외에는 메시지를 출력하지 않음
+
+   -z  즉시 실행 옵션으로 바로 이동 
+
+</pre><p class="line867"><span class="u">참고</span>: 옵션을 사용하여 udb-sanitizer를 호출할 때 수행할 작업에 대해 올바르게 지정하지 않으면 사용법이 표시됩니다(<tt>-h</tt> 옵션과 같은 결과).  <tt>-d</tt>, <tt>-b</tt>,  <tt>-r</tt> 또는 <tt>-z</tt> 옵션을 사용할 때 <tt>–f</tt> 및 <tt>-q</tt> 옵션을 함께 사용하면 사용자의 확인 없이 작업이 수행되도록 할 수 있습니다.  <p class="line867"><strong>작업</strong>  <p class="line874">일반 작업에서 udb-sanitizer는 원하는 작업 유형에 대해 적용할 수 있는 옵션과 함께 명령 쉘에서 호출됩니다.    <p class="line874">다음은 위에 설명된 옵션을 사용하여 수행할 수 있는 작업의 예입니다.  <p class="line874">1. 데이터 롤백(–r) <ul><li style="list-style-type:none">이 옵션을 사용하면 프로필 데이터를 이미 보관된 데이터로 되돌릴 수 있습니다. 사용자에게는 선택할 수 있는 ZIP 아카이브 백업 목록이 표시되며, 기존 보고 데이터베이스의 내용이 선택한 아카이브 파일의 내용으로 바뀝니다. ZIP 아카이브의 이름은 'YYYYMM-backupv6-YYYYMMDDHHMMSS.zip' 규칙으로 지정되며, 여기서 첫 YYYYMM은 백업되는 데이터의 연월(예: 200803의 경우 2008년 3월을 나타냄)이고 YYYYMMDDHHMMSS 부분은 ZIP 아카이브를 만든 때의 시간기록입니다. 이 시간기록을 보고 롤백하려는 ZIP 아카이브를 결정할 수 있습니다. </li></ul><p class="line874">2. 월별 데이터 삭제(-d) <ul><li style="list-style-type:none">지정한 달에 대한 모든 특정 프로필 데이터가 삭제됩니다. 잘못된 필터를 적용했거나 로그를 잘못 처리한 경우 또는 클릭 경로 수준이나 참조 수준 등의 일부 고급 프로필 매개변수 변경으로 인해 그 달의 Urchin 보고 데이터를 업데이트하여 변경사항을 반영해야 할 경우처럼 데이터가 잘못됐다면 이 옵션을 이용하여 특정 달의 통계를 제거할 수 있습니다. -f, -r 및 -q 인수를 함께 사용해 udb-sanitizer를 호출하면 사용자의 확인 없이도 작업을 수행할 수 있습니다.  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. 하루 이상의 기간에 대한 데이터 제거 <ul><li style="list-style-type:none">이 옵션을 사용하면 같은 달 내에서 선택한 날짜 범위의 데이터를 제거하고 해당 날짜에 대해서만 Urchin 로그 처리를 다시 실행할 수 있습니다(예: urchin -p profile -d YYYYMMDD). -f, –q, -z 및 -d 인수를 함께 사용해 udb-sanitizer를 호출하면 사용자의 확인 없이도 특정일의 데이터를 삭제할 수 있습니다. 예를 들면 다음과 같습니다.  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">'-e' 인수를 사용하면 종료일을 지정하여 여러 날짜에 대해 데이터를 삭제할 수 있습니다. 예를 들면 다음과 같습니다.  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">위 명령은 2003년 9월 7일부터 10일까지의 데이터를 삭제합니다. –e 인수를 사용할 경우 끝나는 날의 날짜만 입력하면 됩니다. 이렇게 하면 데이터베이스 색인과 표제를 한 번만 확인하므로 udb-sanitizer의 여러 인스턴스를 호출하여 한 번에 1일씩 제거하는 것보다 효율적입니다. 데이터가 많은 프로필에 대해 색인/표제 확인 작업을 수행하려면 시간이 오래 걸릴 수 있습니다.  </li></ul><p class="line874">4. 프로필이 계정의 일부인 경우에는 -a 인수를 사용하여 계정 이름을 지정해야 합니다.   <p class="line867"><span class="u">중요사항</span>: 일별 또는 월별 데이터 삭제 작업은 취소할 수 없습니다. 일단 데이터를 삭제하고 나면 그 기간에 대해 웹서버 로그를 다시 처리하여 프로필 데이터베이스를 다시 만들 수 밖에 없습니다. 그러므로 삭제 옵션을 사용할 때는 주의해야 합니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

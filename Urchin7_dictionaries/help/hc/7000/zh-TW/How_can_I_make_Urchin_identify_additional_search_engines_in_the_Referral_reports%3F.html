@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何使 Urchin 識別推薦連結報告中的其他搜尋引擎？</strong> <p class="line874">根據預設，Urchin 可追蹤 UTM 檔案中列出的 20 種搜尋引擎的推薦連結。您也可以按照以下方式編輯 Urchin 流量監視器檔案，將 Urchin 設定為可以識別來自其他搜尋引擎的推薦連結︰ <ol type="1"><li>以文字編輯器開啟您的 urchin.js 檔案。 </li><li>向下捲動至以下程式碼片段： </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>您會看到編號為 0-19 的搜尋引擎項目。這些是 Urchin 根據預設追蹤的搜尋引擎。若要新增其他搜尋引擎至清單中，只要按照其他項目的格式加入新項目即可。例如，可以按照下面方式為搜尋引擎 "new" 加入一個項目： </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">_uOsr 的值應為搜尋引擎的名稱，而 _uOkw 的值應為儲存關鍵字的查詢變數。例如，如果使用者搜尋 "motorcycle"，且搜尋結果網址為： </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">_uOkw 的值會是 "q"。 _uOsr 的值會是 "google"。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

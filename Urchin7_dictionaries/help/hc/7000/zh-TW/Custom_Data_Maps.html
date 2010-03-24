@@ -1,0 +1,42 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>自訂資料地圖</strong> <p class="line874">資料地圖可說明一組用來儲存記錄檔案計算所得之資料的表格。 預先定義的表格如下： <ul><li>T - 總計； </li><li>TR - 交易； </li><li>H - 長條圖； </li><li>V - 訪客； </li><li>1-n - 資料地圖檔案中說明的預先定義彙總表格。 </li></ul><p class="line862">這組預設表格儲存在 &lt;Urchin&gt;/lib/reporting/profiletypes/Default/datamap.dm2 檔案中， 並且使用下列格式： <ul><li>表格中每個項目自成一列，且應該包含下列欄位： TABLE AFIELD BFIELD CFIELD DFIELD EFIELD REQUIREMENTS SPECIAL IFIELDS PPFIELDS; </li><li>欄名稱不可包含空格； </li><li>必須以一個或多個空格來分隔各欄； </li><li>必須以 '-' 號代替空白值； </li><li class="gap">TABLE - 表格的獨特識別碼，最大值為 200； </li><li><p class="line862">AFIELD-EFIELD - &lt;Urchin&gt;/lib/reporting/logformats/fieldlist.txt 中的字串欄位； </li><li>REQUIREMENTS - 說明點擊資料中必須包含哪些欄位 (A-E) 才能納入表格，用法與主索引鍵條件約束類似。 </li></ul><p class="line874">舉例來說，假設 A 是表格 T1 的必要欄位，而 A 代表「IP 位址」 (cfield=4)。如果點擊資料並未包含 IP-address，系統就會忽略該次點擊，而不會將它記錄在 T1 中。 不過，如果另一個表格 T2 也參照 "IP-address"，但 REQUIREMENT 並未包含 A，該次點擊就會記錄在 T2 中。 <ul><li>SPECIAL - 用來將彙整表格與內部表格中的記錄 (階段作業、訪客、交易、交易項目路徑) 連結在一起，用法與外部索引鍵類似。 舉例來說，在預設資料地圖檔案中，表格 #1 會將來源、媒介和廣告活動連結至階段作業 (以"「來源」"為主索引鍵)、表格 #2 會將來源、媒介、字詞和內容連結至階段作業 (同樣以"「來源」"為主索引鍵)，而表格 #12 則會將要求詞幹和網頁標題連結至路徑。 建議您不要對含有特殊標記的表格進行變更，也不要在自訂表格中使用標記，因為這麼做會導致外部索引鍵發生衝突。 <ul><li>S1-S11 - 工作階段連結 </li><li>P1 - 路徑連結 </li><li>PARAM - 特殊參數 </li><li>T1-T2 - 交易連結 </li><li>I0 - I1 - 項目連結 </li><li>IPATH - 初始路徑 </li><li>GTHRU - 目標點擊 </li><li>GPATH - 反轉目標路徑 </li><li>CTHRU - 點擊 </li></ul></li><li class="gap">IFIELDS - 指標。 為提高資料擷取速度，表格中會儲存一組預先處理過的指標，也就是說，在處理記錄時，引擎會針對各個維度組合 (或 cfields) 進行所有必要的計算，以避免在擷取資料時執行計算作業。 舉例來說，假設 cfields 是  IP-address，ifields 是 造訪次數。在處理資料時，系統會建立新表格來儲存預先為每個 IP-address 計算出的造訪次數。 如此一來，由表格組成的報表就可以立即擷取資料，而不需要進行任何額外的計算。 以下說明 IFIELDS 欄的有效值：  </li><li class="gap">PPFIELDS - 後置處理欄位 (在 ifields 範圍內)，後置處理欄位中的資料取決於工作階段記錄及其相關路徑、交易和項目記錄。 我們不建議在自訂報表中使用 ppfields。 </li></ul><p class="line874">若要建立自訂資料地圖項目，請按照上方指示建立新的資料列。 為避免破壞資料地圖，請確定每一個新的表格項目都使用獨特的編號。 <p class="line874">資料地圖檔案的資料列範例： <div><table><tbody><tr>  <td><p class="line891"><strong>TABLE</strong> </td>
+  <td><p class="line862"> <strong>AFIELD</strong> </td>
+  <td><p class="line862"> <strong>BFIELD</strong> </td>
+  <td><p class="line862"> <strong>CFIELD</strong> </td>
+  <td><p class="line862"> <strong>DFIELD</strong> </td>
+  <td><p class="line862"> <strong>EFIELD</strong> </td>
+  <td><p class="line862"> <strong>REQUIREMENTS</strong> </td>
+  <td><p class="line862"> <strong>SPECIAL</strong> </td>
+  <td><p class="line862"> <strong>IFIELDS</strong> </td>
+  <td><p class="line862"> <strong>PPFIELDS</strong></td>
+</tr>
+<tr>  <td><p class="line862">1 </td>
+  <td><p class="line862"> 139 </td>
+  <td><p class="line862"> 138 </td>
+  <td><p class="line862"> 137</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> -</td>
+  <td><p class="line862"> A</td>
+  <td><p class="line862"> S1 </td>
+  <td><p class="line862">5,11,15,19,24,25,26,27,28,29,30,31 </td>
+  <td><p class="line862"> -</td>
+</tr>
+<tr>  <td><p class="line862"> 表格編號 </td>
+  <td><p class="line862"> 待使用記錄中的欄位 A </td>
+  <td><p class="line862"> 待使用記錄中的欄位 B </td>
+  <td><p class="line862"> 待使用記錄中的欄位 C </td>
+  <td><p class="line862"> 不使用欄位 D </td>
+  <td><p class="line862"> 不使用欄位 E </td>
+  <td><p class="line862"> 只有欄位 A 必須包含資料 </td>
+  <td><p class="line862"> 工作階段連結 1 </td>
+  <td><p class="line862"> 計算欄位 </td>
+  <td><p class="line862"> 無後置處理欄位 </td>
+</tr>
+</tbody></table></div><p class="line874">適用於 IFIELDS 欄的計算欄位： <ol type="1"><li>Hits </li><li>Validhits </li><li>Errorhits </li><li>Bytes </li><li>Pages </li><li>Nonpages </li><li>Entrancepages </li><li>Exitpages </li><li>Bouncepages </li><li>Pagetime </li><li>Visits </li><li>Visitors </li><li>Newvisitors </li><li>Priorvisitors </li><li>Transactions </li><li>Customers </li><li>Newcustomers </li><li>Priorcustomers </li><li>Revenue </li><li>Tax </li><li>Shipping </li><li>Items </li><li>Itemrevenue </li><li>Responses </li><li>Impressions </li><li>Clicks </li><li>Cost </li><li>Goals1 </li><li>Goals2 </li><li>Goals3 </li><li>Goals4 </li><li>Goalstarts1 </li><li>Goalstarts2 </li><li>Goalstarts3 </li><li>Goalstarts4 </li><li>Score  </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

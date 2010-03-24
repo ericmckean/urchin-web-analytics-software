@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何以一個設定檔追蹤網站的所有子網域？</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 軟體的授權顧問</em> <a href="ivantageLimited.html">ivantage Limited</a><em>所撰寫</em> </li></ul><p class="line874">您可以追蹤在相同設定檔內的子網域，如同追蹤網域一般。若要這麼做，您必須在子網域每個網頁的追蹤程式碼中加入一行程式碼。以下的指示假定此設定檔是以主要網域建立，如同列出的網站 (例如 example.com) <ol type="1"><li>請將下列程式碼 (粗體顯示) 加入您子網域和主要網域所有網頁的追蹤程式碼中： </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">此行應該參照主要網域 (example.com)。 </li></ul><p class="line874">請注意，雖然此項變更可讓您以一個設定檔追蹤數個子網域，但報告可能無法區分來自 www.example.com 和 help.example.com 的網頁。例如，在您的 [熱門內容] 報告中，可能會有 www.example.com/index.html 和help.example.com/more.html 的點擊數，但報告會顯示下列資訊： <pre>   /index.html
+   /more.html
+</pre><p class="line874">如果您想要辨別點擊是來自哪些子網域，可以使用下列設定來為設定檔建立 [進階] 篩選器： <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">加上這個篩選器後，先前的範例就會顯示附加的子網域： <pre>   www.example.com/index.html
+   help.example.com/more.html
+</pre><p class="line874">請注意：此篩選器需要您網站的主機名稱才能運作，包括寫入您網頁存取記錄檔中的子網域。如果您的網頁存取記錄檔沒有包含主機名稱，Urchin 6 報告將無法記錄差異，例如兩個網域上的 index.html： <pre> www.example.com/index.html
+ help.example.com/more.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

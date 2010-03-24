@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong> 如何将内部访问者从网站报告中删除？</strong> <p class="line867"><strong>概述</strong> <p class="line874">要仅包含来自特定 IP 地址的项目、排除内部监控系统的 IP 地址等，最常见的做法是将 IP 地址过滤器与配置文件配合使用。Urchin 可让您轻松完成这项工作。但是，请务必使用正确的 '过滤区域' 规范设置 IP 地址过滤器。 <p class="line867"><strong>步骤</strong> <p class="line874">要配置适当的内部访问量过滤器，最简单的方法是按照下列步骤操作： <ul><li><p class="line862">在 Urchin 管理界面中，进入"配置"-&gt;"Urchin 配置文件"-&gt;"过滤器管理器" </li><li>点击"添加"按钮，创建新的过滤器 </li><li><p class="line862">从"=&gt; 选择示范过滤器"下拉列表中选择"滤除内部访问量" </li><li>以想要滤除的 IP 地址替换"过滤模式"框中的示范 IP 地址。请不要忘记在 IP 地址中的每一点之前加上反斜线（"\"）字符！ </li><li>点击"完成"，然后在下一个窗口中点击"更多选项" </li><li>在"可用配置文件"框中，选择所有希望应用过滤器的配置文件，然后点击向右箭头，将它们发送到"应用于"框中。 </li><li>点击"更新"，将过滤器应用于选定的配置文件。 </li></ul><p class="line867"><strong>其他注意事项</strong> <p class="line862">请注意，Urchin 过滤模式采用 POSIX 正则表达式。因此，请务必对 IP 地址规范中的 '.' 字符进行转义，以避免 Urchin 将它们解译为正则表达式的元字符。例如，要过滤 IP 地址 '172.16.1.1'，可将过滤模式指定为 '172\.16\.1\.1'。再举一个例子，要过滤 IP 地址范围 '192.168.<em>xxx.xxx<strong>，可将过滤字段指定为 '192\.168\.'。</em></strong>以下是其他一些示例：<strong></strong> <p class="line874">以管道符号来分隔多个 IP 地址，例如 192\.168\.12\.32$|10\.10\.1\.23$|63\.212\.171\.5$；请注意，使用 $ 表示在最后显示的数字之后没有任何其他数字。因此，要同时包含 63.212.171.5 和 63.212.171.53，可将过滤器写为 63\.212\.171\.5；但是，要只匹配 63\.212\.171\.5，则应该将过滤模式写为 63\.212\.171\.5$ <p class="line874">可使用单个字符串来表示一个 IP 地址范围，例如，可将从 192.168.10.10 到 192.168.10.50 这一范围写为 192.168.10.[1-5][0-9]$ <p class="line862">匹配行首：过滤模式 63\.212\.171\.5 也会匹配 163\.212\.171\.5。如果只希望包含以特定数字开头的 IP，请使用 '匹配字符串开头的表达式'<sup>'，例如 </sup>63\.212\.171\.5$ <p class="line867"><strong>完整正则表达式列表</strong> <pre> *'''通配符'''     '''含义'''
+ *'''.'''       匹配任何单个字符
+ *'''*'''       匹配先前的 0 个或多个项目
+ *'''+'''       匹配先前的 1 个或多个项目
+ *'''?'''       匹配先前的 0 个或 1 个项目
+ *'''()'''      将括号中的内容记忆为项目
+ *'''[]'''      匹配此列表中的 1 个项目
+ *'''-'''       在列表中创建范围
+ *'''|'''       或
+ *'''^'''       匹配到字段开头处
+ *'''$'''       匹配到字段结尾处
+ *'''\'''       作为以上所有文字字符的转义字符
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

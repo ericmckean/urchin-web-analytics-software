@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Hoe kan ik Urchin zodanig configureren dat bepaalde zoekwoorden of URL's worden beschouwd als rechtstreekse verwijzingen in plaats van zoekwoorden?</strong> <p class="line874">U kunt bepaalde zoekwoorden of URL's behandelen als rechtstreekse verwijzingen in plaats van zoekwoorden. Hiervoor kunt u uw urchin.js-bestand zodanig configureren dat Urchin deze items als rechtstreekse verwijzingen in uw rapporten aangeeft. <ol type="1"><li>Open het bestand urchin.js in een teksteditor. </li><li>Ga omlaag naar de volgende kop: </li></ol><p class="line867"><pre>          //-- Auto/Organic Keywords to Ignore
+</pre><ol type="3"><li>Voeg een nieuw organisch zoekwoord voor uitsluiting toe aan het eind van de lijst in het formulier: </li></ol><p class="line867"><pre>          _uOno[#]="keyword";
+</pre><ul><li style="list-style-type:none">..zoals weergegeven in dit voorbeeld: </li></ul><p class="line867"><pre>        //-- Auto/Organic Keywords to Ignore
+        var _uOno=new Array();
+        _uOno[0]="urchin";
+        _uOno[1]="urchin.com";
+        _uOno[2]="www.urchin.com";
+</pre><p class="line867"><p class="line867"><p class="line867"><p class="line867"><p class="line867"><p class="line874">#format wiki #language en <p class="line867"><strong>Waarom treedt er een browsertime-out op tijdens het weergeven van mijn rapporten?</strong> <p class="line874">Er treedt een time-out op voor de toepassing die zoekt in de Urchin-database en de afzonderlijke rapporten genereert wanneer de gegevens niet binnen 45 seconden worden geretourneerd. Voor een grote database is 45 seconden wellicht niet genoeg om alle gewenste rapportgegevens op te halen. In dat geval treedt er een toepassingstime-out op en wordt er een foutmelding weergegeven. <p class="line874">U kunt de time-outwaarde verhogen als u de vereiste toegang heeft tot de server waarop Urchin wordt uitgevoerd. <p class="line867"><strong>De toepassingstime-out verhogen</strong> <ul><li>Maak verbinding met de Urchin-server via een opdrachtshell </li><li>Blader naar de directory .../[urchin-install-dir]/etc/ </li><li>Open het bestand 'session.conf' in een teksteditor. </li><li>Verhoog de waarde van 'APPLICATION_TIMEOUT:' (in seconden) </li><li>Sla het bestand op. De wijzigingen worden onmiddellijk bijgewerkt </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

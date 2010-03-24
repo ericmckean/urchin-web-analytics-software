@@ -1,0 +1,557 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>"过滤区域"可提供哪些信息？</strong> <p class="line867"><strong>概述</strong> <p class="line874">在处理过程中，读取了日志文件中的点击信息或条目之后，该点击信息将分解为 '原始字段'。字段通常由空格、制表符或逗号分隔。日志格式决定这些原始字段的内部分配方式。读取原始字段之后，Urchin 会根据 '原始字段' 计算多个 '自动字段'。大多数报告都使用这些自动字段进行更新。 <p class="line874">"原始字段"和"自动字段"都可以应用过滤器。下表列出了所有可用的字段及其用途。 <p class="line867"><strong>完整的字段列表</strong> <div><table class="zeroBorder" style="border-collapse: collapse; ; height: 2764px; width: 693px"><tbody><tr>  <td class="xl64" id="s15m" style="text-align: center; ; height: 20px; width: 184px"><p class="line891"><strong>字段</strong> </td>
+  <td class="xl64" id="s:bo" style="text-align: center; ; width: 52px"><p class="line891"><strong>类型</strong> </td>
+  <td class="xl64" id="v33m" style="text-align: center; ; width: 314px"><p class="line891"><strong>作用</strong> </td>
+</tr>
+<tr>  <td class="xl66" id="lqwt" style="width: 184px; height: 20px"><p class="line862">apache_time </td>
+  <td class="xl65" id="hdff" style="width: 52px"><p class="line862">(RAW) </td>
+  <td class="xl65" id="topd" style="width: 314px"><p class="line862">点击信息字段的 Apache 原始日期和时间。</td>
+</tr>
+<tr>  <td class="xl66" id="wuco" style="width: 184px; height: 20px"><p class="line862">browser_base </td>
+  <td class="xl65" id="o2xp" style="width: 52px"><p class="line862">(AUTO) </td>
+  <td class="xl65" id="lele" style="width: 314px"><p class="line862">浏览器名称（如 Netscape）。</td>
+</tr>
+<tr>  <td class="xl66" id="m-ql" style="width: 184px; height: 20px"><p class="line862">browser_version </td>
+  <td class="xl65" id="m6rl" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="exkz" style="width: 314px"><p class="line862">浏览器版本。</td>
+</tr>
+<tr>  <td class="xl66" id="v5vj" style="width: 184px; height: 20px"><p class="line862">c_host </td>
+  <td class="xl65" id="nt2t" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="bdi6" style="width: 314px"><p class="line862">客户端主机名（如果需要，可转换为 c_ip）。</td>
+</tr>
+<tr>  <td class="xl66" id="mv5d" style="width: 184px; height: 20px"><p class="line862">c_ip </td>
+  <td class="xl65" id="zj_u" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="mqip" style="width: 314px"><p class="line862">客户端 IP 地址。</td>
+</tr>
+<tr>  <td class="xl66" id="ctji" style="width: 184px; height: 20px"><p class="line862">client_hostname </td>
+  <td class="xl65" id="o2xp" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="sbur" style="width: 314px"><p class="line862">客户端主机名。</td>
+</tr>
+<tr>  <td class="xl66" id="suo4" style="width: 184px; height: 20px"><p class="line862">client_ipaddress </td>
+  <td class="xl65" id="m6rl" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="g-8v" style="width: 314px"><p class="line862">客户端 IP 地址。</td>
+</tr>
+<tr>  <td class="xl66" id="awm9" style="width: 184px; height: 20px"><p class="line862">cs_cookie </td>
+  <td class="xl65" id="pz-t" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="d_2x" style="width: 314px"><p class="line862">浏览器发送的 Cookie。</td>
+</tr>
+<tr>  <td class="xl66" id="nm.8" style="width: 184px; height: 20px"><p class="line862">cs_host </td>
+  <td class="xl65" id="s2vp" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="gevc" style="width: 314px"><p class="line862">客户端请求的虚拟主机。</td>
+</tr>
+<tr>  <td class="xl66" id="b9gz" style="width: 184px; height: 20px"><p class="line862">cs_method </td>
+  <td class="xl65" id="f8d:" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="yi14" style="width: 314px"><p class="line862">IIS 原始请求方法字段。</td>
+</tr>
+<tr>  <td class="xl66" id="wvmc" style="width: 184px; height: 20px"><p class="line862">cs_referer </td>
+  <td class="xl65" id="ux65" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="abgn" style="width: 314px"><p class="line862">原始推介链接信息（可为内部信息）。</td>
+</tr>
+<tr>  <td class="xl66" id="wvmc" style="width: 184px; height: 20px"><p class="line862">cs_request </td>
+  <td class="xl65" id="ux65" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="cn_y" style="width: 314px"><p class="line862">IIS 原始请求 URI</td>
+</tr>
+<tr>  <td class="xl66" id="u-ht" style="width: 184px; height: 20px"><p class="line862">cs_uriquery </td>
+  <td class="xl65" id="zpiz" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="f062" style="width: 314px"><p class="line862">IIS 原始请求查询字段。</td>
+</tr>
+<tr>  <td class="xl66" id="wntj" style="width: 184px; height: 20px"><p class="line862">cs_uristem </td>
+  <td class="xl65" id="sj4s" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="gy5h" style="width: 314px"><p class="line862">IIS 原始请求主干字段。</td>
+</tr>
+<tr>  <td class="xl66" id="v5mu" style="width: 184px; height: 20px"><p class="line862">cs_useragent </td>
+  <td class="xl65" id="srd4" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="rxvc" style="width: 314px"><p class="line862">浏览器用户代理信息。</td>
+</tr>
+<tr>  <td class="xl66" id="ps93" style="width: 184px; height: 20px"><p class="line862">cs_username </td>
+  <td class="xl65" id="jlxe" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="c1jn" style="width: 314px"><p class="line862">客户端用户名（如果有）。</td>
+</tr>
+<tr>  <td class="xl66" id="u9fs" style="width: 184px; height: 20px"><p class="line862">cs_version </td>
+  <td class="xl65" id="bs63" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="kb9b" style="width: 314px"><p class="line862">IIS 原始 HTTP 版本。</td>
+</tr>
+<tr>  <td class="xl66" id="laqh" style="width: 184px; height: 20px"><p class="line862">custom_date </td>
+  <td class="xl65" id="t67x" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="i1ef" style="width: 314px"><p class="line862">用于自定义日志中的日期戳。</td>
+</tr>
+<tr>  <td class="xl66" id="jg.g" style="width: 184px; height: 20px"><p class="line862">custom_time </td>
+  <td class="xl65" id="nr84" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="d5.m" style="width: 314px"><p class="line862">用于自定义日志中的时间戳。</td>
+</tr>
+<tr>  <td class="xl66" id="y6.n" style="width: 184px; height: 20px"><p class="line862">domain_complete </td>
+  <td class="xl65" id="ppad" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="btz_" style="width: 314px"><p class="line862">完整域（如 urchin.com）。</td>
+</tr>
+<tr>  <td class="xl66" id="e540" style="width: 184px; height: 20px"><p class="line862">domain_primary </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="xlu-" style="width: 314px"><p class="line862">一级域（如 com）。</td>
+</tr>
+<tr>  <td class="xl66" id="qzmi" style="width: 184px; height: 20px"><p class="line862">ecommerce_affiliation </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="i6qg" style="width: 314px"><p class="line862">电子商务交易 ID。</td>
+</tr>
+<tr>  <td class="xl66" id="p3ad" style="width: 184px; height: 20px"><p class="line862">ecommerce_bill_city </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="o1gi" style="width: 314px"><p class="line862">电子商务交易的结算城市。</td>
+</tr>
+<tr>  <td class="xl66" id="nhx1" style="width: 184px; height: 20px"><p class="line862">ecommerce_bill_country </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="k_0h" style="width: 314px"><p class="line862">电子商务交易的结算国家/地区。</td>
+</tr>
+<tr>  <td class="xl66" id="fjo." style="width: 184px; height: 20px"><p class="line862">ecommerce_bill_region </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="d3_j" style="width: 314px"><p class="line862">电子商务交易的结算区域（州/省）。</td>
+</tr>
+<tr>  <td class="xl66" id="ozx3" style="width: 184px; height: 20px"><p class="line862">ecommerce_orderid </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="wm9f" style="width: 314px"><p class="line862">电子商务订单 ID 号。</td>
+</tr>
+<tr>  <td class="xl66" id="r6gq" style="width: 184px; height: 20px"><p class="line862">ecommerce_product_code </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO) </td>
+  <td class="xl65" id="ezvt" style="width: 314px"><p class="line862">电子商务产品代码。</td>
+</tr>
+<tr>  <td class="xl66" id="d4qb" style="width: 184px; height: 20px"><p class="line862">ecommerce_product_name </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="w875" style="width: 314px"><p class="line862">电子商务产品名称。</td>
+</tr>
+<tr>  <td class="xl66" id="kslp" style="width: 184px; height: 20px"><p class="line862">ecommerce_quantity </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="dgz0" style="width: 314px"><p class="line862">电子商务产品数量。</td>
+</tr>
+<tr>  <td class="xl66" id="a45h" style="width: 184px; height: 20px"><p class="line862">ecommerce_shipping </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="lgd6" style="width: 314px"><p class="line862">电子商务运费金额。</td>
+</tr>
+<tr>  <td class="xl66" id="o01m" style="width: 184px; height: 20px"><p class="line862">ecommerce_tax </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="vj7w" style="width: 314px"><p class="line862">电子商务税额。</td>
+</tr>
+<tr>  <td class="xl66" id="x8.9" style="width: 184px; height: 20px"><p class="line862">ecommerce_total </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="cl0f" style="width: 314px"><p class="line862">电子商务交易金额。</td>
+</tr>
+<tr>  <td class="xl66" id="d9b5" style="width: 184px; height: 20px"><p class="line862">ecommerce_unit_price </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="a024" style="width: 314px"><p class="line862">电子商务产品单价。</td>
+</tr>
+<tr>  <td class="xl66" id="ap87" style="width: 184px; height: 20px"><p class="line862">ecommerce_variation </td>
+  <td class="xl65" id="pmca" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="a42v" style="width: 314px"><p class="line862">电子商务产品类别。</td>
+</tr>
+<tr>  <td class="xl66" id="mef0" style="width: 184px; height: 20px"><p class="line862">elf_billcity </td>
+  <td class="xl65" id="a22z" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="vfqb" style="width: 314px"><p class="line862">电子商务客户城市。</td>
+</tr>
+<tr>  <td class="xl66" id="hod5" style="width: 184px; height: 20px"><p class="line862">elf_billcountry </td>
+  <td class="xl65" id="dd.6" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="m85b" style="width: 314px"><p class="line862">电子商务客户国家/地区。</td>
+</tr>
+<tr>  <td class="xl66" id="opl2" style="width: 184px; height: 20px"><p class="line862">elf_billstate </td>
+  <td class="xl65" id="xli7" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="si7y" style="width: 314px"><p class="line862">电子商务客户状态。</td>
+</tr>
+<tr>  <td class="xl66" id="y1ev" style="width: 184px; height: 20px"><p class="line862">elf_billzip </td>
+  <td class="xl65" id="ogo0" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="e2-f" style="width: 314px"><p class="line862">电子商务客户邮编。</td>
+</tr>
+<tr>  <td class="xl66" id="soci" style="width: 184px; height: 20px"><p class="line862">elf_orderid </td>
+  <td class="xl65" id="ebfm" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="lrz4" style="width: 314px"><p class="line862">电子商务订单 ID 号。</td>
+</tr>
+<tr>  <td class="xl66" id="z4tf" style="width: 184px; height: 20px"><p class="line862">elf_price </td>
+  <td class="xl65" id="lbqk" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="s9qd" style="width: 314px"><p class="line862">电子商务产品价格。</td>
+</tr>
+<tr>  <td class="xl66" id="gl8:" style="width: 184px; height: 20px"><p class="line862">elf_productcode </td>
+  <td class="xl65" id="rkzg" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="xxr:" style="width: 314px"><p class="line862">电子商务产品代码。</td>
+</tr>
+<tr>  <td class="xl66" id="f_f." style="width: 184px; height: 20px"><p class="line862">elf_productname </td>
+  <td class="xl65" id="m:mw" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="u.so" style="width: 314px"><p class="line862">电子商务产品名称。</td>
+</tr>
+<tr>  <td class="xl66" id="ppz." style="width: 184px; height: 20px"><p class="line862">elf_quantity </td>
+  <td class="xl65" id="f.iv" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="xozs" style="width: 314px"><p class="line862">电子商务产品数量。</td>
+</tr>
+<tr>  <td class="xl66" id="c11z" style="width: 184px; height: 20px"><p class="line862">elf_region </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="yfy2" style="width: 314px"><p class="line862">电子商务区域细目信息。</td>
+</tr>
+<tr>  <td class="xl66" id="kmzq" style="width: 184px; height: 20px"><p class="line862">elf_sessionid </td>
+  <td class="xl65" id="wi_r" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="n49y" style="width: 314px"><p class="line862">电子商务会话 ID。</td>
+</tr>
+<tr>  <td class="xl66" id="x.:3" style="width: 184px; height: 20px"><p class="line862">elf_shipping </td>
+  <td class="xl65" id="w5.v" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="l.md" style="width: 314px"><p class="line862">电子商务运费金额。</td>
+</tr>
+<tr>  <td class="xl66" id="y:uj" style="width: 184px; height: 20px"><p class="line862">elf_store </td>
+  <td class="xl65" id="vxad" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="celq" style="width: 314px"><p class="line862">电子商务商店名称。</td>
+</tr>
+<tr>  <td class="xl66" id="o8d-" style="width: 184px; height: 20px"><p class="line862">elf_tax </td>
+  <td class="xl65" id="zb2v" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="ze.e" style="width: 314px"><p class="line862">电子商务税额。</td>
+</tr>
+<tr>  <td class="xl66" id="rqi:" style="width: 184px; height: 20px"><p class="line862">elf_total </td>
+  <td class="xl65" id="nm6d" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="h..n" style="width: 314px"><p class="line862">电子商务交易金额。</td>
+</tr>
+<tr>  <td class="xl66" id="g9ul" style="width: 184px; height: 20px"><p class="line862">elf_unit_price </td>
+  <td class="xl65" id="nm6d" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="qmdo" style="width: 314px"><p class="line862">电子商务产品单价。</td>
+</tr>
+<tr>  <td class="xl66" id="e3t7" style="width: 184px; height: 20px"><p class="line862">elf_upsold </td>
+  <td class="xl65" id="mcmn" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="sddk" style="width: 314px"><p class="line862">电子商务促销变量。</td>
+</tr>
+<tr>  <td class="xl66" id="d6qo" style="width: 184px; height: 20px"><p class="line862">elf_variation </td>
+  <td class="xl65" id="lj5u" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="iha-" style="width: 314px"><p class="line862">电子商务产品类别。</td>
+</tr>
+<tr>  <td class="xl66" id="xd4v" style="width: 184px; height: 20px"><p class="line862">geo_country </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="j:en" style="width: 314px"><p class="line862">访问者国家/地区</td>
+</tr>
+<tr>  <td class="xl66" id="xd4v" style="width: 184px; height: 20px"><p class="line862">geo_city </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="j:en" style="width: 314px"><p class="line862">访问者城市</td>
+</tr>
+<tr>  <td class="xl66" id="xd4v" style="width: 184px; height: 20px"><p class="line862">geo_connection_speed </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="j:en" style="width: 314px"><p class="line862">访问者连接速度</td>
+</tr>
+<tr>  <td class="xl66" id="j.dv" style="width: 184px; height: 20px"><p class="line862">geo_isp </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="d0t_" style="width: 314px"><p class="line862">访问者 ISP</td>
+</tr>
+<tr>  <td class="xl66" id="t1rd" style="width: 184px; height: 20px"><p class="line862">geo_latitude </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="z2wr" style="width: 314px"><p class="line862">访问者纬度</td>
+</tr>
+<tr>  <td class="xl66" id="cgzv" style="width: 184px; height: 20px"><p class="line862">geo_longitude </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="tqbq" style="width: 314px"><p class="line862">访问者经度</td>
+</tr>
+<tr>  <td class="xl66" id="it_2" style="width: 184px; height: 20px"><p class="line862">geo_organization </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="vgn6" style="width: 314px"><p class="line862">访问者城市</td>
+</tr>
+<tr>  <td class="xl66" id="axby" style="width: 184px; height: 20px"><p class="line862">geo_region </td>
+  <td class="xl65" id="n8pk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="c:sh" style="width: 314px"><p class="line862">访问者组织机构</td>
+</tr>
+<tr>  <td class="xl66" id="s:bu" style="width: 184px; height: 20px"><p class="line862">iis_date </td>
+  <td class="xl65" id="bry8" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="ak7g" style="width: 314px"><p class="line862">点击信息字段的 IIS 原始日期。</td>
+</tr>
+<tr>  <td class="xl66" id="d52y" style="width: 184px; height: 20px"><p class="line862">iis_time </td>
+  <td class="xl65" id="svj." style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="ucz5" style="width: 314px"><p class="line862">点击信息字段的 IIS 原始时间。</td>
+</tr>
+<tr>  <td class="xl66" id="d52y" style="width: 184px; height: 20px"><p class="line862">organic_source </td>
+  <td class="xl65" id="svj." style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="ucz5" style="width: 314px"><p class="line862">随机来源</td>
+</tr>
+<tr>  <td class="xl66" id="d52y" style="width: 184px; height: 20px"><p class="line862">log_source_name </td>
+  <td class="xl65" id="svj." style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="ucz5" style="width: 314px"><p class="line862">日志源名称</td>
+</tr>
+<tr>  <td class="xl66" id="vh1u" style="width: 184px; height: 20px"><p class="line862">platform_base </td>
+  <td class="xl65" id="t_51" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="p410" style="width: 314px"><p class="line862">平台（如 Windows）。</td>
+</tr>
+<tr>  <td class="xl66" id="i31e" style="width: 184px; height: 20px"><p class="line862">platform_version </td>
+  <td class="xl65" id="z4jf" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="z6yv" style="width: 314px"><p class="line862">平台版本。</td>
+</tr>
+<tr>  <td class="xl66" id="jrn2" style="width: 184px; height: 20px"><p class="line862">referral_anchor </td>
+  <td class="xl65" id="abn6" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="ytve" style="width: 314px"><p class="line862"># 标记后的推介链接信息。</td>
+</tr>
+<tr>  <td class="xl66" id="h4lv" style="width: 184px; height: 20px"><p class="line862">referral_directory </td>
+  <td class="xl65" id="vrdd" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="fzbk" style="width: 314px"><p class="line862">包括文件名在内的推介链接目录。</td>
+</tr>
+<tr>  <td class="xl66" id="zyvy" style="width: 184px; height: 20px"><p class="line862">referral_filename </td>
+  <td class="xl65" id="gs9a" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="m6k7" style="width: 314px"><p class="line862">不含目录的推介链接文件名。</td>
+</tr>
+<tr>  <td class="xl66" id="q9v_" style="width: 184px; height: 20px"><p class="line862">referral_host </td>
+  <td class="xl65" id="tru2" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="nywt" style="width: 314px"><p class="line862">推介链接完整主机名。</td>
+</tr>
+<tr>  <td class="xl66" id="wczr" style="width: 184px; height: 20px"><p class="line862">referral_keywords </td>
+  <td class="xl65" id="kkpw" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="ld:i" style="width: 314px"><p class="line862">推介链接搜索引擎关键字。</td>
+</tr>
+<tr>  <td class="xl66" id="of1m" style="width: 184px; height: 20px"><p class="line862">referral_mime </td>
+  <td class="xl65" id="jqdv" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="seic" style="width: 314px"><p class="line862">推介链接 MIME 类型（文件扩展名）。</td>
+</tr>
+<tr>  <td class="xl66" id="izxm" style="width: 184px; height: 20px"><p class="line862">referral_port </td>
+  <td class="xl65" id="m3u1" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="gw-c" style="width: 314px"><p class="line862">推介链接端口号（如果有）。</td>
+</tr>
+<tr>  <td class="xl66" id="u.yh" style="width: 184px; height: 20px"><p class="line862">referral_protocol </td>
+  <td class="xl65" id="yj1r" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="ggo1" style="width: 314px"><p class="line862">推介链接协议（http、https 等）。</td>
+</tr>
+<tr>  <td class="xl66" id="c8if" style="width: 184px; height: 20px"><p class="line862">referral_query </td>
+  <td class="xl65" id="ebnd" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="cz:j" style="width: 314px"><p class="line862">仅推介链接查询信息。</td>
+</tr>
+<tr>  <td class="xl66" id="l166" style="width: 184px; height: 20px"><p class="line862">referral_stem </td>
+  <td class="xl65" id="iz5v" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="a575" style="width: 314px"><p class="line862">不含查询信息的推介链接网址主干。</td>
+</tr>
+<tr>  <td class="xl66" id="bdtx" style="width: 184px; height: 20px"><p class="line862">referral_uri </td>
+  <td class="xl65" id="fcxj" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="u-bu" style="width: 314px"><p class="line862">推介链接的完整网址。（不含主机）</td>
+</tr>
+<tr>  <td class="xl66" id="pim1" style="width: 184px; height: 20px"><p class="line862">referral_url </td>
+  <td class="xl65" id="g9i4" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="dvf2" style="width: 314px"><p class="line862">推介链接的完整网址。（包含主机）</td>
+</tr>
+<tr>  <td class="xl66" id="n-q4" style="width: 184px; height: 20px"><p class="line862">request_anchor </td>
+  <td class="xl65" id="o0bn" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="asfq" style="width: 314px"><p class="line862"># 标记之后的请求信息。</td>
+</tr>
+<tr>  <td class="xl66" id="efvj" style="width: 184px; height: 20px"><p class="line862">request_directory </td>
+  <td class="xl65" id="idal" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="en8s" style="width: 314px"><p class="line862">不含文件名的请求目录。</td>
+</tr>
+<tr>  <td class="xl66" id="c4ne" style="width: 184px; height: 20px"><p class="line862">request_download </td>
+  <td class="xl65" id="d6bf" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="smo4" style="width: 314px"><p class="line862">下载请求。</td>
+</tr>
+<tr>  <td class="xl66" id="hcns" style="width: 184px; height: 20px"><p class="line862">request_filename </td>
+  <td class="xl65" id="sak0" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="d_e0" style="width: 314px"><p class="line862">不含目录的请求文件名。</td>
+</tr>
+<tr>  <td class="xl66" id="hcns" style="width: 184px; height: 20px"><p class="line862">request_form </td>
+  <td class="xl65" id="sak0" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="bymn" style="width: 314px"><p class="line862">请求的 "已发布表单". </td>
+</tr>
+<tr>  <td class="xl66" id="zor1" style="width: 184px; height: 20px"><p class="line862">request_host </td>
+  <td class="xl65" id="sak0" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="gmmc" style="width: 314px"><p class="line862">请求主机名（如果有）。</td>
+</tr>
+<tr>  <td class="xl66" id="g7s1" style="width: 184px; height: 20px"><p class="line862">request_method </td>
+  <td class="xl65" id="esku" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="gvyf" style="width: 314px"><p class="line862">请求方法（GET、POST 等）。</td>
+</tr>
+<tr>  <td class="xl66" id="de0i" style="width: 184px; height: 20px"><p class="line862">request_mime </td>
+  <td class="xl65" id="io1a" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="v9vm" style="width: 314px"><p class="line862">请求 MIME 类型（文件扩展名）。</td>
+</tr>
+<tr>  <td class="xl66" id="hsru" style="width: 184px; height: 20px"><p class="line862">request_origfilepath </td>
+  <td class="xl65" id="a.3a" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="h8as" style="width: 314px"><p class="line862">请求原始网址主干（如果使用 UTM）。</td>
+</tr>
+<tr>  <td class="xl66" id="w3z5" style="width: 184px; height: 20px"><p class="line862">request_origmime </td>
+  <td class="xl65" id="kuo1" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="mc81" style="width: 314px"><p class="line862">请求原始 MIME 类型（如果使用 UTM）</td>
+</tr>
+<tr>  <td class="xl66" id="qlqg" style="width: 184px; height: 20px"><p class="line862">request_port </td>
+  <td class="xl65" id="gqih" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="bwjq" style="width: 314px"><p class="line862">请求端口号（如果有）。</td>
+</tr>
+<tr>  <td class="xl66" id="m:tt" style="width: 184px; height: 20px"><p class="line862">request_protocol </td>
+  <td class="xl65" id="cce9" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="o2.q" style="width: 314px"><p class="line862">请求协议（HTTP 等）。</td>
+</tr>
+<tr>  <td class="xl66" id="rex8" style="width: 184px; height: 20px"><p class="line862">request_query </td>
+  <td class="xl65" id="b_zc" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="xx0j" style="width: 314px"><p class="line862">请求查询信息（如问号"?"之后的信息）</td>
+</tr>
+<tr>  <td class="xl66" id="f2j7" style="width: 184px; height: 20px"><p class="line862">request_stem </td>
+  <td class="xl65" id="ypdi" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="p6.q" style="width: 314px"><p class="line862">不带查询的请求网址。</td>
+</tr>
+<tr>  <td class="xl66" id="zyab" style="width: 184px; height: 20px"><p class="line862">request_uri </td>
+  <td class="xl65" id="mbwn" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="eai7" style="width: 314px"><p class="line862">带查询的请求网址。</td>
+</tr>
+<tr>  <td class="xl66" id="z97y" style="width: 184px; height: 20px"><p class="line862">request_url </td>
+  <td class="xl65" id="rgou" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="n.p4" style="width: 314px"><p class="line862">完整的请求网址（如果提供）。</td>
+</tr>
+<tr>  <td class="xl66" id="ve2." style="width: 184px; height: 20px"><p class="line862">request_version </td>
+  <td class="xl65" id="sym_" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="cpn_" style="width: 314px"><p class="line862">请求协议版本。</td>
+</tr>
+<tr>  <td class="xl66" id="zz.0" style="width: 184px; height: 20px"><p class="line862">robot_agent </td>
+  <td class="xl65" id="sym_" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="xx6t" style="width: 314px"><p class="line862">漫游器（抓取工具）请求。</td>
+</tr>
+<tr>  <td class="xl66" id="zb3a" style="width: 184px; height: 20px"><p class="line862">s_computername </td>
+  <td class="xl65" id="eh_i" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="no6b" style="width: 314px"><p class="line862">IIS 计算机名。</td>
+</tr>
+<tr>  <td class="xl66" id="ztht" style="width: 184px; height: 20px"><p class="line862">s_ip </td>
+  <td class="xl65" id="mavk" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="zlht" style="width: 314px"><p class="line862">IIS 服务器 IP 地址。</td>
+</tr>
+<tr>  <td class="xl66" id="ke.9" style="width: 184px; height: 20px"><p class="line862">s_port </td>
+  <td class="xl65" id="ag.e" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="b4ka" style="width: 314px"><p class="line862">服务器端口号。</td>
+</tr>
+<tr>  <td class="xl66" id="lcki" style="width: 184px; height: 20px"><p class="line862">s_sitename </td>
+  <td class="xl65" id="tv90" style="width: 52px"><p class="line862">(RAW)) </td>
+  <td class="xl65" id="kury" style="width: 314px"><p class="line862">IIS 服务器站点名称。</td>
+</tr>
+<tr>  <td class="xl66" id="okwm" style="width: 184px; height: 20px"><p class="line862">sc_bytes </td>
+  <td class="xl65" id="tq8q" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="o1ou" style="width: 314px"><p class="line862">为请求传输的字节数。</td>
+</tr>
+<tr>  <td class="xl66" id="b6mh" style="width: 184px; height: 20px"><p class="line862">sc_status </td>
+  <td class="xl65" id="dt6j" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="wz-o" style="width: 314px"><p class="line862">从服务器返回的状态代码。</td>
+</tr>
+<tr>  <td class="xl66" id="d_p:" style="width: 184px; height: 20px"><p class="line862">sid </td>
+  <td class="xl65" id="gz.k" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="rfsp" style="width: 314px"><p class="line862">会话 ID（如果有）。</td>
+</tr>
+<tr>  <td class="xl66" id="d_p:" style="width: 184px; height: 20px"><p class="line862">user_defined_variable </td>
+  <td class="xl65" id="gz.k" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="rfsp" style="width: 314px"><p class="line862">从 utm_cookiev 变量中提取的用户定义的变量。</td>
+</tr>
+<tr>  <td class="xl66" id="d_p:" style="width: 184px; height: 20px"><p class="line862">username </td>
+  <td class="xl65" id="gz.k" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="rfsp" style="width: 314px"><p class="line862">客户端用户名（如果有）。</td>
+</tr>
+<tr>  <td class="xl66" id="d_p:" style="width: 184px; height: 20px"><p class="line862">utm_campaign </td>
+  <td class="xl65" id="gz.k" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="rfsp" style="width: 314px"><p class="line862">UTM 广告系列名称。</td>
+</tr>
+<tr>  <td class="xl66" id="n:ql" style="width: 184px; height: 20px"><p class="line862">utm_campaign_clicks </td>
+  <td class="xl65" id="uxm7" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="qqaf" style="width: 314px"><p class="line862">UTM 广告系列点击次数。</td>
+</tr>
+<tr>  <td class="xl66" id="n:ql" style="width: 184px; height: 20px"><p class="line862">utm_campaign_cost </td>
+  <td class="xl65" id="uxm7" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="xnxf" style="width: 314px"><p class="line862">UTM 广告系列费用。</td>
+</tr>
+<tr>  <td class="xl66" id="n:ql" style="width: 184px; height: 20px"><p class="line862">utm_campaign_goal </td>
+  <td class="xl65" id="uxm7" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="o8.f" style="width: 314px"><p class="line862">实现的 UTM 广告系列目标。</td>
+</tr>
+<tr>  <td class="xl66" id="n:ql" style="width: 184px; height: 20px"><p class="line862">utm_campaign_hour </td>
+  <td class="xl65" id="uxm7" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="jj1f" style="width: 314px"><p class="line862">广告系列获得点击的时间。</td>
+</tr>
+<tr>  <td class="xl66" id="n:ql" style="width: 184px; height: 20px"><p class="line862">utm_campaign_impressions </td>
+  <td class="xl65" id="uxm7" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="i3ok" style="width: 314px"><p class="line862">UTM 广告系列的展示次数。</td>
+</tr>
+<tr>  <td class="xl66" id="n:ql" style="width: 184px; height: 20px"><p class="line862">utm_campaign_uri </td>
+  <td class="xl65" id="uxm7" style="width: 52px"><p class="line862">(RAW)</td>
+  <td class="xl65" id="mch2" style="width: 314px"><p class="line862">UTM 广告系列的网址。</td>
+</tr>
+<tr>  <td class="xl66" id="n:ql" style="width: 184px; height: 20px"><p class="line862">utm_content </td>
+  <td class="xl65" id="uxm7" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="ft:0" style="width: 314px"><p class="line862">UTM 广告系列内容。</td>
+</tr>
+<tr>  <td class="xl66" id="isac" style="width: 184px; height: 20px"><p class="line862">utm_cookiea </td>
+  <td class="xl65" id="o3bp" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="buwt" style="width: 314px"><p class="line862">UTM-2 cookie-a</td>
+</tr>
+<tr>  <td class="xl66" id="uxlv" style="width: 184px; height: 20px"><p class="line862">utm_cookieb </td>
+  <td class="xl65" id="lxfk" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="hfqu" style="width: 314px"><p class="line862">UTM-2 cookie-b</td>
+</tr>
+<tr>  <td class="xl66" id="o21t" style="width: 184px; height: 20px"><p class="line862">utm_cookiec </td>
+  <td class="xl65" id="zeph" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="yz4-" style="width: 314px"><p class="line862">UTM-2 cookie-c</td>
+</tr>
+<tr>  <td class="xl66" id="o21t" style="width: 184px; height: 20px"><p class="line862">utm_cookiev </td>
+  <td class="xl65" id="zeph" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="yz4-" style="width: 314px"><p class="line862">UTM-2 cookie-v</td>
+</tr>
+<tr>  <td class="xl66" id="o21t" style="width: 184px; height: 20px"><p class="line862">utm_cookiez </td>
+  <td class="xl65" id="zeph" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="yz4-" style="width: 314px"><p class="line862">UTM-2 cookie-z</td>
+</tr>
+<tr>  <td class="xl66" id="o21t" style="width: 184px; height: 20px"><p class="line862">utm_flash_version </td>
+  <td class="xl65" id="zeph" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="yz4-" style="width: 314px"><p class="line862">Flash 版本信息</td>
+</tr>
+<tr>  <td class="xl66" id="o21t" style="width: 184px; height: 20px"><p class="line862">utm_id </td>
+  <td class="xl65" id="zeph" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="yz4-" style="width: 314px"><p class="line862">UTM 广告系列 ID</td>
+</tr>
+<tr>  <td class="xl66" id="a0z:" style="width: 184px; height: 20px"><p class="line862">utm_java_enabled </td>
+  <td class="xl65" id="z8wh" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="vcif" style="width: 314px"><p class="line862">是否启用了 Java 。</td>
+</tr>
+<tr>  <td class="xl66" id="c5ox" style="width: 184px; height: 20px"><p class="line862">utm_js_version </td>
+  <td class="xl65" id="s6bc" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="rrej" style="width: 314px"><p class="line862">Javascript 版本信息。</td>
+</tr>
+<tr>  <td class="xl66" id="ihpp" style="width: 184px; height: 20px"><p class="line862">utm_language </td>
+  <td class="xl65" id="ht8y" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="w.dg" style="width: 314px"><p class="line862">浏览器语言代码设置。</td>
+</tr>
+<tr>  <td class="xl66" id="l1b0" style="width: 184px; height: 20px"><p class="line862">utm_medium </td>
+  <td class="xl65" id="ht8y" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="pz:e" style="width: 314px"><p class="line862">UTM 媒介（每次点击费用|每千次展示费用|链接|电子邮件|随机）</td>
+</tr>
+<tr>  <td class="xl66" id="e2ly" style="width: 184px; height: 20px"><p class="line862">utm_new_campaign </td>
+  <td class="xl65" id="ht8y" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="cgb9" style="width: 314px"><p class="line862">UTM 新广告系列。</td>
+</tr>
+<tr>  <td class="xl66" id="p35j" style="width: 184px; height: 20px"><p class="line862">utm_page </td>
+  <td class="xl65" id="wdls" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="rd0w" style="width: 314px"><p class="line862">UTM 页面变量（用于 request_ variables）。</td>
+</tr>
+<tr>  <td class="xl66" id="p35j" style="width: 184px; height: 20px"><p class="line862">utm_page_title </td>
+  <td class="xl65" id="wdls" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="j.s5" style="width: 314px"><p class="line862">UTM 网页标题</td>
+</tr>
+<tr>  <td class="xl66" id="gz.x" style="width: 184px; height: 20px"><p class="line862">utm_referral </td>
+  <td class="xl65" id="xvv." style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="u_8w" style="width: 314px"><p class="line862">UTM 推介链接（用于 for referral_ variables）。</td>
+</tr>
+<tr>  <td class="xl66" id="p3ga" style="width: 184px; height: 20px"><p class="line862">utm_request_hostname </td>
+  <td class="xl65" id="xvv." style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="wd5e" style="width: 314px"><p class="line862">广告系列点击的主机名。</td>
+</tr>
+<tr>  <td class="xl66" id="ecz0" style="width: 184px; height: 20px"><p class="line862">utm_screen_colors </td>
+  <td class="xl65" id="upkx" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="fywm" style="width: 314px"><p class="line862">屏幕色深。</td>
+</tr>
+<tr>  <td class="xl66" id="j-3h" style="width: 184px; height: 20px"><p class="line862">utm_screen_resolution </td>
+  <td class="xl65" id="fp_6" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="sn4u" style="width: 314px"><p class="line862">屏幕分辨率（如 800x600）。</td>
+</tr>
+<tr>  <td class="xl66" id="nsqg" style="width: 184px; height: 20px"><p class="line862">utm_source </td>
+  <td class="xl65" id="xvv." style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="zw4b" style="width: 314px"><p class="line862">UTM 广告系列来源。</td>
+</tr>
+<tr>  <td class="xl66" id="xr7t" style="width: 184px; height: 20px"><p class="line862">utm_term </td>
+  <td class="xl65" id="upkx" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="kpc5" style="width: 314px"><p class="line862">UTM 广告系列字词。</td>
+</tr>
+<tr>  <td class="xl66" id="b6yj" style="width: 184px; height: 20px"><p class="line862">utm_type </td>
+  <td class="xl65" id="fp_6" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="k72e" style="width: 314px"><p class="line862">UTM 类型（交易、项目和变量）</td>
+</tr>
+<tr>  <td class="xl66" id="r:v_" style="width: 184px; height: 20px"><p class="line862">utm_unique_id </td>
+  <td class="xl65" id="bz_m" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td class="xl65" id="ircn" style="width: 314px"><p class="line862">UTM 唯一访问者 ID。</td>
+</tr>
+<tr>  <td class="xl63" id="mfiz" style="height: 20px"><p class="line862">visitor_type </td>
+  <td class="xl65" id="bz_m" style="width: 52px"><p class="line862">(AUTO)</td>
+  <td id="ouvm"><p class="line862">新访问者与回访者</td>
+</tr>
+</tbody></table></div></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

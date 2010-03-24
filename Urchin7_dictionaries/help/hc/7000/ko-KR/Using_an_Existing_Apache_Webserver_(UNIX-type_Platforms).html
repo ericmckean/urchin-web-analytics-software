@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>기존 Apache 웹서버 사용하기(UNIX 계열 플랫폼)</strong> <p class="line874">기본적으로 Urchin 관리 및 보고 작업은 Urchin 제품과 함께 제공되는 독립형 Apache 서버를 사용합니다.실제로 설치된 대다수 Urchin에서 Urchin 관리 및 보고 인터페이스로 이 방법을 사용합니다.그러나 드물지만 기존에 설치된 Apache를 사용해야 할 경우도 있습니다.조직 전체에서 현지화된 버전의 Apache를 의무적으로 사용해야 하거나 모든 웹 서비스가 단일 Apache 구성에 의해 제어되는 경우 등이 그렇습니다.아래의 정보는 이러한 요구사항을 충족시키기 위해 도입할 수 있는 두 가지 모델에 대해 설명합니다. <p class="line867"><strong>면책조항:</strong> Urchin 설치에서 이러한 수정은 <strong>지원되지 않습니다</strong>. <p class="line867"><strong>옵션 1:</strong> 기존 사이트 고유의 Apache httpd 바이너리를 사용하여 Urchin 서비스를 별도의 인스턴스로 실행 <p class="line867"><strong>부작용</strong> <ul><li>추가된 기능 및/또는 번들로 제공되는 Apache의 구성 변경에 의존하는 Urchin 업그레이드는 기존 Apache 바이너리가 해당 변경사항/기능을 지원하지 않는 경우 제대로 작동하지 않습니다. </li></ul><p class="line867"><strong>구성 변경</strong> <ul><li>httpd에 다음 모듈에 대한 지원이 포함되어 있는지 확인합니다. <ul><li style="list-style-type:none">mod_access mod_cgi mod_dir mod_mime </li></ul></li><li>Urchin을 일반적인 방법으로 설치하고 Urchin의 관리 및 보고 인터페이스가 실행될 포트를 선택합니다. </li><li>Urchin이 설치되면 다음을 수행합니다. </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin ./urchinctl stop
+                  mv urchinwebd urchinwebd.orig
+                  ln -s /path/to/your/httpd urchinwebd
+                  ./urchinctl start
+</pre><ul><li style="list-style-type:none">그러면 Apache 바이너리를 사용하지만 표준 웹 서비스와는 독립적으로 실행되는 별도의 Apache 인스턴스가 시작됩니다. </li></ul><p class="line867"><strong>옵션 2:</strong> 기존 Apache 구성에서 Urchin 서비스 실행 <p class="line867"><strong>부작용</strong> <ul><li>httpd가 실행되고 있는 동일 UID가 전체 Urchin 설치 파일을 소유해야 합니다. </li><li>관리 GUI를 사용하여 Urchin이 실행되는 포트를 변경할 수 없습니다. </li><li>bin/wrapper 도구를 사용하여 Urchin 서비스를 시작할 수 없습니다. 이 도구는 Urchin 고유의 httpd를 실행하려고 시도하기 때문입니다.bin/urchindctl.sh 스크립트는 Urchin 스케줄러(urchind)를 시작/중지하는 데만 사용하십시오. </li></ul><p class="line867"><strong>구성 변경</strong> <ul><li>기존 httpd.conf 파일에 다음 행을 추가합니다.서버의 IP 주소, 사용할 Urchin의 포트 번호 그리고 Urchin을 설치한 위치의 경로를 제공해야 합니다. </li></ul><p class="line867"><pre>            ## Support for Urchin administration and reporting services
+            Listen [port#]
+            &lt;VirtualHost [server-ip]:[port#]&gt;
+            ErrorLog /path/to/urchin-distribution/var/error.log
+            DocumentRoot /path/to/urchin-distribution/htdocs/
+            &lt;Directory /path/to/urchin-distribution/htdocs/&gt;
+                  AddHandler cgi-script .cgi
+                  Options ExecCGI
+                  DirectoryIndex session.cgi
+                  AllowOverride None
+                  Order allow,deny
+                  Allow from all
+            &lt;/Directory&gt;
+            &lt;/VirtualHost&gt; 
+</pre><ul><li style="list-style-type:none">구성 변경이 적용되면 다음 작업을 수행합니다. </li><li class="gap">Urchin 설치 파일의 소유권을 Apache 웹서버가 실행되는 UID로 변경합니다. </li></ul><p class="line867"><pre>                  chown -R apache-user /path/to/urchin/bin
+</pre><ul><li>Urchin과 함께 번들로 제공된 Apache를 중지합니다. </li></ul><p class="line867"><pre>                  cd /path/to/urchin/bin
+                  ./urchinctl -w stop
+</pre><ul><li>Apache 서버를 다시 시작하여 Urchin 보고 및 관리가 가능하도록 합니다. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

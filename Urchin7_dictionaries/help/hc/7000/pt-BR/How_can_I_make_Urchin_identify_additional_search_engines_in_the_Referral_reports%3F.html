@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como posso fazer com que o Urchin identifique mecanismos de pesquisa adicionais nos relatórios de referências?</strong> <p class="line874">Por padrão, o Urchin monitora referências de 20 mecanismos de pesquisa relacionados no seu arquivo do UTM.Também, é possível configurar o Urchin para identificar referências a partir de mecanismos adicionais de pesquisa, editando para isso o arquivo UTM, da seguinte maneira: <ol type="1"><li>Abra o arquivo urchin.js em um editor de texto. </li><li>Role para baixo até o seguinte: </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>Você verá entradas para mecanismos de pesquisa numeradas de 0 a 19.Esses são os mecanismos de pesquisa que o Urchin monitora por padrão.Para adicionar outro mecanismo de pesquisa à lista, basta adicionar uma nova entrada que siga o formato das outras entradas.Por exemplo, veja como você pode adicionar uma entrada para um mecanismo de pesquisa "new": </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">O valor para _uOsr deve ser o nome do mecanismo de pesquisa, enquanto o valor para _uOkw deve ser a variável de consulta que armazena a palavra-chave.Por exemplo, se alguém pesquisar "motocicleta" e o URL do resultado da pesquisa for: </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">o valor de _uOkw será "q". o valor de _uOsr será "google". </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

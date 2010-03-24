@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>전자상거래는 어떻게 추적합니까?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>이 문서는 Urchin 소프트웨어 공인 컨설턴트인</em> <a href="ivantageLimited.html">ivantage Limited</a><em>에서 작성했습니다.</em> </li></ul><p class="line874">Urchin은 전자상거래 추적에 필요한 고객 데이터 수집 기술을 지원합니다.영수증 페이지에 간단한 데이터를 추가하면 Urchin이 거래 및 제품 정보를 자동으로 탐지하고 기록합니다.필요한 정보는 숨겨진 양식으로 배치되며, 거래 및 제품정보에 대한 분석과정을 거치게 됩니다.대부분의 템플릿 중심 전자상거래 시스템은 영수증에 숨겨진 정보를 포함하도록 설정할 수 있습니다. <p class="line867"><strong>전자상거래 추적 사용</strong> <p class="line874">전자상거래를 추적하기 위한 첫 번째 단계는 선택한 프로필에 전자상거래 보고를 사용하도록 설정하는 것입니다.전자상거래 보고를 사용하려면 다음 단계를 따르십시오. <ol type="1"><li>Urchin에 로그인합니다. </li><li>사용하려는 프로필 옆의 '수정'을 클릭합니다. </li><li>'프로필 설정' 페이지에서 '기본 웹사이트 프로필 정보' 옆의 '수정'을 클릭합니다. </li><li>'전자상거래 웹사이트' 라디오 버튼을 '아니요'에서 '예'로 변경합니다. </li></ol><p class="line867"><strong>영수증 페이지 형식</strong> <p class="line874">두 번째 단계는 표준 양식의 영수증 페이지에 추적 코드를 삽입하는 것입니다.추적 코드를 넣으려면 SSI(Server-Side Include)나 기타 템플릿 드라이버를 사용하는 방법도 있고, HTML 코드에 다음과 같은 추적 코드를 직접 삽입하는 방법도 있습니다. <pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+</pre><p class="line874">그 후 엔진이 영수증에서 추적 코드 아래 임의의 위치에 다음 행을 작성해야 합니다,매개변수 참조에서 설명한 바와 같이, 아래에서 대괄호 안의 모든 값은 실제값으로 대체해야 합니다. <pre>   &lt;form style="display:none;" name="utmform"&gt;
+   &lt;textarea id="utmtrans"&gt;UTM:T|[order-id]|[affiliation]|
+   [total]|[tax]| [shipping]|[city]|[state]|[country] UTM:I|[order-id]|[sku/code]|[productname]|[category]|[price]|
+   [quantity] &lt;/textarea&gt;
+   &lt;/form&gt;
+</pre><p class="line862">마지막으로, 양식을 제출한 후 utmSetTrans 함수를 호출하여 거래를 기록해야 합니다.해당 작업은 여는 &lt;body&gt; 태그 내의 body onLoad 이벤트를 통해 간단히 수행할 수 있습니다. <pre>   &lt;body onLoad="javascript:__utmSetTrans()"&gt;
+</pre><p class="line874">본문 태그를 수정할 수 없는 경우에는 개별 스크립트 태그 내에서 utmSetTrans 함수를 호출할 수 있습니다. 단, 반드시 다음 양식이 제출된 후에 해당 함수를 호출해야 합니다. <pre>   &lt;script type="text/javascript"&gt;
+   __utmSetTrans();
+   &lt;/script&gt;
+</pre><p class="line874">참고:양식에 값을 설정할 때는 대괄호를 포함시키지 마십시오.또한 합계, 세금 및 배송 입력란에서 천단위 자리수 값을 쉼표로 분리하지 마십시오. 쉼표 뒤에 값이 나올 경우 해당 값은 무시됩니다. <p class="line867"><strong>예</strong> <pre>UTM:T|34535|Main Store|111108.06|8467.06|10.00|San Diego|CA|USA
+UTM:I|34535|XF-1024|Urchin T-Shirt|Shirts|11399.00|9
+UTM:I|34535|CU-3424|Urchin Drink Holder|Accessories|20.00|2
+</pre><p class="line874">숨겨진 양식에는거래 행 및 품목 행이라는 두 가지 유형의 행이 있습니다.각 거래에는 'UTM:' 바로 뒤에 'T'로 표시되는 거래 행이 하나씩 있어야 합니다.해당 행은 세금 또는 배송 비용을 포함하여 거래에 대한 합계 및 기타정보를 지정할 수 있습니다.영수증의 각 품목에 'I'로 지정된 품목 행을 만드십시오.품목 행에는 제품명, 코드, 단가 및 수량이 포함될 수 있습니다.각 거래당 품목 행의 수에는 제한이 없습니다. <p class="line867"><strong>매개변수 참조</strong> <p class="line867"><strong>거래 행 변수</strong> <pre>[order-id]      내부 고유 주문 ID 번호
+[affiliation]   파트너 또는 상점 제휴(선택사항)
+[total]         총 거래 금액
+[tax]   거래에 대한 과세액
+[shipping]      거래 배송료
+[city]  거래와 관련된 도시
+[state/region]  주/도
+[country]       국가
+</pre><p class="line867"><strong>품목 행 변수</strong> <pre>[order-id]      내부 고유 주문 ID 번호(거래 행과 동일해야 함)
+[sku/code]      제품 SKU 코드
+[product name]  제품명 또는 설명
+[category]      제품 또는 유사 제품 카테고리
+[price]         제품 단위별 가격
+[quantity]      주문수량
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

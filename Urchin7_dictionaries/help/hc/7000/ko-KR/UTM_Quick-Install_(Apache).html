@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>UTM 빠른 설치(아파치)</strong> <p class="line867"><em>이 문서는 Urchin 소프트웨어 공인 컨설턴트인 </em><a href="Panalysis.html">Panalysis</a><em>이(가) 작성했습니다.</em> <p class="line874">다음은 모든 플랫폼에서 아파치를 기반으로 운영 중인 웹사이트에 UTM을 설치하는 단계를 알려주는 요약 설명입니다. <p class="line867"><strong>1단계: UTM 파일을 웹사이트 문서 루트에 복사합니다.</strong> urchin.js 및 <tt class="backtick">__</tt>utm.gif 파일은 Urchin 폴더의 'util/utm' 디렉토리에 있습니다. 이 두 파일을 웹사이트 콘텐츠의 기본 디렉토리에 복사합니다. <p class="line867"><strong>2단계: HTML에서 UTM을 참조합니다.</strong> 모든 HTML 페이지에 다음 행을 입력합니다. 페이지의 어느 위치든 상관 없지만 &lt;head&gt; 섹션에 입력할 것을 권장합니다. 일반 포함(common include) 또는 템플릿을 사용하면 해당 섹션에 입력할 수 있습니다. <span class="u">중요사항</span>: GIF 파일 이름은 두 개의 밑줄로 시작합니다. <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line874">'HTML Tidy'와 같은 패키지를 사용한다면 다음과 같은 자바스크립트 행을 해당 페이지의 HEAD 섹션에 포함시킬 수도 있습니다. <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>3단계: 아파치 로깅에서 쿠키를 활성화합니다.</strong>  아직 활성되지 않았다면 다음 httpd.conf 예를 이용하여 쿠키 로깅을 활성화할 수 있습니다. <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\"\"%{User-Agent}i\"\"%{Cookie}i\"" special
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log special
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>4단계: UTM을 사용하도록 Urchin 프로필을 설정합니다.</strong> Urchin 관리 인터페이스에서 해당 프로필을 수정하고 보고 탭을 클릭합니다. 방문자 추적 방법을 UTM으로 설정합니다. UTM 도메인을 www를 제외한 웹사이트 주소로 설정합니다. 설정이 끝났으면 업데이트 버튼을 클릭합니다. 프로필 설정 탭을 클릭하고 ‘기본 보고서 설정에 대해 전체 UTM 활성화’를 선택한 다음, 업데이트를 다시 클릭하면 Urchin 프로필 설정 단계가 완료됩니다. 이제 웹사이트에서 일반 로그 파일에 UTM 데이터를 기록하기 시작하며, 이 데이터는 다음 번 Urchin을 실행할 때 인식됩니다. <p class="line867"><strong>기록되고 있습니까?</strong> UTM에서 로그 파일 기록이 이루어지고 있는지 확인하려면, UTM을 설치하고 사이트의 페이지 몇 개를 클릭한 다음 로그 파일을 검토해 보면 됩니다. 로그 파일 맨 밑에 다음과 유사한 항목이 있어야 합니다. <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line867"><tt class="backtick">__</tt>utma 항목이 없으면 로깅에서 쿠키가 올바르게 활성화되어 있는지 확인해 보십시오. 상태 코드가 200이 아니면 문서 루트에 파일이 제대로 복사되었는지 확인해 보십시오. <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

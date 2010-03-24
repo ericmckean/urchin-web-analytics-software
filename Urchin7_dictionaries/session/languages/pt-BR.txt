@@ -1,0 +1,66 @@
+#################################################################################################
+#  Urchin 7 session default dictionary file
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	Não utilizado
+1	Faça login para acessar sua conta.
+2	Nome de usuário
+3	Senha
+4	Faça login novamente.
+5	Agradecemos por usar o Urchin. Deseja fazer login novamente?
+6	Erro de sessão - não foi possível ler a configuração. (1000)
+7	Violação de segurança - endereço remoto não definido. (1001)
+8	Violação de segurança - não é um módulo aprovado. (1002)
+9	Erro de sessão - O ID não está no formato correto. (1003)
+10	Erro de sessão - consulta inválida para o controlador da sessão. (10004)
+11	Erro de sessão - não foi possível chamar a rotina padrão. (2001)
+12	Erro de sessão - não foi possível chamar a rotina padrão. (2002)
+13	Erro de sessão - não foi possível chamar a rotina padrão. (2003)
+14	Erro de sessão - não foi possível criar a sessão. (2004)
+15	Erro de sessão - não foi possível definir env. (2005)
+16	Erro de sessão - ID da sessão ausente. (3000)
+17	Erro de sessão - não foi possível obter o registro do banco de dados. (3001)
+18	Erro de sessão - o ip não corresponde a essa sessão. (3002)
+19	Erro de sessão - ID da sessão inválido. (3003)
+20	Erro de sessão - não foi possível atualizar o registro da sessão. (3004)
+21	A sessão expirou. Como medida de segurança, você foi desconectado automaticamente.
+22	Erro de sessão - não foi possível chamar o aplicativo. (4001)
+23	Erro de sessão - não foi possível chamar o aplicativo. (4002)
+24	Erro de sessão - não foi possível chamar o aplicativo. (4003)
+25	Erro de sessão - sid ausente. (4004)
+26	Erro de sessão - não foi possível obter o registro da sessão do banco de dados. (4005)
+27	Erro de sessão – O endereço IP que você está utilizando atualmente não corresponde ao utilizado no início da sessão.
+28	Erro de sessão - ID de sessão inválido. (4007)
+29	Erro de sessão - não foi possível atualizar o registro da sessão. (4008)
+30	Erro de sessão - não foi possível criar env. (4009)
+31	Erro de autenticação - não foi possível chamar o módulo de autenticação. (5001)
+32	Erro de autenticação - não foi possível chamar o módulo de autenticação. (5002)
+33	Erro de autenticação - não foi possível chamar o módulo de autenticação. (5003)
+34	Erro de autenticação - falha na autenticação. (6001)
+35	Erro de autenticação – nº de parâmetros incorreto. (6002)
+36	Erro de autenticação - Acesso remoto aos usuários negado. (6003)
+37	Erro de autenticação - Acesso remoto negado para a administração. (6004)
+38	Erro de autenticação - ip ausente. (6005)
+39	Erro de autenticação - Não é possível capturar a configuração global do banco de dados. (6006)
+40	Falha na autenticação.
+41	O acesso remoto aos usuários foi recusado. (6008)
+42	O acesso remoto à administração foi recusado. (6009)
+43	Fazer login
+44	Bem-vindo (a) ao software Urchin do Google
+45	Página inicial do Google Analytics
+46	Perguntas frequentes
+47	Política de privacidade
+48	Central de Ajuda do Urchin
+49	Blog do Google Analytics e Urchin
+50	Software Urchin do Google
+51	Política de privacidade do Google
+52	Blog do Google Analytics e Urchin (somente em Inglês)
+53	Política de privacidade do Google
+54	Início
+55	O que há de novo?
+56	Consultores autorizados
+57	<p>O sofware Urchin do Google analiza o tráfego de um ou mais websites e fornece relatórios de fácil compreensão sobre seus visitantes - de onde vem, como utilizam seu site, o que os trasformam em consumidores e muito mais</p><p>Caso tenha conteúdo em um firewall de segurança , em uma intranet ou em uma rede interna que faz com que você não consiga usar os serviços do Google Analytics, o software Urchin do Google foi feito para você. </p><p>O software Urchin do Google conta com um suporte exclusivo dos Consultores autorizados do software Urchin</p>
+58	Saiba mais.
+59	Contrato de licença do usuário
+60	Fórum do usuário do Urchin

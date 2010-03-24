@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>使用 NFS 時需鎖定</strong> <p class="line874">Urchin 組態使用 data/conf 安裝資料夾中的資料檔案，並且會在設定和管理期間設定讀取和寫入鎖定。如果 data/conf 資料夾裝載於 NFS 上，則 NFS 伺服器必須執行正確的鎖定常駐程式來處理遠端鎖定。 <p class="line874">如果鎖定功能未正常運作，Urchin 安裝可能會無限期當機。 <p class="line867"><strong>技術注意事項</strong>  <p class="line874">Urchin 在 UNIX 上使用 fcntl() 函數來執行非強制和獨佔 (讀取 / 寫入) 鎖定。某些舊系統可能不支援不同平台的所有每次點擊的收益鎖定要求。請確認您執行的包含最新修補程式的新版作業系統，並確認 NFS 伺服器正在執行 'statd' 和 'lockd' 或同等級程式。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

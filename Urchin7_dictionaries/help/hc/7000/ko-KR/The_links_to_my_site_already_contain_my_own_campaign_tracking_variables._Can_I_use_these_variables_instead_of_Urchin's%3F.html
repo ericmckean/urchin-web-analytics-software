@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>내 사이트로 연결되는 링크에 이미 내 캠페인 추적 변수가 포함되어 있습니다.Urchin의 변수 대신에 이 변수를 사용해도 됩니까?</strong> <p class="line874">추적 변수로 온라인 링크에 이미 태그를 추가했다면 Urchin의 캠페인 추적 변수에 이 기존 변수를 매핑할 수 있습니다.태그가 추가된 링크는 적어도 3개의 변수를 포함해야 합니다.이러한 변수는 다음으로 매핑됩니다. <ol type="1"><li>utm_source: 캠페인 소스(예: Google, Yahoo) </li><li>utm_medium: 캠페인 매체(CPC, 배너, 이메일) </li><li>utm_campaign: 캠페인 이름(spring_sale) </li></ol><p class="line874">본 안내에서는 사이트가 다음 URL을 포함한다고 가정하겠습니다. <pre>            www.example.com/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>1단계.</strong> 변수를 Urchin의 변수와 일치시키고아래 예의 형식으로 테이블을 만듭니다. <pre>               캠페인     광고 소스    광고 유형     키워드   A/B 콘텐츠  마스터
+사용자 코드=    camp     adver       type        kwd       version      
+Urchin 코드=  utm_campaign utm_source     utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>2단계.</strong> UTM 파일을 수정합니다. <ul><li style="list-style-type:none">텍스트 편집기에서  urchin.js 파일을 여십시오.파일 상단은 다음과 같이 UTM 변수를 포함하는 사용자 정의 섹션입니다. </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">위 예에서 태그가 들어간 링크를 사용하면 이 섹션은 다음과 같이 편집됩니다. </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>3단계.</strong> 이러한 새로운 추적 변수에 대한 필터를 만드십시오. <ul><li style="list-style-type:none">다음은 각 필터에 사용해야 하는 기본 필터 구성입니다. </li></ul><p class="line867"><pre>                필터 종류:고급
+                입력란 A:utm_campaign_uri (raw)
+                추출 A:new_variable =([^&amp;]*)
+                입력란 B:(없음)
+                추출 B:(공백) 
+                출력 대상:utm _( old_variable )
+                생성자:$A1 
+                필수 입력란 A:예
+                필수 입력란 B:아니요
+                출력 입력란 무시:예
+                대소문자 구분:아니요
+</pre><ul><li style="list-style-type:none">old_variable은 기본 Urchin 추적 변수를 참조합니다. new_variable 변수는 귀하의 추적 변수를 참조합니다.각 수정된 변수에 대해 필터가 필요합니다. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

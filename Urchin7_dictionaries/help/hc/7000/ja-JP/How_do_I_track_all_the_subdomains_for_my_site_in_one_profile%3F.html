@@ -1,0 +1,26 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>サイトのすべてのサブドメインを 1 つのプロファイルでトラッキングする</strong> <ul><li style="list-style-type:none"><p class="line891"><em>この記事は、Urchin ソフトウェア認定コンサルタントの </em> <a href="ivantageLimited.html">ivantage Limited</a><em> によって作成されています。 </em> </li></ul><p class="line874">ドメインと同じプロファイルでサブドメインをトラッキングするには、 サブドメインの各ページのトラッキング コードに 1 行追加する必要があります。 プロファイルでメインのドメインをウェブサイト (例: example.co.uk) のリストとして設定している場合の手順を次に示します。 <ol type="1"><li>サブドメインとメイン ドメインのすべてのページのトラッキング コードに次の太字の行を追加します。 </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";&lt;/script&gt;
+</pre><ul><li style="list-style-type:none">この行でメインのドメイン (example.co.uk) を指定しています。 </li></ul><p class="line874">上記の変更によって、1 つのプロファイルでサブドメインをトラッキングできるようになりますが、レポートでは www.example.co.uk のページと help.example.co.uk のページは区別されません。 たとえば上位のコンテンツ レポートでは、www.example.co.uk/index.html と help.example.co.uk/more.html へのアクセスは次のように表示されます。 <pre>   /index.html
+   /more.html
+</pre><p class="line874">サブドメイン別にページの URL を区別する場合は、次の設定のアドバンス フィルタをプロファイルに適用します。 <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">このフィルタを適用すると、次のようにページのファイル名にサブドメインが追加された状態で、レポートに表示されます。 <pre>   www.example.co.uk/index.html
+   help.example.co.uk/more.html
+</pre><p class="line874">注:  このフィルタは、ウェブ アクセス ログ ファイルに書き込まれる、サブドメインを含むウェブサイトのホスト名に基づいて機能します。 ウェブ アクセス ログ ファイルにホスト名が含まれない場合、Urchin 6 のレポートでたとえば次の 2 つのドメインの index.html は区別されません。 <pre> www.example.co.uk/index.html
+ help.example.co.uk/more.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

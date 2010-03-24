@@ -1,0 +1,25 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>结合使用 UTM 与域别名</strong> <p class="line867"><strong>背景</strong> <p class="line874">由于 Cookie 是基于域的对象，因此当网站有多个域时须特别注意一些问题。在域名"mysite.com"下设置的 Cookie 将传送到"www.mysite.com"等所有子域。不过，不会传送到"mysite.net"或任何其他不同的根域。 <p class="line874">如果您的网站只有与一个与"mysite.com"和"www.mysite.com"对应的域名，则可遵守标准的 UTM 安装。但是，如果您的网站有一个或多个域别名，则建议您将别名的访问量重定向到主网站。这将确保 UTM 的访问者跟踪在主域下开始，并且所有访问者都被连续跟踪。 <p class="line874">如果不这样做，那么，当某个访问者通过两个不同的域访问同一网站时，系统会将该访问者看作两个访问者。下面将演示如何将使用别名的域重定向到 Apache 或 IIS 服务器上的主域。 <p class="line867"><strong>在 Apache 中重定向别名</strong> <p class="line862">如果您正在使用 Apache 网络服务器，可方便地更改配置，将某一别名下发生的访问量重定向到主站点。实现此目的的一种方法是创建两个 VirtualHost 实体。第一个 VirtualHost 为包含正常配置的主域，第二个 VirtualHost 用于所有别名并重定向到主域。示例： <p class="line867"><pre>#---primary virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername www.mysite.com
+Serveralias mysite.com
+...
+&lt;/VirtualHost&gt;
+#---second virtualhost
+&lt;VirtualHost 1.2.3.4&gt;
+Servername mysite.org
+Serveralias www.mysite.org mysite.net www.mysite.net
+RewriteEngine on
+RewriteRule ^(.*)       http://www.mysite.com$1     [R=301]
+&lt;/VirtualHost&gt;
+</pre><p class="line862">第二个 VirtualHost 使用重写入规则和 301（永久移动）重定向代码将所有访问量重定向到原始站点。第 301 次点击仍将记录在日志文件中，该文件适用于跟踪用户所进入的域，但是，所有之后的点击量都必须出于一个域。此时，对 UTM 而言，该网站是一个单域网站，可以正常进行 UTM 安装。 <p class="line874">请注意：建议您与您的管理员协作并通过配置参数引用网站 apache.org。 <p class="line867"><strong>在 IIS 中重定向别名</strong> <p class="line874">如果您正在使用 Microsoft IIS 网络服务器，可方便地更改配置，将某一别名下发生的访问量重定向到主站点。实现此目的的一种方法是在 IIS 配置中创建两个网站。第一个网站为包含正常配置的主域 (www.mysite.com)，第二个网站用于所有其他别名（mysite.net、mysite.org 等）并重定向到主域。 <p class="line874">在 IIS Manager 中，右键点击其中一个网站，打开属性对话框。在"网站"标签上，点击"高级..."按钮。这将打开一个窗口，您可在其中使用"主机标题"字段为网站指定其他域名。在主网站中设置主域，使用第二个网站容纳所有别名。 <p class="line874">在配置并启用容纳所有别名的第二个网站后，使用下列重定向代码创建空白主页： <p class="line867"><pre>&lt;head&gt;
+&lt;META HTTP-EQUIV=Refresh CONTENT="0; URL=http://www.mysite.com/"&gt;
+&lt;/head&gt;
+</pre><p class="line874">这将指示访问者的浏览器立即重定向到主网址。此时，主网站成为一个简单的单域配置，可使用默认设置正常进行 UTM 安装。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,23 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Meu site só tem um URL porque estou usando Flash.Como faço para configurar um funil de meta?</strong> <p class="line862">É possível monitorar qualquer evento com base no navegador, inclusive eventos em Flash, no seu site.Usando a função JavaScript urchinTracker, é possível atribuir um nome de arquivo de página a qualquer ação do Flash e inserir esse nome na meta ou na etapa de funil adequada. <p class="line862">Para monitorar um evento, chame a função JavaScript urchinTracker() com um argumento que especifique um nome para o evento.Por exemplo, chamar: <p class="line867"><pre>    javascript:urchinTracker('/purchase_funnel/page1.html');
+</pre><p class="line874">fará com que cada ocorrência do evento em Flash de chamada seja registrada como se fosse uma exibição de página com o nome /purchase_funnel/page1.html.O argumento deve começar com uma barra. <p class="line874">Os nomes de eventos podem ser organizados em qualquer estrutura de diretórios desejada.O argumento caminho/nome do arquivo para urchinTracker não precisa representar um URL real no seu site. <p class="line867"><strong>Exemplos de código em Flash</strong> <p class="line867"><pre>    on (release) {
+    // Track with no action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+    on (release) {
+    //Track with action
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    _root.gotoAndPlay(3);
+    myVar = "Flash Track Test"
+    }
+    onClipEvent (enterFrame) {
+    getURL("javascript:urchinTracker('/folder/file.html');");
+    }
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

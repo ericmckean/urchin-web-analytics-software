@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>ELF2 記錄格式</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 軟體授權顧問 </em> <a href="ivantageLimited.html">ivantage Limited</a><em> 撰寫</em> </li></ul><p class="line867"><strong>注意</strong> <p class="line874">上一版的 Urchin 支援僅限 IP 追蹤的 ELF 格式。但由於 Urchin 6 並沒有提供僅限 IP 追蹤，因此不再支援 ELF 格式。 <p class="line867"><strong>總覽</strong> <p class="line874">E-commerce 記錄格式 2 (ELF2) 是專為記錄線上購物網站的客戶交易相關資訊而設計的。但是，Urchin 6 不再支援這項記錄電子商務交易的技術。但 Urchin 6 支援擷取電子商務交易的客戶端資料收集技術。只要在您的收據網頁增加一些項目，Urchin 6 就會自動偵測並記錄交易和產品的資訊。所需資訊都存放在隱藏的表單中，系統會就此表單進行交易和產品資訊的分析。大多數由範本驅動的電子商務系統都可以透過修正將這項資訊隱藏在收據中。 <p class="line862">只要加上一些程式碼，Urchin 即可追蹤來自您所屬網域、或是其他網域上的購物車資料。若要設定讓您的網頁向 Urchin 回報交易資料，請參閱「如何追蹤電子商務交易？」。此外，如果您的商店網站位於主要網站以外的其他子網域或網域，請參閱<a href="Tracking_Secure_Store_Transactions.html">追蹤安全商店交易</a>。 <p class="line874">本文說明由購物車軟體所建立的 ELF2 記錄檔格式，並說明如何設定 Urchin 來處理電子商務記錄。 <p class="line867"><strong>針對 ELF2 記錄檔設定 Urchin</strong> <p class="line874">設定 ELF2 記錄類型時，您必須採用這些設定參數。 <ul><li>以管理員身分登入「管理介面」 </li><li>移至「組態」畫面 </li><li><p class="line862">在 [編輯記錄來源」&gt; [記錄設定] 畫面中，將 [記錄格式]  設為 elf2 或自動 </li><li><p class="line862">在[編輯設定檔] &gt; [設定] 畫面中，將「電子商務網站」欄位設為 [是] </li></ul><p class="line874">在用以處理電子商務報告的設定檔中，您的電子商務記錄應列為主要網站記錄之外的第二個記錄來源。Urchin 會依序處理這些記錄。 <p class="line867"><strong>ELF2 記錄格式說明</strong> <p class="line874">ELF2 是以定位點分隔的多行記錄格式。第一行以驚嘆號字元 '!' 做為開頭，並包含關於該次購買的完整資訊。接下來數行則包含關於購買項目的詳細資訊。第一行亦稱為交易行，接下來數行則稱為項目行。空白欄位需包含 '-' 字元。由於定位點用於分隔欄位，因此欄位中不允許使用定位點字元。 <p class="line874">常見的 ELF2 記錄檔一般會採用下列格式： <pre>!transation1
+item1
+item2
+item3
+!transaction_2
+item1
+item2
+...
+</pre><p class="line867"><strong>ELF2 交易行</strong> <p class="line874">ELF2 交易行以驚嘆號 '!' 做為開頭，並包含下列定位點分隔欄位 (空白欄位需包含 '-' 字元)： <pre>!%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{STORE} %{SESSIONID} %{TOTAL} %{TAX}
+%{SHIPPING} %{BILL_CITY} %{BILL_STATE} %{BILL_ZIP} %{BILL_COUNTRY} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">其中： <pre>    * %{ORDERID} 是訂購號碼
+    * %{REMOTE_HOST} 是遠端電腦的主機名稱 / IP 位址
+    * %{DATE/TIME} 是常見記錄格式中的時間 [日日/月月/年年年年:小時:分鐘:秒鐘 +/-時差]
+    * %{STORE} 是店面的名稱 / ID
+    * %{SESSIONID} 是客戶獨有的工作階段識別碼
+    * %{TOTAL} 是交易總額，包括稅金和運費 (僅包含數字，不含 '$' 字元)
+    * %{TAX} 是針對小計收取的稅金
+    * %{SHIPPING} 是運費
+    * %{BILL_CITY} 是客戶的帳單城市
+    * %{BILL_STATE} 是客戶的帳單州 / 省
+    * %{BILL_ZIP} 是客戶的帳單郵遞區號
+    * %{BILL_COUNTRY} 是客戶的帳單國家 / 地區
+    * %{USER_AGENT} 是客戶瀏覽器的使用者代理程式
+    * %{COOKIES} 是客戶瀏覽器標頭中包含的內送 Cookie
+</pre><p class="line867"><strong>ELF2 項目行</strong> <p class="line874">ELF2 項目行包含下列定位點分隔欄位 (空白欄位需包含 '-' 字元)： <pre>%{ORDERID} %{REMOTE_HOST} %{DATE/TIME} %{PRODUCT_CODE} %{PRODUCT_NAME} %{VARIATION}
+%{PRICE} %{QUANTITY} %{UPSOLD} %{USER_AGENT} %{COOKIES}
+</pre><p class="line874">其中： <pre>    * %{ORDERID} 是訂購號碼
+    * %{REMOTE_HOST} 是遠端電腦的主機名稱 / IP 位址
+    * %{DATE/TIME} 是通用記錄格式中的時間 [日期/月份/西元年:小時:分鐘:秒鐘 +/-時差]
+    * %{PRODUCT_CODE} 是產品識別碼
+    * %{PRODUCT_NAME} 是產品名稱
+    * %{VARIATION} 是同系列產品的顏色、尺寸等選項
+    * %{PRICE} 是產品的單位價格 (僅包含數字，不含 '$' 符號)
+    * %{QUANTITY} 是此產品的訂購量
+    * %{UPSOLD} 是指出產品是否在出售的布林值 (0|1)
+    * %{USER_AGENT} 是客戶瀏覽器的使用者代理程式
+    * %{COOKIES} 是客戶瀏覽器標頭中包含的內送 Cookie
+</pre><p class="line867"><strong>ELF2 記錄檔案範例</strong> <p class="line874">下列兩行說明 ELF2 記錄中的交易行及相對應的項目： <pre>!36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800]  -  -
+ 895.00  -  -
+Virginia Beach  VA  23452  US  "Mozilla/4.0 (compatible; MSIE
+6.0; Windows NT 5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+36530  123.123.123.123  [21/Aug/2003:11:31:45 -0800] 
+U5-BASE  Urchin 5 Base License  -
+895.00  1  -  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT
+5.1)"
+"__utma=171060324.2002410569.1061216915.1061216915.1061490246.2;
+__utmb=171060324;__utmc=171060324"
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

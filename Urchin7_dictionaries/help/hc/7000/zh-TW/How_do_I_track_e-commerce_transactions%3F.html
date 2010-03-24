@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何追蹤電子商務交易？</strong> <ul><li style="list-style-type:none"><p class="line891"><em>本文由 Urchin 軟體授權顧問 </em> <a href="ivantageLimited.html">ivantage Limited</a><em> 撰寫</em> </li></ul><p class="line874">Urchin 支援客戶端資料收集技術，以便擷取電子商務交易。只要在您的收據網頁添加一些簡單項目，Urchin 即可自動偵測並記錄交易和產品資訊。所需資訊會被放進隱藏的表單，系統會就此表單進行交易和產品資訊的分析。大多數由範本驅動的電子商務系統都可以透過修改在收據中添加這些隱藏資訊。 <p class="line867"><strong>啟用電子商務追蹤</strong> <p class="line874">追蹤電子商務交易的第一步就是啟用選定設定檔的電子商務報告。若要啟用電子商務報告，請按照下列步驟進行： <ol type="1"><li>登入 Urchin </li><li>在要啟用的設定檔旁邊按一下 [編輯]。 </li><li>在「設定檔設定」網頁上，按一下 [主要網站設定檔資訊] 旁邊的 [編輯]。 </li><li>將「電子商務網站」圓形按鈕從 [否] 改為 [是]。 </li></ol><p class="line867"><strong>收據網頁格式</strong> <p class="line874">第二步，務必以標準方式在收據網頁中添加追蹤程式碼。您可以使用「伺服器端引入」或其他範本驅動程式來完成此動作，也可以直接在 HTML 程式碼中手動輸入： <pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+</pre><p class="line874">接下來，在收據中追蹤程式碼下方的某個位置，用您的引擎寫入以下行。括號裡的所有內容都需以實際值取代，如下述參數參考資料中所述。 <pre>   &lt;form style="display:none;" name="utmform"&gt;
+   &lt;textarea id="utmtrans"&gt;UTM:T|[order-id]|[affiliation]|
+   [total]|[tax]| [shipping]|[city]|[state]|[country] UTM:I|[order-id]|[sku/code]|[productname]|[category]|[price]|
+   [quantity] &lt;/textarea&gt;
+   &lt;/form&gt;
+</pre><p class="line862">最後，請務必在提交表單後呼叫 utmSetTrans 函數，以記錄相關交易。最簡單的方式就是使用開頭標記 &lt;body&gt; 內的 onLoad 事件來完成： <pre>   &lt;body onLoad="javascript:__utmSetTrans()"&gt;
+</pre><p class="line874">如果您無法編輯 body 標記，可以在單獨的指令碼標記內呼叫 utmSetTrans 函數，但前提是記得在在表單之後呼叫該函數： <pre>   &lt;script type="text/javascript"&gt;
+   __utmSetTrans();
+   &lt;/script&gt;
+</pre><p class="line874">請注意：在為表單設定數值時，請勿加入方括號。此外，請不要用逗號分隔總計、稅金和運費欄位中分隔千分位，否則逗號後面的數字會被忽略。 <p class="line867"><strong>範例</strong> <pre>UTM:T|34535|Main Store|111108.06|8467.06|10.00|San Diego|CA|USA
+UTM:I|34535|XF-1024|Urchin T-Shirt|Shirts|11399.00|9
+UTM:I|34535|CU-3424|Urchin Drink Holder|Accessories|20.00|2
+</pre><p class="line874">隱藏的表單裡面有兩種類型的資料行：「交易行」與「項目行」。每筆交易只能有一個交易行，它由 "UTM:" 後緊接著的 "T" 表示。這一行指定交易總額，包含任何稅金或運費和其他資訊。對於收據中的每個項目，並建立一個由 "I" 表示的項目行。項目行可包含產品名稱、編碼、單價和數量。每筆交易的項目行數不限。 <p class="line867"><strong>參數參考資料</strong> <p class="line867"><strong>交易行變數</strong> <pre>[order-id]      內部個別訂單的 ID 號碼
+[affiliation]   選擇性的夥伴或商店聯盟
+[total]         交易總金額 (以英鎊計算)
+[tax]   交易稅額
+[shipping]      交易的運費
+[city]  與交易相關聯的城市
+[state/region]  州或省
+[country]       國家 / 地區
+</pre><p class="line867"><strong>項目行變數</strong> <pre>[order-id]      您的內部獨有訂單 ID 號碼 (應該和交易行一樣)
+[sku/code]      產品 SKU 編碼
+[product name]  產品名稱或說明
+[category]      產品或同系列產品的類別
+[price]         產品的單價
+[quantity]      訂購量
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

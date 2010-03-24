@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Como faço para monitorar todos os subdomínios do meu site em um único perfil?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Este artigo foi escrito por</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, consultor autorizado do software Urchin</em> </li></ul><p class="line874">É possível monitorar subdomínios no mesmo perfil do domínio.Para fazer isso, será necessário adicionar uma linha ao código de monitoramento em cada página do subdomínio.As instruções a seguir supõem que esse perfil tenha sido configurado com o domínio principal, assim como com o site relacionado (por exemplo, "example.com.br "). <ol type="1"><li>Adicione a linha a seguir (em negrito) ao código de monitoramento em todas as páginas de seu subdomínio e de seu domínio principal: </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">Essa linha deve fazer referência ao domínio principal (example.com.br). </li></ul><p class="line874">Embora essa alteração permita que você monitore os subdomínios em um único perfil, os seus relatórios poderão não fazer distinção entre as páginas www.example.com.br e ajuda.example.com.br.Por exemplo, no relatório Conteúdo principal, você pode ter hits para www.example.com.br/index.html e ajuda.example.com.br/mais.html, mas no relatório será exibido o seguinte: <pre>   /index.html
+   /more.html
+</pre><p class="line874">Se quiser distinguir seus subdomínios, crie um filtro Avançado para o seu perfil com as configurações a seguir: <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">Com esse filtro ativado, os exemplos anteriores serão exibidos com o subdomínio anexo: <pre>   www.example.com.br/index.html
+   ajuda.example.com.br/mais.html
+</pre><p class="line874">OBSERVAÇÃO:Esse filtro depende do nome do host do seu site, incluindo o subdomínio que está sendo gravado no seu arquivo de registro de acesso à web.Se o seu arquivo de registro de acesso à web não contiver o nome do host, não será possível que os relatórios do Urchin 6 registrarem a diferença, por exemplo, entre index.html nos dois domínios: <pre> www.example.com.br/index.html
+ ajuda.example.com.br/mais.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

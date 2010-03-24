@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6.602 Geo-databases</strong> <p class="line874">Urchin 6.602 dispone di due database geografici: <ul><li><p class="line891"><strong>geo.db</strong> - Contiene informazioni dettagliate sull'area metropolitana (country/region/city), sulle reti (organizzazione) e sui domini. Contiene lo stesso livello di informazioni (ma aggiornate) delle versioni precedenti di urchin 6 (6.400 - 6.601). </li><li class="gap"><p class="line891"><strong>geo.light.db</strong> - Contiene solo informazioni sull'area metropolitana fino ad arrivare al livello massimo di Paese; non include informazioni su regioni, città, reti e organizzazioni. L'uso di memoria e il tempo di caricamento di questo database sono decisamente ridotti, pertanto si consiglia di utilizzarlo ogni volta che il rendimento del motore di elaborazione del log raggiunge livelli significativi. L'utilizzo della versione leggera del database geografico influisce sui seguenti rapporti. <ul><li style="list-style-type:none">o I seguenti rapporti con "mappa geografica" mostrano solo dati a livello di area metropolitana fino ad arrivare al livello di Paese e non includono informazioni relative a regioni o città. <ul><li><p class="line862">Visualizzazione Executive -&gt; Panoramica executive (dashboard) </li><li><p class="line862">Visualizzazione Executive -&gt; Overlay mappa geografica </li><li><p class="line862">Visualizzazione operatori di mercato -&gt; Panoramica degli operatori di mercato (dashboard) </li><li><p class="line862">Visualizzazione Webmaster -&gt; Panoramica webmaster (dashboard) </li><li><p class="line862">Ottimizzazione marketing -&gt; Rendimento segmento visitatori -&gt; Overlay mappa geografica </li></ul><p class="line862">o Nessun dato visualizzato nel rapporto "Ubicazioni rete" (Ottimizzazione marketing -&gt; Rendimento segmento visitatori -&gt; Ubicazioni rete) <p class="line862">o Nessun dato visualizzato nel rapporto "Domini" (Ottimizzazione marketing -&gt; Rendimento segmento visitatori -&gt; Domini) </li></ul></li></ul><p class="line874">Per impostazione predefinita, viene utilizzato il database geo.db. Per passare al database geo.light.db, elimina il commento nella riga corrispondente all'interno del file urchin.conf: <p class="line867"><pre>
+
+# Impostazioni database geografico
+
+# Elimina la seguente riga per attivare la versione leggera del database geografico
+# GeodbLight: ATTIVATO
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

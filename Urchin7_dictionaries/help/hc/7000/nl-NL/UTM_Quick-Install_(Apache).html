@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Snelle installatie van de UTM (Apache)</strong> <p class="line867"><em>Dit artikel is geschreven door </em><a href="Panalysis.html">Panalysis</a><em>, een geautoriseerde softwareconsultant voor Urchin </em> <p class="line874">De volgende tekst is bedoeld als een korte beschrijving van de installatie op alle platforms van de UTM voor websites die op een Apacheserver worden uitgevoerd. <p class="line867"><strong>Stap 1: kopieer de UTM-bestanden naar de hoofdmap voor de website.</strong> De bestanden, urchin.js en <tt class="backtick">__</tt>utm.gif, staan in de directory 'util/utm' in de Urchin-distributie. Kopieer deze twee bestanden naar de hoofdmap van uw website-inhoud. <p class="line867"><strong>Stap 2: verwijs naar de UTM in uw HTML.</strong> Geef de volgende regel op in al uw HTML-pagina's. Hoewel u de regel overal op de pagina's kunt plaatsen, raden we u aan deze in het &lt;head&gt;-gedeelte te plaatsen. Als u een opnamebestand of sjabloon gebruikt, kunt u deze hier opgeven. <span class="u">Belangrijk</span>: de bestandsnaamvan de GIF begint met twee onderstrepingstekens. <p class="line867"><pre>&lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+        urchinTracker();
+&lt;/script&gt;
+</pre><p class="line862">Als u een pakket als 'HTML Tidy' gebruikt, kunt u de JavaScript-regel bijvoorbeeld toevoegen aan het HEAD-gedeelte van uw pagina: <p class="line867"><pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+  &lt;script src="/urchin.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+        urchinTracker();
+  &lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre><p class="line867"><strong>Stap 3: schakel cookies in voor de logverwerking van Apache.</strong> Als ze nog niet zijn ingeschakeld, kunt u het volgende voorbeeld met 'httpd.conf' gebruiken om cookieregistratie in te schakelen. <p class="line867"><pre>LogFormat "%h %v %u %t \"%r\" %&gt;s %b \"%{Referer}i\"\"%{User-Agent}i\"\"%{Cookie}i\"" special
+...
+&lt;VirtualHost 63.212.171.6&gt;
+ServerName www.mysite.com
+DocumentRoot /www/www.mysite.com
+CustomLog /var/logs/mysite.log special
+&lt;/VirtualHost&gt;
+</pre><p class="line867"><strong>Stap 4: stel het Urchin-profiel in op UTM.</strong> Bewerk het betreffende profiel in de beheerinterface van Urchin en klik op het tabblad Rapportage. Stel de methode voor het bijhouden van bezoekers in op UTM. Stel het UTM-domein in op het adres van uw website, zonder het voorvoegsel 'www'. Klik vervolgens op de knop Bijwerken. Klik vervolgens op het tabblad Profielinstellingen en kies UTM inschakelen voor de Standaard rapportreeks, en klik nogmaals op Bijwerken. Dat is alles. Uw website zal de UTM-gegevens nu opslaan in uw normale logbestand, dat de volgende keer dat u Urchin uitvoert, wordt herkend. <p class="line867"><strong>Werkt het?</strong> Als u wilt controleren of de UTM-gegevens worden opgenomen in het logbestand, bekijkt u het bestand nadat u de UTM heeft geïnstalleerd en op een paar pagina's op uw site heeft geklikt. Er moet een item aan het eind van het logbestand staan dat er ongeveer zo uitziet: <p class="line867"><pre>... "GET /__utm.gif?..." 200 ..."__utma=..."
+</pre><p class="line862">Als u geen items ziet met <tt class="backtick">__</tt>utma, controleert u of de cookies goed zijn ingeschakeld voor de logbestandsverwerking. Als de statuscode niet 200 is, controleert u of de bestanden goed zijn gekopieerd naar de hoofdmap. <p class="line867"><tt></tt> </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

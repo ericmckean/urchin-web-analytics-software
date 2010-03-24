@@ -1,0 +1,33 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>urchin: processamento de registros do Urchin</strong> <p class="line867"><strong>Visão geral</strong> <p class="line874">O Urchin Log Processing Engine, urchin, é o principal componente de processamento de registros do Urchin. Geralmente, o mecanismo de processamento de registros é invocado a partir do Urchin Scheduler (urchind) quando uma tarefa é executada. No entanto, é possível executar o urchin diretamente de um shell de comando para executar um perfil específico. Isso é útil em ambientes que usam muito os scripts onde a execução das tarefas do Urchin é realizada a partir de uma fonte externa como o Agendador de tarefas do Windows ou cron em sistemas tipo UNIX. Também é útil para executar um perfil em circunstâncias especiais, como para processar apenas os cliques de um dia específico ou para realizar algum tipo de depuração. <p class="line874">O Urchin não é realmente um utilitário, mas foi documentado aqui porque fornece alguns recursos limitados de linha de comando que podem ser úteis em determinados ambientes. <p class="line867"><strong>Aplicação</strong> <p class="line874">O urchin está localizado no diretório bin da distribuição do Urchin. O uso funciona da seguinte maneira: <p class="line867"><pre>
+urchin [options...] (-p &lt;profile name&gt; | -P &lt;profile id&gt;)
+
+</pre><p class="line874">Opções: <p class="line867"><pre>
+-a &lt;account name&gt;       Especifica o nome da conta do perfil. O nome da conta padrão é “(NONE)”
+
+-D                      Ativa o modo de depuração
+
+-d &lt;YYYYMMDD&gt;           Especifica a data do novo processamento
+
+-H                      Especifica para registrar a saída da execução no arquivo histórico. Um novo registro do histórico da tarefa é criado se -H for especificado e -T não for especificado
+
+-h                      Imprime informações de ajuda e é encerrado
+
+-P &lt;profile id&gt;         Especifica o ID do perfil a ser processado
+
+-p &lt;profile name&gt;       Especifica o nome do perfil a ser processado
+
+-T &lt;task id&gt;            Especifica o registro do histórico da tarefa a ser atualizado. Especificar -T força o uso de -H
+
+-t                      Imprime dados de configuração e é encerrado
+
+-v                      Imprime o número da versão e é encerrado
+
+</pre><p class="line867"><strong>Considerações</strong> <ul><li>Em sistemas tipo UNIX, o urchin deve ser executado como o usuário/UID que instalou o Urchin para garantir que os bancos de dados do perfil são de propriedade desse UID, visto que o urchin irá criá-los se ainda não existirem. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

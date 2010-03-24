@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>NFS 使用時のロックについて</strong> <p class="line874">Urchin 設定では、data/conf フォルダのデータ ファイルを使用して、セットアップと管理の際に読み取りと書き込みをロックするよう設定できます。 data/conf フォルダを NFS マウントする場合は、NFS サーバーが適切なロック デーモンを実行してリモート ロックを行う必要があります。 <p class="line874">ロックが適切に機能していない場合、Urchin のインストールで深刻なハングアップが発生する場合があります。 <p class="line867"><strong>技術上の注意事項</strong>  <p class="line874">UNIX の場合、Urchin は fcntl() 関数を使用して通知または排他的 (読み取り/書き込み) ロックを実行します。 旧システムでは、異なるプラットフォームの RPC ロック リクエストが一部サポートされていない場合があります。 最新のパッチを適用して、OS を必ず最新の状態で実行してください。 NFS サーバーが「statd」と「lockd」、または同等のデーモンを実行していることを確認してください。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

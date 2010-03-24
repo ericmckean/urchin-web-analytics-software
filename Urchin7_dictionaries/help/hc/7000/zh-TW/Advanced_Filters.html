@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>進階篩選器</strong> <p class="line867"><strong>簡介</strong> <p class="line874">進階篩選器選項可讓您透過一個或兩個現有欄位來建構報告欄位。POSIX 正規表示法和對應的變數可用來擷取全部或部分欄位，並按照您的需要排序結果。 <p class="line867"><strong>使用進階篩選器</strong> <p class="line867"><img alt="Advanced_Filters" src="../images/Advanced_Filters.jpg" title="Advanced_Filters" /> <p class="line874">如上圖所示，進階篩選器最多使用兩個欄位：「欄位 A」和「欄位 B」，並建構輸出欄位。建構程序以下列方式進行。「解壓縮 A」表示法會套用到「欄位 A」，而「解壓縮 B」表示法則套用到「欄位 B」。這些表示法可使用完整或部分文字比對且可包含萬用字元。以下列出最常用的萬用字元及其意義。這些表示法符合 POSIX 正規表示法。 <p class="line867"><pre>.   符合任一字元
+*   符合零個或多個之前的項目
++   符合一個或多個之前的項目
+?   符合零個或一個之前的項目
+()  將圓括號的內容記憶為項目
+[]  符合此清單中的一個項目
+-   在清單中建立範圍t
+|   或
+^   符合欄位的開頭
+$   符合欄位的結尾
+\   逸出以上任何項目
+
+</pre><p class="line874">使用圓括號 () 擷取「欄位」的部分內容。這些可在建構函式中使用 $A1、$A2、$B1、$B2 標記法參考。A|B 是指欄位，數字則是指要擷取的圓括號。上述範例會擷取整個「A 欄位」和整個「B 欄位」，並組成新的欄位。「輸出至」欄位可以是「欄位 A」或「欄位 B」，或是不同的欄位。 <p class="line867"><strong>控制項</strong> <p class="line874">當輸出欄位已存在時，[覆寫輸出欄位] 控制項可讓您決定要怎麼做。如果其中一個表示法不符，[必填欄位] 可讓您決定要怎麼做。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Hoe kan ik alle subdomeinen voor mijn site in één profiel bijhouden?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Dit artikel is geschreven door</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, een geautoriseerde consultant van Urchin-software </em> </li></ul><p class="line874">U kunt subdomeinen bijhouden in het profiel dat u ook voor uw domein gebruikt. Als u dit wilt doen, moet u op elke pagina van het subdomein een regel aan de conversiecode toevoegen. In de onderstaande instructies is ervan uitgegaan dat het profiel is ingesteld met het hoofddomein als de opgegeven website (bijvoorbeeld example.co.uk) <ol type="1"><li>Voeg de volgende regel (vetgedrukt) toe aan de conversiecode op alle pagina's van uw sub- en hoofddomein: </li></ol><p class="line867"><pre>         &lt;script src="/urchin.js" type="text/javascript"&gt;
+         &lt;/script&gt;
+         &lt;script type="text/javascript"&gt;
+           _udn="example.co.uk";
+          &lt;/script&gt;
+</pre><ul><li style="list-style-type:none">Deze regel moet verwijzen naar het hoofddomein (example.co.uk). </li></ul><p class="line874">Hoewel u met deze wijziging alle subdomeinen in één profiel kunt bijhouden, wordt in uw rapporten mogelijk geen onderscheid gemaakt tussen pagina's van 'www.example.co.uk' en die van 'help.example.co.uk'. In het rapport 'Belangrijkste inhoud' kunnen bijvoorbeeld treffers voorkomen voor 'www.example.co.uk/index.html' en 'help.example.co.uk/more.html', terwijl in het rapport het volgende wordt weergegeven: <pre>   /index.html
+   /more.html
+</pre><p class="line874">Als u onderscheid wilt maken tussen uw subdomeinen, kunt u voor uw profiel een geavanceerd filter maken met de volgende instellingen: <pre>   Filter Type: Custom filter &gt; Advanced
+   Field A: cs_host (Raw)
+   Extract A: (.*)
+   Field B: Request_Stem (Auto)
+   Extract B: (.*)
+   Output To: Request_Stem (Auto)
+   Constructor: /$A1$B1
+</pre><p class="line874">Met dit filter zouden de vorige voorbeelden worden weergegeven met het subdomein toegevoegd: <pre>   www.example.co.uk/index.html 
+   help.example.co.uk/more.html
+</pre><p class="line874">OPMERKING: dit filter gaat ervan uit dat de hostnaam van uw website (inclusief het subdomein) in uw logbestand voor webtoegang is opgenomen. Als uw logbestand voor webtoegang geen hostnaam bevat, is het niet mogelijk voor Urchin 6-rapporten om de verschillen te registreren tussen bijvoorbeeld 'index.html' in de beide domeinen: <pre> www.example.co.uk/index.html 
+ help.example.co.uk/more.html
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

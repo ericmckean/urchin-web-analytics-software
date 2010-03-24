@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>JavaScript イベントをトラッキングする</strong> <p class="line862">イベントをトラッキングするには、urchinTracker の JavaScript 関数を使用してイベント名を指定します。 たとえば、次のように呼び出します。 <p class="line867"><pre>    javascript:urchinTracker('/homepage/link1');
+</pre><p class="line874">これにより、呼び出しイベントが発生するたびに、/homepage/link1 の URL のページビューが 1 回記録されます。 引数 (任意のURL) はスラッシュ (/) で始める必要があります。 任意のファイル名を割り当てることができるので、イベント名を分かりやすい任意のディレクトリ構造に分類できます。 <p class="line874">たとえば、イベントをページとイベントの種類で分類する場合は、次のようなディレクトリ名で分類します。 <p class="line867"><pre>    * '/homepage/links/link1'
+    * '/homepage/radiobuttons/button1'
+    * '/contactform/rollovers/image1'
+</pre><p class="line867"><strong>HTML コードの例</strong> <p class="line874">onClick イベントを記録する場合は、次のように指定します。 <p class="line867"><pre>    &lt;a href="javascript:void(0);" onClick="javascript:urchinTracker('/folder/file');"&gt;
+</pre><p class="line874">rollover イベントを記録する場合は、次のように指定します。 <p class="line867"><pre>    &lt;a href="javascript:void(0);" onMouseOver="javascript:urchinTracker ('/folder/file');"&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

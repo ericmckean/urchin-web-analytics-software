@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>我的網站連結已經包含我自己的廣告系列追蹤變數。能否使用這些變數來取代 Urchin 的變數？</strong> <p class="line874">如果您已經使用了自己的追蹤變數來標記線上連結，可以將這些現有的變數對映到 Urchin 的廣告系列追蹤變數。標記的連結至少需要包含 3 個變數，它們將會對應到： <ol type="1"><li>utm_source: 廣告系列的來源 (例如：Google、Yahoo) </li><li>utm_medium: 廣告系列的媒介 (每次點擊成本、橫幅廣告、電子郵件) </li><li>utm_campaign: 廣告系列的名稱 (spring_sale) </li></ol><p class="line874">為便於說明，我們假設您的網站包含下列網址： <pre>            www.example.com/index.html?camp=GADS&amp;kwd=memory&amp;version=47&amp;type=ppc&amp;adver=google
+</pre><p class="line867"><strong>步驟 1。</strong> 對映您的變數與 Urchin 的變數。按照下列範例中顯示的格式建立表格： <pre>               廣告系列     廣告來源    廣告類型     關鍵字   A/B 內容  主要
+使用者程式碼=    廣告類型     廣告  類型          關鍵字       版本           
+Urchin 程式碼=  utm_campaign utm_source    utm_medium  utm_term  utm_content  utm_id
+</pre><p class="line867"><strong>步驟 2。</strong> 修改 Urchin 流量監視器檔案。 <ul><li style="list-style-type:none">以文字編輯器開啟 urchin.js 檔案。在檔案開頭處有段使用者定義的程式碼，其中包含 utm 變數： </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="utm_campaign";
+                var _ucmd="utm_medium";
+                var _ucsr="utm_source";
+                var _uctr="utm_term";
+                var _ucct="utm_content";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><ul><li style="list-style-type:none">使用上述的標記連結範例，此段程式碼的修改方式如下： </li></ul><p class="line867"><pre>                //-- UTM Campaign Tracking Settings
+                var _uctm=1;
+                var _ucto="15768000";
+                var _uccn="camp";
+                var _ucmd="type";
+                var _ucsr="adver";
+                var _uctr="kwd";
+                var _ucct="version";
+                var _ucid="utm_id";
+                var _ucno="utm_nooverride";
+</pre><p class="line867"><strong>步驟 3。</strong> 為這些新的追蹤變數建立篩選器。 <ul><li style="list-style-type:none">以下是您應該用於每個篩選器的基本篩選器組態： </li></ul><p class="line867"><pre>                篩選器類型：進階
+                欄位 A：utm_campaign_uri (raw)
+                解壓縮 A：new_variable =([^&amp;]*)
+                欄位 B：(無)
+                解壓縮 B：(空白)
+                輸出至：utm _( old_variable )
+                建構函式：$A1
+                欄位 A 必填與否：是
+                欄位 B 必填與否：否
+                覆寫輸出欄位：是
+                區分大小寫：否
+</pre><ul><li style="list-style-type:none">old_variable 參照預設的 Urchin 追蹤變數。new_variable 參照您自己的追蹤變數。請記得，您需要有每個修改過的變數的篩選器。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

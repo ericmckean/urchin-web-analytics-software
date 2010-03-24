@@ -1,0 +1,15 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>¿Cómo puedo realizar el seguimiento de todos los subdominios del sitio en perfiles separados?</strong> <ul><li style="list-style-type:none"><p class="line891"><em>Autor</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, asesor autorizado del software Urchin </em> </li></ul><p class="line874">El seguimiento de los subdominios en perfiles individuales con Urchin depende de la configuración del servidor web. Es posible configurarlo para registrar archivos de registro separados para todos y cada uno de los subdominios. Urchin podrá procesar así cada archivo de registro del subdominio por separado. Como alternativa, si se crea solo un archivo de registro y la configuración del registro de acceso web permite registrar el nombre de host, incluido el subdominio, se puede construir un filtro Incluir para todos los perfiles del subdominio. El filtro en un perfil incluiría solo tráfico orientado a, por ejemplo, ayuda.ejemplo.co.uk  y otro filtro Incluir incluiría, por ejemplo, solo tráfico orientado a www.ejemplo.co.uk. <p class="line874">De esta manera, para realizar un seguimiento de sus subdominios en perfiles separados, aplique un filtro Incluir a cada perfil para incluir solo un nombre de host particular. El primer paso es crear un perfil para cada subdominio. Una vez que lo haya hecho, podrá crear los filtros descritos a continuación. <p class="line874">Por ejemplo, si desea efectuar el seguimiento de sub.ejemplo.es y www.ejemplo.es en dos perfiles separados, aplique los siguientes filtros: <ul><li style="list-style-type:none">Para su perfil sub.ejemplo.es </li></ul><p class="line867"><pre>    Tipo de filtro: Incluir SOLO patrón
+    Campo del filtro: utm_request_hostname (AUTO)
+    Patrón del filtro: ^sub\.ejemplo\.es
+</pre><ul><li style="list-style-type:none">Para su perfil www.ejemplo.es </li></ul><p class="line867"><pre>    Tipo de filtro: Incluir SOLO patrón
+    Campo del filtro: utm_request_hostname (AUTO)
+    Patrón del filtro: ^www\.ejemplo\.es
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

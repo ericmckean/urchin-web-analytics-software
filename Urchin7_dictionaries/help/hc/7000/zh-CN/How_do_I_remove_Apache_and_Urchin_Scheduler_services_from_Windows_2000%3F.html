@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong> 如何从 Windows 2000 删除 Apache 和 Urchin 调度程序服务？</strong> <p class="line874">极少数情况下，即使已经从系统中删除 Urchin 网络服务器和 Urchin 调度程序服务，若未完整删除 Urchin 软件，还是可能会在 Windows 2000 注册表中留下这些服务的条目。要删除注册表条目，请按照下列步骤操作： <p class="line867"><strong>警告：</strong> 不恰当地使用注册表编辑器可能会导致需要重新安装 Windows 等重大问题。使用风险自担。 <ul><li>以管理员身份登录 </li><li>右键点击"我的电脑"，然后选择"管理" </li><li><p class="line862">进入"服务和应用程序"-&gt;"服务" </li><li>右键点击 Urchin 网络服务器，然后选择"属性" </li><li>在"启动类型"下，选择"已禁用"，然后点击"确定" </li><li>右键点击 Urchin 调度程序，然后选择"属性" </li><li>在"启动类型"下，选择"已禁用"，然后点击"确定" </li><li><p class="line862">启动"注册表编辑器"：开始-&gt;运行-&gt;regedt32.exe </li><li>打开 HKEY_LOCAL_MACHINE 窗口 </li><li><p class="line862">进入 System-&gt;CurrentControlSet-&gt;Services </li><li><p class="line862">点击 Urchin6Webserver 文件夹，然后按下 Delete 键 </li><li><p class="line862">点击 Urchin6MasterScheduler 文件夹，然后按下 Delete 键 </li><li><p class="line862">点击 Urchin6SlaveScheduler 文件夹，然后按下 Delete 键 </li><li>关闭注册表编辑器并保存更改 </li><li>重新启动您的系统 </li><li>运行 Urchin 安装文件 </li><li>选择"删除"Urchin，然后点击"下一步" </li></ul><p class="line874">现在，系统应该不会再引用 Urchin 网络服务器和 Urchin 调度程序服务，可以重新安装 Urchin 了。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Tracking Secure Store Transactions</strong> <p class="line867"><em>This article authored by</em> <a href="ivantageLimited.html">ivantage Limited</a><em>, an Urchin Software Authorized Consultant </em> <p class="line862">Urchin can track data from a shopping trolley on your own domain or on other domains with the addition of some code. To set up your pages to report transaction data to Urchin, please read <a href="How_do_I_track_e-commerce_transactions%253F.html">How do I track e-commerce transactions?</a> <p class="line874">In addition, if your store site is on a different subdomain or domain to your main site, follow the instructions below to configure your pages. <p class="line874">If your website initiates a purchase checkout process on a different subdomain (for example, if you send customers from www.mystore.com to shoppingcart.mystore.com): <ul><li style="list-style-type:none">Add the following line (in bold) to your tracking code on both your store site and your shopping trolley pages: </li></ul><p class="line867"><pre>   &lt;script src="/urchin.js" type="text/javascript"&gt;
+   &lt;/script&gt;
+   &lt;script type="text/javascript"&gt;
+    _udn="mystore.com";
+   &lt;/script&gt;
+</pre><p class="line874">If your website initiates a purchase checkout process on a separate store site (for example, if you send customers from www.mystore.com to www.securecart.com): <ul><li style="list-style-type:none">Add the following lines (in bold) to your tracking code on both your store site and your shopping trolley pages: </li></ul><p class="line867"><pre>     &lt;script src="/urchin.js" type="text/javascript"&gt;
+     &lt;/script&gt;
+     &lt;script type="text/javascript"&gt;
+       _udn="none";
+       _ulink=1;
+     &lt;/script&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">Change the links from the main site to the secure site to use <span class="u">utmLinker as follows. If your current links look like: </span> </li></ul><p class="line867"><pre>     &lt;a href="https://www.securecart.com/?store=parameters"&gt;Purchase Now&lt;/a&gt;
+</pre><ul><li style="list-style-type:none">change them to: </li></ul><p class="line867"><pre>   &lt;script type="text/javascript"&gt;
+   document.write('&lt;a href="javascript:__utmLinker(\'https://www.securecart.com/?store=parameters\');"&gt;Purchase Now&lt;/a&gt;');
+   &lt;/script&gt;
+   &lt;noscript&gt;
+   &lt;a href="https://www.securecart.com/?store=parameters"&gt;Purchase Now&lt;/a&gt;
+   &lt;/noscript&gt;
+</pre><ul><li style="list-style-type:none"><p class="line862">The code above provides links for users with or without JavaScript enabled. It is important to note that apostrophes need to be escaped with a backslash where they appear in the link or link text. Important: If your pages include a call to urchinTracker(), utmLinker(), utmSetTrans() or utmLinkPost(), your Analytics tracking code must be placed in your HTML code above any of these calls. In these cases, the tracking code can be placed anywhere between the opening &lt;body&gt; tag and the JavaScript call. </li></ul><p class="line874">If you send information to your shopping trolley using forms, use the utmLinkPost() function. It appends cookie data to the provided URL of the supplied form. <p class="line867"><pre>   &lt;form action="http://newdomain.com/form.cgi" onSubmit="javascript:__utmLinkPost(this)"&gt;
+</pre><ul><li style="list-style-type:none">This will work even for forms where the method="GET" <p class="line891"><strong>Important:</strong> If your pages include a call to urchinTracker(), utmLinker(), utmSetTrans() or utmLinkPost(), your Analytics tracking code must be placed in your HTML code above any of these calls. In these cases, the tracking code can be placed anywhere between the opening &lt;body&gt; tag and the JavaScript call. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

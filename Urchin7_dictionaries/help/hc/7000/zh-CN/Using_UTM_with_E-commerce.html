@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>将 UTM 与电子商务结合使用</strong> <p class="line867"><strong>概述</strong> <p class="line874">因为 UTM 的主要作用是识别和关联访问者活动，因此，它可以跟踪并汇总报告您网站中产生收入的访问者活动。在托管您购物车软件的服务器上进行的交易可与其他网络服务器上的会话相关联，使得根据推介和关键字等会话变量而产生的收入来报告这些变量成为可能。UTM 具有多会话跟踪功能，可跟踪访问者的来源、购买活动或其他目标。转换率和投资回报率报告提供了在线营销活动的详细结果数据。这些活动包括关键字购买、电子邮件广告系列和交换链接。 <p class="line867"><strong>同域配置</strong> <p class="line874">如果前端网站和安全电子商务网站使用相同的域，那么，将 UTM 安装到您的电子商务网站时，安装方式与将其安装到其他类型的网站上毫无差别。此节中有关 UTM 安装的其他部分将提供详细的安装说明。您应特别注意如何为您的电子商务网站和其他网站恰当设置 UTM 域的部分。有关电子商务交易日志格式的更多信息，请参照文档的"电子商务"部分。 <p class="line867"><strong>跨域配置</strong> <p class="line862">拥有电子商务购物车的网站把自己的电子商务组件外包给其他网站（例如，Amazon、PayPal 或 Yahoo Stores）的情况越来越多。这就使得 UTM 跟踪遇到了一个问题，即当访问者从主网站进入安全商店时，UTM 域发生了变更。为了使安全商店使用与主网站一样的 UTM 访问者 ID，访问者 ID 必须通过链接传递到安全商店。 在将链接发送到商店之前，UTM 包含的 utmLinker 函数可用恰当的 ID 表示链接。此链接不是直接链接到商店，仅是将链接传递到 utmLinker 函数。以下是使用 utmLinker 的具体步骤： <ol type="1"><li>修改两个网站的文档根目录中的 urchin.js 文件，将 _ulink 变量设为 1，将 _udn 变量设为 "none" </li><li>将配置文件的 UTM 域设为空白 </li><li>按此处所示的方法，更改从主网站到安全网站的链接： </li></ol><p class="line867"><pre>   &lt;a
+   href='javascript:__utmLinker("https://previous_link?with_parameters");'&gt;
+   指向购物车的链接&lt;/a&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何在 UNIX 類型平台上變更 Urchin 執行使用者的 UID (使用者)？</strong> <p class="line874">變更 Urchin 執行使用者的「UID / 使用者」和 / 或「GID / 群組」非常簡單。您可能必須擁有「根權限」才能執行下列作業，因此在大部分情況下，只有系統管理員可以完成這項作業。 <ol type="1"><li>如果您的系統上並沒有新的使用者和群組，請在密碼和群組檔案中建立適當的項目。 </li><li>使用 "urchinctl stop" 停止 urchin 服務。"urchinctl" 二進位格式檔位於 Urchin 分佈的 "bin" 目錄中。 </li><li>在 Urchin 分佈的根目錄中執行 "chown -R newuser:newgroup"。如果您已經在 "urchin.conf" 檔案中為 "var" 或 "data" 目錄指定替代位置，則也必須針對這些目錄執行這個 "chown" 指令。 </li><li>在 Urchin 發行軟體的 "var" 目錄中，編輯 "urchinwebd.conf.template" 檔案，變更下列幾行程式碼： <ul><li style="list-style-type:none">User newuser Group newgroup </li></ul></li><li>使用 "urchinctl start" 重新啟動 Urchin 服務。 </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

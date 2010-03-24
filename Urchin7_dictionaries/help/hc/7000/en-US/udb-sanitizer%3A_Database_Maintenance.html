@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer: Database Maintenance Utility</strong> <p class="line867"><strong>Overview</strong>  <p class="line874">The Urchin Database Maintenance Utility, udb-sanitizer, provides a means for checking the Urchin 6 profile databases and performing various maintenance operations on these databases.  <p class="line874">The types of operations that udb-sanitizer can perform are:  <ul><li>Roll back databases to a previous saved backup state </li><li class="gap">Delete profile data for a day, multiple days, or an entire month  </li></ul><p class="line867"><strong>Usage</strong>  <p class="line874">udb-sanitizer is located in the util directory of the Urchin 6 distribution.  <p class="line874">Usage of the utility is as follows:  <pre>  udb-sanitizer [-h] (prints usage message and exits)
+
+  udb-sanitizer [-v] (prints version and exits)
+
+  udb-sanitizer -p profile [-d YYYYMM[DD]] -bfhprq] [-z [-e DD]] 
+</pre><p class="line874">where:  <pre>   -b  go directly to rollback option
+
+   -d  specifies year-month and optionally the day to operate on
+
+   -e  with z and d options, zero multiple days (range d-&gt;e) in same month
+
+   -f  force action to occur without confirmation
+
+   -h  print this help information
+
+   -p  specifies name of profile (required)
+
+   -a  specifies name of account
+
+   -r  go directly to remove option
+
+   -q  quiet mode, suppress output except for critical user confirmation
+
+   -z  go directly to zero-day option 
+
+</pre><p class="line867"><span class="u">Note</span>: When udb-sanitizer is called with options that do not completely describe what action to take,  it will display the usage text (equivalent to <tt>-h</tt> option).  You can cause an action to be performed without any user interaction by using a combination of options <tt>–f</tt> and <tt>-q</tt> in conjunction with applicable use of the <tt>-d</tt>, <tt>-b</tt>,  <tt>-r</tt>,  or <tt>-z</tt> options.  <p class="line867"><strong>Operation</strong>  <p class="line874">In normal operation, udb-sanitizer is invoked from a command shell with providing options applicable for planned type of operation.    <p class="line874">Actions associated with an available options presented above are:  <p class="line874">1. Data rollback (–r) <ul><li style="list-style-type:none">This options allows user to revert back to an already archived data for a profile. The user is presented with a list of ZIP archive backups to choose from and the contents of the selected archive file replaces the existing reporting database. The ZIP archives are named with the following convention "YYYYMM-backupv6-YYYYMMDDHHMMSS.zip", where the first YYYYMM refers to the month of data being backed up (e.g. 200803 refers to March 2008), and the YYYYMMDDHHMMSS portion is the timestamp of when the ZIP archive was created. This timestamp should be helpful in determining which ZIP archive you want to roll back to. </li></ul><p class="line874">2. Delete monthly data (-d) <ul><li style="list-style-type:none">All data for a particular profile for the specified month is removed. This option is useful for zeroing out the statistics for a month if the data is incorrect, e.g. the wrong filters were applied or the wrong logs were processed; or perhaps some of the advanced profile parameters were changed such as the click path depth or referral level and it is desirable to update that month's Urchin reporting data to reflect the change. This action can be performed without user interaction by invoking udb-sanitizer with the -f, -r and -q arguments.  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. Zero data for one or more days <ul><li style="list-style-type:none">This option allows data for selected range of days within one month to be zeroed out, thereby allowing Urchin log processing to be rerun for those days only (e.g. urchin -p profile -d YYYYMMDD). This action can be performed without user interaction to zero out a single day by invoking udb-sanitizer with the -f, –q, -z and -d arguments, e.g.  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">and for multiple days by including the "-e" argument as well to specify an end date, e.g.  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">which will zero out data for September 7th through the 10th. Note that –e argument only expects the ending day. This is more efficient than invoking multiple instances of udb-sanitizer to zero out a single day at a time, as the database indexes and headers are only checked once. The index/header checking operation can require a noticeable amount of time on profiles with a lot of data.  </li></ul><p class="line874">4. If the profile is part of an account, then account name should be specified using the -a argument.   <p class="line867"><span class="u">Important</span>: Actions that delete daily or monthly data cannot be undone! The only recourse is to reprocess the webserver logs for that time period to repopulate the profile databases. Use these options with care. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

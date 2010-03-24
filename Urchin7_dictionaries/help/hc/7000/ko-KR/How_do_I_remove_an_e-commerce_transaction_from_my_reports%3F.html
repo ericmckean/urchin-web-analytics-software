@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>전자상거래는 보고서에서 어떻게 삭제합니까?</strong> <p class="line862">주문이나 거래를 취소하려면 레코드에서 거래를 검색한 다음마이너스 거래 합계를 가지는 중복 영수증(<tt class="backtick">__</tt>utmSetTrans) 페이지를 생성하고 로드하십시오. 그러면 최초 거래가 취소됩니다.예를 들어 최초 거래 합계가 699,000원이면 생성된 중복 페이지의 거래 합계는 -699,000원이여야 합니다. <p class="line874">이전 거래의 일부가 크레딧으로 전환되기 위해서는 다음을 준수해야 합니다. <ul><li>구매 시 사용했던 ID와 동일한 거래 및 품목 양식 데이터에 대한 거래 ID를 사용해야 합니다. </li><li>거래 양식 데이터에서 합계 입력란에 마이너스 값을 입력해야 합니다. </li><li><p class="line862">품목 양식 데이터에서 단가에 <strong>플러스</strong> 값을, 수량에 <strong>마이너스</strong> 값을 입력해야 합니다. </li><li>크레딧으로 전환되는 세금 또는 배송 비용이 있으면 거래 양식 데이터의 해당 입력란에 마이너스 값을 입력해야 합니다. </li></ul><p class="line874">마이너스 수익이 이전 거래 전체에 대한 것이면 플러스 거래와 마이너스 거래 중 하나를 포함하는 날짜 범위를 선택할 경우 거래 보고서에 플러스 항목과 마이너스 항목이 모두 표시됩니다.하지만 두 거래를 모두 포함하는 날짜 범위를 선택할 경우에는 항목이 취소되어 보고서에서 완전히 사라집니다(해당 거래에 대한 총 수익이 0이기 때문).마이너스 품목 수량은 제품 보고서에도 동일한 영향을 미칩니다. <p class="line874">아예 처리되지 않았거나 특정 사유로 인해 허용되지 않은 주문을 취소하려면 Urchin 보고서에 정확한 정보를 제공해야 합니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

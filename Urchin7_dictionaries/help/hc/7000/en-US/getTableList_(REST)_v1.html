@@ -1,0 +1,35 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>getTableList (REST) v1</strong> <ul><li><p class="line891"><a href="Data_API.html">API Table of Contents</a> </li><li><p class="line891"><a href="Report_service_(REST)_v1.1.html">ReportService (REST)</a> </li></ul><p class="line862">Method: <strong>getTableList</strong> <p class="line874">This method retrieves list of tables for a specified profile. <p class="line867"><strong>REST URL</strong> <p class="line867"><pre>http://server_name[:port]/services/vN/reportservice/tables/?login=$login&amp;password=$password&amp;profileId=$profileId
+</pre><p class="line874">Request arguments: <ul><li><p class="line891"><strong>login</strong>  - User name login </li><li><p class="line891"><strong>password</strong> - User password </li><li><p class="line891"><strong>profileId</strong> - Profile identifier (not null) </li></ul><p class="line874">Response: <ul><li><p class="line891"><strong>Table[]</strong> - list of available tables with each table's dimensions and metrics </li></ul><p class="line867"><strong>Sample REST Request</strong> <p class="line867"><pre>http://urchin.com:9999/services/v1/reportservice/tables/?login=super_admin&amp;password=password&amp;profileId=1
+</pre><p class="line867"><strong>Sample REST Response</strong> <p class="line867"><pre>&lt;tns:getTableListResponse xmlns:tns="https://urchin.com/api/urchin/v1/"&gt;
+    &lt;table&gt;
+        &lt;tableId&gt;1&lt;/tableId&gt;
+        &lt;dimensions&gt;
+            &lt;dimension&gt;u:utm_source&lt;/dimension&gt;
+            &lt;dimension&gt;u:utm_medium&lt;/dimension&gt;
+            &lt;dimension&gt;u:utm_campaign&lt;/dimension&gt;
+        &lt;/dimensions&gt;
+        &lt;metrics&gt;
+            &lt;metric&gt;u:pages&lt;/metric&gt;
+            &lt;metric&gt;u:visits&lt;/metric&gt;
+            &lt;metric&gt;u:transactions&lt;/metric&gt;
+            &lt;metric&gt;u:revenue&lt;/metric&gt;
+            &lt;metric&gt;u:responses&lt;/metric&gt;
+            &lt;metric&gt;u:impressions&lt;/metric&gt;
+            &lt;metric&gt;u:clicks&lt;/metric&gt;
+            &lt;metric&gt;u:cost&lt;/metric&gt;
+            &lt;metric&gt;u:goals1&lt;/metric&gt;
+            &lt;metric&gt;u:goals2&lt;/metric&gt;
+            &lt;metric&gt;u:goals3&lt;/metric&gt;
+            &lt;metric&gt;u:goals4&lt;/metric&gt;
+        &lt;/metrics&gt;
+    &lt;/table&gt;
+&lt;/tns:getTableListResponse&gt;
+</pre><p class="line867"><strong>Java and .Net C# samples</strong> <p class="line874">The following samples are available for this method: <ul><li><p class="line891"><a href="Samples_for_Java_(REST)_v1.html">Samples for Java (REST) v1</a> </li><li><p class="line891"><a href="Samples_for_.NET_(REST)_v1.html">Samples for .NET (REST) v1</a> </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

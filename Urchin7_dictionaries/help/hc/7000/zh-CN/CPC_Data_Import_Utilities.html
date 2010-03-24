@@ -1,0 +1,23 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>每次点击费用数据导入实用程序 (Urchin 6.5+)</strong> <p class="line874">Urchin 6.5 新增了用于处理每次点击费用数据的实用程序。 <p class="line867"><strong>urchincpc</strong> - Urchin 每次点击费用数据导入工具通过 Google Ad<tt class="backtick"></tt>Words 和 Yahoo! Search Marketing API 来提取每次点击费用数据，以便进一步处理并生成报告。 *<strong>请注意：</strong>从 Ad<tt class="backtick"></tt>Words 下载的每次点击费用数据的存档不得超过 250MB (Urchin 6.501+)。 <p class="line867"><strong>urchincpcd</strong> - Urchin 每次点击费用来源调度程序（简称为 CPC 调度程序）用于根据用户指定的时间来安排每次点击费用下载任务（类似于配置文件调度程序）。 <p class="line874">CPC 调度程序 (urchincpcd) 可在本地主机上与 Urchin 主调度程序 (urchind) 一起运行。只有在启动并运行主调度程序的情况下，才能安排下载每次点击费用来源。CPC 调度程序会定期检查队列中是否有每次点击费用数据下载任务，并控制这些任务的执行过程。 <p class="line874">当发现有任务安排后，每次点击费用导入工具 (urchincpc) 会自动启动。CPC 调度程序会在内部生成工作进程 (worker process)，但您也可以通过命令行直接调用相应进程，以便开始执行队列中的任意现有任务。 <p class="line874">下载的每次点击费用数据存储在本地的 /path/to/urchin/data/cpc/ 路径中，并会在系统处理链接的配置文件时由 Urchin 引擎自动提取。 <p class="line874">Urchin CPC 调度程序由 urchinctl 实用程序进行管理。要单独对每次点击费用来源调度程序执行操作，请使用“-c”选项。例如： <p class="line867"><pre>urchinctl -c start/stop/restart
+</pre><p class="line874">可单独启动/停止/重启 CPC 调度程序。 <p class="line867"><img alt="CPC_Data_Import" src="../images/CPC_Data_Import.jpg" title="CPC_Data_Import" /> <p class="line862">要安排立即下载每次点击费用数据，请选中特定每次点击费用来源，并依次访问“配置”-&gt;“CPC 来源管理器”-&gt;“下载”或“修改”-&gt;“调度”标签，然后点击“立即下载”按钮。请注意，只有在启动并运行 CPC 调度程序的情况下才能处理此请求。 <p class="line867"><strong>用法：CPC 调度程序 - urchincpcd</strong> <p class="line874">CPC 调度程序位于 Urchin 6.5+ 安装目录下的 bin 文件夹中。您可以通过命令行使用以下选项： <ul><li><p class="line891"><strong>-d</strong> 启用调试模式。详细调试信息记录在输出结果中；在 Windows 系统中，此选项必须与 –console 一起使用，例如： <ul><li style="list-style-type:none"><pre>           urchincpcd.exe -console -d
+    </pre></li></ul></li><li><p class="line891"><strong>-h</strong> 显示帮助信息并退出 </li></ul><p class="line862">* <strong>-v</strong> 显示版本号并退出 对于 Windows 系统，请使用以下命令之一作为首个参数： <ul><li><p class="line891"><strong>-install</strong>       安装 CPC 调度程序 Windows 服务 </li></ul><p class="line862">* <strong>-remove</strong>     删除 CPC 调度程序 Windows 服务 * <strong>-start</strong>        启动 CPC 调度程序 Windows 服务 * <strong>-stop</strong>         停止 CPC 调度程序 Windows 服务 * <strong>-console</strong>     在控制台模式下启动 CPC 调度程序 <strong>用法：每次点击费用导入工具 - urchincpc</strong> <p class="line874">您可以通过命令行使用以下选项： <ul><li><p class="line891"><strong>-c [id]</strong>     下载指定的费用来源，其中“id”是每次点击费用来源编号 </li></ul><p class="line862">* <strong>-d</strong>           启用调试模式 * <strong>-h</strong>           显示帮助信息并退出 * <strong>-v</strong>           显示版本号并退出 请注意，如果 CPC 调度程序在启动时没有附带任何参数，或者仅附带了 -d 选项，则调度程序就会从队列中的任意现有任务开始处理，并在所有任务处理完毕后退出。 <p class="line867"><strong>通过代理下载每次点击费用数据 (6.501+)</strong> <p class="line862">要启用通过代理下载每次点击费用数据的功能，请修改 urchin.conf 文件，取消对 Web<tt class="backtick"></tt>Service<tt class="backtick"></tt>Proxy<tt class="backtick"></tt>Host、Web<tt class="backtick"></tt>Service<tt class="backtick"></tt>Proxy<tt class="backtick"></tt>Port、Web<tt class="backtick"></tt>Service<tt class="backtick"></tt>Proxy<tt class="backtick"></tt>Username 和 Web<tt class="backtick"></tt>Service<tt class="backtick"></tt>Proxy<tt class="backtick"></tt>Password 等条目的注释，并提供所需的值。 <p class="line867"><pre> ######################################################
+# CPC Source Manager Settings
+#...
+# WebServiceProxyHost, WebServiceProxyHost: Host and port of the HTTP/HTTPS
+# proxy CPC Source Manager must use to access external CPC sources.
+# WebServiceProxyUsername, WebServiceProxyPassword: username and password for
+# proxy that enforces authorization.
+######################################################
+#WebServiceProxyHost: &lt;proxy host&gt;
+#WebServiceProxyPort: &lt;proxy port&gt;
+#WebServiceProxyUsername: &lt;username&gt;
+#WebServiceProxyPassword: &lt;password&gt;
+</pre><p class="line862">对于 WebServiceProxyHost，可以输入 IP 地址或完整域名。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

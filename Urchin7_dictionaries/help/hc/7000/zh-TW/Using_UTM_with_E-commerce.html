@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>使用 Urchin 流量監視器搭配 電子商務</strong> <p class="line867"><strong>總覽</strong> <p class="line874">Urchin 流量監視器的主要作用是識別訪客活動並與其產生關聯，因此，它能夠追蹤並統整回報您網站中帶來收益的訪客活動。在代管您購物車軟體的伺服器上進行的交易可與其他網頁伺服器上的作業階段相關聯，以便回報作業階段變數 (例如推薦連結和關鍵字) 與各個變數所產生的收益。Urchin 流量監視器提供多重工作階段追蹤的功能，可從追蹤訪客的來源、購買活動或其他目標。轉換率報告和投資報酬率報告提供了詳細的線上行銷活動結果，包括購買關鍵字、電子郵件廣告系列和交換連結等等。 <p class="line867"><strong>相同網域組態</strong> <p class="line874">如果前端網站和安全電子商務網站使用相同的網域，那麼，在您的電子商務網站上安裝 Urchin 流量監視器的程序與安裝到其他類型的網站上毫無差別。本節中其他關於安裝 Urchin 流量監視器的內容將詳細說明安裝軟體的步驟。您應特別注意如何為您的電子商務和其他網站正確設定 Urchin 流量監視器網域的部分。如需其他關於電子商務交易記錄格式的資訊，請參閱本文的「電子商務」部分。 <p class="line867"><strong>跨網域組態</strong> <p class="line862">擁有電子商務購物車的網站將電子商務元件外包給其他網站 (例如 Amazon、PayPal 或 Yahoo 奇摩拍賣商店」 的情況越來越多。這就使得 Urchin 流量監視器追蹤遇到了一個問題，因為當訪客從主要網站進入安全商店時，Urchin 流量監視器的網域也會隨之變更。為了讓安全商店使用與主要網站同樣的 Urchin 流量監視器訪客 ID，訪客 ID 必須透過連結傳遞並到達安全商店。 在將連結傳送至商店前，Urchin 流量監視器的 utmLinker 函數會先將正確的 ID 附加到連結中。因此只要將連結傳送給 utmLinker 函數即可，而不需直接連上商店網站。下面是使用 utmLinker 的具體步驟： <ol type="1"><li>修改兩個網站文件根目錄中的 urchin.js 檔案；將 _ulink 變數設為 1，並將 _udn 變數設為 "none"。 </li><li>將設定檔的 Urchin 流量監視器網域保留為空白。 </li><li>將主要網站的連結變更為安全網站的連結，如下所示： </li></ol><p class="line867"><pre>   &lt;a
+   href='javascript:__utmLinker("https://previous_link?with_parameters");'&gt;
+   link-to-shopping-cart&lt;/a&gt;
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

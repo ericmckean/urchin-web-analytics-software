@@ -1,0 +1,66 @@
+#################################################################################################
+#  Urchin 7 session default dictionary file
+#  NOTE: Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+#################################################################################################
+0	No se utiliza
+1	Acceda a su cuenta.
+2	Nombre de usuario
+3	Contraseña
+4	Acceda de nuevo.
+5	Gracias por utilizar Urchin. ¿Desea acceder de nuevo?
+6	Error de sesión: no se puede leer la configuración. (1000)
+7	Infracción de seguridad: no se ha configurado la dirección remota. (1001)
+8	Infracción de seguridad: módulo no aprobado. (1002)
+9	Error de sesión: el formato del ID es incorrecto. (1003)
+10	Error de sesión: la consulta al controlador de la sesión no es válida. (10004)
+11	Error de sesión: no se puede recuperar la rutina predeterminada. (2001)
+12	Error de sesión: no se puede recuperar la rutina predeterminada. (2002)
+13	Error de sesión: no se puede recuperar la rutina predeterminada. (2003)
+14	Error de sesión: no se puede crear la sesión. (2004)
+15	Error de sesión: no se puede configurar el entorno. (2005)
+16	Error de sesión: no se puede encontrar el id de la sesión. (3000)
+17	Error de sesión: no se puede obtener un registro de la base de datos. (3001)
+18	Error de sesión: la dirección ip no coincide con esta sesión. (3002)
+19	Error de sesión: id de sesión no válido. (3003)
+20	Error de sesión: no se puede actualizar el registro de la sesión. (3004)
+21	Se ha agotado el tiempo de la sesión. Como medida de seguridad, saldrá automáticamente.
+22	Error de sesión: no se puede llamar la aplicación. (4001)
+23	Error de sesión: no se puede solicitar la aplicación. (4002)
+24	Error de sesión: no se puede solicitar la aplicación. (4003)
+25	Error de sesión: no se puede encontrar el sid. (4004)
+26	Error de sesión: no se puede obtener el registro de sesiones de la base de datos. (4005)
+27	Error de sesión: lo sentimos, pero la dirección IP que está utilizando no coincide con la utilizada al inicio de la sesión.
+28	Error de sesión: id de sesión no válido. (4007)
+29	Error de sesión: no se puede actualizar el registro de la sesión. (4008)
+30	Error de sesión: no se puede crear el entorno. (4009)
+31	Error de autenticación: no se puede recuperar el módulo de autenticación. (5001)
+32	Error de autenticación: no se puede recuperar el módulo de autenticación. (5002)
+33	Error de autenticación: no se puede recuperar el módulo de autenticación. (5003)
+34	Error de autenticación: no se puede realizar la autenticación. (6001)
+35	Error de autenticación: número de parámetros incorrecto. (6002)
+36	Error de autenticación: se ha denegado el acceso remoto para los usuarios. (6003)
+37	Error de autenticación: se ha denegado el acceso remoto para la administración. (6004)
+38	Error de autenticación: no se encuentra la dirección IP. (6005)
+39	Error de autenticación: no se puede obtener la configuración global de la base de datos. (6006)
+40	Error de autenticación.
+41	Se ha denegado el acceso remoto para usuarios. (6008)
+42	Se ha denegado el acceso remoto para la administración. (6009)
+43	Acceso
+44	Le damos la bienvenida al software Urchin de Google
+45	Página principal de Google Analytics
+46	Preguntas frecuentes
+47	Política de privacidad
+48	Centro de asistencia de Urchin
+49	Blog de Google Analytics y Urchin
+50	Software Urchin de Google
+51	Política de privacidad de Google
+52	Blog de Google Analytics y Urchin (en inglés)
+53	Política de privacidad de Google
+54	Página principal
+55	Novedades
+56	Asesores autorizados
+57	<p>El software Urchin de Google analiza el tráfico de los sitios web y crea sencillos informes sobre los visitantes (procedencia, uso del sitio, conversión en clientes, etc.).</p><p>Si su contenido se encuentra detrás de un cortafuegos de seguridad, en una intranet o en una red interna que impide el uso del servicio Google Analytics, el software Urchin de Google es ideal para usted.</p><p>El software Urchin de Google solo está disponible a través de asesores autorizados del programa.</p>
+58	Más información
+59	Acuerdo de licencia de usuario final
+60	Foro de usuarios de Urchin

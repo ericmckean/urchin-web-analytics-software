@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 6.602 Geo-databases</strong> <p class="line874">Urchin 6.602 には下記の地域データベースが含まれています。 <ul><li><p class="line891"><strong>geo.db</strong> - 大都市圏の詳細情報（country/region/city）と、ネットワーク（組織）およびドメイン情報が含まれています。 urchin 6 （6.400 - 6.601）以前のバージョンと同じレベルの情報が含まれています。 </li><li class="gap"><p class="line891"><strong>geo.light.db</strong> - 最大で国レベルの大都市圏情報のみが含まれ、地域、都市、ネットワーク、組織情報は含まれていません。 このデータベースのメモリ フットプリントは極めて小さく、ロード時間も短いため、ログ処理エンジンのパフォーマンスが重要な場合はこのデータベースを使用します。 この軽量な地域データベースを使用した場合、レポートの表示は次のようになります。 <ul><li style="list-style-type:none">o 次の "地域地図" レポートには、最大で国レベルの大都市圏情報のみが表示され、地域や都市情報は表示されません。 <ul><li>[経営層向けの表示] の [経営層向けの概要（ダッシュボード）] </li><li>[経営層向けの表示] の [地図上のデータ表示] </li><li>[マーケティング担当者向けの表示] の [マーケティング担当者向けの概要（ダッシュボード）] </li><li>[ウェブマスター向けの表示] の [ウェブマスター向けの概要（ダッシュボード）] </li><li>[マーケティングの最適化] の [ユーザー セグメントのパフォーマンス] の [地図上のデータ表示] </li></ul>o "利用ネットワーク" レポート（[マーケティングの最適化] の [ユーザー セグメントのパフォーマンス] の [利用ネットワーク]）には、データが表示されません o "ドメイン" レポート（[マーケティングの最適化] の [ユーザー セグメントのパフォーマンス] の [ドメイン]）には、データが表示されません </li></ul></li></ul><p class="line874">デフォルトでは geo.db が使用されます。 geo.light.db データベースに切り替えるには、urchin.conf ファイルで対応する行をコメントアウトします。 <p class="line867"><pre>
+
+# 地域データベースの設定
+
+# 軽量な地域データベースを有効にするには下記の行をコメントアウトします
+# GeodbLight: ON
+
+</pre></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

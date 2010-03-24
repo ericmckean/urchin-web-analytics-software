@@ -1,0 +1,1263 @@
+######################################################
+#  Urchin 7 admin default dictionary file
+#  NOTE:  Don't edit this file! Use the following UTF-8 quotes in strings: “ ” ‘ ’.
+#  Using ASCII quotes is allowed only to separate attributes in HTML tags.
+######################################################
+0	Not Used
+1	Configuration
+2	View Reports
+3	Preferences
+4	2999803979
+5	Accounting
+6	DNS Database Update
+7	Users & Groups
+8	Accounts
+9	Users
+10	Groups
+11	Urchin Profiles
+12	Profiles
+13	Settings 
+14	Process Settings
+15	Global Settings
+16	Help Information
+17	Administration Guide
+18	Glossary of Terms
+19	About Urchin
+20	Urchin User Guide
+21	Scheduler
+22	Previous
+23	Next
+24	Quick Start Guide
+25	Account Wizard: Basic Information
+26	Account Wizard: Finish
+27	Account Wizard: Confirmation
+28	Profile Task History
+29	Name
+30	Documentation Center
+31	Organic Keywords Match
+32	Page Parameters Match
+33	Pageview Mimes Match
+34	include
+35	exclude
+36	Process Visitors & Sessions
+37	Data Map
+38	Report Set
+39	Process Settings
+40	Add
+41	Account Name
+42	IP Address
+43	Edit
+44	Delete
+45	Run
+46	Account Info
+47	Log Destiny
+48	Account Summary
+49	delete
+50	Admin Control Panel Settings
+51	DNS Lookup
+52	on
+53	off
+54	Resolver IP
+55	DNS Loops 
+56	Resolution Target % 
+57	contingent on valid DNS Lookup settings
+58	DB Table Limit
+59	Datacenter Mode 
+60	Shift GMT 
+61	Time Offset 
+62	Urchin Help Information
+63	Session Timeout
+64	Don‘t Touch
+65	Archive - Compress
+66	Delete
+67	Apply Date
+68	Date/Time Wildcard Substitution in Log Path Name
+69	Substitute Time With
+70	Search & Replace
+71	Su
+72	M
+73	Tu
+74	W
+75	Th
+76	F
+77	Sa
+78	Jan
+79	Feb
+80	Mar
+81	Apr
+82	May
+83	Jun
+84	Jul
+85	Aug
+86	Sep
+87	Oct
+88	Nov
+89	Dec
+90	Update
+91	Account
+92	Quick View
+93	#Shown
+94	Administrative Privileges
+95	Option 1 (User,Groups,Profile Task Scheduler,Profile Task History)
+96	DNS Lookup
+97	Report Database Settings
+98	Time Adjustment
+99	Visitor Tracking Options
+100	Contact
+101	Account Information
+102	Add Failed - License Limit Reached for Profile!<p>  Please upgrade your license or delete<br> an existing Profile and try again.
+103	Add Failed
+104	Delete Failed
+105	Get Failed
+106	Update Failed
+107	Contact Email
+108	Users
+109	Username
+110	Profiles
+111	Full Name
+112	User Information
+113	Option 2 (Option 1 + Filters)
+114	Password
+115	Optional Account
+116	All
+117	Option 3 (Option 2 + Profiles,Log Sources)
+118	Admin Level
+119	User Preferences
+120	Report Language
+121	Admin Language
+122	Groups
+123	Group Name
+124	Group Information
+125	Users Assigned to Group 
+126	Copy 
+127	Users in Group 
+128	DB Backups and Cleanups 
+129	Create Backups 
+130	Clean Backups
+131	Number of Backups to Keep
+132	Advanced
+133	Local
+134	GMT
+135	Hours
+136	Site Domains
+137	Decode URL
+138	Search String
+139	Replace String
+140	Access Granted
+141	Log Sources to Process
+142	Log Sources to Process
+143	Please select a Profile above
+144	Log Manager
+145	Filter Manager
+146	Log Manager
+147	Filter Manager
+148	Log Source Name
+149	Filter Name
+150	Cancel Task
+151	Log Source Information
+152	Log File Path
+153	Log Format
+154	User Setup:  Configure Report Set
+155	Filter Information
+156	Filter Type
+157	Filter Field
+158	Include Pattern ONLY
+159	Exclude Pattern
+160	Dynamic URL
+161	Filter(s) To Apply
+162	Available Filters
+163	Applied Filters
+164	Field A
+165	Field B
+166	Output To
+167	Extract A
+168	Extract B
+169	Constructor
+170	Override Output Field
+171	Field A Required
+172	Yes
+173	No
+174	A Required Only
+175	B Required Only
+176	Both Fields 
+177	Either Field
+178	Neither Field
+179	Select Report Set
+180	Report Sets
+181	Override Report Set for Profile
+182	Geo Data
+183	Urchin DB Backup & Cleanup
+184	<nobr><span class=title1><b>Global Settings: Autoupdate (Ref. #A-2704)</b></span></nobr><p><b>Versions<br></b>Autoupdate functionality allows to independently update following Urchin components:<ul><li>Urchin - contains all components but Geo Databases (approximately 50MB)</li><li>Help Articles - contains the Embedded Help and the Help Center articles (approximately 5MB per each language)</li><li>Geo Databases - contains all geo databases (approximately 200MB)</li></ul>Available Actions:<ul><li>check now - check for updates</li><li>view changelist - view the changelist of a new version</li><li>schedule download now - initiate the download of a new version</li><li>cancel - cancel the download</li><li>install now - initiate the installation process</li><li>view error log - view errors</li></ul></p><p><b>Schedule Update<br></b>Use these controls to modify if and when the components are updated. By default, the components are updated daily. If enabled, each day at the configured time, Urchin will automatically download updates. Note that the Geo Database updates are relatively large (approximately 200MB), so the download can have an impact on network bandwidth.</p><p><b>HTTP Proxy Settings (optional)<br></b>If outbound access to the Google download server hosting the geodata updates requires the use of a proxy, use these fields to specify the proxy server name and port, and username and password.</p><p><b>Update Settings<br></b>If enabled, Help Articles or Geo Databases will be updated according to the configured time in a silent mode without any user intrusion.</p>
+185	<nobr><span class=title1><b>Profiles: Storage/DB (Ref. #A-2108)</b></span></nobr><br>This screen allows you to set data management options.  For fault tolerant operations, Urchin provides automatic backup and recovery options.  Use these options to ensure safe operation.  Urchin also provides an automatic archiving option, which can automatically compress old data. <p><b>DB Memory Usage</b><br>Under normal operation, Urchin uses a cache system to limit how much RAM is used by the processing engine.  There can be a performance increase to run the entire process in memory, but this should only be used on dedicated Urchin systems and be aware that the process may consume all available RAM on the system.  For most operations, leave this set to “Limit with Cache System”.<p><b>DB Table Limit</b><br>To keep the size of data and the relating performance of Urchin on large sites in check, this setting will limit any one table in the Urchin Databases to the number of records listed.  The default option is appropriate for most installations.  Within a given month, if this limit is reached, additional entries will be lumped under an entry called ‘Other’. For optimal performace, use value less than or equal to 100,000. <p><b>Keep Raw Tracking Data</b><br>This option when turned off will delete raw visitor and session information after processing.  This can significantly improve log processing performance and reduce the amount of data stored for large sites.  Once raw session data is deleted, any additional hits for that session will be treated as a new session, which can cause a small edge effect in the reporting.  <p><b>Log Tracking</b><br>Urchin is equipped with a ‘smart’ log tracking facility that allows it to determine whether or not it has already processed a given log file. This enables you to rotate logs whenever it is convenient, rather than according to a rigid schedule. It also allows you to merely point Urchin at a directory of log files without concern for whether some have already been processed. IMPORTANT NOTE: if Urchin is not actually resident on the system that stores the log files, it will completely copy all logs to the local Urchin system before determining whether the logs have already been processed. This will cause significant network overhead if there are large log files being analyzed.<p><b>Auto Rollback DB</b><br>When enabled this option can automatically repair data if processing was stopped or killed part way through.  Urchin will automatically detect this condition and roll back the data to the most recent backup (assuming there is one) before continuing.<p><b>Create Backups</b><br>This option enables the automatic creation of backups after processing.  Backups are compressed for compact storage.<p><b>Clean Backups</b><br> This option enables the automatic clean-up of old backups according to the number of desired backups to keep in the next option.  If enabled, Urchin will automatically delete old backups keeping storage in check.  <p><b>Number of Backups to Keep</b><br> This option specified how many backups per month to keep for the clean function mentioned above.<p><b>Archive DB</b><br> This option enables the auto archiving of old monthly data.  Old data is automatically compressed into a single archive, backups are removed, and the data is locked.  Reporting can still view archived data, but no more hits may be processed for the months that are archived.<p><b>Archive DB After</b><br>This option specifies how many months old the data is before auto-archiving is started.<p><b>Delete ALL Data for Profile</b><br>Use this action to permanently delete ALL data for this Profile including ALL backups and archives.  You will need to reprocess all log files for this Profile.  <b>Warning</b>: Verify that you have all log files before deleting this data. 
+186	Customize 
+187	Profile Settings
+188	Profile Name
+189	Domain
+190	Profile Information
+191	Welcome to the Urchin Setup Wizard! <p>The Setup Wizard is a simplified series of configuration steps that will get you up and running in no time.  If you want to change things later, you‘ll have full access to all settings through the Configuration section of the administrative interface.<p>  Please click Continue to get started!
+192	<nobr><span class=title1><b>Scheduler: Task Progress (Ref. #A-2664)</b></span></nobr><br>This screen shows the progress of the task that is currently running. It also provides controls to cancel the running task. A Progress Bar is displayed at the top of the window and shows the approximate percent of processing that is complete. Use the ‘Cancel Task’ button to stop the running task and to roll back the Profile. A clickable link to the reporting for the Profile is provided above the progress bar. The runtime output from the log processing engine is displayed in the Task Process Detail window. <p>Note: If a large remote Log File is being processed, a significant amount of time may be required to copy data, during which the progress bar will not move. Once the file has been copied to the computer running Urchin, the progress bar should update more or less continuously.
+193	<nobr><span class=title1><b>Scheduler: History Detail (Ref. #A-2563)</b></span></nobr><br>The purpose of this screen is to show the detail of the execution of a Task, generally for debugging or performance evaluation purposes. If there has been an error, this screen will give some indication of a remedy. <p><b>Common Issues</b><br>Common problems include ‘log file not found’ errors, which can usually be remedied easily by correcting a path or filename. If FTP is being used to move log files across the network, be sure the username and password are correct by logging in to the server with a dedicated FTP program. If the ‘data proc’ (data processing) time is only a small fraction of the total Run Time, there is probably an issue with log file copying over the network, and you may wish to consider installing Urchin directly on the server.
+194	<nobr><span class=title1><b>File Browser (Ref. #A-5000)</b></span></nobr><br>This screen allows you to browse the local file system to locate the Log Source you are looking for. This is particularly useful if you are not completely sure of the log file‘s name. The Go To Directory box (left side) is used to select a directory for browsing. The files in the directory will appear in the Select File box (right side). Once you have found the log file you require, click on it in the Select File box and click OK.<p><b>Current Directory</b><br>The Current Directory field at the top of the window can be edited directly.  Press return to display the contents of that directory after editing.<p><b>Up One Directory</b><br>The Up One Directory icon at the top right (folder icon with arrow) when clicked will move the Current Directory up a directory to its parent.  The contents of the new directory will be displayed.<p><b>Go To Directory</b><br>The left window allows you to select a directory within the current directory.  Click once on a directory listed in the Go To Directory window to change directories to that directory.<p><b>Select File</b><br>The Select File window on the right allows you to select a file.  Click once on the desired file and the file name will be placed into the File Name field.  Click ok if you are done selecting the file.<p><b>OK/Verify/Cancel</b><br>The OK button will close the window and populate the path field in the previous window with your selection.  The Cancel button closes the window.  The Verify button will open a new window allowing you to check the permissions and size of a single file or multiple files if a wildcard is used in the File Name.
+195	<nobr><span class=title1><b>Remote Log Browser (Ref. #A-5001)</b></span></nobr><br>This screen allows you to browse a remote file system (using FTP) to locate the Log Source you are looking for. This is particularly useful if you are not completely sure of the log file‘s name, or if you wish to test the FTP settings you have configured in the Urchin system. The Go To Directory box (left side) is used to select a directory for browsing. The files in the directory will appear in the Select File box (right side). Once you have found the log file you require, click on it in the Select File box and click OK.<p><b>Current Directory</b><br>The Current Directory field at the top of the window can be edited directly.  Press return to display the contents of that directory after editing.<p><b>Up One Directory</b><br>The Up One Directory icon at the top right (folder icon with arrow) when clicked will move the Current Directory up a directory to its parent.  The contents of the new directory will be displayed.<p><b>Go To Directory</b><br>The left window allows you to select a directory within the current directory.  Click once on a directory listed in the Go To Directory window to change directories to that directory.<p><b>Select File</b><br>The Select File window on the right allows you to select a file.  Click once on the desired file and the file name will be placed into the File Name field.  Click ok if you are done selecting the file.<p><b>OK/Cancel</b><br>The OK button will close the window and populate the path field in the previous window with your selection.  The Cancel button closes the window.
+196	<nobr><span class=title1><b>Directory Browser (Ref. #A-5002)</b></span></nobr><br>This screen allows you to browse Urchin‘s local file system in order to select a directory for the parameter you are editing.<p><b>Current Directory</b><br>The Current Directory field at the top of the window can be edited directly.  Press return to display the contents of that directory after editing.<p><b>Up One Directory</b><br>The Up One Directory icon at the top right (folder icon with arrow) when clicked will move the Current Directory up a directory to its parent.  The contents of the new directory will be displayed.<p><b>Select Directory</b><br>Use the Select Directory window to move into and select the directory you are looking for.  Click once on a directory listed to change directories to that directory.  Once the Current Directory displays the directory you want, click the OK button.<p><b>OK/Cancel</b><br>The OK button will close the window and populate the path field in the previous window with your selection.  The Cancel button closes the window.
+197	Super Admin
+198	User
+199	Account Admin
+200	Chinese
+201	English
+202	French
+203	German
+204	Italian
+205	Japanese
+206	Korean
+207	Portuguese (Brazil)
+208	Spanish
+209	Swedish
+210	Record Added
+211	Record Updated
+212	Schedule Geo DB Update
+213	Schedule Urchin DB Backup Cleanup
+214	Auto Rollback DB
+215	Keep Raw Tracking Data
+216	Reporting Options
+217	Please Select to Edit!
+218	Global Default
+219	Report Permissions
+220	Available Profiles
+221	Access Granted
+222	Storage/DB
+223	Reporting
+224	Groups Assigned to Group
+225	URI Stem to Lower Case
+226	Groups in Group
+227	Report Settings
+228	Report Set
+229	Profile Default Report Set
+230	Data Storage Options
+231	Available Users
+232	Available Groups
+233	UTM Domain
+234	Groups Assigned To
+235	Member of these Groups
+236	Log Settings
+237	Filter Settings
+238	Available Log Sources
+239	Applied To
+240	Log Sources Applied To
+241	Profile Quick View
+242	Users Assigned to Profile
+243	Archive DB Options
+244	Archive DB
+245	Archive DB After
+246	Months
+247	Profile Type
+248	Profile Wizard: General Settings 
+249	<nobr><span class=title1><b>Profile Wizard: General Settings (Ref. #A-249)</b></span></nobr><br>Use this screen to set several parameters that control how the data for this Profile is processed.<p><b>Website URL</b><br>This setting is used to create reference links back to your actual website.  This should be the complete domain name of the site, including the http://. <p><b>Site Domains</b><br>This setting should list all possible domains for your website, with and without the www.  This field is used to determine if a Referral is external to your site (internal referrals are not used in referral reporting).  Use commas to separate each domain entry.<p><b>Default Page</b><br>Use this to enter the default page for your site.  Often, the same page can be accessed by www.site.com/ and www.site.com/index.html or default.html.  Urchin needs to know what the name of this page is so that it can combine the entries internally if it sees both styles.<p><b>Parallel Log Processing</b><p>Enable this option for increased log processing efficiency with load balanced logs. Note that this requires setting up a separate log source for each load-balanced server log file.
+250	Server Port Error! \n\nPlease verify that the port is in the correct range! 
+251	User Privileges
+252	Change Password
+253	Change Report Language
+254	Additional Resources
+255	Modules Installed
+256	Language Pack
+257	E-commerce (ELF Processing)
+258	Campaign Tracking
+259	Log Source License Limit Reached! \n\nPlease check the license screen for information about upgrading the license. \n\nSettings->License 
+260	Latin-1 Encode (UTF-8)
+261	User - No Update
+262	Account Settings
+263	Report Data Location
+264	Directory Browsing Location
+265	Accounting
+266	Summary of Urchin Setup
+267	Number of Accounts
+268	Number of Groups
+269	Number of Users
+270	Number of Profiles
+271	UTM Installed
+272	Number of Data Sets
+273	Number of Log Sources
+274	Number of Log Formats
+275	Number of Log Filters
+276	Number of Schema
+277	Number of DB Fields
+278	Number of Machines
+279	Number of Scheduled Tasks
+280	Summary of Accounts
+281	Profile Task Scheduler
+282	Application
+283	Task Name
+284	Schedule Information
+285	Schedule Setting
+286	Number of Processes
+287	Application to Run
+288	Task Settings
+289	Frequency
+290	Daily
+291	Weekly
+292	Monthly
+293	Once
+294	Start Time
+295	Hour
+296	Minute
+297	Base License
+298	Schedule Task Daily
+299	Every Number of Days
+300	Schedule Task Weekly
+301	Every Number of Weeks
+302	Day of the Week
+303	Mon
+304	Tue
+305	Wed
+306	Thu
+307	Fri
+308	Sat
+309	Sun
+310	Schedule Task Monthly
+311	Day of The Month
+312	Schedule Task Once
+313	Date
+314	Hourly
+315	Schedule Task Hourly
+316	Hour of the Day
+317	Minute of Hour
+318	All
+319	(None)
+320	Select 
+321	Japanese Encode (UTF-8)
+322	Process
+323	Name
+324	Begin Time
+325	End Time
+326	Status
+327	Add Wizard Profile 2 Help
+328	Visitors
+329	PageViews
+330	Hits
+331	Bytes
+332	Custom Fields
+333	Custom Separator
+334	Totals
+335	Schedule Now
+336	Schedule Later
+337	View
+338	Profile Wizard:  Copy Confirmation
+339	Profile duplication successful! You can now either make changes to the Profile by clicking ‘More Options’, or just click ‘Done’ if you wish to perform other operations.
+340	Profile Task Scheduler
+341	Go To Report
+342	No Reports to View
+343	Preferences
+344	This screen shows a summary of the Profile you have copied. If the settings appear correct, click Finish to finalize the duplication. If you would like to make changes, click the Back button.
+345	Records (see help for details)
+346	Local Time
+347	Profile Wizard:  Copy Finish
+348	Minutes
+349	<nobr><span class=title1><b>Profile Wizard: Copy (Ref. #A-349)</b></span></nobr><br>This screen allows you to copy an existing Profile.  The Profile created will be identical except you will need to specify the name, primary URL (domain name), and any additional URLs that point to this site.<p><b>Optional Account</b> (Datacenter Mode)<br>Under Datacenter Mode, the Account setting can be used to bind this Profile to an account which can be used to control access and administration at the account level.<p><b>Profile Name</b><br>This required field sets the name associated with this Profile.  This unique name can be arbitrary or can be the name of the website.  If a website name such as www.urchin.com is entered, then the other two fields will be automatically populated for your convenience.<p><b>Website URL</b><br>This setting is used to create reference links back to your actual website.  This should be the complete domain name of the site, including the http://. <p><b>Site Domains</b><br>This setting should list all possible domains for your website, with and without the www.  This field is used to determine if a Referral is external to your site.  Use commas to separate each domain entry.<p><b>UTM Domain</b> (for UTM-tracked profiles)<br>Leave this blank under normal conditions.  The UTM will automatically detect the domain for the site.  The UTM Domain feature is only used when you have overlapping domains that need to be tracked separately.  
+350	Urchin Run Priority
+351	Low
+352	Normal
+353	High
+354	Access Settings
+355	License Information
+356	License Code
+357	Serial Number
+358	Remote Access Settings
+359	Profile Wizard: Copy
+360	Web-based Report Access 
+361	Web-based Administration 
+362	Reporting Server Settings
+363	Server Port Number
+364	Urchin Setup Wizard: Welcome
+365	Setup Wizard: Admin Settings 
+366	Setup Wizard: Administrative User
+367	Setup Wizard: DNS Lookup 
+368	<nobr><span class=title1><b>Log Source Wizard: Available Logs (Ref. #A-368)</b></span></nobr><br>This screen shows the list of existing Log Sources available, and allows you to add them to the Profile.<p><b>Add Log Source</b><br>To add a Log Source to this profile, select the Log Source in the left window and click the right-facing arrow.  To remove a Log Source from this Profile, select the Log Source in the right window and click the left-facing arrow. Click Finish to apply any changes.
+369	<nobr><span class=title1><b>Filter Wizard: Available Filters (Ref. #A-369)</b></span></nobr><br>This screen shows the list of Filters that have been previously configured, and allows you to apply them to this Profile/Log Source.<p><b>Apply Filter</b><br>To apply an existing Filter to this Profile/Log Source, click the Filter in the left-side box and then click the right-facing arrow.  You can apply more than one Filter to any Profile or Log Source.  To remove a Filter, click on it in the right-side box and click the left-facing arrow.  Click Finish to apply any changes.
+370	UNC
+371	Next
+372	Back
+373	Finish
+374	Continue
+375	<nobr><span class=title1><b>Setup Wizard: Admin Settings (Ref. #A-375)</b></span></nobr><br>Use these settings to control access to the Urchin system.<p><b>Web-based Report Access</b><br>This setting allows you to control whether reports can be viewed from computers other than the one Urchin is running on.  To allow remote access to reports, select ‘on’. <p><b>Web-based Administration</b><br>This setting enables or disables web-based administration access to the Urchin configuration.  If you wish to be able to control Urchin‘s operation from a computer other than the one Urchin is installed on, select ‘on’.  IMPORTANT NOTE: if you are performing this setup from a computer other than the computer actually running Urchin and you do not enable web-based administration, you will only be able to access the administrative system from the console of the Urchin computer. <p><b>Datacenter Mode</b><br>This option enables accounts and sub-administrators in the configuration.  These extra controls allow datacenters to manage complex customers and provide limited administrative features to those customers.  By grouping Profiles, Log Files, and Users under an account, the datacenter can then control the data location and administrative privileges for the customer.
+376	<nobr><span class=title1><b>Setup Wizard: Administrative User (Ref. #A-376)</b></span></nobr><br>Use this screen to set the administrative password for the Urchin system.  Since all Urchin distributions ship with the same default password, it is important to change this during the setup.<p><b>Admin Password</b><br>This screen allows you to change the password for the admin user of this Urchin installation.  It is recommended to pick a unique password that will keep your system secure.  Be sure to remember your password as it will be required to change the Urchin configuration.<p>If Remote Admin Access was turned off in the previous step, you will need to access Urchin directly from the machine Urchin is running on.  In this case Urchin will not ask for a password.<p>For configuring your Urchin installation to use SSL as an additional security measure, please refer to our Documentation Center for the latest information.
+377	<nobr><span class=title1><b>Log Verification (Ref. #A-5003)</b></span></nobr><br>This screen allows you to examine the log file you have selected and ensure that it is the correct Log Source. To get information on the log, click its name in the left-side box and observe the text that appears in the lower box. It will tell you the location (path), size, modification date, and permissions associated with that log. To alter the parameters of the log selection, change the text in the top field. You can use regular expressions, such as an asterisk (e.g., access_log*, which will select all logs prefixed with ‘access_log’) if desired, or a date expression (e.g., access_logDDMMYYYY). To see the results of pattern matching, push the enter key. Click OK to proceed.<p><b>Log File(s)</b><br>The Log File(s) field at the top of the window can be edited directly.  Press return to display the results of that entry.<p><b>Selected Files</b><br>Click on a file in the Selected Files window to view the File Information for that specific file.  The information is presented in the window at the bottom.<p><b>Other Files in Directory</b><br>Click on a file in this window to view the File Information for that specific file.  The information is presented in the window at the bottom.<p><b>OK/Cancel</b><br>The OK button will close the window and populate the path field in the previous window with your selection.  The Cancel button closes the window.
+378	<nobr><span class=title1><b>Setup Wizard: DNS Lookup (Ref. #A-378)</b></span></nobr><br>This screen allows you to set the DNS Lookup parameters for this Urchin installation.  In a nutshell, DNS Lookup is the translation of numeric IP addresses, such as 63.212.171.4, to domain names, such as www.urchin.com. In general, you will want to turn DNS Lookup on so you get valuable domain information in your reports. <p><b>DNS Lookup</b><br>Select the ‘on’ button to enable this feature.<p><b>Resolver IP</b><br>Use this field to enter the IP address of a valid DNS server, either your own or your provider‘s, in the Resolver IP field. If you don‘t know the IP, ask your system administrator or your ISP. The DNS server should be local to your network for proper operation.
+379	(recommended)
+380	Default Page
+381	Profiles Assigned To
+382	No <b>Profiles</b> in Configuration.  Please click the ‘Add’ button<br> on the upper right corner to add a new <b>Profile</b>.
+383	No <b>Log Sources</b> in Configuration.  Please click the ‘Add’ button<br> on the upper right corner to add a new <b>Log Source</b>.
+384	No <b>Filters</b> in Configuration.  Please click the ‘Add’ button<br> on the upper right corner to add a new <b>Filter</b>.
+385	No <b>Users</b> in Configuration.  Please click the ‘Add’ button<br> on the upper right corner to add a new <b>User</b>.
+386	Profile Wizard: Profile Settings
+387	No <b>Groups</b> in Configuration.  Please click the ‘Add’ button<br> on the upper right corner to add a new <b>Group</b>.
+388	Profile Wizard: Log Settings
+389	No <b>Tasks</b> in Configuration.  Please add<br> a Profile to add the associated task.
+390	Enable Task
+391	<nobr><b>Profile Wizard: Profile Information</b></span></nobr><br>Use this screen to set the name and type of Profile being added. <p><b>Optional Account</b> (Datacenter Mode)<br>Under Datacenter Mode, the Account setting can be used to bind this Profile to an account.  Accounts can have their own administrators that can control and modify settings within their account.<p><b>Profile Name</b><br>This required field sets the name associated with this Profile.  This unique name can be arbitrary or can be the name of the website or service.<p><b>Profile Type</b><br>This setting generally does not need to be adjusted unless you have custom datamaps configured.  If you have custom datamaps, then use this setting to control which datamap applies to this profile.<p><b>E-Commerce Website</b><br>If you plan on processing e-commerce data in conjunction with this profile, then set this to “Yes”, otherwise set to “No”.  When E-Commerce is off, you can set a dollar value to a goal in order to provide general ROI information.<p><b>Visitor Tracking Method</b><br>Urchin comes with two ways to identify visitors.  The most accurate way is to use the UTM javascript tagging.  If you have the UTM installed then select that as the option.  If you do not have the UTM installed, then select the IP+User-Agent method.  There are some reports that will not be populated unless you are using the UTM.<p><b>UTM Domain</b><br>Leave this blank under normal conditions.  The UTM will automatically detect the domain for the site.  The UTM Domain feature is only used when you have overlapping domains that need to be tracked separately.
+392	<nobr><span class=title1><b>Profile Wizard: Log Settings (Ref. #A-391)</b></span></nobr><br>This screen lists all of the Log Sources that are to be processed for this Profile.  Use the Add button in the upper right to launch the Log Source Wizard to add an additional Log Source.  Load balanced sites with multiple Log Sources will need additional licensing.  When that process is complete, you will be brought back to this screen. Click Finish to complete the wizard.<p><b>Load Balance Options</b><br>This option is available if you have purchased a Load Balancing License. When Parallel Log Processing is turned on, Urchin opens all of the log files at once and reads them in a rotating fashion, one section at a time, each section corresponding to 15 minutes of log activity. Enabling this option significantly increases performance on load-balanced sites.<br><p><b>Add</b><br>Click the Add button in the upper right to add a Log Source to this Profile.  Once the License Limit is reached, the Add button will be disabled.
+393	This screen shows a summary of the Profile you have configured. If the settings appear correct, click Finish to finalize the setup. If you would like to make changes, click the Back button.
+394	Log Source Wizard: Available Log Sources
+395	Log Source Wizard: Options
+396	Log Source Wizard: Finish 
+397	Log Source Settings 
+398	No <b>Profile Task History</b> found.
+399	Group successfully added! This Group will now be available for organizing Users and other Groups into easy-to-manage units. Click on ‘More Options’ to edit report access and users for this Group.  Click Done to exit this screen.
+400	Profile configuration successful! To add an existing log source, click ‘Add Existing Log Source’. To create a new logsource and attach it to this profile, click ‘Add New Log Source’, at the bottom of this screen. To configure additional profile options, click ‘Reporting Options’. To schedule this profile to either run now or in the future, select ‘Schedule Now’.
+401	Profile Wizard: Finish 
+402	Profile Wizard: Confirmation 
+403	Log Source Wizard: Remote Log Location
+404	Done
+405	User successfully added! This User can now be given access to one or more Profile‘s reports. To grant access or adjust Group permissions, click the ‘More Options’ link.  To exit this screen, click Done.
+406	Record Add Failed! <p> Another record with the same name exists. <br>Please Go Back and correct Error.
+407	Profile Wizard Result. 
+408	Log Source Wizard: Finish
+409	Filter Wizard Result.
+410	Log Source Wizard: Confirmation 
+411	Log Source Wizard Result.  
+412	Filter Wizard: Options
+413	Filter Wizard: Settings
+414	Filter Wizard: Finish
+415	Filter Wizard: Confirmation
+416	<nobr><span class=title1><b>Filter Wizard: Options (Ref. #A-416)</b></span></nobr><br>This screen allows you to choose between creating a new Filter or using one that has been created previously.  This way, you can create a Filter type once, and use it repeatedly.<p><b>Add New Filter</b><br>Select this option to create a new filter and apply it to this Profile/Log Source.<p><b>Pre-Configured Filter</b><br>Select this option to apply a filter that is already in the Urchin system to this Profile/Log Source.
+417	That‘s it!  You‘re ready to start using Urchin. <br>Click Done to begin adding your first Profile.
+418	This screen shows a summary of the Filter you have configured. If the settings appear correct, click Finish to finalize the setup. If you would like to make changes, click the Back button.
+419	Filter configuration complete! To apply this filter to one or more Profiles or Log Sources, click the ‘More Options’ link.  [The only reason to apply a Filter to a Log Source rather than a Profile is if more than one Profiles use the same Log Source.]  Click ‘Done’ to exit this screen.
+420	Cancel
+421	User Wizard: Basic Information
+422	User Wizard: User Settings
+423	User Wizard: Groups
+424	User Wizard: Report Access
+425	User Wizard: Finish
+426	User Wizard: Confirmation
+427	<nobr><span class=title1><b>User Wizard: Basic Information (Ref. #A-427)</b></span></nobr><br>Use this screen to set the username and password of the new user.<p><b>Optional Account</b> (Datacenter Mode)<br>Under Datacenter Mode, the Account setting can be used to bind this User to an account. Accounts can have their own administrators that can control and modify settings within their account.<p><b>Username</b><br>Each user will be required to log-in using their Username and Password. Use this field to specify a unique username for each user. Usernames should not contain spaces.<p><b>Password</b><br>Enter the password in the ‘Password’ and ‘Verify Password’ fields for this user. The user will be able to change the password in the ‘Preferences’ area.<p><b>Authentication type</b><br>In the ‘Authentication type’ listbox, choose the method to be used to authenticate users, e.g. Native/LDAP/MSAD.  “Native” is Urchin‘s native authentication. Other authentication type values refer to alternative custom authentication methods that may be configured in your Urchin instance by an administrator. If the value of the ‘Authentication type’ listbox is other than “Native”, the ‘Password’ and ‘Verify Password’ fields will be disabled. The ‘Authentication type’ listbox is displayed only when at least one custom authentication provider is configured by an administrator in your Urchin instance.<p><b>Full Name</b><br>Use this field to specify the first name and last name of the user.
+428	<nobr><span class=title1><b>User Wizard: User Settings (Ref. #A-428)</b></span></nobr><br>This screen allows you to set the administrative privileges (if any), and the default localization settings for the User.<p><b>Admin Level</b><br>This option controls whether this User has administrative privileges.  The ‘User’ setting indicates the ability to view reports and to change the personal password and locale, but otherwise not control configuration. The ‘User - No Update’ setting indicates the ability to view reports with no ability to change personal preferences. The ‘Account Admin’ has limited administrative abilities, such as the ability to add users and to configure goals. The ‘Super Admin’ has complete control over the system. Only an existing super-admin can create a new super-admin user. <p><b>Report Language</b><br>This option allows you to pick a language for this user to view reports in. The user will be able to change their language via the ‘Preferences’ tab.<p><b>Region</b><br>Use the Region setting to control the localization style for report viewing for this User.  This setting controls the format of dates, times, and numbers, which may be displayed differently in various locales.  If you do not see the User‘s country in the list, select a Region that uses the same date/number formats.<p><b>Access to AdWords Tools</b><br/>This option controls user access to the ‘AdWords Tools’ on the reporting interface. Enabling this option makes AdWords tools available on ALL profiles with CPC data to which the user has access. Disabling this option makes CPC-related reports read-only (i.e. hides all AdWords tools).</p><p>Click Finish to complete the Wizard.
+429	This screen allows you to associate one or more groups to the user in question.  This will allow you to give a user access to two different sites, for example. To assign this user to a group, highlight the group in the left box and click the right-pointing arrow.  To remove this user from a group, select the group in the right-side box and click the left-pointing arrow.  When you have completed this step, click Next to proceed.
+430	This screen allows you to associate one or more reports to the user in question. To add report access to a user, highlight the report in the left box and click the right-pointing arrow.  To remove report access from a user, select the report in the right-side box and click the left-pointing arrow.  When you have completed this step, click Next to proceed.
+431	This screen shows a summary of the User you have configured. If the settings appear correct, click Finish to finalize the setup. If you would like to make changes, click the Back button.
+432	User Wizard Result.
+433	Group Wizard: Basic Information
+434	Group Wizard: Settings
+435	Group Wizard: Groups Within Group
+436	Group Wizard: Report Access
+437	Group Wizard: Finish
+438	Group Wizard: Confirmation
+439	<nobr><span class=title1><b>Group Wizard: Basic Information (Ref. #A-439)</b></span></nobr><br>Use this screen to configure the basic settings necessary for creating a group.  Groups can be used to grant report access to multiple Users at once.  All Users that belong to a Group will inherit the Group permissions in addition to their individual permissions.<p><b>Optional Account</b> (Datacenter Mode)<br>Under Datacenter Mode, the Account can be used to bind this group to a particular account which is used to manage complex customers. Accounts can be thought of as ‘super groups’, each of which can have its own administrator. <p><b>Group Name</b><br>Use this field to specify the name of the group.  Use any descriptive name.  Group names must be unique.<p><b>Group Description</b> (optional) <br>This field is used to provide a description of the group.  This is useful for keeping track of the purpose of different groups.  Use any descriptive name.  Click Finish to complete the wizard.
+440	This screen allows you to select from the available users that have been set up in the Urchin configuration, if any, and add them to the group in question.  To add a user to a group, highlight him/her in the left box and click the right-pointing arrow.  To remove a user from a group, select the user in the Users in Group box and click the left-pointing arrow.  When you have completed this step, click Next to proceed.
+441	This screen allows you to select from the available groups that have been set up in the Urchin configuration, if any, and add them to the group in question.  This is handy for hierarchically organizing the various groups on your system.  To add a group to a group, highlight it in the left box and click the right-pointing arrow.  To remove a group from a group, select the group in the right-side box and click the left-pointing arrow.  When you have completed this step, click Next to proceed.
+442	This screen allows you to select from the available reports that have been set up in the Urchin configuration, if any, and allow the group in question to view them.  To add report-viewing permission to a group, highlight the report in the left box and click the right-pointing arrow.  To remove report-viewing permission from a group, select the report in the right-side box and click the left-pointing arrow.  When you have completed this step, click Next to proceed.
+443	This screen shows a summary of the Group you have configured. If the settings appear correct, click Finish to finalize the setup. If you would like to make changes, click the Back button.
+444	Group Wizard Result.
+445	Task Wizard: Basic Information
+446	Filter Wizard: Available Filters 
+447	Filter Wizard: Finish
+448	<nobr><span class=title1><b>Filter Manager: Filter Settings (Ref. #A-1701)</b></span></nobr><br>This screen allows you to configure and adjust the settings for a Filter.  For more information on filtering, please refer to the manual or our online Documentation Center.<p><b>Examples</b><br>When adding a new filter, a list of example filters is provided for convenience.  Selecting an example filter will auto-populate the settings for the filter, which should then be edited for specifics.  This can be an easy way to see how the settings are created for various common filters.<p><b>Optional Account</b> (Datacenter mode only)<br>For new filters, allows you to select the Account that the filter should be associated with. For existing filters, the name of the Account that the filter belongs to is displayed.<p><b>Filter Name</b><br>This required field is an arbitrary name that is used for convenience when referencing this Filter. Enter something that will be unique for this Filter.<p><b>Filter Type</b><br>Depending on what you want the Filter to do, select one of the Filter types: <li><b>Exclude Pattern</b>: This type of filter will <i>only</i> exclude log file lines (hits) that match the Filter Pattern. The lines that do match will be ignored completely, so bear in mind that a Filter that excludes, for example, Netscape, will cause Urchin to exclude all other information in that log line, such as visitor, path, referral, and domain information.  <li><b>Include Pattern</b>: This type of filter will <i>only</i> include log file lines (hits) that match the Filter Pattern -- all others will be ignored. As in the above example, any hits that are ignored are completely unavailable to the Urchin system from a reporting standpoint.  <li><b>Search & Replace</b>: This is a simple filter that can be used to search for a pattern within a field and replace the found pattern with an alternate form.  If the pattern occurs more than once in the field, then only the last occurrence is replaced.  The ‘^’ character can be used to match at the beginning of the field, and the ‘$’ can be used to tie the match to the end of the field. <li><b>Lookup Table</b>:Selecting this filter allows you to select a lookup table which may be used to map codes to human intelligible labels. A corresponding lookup table file must be created first and installed in the ‘lib/custom/lookuptables’ directory of the Urchin distribution (internal) or located on the local file system, NFS or UNC (Windows only) share. FTP/HTTP sources are not supported.<li><b>Advanced</b>: This type of filter allows you to build a field from one or two other fields.  The filtering engine will apply the expressions in the two Extract fields to the specified fields and then construct a field using the Constructor expression.  The technique follows POSIX regular expression usage. <p><b>Filter Field</b><br>Use the pulldown menu to select which field in the Log Source the filter should apply to.  Fields labeled ‘RAW’ represent the actual contents of the log file with no processing.  Fields labeled ‘AUTO’ are auto-calculated fields that are determined based on RAW and other AUTO fields.  For a complete list of what all the fields are used for, see the filtering section of the online Documentation Center. <p><b>Filter Pattern</b><br>Set this to the pattern that the filter should match.  The pattern can use wildcards that are defined by the POSIX regular expression standard.<p><b>Search String</b><br>For Search & Replace filters, the Search String is used as the pattern to match in the field.<p><b>Replace String</b><br>For Search & Replace filters, the Replace String is used as the replacement for the Search String.<p><b>Table Name</b> (Lookup Table Only)<br>This field, visible when you select Lookup Table as the filter type, allows you to select an internal lookup table which maps codes to human intelligible names. The phone models table maps abbreviated phone platform identifiers to the model and manufacturer names for phone based web browsers. You may create your own lookup tables to map codes to campaigns (for the Campaign Tracking Module) or to map variables in a URL to page names. Any file that you create with a file extension of .lt in the ‘lib/custom/lookuptables’ directory of the Urchin distribution will appear in the internal tables dropdown list.<p><b>File Name</b> (External Lookup Table Only)<br>This field, visible when you select Lookup Table as the filter type, allows you to select an external lookup table file, which maps codes to human intelligible names. You may create your own lookup tables to map codes to campaigns (for the Campaign Tracking Module) or to map variables in a URL to page names.<p><b>Username/Password</b> (Windows, External Lookup Table Only)<br>These fields are used to specify the user credentials to the UNC share on which the external lookup table is located.<p><b>Controls</b><br>Click the Finish button (for a new filter) or the Update button (for an existing filter) to save your changes. For existing filters, the Tabs at the top of the screen allow access to all of the editable settings for this Filter.
+449	<nobr><span class=title1><b>Filters: Profiles (Ref. #A-1702)</b></span></nobr><br>This screen is used to apply this Filter to one or more existing Profiles. Once a Filter is applied to a Profile, all Log Sources associated with that Profile will be filtered during the processing of that Profile.<p><b>Apply to Profile</b><br>To apply this Filter to a Profile, select the Profile name from the Available Profiles box and click the right-facing arrow. To remove this Filter from a Profile, select the Profile in the Applied To box and click the left-facing arrow. Click Update to apply any changes.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Filter. 
+450	<nobr><span class=title1><b>Filters: Log Sources (Ref. #A-1703)</b></span></nobr><br>This screen is used to apply this Filter to one or more existing Log Sources.  Once this Filter is applied to a Log Source, all processing of that Log Source will use the Filter regardless of which Profile is being run.<p><b>Apply to Log Source</b><br>To apply this Filter to a Log Source, select the Log Source name from the Available Log Sources box and click the right-facing arrow. To remove this Filter from a Log Source, select the Log Source in the Applied To box and click the left-facing arrow. Click Update to apply any changes.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Filter. 
+451	<nobr><span class=title1><b>Filter Manager: Summary (Ref. #A-1704)</b></span></nobr><br>This screen shows the complete set of parameters for this Filter. Examine these settings carefully before processing any Profiles to ensure everything is correct. If anything needs adjustment, click the appropriate tab and update the settings as needed. <p><b>Controls</b><br>The Tabs at the top of the screen allow access to all of the editable settings for this Filter. 
+452	<nobr><span class=title1> <b>Users: User Info (Ref. #A-1301)</b></span></nobr><br>This screen allows you to edit the various settings for this User. <p><b>Optional Account</b> (Datacenter mode only)<br>Displays the Account that the User is associated with.<p><b>Username</b><br>Use this field to specify a unique username for this user. Usernames can not contain spaces.<p><b>Authentication type</b><br>In the ‘Authentication type’ listbox, choose the method to be used to authenticate users, e.g. Native/LDAP/MSAD.  ‘Native’ is Urchin‘s native authentication. Other authentication type values refer to alternative custom authentication methods that may be configured in your Urchin instance by an administrator. If the value of the ‘Authentication type’ listbox is other than ‘Native’, the ‘Password’ and ‘Verify Password’ fields will be disabled. The ‘Authentication type’ listbox is displayed only when at least one custom authentication provider is configured by an administrator in your Urchin instance.<p><b>Password</b><br>Passwords must be at least 8 characters and can not contain spaces. Passwords are case-sensitive, so ‘password’ is different than ‘Password’. To change the password, enter it in both the Password and Verify Password fields. Make sure to click the Update button if any changes have been made. <p><b>Full Name</b><br>Use this field to specify the full name of the person that will log-in as this User.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this User.
+453	<nobr><span class=title1>    <b>Users: Preferences (Ref. #A-1302)</b></span></nobr><br>This screen allows you to edit various settings for this User including the administrative level and default language.  <p><b>Admin Level</b><br>This option controls whether this User has administrative privileges.  The ‘User’ setting indicates the ability to view reports and change preferences but not control configuration. The ‘User - No Update’ has no edit capabilty and can only view reports. The ‘Account Admin’ has limited administrative abilities within the Account group (used in Datacenter Mode). The ‘Super Admin’ has complete control over the system. Only an existing super-admin can set the Admin Level to Super Admin.<p><b>Report Language</b><br>This option allows you to pick a language for this user to view reports in. The user will be able to change their language via the ‘Preferences’ tab.<p><b>Region</b><br>Use the Region setting to control the localization style for report viewing for this User.  This setting controls the format of dates, times, and numbers which may be displayed differently in various locales.  If you do not see the User‘s country in the list, select a Region that uses the same date/number formats. <p><b>Access to AdWords Tools</b><br>This option controls user access to the ‘AdWords Tools’ on the reporting interface. Enabling this option makes AdWords tools available on ALL profiles with CPC data to which the user has access. Disabling this option makes CPC-related reports read-only (i.e. hides all AdWords tools).</p><p><b>Controls</b><br>After adjusting the configuration, be sure to click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this User.
+454	<nobr><span class=title1><b>Users: Groups (Ref. #A-1303)</b></span></nobr><br>This screen is used to select which Groups (if any) this User belongs to.  Permissions to view reports can be granted on a Group level.  Users will be able to view all reports that their Group has access to.<p><b>Add to Group</b><br>To make this User a member of a Group, select the Group name from the Available Groups box and click the right-facing arrow. To remove this User from a Group, select the Group in the Member of these Groups box and click the left-facing arrow. Click Update to apply any changes.<p><b>Controls</b><br>Be sure to click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this User. 
+455	<nobr><span class=title1><b>Users: Report Access (Ref. #A-1304)</b></span></nobr><br>This screen is used to grant permission to this User to view the reports for one or more existing Profiles.  In addition to Group permissions, the User can have individually granted report access as set within this screen.<p><b>Grant Access</b><br>To grant a User access to a Profile‘s reports, select the Profile name from the Available Profiles box and click the right-facing arrow. To deny access, select the Profile in the Access Granted box and click the left-facing arrow. Click Update to apply any changes.<p><b>Controls</b><br>Be sure to click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this User. 
+456	<nobr><span class=title1><b>Users: Summary (Ref. #A-1305)</b></span></nobr><br>This screen shows the complete set of parameters for this User. If anything needs adjustment, click the appropriate tab and update the settings as needed. <p><b>Controls</b><br>The Tabs at the top of the screen allow access to all of the editable settings for this User. 
+457	Profile to Run
+458	File Browser
+459	Current Directory
+460	Go To Directory
+461	Select File
+462	File Name
+463	OK
+464	Browse
+465	Log Source Wizard: Local Log Location
+466	Log Source Quick View
+467	Log Source Wizard: Remote Settings 
+468	Username & Password
+469	Log Source Wizard: Settings
+470	<nobr><span class=title1><b>Log Source Wizard: Options (Ref. #A-470)</b></span></nobr><br>This screen allows you to specify either a Local Log Source (i.e., on the computer Urchin is installed on) or a Remote Log Source (i.e., on another computer).  Click Next to continue.<p><b>Local Log Source</b><br>Any log file that resides on the local filesystem of the computer Urchin is running on (including NFS-mounted filesystems) is considered local.  Select this option if your log file is local to the Urchin system.<p><b>Remote Log Source</b><br>Urchin has the ability to transfer remote logs to the Urchin system before processing using FTP, HTTP, or HTTPS protocols.  On Windows systems, Urchin can also access UNC pathnames.  If your log file is remote and must be transferred or accessed through UNC, select this option.
+471	<nobr><span class=title1><b>Log Source Wizard: Remote Settings (Ref. #A-471)</b></span></nobr><br>This screen allows you to specify the manner in which to retrieve or access the remote log file for this log source.<p><b>Server Protocol</b><br>Urchin can handle four types of remote log files, HTTP (www), HTTPS, FTP,  and UNC (Windows only).  If your log file is accessible through a web browser, use HTTP.  If no password is required, simply leave the username and password fields blank.  FTP can be used with a username and password (usually the same as your username for uploading content to your site).  UNC, which is only available on Windows systems, will require a username and password in order to access the UNC share.<p><b>Server Name/IP</b><br>Enter the Server Name (e.g., www.urchin.com) or IP Address (e.g., 63.212.171.4) where the log file is located.  For UNC, use the \\server\share notation.<p><b>Server Port</b><br>The Server Port will be filled in automatically.  But if you are using a non-standard port, you can edit this manually.<p><b>Same Local and Remote Login</b> (UNC only)<br>This option is visible if UNC has been selected as the Server Protocol (Windows only). Select Yes if the same login and password can be used for both the local and remote server. Select No if the remote server requires a different login or password as the local server. Additional fields for the Local Server Login will become visible if you select No.<p><b>Username/Password</b><br>These fields can be left blank for non-authenticated HTTP and anonymous FTP connections.  To use an authenticated HTTP/FTP connection, enter your username and password here.  UNC requires a username and password to access the share. <p><b>Domain</b> (UNC only)<br>If the UNC share is part of a Domain, then enter the Domain network information here. <p><b>FTP Mode</b> (FTP only)<br>This option is visible when FTP has been selected as the Server Protocol. Select Passive for passive (PASV) transfer method. Select Active for direct (PORT) transfer method. 
+472	<nobr><span class=title1><b>Log Source Wizard: Local/Remote (Ref. #A-472)</b></span></nobr><br>Use this screen to specify the location/destination and name of the Log Source.<p><b>Log File Path</b> (Local Only)<br>Use this field to enter the complete path and filename to the log file (e.g., /var/logs/access-log). A Browse button is provided for convenience.  The filename may contain wildcards, such as an asterisk.<p><b>Remote Log Source File</b> (Remote Only)<br>Use this field to specify the remote path to the log file.  This is the complete path without the domain information. Note that wildcards are not supported for remote HTTP-based log source pathnames. For FTP and UNC connections, a Browse button is provided for convenience.<p><b>Log Destination</b> (Remote Only)<br>Before processing, remote log files are transferred to the local system.  Select a local directory for storing the log file.  A Browse button is provided.<p><b>Optional Account</b> (Datacenter Mode only)<br>Under Datacenter Mode, this optional field can be used to bind this Log Source to an Account which will make it only available to the Account.<p><b>Log Source Name</b><br>This required field is an arbitrary name that is used for convenience when referencing this Log Source.  Enter something that will be unique for this Log Source.
+473	<nobr><span class=title1><b>Log Source Wizard: Settings (Ref. #A-473)</b></span></nobr><br>This screen allows you to specify the format of the log file being processing.  The <i>auto</i> logformat type should be chosen for most webservers. Other webserver logformat types are provided for backward compatibility with older versions of Urchin but are generally not needed. Custom logformats can be created using the templates in the lib/custom/logformats directory of the Urchin distribution.<p><b>Log Format</b><br>Use the Log Format option to specify the format of this Log Source. <ul><li><b>Auto:</b> this format will automatically detect most webserver log formats, including Apache, W3C (Microsoft IIS), NCSA, Netscape and iPlanet. <li><b>Campaign:</b> use this format for campaign cost data that is specifically formatted for Urchin‘s use. Please see the online documentation for details. Note that the campaign log format can not be auto detected.<li><b>Elf2:</b> use this format for e-commerce logs in ELF2 format. Note that the E-Commerce log format can not be auto detected.<li><b>Google:</b> Use this format for logs containing Google cost-per-click spending data. Note that the Google log format can not be auto detected.<li><b>NCSA:</b> this format can usually be auto detected and is typically used by Apache webservers.  Note that for complete reporting, Extended Combined logging should be used, which is not the default Apache behavior in most cases. <li><b>Netscape:</b> legacy Netscape servers (non-iPlanet) use this format by default.<li><b>Overture:</b> Use this format for logs containing Overture cost-per-click spending data. Note that the Overture log format can not be auto detected.<li><b>W3C:</b> this format can be auto detected, and is used for webservers that log in standard W3C format such as Microsoft IIS servers.</ul> 
+474	This screen shows a summary of the Log Source you have configured. If the settings appear correct, click Finish to finalize the setup. If you would like to make changes, click the Back button.
+475	Log File Location
+476	Local
+477	Remote
+478	Remote Server Settings
+479	FTP
+480	HTTP
+481	Server Protocol 
+482	Server Name/IP
+483	Server Port
+484	Log configuration successful! The Log Source you have added is now available for processing by any Profile configured in the system. Click the ‘Done’ button to return to the admin system, or click More Options to set additional parameters.
+485	Remote Server Login
+486	Username
+487	Password
+488	Log configuration successful! The Log Source(s) you have selected is/are now added to the Profile. Click the ‘Done’ button to return to the admin system. 
+489	Filter configuration complete!  The Filter(s) you selected is/are added to the Profile.  Click the ‘Done’ button to return to the admin system. 
+490	Log File Location 
+491	Remote Log Source File
+492	Remote Log Browser
+493	https
+494	Directory Browser
+495	Select Directory
+496	Remote Log Location
+497	Setup Wizard: Confirmation
+498	<p><b>First Time Users - Please Read - Concepts and Terminology</b><br><ul><li>A Profile is the term used for a set of reports for a website and the configuration settings needed to create those reports. <li>Urchin needs to process log files created by your website‘s server before reports can be viewed.  These log files are referred to as ‘Log Sources’.<li>Once you have determined the location of the Log Sources, Urchin can process the logs immediately, or Urchin can be scheduled to process logs on a periodic basis as they are created. <li>Help information is provided for each configuration screen by clicking on the question mark at the bottom of the screen.
+499	Setup Profiles
+500	Log Out
+501	Import Profiles
+502	Select To Import
+503	Import Profiles
+504	Import
+505	Setup Wizard
+506	<nobr><span class=title1><b>Log Source Wizard: Options (Ref. #A-506)</b></span></nobr><br>This screen allows you to specify either a Local Log Source (i.e., on the computer Urchin is installed on) or a Remote Log Source (i.e., on another computer).  Click Next to continue.<p><b>Local Log Source</b><br>Any log file that resides either on the machine Urchin is running on or on a mounted drive is considered local.  Select this option if your log file is local to the Urchin system.<p><b>Remote Log Source</b><br>Urchin has the ability to transfer remote logs to the Urchin system before processing using either FTP or HTTP protocols.  In addition, on Windows platforms, Urchin can access log files over UNC shares.  If your log file is remote and must be transferred or accessed over a share, select this option.<p><b>Pre-Configured Log Source</b><br>Select this option if you wish to assign a Log Source that has already been entered into the Urchin system.
+507	Log configuration successful! The Log Source you have added is now available for processing by any Profile configured in the system. Click the ‘Done’ button to return to the admin system.
+508	Filter configuration complete!  The Filter has been added. Click the ‘Done’ button to return to the admin system.
+509	Status
+510	% Complete
+511	Queued
+512	Last Run Time
+513	Frequency 
+514	Never
+515	Real Time
+516	Run/Schedule
+517	Not Scheduled
+518	Not Scheduled
+519	Scheduled
+520	Running
+521	Completed
+522	Error
+523	Remote Settings
+524	Run Now
+525	No <b>Account</b> in Configuration.  Please click the ‘Add’ button<br> on the upper right corner to add a new <b>Account</b>.
+526	Server Name Missing
+527	Could Not Resolve Hostname
+528	Could Not Connect to Server 
+529	Access Denied
+530	Username or Password Incorrect
+531	Empty List
+532	Profile Task History
+533	Success
+534	Warning
+535	Error
+536	<nobr><span class=title1><b>Accounts: Summary (Ref. #A-1202)</b></span></nobr><br>This screen shows the complete set of parameters for this Account. If anything needs adjustment, click the appropriate tab and update the settings as needed. <p><b>Controls</b><br>The Tabs at the top of the screen allow access to all of the editable settings for this Account. 
+537	Year/Month
+538	<nobr><span class=title1><b>Account Wizard: Basic Information (Ref. #A-538)</b></span></nobr><br>Use this screen to set the parameters for the new Account.  Accounts can be used to group all of the Profiles, Users, Log Sources, etc. of a single customer under one Account.<p><b>Account Name</b><br>Each Account requires a unique name.  This can be arbitrary or based on the customer name or website.<p><b>Contact & Contact Email</b><br>The contact information is optional and is provided as a convenient way to keep track of your customers.<p><b>Report Data Location</b><br>This optional setting specifies the directory path for storing the report data for all the Profiles that belong to this Account.  The default location is in the data/reports/<i>account_name</i> directory within the Urchin distribution.  The entire data directory can be moved on a system-wide basis by editing the urchin.conf file in the etc directory.  A Browse button is provided for convenience.<p><b>Run History Location</b><br>This optional setting specifies the directory path for storing the runtime history data for all the Profiles that belong to this Account. The default location is in the data/history/<i>account_name</i> directory within the Urchin distribution.  A Browse button is provided for convenience.<p><b>Directory Browsing Location</b><br>This optional setting is provided as a security measure when giving an Account admin access to create Profiles.  A directory path entered into this field will limit the Account admin‘s ability to browse for log files to that directory.  By default there is no browsing restriction.  This can be changed on a system-wide basis by modifying the urchin.conf file in the etc directory. A Browse button is provided for convenience.
+539	<nobr><span class=title1><b>Settings: Global Settings (Ref. #A-2701)</b></span></nobr><br>This screen allows you to set the access settings for this Urchin installation. These settings will vary depending on whether you are installing Urchin on a server or on a desktop computer.<p><b>Web-based Report Access</b><br>To allow Users to be able to log-in and view reports remotely using a web browser, select ‘on’.  To only be able to view reports while sitting at the console of the system that Urchin is installed on, select ‘off’.<p><b>Web-based Administration</b><br>To allow the ‘admin’ user to log-in and modify configuration remotely using a web browser, select ‘on’.  To only be able to modify configuration while sitting at the console of the system that Urchin is installed on, select ‘off’.<p>In general, both of the settings are set to ‘on’ for server installations, and at least web-based administration is turned ‘off’ for desktop operation.<p>Note that it can be overridden by ALLOW_AUTO_LOGIN option in the etc/session.conf file.<p><b>Direct Report Linking</b><br>IMPORTANT SECURITY NOTE: Enabling this feature turns off session-based security controls and allows you to create links directly to reports.  This can be useful for systems that are already password or network protected.  Once this feature is enabled, you can link directly to reports using the format:<p>&nbsp;&nbsp;(baseurl)/report.cgi?profile=(profilename)&user=(username)<p>where (baseurl) is everything before session.cgi in the current URL, (profilename) is the URI-escaped name of the profile, and (username) is a user that has access to the report.  The user= setting is optional and controls the language and localization preferences; if not specified the admin user is assumed.  See the .report.conf file in the htdocs directory of the Urchin distribution for additional configuration and access control options.<p><b>Server Port Number</b><br>This option specifies which port number to run the Urchin web service on.  After changing this option, you will need to restart the Urchin services using the “urchinctl” application in the bin directory of the product.  See installation documentation for more details.  By default, Urchin runs on port 9999, although this can be changed during installation.<p><b>Controls</b><br>Be sure to click the Update button to save your changes. The Tabs at the top of the screen allow access to other settings.
+540	<nobr><span class=title1><b>Settings: Server Settings (Ref. #A-2702)</b></span></nobr><br>This screen allows you to change the server port that is used by the Urchin administration and report generation systems. <p><b>Server Port Number</b><br>The web-based administration and report viewing runs on the specified Port of the server that Urchin is installed on. By default, this is set to port 9999. Important note: do not change this number to a port in use by another service, such as standard HTTP (port 80), or sendmail (port 25). We recommend that you discuss this issue with your system administrator if you plan to change the port from 9999.  After changing this value, you will need to restart the Urchin Services to have the changes take effect. The two Urchin Services are the Scheduler (‘urchind’), and the Server (‘urchinwebd’).  To restart these services on Windows platforms, use Disable and Enable options in the Start->Programs->Urchin menu.  On UNIX-type platforms, run ‘bin/urchinctl restart’ in the Urchin directory.
+541	<b>View Reports</b><br>This screen lists all of the available profiles that you have access to. It allows you to review performance metrics for multiple profiles on a single screen.<p><b>The limited calendar</b><br>The limited calendar in the top right  corner allows you to choose a date range (Day; Week; Month; Year).<p><b>Go To Report</b><br>Click the profile name to launch the reporting window for that profile. The reporting window allows you to view all available reports for the profile.<p><b>Edit</b> (super-admin only)<br>The Edit button provides access to all settings for the profile, organized in a tab format.<p><b>Status</b> (hyperlinked, super-admin only)<br>The Status of each Task is either Not Scheduled, Pending, Queued, Running, Cancelling, Completed, Cancelled, Warning, or Error. These are color-coded. To sort the list by Status, click the arrow below the word “Status”. To view runtime details for a Task, click the color-coded status entry next to that Task. This opens a new window that displays the runtime details. <p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. Use the Previous and Next buttons to scroll through the entries one page at a time. To click over to the actual site, click the link next to the profile name.<p><b>Account</b> (Datacenter Mode only)<br>In Datacenter Mode, the Account menu can filter the entries.<p><b>View</b><br>Use the View pulldown menu to select the Admin, Business or Basic view for overview pages.
+542	<nobr><span class=title1><b>Preferences (Ref. #A-1001)</b></span></nobr><br>This screen allows you to set/change your password, and control the default language and localization settings for Urchin‘s reports. Click Update to apply any changes.  Some settings may not be editable if permissions are reserved for the administrator.<p><b>Password</b><br>To change your password, type your new password in the Password field and the Verify Password field and click the Update button.  The next time you log-in your new password will be used.  Passwords should not contain spaces or other reserved characters.  <b>Note to Administrators:</b> Be sure to remember the admin password!  <p><b>Report Language</b><br>Use this menu to select the language you wish to view reports in.  All navigational and simple help information in the reporting interface will be displayed in the selected language.  Be sure to click Update after changing.<p><b>Region</b><br>Use the Region setting to control the localization style for report viewing.  This setting controls the format of dates, times, and numbers which may be displayed differently in various locales.  If you do not see your country in the list, select a Region that uses the same date/number formats as your country.  Click the Update button to save your changes.
+543	<nobr><span class=title1><b>Process Settings: DNS Settings (Ref. #A-2301)</b></span></nobr><br>This screen allows you to configure the DNS Lookup functionality of Urchin which translates IP addresses to domain names (i.e. 63.212.171.4 -> urchin.com).  This allows Urchin to report on domain names, networks and countries.  To configure DNS you will need the IP address of a local name server.  Ask your administrator for details.<p><b>DNS Lookup</b><br>Select the ‘on’ button to enable DNS Lookups.<p><b>Resolver IP</b><br>Enter the IP address of a local DNS name server that is ok for Urchin to query for converting IPs to domain names.<p><b>DNS Loops</b><br>This setting controls how many attempts at resolution Urchin will make before giving up.  The default setting of 5 is good for most installations.<p><b>Resolution Target</b><br>Once Urchin reaches the Resolution Target, it will stop processing DNS.  Having this setting at the default of 80% is a good balance between processing speed and resolution.  Increasing this number may slow down operation.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to other settings.
+544	<nobr><span class=title1><b>Global Settings: DB Settings (Ref. #A-2302)</b></span></nobr><br>This screen allows you to set some basic parameters for controlling performance vs. resource usage. The default values are generally the best compromise of speed vs. processor and disk usage, but if you need to either speed up Urchin or lessen its impact on the computer it is running on, adjust these settings accordingly. <p><b>DB Table Limit</b><br>To keep the size of Urchin‘s database on large sites in check, use this setting to limit any one table to the number of records listed.  The default option is appropriate for most installations.  Within a given month, if this limit is reached, additional entries will be lumped under an entry called ‘Other’. So, if your reports are showing high proportion of Other entries, consider increasing this setting. For optimal performace, use value less than or equal to 100,000<p><b>Memory Usage Target</b><br>This setting provides a guide to the Urchin process as to how much memory to use during runtime.  For larger sites, a larger memory footprint can increase performance as the system does less disk caching.  The default setting is conservative, and increasing the target to at least 512MB is recommended on systems with sufficient physical memory.<p><b>Geo Detail</b><br><p><b>Geo Information</b><br>This setting controls which geo information will be included in the profile reports. Selecting additional options increases the memory footprint of the Log Processing Engine (approx. 350 MB for Networks, 100 MB for Domains and 20-150 MB for Geo Locations, depending upon the geo-database you choose). Urchin ships with several geo-databases, which vary in the level of country/region detail provided. Select the geo-database that best fits your needs from the drop-down menu.<p><b>Geo Database</b><br>Urchin ships with several geo-databases, each providing different levels of geo locations information:<br>- World (contains detailed Country/Region/City information for the entire World)<br>- World Lightweight (contains only Country-level information for the entire World)<br>- Regional databases like United States, European Union and Japan, which contain detailed information for corresponding regions and country level information for the rest of the World). <br><br>Geo-database settings can be defined globally or at the profile level.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to other settings.
+545	<nobr><span class=title1><b>Process Settings: Memory Usage (Ref. #A-2303)</b></span></nobr><br>This screen allows you to adjust the approximate memory usage of the Urchin log processing engine. Unless you have very large log files, it is recommended that the default setting be used.  For large logs, the speed of Urchin can be increased by increasing the memory usage to take advantage of available resources.  Setting the memory too high may cause failures in memory allocation or slow downs due to swapping.<p><b>Memory Usage Target</b><br>Use the pulldown menu to select how much memory Urchin will use while processing.  Urchin may use slightly more or less than the selected number depending on the data.  The Customize option should only be used in specialized cases by experienced Urchin administrators.<p><b>Customized Memory Usage Settings</b><br>When the custom memory setting is chosen, additional options will appear to allow for setting each of the primary Urchin buffers manually.  Settings these values in megabytes will change the size of the buffering and thus the overall performance.  Adjusting these values is not recommended.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to other settings.
+546	<nobr><span class=title1><b>Settings: Accounting (Ref. #A-3000)</b></span></nobr><br>This screen gives you a quick overview of the basic status of this Urchin installation from a Users/Groups and Licensing point of view. The parameters are:<ul><li>Accounts (Datacenter mode only): The number of customers or super-groups in the system.  Accounts are used to group multiple Profiles and Users together.  Accounts can have separate administrative privileges.<li>Users: The number of distinct Users that have access to reports and/or the administration system.<li>Groups: The number of Groups of Users that have been configured.<li>Profiles: The number of Profiles that have been configured. <li>Log Sources: The number of Log Sources that have been configured. <li>Log Filters: The number of Log Filters that have been configured. <li>CPC Sources: The number of CPC sources that have been configured. </ul>
+547	<nobr><span class=title1>    <b>Profiles (Ref. #A-2100)</b></span></nobr><br>The purpose of this screen is to display the Profiles that have been configured for this Urchin installation, allow adjustment to the parameters of each, and to enable the Administrator to add Profiles.  Each website that you wish to create reports for will need a configuration Profile.<p><b>Add</b> (super-admin only)<br>To add a Profile, click the Add button at the top-right of the screen.  This will launch the Add Profile Wizard which will walk you through the simple steps of adding a Profile.<p><b>Edit</b><br>Next to each Profile in the list is a series of buttons that allow you to control each Profile.  The Edit button allows access to all of the settings for this Profile, organized in a tab format.<p><b>Delete</b> (super-admin only)<br>Click the Delete button next to a Profile to remove that Profile from the configuration.  This will permanently remove all of the data and configuration for that Profile.  Processing history for this profile will also get deleted.<p><b>Copy</b> (super-admin only)<br>The Copy button allows you to easily create a new Profile with similar settings to an existing Profile.  Click this button to launch the Copy Wizard, which will ask for a new Profile name. <p><b>Run</b> (super-admin only)<br>The Run button provides a shortcut to the Run/Schedule screen where you can either choose to run this Profile immediately or schedule it to run on a regular basis.  No report data is available until the Profile is run.<p><b>View</b><br>The View button provides a shortcut to launch the reporting window for each profile.<p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button. <p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can filter which entries are listed. 
+548	<nobr><span class=title1>    <b>Log Manager (Ref. #A-1600)</b></span></nobr><br>The purpose of this screen is to display the Log Sources that have been configured for this Urchin installation, allow adjustment to the parameters of each, and to enable the Administrator to add Log Sources.<p><b>Add</b><br>To add a Log Source, click the Add button at the top-right of the screen.  This will launch the Add Log Source Wizard which will walk you through the simple steps of adding a Log Source.<p><b>Edit</b><br>Next to each Log Source in the list is a series of buttons that allow you to control each Log Source.  The Edit button allows access to all of the settings for this Log Source, organized in a tab format.<p><b>Delete</b><br>Click the Delete button next to a Log Source to remove that Log source from the configuration and all of the Profiles that reference it.  This will not actually delete the log file itself or any data in a Profile.<p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button. <p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can filter which entries are listed. 
+549	<nobr><span class=title1>    <b>Filter Manager (Ref. #A-1700)</b></span></nobr><br>The purpose of this screen is to display the Filters that have been configured for this Urchin installation, allow adjustment to the parameters of each, and to enable the Administrator to add Filters.  Filters can be applied to Profiles or Log Sources on an individual basis.  Filters can be created to exclude matching hits, only include matching hits, or reconstruct a dynamic URL to be more meaningful when displayed in reports.<p><b>Add</b><br>To add a Filter, click the Add button at the top-right of the screen.  This will launch the Add Filter Wizard which will walk you through the simple steps of adding a Filter.<p><b>Edit</b><br>Next to each Filter in the list is a series of buttons that allow you to control each Filter.  The Edit button allows access to all of the settings for this Filter, organized in a tab format.<p><b>Delete</b><br>Click the Delete button next to a Filter to remove that Filter from the configuration and from all of the Profiles and Log Sources that reference it.  <p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button. <p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can filter which entries are listed. 
+550	<nobr><span class=title1><b>Settings: License (Ref. #A-6001)</b></span></nobr><br>This screen indicates the status of the current license for this installation, and provides access to several actions depending on how the License page was called: obtaining a demo license, activating an existing demo or permanent serial code, or reactivating an existing license.  The license status information includes the existing license type and the expiration date of Demo licenses, the Serial Code used to activate the license, and the Version of the license.<p><b>Obtain Demo License</b><br>Click the Obtain Demo License link to get a time-limited demo license.  This will take you automatically to the Urchin secure licensing registration page.  After filling out the optional contact information and accepting the License Agreement, you will be provided a link to automatically install the demo license.<p><b>Activate License</b><br>If you have been issued a demo or permanent serial code by an authorized Urchin retail distributor or reseller, click this link.  This will take you automatically to the Urchin secure registration and license activation page.  You will be prompted to enter the Serial Code which was to you. After filling out the optional contact information and accepting the License Agreement, you will be provided a link to automatically activate the Serial Code and install the corresponding license in your Urchin configuration.<p><b>Reactivate License</b><br>When moving or restoring your Urchin installation, you will be required to reactivate your license.  Click the Reactivate License link to re-enable your installation.  This will take you automatically to the Urchin secure registration page.  After agreeing to the conditions of the License Agreement, you will be provided a link to reactive your license.
+551	<nobr><span class=title1>    <b>Groups (Ref. #A-1400)</b></span></nobr><br>The purpose of this screen is to display the Groups that have been configured for this Urchin installation, allow adjustment to the parameters of each, and to enable the Administrator to add Groups.  Groups can be used to control access permissions to view reports for a group of Users.<p><b>Add</b><br>To add a Group, click the Add button at the top-right of the screen. This will launch the Add Group Wizard which will walk you through the simple steps of adding a Group.<p><b>Edit</b><br>Next to each Group in the list is a series of buttons that allow you to control each one.  The Edit button allows access to all of the settings for this Group, organized in a tab format.<p><b>Delete</b><br>Click the Delete button next to a Group to remove it from the configuration. <p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button.<p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can filter which entries are listed.
+552	<nobr><span class=title1>    <b>Users (Ref. #A-1300)</b></span></nobr><br>The purpose of this screen is to display the Users that have been configured for this Urchin installation, allow adjustment to the parameters of each, and to enable the Administrator to add Users.  Each User will have a username and password.  Report-viewing permission is controlled through the User configuration.<p><b>Add</b><br>To add an User, click the Add button at the top-right of the screen. This will launch the Add User Wizard which will walk you through the simple steps of adding a User.<p><b>Edit</b><br>Next to each User in the list is a series of buttons that allow you to control each one.  The Edit button allows access to all of the settings for this User, organized in a tab format.<p><b>Delete</b><br>Click the Delete button next to a User to remove it from the configuration. <p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button.<p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can filter which entries are listed.
+553	<nobr><span class=title1><b>Scheduler (Ref. #A-2600)</b></span></nobr><br>The purpose of this screen is to display the Tasks that are scheduled to run for each Profile in the configuration.  Several details are shown for each Profile, including the Profile Name, the run Frequency, the run Status (Not Scheduled, Pending, Queued, Running, Cancelling), and for running tasks, the percent completion, available actions and start time of the Task.  Click the arrows below each field to sort the list by that field.  NOTE: the ‘geo-update’ task is an internal task for updating the geodata database which is used for processing visitor geographic information.<p><b>Profile Name</b><br>All configured profiles are displayed.<p><b>Frequency</b><br>Displays the runtime frequency of the Profile<p><b>Status</b><br>Task states are Not Scheduled, Pending (awaiting next scheduled runtime), Queued (job exists in the Profile Task Scheduler run queue), Running or Cancelling (job will be cancelled as soon as possible).  For tasks that are currently running or cancelling, the Status entry is linked to the Progress Window which can be used to view the runtime detail of the Task.  Click the Status of a Task to open that window.<p><b>Action</b><br>This field shows actions for scheduled Tasks. The Action field has ‘Cancel’ action for the Tasks that are currently running.<p><b>Percent Complete</b><br>For running Tasks, this field shows a progress bar indicating an approximate percentage of the Task‘s processing that has completed.<p><b>Begin Time</b><br>For running Tasks, displays the start time of the task in GMT.<p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button. <p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can be used to filter which entries are listed.
+554	<nobr><span class=title1><b>Scheduler: Profile Task History (Ref. #A-2500)</b></span></nobr><br>The purpose of this screen is to list the history of every Task that has executed via the Profile Task Scheduler or the Run Now button.  A summary of the Tasks is listed, providing valuable information on each.  The Status field can be clicked to view the runtime detail for that historic task.  Use the arrows below each field to sort by that field.<p>Each entry shows the Name of the Task (Profile), the processing host and ID, the Status of the Task, when the Task started, when it finished, and the amount of data processed.<p><b>Status</b> (hyperlinked)<br>The Status of each Task is either ‘Completed’, ‘Cancelled’, ‘Warning’, or ‘Error’.  These are color-coded and the list can be sorted by Status by clicking the arrow below the word ‘Status’.  To view the runtime detail of a particular Task, click the color-coded status entry next to that Task.  This will open a separate window for viewing the runtime detail.<p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button. <p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can be used to filter which entries are listed.
+555	<nobr><span class=title1><b>Import IIS Configuration (Ref. #A-5004)</b></span></nobr><br>This screen allows you to import existing site configurations from a Microsoft IIS webserver configuration, and translate those sites into Urchin Profiles. This can be a very significant time savings, and it is the recommended method for quick configuration on IIS systems. Check the box next to each detected site to select those you wish to import, and click the Import Profiles button.<p><b>Select To Import</b><br>This module automatically detects local IIS websites.  Check the checkbox to the right of each site detected to import that site.  If there a fixed checkmark instead of a box, that means the site has already been imported.  Click the Import Profiles button to complete the import step.  <p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time.  To scroll through entries a page at a time, use the Previous or Next button. 
+556	This screen shows a summary of the account you have configured.  If the settings appear correct, click Finish to finalize the setup.  If you would like to make changes, click the Back button.
+557	Account successfully added!  This account will now be available for organizing Profiles, Users, Log Sources, etc.
+558	<nobr><span class=title1><b>Profiles: Settings (Ref. #A-2101)</b></span></nobr><br>Use this screen to control the Profile‘s type, tracking method and available reports.<p><b>Optional Account</b> (Datacenter mode only)<br>Displays the Account that the Profile is associated with.<p><b>Profile Name</b><br>This is the name of the profile, generally the website address such as “www.urchin.com”.  However, for multiple profiles for the sames site, it is common to name them something that distinguishes the difference, such as “www.urchin.com - filtered”<p><b>Profile Type</b><br>This setting generally does not need to be adjusted unless you have custom datamaps configured.  If you have custom datamaps, then use this setting to control which datamap applies to this profile.<p><b>E-Commerce Website</b><br>If you plan on processing e-commerce data in conjunction with this profile, then set this to “Yes”, otherwise set to “No”.  When E-Commerce is off, you can set a dollar value to a goal in order to provide general ROI information.<p><b>Visitor Tracking Method</b><br>Urchin comes with two ways to identify visitors.  The most accurate way is to use the UTM javascript tagging.  If you have the UTM installed then select that as the option.  If you do not have the UTM installed, then select the IP+User-Agent method.  There are some reports that will not be populated unless you are using the UTM.<p><b>UTM Domain</b><br>Leave this blank under normal conditions.  The UTM will automatically detect the domain for the site.  The UTM Domain feature is only used when you have overlapping domains that need to be tracked separately.  <p><b>Report Set</b><br>This setting generally does not need to be adjusted unless you have custom report sets configured.  If you have custom report sets, then use this setting to control which is used for this profile.<p><b>Available Dashboards</b><br>The default report set includes four dashboards.  This setting allows you to control which dashboard is available in the reporting and which one to show first as the default.<p><b>Reporting Sections</b><br>In addition to the dashboards, there are four main sections of the reporting.  These sections can be turned-off in the reporting by unchecking the appropriate box.  To limit report access on a per user basis, click the “Users” tab and use the “Override Dashboard” function.  Click the Update button to save any changes.
+559	Account Wizard Result
+560	<nobr><span class=title1>    <b>Accounts (Ref. #A-1200)</b></span></nobr><br>The purpose of this screen is to display the Accounts that have been configured for this Urchin installation, allow adjustment to the parameters of each, and to enable the Administrator to add Accounts.  Accounts are used to organize Profiles, Log Sources, Users and Groups under a single corporate entry.  For providers with complex clients, using an Account to control a client makes it easy to keep track of all the components for that client.<p><b>Add</b><br>To add an Account, click the Add button at the top-right of the screen. This will launch the Add Account Wizard which will walk you through the simple steps of adding an Account.<p><b>Edit</b><br>Next to each Account in the list is a series of buttons that allow you to control each one.  The Edit button allows access to all of the settings for this Account, organized in a tab format.<p><b>Delete</b><br>Click the Delete button next to an Account to remove it from the configuration.<p><i>CAUTION:</i> ALL Profiles, Log Sources, Filters, Users and Groups associated with this account will be deleted.<p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button. 
+561	<nobr><span class=title1><b>Profiles: Log Sources (Ref. #A-2102)</b></span></nobr><br>Use this screen to add <b>Log Sources to Process</b> from the list of <b>Available Log Sources</b>. The <b>Log Sources to Process</b> column displays the Log Sources that are processed as part of this Profile. Each Profile will generally only have one Log Source associated with it, but in load-balanced configurations or with sites that have e-commerce logs (in the ELF format) or CPC logs, there may be multiple Log Sources. <p><b>Controls:</b><br><ul><li><b>Add</b><br>Click the Add icon to add an additional Log Source to the Available Log Sources. This will launch the Add Log Source Wizard, which will take you through the steps of adding either a local or remote log source.  <li><b>Edit</b><br>Highlight the Available Log Source that you wish to edit and click the Edit icon. <li>Click the <b>Update</b> button to save your changes. <li>The Tabs at the top of the screen allow access to all of the editable settings for this Profile. 
+562	<nobr><span class=title1><b>Profiles: Filters (Ref. #A-2103)</b></span></nobr><br>Use this screen to add <b>Applied Filters</b> from the list of <b>Available Filters</b>. <p><b>Controls:</b><br><ul><li><b>Add</b><br>Click the Add icon to add an additional Filter to the Available Filters. This will launch the Add Filter Wizard which will take you through the steps of adding either a new or pre-existing Filter.<li><b>Edit</b><br>Highlight the Available Filter that you wish to edit and click the Edit icon.<br><li>Click the Up and Down arrows to change the order in which filters are applied.<br><li>Click the <b>Update</b> button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Profile. 
+563	<nobr><span class=title1><b>Profiles: Users (Ref. #A-2104)</b></span></nobr><br>Use this screen to grant access to view the reports for this Profile to Users configured in the Urchin system.  When a non-administrative User logs into the Urchin system, that person will be given access to only those reports that they have explicitly been added to by the Administrator.  <p><b>Assign Users</b><br>To grant access to the Profile for a particular User, select the User in the left-side box under ‘Available Users’ and click the right-facing arrow. To deny access to the Profile for a particular User, select the User in the right-side box and click the left-facing arrow.  Click Update to save your changes.<p><b>Override Dashboard</b><br>This option allows you to change which reports are available and which dashboards are available on a per user basis.  Click once on a user in the “Access Granted” window to highlight the user.  Then click the “Override Dashboard” button to pop-open a window where you can turn on and off entire sections of reporting for the selected user and select their default dashboard.  When moving a user from the Available Users to Access Granted, you must “Update” before this option is available for that user.<p><b>Controls</b><br><ul><li><b>Add</b><br>Click the Add icon to start the User Wizard and add to the list of available users.<li><b>Edit</b><br>Click the Edit icon to edit the highlighted user.<li>Click the Update button to save your changes. <li>The Tabs at the top of the screen allow access to all of the editable settings for this Profile. 
+564	This screen shows all the configured parameters for the log file you have selected.  If the information is incorrect, click Edit at top right to change the settings.  If the filters, or Profiles Assigned To information needs adjustment, click the Edit button under the corresponding section of this page.
+565	<nobr><span class=title1><b>Log Manager: Log Settings (Ref. #A-1601)</b></span></nobr><br>This screen allows you to configure the location and format of the Log Source. For correct reporting, it‘s essential that these settings are correctly configured.  <p><b>Optional Account</b> (Datacenter mode only)<br>Displays the Account that the log source is associated with.<p><b>Log File Location</b><br>Select Local if the log file is accessible on the local file system or on a network file system mounted on this computer. Select Remote if the log file must be transferred from a remote system using FTP or HTTP, or accessed through a UNC share (Windows only).  For remote logs, once the Update button is clicked the ‘Remote Settings’ tab will appear at the top.  Click the tab to configure the details of accessing the remote log.<p><b>Log Source Name</b><br>Any name that you choose for this logsource. <p><b>Log Format</b><br>Use this option to specify the format of the log file being processing.  The <i>auto</i> logformat type should be chosen for most webservers. Other webserver logformat types are provided for backward compatibility with older versions of Urchin but are generally not needed. Custom logformats can be created using the templates in the lib/custom/logformats directory of the Urchin distribution.<ul><li><b>Auto:</b> this format will automatically detect most webserver log formats, including Apache, W3C (Microsoft IIS), NCSA, Netscape and iPlanet. <li><b>Campaign:</b> use this format for campaign cost data that is specifically formatted for Urchin‘s use. Please see the online documentation for details. Note that the campaign log format can not be auto detected.<li><b>Elf2:</b> use this format for e-commerce logs in ELF2 format. Note that the E-Commerce log format can not be auto detected.<li><b>Google:</b> Use this format for logs containing Google cost-per-click spending data. Note that the Google log format can not be auto detected.<li><b>NCSA:</b> this format can usually be auto detected and is typically used by Apache webservers.  Note that for complete reporting, Extended Combined logging should be used, which is not the default Apache behavior in most cases. <li><b>Netscape:</b> legacy Netscape servers (non-iPlanet) use this format by default.<li><b>Overture:</b> Use this format for logs containing Overture cost-per-click spending data. Note that the Overture log format can not be auto detected.<li><b>W3C:</b> this format can be auto detected, and is used for webservers that log in standard W3C format such as Microsoft IIS servers.</ul></ul></ul> <p><b>Log File Path</b><br>For local Log Sources, the Log File Path specifies the location on the local file system of the log file.  Use the Browse button for convenience.  <p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Log Source. 
+566	This screen shows all the configured parameters for the log filter you have selected.  If the information is incorrect, click Edit at top right to change the settings.  If the ‘Log Sources Applied To’ information needs adjustment, click the Edit button under the corresponding section of this page.
+567	<nobr><span class=title1>    <b>Accounts: Info (Ref. #A-1201)</b></span></nobr><br>This screen allows you to edit the various settings for this Account.<p><b>Account Name</b><br>Each Account requires a unique name.  This can be arbitrary or based on the customer name or website.<p><b>Contact & Contact Email</b><br>The contact information is optional and is provided as a convenient way to keep track of your customers.<p><b>Report Data Location</b><br>This optional setting specifies the directory path for storing the report data for all the Profiles that belong to this Account.  The default location is in the data/reports/<i>account_name</i> directory within the Urchin distribution.  The entire data directory can be moved on a system-wide basis by editing the urchin.conf file in the etc directory.  A Browse button is provided for convenience.<p><b>Run History Location</b><br>This optional setting specifies the directory path for storing the runtime history data for all the Profiles that belong to this Account. The default location is in the data/history/<i>account_name</i> directory within the Urchin distribution.  A Browse button is provided for convenience.<p><b>Directory Browsing Location</b><br>This optional setting is provided as a security measure when giving an Account admin access to create Profiles.  A directory path entered into this field will limit the Account admin‘s ability to browse for log files to that directory.  By default there is no browsing restriction.  This can be changed on a system-wide basis by modifying the urchin.conf file in the etc directory. A Browse button is provided for convenience.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Account. 
+568	<nobr><span class=title1><b>Profiles: Run/Schedule (Ref. #A-2105)</b></span></nobr><br>This screen allows you to schedule the execution of a Task (process the Log Sources associated with a Profile), or execute the Task immediately by clicking the Run Now button at right. After clicking one of the scheduling buttons you will be given extra options, such as the desired hour and minute, depending on the frequency chosen. Click the Update button to apply any changes that have been made. If you select the Run Now button, the Profile will be scheduled to run immediately. To view the details of the execution, check the status of the job under the Scheduler.<p><b>Run Now</b><br>To process this Profile immediately, click the large green Run Now button on the right.  This will queue the Task to be run by the Urchin Scheduler<p><b>Schedule</b><br>To schedule this Profile Task to run at a later time or on a regular basis, select one of the frequency options: Hourly, Daily, Weekly, or Monthly.  This Profile will then execute on that frequency.  To specify the exact launch time, use the date controls that appear once the frequency is selected.  All times are specified as localtime to the system that Urchin is running on.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Profile. 
+569	<nobr><span class=title1><b>Profiles: Reporting (Ref. #A-2106)</b></span></nobr><br>The Reporting Settings screen allows you to control several important processing features of Urchin including the identification of certain filters and proxy settings.<p><b>Website URL</b><br>This setting is used to create reference links back to your actual website.  This should be the complete domain name of the site, including the http://.  <p><b>Site Domains</b> (super-admin only)<br>This setting should list all possible domains for your website, with and without the “www”.  This field is used to determine if a Referral is external to your site.  Use commas to separate each domain entry.  <p><b>Default Page</b><br> This should be set to whatever the default (or index) page is in this site‘s directories. Usually, this will be “index.html”, but on Windows IIS servers, it is often “Default.htm” or “index.htm”. This information allows Urchin to reconcile log entries such as “http://www.urchin.com/” and “http://www.urchin.com/index.html”, which are in fact the same page. Without the Default Page information entered correctly, these would be reported as two distinct pages. Only a single default page should be specified. <p><b>Proxy Settings</b> (super-admin only)<br>Some installations may need proxy settings in order to show the homepage overlay reports.  Since the overlay queries are initiated from the Urchin system, it is possible that the firewall settings may not allow external communication.  If this is true, then you may use a proxy to allow these types of queries.  The proxy server should be the hostname of the server.  The proxy port should be the port number to communicate with the proxy.  The proxy username and password fields can also provide additional security if a username and password is needed to access the proxy.  Leave all these fields blank unless you get an error trying to use the overlay feature.  If so, contact your network administrator for settings.<p><b>Parallel Log Processing</b> (super-admin only)<br>If you have many large load balanced logs, it may be a performance boost to run them in parallel.  This depends on many factors including the size of the data and IO performance of the machine.  Especially if hits from a single user session can exist in multiple logs, then try enabling this setting for increased performance.  <p><b>Time Offset</b> (super-admin only)<br>This setting determines in what time zone Urchin reports the data.  Since all hits contain GMT reference, Urchin can report in any time zone.  The ‘Local Time’ option will record data according to the time zone configured on the server Urchin is running on.  To use a different setting, select the offset from GMT.  <p><b>Organic Keywords Match</b> (super-admin only)<br>This setting controls how Urchin detects search engines and keywords for those reports.  Using this list (comma-separated), Urchin will look for parameters in referring site queries that match.  Urchin then captures the value of the parameter as the keywords or search term used in the referral.  Use this list to add entries in order to capture search terms that may not be automatically included.  The default list works for most search engines.<p><b>Pageview Mimes Match</b> (super-admin only)<br> This comma-separated list controls which file extensions are treated as pageviews. The logic can be set to either include or exclude certain extensions. The default list works for most sites.<p><b>Page Parameters Match</b><br>This setting controls which parameters Urchin will capture or avoid capturing in the Parameters Report.  Parameters come from the query part of the requested URL, and may contain internal search terms or other dynamic content.  Urchin will automatically capture these name value pairs and report on them in the Parameters Report.  This comma-separated list allows you to exclude or include certain parameters.  For example, a site with millions of random session IDs may wish to exclude the SID variable from this report in order to save storage resources.<p><b>Downloads Match</b> (super-admin only)<br> This comma-separated list controls which file extensions are treated as downloaded files in the Downloads report.  Edit the list as necessary to include file extensions used for downloads.<p><b>Geo Detail</b><br><p><b>Geo Information</b><br>This setting controls which geo information will be included in the profile reports. Selecting additional options increases the memory footprint of the Log Processing Engine (approx. 350 MB for Networks, 100 MB for Domains and 20-150 MB for Geo Locations, depending upon the geo-database you choose). Urchin ships with several geo-databases, which vary in the level of country/region detail provided. Select the geo-database that best fits your needs from the drop-down menu.<p><b>Geo Database</b><br>Urchin ships with several geo-databases, each providing different levels of geo locations information:<br>- World (contains detailed Country/Region/City information for the entire World)<br>- World Lightweight (contains only Country-level information for the entire World)<br>- Regional databases like United States, European Union and Japan, which contain detailed information for corresponding regions and country level information for the rest of the World).<br> <p><b>Character Encoding</b><br>If the logs you will be processing contain data that is not encoded in UTF-8, choose the correct encoding format for the data. Native Japanese and Latin 1 formats are supported.  <p><b>Currency and Precision</b><br>For e-commerce sites, use the Currency and Precision settings to change the default currency symbols, formatting for display, and numeric precision.  <p><b>Controls:</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Profile.
+570	<nobr><span class=title1>    <b>Groups: Group Info (Ref. #A-1401)</b></span></nobr><br>This screen allows you to edit the various settings for this Group.<p><b>Optional Account</b> (Datacenter mode only)<br>Displays the Account that the Group is associated with.<p><b>Group Name</b><br>Use this field to specify the name of the group.  Use any descriptive name.  Group names must be unique.<p><b>Group Description</b> (optional)<br>This is an optional field that helps keep track of the purpose of each Group.  Enter a short description to help keep Groups organized.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Group. 
+571	<nobr><span class=title1><b>Groups: Users In Group (Ref. #A-1402)</b></span></nobr><br>This screen is used to select which Users belong to this Group.  Permissions to view reports can be granted on a Group level.  Users that belong to this Group will be able to view all reports that this Group has access to.<p><b>Add User to Group</b><br>To add a User to this Group, select the User name from the Available Users box and click the right-facing arrow. To remove a User from this Group, select the User in the Users in Group box and click the left-facing arrow. Click Update to apply any changes.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Group. 
+572	<nobr><span class=title1><b>Groups: Report Access (Ref. #A-1403)</b></span></nobr><br>This screen is used to grant permission to this Group to view the reports for one or more existing Profiles.  In addition to individual User permissions, Users that belong to this Group will be granted report access as set within this screen.<p><b>Grant Access</b><br>To grant access to a Profile‘s reports, select the Profile name from the Available Profiles box and click the right-facing arrow. To deny access to a Profile‘s reports, select the Profile in the Access Granted box and click the left-facing arrow. Click Update to apply any changes.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Group. 
+573	<nobr><span class=title1><b>Groups: Summary (Ref. #A-1404)</b></span></nobr><br>This screen shows the complete set of parameters for this Group. If anything needs adjustment, click the appropriate tab and update the settings as needed. <p><b>Controls</b><br>The Tabs at the top of the screen allow access to all of the editable settings for this Group. 
+574	<nobr><span class=title1><b>Profiles: Summary (Ref. #A-2107)</b></span></nobr><br>This screen shows the complete set of parameters for this Profile. Examine these settings carefully before processing the Profile to ensure everything is correct. If anything needs adjustment, click the appropriate tab and update the settings as needed. <p><b>Controls</b><br>The Tabs at the top of the screen allow access to all of the editable settings for this Profile. 
+575	<nobr><span class=title1><b>Log Manager: Remote Settings (Ref. #A-1602)</b></span></nobr><br>This screen allows you to specify the manner in which to retrieve or access the remote log file for this log source.<p><b>Server Protocol</b><br>Urchin can handle four types of remote log files, HTTP (www), HTTPS, FTP, and UNC (Windows only).  If your log file is accessible through a web browser, use HTTP.  If no password is required, simply leave the username and password fields blank.  FTP can be used with a username and password (usually the same as your username for uploading content to your site).  UNC, which is only available on Windows systems, will require a username and password in order to access the UNC share.<p><b>Server Name/IP</b><br>Enter the Server Name (e.g., www.urchin.com) or IP Address (e.g., 63.212.171.4) where the log file is located.  For UNC, use the \\server\share notation.<p><b>Same Local and Remote Login</b><br>This option is visible if UNC has been selected as the Server Protocol (Windows only). Select Yes if the same login and password can be used for both the local and remote server. Select No if the remote server requires a different login or password as the local server. Additional fields for the Local Server Login will become visible if you select No.<p><b>Server Port</b><br>The Server Port will be filled in automatically.  But if you are using a non-standard port, you can edit this manually.<p><b>Username/Password</b><br>These fields will be blank for non-authenticated HTTP and anonymous FTP connections.  To use an authenticated HTTP/FTP connection, enter your username and password here.  UNC requires a username and password to access the share. <p><b>Domain (UNC only)</b><br>If the UNC share is part of a Domain, then enter the Domain network information here. <p><b>FTP Mode</b><br>This option is visible when FTP has been selected as the Server Protocol. Select Passive for passive (PASV) transfer method. Select Active for direct (PORT) transfer method. <p><b>Remote Log Source File</b><br>The Remote Log Source File specifies the path to the log file on the remote system.  If you are using HTTP, it is often easier if you locate the log file with a web browser first. To do this, enter the site‘s URL into a browser followed by a slash, any directories’ names that are used, and the log file‘s name (e.g., http://www.urchin.com/logs/access_log). If the browser screen fills up with text, you‘ve got the right path. Just enter everything to the right of the domain (e.g., /logs/access_log). Note that wildcards are not supported for remote HTTP-based log source pathnames. If you are using FTP, you can browse the remote server to find the log file.  Before browsing you will need to configure the server / username information.<p><b>Log Destination</b> (Remote Only)<br>Before processing, remote log files are transferred to the local system.  Select a local directory for storing the log file.  A browse button is provided.<p><b>Proxy Server</b> (HTTP and HTTPS only)<br>If the log is available via a proxy machine, specify the IP address or hostname. <p><b>Proxy Port</b> (HTTP and HTTPS only)<br>If the log is available via a proxy machine, specify the port.<p><b>Proxy Username</b> and <b>Proxy Password</b><br>If the log is available via a proxy machine that requires a username and password, specify them in these fields.
+576	<nobr><span class=title1><b>Log Manager: Log Filters (Ref. #A-1603)</b></span></nobr><br>Use this screen to apply filters to the log source. To apply a filter, select the filter in the left-side box under ‘Available Filters’ and click the right-facing arrow. To remove a filter, select the filter in the right-side box and click the left-facing arrow.  Click Update to save your changes.<p><b>Controls</b><br><ul><li><b>Add</b><br>Click the Add icon to start the Filter Wizard and add to the list of available filters.<li><b>Edit</b><br>Click the Edit icon to edit the highlighted filter.<li>Click the Up and Down arrows to change the order in which filters are applied.<br><li>Click the Update button to save your changes.
+577	<nobr><span class=title1><b>Log Manager: Advanced Settings (Ref. #A-1604)</b></span></nobr><br>This screen allows you to configure advanced settings for this Log Source including how to handle the log file once processing is complete and which type of encoding is to be used.<p><b>Log Destiny</b><br>Once Urchin has finished processing the Log Source for all the Profiles to which it has been applied, Urchin can archive, delete, or do nothing to the log file.  <ul><li>Select Don‘t Touch to leave the log untouched after processing.<li>Select Archive - Compress to gzip and datestamp the log file. <li>Select Archive - No Compression to archive a log without compressing it. This selection is useful for logs that have already been compressed. <li>Select Delete to delete the log file after processing.</ul>  Note that both the Archive and Delete selections require the Urchin process to have appropriate permissions. For Log Sources that are used by multiple profiles, only the Don‘t Touch option should be selected. <b>Warning:</b> Do not use on live log files.<p><b>Log File Encoding</b><br>If you are processing double-byte Japanese-language logs, change this to Shift-JIS. If not, leave at the default English (ISO) setting, which is appropriate for all non-double-byte logs.<p><b>Decode URL</b><br>If you are using an application server or other dynamic page-generation system and wish to translate page URLs into more meaningful (easier to read and understand) report entries, click the ‘on’ button.<p><b>Query Token</b><br>Dynamically-generated page URLs will generally use a Query Token to separate the base of the URL from the specific query information. Urchin needs to know what this is so that it can properly parse the URL for its reports. Usually the Query Token is a question mark.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Log Source. 
+578	Website URL
+579	Welcome to Urchin! Please click the<br> Report Setup Wizard button at left to get started.
+580	You have selected to change the Server Port Number. \n\nPlease note that the change will not take affect until the Urchin Services \nare Disabled and Re-Enabled from the Start Menu. \n\n
+581	Log File Encoding
+582	<nobr><span class=title1><b>Log Manager: Advanced Settings (Ref. #A-1605)</b></span></nobr><br>This screen allows you to configure advanced settings for this Log Source including what to do with the log file when processing is complete.  Log file encoding and decoding has been moved into the filters.<p><b>Log Destiny</b><br>Use Log Destiny to indicate how log files should be handled once they have been processed for all the profiles to which they apply. <ul><li>Select Don‘t Touch to indicate that no further actions are to be taken once processing is complete. <li>Select Archive - Compress to zip and datestamp the log file.  <li>Select Archive - No Compression to archive and datestamp a log without compressing it. This selection is useful for logs that have already been compressed. <li>Select Delete to delete the log file after processing.</ul>  Note that both the Archive and Delete selections require the Urchin process to have the appropriate permissions. For Log Sources that are used by multiple profiles, only the Don‘t Touch option should be selected. <b>Warning:</b> Do not use Archive or Delete options with live log files!  <p><b>URI Stem to Lower Case</b><br> When enabled, this option will automatically force lower case in the URL for logs created on Windows platforms where the URL for the same file can be both uppercase and lowercase, and subsequently causes two different entries for this file to appear in the Content reports<p><b>Query Token</b><br>Dynamically-generated page URLs will generally use a Query Token to separate the base of the URL from the specific query information. Urchin needs to know what this is so that it can properly parse the URL for its reports. Usually the Query Token is a question mark.<p><b>Date/Time Wildcard Substitution in Log Path Name</b><br>In order to automate Urchin and have it open the proper log files, the log file path name may contain datestamp wildcards which can be based on the current time.  However, it is common for Urchin to run after the logfiles have been rotated and datestamped.  In order for Urchin to find the correct log file, it may need to know how to adjust the time when replacing date wildcards.  By default, Urchin will look for yesterday‘s log files (local - 24 hours).  Wildcarding follows the <i>strftime</i> convention which is described in the online documentation center. Range of Days indicates the number of days for Urchin to go back in time when matching a strftime-compliant string in the logfile name. This setting is very useful in environments where the current day‘s logfile may not be present and allows Urchin to do “catch-up” processing if the logfile is available at a future date within the Range of Days window.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Log Source. 
+583	<nobr><span class=title1><b>Log Manager: Summary (Ref. #A-1606)</b></span></nobr><br>This screen shows the complete set of parameters for this Log Source. Examine these settings carefully before processing related Profiles to ensure everything is correct. If anything needs adjustment, click the appropriate tab and update the settings as needed. <p><b>Controls</b><br>The Tabs at the top of the screen allow access to all of the editable settings for this Log Source. 
+584	Verify Log File(s) 
+585	Verify
+586	Selected Files
+587	Other Files in Directory
+588	File Information
+589	Log File Location
+590	File Size (Bytes)
+591	Last Modification
+592	File Permission
+593	Read
+594	Write
+595	Could not obtain information about the file.
+596	Log File(s)
+597	Current Directory
+598	No Permissions
+599	You have selected to change the Server Port Number. \n\nPlease note that the change will not take affect until the Urchin Webserver \nis restarted by running urchinctl -w restart from the Urchin bin directory.\n\n
+600	License Urchin
+601	License Information
+602	Action Items
+603	Obtain Demo License
+604	Activate Pre-Purchased License
+605	Buy License
+606	Reactivate License
+607	Activate License
+608	No Permission to Directory
+609	Upgrade License
+610	Click on one of the following options
+611	Valid License - Regular
+612	Valid License - Demo
+613	Never
+614	No License Installed
+615	Invalid License
+616	(Expired)
+617	(Wrong Key)
+618	Waiting for Activation
+619	License Status
+620	License Expiration
+621	Profiles including Base
+622	Servers including Base
+623	Product
+624	Version
+625	Valid License
+626	Reactivate Gold Master
+627	License
+628	Serial Code
+629	Decode URL
+630	Advanced Settings
+631	Query Token
+632	Referral Level
+633	Default 
+634	License Problem
+635	A Licensing problem has been detected.  Please contact your local system administrator to resolve the problem.
+636	Process DNS 
+637	Filter
+638	License Limit
+639	Profile Name
+640	General Settings
+641	Log Sources
+642	Filters
+643	Users
+644	Advanced
+645	Advanced
+646	More Options
+647	Log Bytes
+648	sec
+649	Filters/Advanced/Profiles
+650	Log Settings
+651	Remote Settings
+652	Log Filters
+653	Advanced Settings
+654	Time Adjustment
+655	Add Local Log Source
+656	Add Remote Log Source
+657	Select Pre-Configured Log Source
+658	Log Destination
+659	Profiles Applied To
+660	Filter Settings
+661	Profiles 
+662	Log Sources
+663	Select Pre-Configured Filter
+664	Add New Filter
+665	Log Source Add Options
+666	Warning! You have chosen to stop the Urchin Task. \nStopping the task may cause corruption of the Urchin Database. \nFor more information please see the Knowledgebase article on ‘Hard Close’. \n\nStop the task? 
+667	Warning! Slave scheduler disabled.
+668	Profiles/Log Sources
+669	Option
+670	Remove
+671	User Quick View
+672	User Settings
+673	User Info
+674	Preferences
+675	Groups
+676	Report Access
+677	Verify Password
+678	Report Access/Groups
+679	GMT Time
+680	Group Quick View
+681	Group Description
+682	The following characters are not allowed: (*?“<>|).
+683	Group Info
+684	Users In Group
+685	Report Access
+686	The following characters are not allowed in the Profile Name:\n\n ->  / (slash)\n\ ->  \\ (backslash)\n ->  + (plus sign). \n\n  Please remove the character(s) and try again.  
+687	Report Access/Users
+688	Error!\n\nPasswords do not match!
+689	The Following Required Field(s) are Empty or Invalid!
+690	DNS Settings
+691	DB Settings
+692	Session Settings
+693	Access Settings
+694	Server Settings
+695	Filter Pattern
+696	Lines
+697	Are you sure you want to delete this record?
+698	Summary
+699	More Information
+700	Schedule
+701	Run Now
+702	Task Progress
+703	All Profiles Report
+704	Click here for details
+705	Start Time
+706	End Time
+707	Task Process Detail
+708	Hide Details
+709	Visitor Tracking Method
+710	IP+User-Agent
+711	Session ID
+712	Urchin Traffic Monitor (UTM)
+713	Session Parse Definition
+714	Current Time
+715	Session Field
+716	ERROR:  The task has been successfully terminated! \nERROR:  Data corruption is possible.  Please see the Knowledgebase article on ‘Hard Close’ for information on running the udb-sanitizer.
+717	ERROR:  The termination of task failed! 
+718	IP ONLY
+719	Session Requires Pageview
+720	No profiles to import
+721	Version
+722	Memory Usage
+723	Memory Usage Settings
+724	Memory Usage Target
+725	Data Parsing Option
+726	Customize
+727	Customized Memory Usage Settings
+728	Visitor Buffer Size
+729	Session Buffer Size
+730	Path Buffer Size
+731	Data Buffer Size
+732	Data String Buffer Size
+733	Running - Log Files
+734	Running - DNS
+735	Completed
+736	Error
+737	Pending
+738	Process Paths
+739	Path Level
+740	Profile Task History
+741	Log Tracking
+742	use any descriptive name
+743	Currency
+744	Currency Symbol
+745	Before Number
+746	After Number
+747	Precision
+748	none
+749	U.S.
+750	China
+751	France
+752	Germany
+753	Italy
+754	Japan
+755	Korea
+756	Portugal
+757	Spain
+758	Sweden
+759	U.K.
+760	Region
+761	Change Region
+762	Localization
+763	Direct Report Linking
+764	Clean or Modify DB
+765	Delete ALL Data for Profile
+766	Delete All Data
+767	Are you sure you want to PERMANENTLY delete ALL the Data for this profile?
+768	see help for details
+769	Select Example Filter
+770	Filter out internal traffic
+771	Filter out robot traffic
+772	Filter out monitoring agent traffic
+773	Filter out all image requests
+774	Only report on traffic to a subdirectory
+775	exclude internal traffic
+776	exclude robots
+777	exclude monitoring agent
+778	exclude images
+779	include subdirectory
+780	Downloads Match
+781	<nobr><span class=title1><b>Access Settings: Global Defaults (Ref. #A-781)</b></span></nobr><br>This screen contains certain system-wide settings that will control default behavior for accessing and viewing reports.  <p><b>Report Language</b><br>Use the Report Language setting to control the default language for report viewing.  When new Users are created, their Report Language setting will be set to this value by default.  <p><b>Region</b><br>Use the Region setting to control the default localization style for report viewing.  When new Users are created, their Region setting will be set to this value by default.  This setting controls the format of currency, dates, times, and numbers which may be displayed differently in various locales.  If you do not see a particular country in the list, select a Region that uses the same date/number formats.  Click Update to save your changes.
+782	Failed
+783	Case Sensitive
+784	Load Balance Options
+785	Parallel Log Processing
+786	FTPS
+787	HTTPS
+788	HTTP Proxy Settings (Optional)
+789	Proxy Server
+790	Proxy Port
+791	Proxy Username
+792	Proxy Password
+793	Campaign Options
+794	Primary Goal Match
+795	Primary Goal Field
+796	Case Sensitive
+797	UTM required for Campaign
+798	FTP Mode
+799	Passive
+800	Active
+801	Local Server Login
+802	Same Local and Remote Login 
+803	Username
+804	Password
+805	Verify Password
+806	Domain
+807	Lookup Table
+808	Table Name
+809	Archive - No Compression
+810	Australia
+811	New Zealand
+812	Add CTM Entry
+813	<b>Add CTM Entry Wizard</b><br>Use this wizard to enter static cost and/or impressions data for a campaign. Fill in fields for each of the three steps and click Add to Next Run. Once entered, data is added to the Urchin database during the next scheduled run of this profile. <p><b>Step 1: Date of Entry</b><br>Enter the date as of which the cost and/or number of impressions should apply. <p><b>Step 2: CTM Variables</b><br>Enter the CTM variable(s) that describe the campaign for which you are entering data. For example, to apply the data towards all organic Google referrals, specify the Source as google and the Medium as organic. To apply the data towards the summer newsletter (and assuming that you tag summer newsletter referrals with a utm_source=summer_news), specify the Source as summer_news.  <ul><li><b>Campaign ID</b><br>If the campaign for which you are entering data can be identified with a Campaign ID (i.e. utm_id), enter it here and go on to Step 3. <li><b>Campaign</b><br>Enter the name of the campaign to which the data applies. <li><b>Source</b><br>Enter the Source (for example, google) to which the data applies.<li><b>Medium</b><br>Enter the Medium (for example, organic or email) to which the data applies. <li><b>Search Term</b><br>Enter the keyword (for example golf clubs) to which the data applies.<li><b>Ad Content</b><br>Enter the content to which the data applies.</ul><p><b>Step 3: Add Cost/Impression Data</b><br>Enter the cost amount and/or number of impressions that you want to associate with this campaign.<ul><li><b>Cost</b><br>Enter the cost amount. <li><b>Impressions</b><br>Enter the number of Impressions.</ul><p>Click <b>Add to Next Run</b> to add this data to the Urchin database the next time that this profile is run. Click <b>View Pending</b> to see the data entries that will be added to the Urchin database the next time that this profile is run. Click <b>Close</b> to exit. Click <b>Clear</b> to clear all fields. 
+814	Add Manual Cost Data
+815	Add Cost Data
+816	Add to Next Run
+817	Step 1: Date of Entry
+818	Date of Entry
+819	Step 2: CTM Variables
+820	Campaign
+821	Source
+822	Medium
+823	Search Term
+824	Ad Content
+825	Step 3: Add Cost/Impression Data
+826	Cost
+827	Impressions
+828	Campaign ID
+829	Campaign ID or Source
+830	Cost or Impressions
+831	CTM Entry Added.
+832	CTM Entry Failed.
+833	Clear
+834	View Pending
+835	CTM Pending Entries
+836	<b>CTM Pending Entries</b><br>This screen displays cost and impression data entries that will be written to the Urchin database the next time that the profile is run.
+837	No Pending CTM Entries!
+838	Close
+839	Add failed. Invalid profile record number (1001). 
+840	Add failed. Profile get record failed (1002). 
+841	Add failed. CTM entry directory could not be created (1003). 
+842	Add failed. CTM entry file could not be opened (1004). 
+843	Goal 1
+844	Goal 2
+845	Goal 3
+846	Goal 4
+847	Activate Goal
+848	Goal Value (Revenue)
+849	Step 1
+850	Step 2
+851	Step 3
+852	Goal
+853	Field B Required
+854	Use Goal Value
+855	Available Profile List
+856	Range of Days
+857	Remote server username or password missing.
+858	Local server username or password missing.
+859	Local server connection failed.
+860	Remote server connection failed.
+861	Step 4
+862	Step 5
+863	Step 6
+864	Step 7
+865	Step 8
+866	Step 9
+867	Step 10
+868	Home
+869	Website HTTP Proxy Settings (Optional)
+870	Require Step 1
+871	Option 4 (On Demand)
+872	Required Fields
+873	Sample Filters
+874	Steps
+875	Goals
+876	<b>Profiles: Goals</b><p>Edit a goal by clicking on the corresponding tab at the top of the screen. Then, click the <img alt='Analysis Options Button' title='magic wand' src ='/uicons/default/wizard.gif' border=''> at top right to activate the Goal Setting Wizard. Use the web browser embedded in the Wizard to navigate to a page that you would like to set as a funnel step or goal. To select the page as step 1, click <b>Set Page As Step: 1</b>. Repeat for each step in your funnel. Click <b>Set Page As Goal</b> to set the page as the goal and close the Wizard. The pages you have selected will appear in the Steps and Goal Web Address fields. Please note that it is not necessary to include the <i>http://www.domain.com</i> portion of the URL in the Goal Web Address or the Web Address field for any of the steps. Urchin will ignore this part of the URL.<p>IMPORTANT: Urchin allows regular expressions to be used in all the Web Address fields for the Steps and Goal. Be sure to escape all regular expression metacharacters after last forward slash (‘/’); i.e. character like ‘?’ or ’.’ in the Web Address should be escaped using backslash character (‘\’) if you wish for Urchin to interpret them literally.  <p><b>Goal Settings</b><br>Urchin will count each visit to the URL you specify in <b>Goal Web Address</b> as a goal conversion whenever <b>Activate Goal</b> is “on”. The name you provide in <b>Goal Name</b> will be displayed on Urchin reports. The value you provide in <b>Goal Value (Revenue)</b> will be used to calculate ROI and other valuation metrics.<p><b>Goal Funnel Settings</b><br>Specify the steps leading up to the goal in this section. Each step is a page on the path towards conversion to the goal. Together, the steps represent a conversion funnel. Urchin shows how many visitors complete each step and how many abandon your funnel at each step in the Content Optimization-->Goals & Funnel Process-->Defined Funnel Abandonment report. For each step, provide a URL and a name for the page. <p><b>Goal Advanced Settings</b><br>When reporting goal conversions and step completions, Urchin compares the URLs you provide with the URLs that are visited. When <b>Web Address Option</b> is set to “URL without Query”, Urchin ignores the query portion of the URLs in these comparisons. Setting <b>Case Sensitive</b> to “Yes” makes these comparisons case sensitive. Setting <b>Require Step 1</b> to “Yes” indicates that only paths to conversion that include the first step are to be included funnel reports.
+877	Settings
+878	Goal Setup Wizard
+879	Goal Setup Wizard Help
+880	Select Goal
+881	Current Step
+882	Global Localization Settings
+883	Locate Goals and Steps
+884	Address
+885	Page Name
+886	Use this Address
+887	Use this Name
+888	Apply
+889	The decode URL filter has been deprecated.  Field decoding is now handled automatically.  If you have a special field to be decoded, please check the documentation for more information.
+890	Goal Settings
+891	Goal Web Address
+892	Goal Name
+893	Goal Funnel Settings
+894	Goal Advanced Settings
+895	URL without Query
+896	URL with Query
+897	Web Address Option
+898	Web Address
+899	Name
+900	E-Commerce Website
+901	E-commerce Data
+902	Goal Value
+903	Set Page As Step
+904	Set Page As Goal
+905	Navigate to a page on your website. To add the page as a funnel step, click <b>Set Page As Step ...</b>.  Repeat for each step in your funnel. To set the page as the goal and close the wizard, click <b>Set Page as Goal</b>. To return to a previous step, click <b>Back</b>. To close the wizard without saving steps or goal page, click <b>Cancel</b>.
+906	DB Memory Usage
+907	Limit With Cache System
+908	Keep All In Memory
+909	Groups
+910	<b>Profiles: Groups</b><br>Use this screen to grant group access to reports for this Profile. <p><b>Assign Groups</b><br>To grant access to the Profile for a particular Group, select the Group in the left-side box under ‘Available Groups’ and click the right-facing arrow. To deny access to the Profile for a particular Group, select the Group in the right-side box and click the left-facing arrow.  Click Update to save your changes.  <p><b>Override Dashboard</b> (super-admin only)<br>This option allows you to change which reports are available and which dashboards are available on a per group basis.  Click once on a group in the “Access Granted” window to highlight the group.  Then click the “Override Dashboard” button to pop-open a window where you can turn on and off entire sections of reporting for the selected group and select their default dashboard.  When moving a group from the Available Groups to Access Granted, you must “Update” before this option is available for that group.  <p><b>Controls</b><br><ul><li><b>Add</b><br>Click the Add icon to start the Group Wizard and add to the list of available users.<li><b>Edit</b><br>Click the Edit icon to edit the highlighted group.<li>Click the Update button to save your changes. <li>The Tabs at the top of the screen allow access to all of the editable settings for this Profile.
+911	GMT Offset
+912	Add New Log Source
+913	Add More Log Sources
+914	Add Existing Log Source
+915	Error Page
+916	Urchin Configuration Utility Error
+917	Run History Location
+918	Please select a record to edit.
+919	Unknown Error.
+920	10001 - DB Error: Could not connect to the configuration database.
+921	10002 - DB Error: Could not begin transaction.
+922	10003 - DB Error: Could not commit transaction. 
+923	10004 - DB Error: Could not rollback transaction.
+924	11001 - Conf Error: Failed to read user input parameters.
+925	11002 - Conf Error: Failed to obtain global configuration record.
+926	11003 - Conf Error: Failed to obtain user record.       
+927	11004 - Conf Error: Failed to obtain license information.
+928	11005 - Conf Error: Failed to obtain the navigation.
+929	11006 - Conf Error: Failed to obtain the view record.
+930	11007 - Conf Error: Failed to obtain the action record.
+931	12001 - Action: Failed to add record.
+932	12002 - Action: Failed to delete record.
+933	12003 - Action: Failed to update record. Possible reasons: <br><br> * Another record with same Name exists.<br> * Record may have been updated by another user since retrieved.<br><br>The latest data should now be shown. Please resolve any naming conflicts and try updating again.<br><br>
+934	12004 - Action: Failed to link records.
+935	12005 - Action: Failed to import record.
+936	12006 - Action: Failed to delete report data.  The data may already been deleted or there may be permission issues.  Please verify and try again.
+937	12007 - Action: Failed to add profile to the scheduler queue.  The profile is already in the queue.
+938	12008 - Action: Failed to cancel urchin process.
+939	15001 - Permission: License missing or invalid.
+940	15002 - Permission: User does not have permission to the view.
+941	15003 - Permission: User does not have permission to the action specified.
+942	15004 - Permission: Unauthorized use of the dictionary file.
+943	13001 - View: Failed to grab the list of records.
+944	13002 - View: Failed to get record.
+945	13003 - View: Failed to Configuration Summary.
+946	13004 - View: Failed to get relational records.
+947	13005 - View: Failed to get task history.
+948	13006 - View: Failed to pass wizard configuration directives.
+949	13007 - View: Failed to grab goal record for profile.
+950	13008 - View: Failed to get directory listing.
+951	13009 - View: Failed to get ftp listing.
+952	13010 - View: Failed to get list of files and directories to verify.
+953	13011 - View: Failed to get detail task history.
+954	13012 - View: Failed to get campaign tracking view.
+955	13013 - View: Failed to get website to setup goals.
+956	13014 - View: Failed to get license information for display.
+957	13015 - View: Failed to get IIS websites for import.
+958	13016 - View: Failed to get UNC dictory listing.
+959	13017 - View: Failed to get the list of Accounts.
+960	13018 - View: Failed to get list of tasks.
+961	Time Zone
+962	GMT-12:00: International Date Line
+963	GMT-11:00: Midway Island, Samoa
+964	GMT-10:00: Hawaii
+965	GMT-09:00: Alaska
+966	GMT-08:00: Pacific Time (US & Canada); Tijuana
+967	GMT-07:00: Arizona
+968	GMT-07:00: Mountain Time (US & Canada)
+969	GMT-06:00: Central Time (US & Canada)
+970	GMT-05:00: Indiana (East)
+971	GMT-05:00: Eastern Time (US & Canada)
+972	GMT-04:00: Atlantic Time (Canada)
+973	GMT-03:00: Buenos Aires, Georgetown
+974	GMT-02:00: Mid-Atlantic
+975	GMT-01:00: Azores, Cape Verde Island
+976	GMT-00:00: Greenwich Mean Time (London)
+977	GMT+01:00: Amsterdam, Berlin, Paris
+978	GMT+02:00: Athens, Berirut, Minsk
+979	GMT+03:00: Moscow, Kuwait
+980	GMT+04:00: Abu Dhabi, Muscat
+981	GMT+05:00: Ekaterinburg, Karachi
+982	GMT+06:00: Astana, Dhaka
+983	GMT+07:00: Bangkok, Hanoi
+984	GMT+08:00: Beijing, Hong Kong
+985	GMT+09:00: Tokyo, Seoul
+986	GMT+10:00: Sydney, Melbourne, Guam
+987	GMT+11:00: Soloman Island
+988	GMT+12:00: Fiji, Marshall Island
+989	GMT+13:00: Nuku‘alofa
+990	Chinese (Simplified)
+991	Chinese (Traditional)
+992	Dutch
+993	Brazil
+994	Netherlands
+995	Taiwan
+996	Localization
+997	Character Encoding
+998	ASCII/UTF-8 (No Character Set Conversion)
+999	Japanese (EUC-JP, SHIFT-JIS, ISO-2022-JP)
+1000	Latin 1 (ISO-8859-1)
+1001	Email
+1002	Available Dashboards
+1003	Reporting Sections
+1004	Executive
+1005	Marketer
+1006	Webmaster
+1007	Marketing Optimization 
+1008	Content Optimization 
+1009	E-Commerce Analysis 
+1010	IT Reports 
+1011	Dashboards and Sections
+1012	Default
+1013	Profile User Dashboard Settings
+1014	Use Profile Default
+1015	Please Update before Overriding the profile dashboard.
+1016	Override Dashboard
+1017	Profile Group Dashboard Settings
+1018	Profile Group Dashboard Settings: Help
+1019	Profile User Dashboard Settings: Help
+1020	13019 - View: Failed to get user/group permissions
+1021	Standard
+1022	Advanced
+1023	Are you sure you want to delete this account?\n\nCAUTION: ALL Profiles, Log Sources, Filters, Users and Groups associated with this account will be deleted.
+1024	(GMT)
+1025	Password Error! \n\nPasswords do not match, or are less than 8 characters in length!
+1026	optional, see Help Information
+1027	12009 - Action: Profile has been queued to run. Please check the Profile Task History screen for status and runtime output.
+1028	Warning! Master scheduler disabled.
+1029	Warning! Both master & slave schedulers disabled.
+1030	e.g.
+1031	email
+1032	CPC Source - Download History
+1033	CPC Source - Download Detail
+1034	Geo-DB - Download History
+1035	Geo-DB - Download Detail
+1036	Cost Source Wizard Result.
+1037	CPC Source Manager
+1038	CPC Source Name
+1039	CPC Source Type
+1040	<nobr><span class=title1>    <b>CPC Source Manager (Ref. #A-1500)</b></span></nobr><br>The purpose of this screen is to display the CPC Sources that have been configured for this Urchin installation, allow adjustment to the parameters of each, and to enable the Administrator to add new CPC Sources.  CPC Sources can be applied to Profiles on an individual basis.<p><b>Add</b><br>To add a CPC source, click the Add button at the top-right of the screen.  This will launch the Add CPC Source Wizard which will walk you through the simple steps of adding a CPC Source.<p><b>Edit</b><br>Next to each CPC Source in the list, is a series of buttons that allow you to control each CPC Source.  The Edit button allows access to all of the settings for this CPC Source, organized in a tab format.<p><b>Delete</b><br>Click the Delete button next to a CPC Source to remove that CPC Source from the configuration and from all of the Profiles that reference it.  <p><b>Download</b><br>The Download button provides a shortcut to the Download screen where you can either choose to download reports for this CPC source immediately or schedule it to on a regular basis. No CPC related data is available until the CPC report is downloaded.<p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button. <p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can filter which entries are listed.
+1041	CPC Source Wizard : Settings
+1042	<nobr><span class=title1><b>CPC Source Manager: CPC Settings (Ref. #A-1501)</b></span></nobr><br>This screen allows you to configure and adjust the settings for a CPC Source.  For more information on CPC sources, please refer to the manual or our online Documentation Center.<p><b>Optional Account</b> (Datacenter mode only)<br>For new CPC sources, this option allows you to select the Account that the CPC source should be associated with. For existing CPC sources, the name of the Account that the CPC source belongs to is displayed.<p><b>CPC Source Name</b><br>This required field is an arbitrary name that is used for convenience when referencing this CPC Source. Enter something that will be unique for this CPC Source.<p><b>CPC Source Type</b><br>Urchin allows you to create the following CPC sources:<p><b>Google AdWords</b><br>A Google Adwords CPC source requires following fields: <li><b>Email</b>: This is the email address of the advertiser or the MCC (My Client Center) login id (mandatory).<li><b>Password</b>: This is the password for the AdWords Account being accessed (mandatory).<li><b>Developer Token</b>: This is the unique string that identifies an authorized developer of the AdWords API (optional). Urchin comes with default developer token that gets rotated on monthly basis. If user doesn't provide the developer token, then Urchin uses the default token. Please note that AdWords API charges against developer token for all API calls made by that CPC source. So if users are using their own developer tokens, then their login or MCC account will be charged for API usage. For all default purposes, leave this field blank.<li><b>Application Token</b>: This is the application token that will be used when accessing the AdWords API. If user has provided the developer token, then it is required to provide the application token as well. Otherwise, leave this field blank.<li><b>Client Email & Customer ID</b>: If user is using MCC login in stead of advertiser's email, then either of these two fields (but not both) are required.<p><b>Yahoo! Search Marketing</b><br>A Yahoo! CPC source requires following fields: <li><b>Username</b>: This is the username for the Yahoo! Search Marketing account being accessed (mandatory). It can be the advertiser's email address or the email address of the agency accessing the report on behalf of the advertiser.<li><b>Password</b>: This is the password for the Yahoo! Search Marketing account being accessed (mandatory).<li><b>Master Account ID</b>: This is the advertiser's master account ID (mandatory).<li><b>Account ID</b>: This is the ID of the Yahoo! Search Marketing account being accessed. (mandatory).<li><b>License Key</b>: This is the license key for the user that is logging-in, the advertiser or the agency (mandatory). <li><b>On-Behalf-of Username</b>: This is the advertiser's on-behalf-of username. It is only required if the agency username was provided instead of the advertiser username. (optional).<li><b>On-Behalf-of Password</b>: This is the advertiser's on-behalf-of password (optional). <p><b>CPC Report Download Enabled</b><br> (Only visible while editing a CPC source) This option enables and disables the future downloads of the reports for this CPC source. <b>Note</b>: Even if you select to disable future report downloads, the profiles attached with this CPC source will keep using already downloaded reports.
+1043	CPC Source Settings
+1044	Google AdWords
+1045	Microsoft adCenter
+1046	Yahoo! Search Marketing
+1047	Email
+1048	Password
+1049	Developer Token
+1050	Application Token
+1051	adCenter Login
+1052	User Access Key
+1053	Username
+1054	Master Account ID
+1055	Account ID
+1056	License Key
+1057	CPC source configuration complete!
+1058	CPC Source Wizard: Confirmation
+1059	“On-Behalf-of” Username
+1060	“On-Behalf-of” Password
+1061	“On-Behalf-of” Password (Retype)
+1062	Password (Retype)
+1063	Passwords are empty, invalid or don‘t match
+1064	Number of CPC Sources
+1065	<nobr><span class=title1><b>CPC Sources: Profiles (Ref. #A-1502)</b></span></nobr><br>This screen is used to apply this Cost Source to one or more existing Profiles.<p><b>Apply to Profile</b><br>To apply this Cost Source to a Profile, select the Profile name from the Available Profiles box and click the right-facing arrow. To remove this Cost Source from a Profile, select the Profile in the Applied To box and click the left-facing arrow. Click Update to apply any changes.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Cost Source. 
+1066	CPC Report Download Enabled
+1067	Test CPC Source
+1068	CPC Source Connection Successful
+1069	CPC Source Connection Failed
+1070	CPC source(s) To Apply
+1071	Available CPC source(s)
+1072	Applied CPC source(s)
+1073	<nobr><span class=title1><b>Profiles: Cost Sources (Ref. #A-2106)</b></span></nobr><br>Use this screen to add <b>Applied Cost Sources</b> from the list of <b>Available Cost Sources</b>. <p><b>Controls:</b><br><ul><li><b>Add</b><br>Click the Add icon to add an additional Cost Sources to the Available Cost Sources. This will launch the Add Filter Wizard which will take you through the steps of adding either a new or pre-existing Cost Sources.<li><b>Edit</b><br>Highlight the Available Cost Sources that you wish to edit and click the Edit icon. <li>Click the <b>Update</b> button to save your changes. <li>The Tabs at the top of the screen allow access to all of the editable settings for this Profile. 
+1074	CPC Sources
+1075	Warning!! Google AdWords makes reports available after some delays. Make sure that CPC sources are scheduled at a time when the reports are available. For more information, read the relevant article on <a href="https://secure.urchin.com/helpwiki/en/Help_Center"><b>Online Help Center</b></a>.
+1076	Client Email
+1077	Customer Id
+1078	Either provide ‘Client Email’ or ‘Customer Id’ (not both)
+1079	<nobr><span class=title1><b>CPC Source: Schedule (Ref. #A-1503)</b></span></nobr><br>This screen allows you to set CPC source download options.<p><b>Download Now</b><br>To download this CPC source immediately, click the large green Download Now button on the right. This will queue the CPC Task to be run by the Urchin CPC Scheduler.<p><b>Schedule - Download Interval</b><br>The CPC report download operation works in two stages. In first stage, the CPC credentials are being validated and report request is being made to the server (AdWords etc). In second stage, report availability is being checked periodically until it becomes available. Second stage finishes with the actual download of the report. Considering report availability can take from few seconds to half an hour and each API call to check the availability may cost money to the customer (1 unit in case of AdWords), so Urchin starts checking the availability of report after configurable interval between two phases. <br><br>Using this option, user can set the interval between the scheduling of the report and the actual checking/downloading time for this cost source.<p><b>Download - Hour of the Day</b><br>Using this option, user can configure the time of the day when updated report for this CPC source should be downloaded.<p><b>Account Data - Download Interval</b><br>Use this option to set the Download Interval for the AdWords account structure download. The AdWords Account structure must be downloaded before you can view Campaign and Keyword metadata or use the Keyword Tool and AdWords Tag Manager tool.
+1080	Schedule
+1081	CPC Source Download Settings
+1082	<nobr><span class=title1><b>Global Settings: CPC Source Update (Ref. #A-2705)</b></span></nobr><br>This screen allows you to set global CPC-source download options.<p><b>Schedule - Download Interval</b><br>The CPC report download operation works in two stages. In first stage, the CPC credentials are being validated and report request is being made to the server (AdWords etc). In second stage, report availability is being checked periodically until it becomes available. Second stage finishes with the actual download of the report. Considering report availability can take from few seconds to half an hour and each API call to check the availability may cost money to the customer (1 unit in case of AdWords), so Urchin starts checking the availability of report after configurable interval between two phases. <br><br>Using this option, user can set global value for interval between the scheduling of the report and the actual checking/downloading time.<p><b>Download - Hour of the Day</b><br>Using this option, user can configure the global time of the day when updated report for this CPC source should be downloaded.<p><b>Account Data - Download Interval</b><br>Use this option to set the Download Interval for the AdWords account structure download. The AdWords Account structure must be downloaded before you can view Campaign and Keyword metadata or use the Keyword Tool and AdWords Tag Manager tool.
+1083	CPC Source Update
+1084	Schedule - Download Interval
+1085	Download - Hour of the Day
+1086	seconds
+1087	minutes
+1088	Download Now
+1089	Autoupdate History
+1090	CPC Download History
+1091	<nobr><span class=title1><b>Scheduler: Autoupdate History (Ref. #A-2800)</b></span></nobr><br>The purpose of this screen is to list the history of autoupdates that has been performed by the Task Scheduler.  A summary of the downloads is listed, providing valuable information on each.  The Status field can be clicked to view the runtime detail for that historic task.  Use the arrows below each field to sort by that field.<p>Each entry shows the Component (product, help or geodata), the Machine Name, the Status of the Task, when the Task started and when it finished.<p><b>Status</b> (hyperlinked)<br>The Status of each Task is either ‘Update’, ‘Updating’, ‘Updated’, ‘Download’, ‘Downloading’, ‘Downloaded’, ‘Upgrade’, ‘Upgrading’, ‘Completed’, ‘Cancelled’ or ‘Error’.  These are color-coded and the list can be sorted by Status by clicking the arrow below the word ‘Status’.  To view the runtime detail of a particular autoupdate, click the color-coded status entry next to that Task.  This will open a separate window for viewing the runtime detail.<p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button.
+1092	Cost Source configuration complete!  The Cost Source has been added. Click the ‘Done’ button to return to the admin system.
+1093	No <b>Autoupdate Task History</b> found.
+1094	<nobr><span class=title1><b>Scheduler: CPC Download History (Ref. #A-2900)</b></span></nobr><br>This screen shows the history of every CPC download task that has been performed by the CPC Task Scheduler. AdWords Account Structure downloads are recorded as separate tasks in this list. A summary of each CPC download is provided. Click the Status field to view the runtime detail for any task listed in the history. Use the arrows below each field to sort by that field.<p>Each entry shows the Name of the CPC source name, CPC type, the Status of the Task, when the Task started, when it finished, the number of API unit consumed and the processing host.<p><b>Status</b> (hyperlinked)<br>The Status of each Task is either ‘Pending’, ‘Running’, ‘Completed’, ‘Aborted’ or ‘Error’.  These are color-coded and the list can be sorted by Status by clicking the arrow below the word ‘Status’.  To view the runtime detail of a particular Task, click the color-coded status entry next to that Task.  This will open a separate window for viewing the runtime detail.<p><b>Controls</b><br>Use the #Shown pulldown menu to change how many entries are listed at one time. To scroll through entries a page at a time, use the Previous or Next button. <p><b>Account</b> (Datacenter Mode only)<br>Under Datacenter Mode operation, the Account menu can be used to filter which entries are listed.
+1095	Warning! CPC scheduler disabled.
+1096	No <b>CPC Download History</b> found.
+1097	CPC Type
+1098	Aborted
+1099	Download
+1100	Units Consumed
+1101	Process
+1102	Drive more quality traffic to your site with <A href="http://www.google.com/urchin/sign-up65.html#rd=adwords&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>Google AdWords</B></FONT></A>.<br/>Already have an account? Consider <A href="http://www.google.com/urchin/sign-up65.html#rd=keygen&license=<%var|ENCODED_SERIAL_CODE%>"><FONT color="blue"><B>adding more keywords</B></FONT></A> to your campaign.
+1103	12010 - Action: CPC source has been queued to download. Please check the CPC Download History screen for status and runtime output.
+1104	12011 - Action: Failed to add CPC source to the scheduler queue.  The CPC source is already in the queue.
+1105	Action
+1106	Unable to ‘Cancel’ the profile task.
+1107	12016 - Action: Failed to cancel scheduled task. Profile processing is in action.
+1108	Cancelled
+1109	Regular backup creation must be switched on
+1110	12014 - Action: Profile processing will be cancelled.
+1111	Cancelling
+1112	Avg. Length of Visit
+1113	Log Sources
+1114	Filtered
+1115	Visits
+1116	Bounce Rate
+1117	Completed Goals
+1118	Ads Accounts
+1119	Add failed. You have reached the limit of maximum number of profiles.<p>Please upgrade your license or delete an existing profile and try again.
+1120	Add failed. You have reached the limit of maximum number of log sources.<p>Please upgrade your license or delete an existing log source and try again.
+1121	You have reached the limit of maximum number of log sources per profile.
+1122	You have reached the limit of maximum number of profiles.
+1123	You are using the demo license that will expire on
+1124	Information
+1125	Valid License - USP
+1126	(Wrong Time)
+1127	The USP license will expire at
+1128	Please contact your local system administrator to resolve the problem.
+1129	Advertiser
+1130	Advertisement Optimization
+1131	CPC Logs
+1132	Account Structure
+1133	Account Data - Download Interval
+1134	hours
+1135	days
+1136	Authentication type
+1137	12015 - Unable to verify user.
+1138	Unable to verify user.<p>Possible reasons could be:<ul><li>wrong username entered;</li><li>connectivity problem  with your external authentication service;</li><li>incorrectly configured external authentication provider.</li></ul><p>Check the username entered, try again and, if the problem persists, verify the external authentication provider configuration according to the provider-specific guidelines.
+1139	day
+1140	hour
+1141	minute
+1142	Access to AdWords Tools
+1143	Geo Locations/Connection Speed
+1144	Network Locations
+1145	Domains
+1146	Geo Detail
+1147	Geo Information
+1148	Geo Database
+1149	<nobr><span class=title1><b>Log Sources: Profiles</b></span></nobr><br>This screen is used to apply this Log Source to one or more existing Profiles.<p><b>Apply to Profile</b><br>To apply this Log Source to a Profile, select the Profile name from the Available Profiles box and click the right-facing arrow. To remove this Log Source from a Profile, select the Profile in the Applied To box and click the left-facing arrow. Click Update to apply any changes.<p><b>Controls</b><br>Click the Update button to save your changes. The Tabs at the top of the screen allow access to all of the editable settings for this Log Source. 
+1150	Day
+1151	Week
+1152	Month
+1153	Year
+1154	Admin
+1155	Business
+1156	Basic
+1157	Manage Segments
+1158	Operation Failed
+1159	You have reached the limit of maximum number of segments per user
+1160	Internal
+1161	External
+1162	File
+1163	Help Resources
+1164	About this Report
+1165	Urchin Web Site
+1166	Schedule Update
+1167	Update settings
+1168	Silently update Help Articles
+1169	Silently update Geo Database
+1170	Versions
+1171	Urchin
+1172	Help Articles
+1173	Geo Database
+1174	Component
+1175	Current version
+1176	New version
+1177	Action
+1178	download in progress
+1179	upgrade in progress
+1180	view error log
+1181	check now
+1182	view changelist
+1183	schedule download now
+1184	install now
+1185	cancel
+1186	Autoupdate
+1187	Updates available.
+1188	View now.
+1189	Last check
+1190	Urchin services will be shut down during an upgrade, are you sure you want to continue?
+1191	There are active processing tasks in a queue, please wait until they are completed.
+1192	Component
+1193	product
+1194	help
+1195	geodata
+1196	Machine name
+1197	Urchin On-Line Help Center
+1198	New!
+1199	Urchin Authorized Consultants
+1200	Google Analytics & Urchin Blog
+1201	Help
+1202	containing
+1203	excluding
+1204	Go
+1205	Show rows:
+1206	Analytics Home
+1207	FAQs
+1208	Privacy Policy
+1209	Urchin Help Center
+1210	Completed
+1211	Update
+1212	Updating
+1213	Updated
+1214	Download
+1215	Downloading
+1216	Downloaded
+1217	Upgrade
+1218	Upgrading
+1219	Cancelled
+1220	Error
+1221	Print View
+1222	Standard View
+1223	Permalink
+1224	Permalink (paste into email or IM)
+1225	Recommended for you
+1226	What‘s new?
+1227	Beta
+1228	Alpha
+1229	New Reporting User Interface
+1230	Advanced Segments
+1231	Event Tracking
+1232	Parallel Profile Processing
+1233	Permalinks
+1234	Customizable Geo/DNS Data
+1235	Custom Order of Filters
+1236	Data API v2
+1237	Automatic Updates
+1238	Local Help Center
+1239	Traffic Sampling
+1240	Segment Sampling
+1241	Google Analytics
+1242	Google AdWords
+1243	Google Website Optimizer
+1244	Google Keyword Tool
+1245	Filter:
+1246	Urchin Software from Google
+1247	Google Privacy Policy
+1248	Privacy Policy
+1249	Analytics Blog
+1250	End-User License Agreement
+1251	Urchin User Forum
+1252	Task state is not up to date, please refresh the page
+1253	Custom
+1254	External Script
+1255	Command
+1256	Command Line
+1257	Optional Parameters

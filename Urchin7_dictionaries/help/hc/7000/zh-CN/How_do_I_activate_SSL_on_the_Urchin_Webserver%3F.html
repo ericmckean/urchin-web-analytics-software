@@ -1,0 +1,22 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何在 Urchin 网络服务器中启用 SSL？</strong> <p class="line874">随 Urchin 提供的 Urchin 网络服务器能够通过 SSL 对通信进行加密。要启用 SSL，您需要拥有一个由认证机构签署的有效证书或一个自签名证书。 <p class="line874">要在 Urchin 网络服务器中启用 SSL，请按以下步骤操作： <ol type="1"><li>将您的 SSL 证书文件复制到 Urchin var 目录中，并将其命名为 server.crt </li><li>将您的 SSL 密钥文件复制到 Urchin var 目录中，并将其命名为 server.key </li><li>修改位于 Urchin var 目录下的 urchinwebd.conf.template 文件 <ol type="1"><li>（如果您使用的是 Urchin 6.6+，请跳过此步骤。）注释掉 Port 行并取消对 Listen 指令的注释。 <pre>          #XXXPortXXX
+          Listen 443
+          </pre></li><li class="gap"><p class="line862">将 ServerName 指令从 localhost 更改为您的网络服务器的名称。例如： <pre>          ServerName: www.urchin.com
+          </pre></li><li style="list-style-type:none"><p class="line862">请注意：urchinwebd.conf.template 文件中的 ServerName 必须与证书文件中的服务器名称一致。 </li></ol></li><li>使用 urchinctl 和 -e 选项启动或重新启动网络服务器。Urchinctl 位于 Urchin bin 目录下。-e 选项指示 urchinctl 在网络服务器中启用 SSL。例如，要重新启动网络服务器并在 443 端口上启用 SSL，请执行以下操作：  对于 Urchin 6.6 之前的版本： <pre>   urchinctl -e -w restart
+   </pre>对于 Urchin 6.6+： <pre>   urchinctl -e -p 443 -w restart
+   </pre><p class="line891"><span class="u">请注意</span>：要启动服务器而不启用 SSL，只需去掉 -e 选项即可。 </li></ol><p class="line862">现在，您可以通过以下网址来访问启用了 SSL 的服务器：<a class="https" href="https://servername.domain.com:port/">https://servername.domain.com:port/</a> <p class="line867"><span class="u">请注意</span>：对 urchinwebd.conf.template 中的 SSL 设置进行自定义可能会带来一些问题，并可能导致网络服务器无法启动。 <p class="line867"><strong>Windows 说明</strong> <p class="line874">要在 Urchin 网络服务器中启用 SSL，请按以下步骤操作： <ol type="1"><li>将您的 SSL 证书文件复制到 Urchin var 目录中，并将其命名为 server.crt </li><li>将您的 SSL 密钥文件复制到 Urchin var 目录中，并将其命名为 server.key </li><li>修改位于 Urchin var 目录下的 urchinwebd.conf.template 文件 <ol type="1"><li>（如果您使用的是 Urchin 6.6+，请跳过此步骤。）注释掉 Port 行并取消对 Listen 指令的注释。 <pre>          #XXXPortXXX
+          Listen 443
+          </pre></li><li class="gap">取消对以下行的注释，以便在网络服务器启动时载入 mod_ssl.so： <pre>          LoadModule ssl_module etc/mod_ssl.so
+          </pre></li><li class="gap"><p class="line862">将 ServerName 指令从 localhost 更改为您的网络服务器的名称。例如： <pre>          ServerName: www.urchin.com
+          </pre></li><li style="list-style-type:none"><p class="line862">请注意：urchinwebd.conf.template 文件中的 ServerName 必须与证书文件中的服务器名称一致。 </li></ol></li><li>使用 urchinctl 和 -e 选项删除并安装网络服务器服务。Urchinctl 位于 Urchin bin 目录下。-e 选项指示 urchinctl 在网络服务器中启用 SSL。例如，要删除和安装网络服务器并在 443 端口上启用 SSL，请按以下步骤操作：  对于 Urchin 6.6 之前的版本： <pre>   urchinctl.exe -w remove
+   urchinctl.exe -w -e install
+   </pre>对于 Urchin 6.6+： <pre>   urchinctl.exe -w remove
+   urchinctl.exe -e -p 443 -w install
+   </pre><p class="line891"><span class="u">请注意</span>：要启动服务器而不启用 SSL，只需去掉 -e 选项即可。 </li></ol><p class="line862">现在，您可以通过以下网址来访问启用了 SSL 的服务器：<a class="https" href="https://servername.domain.com:port/">https://servername.domain.com:port/</a> <p class="line867"><span class="u">请注意</span>：对 urchinwebd.conf.template 中的 SSL 设置进行自定义可能会带来一些问题，并可能导致网络服务器无法启动。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

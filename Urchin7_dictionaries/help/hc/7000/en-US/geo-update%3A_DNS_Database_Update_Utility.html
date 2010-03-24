@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>geo-update: DNS Database Update Utility</strong> <p class="line867"><strong>Overview</strong> <p class="line874">The geo-update utility is used to check for the updates to Urchin's internal DNS database and to download the updates if they are available.  It allows you to download the updates from Google download servers as well as from a local directory (new for Urchin 6). <p class="line867"><strong>Usage</strong> <p class="line874">The geo-update utility can be invoked by the Urchin scheduler (urchind) on monthly basis or manually through command line. When invoked via scheduler, it always updates from the google download server. When invoked on command line, it provides an additional option of updating DNS database from some local path. This task is set to check for new updates once per month and can be configured by the user to occur at a certain time using the admin interface. <p class="line874">If a task has been created for geo-update, then it appears on Task History screen with name "geo-update". <p class="line874">The default behavior is to check for updates, download the new databases and overwrite the existing ones. The default behaviors can be overridden by running geo-update from the command line with the appropriate options. The usage is as follows: <p class="line867"><pre>geo-update [-Hhv] [-D | -F] [-i file]
+</pre><p class="line874">where <p class="line867"><pre>  -F            Forces download of geo databases
+  -f            Pathname of geo.zip file on local filesystem [optional]
+  -H            Specifies to log run output to history file
+  -h            Prints help information and exits
+  -T &lt;task id&gt;  Specifies the task history record to update
+                Specifying -T forces use of -H
+  -V            Prints geo-database version number and exits
+  -v            Prints version number and exits
+</pre><p class="line874">Using the -F option will force the download of new databases even if the databases are already up to date. This feature is useful if you imported incorrect custom domain information or otherwise damaged your domain database and wish to start over with a fresh copy. <p class="line862">Logging output to a history file with the -H option will make the run information available when viewing the Task History screen in the Configuration-&gt;Scheduler area of the Urchin administration interface. <p class="line862">Use of option -T allows you to enforce an update of a particular task from the CLI specified by &lt;Task_ID&gt;. The Task_ID value can be found in the Urchin 6 database using the following query: <p class="line867"><pre>mysql&gt; select * from ugeo_tasks\G
+</pre><p class="line867"><strong>Examples</strong> <p class="line874">To force a download of the latest domains database: <p class="line867"><pre>geo-update -F
+</pre><p class="line874">To update task manually from CLI (when task ID is already retrieved from DB): <p class="line867"><pre>geo-update -T &lt;Task_ID&gt; -H
+</pre><p class="line874">The geo-update utility needs an internet connection to be able to check for and download new updates. The utility uses port 80 to communicate with the webserver providing the updates. It is possible that you will have problems when going through firewalls and proxy servers when doing updates. Please consult your network administrator if this is the case. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Example 4: Retrieving data for specified dimensions and metrics</strong> <p class="line862">(Return to main article: <a href="Samples_for_Java_(SOAP)_v1.html">Samples for Java (SOAP) v1</a>) <p class="line862">1. Define a service connection for the ReportService: <p class="line867"><pre>ReportserviceStub reportStub = new ReportserviceStub();
+</pre><p class="line874">2. Define a request for the getData() method: <p class="line867"><pre>ReportserviceStub.GetData dataReq = new ReportserviceStub.GetData();
+</pre><p class="line874">3. Set up the login/password/profile id request parameters: <p class="line867"><pre>    dataReq.setLogin("URCHIN_LOGIN");
+    dataReq.setPassword("URCHIN_PASSWORD");
+    dataReq.setProfileId(PROFILE_ID);
+</pre><p class="line874">4. Set up the request parameters for the following scenarios: <ul><li>Retrieve a list of visitors and associated metrics for a specific date range: </li></ul><p class="line867"><pre>    dataReq.setStartDate(new SimpleDateFormat("yyyy-MM-dd").parse("2008-01-01"));
+    dataReq.setEndDate(new SimpleDateFormat("yyyy-MM-dd").parse("2009-01-01"));
+    dataReq.setDimensions("u:visitor_id");
+    dataReq.setMetrics("u:pages,u:visits");
+    dataReq.setMaxResults(5);
+</pre><ul><li>Retrieve data for a specific date range and apply filter </li></ul><p class="line867"><pre>      // Define parameters.
+    dataReq.setStartDate(new SimpleDateFormat("yyyy-MM-dd").parse("2008-01-01"));
+    dataReq.setEndDate(new SimpleDateFormat("yyyy-MM-dd").parse("2009-01-01"));
+    dataReq.setDimensions("u:utm_source,u:utm_medium,u:utm_campaign");
+    dataReq.setMetrics("u:pages,u:visits,u:transactions");
+    dataReq.setFilters("u:utm_source=~direct,u:pages&gt;0");
+    dataReq.setMaxResults(5);
+</pre><ul><li>Retrieve visitor list </li></ul><p class="line867"><pre>    dataReq.setStartDate(new SimpleDateFormat("yyyy-MM-dd").parse("2008-01-01"));
+    dataReq.setEndDate(new SimpleDateFormat("yyyy-MM-dd").parse("2009-01-01"));
+    dataReq.setDimensions("u:visitor_id");
+    dataReq.setMaxResults(5);
+</pre><ul><li>Retrieve transaction list sorted by id (descending order) </li></ul><p class="line867"><pre>      // Define parameters
+    dataReq.setStartDate(new SimpleDateFormat("yyyy-MM-dd").parse("2008-01-01"));
+    dataReq.setEndDate(new SimpleDateFormat("yyyy-MM-dd").parse("2009-01-01"));
+    dataReq.setDimensions("u:transaction_id");
+    dataReq.setMetrics("u:transactions,u:revenue");
+    dataReq.setSort("-u:transactions");
+    dataReq.setMaxResults(5);
+</pre><ul><li>Retrieve totals aggregated by month for specific date range sorted by one metric </li></ul><p class="line867"><pre>    dataReq.setStartDate(new SimpleDateFormat("yyyy-MM-dd").parse("2008-01-01"));
+    dataReq.setEndDate(new SimpleDateFormat("yyyy-MM-dd").parse("2009-01-01"));
+    dataReq.setDimensions("u:transaction_id");
+    dataReq.setMetrics("u:transactions,u:revenue");
+    dataReq.setSort("-u:transactions");
+    dataReq.setMaxResults(5);
+</pre><p class="line874">5. Retrieve the data: <p class="line867"><pre>ReportserviceStub.GetDataResponse dataRsp = reportStub.getData(dataReq);
+</pre><p class="line874">6. Parse and display the data. <p class="line862">For complete sample code, see the implementations of GetDataWithImplicitStorage(), GetDataFiltered(), GetDataLimited(), GetDataSorted(), and GetDataAggregated() in the AdminService.java file. <p class="line862">(Return to main article: <a href="Samples_for_Java_(SOAP)_v1.html">Samples for Java (SOAP) v1</a>) </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

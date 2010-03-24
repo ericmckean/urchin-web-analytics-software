@@ -1,0 +1,19 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>我的網站有多個網域名稱，要如何設定追蹤？</strong> <p class="line874">如果您的網站在不同的根網域上 (例如 www.mystore.com 和 www.securecart.com) 使用安全購物車，或使用多個指向同一個內容的網域別名，則您將需要進行某些修改以確保網站和 Urchin 流量監視器相容。 <ul><li style="list-style-type:none">請注意，多個子網域和多個根網域間的區別。 www.example.com 和 securecart.example.com 都有多個子網域，而 www.example.com 和 www.sample.com 則代表多個根網域。 如果您的網站有多個子網域，請參閱： 如何以一個設定檔追蹤網站的所有子網域？ 如何以個別的設定檔追蹤網站的所有子網域？ 以取得相關組態資訊。 </li></ul><p class="line867"><strong>多個網域名稱：安全商店</strong> <p class="line862">如果您的網站使用多個根網域名稱 (例如 www.mystore.com、www.securecart.com)，請參閱<a href="My_shopping_cart_has_a_different_domain_name_than_my_store_site._How_do_I_set_up_e-commerce_tracking%253F.html">我的購物車的網域名稱與商店網站不同。如何設電子商務追蹤？</a> <p class="line867"><strong>多個網域名稱：網域別名</strong> <p class="line874">如果您的網站使用多個網域別名，建議您將別名的流量重新導向至主要網站。如此可以確保 Urchin 流量監視器的訪客追蹤是在主要網域下展開，而且會持續追蹤所有訪客。 <p class="line874">下列的指示示範如何在 Apache 和 IIS 伺服器上，將使用別名的網域重新導向到主要網域。 <p class="line867"><strong>在 Apache 中重新導向別名</strong> <ul><li style="list-style-type:none"><p class="line862">如果您目前使用 Apache 網站伺服器，只要稍微修改組態即可將某一別名下的流量重新導向至主要網站。要達到這個目的，其中一個方法是建立兩個 VirtualHost 項目。第一個 VirtualHost 是包含正常組態的主要網域，第二個 VirtualHost 用於所有別名並重新導向到主要網域。： </li></ul><p class="line867"><pre>        #---primary virtualhost
+        Servername www.mysite.com
+        Serveralias mysite.com
+        ...
+        #---second virtualhost
+        Servername mysite.org
+        Serveraliaswww.mysite.org mysite.net www.mysite.net
+        RewriteEngine on
+        RewriteRule ^(.*) http://www.mysite.com$1 [R=301]
+</pre><ul><li style="list-style-type:none"><p class="line862">第二個 VirtualHost 使用重新寫入的規則和 301 (永久移動) 重新導向程式碼，將所有的流量轉移到原來的網站。此時，對 Urchin 流量監視器而言，該網站是單一網域的網站，可以正常安裝 Urchin 流量監視器。 </li></ul><p class="line867"><strong>在 IIS 中重新導向別名</strong> <ul><li style="list-style-type:none">如果您目前使用 Microsoft IIS 網站伺服器，只要稍微修改組態即可將某一別名下的流量重新導向至主要網站。要達到這個目的，方法是在 IIS 組態中建立兩個網站。第一個網站是包含正常組態的主要網域 (www.mysite.com)，第二個網站用於所有別名 (mysite.net、mysite.org 等等) 並重新導向至主要網域。 在 IIS 管理員中，在其中一個網站上按一下滑鼠右鍵，帶出內容的對話方塊。在 [網站] 標籤上，按一下 [進階...] 按鈕。如此將會帶出一個視窗，在此可使用 [主機標頭] 欄位將其他網域指派到網站。在主要網站中設定主要網域，並使用第二個網站來容納所有別名。 設定並啟用保管所有別名的第二個網域後，請以下列重新導向程式碼建立空白的首頁： </li></ul><p class="line867"><pre>        &lt;META HTTP-EQUIV=Refresh CONTENT="0; URL=http://www.mysite.com/"&gt;
+</pre><ul><li style="list-style-type:none">如此將會指示訪客的瀏覽器立即重新導向到主要網址。此時，主要網站將成為一個簡單的單一網域組態，且可以使用預設設定來處理一般 Urchin 流量監視器的安裝。 </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如果日志处理任务无法正常进行，该怎么取消？</strong> <p class="line867"><strong>第 1 种情形： 任务占用太多时间</strong> <p class="line874">如果您因为某项任务占用太多时间而要取消它，则需要关闭相应的日志处理引擎。 您可以通过结束“urchin”进程 (Unix) 或使用“进程管理器”(Windows) 来完成此操作。 <p class="line874">请注意： 不要只是删除配置文件再重新创建。 尽管这样任务不再显示在调度程序页上，但它仍在缓慢运行，调度程序还是处于阻塞状态。 <p class="line867"><strong>第 2 种情形： 系统意外崩溃或重新启动</strong> <p class="line874">在这种情况下，任务在正常运行，但系统重新启动或崩溃了，而没有给日志处理引擎和调度程序发出正确的退出信号。 这导致任务的数据库项处于不一致的状态。 系统启动后，调度程序和日志处理引擎并不恢复运行相应的配置文件，但管理界面会错误地显示配置文件仍在运行。 如果您试图重新调度同一配置文件，您将看到“该任务已在队列中/正在运行”的消息。  <p class="line874">对于这种情况，您只需耐心等候 30 分钟即可。 主调度程序会从数据库中删除前 30 分钟内未更新的所有任务。 一旦任务被删除，管理调度页就会将任务状态显示为“错误”，您就可以重新调度该配置文件了。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

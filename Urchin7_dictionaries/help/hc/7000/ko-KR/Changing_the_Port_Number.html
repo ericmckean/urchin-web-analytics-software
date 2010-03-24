@@ -1,0 +1,10 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>포트 번호 변경</strong> <p class="line874">Urchin 웹서버가 수신하는 기본 포트 번호는 9999입니다.이 번호를 변경하려면 두 가지 기본 단계가 필요합니다. <ul><li>'서버 설정' 화면에서 포트 번호 변경 </li><li>Urchin 서비스를 중지한 후 시작(이 프로세스는 Windows 시스템과 Unix 시스템에서 서로 약간 다름) </li></ul><p class="line874">세부적인 프로세스는 다음과 같습니다. <ul><li>Urchin 관리 인터페이스에 로그인합니다. </li><li><p class="line862">'구성'-&gt;'글로벌 설정'-&gt;'액세스 설정'으로 이동합니다 </li><li>'서버 포트 번호' 상자에서 새 포트 번호를 설정합니다. </li><li>'업데이트' 버튼을 클릭합니다. </li></ul><p class="line874">이제 Urchin 서비스를 다시 시작해야 합니다. <ul><li>Unix 계열의 시스템에서는 Urchin 폴더의 bin 디렉토리로 이동하고 다음을 실행합니다. </li></ul><p class="line867"><pre>          ./urchinctl restart
+</pre><ul><li><p class="line862">Windows 시스템에서는 콘솔에서 '시작'-&gt;'프로그램'-&gt;'Urchin 6'으로 이동하고 'Urchin 6 서비스 사용 안 함'을 선택한 후에 'Urchin 6 서비스 사용'을 선택합니다. </li></ul><p class="line874">그러면 웹서버가 새 포트 번호에서 연결 요청을 수신합니다.즉, 보고서를 보고 Urchin 소프트웨어를 구성하는 데 사용되는 URL이 변경되었기 때문에 사용자에게 새 URL을 알려줘야 합니다. <p class="line867"><strong>참고</strong> 많은 시스템에서는 1024보다 낮은 숫자의 포트 번호를 사용하려는 경우 루트 권한이 필요할 수도 있습니다.또한 지정된 포트에서 다른 서비스가 이미 실행 중인 경우에는 Urchin이 시작되지 않습니다. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>为什么在允许组读取的设置下，仍然无法读取我的日志文件？</strong> <p class="line874">在允许组读取的设置下，若仍无法读取日志文件，就会出现错误编号"7026-76-*"。这是 urchin 二进制程序 setuid/setgid 功能的已知问题。为安全起见，urchin 引擎会以二进制文件所有人的身份运行，即使原本是以根用户的身份启动也是如此。在这一情况下，应用程序只能严格认定组 ID，而无法认定组列表。 <p class="line874">要修正此问题，需要将日志文件的许可更改为任何人都可读取，或将此组更改为准确的 urchin 用户组。这只会影响 UNIX 类型的架构。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,698 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+    
+    .writely-callout-data {
+      display: none;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>[Urchin7]: Advanced (Visit) Segmentation</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<div>
+  &nbsp;&nbsp;
+</div>
+<div>
+  <h1>
+    Advanced(Visit) Segmentation
+  </h1>
+  <h4>
+    Advanced Segment
+  </h4>
+  <div>
+    Each advanced segment is a combination of filters joined by "AND" condition.
+  </div>
+  <div>
+    Metrics support numeric comparison operators "equals to", "less than", "less than or equal to", "greater than" and "greater than or equal to".
+  </div>
+  <div>
+    Dimensions support regular expressions with operations "matches" and "does not match".
+  </div>
+  <br>
+  <div>
+    Example: <font color=#0000ff>"refferal"</font> matches "yahoo" <b>AND</b> <font color=#274e13>"pageviews"</font> greater than "1"
+  </div>
+  <br>
+  <div>
+    Advanced segments editor is available on My Customizations -&gt; Advanced Segments page.
+  </div>
+  <h4>
+    Advanced Segmentation
+  </h4>
+  <div>
+    Advanced Segmentation provides functionality to manage the advanced segments and apply them to reporting data.
+  </div>
+  There are altogether four different types of advanced segmentation:
+</div>
+<ul>
+  <li>
+    visit segmentation - advanced filters can be applied to dimensions and metrics that are linked with visit
+  </li>
+  <ul>
+    <li>
+      <b>dimensions:</b> browser_base, browser_version, domain_complete, domain_primary, ecommerce_affiliation, ecommerce_bill_city, ecommerce_bill_country, ecommerce_bill_region, ecommerce_product_code, ecommerce_product_name, ecommerce_variation, geo_city, geo_connection_speed, geo_country, geo_latitude, geo_longitude, geo_organization, geo_region, platform_base, platform_version, request_stem, user_defined_variable, username, utm_campaign, utm_content, utm_flash_version, utm_java_enabled, utm_js_version, utm_language, utm_medium, utm_page_title, utm_screen_colors, utm_screen_resolution, utm_source, utm_term, visitor_type
+    </li>
+    <li>
+      <b>metrics:</b>&nbsp;goals1, goals2, goals3, goals4, pages, revenue, transactions, visits<br>
+    </li>
+  </ul>
+  <li>
+    path segmentation - advanced filters can be applied to dimensions and metrics that are linked with path - <font color=#660000>supported only through the Data API v2.0</font>
+  </li>
+  <li>
+    transaction segmentation - advanced filters can be applied to dimensions and metrics that are linked with transaction - <font color=#660000>supported only through the Data API v2.0</font>
+  </li>
+  <li>
+    transaction item segmentation -<font color=#660000> not supported</font>
+  </li>
+</ul>
+<div class=nodeChildBox>
+  <div class="nodeBox repIgnore textNodeBox">
+    <div class=nodeLabel>
+      <br>
+    </div>
+  </div>
+  <div class="nodeBox repIgnore textNodeBox">
+    <div class=nodeLabel>
+      The Manage Urchin Advanced Segments page can be found via the My Customizations -&gt; Advanced Segments link. This page displays a list of segments that have been configured and contains controls for creating, editing and removing the Advanced Segments.
+    </div>
+  </div>
+</div>
+<div>
+  &nbsp;
+</div>
+<div id=vqty style=TEXT-ALIGN:left>
+  <img src="images/dczj8j3z_15r5j4ntcm_b.png" style=HEIGHT:auto;WIDTH:242px>
+</div>
+<div>
+  <br>
+  &nbsp;
+</div>
+<div>
+  Known limitations&nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <b>Creating New Segments</b>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  To create and configure a new segment, click the <i>Create new custom segment&nbsp;</i>button on the Manage Urchin Visit Segments page.
+</div>
+<div>
+  &nbsp;
+</div>
+<div id=bq:x style=TEXT-ALIGN:left>
+  <img src="images/dczj8j3z_16gdqqm76q_b.png" style=HEIGHT:auto;WIDTH:186px>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <br>
+  Provide a Segment Name, select Dimension or Metric, select Condition and provide required Value.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <div id=nqe8 style=TEXT-ALIGN:left>
+    <div id=jkuk style=TEXT-ALIGN:left>
+      <img src="images/dczj8j3z_18vt4nn7hn_b.png">
+    </div>
+  </div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  Click <i>Add "and" statement</i> to add a Dimension or Metric to the segment.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  Click Save to complete the New Segment creation.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  Once the segment is created, it can be edited, deleted or applied to other profiles (according to User access permissions).&nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <b>Editing Segments</b><br>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  To edit a segment, click the <i>edit</i>&nbsp;link in the Actions area for the corresponding segment.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+  <div id=dnin style=TEXT-ALIGN:left>
+    <img src="images/dczj8j3z_19ddxmhrff_b.png" style=HEIGHT:auto;WIDTH:648px>
+  </div>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  While editing, the user may change the segment's Name, Dimension or Metric, Condition and Value and to add additional Dimension or Metric query strings to the segment.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  Unwanted Dimension or Metric query strings may be removed from a segment definition by clicking the <i>delete</i> &nbsp;button.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;<img src="images/dczj8j3z_21f9jkcmcb_b.png">
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <b>Deleting Segments</b>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  To delete an existing segment, click
+  <div id=r40a style=TEXT-ALIGN:left>
+    &nbsp;
+  </div>
+  the<i> delete</i> link in the Actions area for the corresponding segment.
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <b>Applying Segments to the Profiles</b>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  This option is available when creating/editing the segment.&nbsp; Once the segment has been applied to the profiles, the option is available only to user who created it. Segments cannot be shared between different users.<br>
+</div>
+<div>
+  To apply segment to the profiles, click <i>apply to all profiles</i> link at the Actions section near the corresponding segment.<br>
+</div>
+<div>
+  <img src="images/dczj8j3z_22f5t5jhc8_b.png">
+</div>
+<div>
+  <br>
+  To remove link between all profiles (excepting currently opened) and particular segment,&nbsp; simply open the definition of this segment and save it. The re-saved segment will be granted to the current profile only.
+</div>
+<div>
+  &nbsp;
+</div>
+<br>
+<div>
+  &nbsp;
+</div>
+<div>
+  <br>
+  &nbsp;
+</div>
+<br></body>
+</html></body></html>

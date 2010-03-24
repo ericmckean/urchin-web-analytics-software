@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>udb-sanitizer: utilitário de manutenção de banco de dados</strong> <p class="line867"><strong>Visão geral</strong>  <p class="line874">O utilitário de manutenção de banco de dados do Urchin, udb-sanitizer, fornece um modo para verificar os bancos de dados de perfil do Urchin 6 e para executar várias operações de manutenção nesses bancos de dados.  <p class="line874">Os tipos de operação que o udb-sanitizer pode executar são:  <ul><li>Reverter os bancos de dados para um estado de backup salvo anterior </li><li class="gap">Excluir dados de perfil por um dia, vários dias ou um mês inteiro  </li></ul><p class="line867"><strong>Utilização</strong>  <p class="line874">O udb-sanitizer está localizado no diretório util da distribuição do Urchin 6.  <p class="line874">O utilitário funciona da seguinte maneira:  <pre>  udb-sanitizer [-h] (imprime mensagem de uso e é encerrado)
+
+  udb-sanitizer [-v] (imprime a versão e é encerrado)
+
+  udb-sanitizer -p profile [-d YYYYMM[DD]] -bfhprq] [-z [-e DD]] 
+</pre><p class="line874">em que:  <pre>   -b  vai diretamente para a opção de reversão
+
+   -d  especifica o ano e o mês e, opcionalmente, o dia da operação
+
+   -e  com as opções z e d, zera vários dias (intervalo d-&gt;e) no mesmo mês
+
+   -f  força a ação para ocorrer sem confirmação
+
+   -h  imprime as informações dessa ajuda
+
+   -p  especifica o nome do perfil (obrigatório)
+
+   -a  especifica o nome da conta
+
+   -r  vai diretamente para a opção de remoção
+
+   -q  modo silencioso, suprime a saída, exceto para confirmação crítica do usuário
+
+   -z  vai diretamente para a opção de dia-zero 
+
+</pre><p class="line867"><span class="u">Observação</span>: quando o udb-sanitizer for chamado com opções que não descrevem completamente qual ação executar, será exibido um texto de uso (equivalente à opção <tt>-h</tt>).  É possível que uma ação seja executada sem qualquer interação do usuário, usando uma combinação de opções <tt>–f</tt> e <tt>-q</tt> juntamente como o uso aplicável das opções <tt>-d</tt>, <tt>-b</tt>, <tt>-r</tt> ou <tt>-z</tt>.  <p class="line867"><strong>Operação</strong>  <p class="line874">Em uma operação normal, o udb-sanitizer é invocado de um shell de comando com opções de fornecimento aplicáveis para o tipo planejado de operação.    <p class="line874">As ações associadas às opções disponíveis apresentadas acima são:  <p class="line874">1. Reversão de dados (–r) <ul><li style="list-style-type:none">Essa opção permite que o usuário retorne para dados já arquivados por um perfil. O usuário é apresentado a uma lista de backups de arquivo em ZIP para sua escolha e os conteúdos do arquivo selecionado substituem o banco de dados de relatórios existente. Os arquivos em ZIP recebem a seguinte convenção de nomenclatura "YYYYMM-backupv6-YYYYMMDDHHMMSS.zip", em que o primeiro YYYYMM se refere ao mês dos dados que passam por backup (por exemplo 200803 se refere a março de 2008) e a parte YYYYMMDDHHMMSS é o registro de data e hora de quando o arquivo em ZIP foi criado. O registro de data e hora será útil para determinar qual arquivo em ZIP você deseja reverter. </li></ul><p class="line874">2. Excluir dados mensalmente (-d) <ul><li style="list-style-type:none">Todos os dados de um determinado perfil para o mês especificado serão removidos. Essa opção é útil para zerar as estatísticas para um mês se os dados estiverem incorretos, como a aplicação de filtros incorretos ou processamento de registros incorretos. Ou, taĺvez, no caso de alteração de parâmetros de perfil avançados, como a profundidade de caminhos de cliques ou nível de referência, e é recomendável atualizar os dados dos relatórios Urchin desse mês para refletir a alteração. Essa ação poderá ser executada sem a interação do usuário, invocando o udb-sanitizer com os argumentos -f, -r e -q.  </li></ul><p class="line867"><pre>udb-sanitizer -f –q -r -d 200309 -p mysite.com 
+</pre><p class="line874">3. Zerar dados por um ou mais dias <ul><li style="list-style-type:none">Essa opção permite que os dados de um determinado intervalo de dias de um mês sejam zerados; com isso o processamento do registro do Urchin pode ser executado novamente somente para aqueles dias (como perfil urchin -p -d YYYYMMDD). Essa ação poderá ser executada sem a interação do usuário para zerar um único dia, invocando o udb-sanitizer com os argumentos -f, –q, -z e -d, por exemplo.  </li></ul><p class="line867"><pre>udb-sanitizer –f -q -z -d 20030907 -p mysite.com 
+</pre><ul><li style="list-style-type:none">e para vários dias, incluindo o argumento "-e" , além de especificar uma data de término, por exemplo,  </li></ul><p class="line867"><pre>udb-sanitizer -f -z -d 20030907 -e 10 -p mysite.com 
+</pre><ul><li style="list-style-type:none">o que irá zerar os dados do dia 7 a 10 de setembro. Observe que o argumento –e espera somente o último dia. Isso é mais eficiente que invocar várias instâncias do udb-sanitizer para zerar um único dia por vez, pois os índices e os títulos do banco de dados são verificados apenas uma vez. A operação de verificação do índice e do título pode exigir uma quantidade notável de tempo em perfis com muitos dados.  </li></ul><p class="line874">4. Se o perfil fizer parte de uma conta, o nome da conta será especificado usando-se o argumento -a.   <p class="line867"><span class="u">Importante</span>: as ações que excluírem os dados diários ou mensais não poderão ser desfeitas. O único recurso é processar novamente os registros do servidor da web para esse período de modo a preencher novamente os bancos de dados do perfil. Use essas opções com cuidado. </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

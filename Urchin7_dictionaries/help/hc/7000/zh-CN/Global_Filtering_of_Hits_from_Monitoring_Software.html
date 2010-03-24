@@ -1,0 +1,16 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>对监控软件的点击进行全局过滤</strong> <p class="line867"><strong>概述</strong> <p class="line874">大多数托管环境都对客户网络服务器提供某种类型的监控，以维持服务级别协议 (SLA) 得到遵守。不过它也有副作用：来自此监控服务的点击数会对这些受监控网站的 Urchin 报告造成偏差，人为抬高会话、综合浏览量、点击和字节计数。 <p class="line867"><strong>建议</strong> <p class="line874">我们极力建议：在使用这类监控服务的托管环境中，对每一客户已配置的 Urchin 配置文件应用标准/全局 Urchin 过滤器，以滤除由监控软件产生的点击。在为各个客户网站提供报告的集中式 Urchin 安装环境（由托管公司管理）中，可轻松实现这一功能。在客户需自行维护其服务器上 Urchin 实例的专用环境/主机托管环境中，托管公司应该提供适用于所用监控服务的示范过滤器。 <p class="line874">为了有助于实现 Urchin 过滤，托管公司和客户应通力合作，在客户的网站上制作只供监控软件使用的特定网页，举例如下： <pre>     http://www.customerdomain.com/healthpage.html
+</pre><p class="line874">示例 <p class="line874">示例 1：滤除监控系统的 IP 地址 <pre>      Filter Type: Exclude
+      Filter Field: IP
+      Filter Spec: 172\.16\.1\.1
+</pre><ul><li style="list-style-type:none">这个方法会在 Urchin 进行处理时，滤除网络服务器日志中 IP 地址为 172.16.1.1 的所有点击。 </li></ul><p class="line874">示例 2：滤除监控系统点击的特定网页 <pre>      Filter Type: Exclude
+      Filter Field: REQUEST
+      Filter Spec: ^/healthpage.html
+</pre><ul><li style="list-style-type:none">这个方法会在 Urchin 进行处理时，滤除网络服务器日志中请求使用 /healthpage.html 的所有点击。 </li></ul><p class="line874">注意事项 <ol type="1"><li>建议另外为客户创建不具备过滤功能的配置文件，以便客户查看网络服务器上的实际访问量负载（包含过滤内容）。 </li><li>托管公司可能希望提供只报告监控点击量的配置文件，例如此配置文件只通过过滤得出监控软件的点击。此配置文件可用来显示监控过程是否正确以及是否满足了 SLA 的要求。 </li></ol></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

@@ -1,0 +1,50 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>getProfileList (SOAP) v1</strong> <ul><li><p class="line891"><a href="Data_API.html">API Table of Contents</a> </li><li><p class="line891"><a href="Admin_service_(SOAP)_v1.1.html">AdminService (SOAP)</a> </li></ul><p class="line862">Method: <strong>getProfileList</strong> <p class="line874">Retrieves list of profiles for an authenticated user (and account, if provided) <p class="line867"><strong>SOAP Request</strong> <p class="line867"><pre>    &lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://urchin.com/api/urchin/v1/"&gt;
+       &lt;soap:Header/&gt;
+       &lt;soap:Body&gt;
+          &lt;v1:getProfileList&gt;
+             &lt;!--You may enter the following 3 items in any order--&gt;
+             &lt;login&gt;LOGIN&lt;/login&gt;
+             &lt;password&gt;PASSWORD&lt;/password&gt;
+             &lt;accountId&gt;ACCOUNTID&lt;accountId/&gt;
+          &lt;/v1:getProfileList&gt;
+       &lt;/soap:Body&gt;
+    &lt;/soap:Envelope&gt;
+</pre><p class="line874">Request arguments: <ul><li><p class="line891"><strong>login</strong>  - user name login </li><li><p class="line891"><strong>password</strong> - user password </li><li><p class="line891"><strong>accountId</strong> - ID of the account (optional) </li></ul><p class="line874">Response: <ul><li><p class="line891"><strong>Profile[]</strong> - List of available profiles for authenticated user. </li></ul><p class="line867"><strong>Sample SOAP Request</strong> <p class="line867"><pre>    &lt;?xml version="1.0"?&gt;
+    &lt;env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+      &lt;env:Body&gt;
+        &lt;!-- Retrieves list of profiles --&gt;
+        &lt;getProfileList&gt;
+        &lt;login&gt;super_admin&lt;/login&gt;
+         &lt;password&gt;password&lt;/password&gt;
+         &lt;accountId&gt;1&lt;/accountId&gt;
+        &lt;/getProfileList&gt;
+      &lt;/env:Body&gt;
+    &lt;/env:Envelope&gt;
+</pre><p class="line867"><strong>Sample SOAP response</strong> <p class="line867"><pre>    &lt;soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"&gt;
+       &lt;soapenv:Header/&gt;
+       &lt;soapenv:Body&gt;
+          &lt;tns:getProfileListResponse xmlns:tns="https://urchin.com/api/urchin/v1/"&gt;
+             &lt;profile&gt;
+                &lt;accountId&gt;1&lt;/accountId&gt;
+                &lt;accountName&gt;(NONE)&lt;/accountName&gt;
+                &lt;profileId&gt;1&lt;/profileId&gt;
+                &lt;profileName&gt;tets.profile&lt;/profileName&gt;
+             &lt;/profile&gt;
+             &lt;profile&gt;
+                &lt;accountId&gt;1&lt;/accountId&gt;
+                &lt;accountName&gt;(NONE)&lt;/accountName&gt;
+                &lt;profileId&gt;3&lt;/profileId&gt;
+                &lt;profileName&gt;ttets.profile (utm)&lt;/profileName&gt;
+             &lt;/profile&gt;
+          &lt;/tns:getProfileListResponse&gt;
+       &lt;/soapenv:Body&gt;
+    &lt;/soapenv:Envelope&gt;
+</pre><p class="line867"><strong>Java and .Net C# samples</strong> <p class="line874">The following samples are available for this method: <ul><li><p class="line891"><a href="Samples_for_Java_(REST)_v1.html">Samples for Java (REST) v1</a> </li><li><p class="line891"><a href="Samples_for_.NET_(REST)_v1.html">Samples for .NET (REST) v1</a> </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

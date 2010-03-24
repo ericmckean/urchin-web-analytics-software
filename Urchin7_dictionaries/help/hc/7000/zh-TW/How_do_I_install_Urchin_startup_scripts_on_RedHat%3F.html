@@ -1,0 +1,9 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>如何在 RedHat 上安裝 Urchin 啟動指令碼？</strong> <p class="line874">Urchin 會在安裝期間建立一組啟動指令碼，並以 "urchin_daemons" 的名稱儲存在 Urchin util 目錄中。"/path/to/urchin/util/" <p class="line874">請將此指令碼複製到 /etc/rc.d/init.d/ directory 中。 <ul><li>cd /path/to/urchin/util </li><li>cp urchin_daemons /etc/rc.d/init.d/ </li><li>chmod +x /etc/rc.d/init.d/urchin_daemons </li><li>查看 /etc/inittab 檔案，並從中判斷預設的執行層級 (通常為 3)。[[請參閱下方]] </li><li>然後移至 /etc/rc.d/rcX.d (其中的 X 是執行層級)。 </li><li>cd /etc/rc.d/rc3.d </li><li>建立名為 S95urchin 和 K05urchin 的符號連結，並將其指向 /etc/rc.d/init.d/urchin_daemons。 </li><li>ln -s ../init.d/urchin_daemons S95urchin </li><li>ln -s ../init.d/urchin_daemons K05urchin </li></ul><p class="line874">[[ # 預設執行層級。RHS 使用的執行層級為： <ul><li>0 - 停止 (不要將此值設為初始預設值) </li><li>1 - 單一使用者模式 </li><li>2 - 多重使用者，不採用 NFS (如果沒有網路的話，則此設定與 3 相同) </li><li>3 - 完整多重使用者模式 </li><li>4 - 未使用 </li><li>5 - X11 </li><li>6 - 重新開機 (不要將此值設為初始預設值) </li></ul><p class="line874">id:3:初始預設值： ]] </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

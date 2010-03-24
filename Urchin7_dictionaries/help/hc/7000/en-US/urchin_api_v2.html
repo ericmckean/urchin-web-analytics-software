@@ -1,0 +1,754 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+    
+    .writely-callout-data {
+      display: none;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>Urchin 7 HC: Data API v2 Services</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<h2>
+  Urchin Data API v2 Services
+</h2>
+<h3>
+  Overview&nbsp;
+</h3>
+<h3>
+  <span style=FONT-WEIGHT:normal><font size=2>&nbsp;&nbsp; &nbsp;The Urchin Data API v1 provides entry level data mining capabilities - aggregates, custom tables, totals, visitor and transaction details. Along with sorting and pagination it introduces basic regular expression and numeric filters.</font></span>
+</h3>
+<div>
+  <font size=2><font style=BACKGROUND-COLOR:#ffffff>&nbsp;&nbsp; &nbsp;The Urchin Data API v2 significantly extends the analysis machinery with introduction of the visit, path and transaction segmentations. It now becomes possible to specify up to 50 filters of each type per single query and squeeze the most valuable data out of the reporting database.</font></font><br>
+  <h3>
+    Introduction to the Urchin Data API v2 Web Services
+  </h3>
+  <h3>
+    <span style=FONT-WEIGHT:normal>&nbsp;&nbsp;&nbsp;<font size=2><font style=BACKGROUND-COLOR:#ffffff>Urchin 7.0 is bundled with v1 and v2 instances of the Data API. By default the v2 is engaged, though the API can be easily switched back to v1 by setting DataApiVersion to 1 in &lt;urchin_home&gt;/etc/urchin.conf.</font></font></span>
+  </h3>
+  <div>
+    WSDL location:
+  </div>
+  <blockquote>
+    AdminService: &nbsp;<font color=#0B5394>http://your_host:your_port/services/v2/adminservice?wsdl</font><br>
+    ReportService: <font color=#0B5394>http://your_host:your_port/services/v2/reportservice?wsdl&nbsp;</font><br>
+  </blockquote>
+  <div>
+    REST methods<font style=BACKGROUND-COLOR:#ffffff> URIs</font>:
+  </div>
+  <blockquote>
+    AdminService: <font color=#0B5394>http://your_host:your_port/services/v2/adminservice</font><br>
+    ReportService:<font color=#0B5394>http://your_host:your_port/services/v2/reportservice&nbsp;</font>
+  </blockquote>
+  REST services explorer is also available at&nbsp;<font color=#0b5394>http://your_host:your_port/uapi.html</font>
+</div>
+<div>
+  <br>
+  The Report Service allows to extract the following information:
+</div>
+<ul>
+  <li>
+    <font style=BACKGROUND-COLOR:#ffffff>Aggregate dimensions and metrics - tables from #1 to #43</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>example: get campaigns and mediums</font>
+    </li>
+  </ul>
+  <li>
+    <font style=BACKGROUND-COLOR:#ffffff>Custom tables - user defined tables from&nbsp;</font><font color=#0B5394><font style=BACKGROUND-COLOR:#ffffff>&lt;urchin_home&gt;/lib/custom</font></font><font style=BACKGROUND-COLOR:#ffffff> folder</font>
+  </li>
+  <li>
+    <font style=BACKGROUND-COLOR:#ffffff>Visit related dimensions and metrics - table #256</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>example: get IP-address and visitor for given campaigns and mediums<br>
+      </font>
+    </li>
+  </ul>
+  <li>
+    <font style=BACKGROUND-COLOR:#ffffff>Transaction related dimensions and metrics - table #257</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>example: get transaction, IP-address and visitor for given campaigns and mediums</font>
+    </li>
+  </ul>
+  <li>
+    <font style=BACKGROUND-COLOR:#ffffff>Page related dimensions and metrics - table #259</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>example: get visitor path, IP-address and visitor for given campaigns and mediums</font>
+    </li>
+  </ul>
+  <li>
+    <font style=BACKGROUND-COLOR:#ffffff>Totals and metrics over time - table #258</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>example: get visits and pages aggregated by day</font>
+    </li>
+  </ul>
+</ul>
+<h3>
+  Data API v2 Reference
+</h3>
+<h4>
+  Admin service (v2)
+</h4>
+The Admin service provides operations for retrieving account and profile information.<br>
+<p class=line874>
+  <br>
+</p>
+<p class=line874>
+  <font color=#000000>WSDL location:&nbsp;</font><font color=#0000ff>http://your_host:your_port/services/v2/adminservice</font><font color=#0000ff>?wsdl</font><br>
+</p>
+<p class=line874>
+  <br>
+</p>
+<p class=line874>
+  This service provides the following methods:
+</p>
+<ul>
+  <li>
+    <p class=line891 style=MARGIN-LEFT:0px;MARGIN-RIGHT:0px>
+      <b>getAccountList - </b>Method was not changed and works as described in<b>&nbsp;</b>the v1 version. To see more information please refer to the article <a href=https://secure.urchin.com/helpwiki/en/Data_API id=d5ju title="Data API">Data API</a>.
+    </p>
+  </li>
+  <li>
+    <p class=line891 style=MARGIN-LEFT:0px;MARGIN-RIGHT:0px>
+      <b>getProfileList</b>&nbsp;<b>-&nbsp;</b>Method was not changed and works as described in the v1 version. To see more information please refer to the article&nbsp;<a href=https://secure.urchin.com/helpwiki/en/Data_API id=s2w. style=COLOR:#551a8b title="Data API">Data API</a>.
+    </p>
+  </li>
+</ul>
+<h4>
+  Report service (v2)
+</h4>
+The Report Service lets you extract data and generate reports from Urchin.<br>
+<p>
+  <br>
+</p>
+<p>
+  WSDL location:&nbsp;<font color=#0000ff>http://your_host:your_port/services/v2/reportservice</font><font color=#0000ff>?wsdl</font>
+</p>
+<br>
+This service provides the following methods:<br>
+<ul>
+  <li>
+    <font color=#000000><b>getTableList </b>- Method was extended with new fields "nregexfilters" and "nnumericfilters".&nbsp;</font>
+  </li>
+  <ul>
+    <li>
+      <b>nregexfilters </b>- &nbsp;this value shows the number of regular expression filters applicable to given table<br>
+    </li>
+    <li>
+      <b>nnumericfilters </b>- this value shows the number of numeric filters applicable to given table
+    </li>
+  </ul>
+</ul>
+&nbsp;&nbsp; &nbsp;Sample response:<br>
+<blockquote>
+  <font face=monaco><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;tns:getTableListResponse x</font></font><span class=webkit-html-attribute-name><font size=2><font color=#0B5394>mlns:tns</font></font></span><font size=2><font color=#0B5394>="</font></font><span class=webkit-html-attribute-value><font size=2><font color=#0B5394>https://urchin.com/api/urchin/v2/</font></font></span><font size=2><font color=#0B5394>"&gt;<br>
+  </font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;table&gt;<br>
+  </font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;tableId&gt;257</font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;/tableId&gt;<br>
+  </font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;dimensions&gt;<br>
+  </font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&nbsp;&nbsp;&lt;dimension&gt;</font></font></span><font size=2><font color=#0B5394>u:transaction_id</font></font><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;/dimension&gt;<br>
+  &nbsp;&nbsp;...<br>
+  </font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;/dimensions&gt;<br>
+  </font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;metrics&gt;<br>
+  </font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&nbsp;&nbsp;&lt;metric&gt;</font></font></span><font size=2><font color=#0B5394>u:transactions</font></font><span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;/metric&gt;<br>
+  </font></font></span><span class=webkit-html-tag><font size=2><font color=#0B5394>&nbsp;&nbsp;...</font></font></span><br>
+  <span class=webkit-html-tag><font size=2><font color=#0B5394>&lt;/metrics&gt;<br>
+  </font><b><font color=#0B5394>&lt;nregexfilters&gt;50&lt;/nregexfilters&gt;<br>
+  </font></b></font></span><span class=webkit-html-tag><font face=monaco><font size=2><b><font color=#0B5394>&lt;nnumericfilters&gt;50&lt;/nnumericfilters&gt;</font></b><br>
+  </font></font><font size=2><font color=#0B5394>&lt;/table&gt;</font></font></span></font>
+</blockquote>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;This response shows that Urchin table #257 can be filtered by 50 numeric and 50 regular expression filters. To see more information please refer to the help article&nbsp;<a href=https://secure.urchin.com/helpwiki/en/Data_API id=th7r style=COLOR:#551a8b title="Data API">Data API</a>.<br>
+<br>
+<ul>
+  <li>
+    <font color=#000000><b>getData - </b><font style=BACKGROUND-COLOR:#ffffff>Starting from the v2 the method fully supports regular expression and numeric filters. &nbsp;</font>To see more information please refer to the help article&nbsp;<a href=https://secure.urchin.com/helpwiki/en/Data_API id=x90. style=COLOR:#551a8b title="Data API">Data API</a>.</font>
+  </li>
+</ul>
+<h5>
+  Filtering gears
+</h5>
+<ul>
+  <li>
+    <b><font style=BACKGROUND-COLOR:#ffffff>tables ##1-43</font></b><font style=BACKGROUND-COLOR:#ffffff> - tables contain aggregated dimensions and metrics, support filtering by</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>dimensions from the queried table only</font>
+    </li>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>metrics from the queried table only</font>
+    </li>
+  </ul>
+  <li>
+    <b><font style=BACKGROUND-COLOR:#ffffff>table #256</font></b><font style=BACKGROUND-COLOR:#ffffff>&nbsp;- the table contains all visit details, supports filtering by</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>visit, transaction and path dimensions from tables #256, #257, #258</font>
+    </li>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>visit metrics from table #256</font>
+    </li>
+  </ul>
+</ul>
+<ul>
+  <li>
+    <font face=Verdana><b><font style=BACKGROUND-COLOR:#ffffff>table #257</font></b><font style=BACKGROUND-COLOR:#ffffff>&nbsp;- the table contains all transaction and visit details, supports filtering by</font></font>
+  </li>
+  <ul>
+    <li>
+      <font face=Verdana><font style=BACKGROUND-COLOR:#ffffff>visit, transaction and path dimensions from #256, #257, #258</font></font>
+    </li>
+    <li>
+      <font face=Verdana><font style=BACKGROUND-COLOR:#ffffff>transaction metrics from table #257</font></font>
+    </li>
+  </ul>
+</ul>
+<ul>
+  <li>
+    <b><font style=BACKGROUND-COLOR:#ffffff>table #258</font></b><font style=BACKGROUND-COLOR:#ffffff>&nbsp;- the table contains total data and metrics over time, supports filtering by</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>dimensions filtering is not supported</font>
+    </li>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>metrics from table #258</font>
+    </li>
+  </ul>
+</ul>
+<ul>
+  <li>
+    <b><font style=BACKGROUND-COLOR:#ffffff>table #259</font></b><font style=BACKGROUND-COLOR:#ffffff>&nbsp;- the table contains all page and visit details, supports filtering by</font>
+  </li>
+  <ul>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>visit, transaction and path dimensions from #256, #257, #258</font>
+    </li>
+    <li>
+      <font style=BACKGROUND-COLOR:#ffffff>page metrics from table #259</font>
+    </li>
+  </ul>
+</ul>
+<br>
+<b>Note</b>: In order to see all available dimensions and metrics of these tables please retrieve information via the method <font style=BACKGROUND-COLOR:#ffffff>getTableList of the Report Service or refer to services explorer at&nbsp;</font><font color=#0b5394><font style=BACKGROUND-COLOR:#ffffff>http://your_host:your_port/uapi.html</font></font><font style=BACKGROUND-COLOR:#ffffff>.</font><br>
+<div>
+  &nbsp;
+</div>
+<div>
+  For example: Extract visitor details using REST request.
+</div>
+<div>
+  &nbsp;&nbsp; &nbsp;Sample REST request:<br>
+  <blockquote>
+    <font size=3><font color=#0B5394><font size=2><font face="'Times New Roman'">http://&lt;urchin host&gt;:&lt;port&gt;/services/v2/reportservice/data?login=admin&amp;password=urchin&amp;ids=7&amp;start-date=2008-01-01&amp;end-date=2010-01-01&amp;dimensions=u:session_id,u:visitor_id,u:session_ip,u:session_start_time,u:session_end_time&amp;metrics=u:pages,u:visits&amp;table=256</font></font></font><br>
+    </font>
+  </blockquote>
+  &nbsp;&nbsp; &nbsp;Sample REST response:<br>
+  <blockquote>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&lt;tns:getDataResponse xmlns:tns="https://urchin.com/api/urchin/v2/"&gt;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&lt;record&gt;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;recordId&gt;1&lt;/recordId&gt;&nbsp;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&lt;dimensions&gt;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;dimension name="u:session_id"&gt;1262784738&lt;/dimension&gt;&nbsp;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;dimension name="u:<b>visitor_id</b>"&gt;<b>HWH2-C43FX-GSPE</b>&lt;/dimension&gt;&nbsp;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;dimension name="u:<b>session_ip</b>"<b>&gt;10.6.28.81</b>&lt;/dimension&gt;&nbsp;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;dimension name="u:<b>session_start_time</b>"&gt;<b>2010-01-06T07:32:37-08:00</b>&lt;/dimension&gt;&nbsp;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;dimension name="u:<b>session_end_time</b>"&gt;<b>2010-01-06T07:32:49-08:0</b>0&lt;/dimension&gt;&nbsp;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;/dimensions&gt;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&lt;metrics&gt;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;u:pages xmlns:u="https://urchin.com/api/urchin/v2/"&gt;1&lt;/u:pages&gt;&nbsp;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;u:visits xmlns:u="https://urchin.com/api/urchin/v2/"&gt;1&lt;/u:visits&gt;&nbsp;</font></font></font>
+    </div>
+    <div>
+      <font color=#0b5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;/metrics&gt;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&nbsp;&nbsp;&lt;/record&gt;</font></font></font>
+    </div>
+    <div>
+      <font color=#0B5394><font face="'Times New Roman'"><font size=2>&lt;/tns:getDataResponse&gt;</font></font></font>
+    </div>
+  </blockquote>
+</div>
+<br>
+<h3>
+  How to enable older version of the Urchin Data API in Urchin 7.0?
+</h3>
+&nbsp;&nbsp; &nbsp;By default, <font style=BACKGROUND-COLOR:#ffffff>newly installed or upgraded instance of Urchin 7</font>.0 engages the latest version of the Data API. To switch to another version please refer to section "How do I switch to another version of the Urchin Data API?" of the article <a href=https://secure.urchin.com/helpwiki/en/Urchin_Data_API_FAQ id=j-ed title="Urchin Data API FAQ">Urchin Data API FAQ</a>.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br></body>
+</html></body></html>

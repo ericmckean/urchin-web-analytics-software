@@ -1,0 +1,12 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Urchin 联合品牌 </strong> <p class="line867"><strong>概述</strong> <p class="line874">Urchin 在管理界面、报告界面及登录屏幕中加入了联合品牌功能。要在界面最上方加入 HTML，需要修改 3 个文件。如果进行全面的门户网站集成，应用程序服务器就可以在框架集或表格内发送 Urchin 报告。 <p class="line867"><strong>联合品牌说明</strong> <p class="line874">要在界面上使用联合品牌，需要修改位于 Urchin 安装目录中的下列文件： <pre>     [urchin install dir]/lib/custom/cobrands/cobrand_admin.tpl.sample
+     [urchin install dir]/lib/custom/cobrands/cobrand_report.tpl.sample
+     [urchin install dir]/lib/custom/cobrands/cobrand_session.tpl.sample
+</pre><ul><li>删除".sample"，重命名文件（文件名必须类似于 cobrand_admin.tpl 形式） </li><li>根据需要在这些文件中添加 HTML 内容，以包含您的品牌说明 </li></ul><p class="line874">第一和第二个文件分别控制管理界面和报告界面中的联合品牌功能。第三个文件则控制登录屏幕中的联合品牌功能。这些文件中提供的 HTML 会置于 Urchin 界面的顶端。 </div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

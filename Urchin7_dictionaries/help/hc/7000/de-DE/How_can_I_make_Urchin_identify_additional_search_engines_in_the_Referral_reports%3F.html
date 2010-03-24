@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>Wie kann ich erreichen, dass Urchin zusätzliche Suchmaschinen in den Berichten "Verweis" identifiziert?</strong> <p class="line874">Standardmäßig protokolliert Urchin Verweise von 20 Suchmaschinen, die in Ihrer UTM-Datei aufgelistet sind. Sie können Urchin auch so konfigurieren, dass Verweise von zusätzlichen Suchmaschinen erkannt werden. Bearbeiten Sie dazu die UTM-Datei wie folgt: <ol type="1"><li>Öffnen Sie die Datei "urchin.js" in einem Texteditor. </li><li>Suchen Sie folgenden Abschnitt: </li></ol><p class="line867"><pre>          //-- Auto/Organic Sources and Keywords
+          var _uOsr=new Array();
+          var _uOkw=new Array();
+</pre><ol type="3"><li>Die Einträge für jede Suchmaschine sind nummeriert: 0-19. Dabei handelt es sich um die Suchmaschinen, die Urchin standardmäßig protokolliert. Geben Sie zum Hinzufügen einer weiteren Suchmachine einfach einen neuen Eintrag im selben Format wie die anderen Einträge ein. Für eine Suchmaschine "new" würden Sie z. B. folgenden Eintrag hinzufügen: </li></ol><p class="line867"><pre>          _uOsr[17]="voila"; _uOkw[17]="kw";
+          _uOsr[18]="virgilio"; _uOkw[18]="qs";
+          _uOsr[19]="teoma"; _uOkw[19]="q";
+          _uOsr[20]="new"; _uOkw[20]="s";
+</pre><ul><li style="list-style-type:none">Der Wert für _uOsr muss dem Namen der Suchmaschine entsprechen und der Wert für _uOkw muss der Abfragevariablen entsprechen, mit der das Keyword gespeichert wird. Angenommen, jemand sucht nach "Motorrad" (motorcycle) und die URL des Suchergebnisses lautet folgendermaßen: </li></ul><p class="line867"><pre>          http://www.google.com/search?q=motorcycle
+</pre><ul><li style="list-style-type:none">Der Wert für _uOkw lautet "q". Der Wert für _uOsr lautet "google". </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>

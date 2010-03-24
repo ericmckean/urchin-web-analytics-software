@@ -1,0 +1,33 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table id="top_location_line" width="100%"><table id="top_location_line" width="100%"><tr width="100%"><td><a href="http://www.urchin.com"><img border="0" src="../images/google_sm.gif" width="135" height="41"></a></td><td width="100%"><span id="top_line" style="width: 100%; float: left; clear: both; border-bottom: 1px solid #CCC;"><span id="top_title" style="float: left; margin-top: 10px;"><b>Help Center</b></span></td></tr></table>
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en">
+<p class="line867"><strong>urchin: Elaborazione log di Urchin</strong> <p class="line867"><strong>Panoramica</strong> <p class="line874">L'Urchin Log Processing Engine, urchin, è il componente di elaborazione log di base di Urchin. Normalmente, il motore di elaborazione log viene richiamato da Urchin Scheduler (urchind) quando viene eseguita un'attività. Tuttavia, è possibile eseguire urchin direttamente da un pannello si comando per eseguire un profilo specifico. Questa funzionalità risulta particolarmente utile in ambienti ad elevato utilizzo di script in cui l'esecuzione di attività Urchin da una sorgente esterna quale l'Utilità di pianificazione di Windows oppure cron sui sistemi UNIX. È inoltre molto utile per eseguire un profilo in presenza di speciali circostanze, ad esempio per elaborare solo gli hit di un giorno specifico oppure per eseguire attività di debugging. <p class="line874">Urchin non è un'utilità vera e propria: è documentata qui perché fornisce funzionalità limitate della riga di comando che possono risultare utili in determinati ambienti. <p class="line867"><strong>Utilizzo</strong> <p class="line874">urchin è ubicato nella directory bin della distribuzione di Urchin. L'utilizzo è il seguente: <p class="line867"><pre>
+urchin [options...] (-p &lt;profile name&gt; | -P &lt;profile id&gt;)
+
+</pre><p class="line874">Opzioni: <p class="line867"><pre>
+-a &lt;account name&gt;       Specifica il nome account del profilo. Il nome account predefinito è "(NESSUNO)".
+
+-D                      Attiva la modalità di debug.
+
+-d &lt;YYYYMMDD&gt;           Specifica la data di nuova elaborazione.
+
+-H                      Registra l'output dell'esecuzione nel file cronologico. Un nuovo record della cronologia dell'attività viene creato se -H è specificato e -T non è specificato.
+
+-h                      Consente di stampare informazioni della guida e di uscire
+
+-P &lt;profile id&gt;         Specifica l'ID profilo da elaborare.
+
+-p &lt;profile name&gt;       Specifica il nome profilo da elaborare.
+
+-T &lt;task id&gt;            Specifica il record della cronologia attività da aggiornare. Se si specifica -T occorre utilizzare -H.
+
+-t                      Consente di stampare i dati della configurazione e di uscire.
+
+-v                      Consente di stampare il numero di versione e di uscire.
+
+</pre><p class="line867"><strong>Considerazioni</strong> <ul><li>Nei sistemi UNIX, urchin deve essere eseguito con l'utente/UID di installazione di Urchin per assicurarsi che i che i database per il profilo sia di proprietà di questo UID, dal momento che urchin li crea se non sono già esistenti. </li></ul></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer" style="clear: both; margin: 0; padding: 0; border-bottom:1px solid #CCC;"></div><div id="copyright" style="font-size: 70%; text-align: center;">&copy;2010 Google</div>
+</body></html>
