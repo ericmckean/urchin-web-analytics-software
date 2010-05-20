@@ -48,7 +48,7 @@ Labels
 
 ==Setting Up Event Tracking==
 
-Ensure your website is configured for tracking with *an updated urchin.js tracking code* [http://code.google.com/p/urchin-web-analytics-software/source/browse/trunk/urchin.js]. (Still in Beta)
+Ensure your website is configured for tracking with *an updated urchin.js tracking code* [http://code.google.com/p/urchin-web-analytics-software/source/browse/trunk/urchin.js]. (*TBD*)
 
 Refer to the Install Guide ('''Using Urchin with UTM Tracking''' section) for details. 
 
