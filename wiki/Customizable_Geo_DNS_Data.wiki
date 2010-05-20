@@ -50,9 +50,9 @@ geo-update options:
 {{{
 -F     Forces download of geo databases
 -f     Path to geo database ZIP packages on local filesystem [optional]
--H     Specifies to log run output to history file
+-H     Specifies to log run output to history file. #Note: This line should be removed!!!
 -h     Prints help information and exits
--T     <task id>  Specifies the task history record to update. Specifying -T forces use of -H
+-T     <task id>  Specifies the task history record to update. Specifying -T forces use of -H #Note: This line should be removed!!! 
 -g     <filename> Update a specific geo database
 -l     Lists geo databases available on server
 -V     Prints geo-database version number and exits
