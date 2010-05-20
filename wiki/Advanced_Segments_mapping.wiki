@@ -1,178 +1,56 @@
 =Advanced Segments mapping=
 
-<font color='blue';>_This page is under construction!!!
 
 
 
 <font color='black';>
 || *Dimension*          || *Urchin Variable*                    ||
-||	IIS Date (1)	||	iis_date                	||
-||	IIS Time (2)	||	iis_time                	||
-||	Apache Time (3)	||	apache_time             	||
-||	IP (4)	||	c_ip                    	||
-||	User Name (5)	||	cs_username             	||
-||	Request (6)	||	cs_request              	||
-||	Method (7)	||	cs_method               	||
-||	URI Stem (8)	||	cs_uristem              	||
-||	URI Query (9)	||	cs_uriquery             	||
-||	Status Code (10)	||	sc_status               	||
-||	Bytes (11)	||	sc_bytes                	||
-||	Host (12)	||	c_host                  	||
-||	User Agent (13)	||	cs_useragent            	||
-||	Cookie (14)	||	cs_cookie               	||
-||	Referer (15)	||	cs_referer              	||
-||	Custom Date (16)	||	custom_date             	||
-||	Custom Time (17)	||	custom_time             	||
-||	Host (19)	||	cs_host                 	||
-||	Port (20)	||	s_port                  	||
-||	Version (21)	||	cs_version              	||
-||	Site Name (22)	||	s_sitename              	||
-||	Computer Name (23)	||	s_computername          	||
-||	IP (24)	||	s_ip                    	||
-||	ELF Order ID (25)                         	||	elf_orderid             	||
-||	ELF Store (26)                              	||	elf_store               	||
-||	ELF Session ID (27)                     	||	elf_sessionid           	||
-||	ELF Total (28)                              	||	elf_total               	||
-||	ELF Tax (29)                                  	||	elf_tax                 	||
-||	ELF Shipping (30)                        	||	elf_shipping            	||
-||	ELF Bill City (31)                      	||	elf_bill_city           	||
-||	ELF Bill State (32)                    	||	elf_bill_state          	||
-||	ELF Bill ZIP (33)                        	||	elf_bill_zip            	||
-||	ELF Bill Country (34)                	||	elf_bill_country        	||
-||	ELF Product Code (35)                	||	elf_product_code        	||
-||	ELF Product Name (36)                	||	elf_product_name        	||
-||	ELF Product Variation (37)              	||	elf_variation           	||
-||	ELF Unit Price (38)                    	||	elf_unit_price          	||
-||	ELF Quantity (39)                        	||	elf_quantity            	||
-||	ELF Upsold (40)                            	||	elf_upsold              	||
-||	UTM Campaign URI (41)                	||	utm_campaign_uri        	||
-||	UTM Campaign Cost (42)              	||	utm_campaign_cost       	||
-||	UTM Campaign Impressions (43)	||	utm_campaign_impressions	||
-||	UTM Campaign Clicks (44)          	||	utm_campaign_clicks     	||
-||	CPC Account (45)                          	||	cpc_account	||
-||	CPC Campaign (46)                        	||	cpc_campaign	||
-||	CPC Adgroup (47)                          	||	cpc_adgroup	||
-||	CPC Keyword (48)                          	||	cpc_keyword	||
-||	Referral Protocol (76)            	||	referral_protocol      	||
-||	Referral Host (77)                	||	referral_host          	||
-||	Referral Port (79)                	||	referral_port          	||
-||	Referral URL (80)                 	||	referral_url           	||
-||	Referral URI (81)                 	||	referral_uri           	||
-||	Referral Stem (82)                	||	referral_stem          	||
-||	Referral Query (83)               	||	referral_query         	||
-||	Referral Anchor (84)              	||	referral_anchor        	||
-||	Referral Directory (85)           	||	referral_directory     	||
-||	Referral Filename (86)            	||	referral_filename      	||
-||	Referral MIME Type (87)           	||	referral_mime          	||
-||	Referral Keywords (88)            	||	referral_keywords      	||
-||	Request Method (91)               	||	request_method         	||
-||	Request URL (92)                  	||	request_url            	||
-||	Request Version (93)              	||	request_version        	||
-||	Request Protocol (94)             	||	request_protocol       	||
-||	Request Host (95)                 	||	request_host           	||
-||	Request Port (96)                 	||	request_port           	||
-||	Request URI (97)                  	||	request_uri            	||
-||	Request Stem (98)                 	||	request_stem           	||
-||	Request Query (99)                	||	request_query          	||
-||	Request Anchor (100)              	||	request_anchor         	||
-||	Request Directory (101)           	||	request_directory      	||
-||	Request Filename (102)            	||	request_filename       	||
-||	Request MIME Type (103)           	||	request_mime           	||
-||	Request Original File Path (104)  	||	request_origfilepath   	||
-||	Request Original MIME Type (105)  	||	request_origmime       	||
+||	Affiliation (174)                 	||	ecommerce_affiliation  	||
+||	Bill City (178)                   	||	ecommerce_bill_city    	||
+||	Bill Country (180)                	||	ecommerce_bill_country 	||
+||	Bill Region (179)                 	||	ecommerce_bill_region  	||
 ||	Browser Type (108)                	||	browser_base           	||
 ||	Browser Version (109)             	||	browser_version        	||
-||	Operating System (110)            	||	platform_base          	||
-||	Operating System Version (111)    	||	platform_version       	||
-||	Primary Domain (112)              	||	domain_primary         	||
-||	Provider Domain (113)             	||	domain_complete        	||
-||	SID (114)                         	||	sid                    	||
-||	UTM ID (154)                      	||	utm_id                 	||
-||	Online Campaign (137)             	||	utm_campaign           	||
-||	Medium (138)                      	||	utm_medium             	||
-||	Traffic Source (139)              	||	utm_source             	||
-||	Keyword (140)                     	||	utm_term               	||
+||	City (162)                        	||	geo_city               	||
+||	Connection Speed (167)            	||	geo_connection_speed   	||
 ||	Content (141)                     	||	utm_content            	||
-||	UTM Cookiea (115)                 	||	utm_cookiea            	||
-||	UTM Cookieb (116)                 	||	utm_cookieb            	||
-||	UTM Cookiec (117)                 	||	utm_cookiec            	||
-||	UTM Cookiez (118)                 	||	utm_cookiez            	||
-||	UTM Uniques ID (122)              	||	utm_unique_id          	||
-||	UTM New Campaign (123)            	||	utm_new_campaign       	||
-||	UTM Page (124)                    	||	utm_page               	||
-||	UTM Referral (125)                	||	utm_referral           	||
-||	Screen Resolution (126)           	||	utm_screen_resolution  	||
-||	Screen Colors (129)               	||	utm_screen_colors      	||
-||	Languages (130)                   	||	utm_language           	||
+||	Country (160)                     	||	geo_country            	||
+||	Flash Version (168)               	||	utm_flash_version      	||
 ||	Java Enabled (131)                	||	utm_java_enabled       	||
 ||	Javascript Version (134)          	||	utm_js_version         	||
-||	Campaign Hour (150)               	||	utm_campaign_hour      	||
-||	Campaign Goal (151)               	||	utm_campaign_goal      	||
-||	Log Source Name (152)             	||	log_source_name        	||
-||	UTM Type (155)                    	||	utm_type               	||
-||	Robot Agent (156)                 	||	robot_agent            	||
-||	Host IP (157)                     	||	client_ipaddress       	||
-||	Hostname (158)                    	||	client_hostname        	||
-||	Username (159)                    	||	username               	||
-||	Country (160)                     	||	geo_country            	||
-||	Region (161)                      	||	geo_region             	||
-||	City (162)                        	||	geo_city               	||
+||	Keyword (140)                     	||	utm_term               	||
+||	Languages (130)                   	||	utm_language           	||
 ||	Latitude (163)                    	||	geo_latitude           	||
 ||	Longitude (164)                   	||	geo_longitude          	||
-||	ISP (165)                         	||	geo_isp                	||
-||	Provider Name (166)               	||	geo_organization       	||
-||	Connection Speed (167)            	||	geo_connection_speed   	||
-||	Flash Version (168)               	||	utm_flash_version      	||
-||	Page Title (169)                  	||	utm_page_title         	||
+||	Medium (138)                      	||	utm_medium             	||
 ||	New or Returning (170)            	||	visitor_type           	||
-||	UTM Cookiev (171)                 	||	utm_cookiev            	||
-||	User Defined (172)                	||	user_defined_variable  	||
-||	Order ID (173)                    	||	ecommerce_orderid      	||
-||	Affiliation (174)                 	||	ecommerce_affiliation  	||
-||	Total (175)                       	||	ecommerce_total        	||
-||	Tax (176)                         	||	ecommerce_tax          	||
-||	Shipping (177)                    	||	ecommerce_shipping     	||
-||	Bill City (178)                   	||	ecommerce_bill_city    	||
-||	Bill Region (179)                 	||	ecommerce_bill_region  	||
-||	Bill Country (180)                	||	ecommerce_bill_country 	||
+||	Online Campaign (137)             	||	utm_campaign           	||
+||	Operating System (110)            	||	platform_base          	||
+||	Operating System Version (111)    	||	platform_version       	||
+||	Page Title (169)                  	||	utm_page_title         	||
+||	Primary Domain (112)              	||	domain_primary         	||
 ||	Product Code (181)                	||	ecommerce_product_code 	||
 ||	Product Name (182)                	||	ecommerce_product_name 	||
+||	Provider Domain (113)             	||	domain_complete        	||
+||	Provider Name (166)               	||	geo_organization       	||
+||	Region (161)                      	||	geo_region             	||
+||	Request Stem (98)                 	||	request_stem           	||
+||	Screen Colors (129)               	||	utm_screen_colors      	||
+||	Screen Resolution (126)           	||	utm_screen_resolution  	||
+||	Traffic Source (139)              	||	utm_source             	||
+||	User Defined (172)                	||	user_defined_variable  	||
+||	Username (159)                    	||	username               	||
 ||	Variation (183)                   	||	ecommerce_variation    	||
-||	Unit Price (184)                  	||	ecommerce_unit_price   	||
-||	Quantity (185)                    	||	ecommerce_quantity     	||
-||	Request Hostname (186)            	||	utm_request_hostname   	||
-||	Request Download (187)            	||	request_download       	||
-||	Request Form (188)                	||	request_form           	||
-||	Organic Source (189)              	||	organic_source	||
-||	UTM Extended (190)                	||	utm_extended	||
-||	Category (191)                    	||	event_category	||
-||	Action (192)                      	||	event_action	||
-||	Label (193)                       	||	event_label	||
-||	Click-through Page From (301)         	||	clickthru_page_from	||
-||	Click-through Page To (302)           	||	clickthru_page_to	||
-||	Goal Click-through Entrance Page (303)	||	goal_clickthru_entrance_page	||
-||	Goal Click-through Exit Page (304)    	||	goal_clickthru_exit_page	||
-||	Initial Path Page 1 (305)             	||	initial_path_page1	||
-||	Initial Path Page 2 (306)             	||	initial_path_page2	||
-||	Initial Path Page 3 (307)             	||	initial_path_page3	||
-||	Reverse Goal Path (308)               	||	rev_goal_path	||
-||	Reverse Goal Path Page 1 (309)        	||	rev_goal_path_page1	||
-||	Reverse Goal Path Page 2 (310)        	||	rev_goal_path_page2	||
-||	Reverse Goal Path Page 3 (311)        	||	rev_goal_path_page3	||
-||	Totals (312)                          	||	totals	||
-||	Year (313)                            	||	year	||
-||	Month (314)                           	||	month	||
-||	Day (315)                             	||	day	||
-||	Hour (316)                            	||	hour	||
-||	Visitor ID (317)                      	||	visitor_id	||
-||	Transaction ID (318)                  	||	transaction_id	||
-||	Session ID (319)                      	||	session_id	||
-||	Session IP (320)                      	||	session_ip	||
-||	Session Start Time (321)              	||	session_start_time	||
-||	Session End Time (322)                	||	session_end_time	||
-||	Request Time (323)                    	||	request_time	||
-||	Transaction Time (324)                	||	transaction_time	||
 
 
 <br>
-|| *Metric* || *Urchin  Variable* ||
+|| *Metric* ||
+||	goals1 (28)                   	||
+||	goals2 (29)                   	||
+||	goals3 (30)                   	||
+||	goals4 (31)                   	||
+||	revenue (19)                   	||
+||	transactions (15)                   	||
+||	visits (11)                   	||
+
+
