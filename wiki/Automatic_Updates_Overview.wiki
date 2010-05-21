@@ -37,7 +37,8 @@ The following upgrade frequencies are available:
 Automated updates can be configured in unattended mode for the following Urchin components:  
   * Help Articles
   * GEO database
-<font color="red">*Note:* Items were changed. Need to synchronize with other supported languages. </font>
+<font color="red">*Note:* Items were changed. Need to synchronize with other supported languages. <br /> No translation required.
+</font>
 
 === Urchin Auto Update Recovery mode ===
 
