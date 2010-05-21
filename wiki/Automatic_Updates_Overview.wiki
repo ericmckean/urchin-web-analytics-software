@@ -35,11 +35,9 @@ The following upgrade frequencies are available:
 === Unattended upgrade ===
 
 Automated updates can be configured in unattended mode for the following Urchin components:  
-  * Embedded Help
-  * Help Center articles
+  * Help Articles
   * GEO database
- 
-To enable silent upgrade, you must select the check box for the corresponding Urchin component. 
+<font color="red">*Note:* Items were changed. Need to synchronize with other supported languages. </font>
 
 === Urchin Auto Update Recovery mode ===
 
